@@ -1,4 +1,5 @@
 .vscode/
+tests/vcr_cassettes/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
