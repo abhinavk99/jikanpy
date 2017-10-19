@@ -47,7 +47,7 @@ class Jikan(object):
 
     def anime(self, id, extension=None):
         return self._get('anime', id, extension)
-    
+
     def manga(self, id, extension=None):
         return self._get('manga', id, extension)
 

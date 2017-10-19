@@ -35,7 +35,7 @@ def jikan():
 @vcr.use_cassette('tests/vcr_cassettes/anime-success.yaml')
 def test_anime_success(anime_keys, jikan):
     anime_info = jikan.anime(MUSHISHI_ID)
-    
+
     assert isinstance(anime_info, dict)
     assert anime_info['title'] == 'Mushishi'
     assert anime_keys.issubset(anime_info.keys())
@@ -43,7 +43,7 @@ def test_anime_success(anime_keys, jikan):
 @vcr.use_cassette('tests/vcr_cassettes/manga-success.yaml')
 def test_manga_success(manga_keys, jikan):
     manga_info = jikan.manga(FULLMETAL_ID)
-    
+
     assert isinstance(manga_info, dict)
     assert manga_info['title'] == 'Fullmetal Alchemist'
     assert manga_keys.issubset(manga_info.keys())
@@ -51,7 +51,7 @@ def test_manga_success(manga_keys, jikan):
 @vcr.use_cassette('tests/vcr_cassettes/character-success.yaml')
 def test_character_success(character_keys, jikan):
     character_info = jikan.character(GINKO_ID)
-    
+
     assert isinstance(character_info, dict)
     assert character_info['name'] == 'Ginko'
     assert character_keys.issubset(character_info.keys())
@@ -70,4 +70,4 @@ def test_manga_failure(jikan):
 def test_character_failure(jikan):
     with pytest.raises(APIException):
         jikan.character(-1)
-       
+
