@@ -6,6 +6,7 @@ from jikanpy.exceptions import APIException
 
 MUSHISHI_ID = 457
 FULLMETAL_ID = 25
+GINKO_ID = 425
 
 @pytest.fixture
 def anime_keys():
@@ -49,10 +50,10 @@ def test_manga_success(manga_keys, jikan):
 
 @vcr.use_cassette('tests/vcr_cassettes/character-success.yaml')
 def test_character_success(character_keys, jikan):
-    character_info = jikan.character(FULLMETAL_ID)
+    character_info = jikan.character(GINKO_ID)
     
     assert isinstance(character_info, dict)
-    assert character_info['name'] == 'Ginko '
+    assert character_info['name'] == 'Ginko'
     assert character_keys.issubset(character_info.keys())
 
 @vcr.use_cassette('tests/vcr_cassettes/anime-failure.yaml')
