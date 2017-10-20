@@ -17,12 +17,12 @@ mushishi = jikan.anime(457)
 
 # same as above, but with extra info
 # (see Jikan docs for information about which endpoints have which extensions)
-mushishi_with_eps = jikan.anime(1, extension='episodes')
-mushishi_with_characters_and_staff = jikan.anime(1, extension='characters_staff')
-mushishi_with_both = jikan.anime(1, extension='all')
+mushishi_with_eps = jikan.anime(457, extension='episodes')
+mushishi_with_characters_and_staff = jikan.anime(457, extension='characters_staff')
+mushishi_with_both = jikan.anime(457, extension='all')
 
 # you can also query characters
-ginko = jikan.character(3)
+ginko = jikan.character(425)
 
 # and manga
 mushishi_manga = jikan.manga(418)
