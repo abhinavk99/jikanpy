@@ -7,5 +7,5 @@ class APIException(JikanException):
 class ClientException(JikanException):
     """Exception that does not involve the API"""
 
-class DeprecationWarning(JikanException):
+class DeprecatedEndpoint(JikanException):
     """Exception raised when attempting to use deprecated API endpoints"""
