@@ -7,3 +7,23 @@ pretty much identical, please consult [Jikan's
 documentation](https://jikan.me/) for thornier details on how it is meant to
 be used. Perhaps most importantly, Jikanpy does not make any attempts to rate
 limit itself, so use it as responsibly as you would use the API primitively.
+
+```python
+from jikanpy import Jikan
+jikan = Jikan()
+
+# json of all anime info specified by Jikan docs
+mushishi = jikan.anime(457)
+
+# same as above, but with extra info
+# (see Jikan docs for information about which endpoints have which extensions)
+mushishi_with_eps = jikan.anime(1, extension='episodes')
+mushishi_with_characters_and_staff = jikan.anime(1, extension='characters_staff')
+mushishi_with_both = jikan.anime(1, extension='all')
+
+# you can also query characters
+ginko = jikan.character(3)
+
+# and manga
+mushishi_manga = jikan.manga(418)
+```
