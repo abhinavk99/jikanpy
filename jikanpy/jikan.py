@@ -5,8 +5,8 @@ import requests
 from jikanpy import session
 from jikanpy.exceptions import APIException, ClientException
 
-BASE_URL = 'http://jikan.me/api/'
-BASE_URL_SSL = 'https://jikan.me/api/'
+BASE_URL = 'http://api.jikan.moe/'
+BASE_URL_SSL = 'https://api.jikan.moe/'
 
 EXTENSIONS = {
     'anime': ['episodes', 'characters_staff', 'all'],
