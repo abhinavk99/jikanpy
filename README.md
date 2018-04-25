@@ -18,6 +18,7 @@ mushishi = jikan.anime(457)
 # same as above, but with extra info
 # (see Jikan docs for information about which endpoints have which extensions)
 mushishi_with_eps = jikan.anime(457, extension='episodes')
+mushishi_with_eps_2 = jikan.anime(457, extension='episodes', page=2)
 mushishi_with_characters_and_staff = jikan.anime(457, extension='characters_staff')
 
 # you can also query characters

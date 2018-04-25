@@ -2,16 +2,10 @@ import json
 
 from jikanpy import session
 from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
+from jikanpy.extensions import EXTENSIONS, SEARCH_PARAMS
 
 BASE_URL = 'http://api.jikan.moe/'
 BASE_URL_SSL = 'https://api.jikan.moe/'
-
-EXTENSIONS = {
-    'anime': ['characters_staff', 'episodes', 'news', 'pictures', 'videos', 'stats'],
-    'manga': ['characters', 'news', 'pictures', 'stats'],
-    'character': ['pictures'],
-    'person': ['pictures']
-}
 
 class Jikan(object):
     """
@@ -25,12 +19,14 @@ class Jikan(object):
         self.base = selected_base + '{endpoint}/{id}'
         self.search_base = selected_base + 'search/{search_type}/{query}'
 
-    def _get(self, endpoint, id, extension):
+    def _get(self, endpoint, id, extension, page=None):
         url = self.base.format(endpoint=endpoint, id=id)
         if extension is not None:
             if extension not in EXTENSIONS[endpoint]:
                 raise ClientException('The extension is not valid')
             url += '/' + extension
+            if extension == 'episodes' and isinstance(page, int):
+                url += '/' + page
 
         response = session.get(url)
         self._check_response(response)
@@ -46,17 +42,17 @@ class Jikan(object):
             )
             raise APIException(err_str)
 
-    def anime(self, id, extension=None):
-        return self._get('anime', id, extension)
+    def anime(self, id, extension=None, page=None):
+        return self._get('anime', id, extension, parameter)
 
     def manga(self, id, extension=None):
-        return self._get('manga', id, extension)
+        return self._get('manga', id, extension, None)
 
     def character(self, id, extension=None):
-        return self._get('character', id, extension)
+        return self._get('character', id, extension, None)
 
     def person(self, id, extension=None):
-        return self._get('person', id, extension)
+        return self._get('person', id, extension, None)
 
     def user_list(self, id, extension):
         raise DeprecatedEndpoint('user_list is a deprecated endpoint')
