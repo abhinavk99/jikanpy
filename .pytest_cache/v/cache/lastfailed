@@ -1,0 +1,3 @@
+{
+  "tests/test_jikan.py::test_search_failure": true
+}

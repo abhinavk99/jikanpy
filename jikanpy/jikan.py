@@ -29,11 +29,11 @@ class Jikan(object):
                 url += '/' + page
 
         response = session.get(url)
-        self._check_response(response)
+        self._check_response(response, id, endpoint)
 
         return response.json()
 
-    def _check_response(self, response):
+    def _check_response(self, response, id, endpoint):
         if response.status_code >= 400:
             err_str = '{}: error for id {} on endpoint {}'.format(
                 response.status_code,
@@ -43,7 +43,7 @@ class Jikan(object):
             raise APIException(err_str)
 
     def anime(self, id, extension=None, page=None):
-        return self._get('anime', id, extension, parameter)
+        return self._get('anime', id, extension, page)
 
     def manga(self, id, extension=None):
         return self._get('manga', id, extension, None)
@@ -69,11 +69,17 @@ class Jikan(object):
             values = SEARCH_PARAMS.get(key, d=None)
             if values is None:
                 raise ClientException('The key is not valid')
-            else if isinstance(values, list) and value not in values:
+            elif isinstance(values, list) and value not in values:
                 raise ClientException('The value is not valid')
             url += '?' + key + '=' + value
 
         response = session.get(url)
-        self._check_response(response)
+        if response.status_code >= 400:
+            err_str = '{}: error for search type {} on query {}'.format(
+                response.status_code,
+                search_type,
+                query
+            )
+            raise APIException(err_str)
 
         return response.json()
