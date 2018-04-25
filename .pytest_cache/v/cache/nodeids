@@ -1,9 +1,0 @@
-[
-  "tests/test_jikan.py::test_anime_success",
-  "tests/test_jikan.py::test_manga_success",
-  "tests/test_jikan.py::test_character_success",
-  "tests/test_jikan.py::test_search_success",
-  "tests/test_jikan.py::test_anime_failure",
-  "tests/test_jikan.py::test_manga_failure",
-  "tests/test_jikan.py::test_character_failure"
-]
