@@ -57,12 +57,21 @@ class Jikan(object):
     def user_list(self, id, extension):
         raise DeprecatedEndpoint('user_list is a deprecated endpoint')
 
-    def search(self, search_type, query, page=None):
+    def search(self, search_type, query, page=None, key=None, value=None):
         url = self.search_base.format(search_type=search_type, query=query)
         if page is not None:
             if type(page) is not int:
                 raise ClientException('The parameter \'page\' must be an integer')
             url += '/' + page
+        if key is not None:
+            if value is None:
+                raise ClientException('You need to pass a value with the key')
+            values = SEARCH_PARAMS.get(key, d=None)
+            if values is None:
+                raise ClientException('The key is not valid')
+            else if isinstance(values, list) and value not in values:
+                raise ClientException('The value is not valid')
+            url += '?' + key + '=' + value
 
         response = session.get(url)
         self._check_response(response)

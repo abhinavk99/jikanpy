@@ -26,4 +26,14 @@ ginko = jikan.character(425)
 
 # and manga
 mushishi_manga = jikan.manga(418)
+
+# search
+search_result = jikan.search('anime', 'Mushishi')
+# add a page number to the search request
+search_result = jikan.search('anime', 'Mushishi', page=2)
+# add a filter to the search (see Jikan docs about what filters are legal)
+search_result = jikan.search('anime', 'Mushishi', key='type', value='tv')
+search_result = jikan.search('anime', 'Mushishi', key='genre', value=37)
+# use it all!
+search_result = jikan.search('anime', 'Mushishi', page=3, key='type', value='tv')
 ```

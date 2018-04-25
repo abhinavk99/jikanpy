@@ -24,3 +24,40 @@ EXTENSIONS = {
         'pictures'
     ]
 }
+
+SEARCH_PARAMS = {
+    'type': [
+        'tv',
+        'ova',
+        'movie',
+        'special',
+        'ona',
+        'music',
+        'manga',
+        'novel',
+        'oneshot',
+        'doujin',
+        'manhwa',
+        'manhua'
+    ],
+    'status': [
+        'airing',
+        'completed',
+        'complete',
+        'tba',
+        'upcoming'
+    ],
+    'rated': [
+        'g',
+        'pg',
+        'pg13',
+        'r17',
+        'r',
+        'rx'
+    ],
+    'genre' : range(1, 44),
+    'score': '',
+    'start_date': '',
+    'end_date': '',
+    'genre_exclude': [0, 1]
+}
