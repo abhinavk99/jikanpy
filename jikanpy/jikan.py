@@ -40,15 +40,23 @@ class Jikan(object):
         # Get information from the API
         response = session.get(url)
         # Check if there's an error with the response
-        if response.status_code >= 400:
-            err_str = '{}: error for id {} on endpoint {}'.format(
-                response.status_code,
-                id,
-                endpoint
-            )
-            raise APIException(err_str)
-
+        self._check_response(response, id=id, endpoint=endpoint)
         return response.json()
+
+    def _check_response(self, response, **kwargs):
+        """
+        Check if the response is an error
+
+        Keyword Arguments:
+        response -- response from the API call
+        kwargs -- keyword arguments
+        """
+        if response.status_code >= 400:
+            err_str = '{}: error for '.format(
+                response.status_code
+            )
+            err_str += ', '.join('='.join((str(k), str(v))) for k,v in kwargs.items())
+            raise APIException(err_str)
 
     def anime(self, id, extension=None, page=None):
         """Gets anime information"""
@@ -99,12 +107,6 @@ class Jikan(object):
         # Get information from the API
         response = session.get(url)
         # Check if there's an error with the response
-        if response.status_code >= 400:
-            err_str = '{}: error for search type {} on query {}'.format(
-                response.status_code,
-                search_type,
-                query
-            )
-            raise APIException(err_str)
-
+        kwargs = {'search type': search_type, 'query': query}
+        self._check_response(response, **kwargs)
         return response.json()
