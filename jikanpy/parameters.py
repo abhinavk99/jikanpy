@@ -1,6 +1,6 @@
 # Possible extensions for endpoints
 EXTENSIONS = {
-    'anime': [
+    'anime': (
         'characters_staff',
         'episodes',
         'news',
@@ -9,26 +9,26 @@ EXTENSIONS = {
         'stats',
         'forum',
         'moreinfo'
-    ],
-    'manga': [
+    ),
+    'manga': (
         'characters',
         'news',
         'pictures',
         'stats',
         'forum',
         'moreinfo'
-    ],
-    'character': [
+    ),
+    'character': (
         'pictures'
-    ],
-    'person': [
+    ),
+    'person': (
         'pictures'
-    ]
+    )
 }
 
 # Possible search parameters for ?key=value
 SEARCH_PARAMS = {
-    'type': [
+    'type': (
         'tv',
         'ova',
         'movie',
@@ -41,27 +41,27 @@ SEARCH_PARAMS = {
         'doujin',
         'manhwa',
         'manhua'
-    ],
-    'status': [
+    ),
+    'status': (
         'airing',
         'completed',
         'complete',
         'tba',
         'upcoming'
-    ],
-    'rated': [
+    ),
+    'rated': (
         'g',
         'pg',
         'pg13',
         'r17',
         'r',
         'rx'
-    ],
+    ),
     'genre' : range(1, 44),
     'score': '',
     'start_date': '',
     'end_date': '',
-    'genre_exclude': [0, 1]
+    'genre_exclude': (0, 1)
 }
 
 # Possible seasons
@@ -77,3 +77,50 @@ DAYS = (
     'saturday',
     'sunday'
 )
+
+# Possible subtypes for top endpoint
+SUBTYPES = {
+    'anime': (
+        'airing',
+        'upcoming',
+        'tv',
+        'movie',
+        'ova',
+        'special'
+        'bypopularity',
+        'favorite'
+    ),
+    'manga': (
+        'manga',
+        'novels',
+        'oneshots',
+        'doujin',
+        'manhwa',
+        'manhua',
+        'bypopularity',
+        'favorite'
+    )
+}
+
+# Possible parameters for meta
+META = {
+    'request': (
+        'requests',
+        'status'
+    ),
+    'type': (
+        'anime',
+        'manga',
+        'character',
+        'person',
+        'search',
+        'top',
+        'schedule',
+        'season'
+    ),
+    'period': (
+        'today',
+        'weekly',
+        'monthly'
+    )
+}

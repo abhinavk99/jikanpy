@@ -19,3 +19,9 @@ print(winter_2018)
 
 monday = jikan.schedule(day='monday')
 print(monday)
+
+top_anime = jikan.top(type='anime')
+print(top_anime.keys())
+
+meta = jikan.meta(request='requests', type='anime', period='today')
+print(meta)

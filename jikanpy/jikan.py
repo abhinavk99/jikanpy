@@ -2,7 +2,7 @@ import json
 
 from jikanpy import session
 from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
-from jikanpy.extensions import EXTENSIONS, SEARCH_PARAMS, SEASONS, DAYS
+from jikanpy.parameters import EXTENSIONS, SEARCH_PARAMS, SEASONS, DAYS, SUBTYPES, META
 
 BASE_URL = 'http://api.jikan.moe/'
 BASE_URL_SSL = 'https://api.jikan.moe/'
@@ -20,7 +20,7 @@ class Jikan(object):
         self.search_base = selected_base + 'search/{search_type}/{query}'
         self.season_base = selected_base + 'season/{year}/{season}'
         self.schedule_base = selected_base + 'schedule'
-        self.top_base = selected_base + 'top/{type}/{page}/{subtype}'
+        self.top_base = selected_base + 'top/{type}'
         self.meta_base = selected_base + 'meta/{request}/{type}/{period}'
 
     def _get(self, endpoint, id, extension, page=None):
@@ -56,8 +56,9 @@ class Jikan(object):
         kwargs -- keyword arguments
         """
         if response.status_code >= 400:
-            err_str = '{}: error for '.format(
-                response.status_code
+            err_str = '{} {}: error for '.format(
+                response.status_code,
+                response.json().get('error')
             )
             err_str += ', '.join('='.join((str(k), str(v))) for k,v in kwargs.items())
             raise APIException(err_str)
@@ -151,4 +152,56 @@ class Jikan(object):
         response = session.get(url)
         # Check if there's an error with the response
         self._check_response(response, day=day)
+        return response.json()
+
+    def top(self, type, page=None, subtype=None):
+        """
+        Gets top items on MyAnimeList
+
+        Keyword Arguments:
+        type -- type to get top items from (anime, manga)
+        page -- page number of the results (default None)
+        subtype -- subtype to get filtered top items, possible values in docs
+        """
+        url = self.top_base.format(type=type.lower())
+        # Check if type is valid
+        if type.lower() not in SUBTYPES:
+            raise ClientException('Type must be anime or manga')
+        # Check if page is valid
+        if page is not None:
+            if not isinstance(page, int):
+                raise ClientException('The parameter \'page\' must be an integer')
+            url += '/' + page
+        # Check if subtype is valid
+        if subtype is not None:
+            if subtype.lower() not in SUBTYPES[type.lower()]:
+                raise ClientException('Subtype is not valid for ' + type)
+            url += '/' + subtype.lower()
+        # Get information from the API
+        response = session.get(url)
+        # Check if there's an error with the response
+        self._check_response(response, type=type)
+        return response.json()
+
+    def meta(self, request, type, period):
+        """
+        Gets meta information regarding the Jikan REST API
+
+        Keyword Arguments:
+        request -- requests (requests, status)
+        type -- type to get info on, possible values in docs
+        period -- time period (today, weekly, monthly)
+        """
+        url = self.meta_base.format(request=request, type=type, period=period)
+        # Check if request is valid
+        if request not in META['request']:
+            raise ClientException('Request must be \'requests\' or \'status\'')
+        if type not in META['type']:
+            raise ClientException('Type is not valid')
+        if period not in META['period']:
+            raise ClientException('Period must be \'today\', \'weekly\', or \'monthly\'')
+        # Get information from the API
+        response = session.get(url)
+        # Check if there's an error with the response
+        self._check_response(response, request=request, type=type, period=period)
         return response.json()

@@ -7,6 +7,9 @@ from jikanpy.exceptions import APIException, ClientException
 MUSHISHI_ID = 457
 FULLMETAL_ID = 25
 GINKO_ID = 425
+YEAR = 2018
+SEASON = 'winter'
+DAY = 'monday'
 
 @pytest.fixture
 def anime_keys():
@@ -94,24 +97,28 @@ def test_search_success(search_keys, jikan):
 
 @vcr.use_cassette('tests/vcr_cassettes/season-success.yaml')
 def test_season_success(season_keys, seasonal_anime_keys, jikan):
-    season_info = jikan.season(year=2018, season='winter')
+    season_info = jikan.season(year=YEAR, season=SEASON)
 
     assert isinstance(season_info, dict)
     assert season_keys.issubset(season_info.keys())
     for anime in season_info['season']:
         assert seasonal_anime_keys.issubset(anime.keys())
 
-
 @vcr.use_cassette('tests/vcr_cassettes/schedule-success.yaml')
 def test_schedule_success(schedule_keys, schedule_anime_keys, jikan):
-    day='monday'
-    schedule_info = jikan.schedule(day=day)
+    schedule_info = jikan.schedule(day=DAY)
 
     assert isinstance(schedule_info, dict)
     assert schedule_keys.issubset(schedule_info.keys())
-    assert day in schedule_info.keys()
-    for anime in schedule_info[day]:
+    assert DAY.lower() in schedule_info
+    for anime in schedule_info[DAY]:
         assert schedule_anime_keys.issubset(anime.keys())
+
+@vcr.use_cassette('tests/vcr_cassettes/meta-success.yaml')
+def test_meta_success(jikan):
+    meta_info = jikan.meta(request='requests', type='anime', period='today')
+
+    assert isinstance(meta_info, dict)
 
 @vcr.use_cassette('tests/vcr_cassettes/anime-failure.yaml')
 def test_anime_failure(jikan):
@@ -131,9 +138,14 @@ def test_character_failure(jikan):
 @vcr.use_cassette('tests/vcr_cassettes/season-failure.yaml')
 def test_season_failure(jikan):
     with pytest.raises(APIException):
-        jikan.season(year=-1, season='winter')
+        jikan.season(year=-1, season=SEASON)
 
 @vcr.use_cassette('tests/vcr_cassettes/schedule-failure.yaml')
 def test_schedule_failure(jikan):
     with pytest.raises(ClientException):
         jikan.schedule(day='x')
+
+@vcr.use_cassette('tests/vcr_cassettes/meta-failure.yaml')
+def test_meta_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.meta(request='x', type='x', period='x')
