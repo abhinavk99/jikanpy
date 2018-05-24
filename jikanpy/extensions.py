@@ -1,3 +1,4 @@
+# Possible extensions for endpoints
 EXTENSIONS = {
     'anime': [
         'characters_staff',
@@ -25,6 +26,7 @@ EXTENSIONS = {
     ]
 }
 
+# Possible search parameters for ?key=value
 SEARCH_PARAMS = {
     'type': [
         'tv',
