@@ -2,7 +2,7 @@ import pytest
 import vcr
 
 from jikanpy.jikan import Jikan
-from jikanpy.exceptions import APIException
+from jikanpy.exceptions import APIException, ClientException
 
 MUSHISHI_ID = 457
 FULLMETAL_ID = 25
@@ -36,6 +36,26 @@ def character_keys():
 @pytest.fixture
 def search_keys():
     return {'request_hash', 'request_cached', 'result', 'result_last_page'}
+
+@pytest.fixture
+def season_keys():
+    return {'request_hash', 'request_cached', 'season'}
+
+@pytest.fixture
+def seasonal_anime_keys():
+    return {'mal_id', 'url', 'title', 'image_url', 'type', 'synopsis',
+            'producer', 'licensor', 'episodes', 'source', 'genre',
+            'airing_start', 'score', 'members', 'kids', 'r18_plus', 'continued'}
+
+@pytest.fixture
+def schedule_keys():
+    return {'request_hash', 'request_cached'}
+
+@pytest.fixture
+def schedule_anime_keys():
+    return {'mal_id', 'url', 'title', 'image_url', 'synopsis', 'producer',
+            'licensor', 'episodes', 'source', 'genre', 'airing_start', 'score',
+            'members', 'kids', 'r18_plus'}
 
 @pytest.fixture
 def jikan():
@@ -72,6 +92,27 @@ def test_search_success(search_keys, jikan):
     assert isinstance(search_info, dict)
     assert search_keys.issubset(search_info.keys())
 
+@vcr.use_cassette('tests/vcr_cassettes/season-success.yaml')
+def test_season_success(season_keys, seasonal_anime_keys, jikan):
+    season_info = jikan.season(year=2018, season='winter')
+
+    assert isinstance(season_info, dict)
+    assert season_keys.issubset(season_info.keys())
+    for anime in season_info['season']:
+        assert seasonal_anime_keys.issubset(anime.keys())
+
+
+@vcr.use_cassette('tests/vcr_cassettes/schedule-success.yaml')
+def test_schedule_success(schedule_keys, schedule_anime_keys, jikan):
+    day='monday'
+    schedule_info = jikan.schedule(day=day)
+
+    assert isinstance(schedule_info, dict)
+    assert schedule_keys.issubset(schedule_info.keys())
+    assert day in schedule_info.keys()
+    for anime in schedule_info[day]:
+        assert schedule_anime_keys.issubset(anime.keys())
+
 @vcr.use_cassette('tests/vcr_cassettes/anime-failure.yaml')
 def test_anime_failure(jikan):
     with pytest.raises(APIException):
@@ -87,3 +128,12 @@ def test_character_failure(jikan):
     with pytest.raises(APIException):
         jikan.character(-1)
 
+@vcr.use_cassette('tests/vcr_cassettes/season-failure.yaml')
+def test_season_failure(jikan):
+    with pytest.raises(APIException):
+        jikan.season(year=-1, season='winter')
+
+@vcr.use_cassette('tests/vcr_cassettes/schedule-failure.yaml')
+def test_schedule_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.schedule(day='x')

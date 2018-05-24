@@ -2,7 +2,7 @@ import json
 
 from jikanpy import session
 from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
-from jikanpy.extensions import EXTENSIONS, SEARCH_PARAMS
+from jikanpy.extensions import EXTENSIONS, SEARCH_PARAMS, SEASONS, DAYS
 
 BASE_URL = 'http://api.jikan.moe/'
 BASE_URL_SSL = 'https://api.jikan.moe/'
@@ -18,6 +18,10 @@ class Jikan(object):
         selected_base = BASE_URL_SSL if use_ssl else BASE_URL
         self.base = selected_base + '{endpoint}/{id}'
         self.search_base = selected_base + 'search/{search_type}/{query}'
+        self.season_base = selected_base + 'season/{year}/{season}'
+        self.schedule_base = selected_base + 'schedule'
+        self.top_base = selected_base + 'top/{type}/{page}/{subtype}'
+        self.meta_base = selected_base + 'meta/{request}/{type}/{period}'
 
     def _get(self, endpoint, id, extension, page=None):
         """
@@ -92,7 +96,7 @@ class Jikan(object):
         url = self.search_base.format(search_type=search_type, query=query)
         # Check if page and query are valid
         if page is not None:
-            if type(page) is not int:
+            if not isinstance(page, int):
                 raise ClientException('The parameter \'page\' must be an integer')
             url += '/' + page
         if key is not None:
@@ -109,4 +113,42 @@ class Jikan(object):
         # Check if there's an error with the response
         kwargs = {'search type': search_type, 'query': query}
         self._check_response(response, **kwargs)
+        return response.json()
+
+    def season(self, year, season):
+        """
+        Gets information on anime of the specific season
+
+        Keyword Arguments:
+        year -- year to get anime of
+        season -- season to get anime of (winter, spring, summer, fall)
+        """
+        url = self.season_base.format(year=year, season=season.lower())
+        # Check if year and season are valid
+        if not (isinstance(year, int) and season.lower() in SEASONS):
+            raise ClientException('Season or year is not valid')
+        # Get information from the API
+        response = session.get(url)
+        # Check if there's an error with the response
+        self._check_response(response, year=year, season=season)
+        return response.json()
+
+    def schedule(self, day=None):
+        """
+        Gets anime scheduled for the specific day
+
+        Keyword Arguments:
+        day -- day to get anime of (default None)
+        """
+        url = self.schedule_base
+        # Check if day is valid
+        if day is not None:
+            if day.lower() not in DAYS:
+                raise ClientException('Day is not valid')
+            else:
+                url += '/' + day.lower()
+        # Get information from the API
+        response = session.get(url)
+        # Check if there's an error with the response
+        self._check_response(response, day=day)
         return response.json()

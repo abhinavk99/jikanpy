@@ -63,3 +63,17 @@ SEARCH_PARAMS = {
     'end_date': '',
     'genre_exclude': [0, 1]
 }
+
+# Possible seasons
+SEASONS = ('winter', 'spring', 'summer', 'fall')
+
+# Possible days
+DAYS = (
+    'monday',
+    'tuesday',
+    'wednesday',
+    'thursday',
+    'friday',
+    'saturday',
+    'sunday'
+)
