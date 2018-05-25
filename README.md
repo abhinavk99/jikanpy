@@ -36,4 +36,24 @@ search_result = jikan.search('anime', 'Mushishi', key='type', value='tv')
 search_result = jikan.search('anime', 'Mushishi', key='genre', value=37)
 # use it all!
 search_result = jikan.search('anime', 'Mushishi', page=3, key='type', value='tv')
+
+# seasonal anime
+winter_2018 = jikan.season(year=2018, season='winter')
+spring_2016 = jikan.season(year=2016, season='spring')
+
+# scheduled anime
+scheduled = jikan.schedule()
+# add a day of the week if you only want the day's schedule
+monday = jikan.schedule(day='monday')
+
+# top anime
+top_anime = jikan.top(type='anime')
+# add a page and subtype if you want
+top_anime = jikan.top(type='anime', page=2, subtype='upcoming')
+
+# meta info about the Jikan REST API
+# meta info about what requests have been done
+requests = jikan.meta(request='requests', type='anime', period='today')
+# meta info about API's status
+status = jikan.meta(request='status', type='anime', period='today')
 ```
