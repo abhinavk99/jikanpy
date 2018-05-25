@@ -10,6 +10,7 @@ GINKO_ID = 425
 YEAR = 2018
 SEASON = 'winter'
 DAY = 'monday'
+TYPE = 'anime'
 
 @pytest.fixture
 def anime_keys():
@@ -59,6 +60,15 @@ def schedule_anime_keys():
     return {'mal_id', 'url', 'title', 'image_url', 'synopsis', 'producer',
             'licensor', 'episodes', 'source', 'genre', 'airing_start', 'score',
             'members', 'kids', 'r18_plus'}
+
+@pytest.fixture
+def top_keys():
+    return {'request_hash', 'request_cached', 'top'}
+
+@pytest.fixture
+def top_anime_keys():
+    return {'mal_id', 'rank', 'url', 'image_url', 'title', 'type', 'score',
+            'members', 'airing_start', 'airing_end', 'episodes'}
 
 @pytest.fixture
 def jikan():
@@ -114,6 +124,15 @@ def test_schedule_success(schedule_keys, schedule_anime_keys, jikan):
     for anime in schedule_info[DAY]:
         assert schedule_anime_keys.issubset(anime.keys())
 
+@vcr.use_cassette('tests/vcr_cassettes/top-success.yaml')
+def test_top_success(top_keys, top_anime_keys, jikan):
+    top_info = jikan.top(type=TYPE)
+
+    assert isinstance(top_info, dict)
+    assert top_keys.issubset(top_info.keys())
+    for anime in top_info['top']:
+        assert top_anime_keys.issubset(anime.keys())
+
 @vcr.use_cassette('tests/vcr_cassettes/meta-success.yaml')
 def test_meta_success(jikan):
     meta_info = jikan.meta(request='requests', type='anime', period='today')
@@ -144,6 +163,11 @@ def test_season_failure(jikan):
 def test_schedule_failure(jikan):
     with pytest.raises(ClientException):
         jikan.schedule(day='x')
+
+@vcr.use_cassette('tests/vcr_cassettes/top-failure.yaml')
+def test_top_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.top(type='x')
 
 @vcr.use_cassette('tests/vcr_cassettes/meta-failure.yaml')
 def test_meta_failure(jikan):

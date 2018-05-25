@@ -21,7 +21,7 @@ monday = jikan.schedule(day='monday')
 print(monday)
 
 top_anime = jikan.top(type='anime')
-print(top_anime.keys())
+print(top_anime)
 
 meta = jikan.meta(request='requests', type='anime', period='today')
 print(meta)
