@@ -8,6 +8,12 @@ documentation](https://jikan.docs.apiary.io/#) for thornier details on how it is
 be used. Perhaps most importantly, Jikanpy does not make any attempts to rate
 limit itself, so use it as responsibly as you would use the API primitively.
 
+## Installation
+```shell
+$ pip install git+git://github.com/AWConant/jikanpy.git
+```
+
+## Usage
 ```python
 from jikanpy import Jikan
 jikan = Jikan()

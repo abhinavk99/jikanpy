@@ -1,4 +1,5 @@
 import json
+from abc import ABC, abstractmethod
 
 from jikanpy import session
 from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
@@ -7,13 +8,8 @@ from jikanpy.parameters import EXTENSIONS, SEARCH_PARAMS, SEASONS, DAYS, SUBTYPE
 BASE_URL = 'http://api.jikan.moe/'
 BASE_URL_SSL = 'https://api.jikan.moe/'
 
-class Jikan(object):
-    """
-    Wrapper for calls to the jikan.me unofficial MyAnimeList API.
-
-    Note that the API has a daily limit of 5000 calls; this module does not
-    make any effort to prevent abuse of that limit, so use it responsibly.
-    """
+class AbstractJikan(ABC):
+    """Abstract base class for Jikan and JikanAsync"""
     def __init__(self, use_ssl=True):
         selected_base = BASE_URL_SSL if use_ssl else BASE_URL
         self.base = selected_base + '{endpoint}/{id}'
@@ -22,30 +18,7 @@ class Jikan(object):
         self.schedule_base = selected_base + 'schedule'
         self.top_base = selected_base + 'top/{type}'
         self.meta_base = selected_base + 'meta/{request}/{type}/{period}'
-
-    def _get(self, endpoint, id, extension, page=None):
-        """
-        Gets the response from Jikan API given the endpoint
-
-        Keyword Arguments:
-        endpoint -- endpoint of API (anime, manga, character, person)
-        id -- id of what to get the information of
-        extension -- special information to get, possible values in the docs
-        page -- page number of the results (default None)
-        """
-        url = self.base.format(endpoint=endpoint, id=id)
-        # Check if extension is valid
-        if extension is not None:
-            if extension not in EXTENSIONS[endpoint]:
-                raise ClientException('The extension is not valid')
-            url += '/' + extension
-            if extension == 'episodes' and isinstance(page, int):
-                url += '/' + page
-        # Get information from the API
-        response = session.get(url)
-        # Check if there's an error with the response
-        self._check_response(response, id=id, endpoint=endpoint)
-        return response.json()
+        super().__init__()
 
     def _check_response(self, response, **kwargs):
         """
@@ -60,42 +33,24 @@ class Jikan(object):
                 response.status_code,
                 response.json().get('error')
             )
-            err_str += ', '.join('='.join((str(k), str(v))) for k,v in kwargs.items())
+            err_str += ', '.join('='.join((str(k), str(v))) for k, v in kwargs.items())
             raise APIException(err_str)
 
-    def anime(self, id, extension=None, page=None):
-        """Gets anime information"""
-        return self._get('anime', id, extension, page)
+    def _get_url(self, endpoint, id, extension, page):
+        """Create URL for anime, manga, character, and person endpoints"""
+        url = self.base.format(endpoint=endpoint, id=id)
+        # Check if extension is valid
+        if extension is not None:
+            if extension not in EXTENSIONS[endpoint]:
+                raise ClientException('The extension is not valid')
+            url += '/' + extension
+            if extension == 'episodes' and isinstance(page, int):
+                url += '/' + page
+        return url
 
-    def manga(self, id, extension=None):
-        """Gets manga information"""
-        return self._get('manga', id, extension)
-
-    def character(self, id, extension=None):
-        """Gets character information"""
-        return self._get('character', id, extension)
-
-    def person(self, id, extension=None):
-        """Gets person information"""
-        return self._get('person', id, extension)
-
-    def user_list(self, id, extension=None):
-        """Gets user list information"""
-        raise DeprecatedEndpoint('user_list is a deprecated endpoint')
-
-    def search(self, search_type, query, page=None, key=None, value=None):
-        """
-        Searches for a query on MyAnimeList
-
-        Keyword Arguments:
-        search_type -- where to search (anime, manga, person, character)
-        query -- query to search for
-        page -- page number of the results (default None)
-        key -- key for ?key=value URL query (default None)
-        value -- value for ?key=value URL query (default None)
-        """
+    def _get_search_url(self, search_type, query, page, key, value):
+        """Create URL for search endpoint"""
         url = self.search_base.format(search_type=search_type, query=query)
-        # Check if page and query are valid
         if page is not None:
             if not isinstance(page, int):
                 raise ClientException('The parameter \'page\' must be an integer')
@@ -109,38 +64,18 @@ class Jikan(object):
             elif isinstance(values, list) and value not in values:
                 raise ClientException('The value is not valid')
             url += '?' + key + '=' + value
-        # Get information from the API
-        response = session.get(url)
-        # Check if there's an error with the response
-        kwargs = {'search type': search_type, 'query': query}
-        self._check_response(response, **kwargs)
-        return response.json()
+        return url
 
-    def season(self, year, season):
-        """
-        Gets information on anime of the specific season
-
-        Keyword Arguments:
-        year -- year to get anime of
-        season -- season to get anime of (winter, spring, summer, fall)
-        """
+    def _get_season_url(self, year, season):
+        """Create URL for season endpoint"""
         url = self.season_base.format(year=year, season=season.lower())
         # Check if year and season are valid
         if not (isinstance(year, int) and season.lower() in SEASONS):
             raise ClientException('Season or year is not valid')
-        # Get information from the API
-        response = session.get(url)
-        # Check if there's an error with the response
-        self._check_response(response, year=year, season=season)
-        return response.json()
+        return url
 
-    def schedule(self, day=None):
-        """
-        Gets anime scheduled for the specific day
-
-        Keyword Arguments:
-        day -- day to get anime of (default None)
-        """
+    def _get_schedule_url(self, day):
+        """Create URL for schedule endpoint"""
         url = self.schedule_base
         # Check if day is valid
         if day is not None:
@@ -148,21 +83,10 @@ class Jikan(object):
                 raise ClientException('Day is not valid')
             else:
                 url += '/' + day.lower()
-        # Get information from the API
-        response = session.get(url)
-        # Check if there's an error with the response
-        self._check_response(response, day=day)
-        return response.json()
+        return url
 
-    def top(self, type, page=None, subtype=None):
-        """
-        Gets top items on MyAnimeList
-
-        Keyword Arguments:
-        type -- type to get top items from (anime, manga)
-        page -- page number of the results (default None)
-        subtype -- subtype to get filtered top items, possible values in docs
-        """
+    def _get_top_url(self, type, page, subtype):
+        """Create URL for top endpoint"""
         url = self.top_base.format(type=type.lower())
         # Check if type is valid
         if type.lower() not in SUBTYPES:
@@ -177,12 +101,105 @@ class Jikan(object):
             if subtype.lower() not in SUBTYPES[type.lower()]:
                 raise ClientException('Subtype is not valid for ' + type)
             url += '/' + subtype.lower()
-        # Get information from the API
-        response = session.get(url)
-        # Check if there's an error with the response
-        self._check_response(response, type=type)
-        return response.json()
+        return url
 
+    def _get_meta_url(self, request, type, period):
+        """Create URL for meta endpoint"""
+        url = self.meta_base.format(request=request, type=type, period=period)
+        # Check if request is valid
+        if request not in META['request']:
+            raise ClientException('Request must be \'requests\' or \'status\'')
+        if type not in META['type']:
+            raise ClientException('Type is not valid')
+        if period not in META['period']:
+            raise ClientException('Period must be \'today\', \'weekly\', or \'monthly\'')
+        return url
+
+    @abstractmethod
+    def _get(self, endpoint, id, extension, page=None):
+        """
+        Gets the response from Jikan API given the endpoint
+
+        Keyword Arguments:
+        endpoint -- endpoint of API (anime, manga, character, person)
+        id -- id of what to get the information of
+        extension -- special information to get, possible values in the docs
+        page -- page number of the results (default None)
+        """
+        pass
+
+    @abstractmethod
+    def anime(self, id, extension=None, page=None):
+        """Gets anime information"""
+        pass
+
+    @abstractmethod
+    def manga(self, id, extension=None):
+        """Gets manga information"""
+        pass
+
+    @abstractmethod
+    def character(self, id, extension=None):
+        """Gets character information"""
+        pass
+
+    @abstractmethod
+    def person(self, id, extension=None):
+        """Gets person information"""
+        pass
+
+    def user_list(self, id, extension=None):
+        """Gets user list information"""
+        raise DeprecatedEndpoint('user_list is a deprecated endpoint')
+
+    @abstractmethod
+    def search(self, search_type, query, page=None, key=None, value=None):
+        """
+        Searches for a query on MyAnimeList
+
+        Keyword Arguments:
+        search_type -- where to search (anime, manga, person, character)
+        query -- query to search for
+        page -- page number of the results (default None)
+        key -- key for ?key=value URL query (default None)
+        value -- value for ?key=value URL query (default None)
+        """
+        pass
+
+    @abstractmethod
+    def season(self, year, season):
+        """
+        Gets information on anime of the specific season
+
+        Keyword Arguments:
+        year -- year to get anime of
+        season -- season to get anime of (winter, spring, summer, fall)
+        """
+        pass
+
+    @abstractmethod
+    def schedule(self, day=None):
+        """
+        Gets anime scheduled for the specific day
+
+        Keyword Arguments:
+        day -- day to get anime of (default None)
+        """
+        pass
+
+    @abstractmethod
+    def top(self, type, page=None, subtype=None):
+        """
+        Gets top items on MyAnimeList
+
+        Keyword Arguments:
+        type -- type to get top items from (anime, manga)
+        page -- page number of the results (default None)
+        subtype -- subtype to get filtered top items, possible values in docs
+        """
+        pass
+
+    @abstractmethod
     def meta(self, request, type, period):
         """
         Gets meta information regarding the Jikan REST API
@@ -192,14 +209,71 @@ class Jikan(object):
         type -- type to get info on, possible values in docs
         period -- time period (today, weekly, monthly)
         """
-        url = self.meta_base.format(request=request, type=type, period=period)
-        # Check if request is valid
-        if request not in META['request']:
-            raise ClientException('Request must be \'requests\' or \'status\'')
-        if type not in META['type']:
-            raise ClientException('Type is not valid')
-        if period not in META['period']:
-            raise ClientException('Period must be \'today\', \'weekly\', or \'monthly\'')
+        pass
+
+
+class Jikan(AbstractJikan):
+    """
+    Synchronous wrapper for calls to the jikan.me unofficial MyAnimeList API.
+
+    Note that the API has a daily limit of 5000 calls; this module does not
+    make any effort to prevent abuse of that limit, so use it responsibly.
+    """
+    def _get(self, endpoint, id, extension, page=None):
+        url = self._get_url(endpoint, id, extension, page)
+        # Get information from the API
+        response = session.get(url)
+        # Check if there's an error with the response
+        self._check_response(response, id=id, endpoint=endpoint)
+        return response.json()
+
+    def anime(self, id, extension=None, page=None):
+        return self._get('anime', id, extension, page)
+
+    def manga(self, id, extension=None):
+        return self._get('manga', id, extension)
+
+    def character(self, id, extension=None):
+        return self._get('character', id, extension)
+
+    def person(self, id, extension=None):
+        return self._get('person', id, extension)
+
+    def search(self, search_type, query, page=None, key=None, value=None):
+        url = self._get_search_url(search_type, query, page, key, value)
+        # Get information from the API
+        response = session.get(url)
+        # Check if there's an error with the response
+        kwargs = {'search type': search_type, 'query': query}
+        self._check_response(response, **kwargs)
+        return response.json()
+
+    def season(self, year, season):
+        url = self._get_season_url(year, season)
+        # Get information from the API
+        response = session.get(url)
+        # Check if there's an error with the response
+        self._check_response(response, year=year, season=season)
+        return response.json()
+
+    def schedule(self, day=None):
+        url = self._get_schedule_url(day)
+        # Get information from the API
+        response = session.get(url)
+        # Check if there's an error with the response
+        self._check_response(response, day=day)
+        return response.json()
+
+    def top(self, type, page=None, subtype=None):
+        url = self._get_top_url(type, page, subtype)
+        # Get information from the API
+        response = session.get(url)
+        # Check if there's an error with the response
+        self._check_response(response, type=type)
+        return response.json()
+
+    def meta(self, request, type, period):
+        url = self._get_meta_url(request, type, period)
         # Get information from the API
         response = session.get(url)
         # Check if there's an error with the response
