@@ -1,7 +1,8 @@
 import pytest
-import vcr
 
-from jikanpy.jikan import Jikan
+import asyncio
+
+from jikanpy.aiojikan import AioJikan
 from jikanpy.exceptions import APIException, ClientException
 
 MUSHISHI_ID = 457
@@ -82,120 +83,135 @@ def top_anime_keys():
 
 
 @pytest.fixture
-def jikan():
-    return Jikan()
+def aio_jikan(event_loop):
+    return AioJikan(loop=event_loop)
 
 
-@vcr.use_cassette('tests/vcr_cassettes/anime-success.yaml')
-def test_anime_success(anime_keys, jikan):
-    anime_info = jikan.anime(MUSHISHI_ID)
+@pytest.mark.asyncio
+def test_anime_success(anime_keys, aio_jikan):
+    anime_info = yield from aio_jikan.anime(MUSHISHI_ID)
 
     assert isinstance(anime_info, dict)
     assert anime_info['title'] == 'Mushishi'
     assert anime_keys.issubset(anime_info.keys())
+    aio_jikan.close()
 
 
-@vcr.use_cassette('tests/vcr_cassettes/manga-success.yaml')
-def test_manga_success(manga_keys, jikan):
-    manga_info = jikan.manga(FULLMETAL_ID)
+@pytest.mark.asyncio
+def test_manga_success(manga_keys, aio_jikan):
+    manga_info = yield from aio_jikan.manga(FULLMETAL_ID)
 
     assert isinstance(manga_info, dict)
     assert manga_info['title'] == 'Fullmetal Alchemist'
     assert manga_keys.issubset(manga_info.keys())
+    aio_jikan.close()
 
 
-@vcr.use_cassette('tests/vcr_cassettes/character-success.yaml')
-def test_character_success(character_keys, jikan):
-    character_info = jikan.character(GINKO_ID)
+@pytest.mark.asyncio
+def test_character_success(character_keys, aio_jikan):
+    character_info = yield from aio_jikan.character(GINKO_ID)
 
     assert isinstance(character_info, dict)
     assert character_info['name'] == 'Ginko'
     assert character_keys.issubset(character_info.keys())
+    aio_jikan.close()
 
 
-@vcr.use_cassette('tests/vcr_cassettes/search-success.yaml')
-def test_search_success(search_keys, jikan):
-    search_info = jikan.search(search_type='anime', query='naruto')
+@pytest.mark.asyncio
+def test_search_success(search_keys, aio_jikan):
+    search_info = yield from aio_jikan.search(search_type='anime', query='naruto')
 
     assert isinstance(search_info, dict)
     assert search_keys.issubset(search_info.keys())
+    aio_jikan.close()
 
 
-@vcr.use_cassette('tests/vcr_cassettes/season-success.yaml')
-def test_season_success(season_keys, seasonal_anime_keys, jikan):
-    season_info = jikan.season(year=YEAR, season=SEASON)
+@pytest.mark.asyncio
+def test_season_success(season_keys, seasonal_anime_keys, aio_jikan):
+    season_info = yield from aio_jikan.season(year=YEAR, season=SEASON)
 
     assert isinstance(season_info, dict)
     assert season_keys.issubset(season_info.keys())
     for anime in season_info['season']:
         assert seasonal_anime_keys.issubset(anime.keys())
+    aio_jikan.close()
 
 
-@vcr.use_cassette('tests/vcr_cassettes/schedule-success.yaml')
-def test_schedule_success(schedule_keys, schedule_anime_keys, jikan):
-    schedule_info = jikan.schedule(day=DAY)
+@pytest.mark.asyncio
+def test_schedule_success(schedule_keys, schedule_anime_keys, aio_jikan):
+    schedule_info = yield from aio_jikan.schedule(day=DAY)
 
     assert isinstance(schedule_info, dict)
     assert schedule_keys.issubset(schedule_info.keys())
     assert DAY.lower() in schedule_info
     for anime in schedule_info[DAY]:
         assert schedule_anime_keys.issubset(anime.keys())
+    aio_jikan.close()
 
 
-@vcr.use_cassette('tests/vcr_cassettes/top-success.yaml')
-def test_top_success(top_keys, top_anime_keys, jikan):
-    top_info = jikan.top(type=TYPE)
+@pytest.mark.asyncio
+def test_top_success(top_keys, top_anime_keys, aio_jikan):
+    top_info = yield from aio_jikan.top(type=TYPE)
 
     assert isinstance(top_info, dict)
     assert top_keys.issubset(top_info.keys())
     for anime in top_info['top']:
         assert top_anime_keys.issubset(anime.keys())
+    aio_jikan.close()
 
 
-@vcr.use_cassette('tests/vcr_cassettes/meta-success.yaml')
-def test_meta_success(jikan):
-    meta_info = jikan.meta(request='requests', type='anime', period='today')
+@pytest.mark.asyncio
+def test_meta_success(aio_jikan):
+    meta_info = yield from aio_jikan.meta(request='requests', type='anime', period='today')
 
     assert isinstance(meta_info, dict)
+    aio_jikan.close()
 
 
-@vcr.use_cassette('tests/vcr_cassettes/anime-failure.yaml')
-def test_anime_failure(jikan):
+@pytest.mark.asyncio
+def test_anime_failure(aio_jikan):
     with pytest.raises(APIException):
-        jikan.anime(-1)
+        yield from aio_jikan.anime(-1)
+    aio_jikan.close()
 
 
-@vcr.use_cassette('tests/vcr_cassettes/manga-failure.yaml')
-def test_manga_failure(jikan):
+@pytest.mark.asyncio
+def test_manga_failure(aio_jikan):
     with pytest.raises(APIException):
-        jikan.manga(-1)
+        yield from aio_jikan.manga(-1)
+    aio_jikan.close()
 
 
-@vcr.use_cassette('tests/vcr_cassettes/character-failure.yaml')
-def test_character_failure(jikan):
+@pytest.mark.asyncio
+def test_character_failure(aio_jikan):
     with pytest.raises(APIException):
-        jikan.character(-1)
+        yield from aio_jikan.character(-1)
+    aio_jikan.close()
 
 
-@vcr.use_cassette('tests/vcr_cassettes/season-failure.yaml')
-def test_season_failure(jikan):
+@pytest.mark.asyncio
+def test_season_failure(aio_jikan):
     with pytest.raises(APIException):
-        jikan.season(year=-1, season=SEASON)
+        yield from aio_jikan.season(year=-1, season=SEASON)
+    aio_jikan.close()
 
 
-@vcr.use_cassette('tests/vcr_cassettes/schedule-failure.yaml')
-def test_schedule_failure(jikan):
+@pytest.mark.asyncio
+def test_schedule_failure(aio_jikan):
     with pytest.raises(ClientException):
-        jikan.schedule(day='x')
+        yield from aio_jikan.schedule(day='x')
+    aio_jikan.close()
 
 
-@vcr.use_cassette('tests/vcr_cassettes/top-failure.yaml')
-def test_top_failure(jikan):
+@pytest.mark.asyncio
+def test_top_failure(aio_jikan):
     with pytest.raises(ClientException):
-        jikan.top(type='x')
+        yield from aio_jikan.top(type='x')
+    aio_jikan.close()
 
 
-@vcr.use_cassette('tests/vcr_cassettes/meta-failure.yaml')
-def test_meta_failure(jikan):
+@pytest.mark.asyncio
+def test_meta_failure(aio_jikan):
     with pytest.raises(ClientException):
-        jikan.meta(request='x', type='x', period='x')
+        yield from aio_jikan.meta(request='x', type='x', period='x')
+    aio_jikan.close()

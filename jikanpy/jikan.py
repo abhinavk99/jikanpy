@@ -1,15 +1,20 @@
-import json
 from abc import ABC, abstractmethod
 
 from jikanpy import session
 from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
-from jikanpy.parameters import EXTENSIONS, SEARCH_PARAMS, SEASONS, DAYS, SUBTYPES, META
+from jikanpy.parameters import *
 
 BASE_URL = 'http://api.jikan.moe/'
 BASE_URL_SSL = 'https://api.jikan.moe/'
 
+
 class AbstractJikan(ABC):
-    """Abstract base class for Jikan and JikanAsync"""
+    """
+    Base class for wrapper for calls to the jikan.moe unofficial MyAnimeList API.
+
+    Note that the API has a daily limit of 5000 calls; this module does not
+    make any effort to prevent abuse of that limit, so use it responsibly.
+    """
     def __init__(self, use_ssl=True):
         selected_base = BASE_URL_SSL if use_ssl else BASE_URL
         self.base = selected_base + '{endpoint}/{id}'
@@ -213,12 +218,7 @@ class AbstractJikan(ABC):
 
 
 class Jikan(AbstractJikan):
-    """
-    Synchronous wrapper for calls to the jikan.me unofficial MyAnimeList API.
-
-    Note that the API has a daily limit of 5000 calls; this module does not
-    make any effort to prevent abuse of that limit, so use it responsibly.
-    """
+    """Synchronous Jikan wrapper"""
     def _get(self, endpoint, id, extension, page=None):
         url = self._get_url(endpoint, id, extension, page)
         # Get information from the API
