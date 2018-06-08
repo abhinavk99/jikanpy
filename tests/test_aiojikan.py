@@ -5,13 +5,7 @@ import asyncio
 from jikanpy.aiojikan import AioJikan
 from jikanpy.exceptions import APIException, ClientException
 
-MUSHISHI_ID = 457
-FULLMETAL_ID = 25
-GINKO_ID = 425
-YEAR = 2018
-SEASON = 'winter'
-DAY = 'monday'
-TYPE = 'anime'
+from constants import *
 
 
 @pytest.fixture

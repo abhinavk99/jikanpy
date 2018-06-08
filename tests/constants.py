@@ -1,0 +1,7 @@
+MUSHISHI_ID = 457
+FULLMETAL_ID = 25
+GINKO_ID = 425
+YEAR = 2018
+SEASON = 'winter'
+DAY = 'monday'
+TYPE = 'anime'
