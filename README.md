@@ -115,3 +115,9 @@ async def main(loop):
 
 loop.run_until_complete(main(loop))
 ```
+
+### Testing
+```shell
+# In root of repository
+$ python -m pytest
+```
