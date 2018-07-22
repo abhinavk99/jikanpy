@@ -50,7 +50,7 @@ class AbstractJikan(ABC):
                 raise ClientException('The extension is not valid')
             url += '/' + extension
             if extension == 'episodes' and isinstance(page, int):
-                url += '/' + page
+                url += '/' + str(page)
         return url
 
     def _get_search_url(self, search_type, query, page, key, value):
@@ -59,7 +59,7 @@ class AbstractJikan(ABC):
         if page is not None:
             if not isinstance(page, int):
                 raise ClientException('The parameter \'page\' must be an integer')
-            url += '/' + page
+            url += '/' + str(page)
         if key is not None:
             if value is None:
                 raise ClientException('You need to pass a value with the key')
@@ -100,7 +100,7 @@ class AbstractJikan(ABC):
         if page is not None:
             if not isinstance(page, int):
                 raise ClientException('The parameter \'page\' must be an integer')
-            url += '/' + page
+            url += '/' + str(page)
         # Check if subtype is valid
         if subtype is not None:
             if subtype.lower() not in SUBTYPES[type.lower()]:
