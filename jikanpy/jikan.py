@@ -4,16 +4,17 @@ from jikanpy import session
 from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
 from jikanpy.parameters import *
 
-BASE_URL = 'http://api.jikan.moe/'
-BASE_URL_SSL = 'https://api.jikan.moe/'
+BASE_URL = 'http://api.jikan.moe/v3'
+BASE_URL_SSL = 'https://api.jikan.moe/v3'
 
 
 class AbstractJikan(ABC):
     """
     Base class for wrapper for calls to the jikan.moe unofficial MyAnimeList API.
 
-    Note that the API has a daily limit of 5000 calls; this module does not
-    make any effort to prevent abuse of that limit, so use it responsibly.
+    Note that the API has a limit of 30 requests/minute and 2 requests/second;
+    this module does not make any effort to prevent abuse of that limit,
+    so use it responsibly.
     """
     def __init__(self, use_ssl=True):
         selected_base = BASE_URL_SSL if use_ssl else BASE_URL
@@ -23,6 +24,10 @@ class AbstractJikan(ABC):
         self.schedule_base = selected_base + 'schedule'
         self.top_base = selected_base + 'top/{type}'
         self.meta_base = selected_base + 'meta/{request}/{type}/{period}'
+        self.genre_base = selected_base + 'genre/{type}/{genre_id}'
+        self.producer_base = selected_base + 'producer/{producer_id}'
+        self.magazine_base = selected_base + 'magazine/{magazine_id}'
+        self.user_base = selected_base + 'user/{username}/{request}'
         super().__init__()
 
     def _check_response(self, response, **kwargs):
@@ -203,6 +208,51 @@ class AbstractJikan(ABC):
         subtype -- subtype to get filtered top items, possible values in docs
         """
         pass
+
+    @abstractmethod
+    def genre(self, type, genre_id, page=None):
+        """
+        Gets anime or manga by genre
+
+        Keyword Arguments:
+        type -- type to get items from (anime, manga)
+        genre_id -- genre ID from MyAnimeList
+        page -- page number of the results (default None)
+        """
+        pass
+
+    @abstractmethod
+    def producer(self, producer_id, page=None):
+        """
+        Gets anime by the producer/studio/licensor
+
+        Keyword Arguments:
+        producer_id -- producer ID from MyAnimeList
+        page -- page number of the results (default None)
+        """
+        pass
+
+    @abstractmethod
+    def magazine(self, magazine_id, page=None):
+        """
+        Gets manga by the magazine/serializer/publisher
+
+        Keyword Arguments:
+        magazine_id -- magazine ID from MyAnimeList
+        page -- page number of the results (default None)
+        """
+        pass
+
+    @abstractmethod
+    def user(self, username, request, argument=None):
+        """
+        Gets user data
+
+        Keyword Arguments:
+        username -- MyAnimeList username
+        request -- type of data to get (profile, history, friends)
+        argument -- data for history (anime, manga) or page number for friends
+        """
 
     @abstractmethod
     def meta(self, request, type, period):
