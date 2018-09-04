@@ -4,8 +4,8 @@ from jikanpy import session
 from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
 from jikanpy.parameters import *
 
-BASE_URL = 'http://api.jikan.moe/v3'
-BASE_URL_SSL = 'https://api.jikan.moe/v3'
+BASE_URL = 'http://api.jikan.moe/v3/'
+BASE_URL_SSL = 'https://api.jikan.moe/v3/'
 
 
 class AbstractJikan(ABC):
@@ -19,15 +19,14 @@ class AbstractJikan(ABC):
     def __init__(self, use_ssl=True):
         selected_base = BASE_URL_SSL if use_ssl else BASE_URL
         self.base = selected_base + '{endpoint}/{id}'
-        self.search_base = selected_base + 'search/{search_type}/{query}'
+        self.search_base = selected_base + 'search/{search_type}?q={query}'
         self.season_base = selected_base + 'season/{year}/{season}'
         self.schedule_base = selected_base + 'schedule'
         self.top_base = selected_base + 'top/{type}'
         self.meta_base = selected_base + 'meta/{request}/{type}/{period}'
         self.genre_base = selected_base + 'genre/{type}/{genre_id}'
-        self.producer_base = selected_base + 'producer/{producer_id}'
-        self.magazine_base = selected_base + 'magazine/{magazine_id}'
-        self.user_base = selected_base + 'user/{username}/{request}'
+        self.creator_base = selected_base + '{creator_type}/{creator_id}'
+        self.user_base = selected_base + 'user/{username}'
         super().__init__()
 
     def _check_response(self, response, **kwargs):
@@ -43,7 +42,8 @@ class AbstractJikan(ABC):
                 response.status_code,
                 response.json().get('error')
             )
-            err_str += ', '.join('='.join((str(k), str(v))) for k, v in kwargs.items())
+            err_str += ', '.join('='.join((str(k), str(v)))
+                                 for k, v in kwargs.items())
             raise APIException(err_str)
 
     def _get_url(self, endpoint, id, extension, page):
@@ -61,10 +61,7 @@ class AbstractJikan(ABC):
     def _get_search_url(self, search_type, query, page, key, value):
         """Create URL for search endpoint"""
         url = self.search_base.format(search_type=search_type, query=query)
-        if page is not None:
-            if not isinstance(page, int):
-                raise ClientException('The parameter \'page\' must be an integer')
-            url += '/' + str(page)
+        url = self._add_page_to_url(url, page, delimiter='&page=')
         if key is not None:
             if value is None:
                 raise ClientException('You need to pass a value with the key')
@@ -101,16 +98,55 @@ class AbstractJikan(ABC):
         # Check if type is valid
         if type.lower() not in SUBTYPES:
             raise ClientException('Type must be anime or manga')
-        # Check if page is valid
-        if page is not None:
-            if not isinstance(page, int):
-                raise ClientException('The parameter \'page\' must be an integer')
-            url += '/' + str(page)
+        url = self._add_page_to_url(url, page)
         # Check if subtype is valid
         if subtype is not None:
             if subtype.lower() not in SUBTYPES[type.lower()]:
                 raise ClientException('Subtype is not valid for ' + type)
             url += '/' + subtype.lower()
+        return url
+
+    def _get_genre_url(self, type, genre_id, page):
+        """Create URL for genre endpoint"""
+        url = self.genre_base.format(type=type.lower(), genre_id=genre_id)
+        # Check if type is valid
+        if type.lower() not in GENRE_TYPES:
+            raise ClientException('Type must be anime or manga')
+        if not isinstance(genre_id, int):
+            raise ClientException('ID must be an integer')
+        url = self._add_page_to_url(url, page)
+        return url
+
+    def _get_creator_url(self, creator_type, creator_id, page):
+        """Create URL for producer and magazine endpoints"""
+        url = self.creator_base.format(creator_type=creator_type.lower(),
+                                       creator_id=creator_id)
+        # Check if type is valid
+        if creator_type.lower() not in CREATOR_TYPES:
+            raise ClientException('Type must be producer or magazine')
+        if not isinstance(creator_id, int):
+            raise ClientException('ID must be an integer')
+        url = self._add_page_to_url(url, page)
+        return url
+
+    def _get_user_url(self, username, request, argument):
+        """Create URL for user endpoint"""
+        url = self.user_base.format(username=username.lower())
+        if request is not None:
+            if request not in USER_REQUESTS:
+                raise ClientException('Invalid request for user endpoint')
+            url += '/' + request
+            if request.lower() == 'profile' and argument is not None:
+                raise ClientException(
+                    'No argument should be given for profile request')
+            if argument is not None:
+                if request.lower() == 'history' and argument.lower() not in USER_HISTORY_ARGUMENTS:
+                    raise ClientException(
+                        'Argument for history request should be anime or manga')
+                if request.lower() == 'friends' and not isinstance(argument, int):
+                    raise ClientException(
+                        'Argument for friends request must be a page number integer')
+                url += '/' + str(argument)
         return url
 
     def _get_meta_url(self, request, type, period):
@@ -122,7 +158,17 @@ class AbstractJikan(ABC):
         if type not in META['type']:
             raise ClientException('Type is not valid')
         if period not in META['period']:
-            raise ClientException('Period must be \'today\', \'weekly\', or \'monthly\'')
+            raise ClientException(
+                'Period must be \'today\', \'weekly\', or \'monthly\'')
+        return url
+
+    def _add_page_to_url(self, url, page, delimiter='/'):
+        """Add page to URL if it exists and is valid"""
+        if page is not None:
+            if not isinstance(page, int):
+                raise ClientException(
+                    'The parameter \'page\' must be an integer')
+            url += delimiter + str(page)
         return url
 
     @abstractmethod
@@ -139,24 +185,21 @@ class AbstractJikan(ABC):
         pass
 
     @abstractmethod
+    def _get_creator(self, creator_type, creator_id, page=None):
+        """Gets the response from Jikan API for producer and magazine"""
+        pass
+
     def anime(self, id, extension=None, page=None):
-        """Gets anime information"""
-        pass
+        return self._get('anime', id, extension, page)
 
-    @abstractmethod
     def manga(self, id, extension=None):
-        """Gets manga information"""
-        pass
+        return self._get('manga', id, extension)
 
-    @abstractmethod
     def character(self, id, extension=None):
-        """Gets character information"""
-        pass
+        return self._get('character', id, extension)
 
-    @abstractmethod
     def person(self, id, extension=None):
-        """Gets person information"""
-        pass
+        return self._get('person', id, extension)
 
     def user_list(self, id, extension=None):
         """Gets user list information"""
@@ -221,7 +264,6 @@ class AbstractJikan(ABC):
         """
         pass
 
-    @abstractmethod
     def producer(self, producer_id, page=None):
         """
         Gets anime by the producer/studio/licensor
@@ -230,9 +272,8 @@ class AbstractJikan(ABC):
         producer_id -- producer ID from MyAnimeList
         page -- page number of the results (default None)
         """
-        pass
+        return self._get_creator('producer', producer_id, page)
 
-    @abstractmethod
     def magazine(self, magazine_id, page=None):
         """
         Gets manga by the magazine/serializer/publisher
@@ -241,7 +282,7 @@ class AbstractJikan(ABC):
         magazine_id -- magazine ID from MyAnimeList
         page -- page number of the results (default None)
         """
-        pass
+        return self._get_creator('magazine', magazine_id, page)
 
     @abstractmethod
     def user(self, username, request, argument=None):
@@ -253,6 +294,7 @@ class AbstractJikan(ABC):
         request -- type of data to get (profile, history, friends)
         argument -- data for history (anime, manga) or page number for friends
         """
+        pass
 
     @abstractmethod
     def meta(self, request, type, period):
@@ -271,61 +313,56 @@ class Jikan(AbstractJikan):
     """Synchronous Jikan wrapper"""
     def _get(self, endpoint, id, extension, page=None):
         url = self._get_url(endpoint, id, extension, page)
-        # Get information from the API
         response = session.get(url)
-        # Check if there's an error with the response
         self._check_response(response, id=id, endpoint=endpoint)
         return response.json()
 
-    def anime(self, id, extension=None, page=None):
-        return self._get('anime', id, extension, page)
-
-    def manga(self, id, extension=None):
-        return self._get('manga', id, extension)
-
-    def character(self, id, extension=None):
-        return self._get('character', id, extension)
-
-    def person(self, id, extension=None):
-        return self._get('person', id, extension)
+    def _get_creator(self, creator_type, creator_id, page=None):
+        url = self._get_creator_url(creator_type, creator_id, page)
+        response = session.get(url)
+        self._check_response(response, id=creator_id, endpoint=creator_type)
+        return response.json()
 
     def search(self, search_type, query, page=None, key=None, value=None):
         url = self._get_search_url(search_type, query, page, key, value)
-        # Get information from the API
         response = session.get(url)
-        # Check if there's an error with the response
         kwargs = {'search type': search_type, 'query': query}
         self._check_response(response, **kwargs)
         return response.json()
 
     def season(self, year, season):
         url = self._get_season_url(year, season)
-        # Get information from the API
         response = session.get(url)
-        # Check if there's an error with the response
         self._check_response(response, year=year, season=season)
         return response.json()
 
     def schedule(self, day=None):
         url = self._get_schedule_url(day)
-        # Get information from the API
         response = session.get(url)
-        # Check if there's an error with the response
         self._check_response(response, day=day)
         return response.json()
 
     def top(self, type, page=None, subtype=None):
         url = self._get_top_url(type, page, subtype)
-        # Get information from the API
         response = session.get(url)
-        # Check if there's an error with the response
         self._check_response(response, type=type)
+        return response.json()
+
+    def genre(self, type, genre_id, page=None):
+        url = self._get_genre_url(type, genre_id, page)
+        response = session.get(url)
+        self._check_response(response, id=genre_id, type=type)
+        return response.json()
+
+    def user(self, username, request=None, argument=None):
+        url = self._get_user_url(username, request, argument)
+        response = session.get(url)
+        self._check_response(response, username=username, request=request)
         return response.json()
 
     def meta(self, request, type, period):
         url = self._get_meta_url(request, type, period)
-        # Get information from the API
         response = session.get(url)
-        # Check if there's an error with the response
-        self._check_response(response, request=request, type=type, period=period)
+        self._check_response(response, request=request,
+                             type=type, period=period)
         return response.json()

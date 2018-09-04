@@ -28,31 +28,23 @@ class AioJikan(AbstractJikan):
     @asyncio.coroutine
     def _get(self, endpoint, id, extension, page=None):
         url = self._get_url(endpoint, id, extension, page)
-        # Get information from the API
         response = yield from self.session.get(url)
-        # Check if there's an error with the response
         yield from self._check_response(response, id=id, endpoint=endpoint)
         json = yield from response.json()
         return json
 
-    def anime(self, id, extension=None, page=None):
-        return self._get('anime', id, extension, page)
-
-    def manga(self, id, extension=None):
-        return self._get('manga', id, extension)
-
-    def character(self, id, extension=None):
-        return self._get('character', id, extension)
-
-    def person(self, id, extension=None):
-        return self._get('person', id, extension)
+    @asyncio.coroutine
+    def _get_creator(self, creator_type, creator_id, page=None):
+        url = self._get_creator_url(creator_type, creator_id, page)
+        response = yield from self.session.get(url)
+        yield from self._check_response(response, id=creator_id, endpoint=creator_type)
+        json = yield from response.json()
+        return json
 
     @asyncio.coroutine
     def search(self, search_type, query, page=None, key=None, value=None):
         url = self._get_search_url(search_type, query, page, key, value)
-        # Get information from the API
         response = yield from self.session.get(url)
-        # Check if there's an error with the response
         kwargs = {'search type': search_type, 'query': query}
         yield from self._check_response(response, **kwargs)
         json = yield from response.json()
@@ -61,9 +53,7 @@ class AioJikan(AbstractJikan):
     @asyncio.coroutine
     def season(self, year, season):
         url = self._get_season_url(year, season)
-        # Get information from the API
         response = yield from self.session.get(url)
-        # Check if there's an error with the response
         yield from self._check_response(response, year=year, season=season)
         json = yield from response.json()
         return json
@@ -71,9 +61,7 @@ class AioJikan(AbstractJikan):
     @asyncio.coroutine
     def schedule(self, day=None):
         url = self._get_schedule_url(day)
-        # Get information from the API
         response = yield from self.session.get(url)
-        # Check if there's an error with the response
         yield from self._check_response(response, day=day)
         json = yield from response.json()
         return json
@@ -81,19 +69,31 @@ class AioJikan(AbstractJikan):
     @asyncio.coroutine
     def top(self, type, page=None, subtype=None):
         url = self._get_top_url(type, page, subtype)
-        # Get information from the API
         response = yield from self.session.get(url)
-        # Check if there's an error with the response
         yield from self._check_response(response, type=type)
+        json = yield from response.json()
+        return json
+
+    @asyncio.coroutine
+    def genre(self, type, genre_id, page=None):
+        url = self._get_genre_url(type, genre_id, page)
+        response = yield from self.session.get(url)
+        yield from self._check_response(response, id=genre_id, type=type)
+        json = yield from response.json()
+        return json
+
+    @asyncio.coroutine
+    def user(self, username, request=None, argument=None):
+        url = self._get_user_url(username, request, argument)
+        response = yield from self.session.get(url)
+        yield from self._check_response(response, username=username, request=request)
         json = yield from response.json()
         return json
 
     @asyncio.coroutine
     def meta(self, request, type, period):
         url = self._get_meta_url(request, type, period)
-        # Get information from the API
         response = yield from self.session.get(url)
-        # Check if there's an error with the response
         yield from self._check_response(response, request=request, type=type, period=period)
         json = yield from response.json()
         return json

@@ -102,6 +102,18 @@ SUBTYPES = {
     )
 }
 
+# Possible types for genre
+GENRE_TYPES = ('anime', 'manga')
+
+# Possible creator types/endpoints
+CREATOR_TYPES = ('producer', 'magazine')
+
+# Possible requests for user endpoint
+USER_REQUESTS = ('profile', 'history', 'friends')
+
+# Possible arguments for history request in user endpoint
+USER_HISTORY_ARGUMENTS = ('anime', 'manga')
+
 # Possible parameters for meta
 META = {
     'request': (
