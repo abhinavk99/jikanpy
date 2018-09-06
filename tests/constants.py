@@ -5,3 +5,7 @@ YEAR = 2018
 SEASON = 'winter'
 DAY = 'monday'
 TYPE = 'anime'
+GENRE = 1
+PRODUCER = 37
+MAGAZINE = 83
+USERNAME = 'Nekomata1037'

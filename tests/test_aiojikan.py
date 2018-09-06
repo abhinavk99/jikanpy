@@ -6,78 +6,7 @@ from jikanpy.aiojikan import AioJikan
 from jikanpy.exceptions import APIException, ClientException
 
 from constants import *
-
-
-@pytest.fixture
-def anime_keys():
-    return {'request_hash', 'request_cached', 'request_cache_expiry', 'mal_id',
-            'url', 'image_url', 'trailer_url', 'title', 'title_english',
-            'title_japanese', 'title_synonyms', 'type', 'source', 'episodes',
-            'status', 'airing', 'aired', 'duration', 'rating', 'score',
-            'scored_by', 'rank', 'popularity', 'members', 'favorites',
-            'synopsis', 'background', 'premiered', 'broadcast', 'related',
-            'producers', 'licensors', 'studios', 'genres', 'opening_themes',
-            'ending_themes'}
-
-
-@pytest.fixture
-def manga_keys():
-    return {'request_hash', 'request_cached', 'request_cache_expiry', 'mal_id',
-            'url', 'title', 'title_english', 'title_synonyms', 'title_japanese',
-            'status', 'image_url', 'type', 'volumes', 'chapters', 'publishing',
-            'published', 'rank', 'score', 'scored_by', 'popularity', 'members',
-            'favorites', 'synopsis', 'background', 'related', 'genres',
-            'authors', 'serializations'}
-
-
-@pytest.fixture
-def character_keys():
-    return {'request_hash', 'request_cached', 'request_cache_expiry', 'mal_id',
-            'url', 'name', 'name_kanji', 'nicknames', 'about',
-            'member_favorites', 'image_url', 'animeography', 'mangaography',
-            'voice_actors'}
-
-
-@pytest.fixture
-def search_keys():
-    return {'request_hash', 'request_cached', 'request_cache_expiry', 'results',
-            'last_page'}
-
-
-@pytest.fixture
-def season_keys():
-    return {'request_hash', 'request_cached', 'request_cache_expiry',
-            'season_name', 'season_year', 'anime'}
-
-
-@pytest.fixture
-def seasonal_anime_keys():
-    return {'mal_id', 'url', 'title', 'image_url', 'synopsis', 'type',
-            'airing_start', 'episodes', 'members', 'genres', 'source',
-            'producers', 'score', 'licensors', 'r18', 'kids', 'continuing'}
-
-
-@pytest.fixture
-def schedule_keys():
-    return {'request_hash', 'request_cached', 'request_cache_expiry', 'monday'}
-
-
-@pytest.fixture
-def schedule_anime_keys():
-    return {'mal_id', 'url', 'title', 'image_url', 'synopsis', 'type',
-            'airing_start', 'episodes', 'members', 'genres', 'source',
-            'producers', 'score', 'licensors', 'r18', 'kids'}
-
-
-@pytest.fixture
-def top_keys():
-    return {'request_hash', 'request_cached', 'request_cache_expiry', 'top'}
-
-
-@pytest.fixture
-def top_anime_keys():
-    return {'mal_id', 'rank', 'url', 'image_url', 'title', 'type', 'score',
-            'members', 'start_date', 'end_date', 'episodes'}
+from fixtures import *
 
 
 @pytest.fixture
@@ -136,14 +65,14 @@ def test_season_success(season_keys, seasonal_anime_keys, aio_jikan):
 
 
 @pytest.mark.asyncio
-def test_schedule_success(schedule_keys, schedule_anime_keys, aio_jikan):
+def test_schedule_success(schedule_keys, subset_anime_keys, aio_jikan):
     schedule_info = yield from aio_jikan.schedule(day=DAY)
 
     assert isinstance(schedule_info, dict)
     assert schedule_keys.issubset(schedule_info.keys())
     assert DAY.lower() in schedule_info
     for anime in schedule_info[DAY]:
-        assert schedule_anime_keys.issubset(anime.keys())
+        assert subset_anime_keys.issubset(anime.keys())
     aio_jikan.close()
 
 
@@ -155,6 +84,50 @@ def test_top_success(top_keys, top_anime_keys, aio_jikan):
     assert top_keys.issubset(top_info.keys())
     for anime in top_info['top']:
         assert top_anime_keys.issubset(anime.keys())
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
+def test_genre_success(genre_keys, subset_anime_keys, aio_jikan):
+    genre_info = yield from aio_jikan.genre(type=TYPE, genre_id=GENRE)
+
+    assert isinstance(genre_info, dict)
+    assert genre_keys.issubset(genre_info.keys())
+    for anime in genre_info['anime']:
+        assert subset_anime_keys.issubset(anime.keys())
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
+def test_producer_success(producer_keys, subset_anime_keys, aio_jikan):
+    producer_info = yield from aio_jikan.producer(producer_id=PRODUCER)
+
+    assert isinstance(producer_info, dict)
+    assert producer_keys.issubset(producer_info.keys())
+    for anime in producer_info['anime']:
+        assert subset_anime_keys.issubset(anime.keys())
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
+def test_magazine_success(magazine_keys, magazine_manga_keys, aio_jikan):
+    magazine_info = yield from aio_jikan.magazine(magazine_id=MAGAZINE)
+
+    assert isinstance(magazine_info, dict)
+    assert magazine_keys.issubset(magazine_info.keys())
+    for manga in magazine_info['manga']:
+        assert magazine_manga_keys.issubset(manga.keys())
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
+def test_user_success(user_keys, aio_jikan):
+    user_info = yield from aio_jikan.user(username=USERNAME)
+
+    assert isinstance(user_info, dict)
+    assert user_info['username'] == 'Nekomata1037'
+    assert user_info['gender'] == 'Male'
+    assert user_keys.issubset(user_info.keys())
     aio_jikan.close()
 
 
@@ -205,6 +178,34 @@ def test_schedule_failure(aio_jikan):
 def test_top_failure(aio_jikan):
     with pytest.raises(ClientException):
         yield from aio_jikan.top(type='x')
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
+def test_genre_failure(aio_jikan):
+    with pytest.raises(ClientException):
+        yield from aio_jikan.genre(type='x', genre_id=1)
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
+def test_producer_failure(aio_jikan):
+    with pytest.raises(ClientException):
+        yield from aio_jikan.producer(producer_id='producer')
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
+def test_magazine_failure(aio_jikan):
+    with pytest.raises(ClientException):
+        yield from aio_jikan.magazine(magazine_id='magazine')
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
+def test_user_failure(aio_jikan):
+    with pytest.raises(ClientException):
+        yield from aio_jikan.user(username='user', request='friends', argument='x')
     aio_jikan.close()
 
 

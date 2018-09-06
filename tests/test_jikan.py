@@ -5,78 +5,7 @@ from jikanpy.jikan import Jikan
 from jikanpy.exceptions import APIException, ClientException
 
 from constants import *
-
-
-@pytest.fixture
-def anime_keys():
-    return {'request_hash', 'request_cached', 'request_cache_expiry', 'mal_id',
-            'url', 'image_url', 'trailer_url', 'title', 'title_english',
-            'title_japanese', 'title_synonyms', 'type', 'source', 'episodes',
-            'status', 'airing', 'aired', 'duration', 'rating', 'score',
-            'scored_by', 'rank', 'popularity', 'members', 'favorites',
-            'synopsis', 'background', 'premiered', 'broadcast', 'related',
-            'producers', 'licensors', 'studios', 'genres', 'opening_themes',
-            'ending_themes'}
-
-
-@pytest.fixture
-def manga_keys():
-    return {'request_hash', 'request_cached', 'request_cache_expiry', 'mal_id',
-            'url', 'title', 'title_english', 'title_synonyms', 'title_japanese',
-            'status', 'image_url', 'type', 'volumes', 'chapters', 'publishing',
-            'published', 'rank', 'score', 'scored_by', 'popularity', 'members',
-            'favorites', 'synopsis', 'background', 'related', 'genres',
-            'authors', 'serializations'}
-
-
-@pytest.fixture
-def character_keys():
-    return {'request_hash', 'request_cached', 'request_cache_expiry', 'mal_id',
-            'url', 'name', 'name_kanji', 'nicknames', 'about',
-            'member_favorites', 'image_url', 'animeography', 'mangaography',
-            'voice_actors'}
-
-
-@pytest.fixture
-def search_keys():
-    return {'request_hash', 'request_cached', 'request_cache_expiry', 'results',
-            'last_page'}
-
-
-@pytest.fixture
-def season_keys():
-    return {'request_hash', 'request_cached', 'request_cache_expiry',
-            'season_name', 'season_year', 'anime'}
-
-
-@pytest.fixture
-def seasonal_anime_keys():
-    return {'mal_id', 'url', 'title', 'image_url', 'synopsis', 'type',
-            'airing_start', 'episodes', 'members', 'genres', 'source',
-            'producers', 'score', 'licensors', 'r18', 'kids', 'continuing'}
-
-
-@pytest.fixture
-def schedule_keys():
-    return {'request_hash', 'request_cached', 'request_cache_expiry', 'monday'}
-
-
-@pytest.fixture
-def schedule_anime_keys():
-    return {'mal_id', 'url', 'title', 'image_url', 'synopsis', 'type',
-            'airing_start', 'episodes', 'members', 'genres', 'source',
-            'producers', 'score', 'licensors', 'r18', 'kids'}
-
-
-@pytest.fixture
-def top_keys():
-    return {'request_hash', 'request_cached', 'request_cache_expiry', 'top'}
-
-
-@pytest.fixture
-def top_anime_keys():
-    return {'mal_id', 'rank', 'url', 'image_url', 'title', 'type', 'score',
-            'members', 'start_date', 'end_date', 'episodes'}
+from fixtures import *
 
 
 @pytest.fixture
@@ -130,14 +59,14 @@ def test_season_success(season_keys, seasonal_anime_keys, jikan):
 
 
 @vcr.use_cassette('tests/vcr_cassettes/schedule-success.yaml')
-def test_schedule_success(schedule_keys, schedule_anime_keys, jikan):
+def test_schedule_success(schedule_keys, subset_anime_keys, jikan):
     schedule_info = jikan.schedule(day=DAY)
 
     assert isinstance(schedule_info, dict)
     assert schedule_keys.issubset(schedule_info.keys())
     assert DAY.lower() in schedule_info
     for anime in schedule_info[DAY]:
-        assert schedule_anime_keys.issubset(anime.keys())
+        assert subset_anime_keys.issubset(anime.keys())
 
 
 @vcr.use_cassette('tests/vcr_cassettes/top-success.yaml')
@@ -148,6 +77,46 @@ def test_top_success(top_keys, top_anime_keys, jikan):
     assert top_keys.issubset(top_info.keys())
     for anime in top_info['top']:
         assert top_anime_keys.issubset(anime.keys())
+
+
+@vcr.use_cassette('tests/vcr_cassettes/genre-success.yaml')
+def test_genre_success(genre_keys, subset_anime_keys, jikan):
+    genre_info = jikan.genre(type=TYPE, genre_id=GENRE)
+
+    assert isinstance(genre_info, dict)
+    assert genre_keys.issubset(genre_info.keys())
+    for anime in genre_info['anime']:
+        assert subset_anime_keys.issubset(anime.keys())
+
+
+@vcr.use_cassette('tests/vcr_cassettes/producer-success.yaml')
+def test_producer_success(producer_keys, subset_anime_keys, jikan):
+    producer_info = jikan.producer(producer_id=PRODUCER)
+
+    assert isinstance(producer_info, dict)
+    assert producer_keys.issubset(producer_info.keys())
+    for anime in producer_info['anime']:
+        assert subset_anime_keys.issubset(anime.keys())
+
+
+@vcr.use_cassette('tests/vcr_cassettes/magazine-success.yaml')
+def test_magazine_success(magazine_keys, magazine_manga_keys, jikan):
+    magazine_info = jikan.magazine(magazine_id=MAGAZINE)
+
+    assert isinstance(magazine_info, dict)
+    assert magazine_keys.issubset(magazine_info.keys())
+    for manga in magazine_info['manga']:
+        assert magazine_manga_keys.issubset(manga.keys())
+
+
+@vcr.use_cassette('tests/vcr_cassettes/user-success.yaml')
+def test_user_success(user_keys, jikan):
+    user_info = jikan.user(username=USERNAME)
+
+    assert isinstance(user_info, dict)
+    assert user_info['username'] == 'Nekomata1037'
+    assert user_info['gender'] == 'Male'
+    assert user_keys.issubset(user_info.keys())
 
 
 @vcr.use_cassette('tests/vcr_cassettes/meta-success.yaml')
@@ -191,6 +160,30 @@ def test_schedule_failure(jikan):
 def test_top_failure(jikan):
     with pytest.raises(ClientException):
         jikan.top(type='x')
+
+
+@vcr.use_cassette('tests/vcr_cassettes/genre-failure.yaml')
+def test_genre_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.genre(type='x', genre_id=1)
+
+
+@vcr.use_cassette('tests/vcr_cassettes/producer-failure.yaml')
+def test_producer_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.producer(producer_id='producer')
+
+
+@vcr.use_cassette('tests/vcr_cassettes/magazine-failure.yaml')
+def test_magazine_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.magazine(magazine_id='magazine')
+
+
+@vcr.use_cassette('tests/vcr_cassettes/user-failure.yaml')
+def test_user_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.user(username='user', request='friends', argument='x')
 
 
 @vcr.use_cassette('tests/vcr_cassettes/meta-failure.yaml')
