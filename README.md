@@ -22,7 +22,7 @@ jikan = Jikan()
 mushishi = jikan.anime(457)
 
 # same as above, but with extra info
-# (see Jikan docs for information about which endpoints have which extensions)
+# see Jikan docs for information about which endpoints have which extensions
 mushishi_with_eps = jikan.anime(457, extension='episodes')
 mushishi_with_eps_2 = jikan.anime(457, extension='episodes', page=2)
 mushishi_with_characters_and_staff = jikan.anime(457, extension='characters_staff')
@@ -57,6 +57,31 @@ top_anime = jikan.top(type='anime')
 # add a page and subtype if you want
 top_anime = jikan.top(type='anime', page=2, subtype='upcoming')
 
+# action anime
+# See Jikan docs for mappings between genres and their IDs
+action = jikan.genre(type='anime', genre_id=1)
+# adventure manga
+adventure = jikan.genre(type='manga', genre_id=2)
+
+# anime made by Studio Deen (sasuga deen)
+studio_deen_anime = jikan.producer(producer_id=37)
+# add an optional page
+studio_deen_anime = jikan.producer(producer_id=37, page=2)
+
+# manga from Weekly Shounen Jump
+jump = jikan.magazine(magazine_id=83)
+# add an optional page
+jump = jikan.magazine(magazine_id=83, page=2)
+
+# user info
+nekomata1037 = jikan.user(username='Nekomata1037')
+# get profile info, same as above
+nekomata1037 = jikan.user(username='Nekomata1037', request='profile')
+# friends info
+nekomata1037 = jikan.user(username='Nekomata1037', request='friends')
+# history of anime/manga
+nekomata1037 = jikan.user(username='Nekomata1037', request='history')
+
 # meta info about the Jikan REST API
 # meta info about what requests have been done
 requests = jikan.meta(request='requests', type='anime', period='today')
@@ -84,6 +109,10 @@ def main(loop):
     monday = yield from aio_jikan.schedule(day='monday')
     top_anime = yield from aio_jikan.top(type='anime')
     meta = yield from aio_jikan.meta(request='requests', type='anime', period='today')
+    action = yield from aio_jikan.genre(type='anime', genre_id=1)
+    deen = yield from aio_jikan.producer(producer_id=37)
+    jump = yield from aio_jikan.magazine(magazine_id=83)
+    nekomata1037 = yield from aio_jikan.user(username='Nekomata1037')
     # Close the connection to Jikan API
     yield from aio_jikan.close()
 
@@ -109,6 +138,10 @@ async def main(loop):
     monday = await aio_jikan.schedule(day='monday')
     top_anime = await aio_jikan.top(type='anime')
     meta = await aio_jikan.meta(request='requests', type='anime', period='today')
+    action = await aio_jikan.genre(type='anime', genre_id=1)
+    deen = await aio_jikan.producer(producer_id=37)
+    jump = await aio_jikan.magazine(magazine_id=83)
+    nekomata1037 = await aio_jikan.user(username='Nekomata1037')
     # Close the connection to Jikan API
     await aio_jikan.close()
 
