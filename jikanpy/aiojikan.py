@@ -1,7 +1,7 @@
 import aiohttp
 import asyncio
 
-from jikanpy.jikan import AbstractJikan
+from jikanpy.abstractjikan import AbstractJikan
 from jikanpy.exceptions import APIException
 
 
