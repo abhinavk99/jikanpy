@@ -140,6 +140,10 @@ class AbstractJikan(ABC):
             if request.lower() == 'profile' and argument is not None:
                 raise ClientException(
                     'No argument should be given for profile request')
+            if request.lower() in ('animelist', 'mangalist') and argument is None and page is not None:
+                raise ClientException(
+                    'You must provide an argument if you provide a page for animelist or mangalist'
+                )
             if argument is not None:
                 if request.lower() == 'history' and argument.lower() not in USER_HISTORY_ARGUMENTS:
                     raise ClientException(
@@ -155,7 +159,7 @@ class AbstractJikan(ABC):
                         'Argument for mangalist request is not valid')
                 url += '/' + str(argument)
                 if request.lower() in ('animelist', 'mangalist'):
-                    self._add_page_to_url(url, page)
+                    url = self._add_page_to_url(url, page)
         return url
 
     def _get_meta_url(self, request, type, period):
