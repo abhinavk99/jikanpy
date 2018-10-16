@@ -81,6 +81,10 @@ nekomata1037 = jikan.user(username='Nekomata1037', request='profile')
 nekomata1037 = jikan.user(username='Nekomata1037', request='friends')
 # history of anime/manga
 nekomata1037 = jikan.user(username='Nekomata1037', request='history')
+# anime list
+nekomata1037 = jikan.user(username='Nekomata1037', request='animelist')
+# manga list
+nekomata1037 = jikan.user(username='Nekomata1037', request='mangalist')
 
 # meta info about the Jikan REST API
 # meta info about what requests have been done
