@@ -55,8 +55,8 @@ class AbstractJikan(ABC):
             if extension not in EXTENSIONS[endpoint]:
                 raise ClientException('The extension is not valid')
             url += '/' + extension
-            if extension == 'episodes' and isinstance(page, int):
-                url += '/' + str(page)
+            if extension == 'episodes':
+                self._add_page_to_url(url, page)
         return url
 
     def _get_search_url(self, search_type, query, page, key, value):
@@ -130,7 +130,7 @@ class AbstractJikan(ABC):
         url = self._add_page_to_url(url, page)
         return url
 
-    def _get_user_url(self, username, request, argument):
+    def _get_user_url(self, username, request, argument, page):
         """Create URL for user endpoint"""
         url = self.user_base.format(username=username.lower())
         if request is not None:
@@ -147,7 +147,15 @@ class AbstractJikan(ABC):
                 if request.lower() == 'friends' and not isinstance(argument, int):
                     raise ClientException(
                         'Argument for friends request must be a page number integer')
+                if request.lower() == 'animelist' and argument.lower() not in USER_ANIMELIST_ARGUMENTS:
+                    raise ClientException(
+                        'Argument for animelist request is not valid')
+                if request.lower() == 'mangalist' and argument.lower() not in USER_MANGALIST_ARGUMENTS:
+                    raise ClientException(
+                        'Argument for mangalist request is not valid')
                 url += '/' + str(argument)
+                if request.lower() in ('animelist', 'mangalist'):
+                    self._add_page_to_url(url, page)
         return url
 
     def _get_meta_url(self, request, type, period):
@@ -286,14 +294,15 @@ class AbstractJikan(ABC):
         return self._get_creator('magazine', magazine_id, page)
 
     @abstractmethod
-    def user(self, username, request, argument=None):
+    def user(self, username, request, argument=None, page=None):
         """
         Gets user data
 
         Keyword Arguments:
         username -- MyAnimeList username
-        request -- type of data to get (profile, history, friends)
-        argument -- data for history (anime, manga) or page number for friends
+        request -- type of data to get (profile, history, friends, animelist, mangalist)
+        argument -- data for history (anime, manga), page number for friends, type of list
+        page -- page number for animelist and mangalist
         """
         pass
 

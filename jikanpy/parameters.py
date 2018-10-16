@@ -57,7 +57,7 @@ SEARCH_PARAMS = {
         'r',
         'rx'
     ),
-    'genre' : range(1, 44),
+    'genre': range(1, 44),
     'score': '',
     'start_date': '',
     'end_date': '',
@@ -109,10 +109,18 @@ GENRE_TYPES = ('anime', 'manga')
 CREATOR_TYPES = ('producer', 'magazine')
 
 # Possible requests for user endpoint
-USER_REQUESTS = ('profile', 'history', 'friends')
+USER_REQUESTS = ('profile', 'history', 'friends', 'animelist', 'mangalist')
 
 # Possible arguments for history request in user endpoint
 USER_HISTORY_ARGUMENTS = ('anime', 'manga')
+
+# Possible arguments for animelist request in user endpoint
+USER_ANIMELIST_ARGUMENTS = (
+    'all', 'watching', 'completed', 'onhold', 'dropped', 'plantowatch', 'ptw')
+
+# Possible arguments for mangalist request in user endpoint
+USER_MANGALIST_ARGUMENTS = (
+    'all', 'reading', 'completed', 'onhold', 'dropped', 'plantoread', 'ptr')
 
 # Possible parameters for meta
 META = {

@@ -47,8 +47,8 @@ class Jikan(AbstractJikan):
         self._check_response(response, id=genre_id, type=type)
         return response.json()
 
-    def user(self, username, request=None, argument=None):
-        url = self._get_user_url(username, request, argument)
+    def user(self, username, request=None, argument=None, page=None):
+        url = self._get_user_url(username, request, argument, page)
         response = session.get(url)
         self._check_response(response, username=username, request=request)
         return response.json()

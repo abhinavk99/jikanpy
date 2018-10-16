@@ -83,8 +83,8 @@ class AioJikan(AbstractJikan):
         return json
 
     @asyncio.coroutine
-    def user(self, username, request=None, argument=None):
-        url = self._get_user_url(username, request, argument)
+    def user(self, username, request=None, argument=None, page=None):
+        url = self._get_user_url(username, request, argument, page)
         response = yield from self.session.get(url)
         yield from self._check_response(response, username=username, request=request)
         json = yield from response.json()
