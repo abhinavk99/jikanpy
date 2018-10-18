@@ -28,6 +28,7 @@ class AbstractJikan(ABC):
         self.genre_base = selected_base + 'genre/{type}/{genre_id}'
         self.creator_base = selected_base + '{creator_type}/{creator_id}'
         self.user_base = selected_base + 'user/{username}'
+        self.season_archive_url = selected_base + 'season/archive'
         super().__init__()
 
     def _check_response(self, response, **kwargs):
@@ -240,6 +241,13 @@ class AbstractJikan(ABC):
         Keyword Arguments:
         year -- year to get anime of
         season -- season to get anime of (winter, spring, summer, fall)
+        """
+        pass
+
+    @abstractmethod
+    def season_archive(self):
+        """
+        Gets all the years and their respective seasons from MyAnimeList
         """
         pass
 

@@ -59,6 +59,13 @@ class AioJikan(AbstractJikan):
         return json
 
     @asyncio.coroutine
+    def season_archive(self):
+        response = yield from self.session.get(self.season_archive_url)
+        yield from self._check_response(response)
+        json = yield from response.json()
+        return json
+
+    @asyncio.coroutine
     def schedule(self, day=None):
         url = self._get_schedule_url(day)
         response = yield from self.session.get(url)
