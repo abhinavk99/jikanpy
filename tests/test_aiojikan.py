@@ -65,6 +65,19 @@ def test_season_success(season_keys, seasonal_anime_keys, aio_jikan):
 
 
 @pytest.mark.asyncio
+def test_season_archive_success(season_archive_keys, archived_years_keys, aio_jikan):
+    season_archive_info = yield from aio_jikan.season_archive()
+
+    assert isinstance(season_archive_info, dict)
+    assert season_archive_keys.issubset(season_archive_info.keys())
+    for year_info in season_archive_info['archive']:
+        assert archived_years_keys.issubset(year_info.keys())
+        assert isinstance(year_info['year'], int)
+        assert isinstance(year_info['seasons'], list)
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
 def test_schedule_success(schedule_keys, subset_anime_keys, aio_jikan):
     schedule_info = yield from aio_jikan.schedule(day=DAY)
 

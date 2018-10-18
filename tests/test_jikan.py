@@ -58,6 +58,18 @@ def test_season_success(season_keys, seasonal_anime_keys, jikan):
         assert seasonal_anime_keys.issubset(anime.keys())
 
 
+@vcr.use_cassette('tests/vcr_cassettes/season-archive-success.yaml')
+def test_season_archive_success(season_archive_keys, archived_years_keys, jikan):
+    season_archive_info = jikan.season_archive()
+
+    assert isinstance(season_archive_info, dict)
+    assert season_archive_keys.issubset(season_archive_info.keys())
+    for year_info in season_archive_info['archive']:
+        assert archived_years_keys.issubset(year_info.keys())
+        assert isinstance(year_info['year'], int)
+        assert isinstance(year_info['seasons'], list)
+
+
 @vcr.use_cassette('tests/vcr_cassettes/schedule-success.yaml')
 def test_schedule_success(schedule_keys, subset_anime_keys, jikan):
     schedule_info = jikan.schedule(day=DAY)

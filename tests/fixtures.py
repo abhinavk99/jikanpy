@@ -1,5 +1,6 @@
 import pytest
 
+
 @pytest.fixture
 def anime_keys():
     return {'request_hash', 'request_cached', 'request_cache_expiry', 'mal_id',
@@ -50,6 +51,16 @@ def seasonal_anime_keys():
 
 
 @pytest.fixture
+def season_archive_keys():
+    return {'request_hash', 'request_cached', 'request_cache_expiry', 'archive'}
+
+
+@pytest.fixture
+def archived_years_keys():
+    return {'year', 'seasons'}
+
+
+@pytest.fixture
 def schedule_keys():
     return {'request_hash', 'request_cached', 'request_cache_expiry', 'monday'}
 
@@ -83,16 +94,19 @@ def subset_anime_keys():
             'airing_start', 'episodes', 'members', 'genres', 'source',
             'producers', 'score', 'licensors', 'r18', 'kids'}
 
+
 @pytest.fixture
 def magazine_keys():
     return {'request_hash', 'request_cached', 'request_cache_expiry', 'meta',
             'manga'}
+
 
 @pytest.fixture
 def magazine_manga_keys():
     return {'mal_id', 'url', 'title', 'image_url', 'synopsis', 'type',
             'publishing_start', 'volumes', 'members', 'genres', 'authors',
             'score', 'serialization'}
+
 
 @pytest.fixture
 def user_keys():
