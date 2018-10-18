@@ -17,6 +17,9 @@ print(naruto)
 winter_2018 = jikan.season(year=2018, season='winter')
 print(winter_2018)
 
+archive = jikan.season_archive()
+print(archive)
+
 monday = jikan.schedule(day='monday')
 print(monday)
 

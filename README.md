@@ -47,6 +47,9 @@ search_result = jikan.search('anime', 'Mushishi', page=3, key='type', value='tv'
 winter_2018 = jikan.season(year=2018, season='winter')
 spring_2016 = jikan.season(year=2016, season='spring')
 
+# all the years and seasons on MAL
+archive = jikan.season_archive()
+
 # scheduled anime
 scheduled = jikan.schedule()
 # add a day of the week if you only want the day's schedule
@@ -110,6 +113,7 @@ def main(loop):
     ginko = yield from aio_jikan.character(425)
     naruto = yield from aio_jikan.search(search_type='anime', query='naruto')
     winter_2018 = yield from aio_jikan.season(year=2018, season='winter')
+    archive = yield from aio_jikan.season_archive()
     monday = yield from aio_jikan.schedule(day='monday')
     top_anime = yield from aio_jikan.top(type='anime')
     meta = yield from aio_jikan.meta(request='requests', type='anime', period='today')
@@ -139,6 +143,7 @@ async def main(loop):
     ginko = await aio_jikan.character(425)
     naruto = await aio_jikan.search(search_type='anime', query='naruto')
     winter_2018 = await aio_jikan.season(year=2018, season='winter')
+    archive = await aio_jikan.season_archive()
     monday = await aio_jikan.schedule(day='monday')
     top_anime = await aio_jikan.top(type='anime')
     meta = await aio_jikan.meta(request='requests', type='anime', period='today')
