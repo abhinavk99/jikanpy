@@ -67,7 +67,7 @@ class AbstractJikan(ABC):
         if key is not None:
             if value is None:
                 raise ClientException('You need to pass a value with the key')
-            values = SEARCH_PARAMS.get(key, d=None)
+            values = SEARCH_PARAMS.get(key)
             if values is None:
                 raise ClientException('The key is not valid')
             elif isinstance(values, list) and value not in values:
