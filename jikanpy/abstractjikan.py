@@ -72,7 +72,7 @@ class AbstractJikan(ABC):
                 raise ClientException('The key is not valid')
             elif isinstance(values, list) and value not in values:
                 raise ClientException('The value is not valid')
-            url += '?' + key + '=' + value
+            url += '?' + key + '=' + str(value)
         return url
 
     def _get_season_url(self, year, season):
