@@ -6,7 +6,7 @@ multidict==3.3.0
 pytest==3.5.0
 pytest-asyncio == 0.8.0
 PyYAML==3.12
-requests==2.18.4
+requests==2.20.1
 urllib3==1.22
 vcrpy==1.11.1
 wrapt==1.10.11
