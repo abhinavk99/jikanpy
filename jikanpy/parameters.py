@@ -86,7 +86,7 @@ SUBTYPES = {
         'tv',
         'movie',
         'ova',
-        'special'
+        'special',
         'bypopularity',
         'favorite'
     ),
