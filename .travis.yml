@@ -3,12 +3,6 @@ cache: pip
 
 jobs:
   include:
-  - stage: Testing with Python 3.4
-    python: '3.4'
-    install:
-      - pip install -r requirements.txt
-      - pip install requests aiohttp
-    script: pytest
   - stage: Testing with Python 3.5
     python: '3.5'
     install:
