@@ -7,11 +7,11 @@ jobs:
     python: '3.5'
     install:
       - pip install -r requirements.txt
-      - pip install requests aiohttp
+      - pip install -e .
     script: pytest
   - stage: Testing with Python 3.6
     python: '3.6'
     install:
       - pip install -r requirements.txt
-      - pip install requests aiohttp
+      - pip install -e .
     script: pytest
