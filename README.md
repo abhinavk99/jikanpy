@@ -6,7 +6,7 @@ providing bindings for all API functionality. Because it is intended to be
 pretty much identical, please consult [Jikan's
 documentation](https://jikan.docs.apiary.io/#) for thornier details on how it is meant to
 be used. Perhaps most importantly, Jikanpy does not make any attempts to rate
-limit itself, so use it as responsibly as you would use the API primitively. However,
+limit itself, so use it as responsibly as you would use the API primitively and
 remember that Jikan API has limitations, check out [this section](https://jikan.docs.apiary.io/#introduction/information/rate-limiting)
 of documentation in order to see to what extent the API is limited or throttled.
 
