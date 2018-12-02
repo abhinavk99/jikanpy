@@ -96,38 +96,6 @@ requests = jikan.meta(request='requests', type='anime', period='today')
 status = jikan.meta(request='status', type='anime', period='today')
 ```
 
-### Async Usage (< Python 3.5)
-```python
-from jikanpy import AioJikan
-import asyncio
-
-loop = asyncio.get_event_loop()
-
-aio_jikan = AioJikan(loop=loop)
-
-
-@asyncio.coroutine
-def main(loop):
-    mushishi = yield from aio_jikan.anime(457)
-    fma = yield from aio_jikan.manga(25)
-    ginko = yield from aio_jikan.character(425)
-    naruto = yield from aio_jikan.search(search_type='anime', query='naruto')
-    winter_2018 = yield from aio_jikan.season(year=2018, season='winter')
-    archive = yield from aio_jikan.season_archive()
-    monday = yield from aio_jikan.schedule(day='monday')
-    top_anime = yield from aio_jikan.top(type='anime')
-    meta = yield from aio_jikan.meta(request='requests', type='anime', period='today')
-    action = yield from aio_jikan.genre(type='anime', genre_id=1)
-    deen = yield from aio_jikan.producer(producer_id=37)
-    jump = yield from aio_jikan.magazine(magazine_id=83)
-    nekomata1037 = yield from aio_jikan.user(username='Nekomata1037')
-    # Close the connection to Jikan API
-    yield from aio_jikan.close()
-
-
-loop.run_until_complete(main(loop))
-```
-
 ### Async Usage (Python 3.5+)
 ```python
 from jikanpy import AioJikan
