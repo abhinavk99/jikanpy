@@ -42,8 +42,10 @@ search_result = jikan.search('anime', 'Mushishi', page=2)
 # add a filter to the search (see Jikan docs about what filters are legal)
 search_result = jikan.search('anime', 'Mushishi', parameters={'type': 'tv'})
 search_result = jikan.search('anime', 'Mushishi', parameters={'genre': 37})
+# use multiple query parameters
+search_result = jikan.search('anime', 'Mushishi', parameters={'genre': 37, 'type': 'tv'})
 # use it all!
-search_result = jikan.search('anime', 'Mushishi', page=3, parameters={'type': 'tv'})
+search_result = jikan.search('anime', 'Mushishi', page=3, parameters={'genre': 37, 'type': 'tv'})
 
 # seasonal anime
 winter_2018 = jikan.season(year=2018, season='winter')
