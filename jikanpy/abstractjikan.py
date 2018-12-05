@@ -60,19 +60,19 @@ class AbstractJikan(ABC):
                 self._add_page_to_url(url, page)
         return url
 
-    def _get_search_url(self, search_type, query, page, key, value):
+    def _get_search_url(self, search_type, query, page, parameters):
         """Create URL for search endpoint"""
         url = self.search_base.format(search_type=search_type, query=query)
         url = self._add_page_to_url(url, page, delimiter='&page=')
-        if key is not None:
-            if value is None:
-                raise ClientException('You need to pass a value with the key')
-            values = SEARCH_PARAMS.get(key)
-            if values is None:
-                raise ClientException('The key is not valid')
-            elif isinstance(values, list) and value not in values:
-                raise ClientException('The value is not valid')
-            url += '?' + key + '=' + str(value)
+        if parameters is not None:
+            url += '?'
+            for key, value in parameters.items():
+                values = SEARCH_PARAMS.get(key)
+                if values is None:
+                    raise ClientException('The key is not valid')
+                elif isinstance(values, tuple) and value not in values:
+                    raise ClientException('The value is not valid')
+                url += key + '=' + str(value) + "&"
         return url
 
     def _get_season_url(self, year, season):
@@ -220,7 +220,7 @@ class AbstractJikan(ABC):
         raise DeprecatedEndpoint('user_list is a deprecated endpoint')
 
     @abstractmethod
-    def search(self, search_type, query, page=None, key=None, value=None):
+    def search(self, search_type, query, page=None, parameters=None):
         """
         Searches for a query on MyAnimeList
 
@@ -228,8 +228,7 @@ class AbstractJikan(ABC):
         search_type -- where to search (anime, manga, person, character)
         query -- query to search for
         page -- page number of the results (default None)
-        key -- key for ?key=value URL query (default None)
-        value -- value for ?key=value URL query (default None)
+        parameters - dictionary containing key,value pairs for ?key=value in url query
         """
         pass
 
