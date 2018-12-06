@@ -1,6 +1,8 @@
 Jikanpy
 =======
 
+[![Travis (.org)](https://img.shields.io/travis/AWConant/jikanpy.svg?style=flat-square)](https://travis-ci.org/AWConant/jikanpy)
+
 Jikanpy is a Python wrapper for [Jikan](https://github.com/jikan-me/jikan),
 providing bindings for all API functionality. Because it is intended to be
 pretty much identical, please consult [Jikan's
