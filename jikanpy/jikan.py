@@ -16,8 +16,8 @@ class Jikan(AbstractJikan):
         self._check_response(response, id=creator_id, endpoint=creator_type)
         return response.json()
 
-    def search(self, search_type, query, page=None, key=None, value=None):
-        url = self._get_search_url(search_type, query, page, key, value)
+    def search(self, search_type, query, page=None, parameters=None):
+        url = self._get_search_url(search_type, query, page, parameters)
         response = session.get(url)
         kwargs = {'search type': search_type, 'query': query}
         self._check_response(response, **kwargs)

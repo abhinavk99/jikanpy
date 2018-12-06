@@ -8,7 +8,9 @@ providing bindings for all API functionality. Because it is intended to be
 pretty much identical, please consult [Jikan's
 documentation](https://jikan.docs.apiary.io/#) for thornier details on how it is meant to
 be used. Perhaps most importantly, Jikanpy does not make any attempts to rate
-limit itself, so use it as responsibly as you would use the API primitively.
+limit itself, so use it as responsibly as you would use the API primitively and
+remember that Jikan API has limitations, check out [this section](https://jikan.docs.apiary.io/#introduction/information/rate-limiting)
+of documentation in order to see to what extent the API is limited or throttled.
 
 ## Installation
 ```shell
@@ -40,10 +42,12 @@ search_result = jikan.search('anime', 'Mushishi')
 # add a page number to the search request
 search_result = jikan.search('anime', 'Mushishi', page=2)
 # add a filter to the search (see Jikan docs about what filters are legal)
-search_result = jikan.search('anime', 'Mushishi', key='type', value='tv')
-search_result = jikan.search('anime', 'Mushishi', key='genre', value=37)
+search_result = jikan.search('anime', 'Mushishi', parameters={'type': 'tv'})
+search_result = jikan.search('anime', 'Mushishi', parameters={'genre': 37})
+# use multiple query parameters
+search_result = jikan.search('anime', 'Mushishi', parameters={'genre': 37, 'type': 'tv'})
 # use it all!
-search_result = jikan.search('anime', 'Mushishi', page=3, key='type', value='tv')
+search_result = jikan.search('anime', 'Mushishi', page=3, parameters={'genre': 37, 'type': 'tv'})
 
 # seasonal anime
 winter_2018 = jikan.season(year=2018, season='winter')
@@ -96,38 +100,6 @@ nekomata1037 = jikan.user(username='Nekomata1037', request='mangalist')
 requests = jikan.meta(request='requests', type='anime', period='today')
 # meta info about API's status
 status = jikan.meta(request='status', type='anime', period='today')
-```
-
-### Async Usage (< Python 3.5)
-```python
-from jikanpy import AioJikan
-import asyncio
-
-loop = asyncio.get_event_loop()
-
-aio_jikan = AioJikan(loop=loop)
-
-
-@asyncio.coroutine
-def main(loop):
-    mushishi = yield from aio_jikan.anime(457)
-    fma = yield from aio_jikan.manga(25)
-    ginko = yield from aio_jikan.character(425)
-    naruto = yield from aio_jikan.search(search_type='anime', query='naruto')
-    winter_2018 = yield from aio_jikan.season(year=2018, season='winter')
-    archive = yield from aio_jikan.season_archive()
-    monday = yield from aio_jikan.schedule(day='monday')
-    top_anime = yield from aio_jikan.top(type='anime')
-    meta = yield from aio_jikan.meta(request='requests', type='anime', period='today')
-    action = yield from aio_jikan.genre(type='anime', genre_id=1)
-    deen = yield from aio_jikan.producer(producer_id=37)
-    jump = yield from aio_jikan.magazine(magazine_id=83)
-    nekomata1037 = yield from aio_jikan.user(username='Nekomata1037')
-    # Close the connection to Jikan API
-    yield from aio_jikan.close()
-
-
-loop.run_until_complete(main(loop))
 ```
 
 ### Async Usage (Python 3.5+)
