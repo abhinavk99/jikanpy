@@ -1,7 +1,9 @@
 Jikanpy
 =======
 
-[![Travis (.org)](https://img.shields.io/travis/AWConant/jikanpy.svg?style=flat-square)](https://travis-ci.org/AWConant/jikanpy) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![Travis (.org)](https://img.shields.io/travis/AWConant/jikanpy.svg?style=flat-square)](https://travis-ci.org/AWConant/jikanpy)
+[![Codecov](https://img.shields.io/codecov/c/github/AWConant/jikanpy.svg?style=flat-square)](https://codecov.io/gh/AWConant/jikanpy/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 Jikanpy is a Python wrapper for [Jikan](https://github.com/jikan-me/jikan),
 providing bindings for all API functionality. Because it is intended to be
