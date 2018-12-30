@@ -57,7 +57,7 @@ class AbstractJikan(ABC):
                 raise ClientException('The extension is not valid')
             url += '/' + extension
             if extension == 'episodes':
-                self._add_page_to_url(url, page)
+                url = self._add_page_to_url(url, page)
         return url
 
     def _get_search_url(self, search_type, query, page, parameters):
