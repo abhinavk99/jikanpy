@@ -20,6 +20,9 @@ print(winter_2018)
 archive = jikan.season_archive()
 print(archive)
 
+later = jikan.season_later()
+print(later)
+
 monday = jikan.schedule(day='monday')
 print(monday)
 

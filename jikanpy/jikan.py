@@ -34,6 +34,11 @@ class Jikan(AbstractJikan):
         self._check_response(response)
         return response.json()
 
+    def season_later(self):
+        response = session.get(self.season_later_url)
+        self._check_response(response)
+        return response.json()
+
     def schedule(self, day=None):
         url = self._get_schedule_url(day)
         response = session.get(url)

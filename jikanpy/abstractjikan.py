@@ -29,6 +29,7 @@ class AbstractJikan(ABC):
         self.creator_base = selected_base + '{creator_type}/{creator_id}'
         self.user_base = selected_base + 'user/{username}'
         self.season_archive_url = selected_base + 'season/archive'
+        self.season_later_url = selected_base + 'season/later'
         super().__init__()
 
     def _check_response(self, response, **kwargs):
@@ -247,6 +248,13 @@ class AbstractJikan(ABC):
     def season_archive(self):
         """
         Gets all the years and their respective seasons from MyAnimeList
+        """
+        pass
+
+    @abstractmethod
+    def season_later(self):
+        """
+        Gets anime that have been announced for upcoming seasons
         """
         pass
 

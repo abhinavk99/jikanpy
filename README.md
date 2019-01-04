@@ -56,6 +56,9 @@ spring_2016 = jikan.season(year=2016, season='spring')
 # all the years and seasons on MAL
 archive = jikan.season_archive()
 
+# anime in upcoming seasons
+later = jikan.season_later()
+
 # scheduled anime
 scheduled = jikan.schedule()
 # add a day of the week if you only want the day's schedule
@@ -118,6 +121,7 @@ async def main(loop):
     naruto = await aio_jikan.search(search_type='anime', query='naruto')
     winter_2018 = await aio_jikan.season(year=2018, season='winter')
     archive = await aio_jikan.season_archive()
+    later = await aio_jikan.season_later()
     monday = await aio_jikan.schedule(day='monday')
     top_anime = await aio_jikan.top(type='anime')
     meta = await aio_jikan.meta(request='requests', type='anime', period='today')
