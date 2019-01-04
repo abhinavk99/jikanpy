@@ -56,8 +56,8 @@ class AbstractJikan(ABC):
             if extension not in EXTENSIONS[endpoint]:
                 raise ClientException('The extension is not valid')
             url += '/' + extension
-            if extension == 'episodes':
-                self._add_page_to_url(url, page)
+            if extension in ('episodes', 'reviews', 'userupdates'):
+                url = self._add_page_to_url(url, page)
         return url
 
     def _get_search_url(self, search_type, query, page, parameters):

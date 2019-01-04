@@ -8,7 +8,10 @@ EXTENSIONS = {
         'videos',
         'stats',
         'forum',
-        'moreinfo'
+        'moreinfo',
+        'reviews',
+        'recommendations',
+        'userupdates'
     ),
     'manga': (
         'characters',
@@ -16,7 +19,10 @@ EXTENSIONS = {
         'pictures',
         'stats',
         'forum',
-        'moreinfo'
+        'moreinfo',
+        'reviews',
+        'recommendations',
+        'userupdates'
     ),
     'character': (
         'pictures'
