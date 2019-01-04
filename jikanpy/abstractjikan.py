@@ -29,6 +29,7 @@ class AbstractJikan(ABC):
         self.creator_base = selected_base + '{creator_type}/{creator_id}'
         self.user_base = selected_base + 'user/{username}'
         self.season_archive_url = selected_base + 'season/archive'
+        self.season_later_url = selected_base + 'season/later'
         super().__init__()
 
     def _check_response(self, response, **kwargs):
@@ -49,14 +50,14 @@ class AbstractJikan(ABC):
             raise APIException(err_str)
 
     def _get_url(self, endpoint, id, extension, page):
-        """Create URL for anime, manga, character, and person endpoints"""
+        """Create URL for anime, manga, character, person, and club endpoints"""
         url = self.base.format(endpoint=endpoint, id=id)
         # Check if extension is valid
         if extension is not None:
             if extension not in EXTENSIONS[endpoint]:
                 raise ClientException('The extension is not valid')
             url += '/' + extension
-            if extension == 'episodes':
+            if extension in ('episodes', 'reviews', 'userupdates', 'members'):
                 url = self._add_page_to_url(url, page)
         return url
 
@@ -191,7 +192,7 @@ class AbstractJikan(ABC):
         Gets the response from Jikan API given the endpoint
 
         Keyword Arguments:
-        endpoint -- endpoint of API (anime, manga, character, person)
+        endpoint -- endpoint of API (anime, manga, character, person, club)
         id -- id of what to get the information of
         extension -- special information to get, possible values in the docs
         page -- page number of the results (default None)
@@ -214,6 +215,9 @@ class AbstractJikan(ABC):
 
     def person(self, id, extension=None):
         return self._get('person', id, extension)
+
+    def club(self, id, extension=None):
+        return self._get('club', id, extension)
 
     def user_list(self, id, extension=None):
         """Gets user list information"""
@@ -247,6 +251,13 @@ class AbstractJikan(ABC):
     def season_archive(self):
         """
         Gets all the years and their respective seasons from MyAnimeList
+        """
+        pass
+
+    @abstractmethod
+    def season_later(self):
+        """
+        Gets anime that have been announced for upcoming seasons
         """
         pass
 

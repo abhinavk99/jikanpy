@@ -56,6 +56,9 @@ spring_2016 = jikan.season(year=2016, season='spring')
 # all the years and seasons on MAL
 archive = jikan.season_archive()
 
+# anime in upcoming seasons
+later = jikan.season_later()
+
 # scheduled anime
 scheduled = jikan.schedule()
 # add a day of the week if you only want the day's schedule
@@ -95,6 +98,9 @@ nekomata1037 = jikan.user(username='Nekomata1037', request='animelist')
 # manga list
 nekomata1037 = jikan.user(username='Nekomata1037', request='mangalist')
 
+# clubs
+fantasy_anime_league = jikan.club(379)
+
 # meta info about the Jikan REST API
 # meta info about what requests have been done
 requests = jikan.meta(request='requests', type='anime', period='today')
@@ -118,6 +124,7 @@ async def main(loop):
     naruto = await aio_jikan.search(search_type='anime', query='naruto')
     winter_2018 = await aio_jikan.season(year=2018, season='winter')
     archive = await aio_jikan.season_archive()
+    later = await aio_jikan.season_later()
     monday = await aio_jikan.schedule(day='monday')
     top_anime = await aio_jikan.top(type='anime')
     meta = await aio_jikan.meta(request='requests', type='anime', period='today')
@@ -125,6 +132,7 @@ async def main(loop):
     deen = await aio_jikan.producer(producer_id=37)
     jump = await aio_jikan.magazine(magazine_id=83)
     nekomata1037 = await aio_jikan.user(username='Nekomata1037')
+    fantasy_anime_league = await aio_jikan.club(379)
     # Close the connection to Jikan API
     await aio_jikan.close()
 

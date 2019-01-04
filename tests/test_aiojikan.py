@@ -78,6 +78,17 @@ def test_season_archive_success(season_archive_keys, archived_years_keys, aio_ji
 
 
 @pytest.mark.asyncio
+def test_season_later_success(season_keys, seasonal_anime_keys, aio_jikan):
+    season_later_info = yield from aio_jikan.season_later()
+
+    assert isinstance(season_later_info, dict)
+    assert season_keys.issubset(season_later_info.keys())
+    for anime in season_later_info['anime']:
+        assert seasonal_anime_keys.issubset(anime.keys())
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
 def test_schedule_success(schedule_keys, subset_anime_keys, aio_jikan):
     schedule_info = yield from aio_jikan.schedule(day=DAY)
 
@@ -141,6 +152,16 @@ def test_user_success(user_keys, aio_jikan):
     assert user_info['username'] == 'Nekomata1037'
     assert user_info['gender'] == 'Male'
     assert user_keys.issubset(user_info.keys())
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
+def test_club_success(club_keys, aio_jikan):
+    club_info = yield from aio_jikan.club(CLUB_ID)
+
+    assert isinstance(club_info, dict)
+    assert club_info['title'] == 'Fantasy Anime League'
+    assert club_keys.issubset(club_info.keys())
     aio_jikan.close()
 
 
@@ -219,6 +240,13 @@ def test_magazine_failure(aio_jikan):
 def test_user_failure(aio_jikan):
     with pytest.raises(ClientException):
         yield from aio_jikan.user(username='user', request='friends', argument='x')
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
+def test_club_failure(aio_jikan):
+    with pytest.raises(APIException):
+        yield from aio_jikan.club(-1)
     aio_jikan.close()
 
 
