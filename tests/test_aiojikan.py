@@ -156,6 +156,16 @@ def test_user_success(user_keys, aio_jikan):
 
 
 @pytest.mark.asyncio
+def test_club_success(club_keys, aio_jikan):
+    club_info = yield from aio_jikan.club(CLUB_ID)
+
+    assert isinstance(club_info, dict)
+    assert club_info['title'] == 'Fantasy Anime League'
+    assert club_keys.issubset(club_info.keys())
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
 def test_meta_success(aio_jikan):
     meta_info = yield from aio_jikan.meta(request='requests', type='anime', period='today')
 
@@ -230,6 +240,13 @@ def test_magazine_failure(aio_jikan):
 def test_user_failure(aio_jikan):
     with pytest.raises(ClientException):
         yield from aio_jikan.user(username='user', request='friends', argument='x')
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
+def test_club_failure(aio_jikan):
+    with pytest.raises(APIException):
+        yield from aio_jikan.club(-1)
     aio_jikan.close()
 
 

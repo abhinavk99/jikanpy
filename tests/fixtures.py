@@ -114,3 +114,10 @@ def user_keys():
             'username', 'url', 'image_url', 'last_online', 'gender', 'birthday',
             'location', 'joined', 'anime_stats', 'manga_stats', 'favorites',
             'about'}
+
+@pytest.fixture
+def club_keys():
+    return {'request_hash', 'request_cached', 'request_cache_expiry', 'mal_id',
+            'url', 'image_url', 'title', 'members_count', 'pictures_count',
+            'category', 'created', 'type', 'staff', 'anime_relations',
+            'manga_relations', 'character_relations'}
