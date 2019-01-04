@@ -98,6 +98,9 @@ nekomata1037 = jikan.user(username='Nekomata1037', request='animelist')
 # manga list
 nekomata1037 = jikan.user(username='Nekomata1037', request='mangalist')
 
+# clubs
+fantasy_anime_league = jikan.club(379)
+
 # meta info about the Jikan REST API
 # meta info about what requests have been done
 requests = jikan.meta(request='requests', type='anime', period='today')
@@ -129,6 +132,7 @@ async def main(loop):
     deen = await aio_jikan.producer(producer_id=37)
     jump = await aio_jikan.magazine(magazine_id=83)
     nekomata1037 = await aio_jikan.user(username='Nekomata1037')
+    fantasy_anime_league = await aio_jikan.club(379)
     # Close the connection to Jikan API
     await aio_jikan.close()
 

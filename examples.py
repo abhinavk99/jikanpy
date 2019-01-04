@@ -41,5 +41,8 @@ print(jump)
 nekomata1037 = jikan.user(username='Nekomata1037')
 print(nekomata1037)
 
+fantasy_anime_league = jikan.club(379)
+print(fantasy_anime_league)
+
 meta = jikan.meta(request='requests', type='anime', period='today')
 print(meta)

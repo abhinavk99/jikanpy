@@ -50,14 +50,14 @@ class AbstractJikan(ABC):
             raise APIException(err_str)
 
     def _get_url(self, endpoint, id, extension, page):
-        """Create URL for anime, manga, character, and person endpoints"""
+        """Create URL for anime, manga, character, person, and club endpoints"""
         url = self.base.format(endpoint=endpoint, id=id)
         # Check if extension is valid
         if extension is not None:
             if extension not in EXTENSIONS[endpoint]:
                 raise ClientException('The extension is not valid')
             url += '/' + extension
-            if extension in ('episodes', 'reviews', 'userupdates'):
+            if extension in ('episodes', 'reviews', 'userupdates', 'members'):
                 url = self._add_page_to_url(url, page)
         return url
 
@@ -192,7 +192,7 @@ class AbstractJikan(ABC):
         Gets the response from Jikan API given the endpoint
 
         Keyword Arguments:
-        endpoint -- endpoint of API (anime, manga, character, person)
+        endpoint -- endpoint of API (anime, manga, character, person, club)
         id -- id of what to get the information of
         extension -- special information to get, possible values in the docs
         page -- page number of the results (default None)
@@ -215,6 +215,9 @@ class AbstractJikan(ABC):
 
     def person(self, id, extension=None):
         return self._get('person', id, extension)
+
+    def club(self, id, extension=None):
+        return self._get('club', id, extension)
 
     def user_list(self, id, extension=None):
         """Gets user list information"""

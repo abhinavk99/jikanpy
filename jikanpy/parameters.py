@@ -29,6 +29,9 @@ EXTENSIONS = {
     ),
     'person': (
         'pictures'
+    ),
+    'club': (
+        'members'
     )
 }
 
