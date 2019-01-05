@@ -40,6 +40,15 @@ def test_character_success(character_keys, jikan):
     assert character_keys.issubset(character_info.keys())
 
 
+@vcr.use_cassette('tests/vcr_cassettes/person-success.yaml')
+def test_person_success(person_keys, jikan):
+    person_info = jikan.person(KANA_HANAZAWA_ID)
+
+    assert isinstance(person_info, dict)
+    assert person_info['name'] == 'Kana Hanazawa'
+    assert person_keys.issubset(person_info.keys())
+
+
 @vcr.use_cassette('tests/vcr_cassettes/search-success.yaml')
 def test_search_success(search_keys, jikan):
     search_info = jikan.search(search_type='anime', query='naruto')

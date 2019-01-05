@@ -32,6 +32,15 @@ def character_keys():
 
 
 @pytest.fixture
+def person_keys():
+    return {'request_hash', 'request_cached', 'request_cache_expiry', 'mal_id',
+            'url', 'image_url', 'website_url', 'name', 'given_name',
+            'family_name', 'alternate_names', 'birthday', 'member_favorites',
+            'about', 'voice_acting_roles', 'anime_staff_positions',
+            'published_manga'}
+
+
+@pytest.fixture
 def search_keys():
     return {'request_hash', 'request_cached', 'request_cache_expiry', 'results',
             'last_page'}

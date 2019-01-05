@@ -11,6 +11,9 @@ print(fma)
 ginko = jikan.character(425)
 print(ginko)
 
+kana_hanazawa = jikan.person(189)
+print(kana_hanazawa)
+
 naruto = jikan.search(search_type='anime', query='naruto')
 print(naruto)
 

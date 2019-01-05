@@ -45,6 +45,16 @@ def test_character_success(character_keys, aio_jikan):
 
 
 @pytest.mark.asyncio
+def test_person_success(person_keys, aio_jikan):
+    person_info = yield from aio_jikan.person(KANA_HANAZAWA_ID)
+
+    assert isinstance(person_info, dict)
+    assert person_info['name'] == 'Kana Hanazawa'
+    assert person_keys.issubset(person_info.keys())
+    aio_jikan.close()
+
+
+@pytest.mark.asyncio
 def test_search_success(search_keys, aio_jikan):
     search_info = yield from aio_jikan.search(search_type='anime', query='naruto')
 
