@@ -37,6 +37,9 @@ ginko = jikan.character(425)
 # and manga
 mushishi_manga = jikan.manga(418)
 
+# search up people too
+kana_hanazawa = jikan.person(185)
+
 # search
 search_result = jikan.search('anime', 'Mushishi')
 # add a page number to the search request
@@ -121,6 +124,7 @@ async def main(loop):
     mushishi = await aio_jikan.anime(457)
     fma = await aio_jikan.manga(25)
     ginko = await aio_jikan.character(425)
+    kana_hanazawa = await aio_jikan.person(185)
     naruto = await aio_jikan.search(search_type='anime', query='naruto')
     winter_2018 = await aio_jikan.season(year=2018, season='winter')
     archive = await aio_jikan.season_archive()
