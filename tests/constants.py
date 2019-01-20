@@ -6,6 +6,7 @@ YEAR = 2018
 SEASON = 'winter'
 DAY = 'monday'
 TYPE = 'anime'
+SUBTYPE = 'tv'
 GENRE = 1
 PRODUCER = 37
 MAGAZINE = 83
