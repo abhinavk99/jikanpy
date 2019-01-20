@@ -309,6 +309,12 @@ def test_user_animelist_failure(jikan):
         jikan.user(username='user', request='animelist', page=1)
 
 
+@vcr.use_cassette('tests/vcr_cassettes/user-page-failure.yaml')
+def test_user_page_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.user(username='user', request='animelist', page='x')
+
+
 @vcr.use_cassette('tests/vcr_cassettes/user-history-failure.yaml')
 def test_user_history_failure(jikan):
     with pytest.raises(ClientException):

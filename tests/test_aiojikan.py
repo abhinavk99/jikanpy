@@ -345,6 +345,12 @@ async def test_user_animelist_failure(aio_jikan):
         await aio_jikan.user(username='user', request='animelist', page=1)
 
 
+@vcr.use_cassette('tests/vcr_cassettes/aio-user-page-failure.yaml')
+async def test_user_page_failure(aio_jikan):
+    with pytest.raises(ClientException):
+        await aio_jikan.user(username='user', request='animelist', page='x')
+
+
 @vcr.use_cassette('tests/vcr_cassettes/aio-user-history-failure.yaml')
 async def test_user_history_failure(aio_jikan):
     with pytest.raises(ClientException):
