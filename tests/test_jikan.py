@@ -2,7 +2,7 @@ import pytest
 import vcr
 
 from jikanpy.jikan import Jikan
-from jikanpy.exceptions import APIException, ClientException
+from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
 
 from constants import *
 from fixtures import *
@@ -236,3 +236,9 @@ def test_club_failure(jikan):
 def test_meta_failure(jikan):
     with pytest.raises(ClientException):
         jikan.meta(request='x', type='x', period='x')
+
+
+@vcr.use_cassette('tests/vcr_cassettes/user-list-failure.yaml')
+def test_user_list_failure(jikan):
+    with pytest.raises(DeprecatedEndpoint):
+        jikan.user_list(1)
