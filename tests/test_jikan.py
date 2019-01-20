@@ -22,6 +22,18 @@ def test_anime_success(anime_keys, jikan):
     assert anime_keys.issubset(anime_info.keys())
 
 
+@vcr.use_cassette('tests/vcr_cassettes/anime-episodes-success.yaml')
+def test_anime_episodes_success(anime_episodes_keys, episode_keys, jikan):
+    anime_episodes_info = jikan.anime(
+        MUSHISHI_ID, extension='episodes', page=1)
+
+    assert isinstance(anime_episodes_info, dict)
+    assert isinstance(anime_episodes_info['episodes'], list)
+    for episode in anime_episodes_info['episodes']:
+        assert episode_keys.issubset(episode.keys())
+    assert anime_episodes_keys.issubset(anime_episodes_info.keys())
+
+
 @vcr.use_cassette('tests/vcr_cassettes/manga-success.yaml')
 def test_manga_success(manga_keys, jikan):
     manga_info = jikan.manga(FULLMETAL_ID)
@@ -51,7 +63,8 @@ def test_person_success(person_keys, jikan):
 
 @vcr.use_cassette('tests/vcr_cassettes/search-success.yaml')
 def test_search_success(search_keys, jikan):
-    search_info = jikan.search(search_type='anime', query='naruto')
+    search_info = jikan.search(
+        search_type='anime', query='naruto', parameters={'type': 'tv'})
 
     assert isinstance(search_info, dict)
     assert search_keys.issubset(search_info.keys())
@@ -102,7 +115,7 @@ def test_schedule_success(schedule_keys, subset_anime_keys, jikan):
 
 @vcr.use_cassette('tests/vcr_cassettes/top-success.yaml')
 def test_top_success(top_keys, top_anime_keys, jikan):
-    top_info = jikan.top(type=TYPE)
+    top_info = jikan.top(type=TYPE, page=1, subtype=SUBTYPE)
 
     assert isinstance(top_info, dict)
     assert top_keys.issubset(top_info.keys())
@@ -150,6 +163,14 @@ def test_user_success(user_keys, jikan):
     assert user_keys.issubset(user_info.keys())
 
 
+@vcr.use_cassette('tests/vcr_cassettes/animelist-success.yaml')
+def test_animelist_success(animelist_keys, jikan):
+    animelist_info = jikan.user(username=USERNAME, request='animelist')
+
+    assert isinstance(animelist_info, dict)
+    assert animelist_keys.issubset(animelist_info.keys())
+
+
 @vcr.use_cassette('tests/vcr_cassettes/club-success.yaml')
 def test_club_success(club_keys, jikan):
     club_info = jikan.club(CLUB_ID)
@@ -172,6 +193,12 @@ def test_anime_failure(jikan):
         jikan.anime(-1)
 
 
+@vcr.use_cassette('tests/vcr_cassettes/anime-extension-failure.yaml')
+def test_anime_extension_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.anime(MUSHISHI_ID, extension='x')
+
+
 @vcr.use_cassette('tests/vcr_cassettes/manga-failure.yaml')
 def test_manga_failure(jikan):
     with pytest.raises(APIException):
@@ -184,10 +211,30 @@ def test_character_failure(jikan):
         jikan.character(-1)
 
 
+@vcr.use_cassette('tests/vcr_cassettes/search-key-failure.yaml')
+def test_search_key_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.search(search_type='anime', query='naruto',
+                     parameters={'x': 'tv'})
+
+
+@vcr.use_cassette('tests/vcr_cassettes/search-value-failure.yaml')
+def test_search_value_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.search(search_type='anime', query='naruto',
+                     parameters={'type': 'x'})
+
+
 @vcr.use_cassette('tests/vcr_cassettes/season-failure.yaml')
 def test_season_failure(jikan):
     with pytest.raises(APIException):
         jikan.season(year=-1, season=SEASON)
+
+
+@vcr.use_cassette('tests/vcr_cassettes/season-client-failure.yaml')
+def test_season_client_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.season(year='x', season=SEASON)
 
 
 @vcr.use_cassette('tests/vcr_cassettes/schedule-failure.yaml')
@@ -202,10 +249,28 @@ def test_top_failure(jikan):
         jikan.top(type='x')
 
 
+@vcr.use_cassette('tests/vcr_cassettes/top-subtype-failure.yaml')
+def test_top_subtype_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.top(type=TYPE, page=1, subtype='x')
+
+
+@vcr.use_cassette('tests/vcr_cassettes/top-page-failure.yaml')
+def test_top_page_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.top(type=TYPE, subtype=SUBTYPE)
+
+
 @vcr.use_cassette('tests/vcr_cassettes/genre-failure.yaml')
 def test_genre_failure(jikan):
     with pytest.raises(ClientException):
-        jikan.genre(type='x', genre_id=1)
+        jikan.genre(type='x', genre_id=GENRE)
+
+
+@vcr.use_cassette('tests/vcr_cassettes/genre-id-failure.yaml')
+def test_genre_id_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.genre(type=TYPE, genre_id='x')
 
 
 @vcr.use_cassette('tests/vcr_cassettes/producer-failure.yaml')
@@ -226,6 +291,42 @@ def test_user_failure(jikan):
         jikan.user(username='user', request='friends', argument='x')
 
 
+@vcr.use_cassette('tests/vcr_cassettes/user-request-failure.yaml')
+def test_user_request_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.user(username='user', request='x', argument='x')
+
+
+@vcr.use_cassette('tests/vcr_cassettes/user-profile-failure.yaml')
+def test_user_profile_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.user(username='user', request='profile', argument='x')
+
+
+@vcr.use_cassette('tests/vcr_cassettes/user-animelist-failure.yaml')
+def test_user_animelist_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.user(username='user', request='animelist', page=1)
+
+
+@vcr.use_cassette('tests/vcr_cassettes/user-history-failure.yaml')
+def test_user_history_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.user(username='user', request='history', argument='x')
+
+
+@vcr.use_cassette('tests/vcr_cassettes/user-animelist-argument-failure.yaml')
+def test_user_animelist_argument_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.user(username='user', request='animelist', argument='x')
+
+
+@vcr.use_cassette('tests/vcr_cassettes/user-mangalist-argument-failure.yaml')
+def test_user_mangalist_argument_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.user(username='user', request='mangalist', argument='x')
+
+
 @vcr.use_cassette('tests/vcr_cassettes/club-failure.yaml')
 def test_club_failure(jikan):
     with pytest.raises(APIException):
@@ -236,6 +337,18 @@ def test_club_failure(jikan):
 def test_meta_failure(jikan):
     with pytest.raises(ClientException):
         jikan.meta(request='x', type='x', period='x')
+
+
+@vcr.use_cassette('tests/vcr_cassettes/meta-type-failure.yaml')
+def test_meta_type_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.meta(request='requests', type='x', period='x')
+
+
+@vcr.use_cassette('tests/vcr_cassettes/meta-period-failure.yaml')
+def test_meta_period_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.meta(request='requests', type='anime', period='x')
 
 
 @vcr.use_cassette('tests/vcr_cassettes/user-list-failure.yaml')

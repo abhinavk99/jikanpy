@@ -1,51 +1,52 @@
 from jikanpy import Jikan
+from pprint import pprint
 
 jikan = Jikan()
 
 mushishi = jikan.anime(457)
-print(mushishi)
+pprint(mushishi)
 
 fma = jikan.manga(25)
-print(fma)
+pprint(fma)
 
 ginko = jikan.character(425)
-print(ginko)
+pprint(ginko)
 
 kana_hanazawa = jikan.person(189)
-print(kana_hanazawa)
+pprint(kana_hanazawa)
 
 naruto = jikan.search(search_type='anime', query='naruto')
-print(naruto)
+pprint(naruto)
 
 winter_2018 = jikan.season(year=2018, season='winter')
-print(winter_2018)
+pprint(winter_2018)
 
 archive = jikan.season_archive()
-print(archive)
+pprint(archive)
 
 later = jikan.season_later()
-print(later)
+pprint(later)
 
 monday = jikan.schedule(day='monday')
-print(monday)
+pprint(monday)
 
 top_anime = jikan.top(type='anime')
-print(top_anime)
+pprint(top_anime)
 
 action = jikan.genre(type='anime', genre_id=1)
-print(action)
+pprint(action)
 
 deen = jikan.producer(producer_id=37)
-print(deen)
+pprint(deen)
 
 jump = jikan.magazine(magazine_id=83)
-print(jump)
+pprint(jump)
 
 nekomata1037 = jikan.user(username='Nekomata1037')
-print(nekomata1037)
+pprint(nekomata1037)
 
 fantasy_anime_league = jikan.club(379)
-print(fantasy_anime_league)
+pprint(fantasy_anime_league)
 
 meta = jikan.meta(request='requests', type='anime', period='today')
-print(meta)
+pprint(meta)

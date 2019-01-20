@@ -1,53 +1,39 @@
 from jikanpy import AioJikan
 import asyncio
+from pprint import pprint
 
 loop = asyncio.get_event_loop()
 
 aio_jikan = AioJikan(loop=loop)
 
 
-@asyncio.coroutine
-def main(loop):
-    mushishi = yield from aio_jikan.anime(457)
-    print(mushishi)
+async def main(loop):
+    mushishi = await aio_jikan.anime(457)
+    pprint(mushishi)
 
-    fma = yield from aio_jikan.manga(25)
-    print(fma)
+    fma = await aio_jikan.manga(25)
+    pprint(fma)
 
-    ginko = yield from aio_jikan.character(425)
-    print(ginko)
+    ginko = await aio_jikan.character(425)
+    pprint(ginko)
 
-    naruto = yield from aio_jikan.search(search_type='anime', query='naruto')
-    print(naruto)
+    naruto = await aio_jikan.search(search_type='anime', query='naruto')
+    pprint(naruto)
 
-    winter_2018 = yield from aio_jikan.season(year=2018, season='winter')
-    print(winter_2018)
+    winter_2018 = await aio_jikan.season(year=2018, season='winter')
+    pprint(winter_2018)
 
-    monday = yield from aio_jikan.schedule(day='monday')
-    print(monday)
+    monday = await aio_jikan.schedule(day='monday')
+    pprint(monday)
 
-    top_anime = yield from aio_jikan.top(type='anime')
-    print(top_anime)
+    top_anime = await aio_jikan.top(type='anime')
+    pprint(top_anime)
 
-    meta = yield from aio_jikan.meta(request='requests', type='anime', period='today')
-    print(meta)
+    meta = await aio_jikan.meta(request='requests', type='anime', period='today')
+    pprint(meta)
 
     # Close the connection to Jikan API
-    yield from aio_jikan.close()
+    await aio_jikan.close()
 
 
 loop.run_until_complete(main(loop))
-
-# Using async/await syntax (only supported in Python 3.5+)
-#
-# async def main(loop):
-#     mushishi = await aio_jikan.anime(457)
-#     print(mushishi)
-
-#     fma = await aio_jikan.manga(25)
-#     print(fma)
-
-#     # Close the connection to Jikan API
-#     await aio_jikan.close()
-
-# loop.run_until_complete(main(loop))

@@ -14,6 +14,18 @@ def anime_keys():
 
 
 @pytest.fixture
+def anime_episodes_keys():
+    return {'request_hash', 'request_cached', 'request_cache_expiry',
+            'episodes_last_page', 'episodes'}
+
+
+@pytest.fixture
+def episode_keys():
+    return {'episode_id', 'title', 'title_japanese', 'title_romanji', 'aired',
+            'filler', 'recap', 'video_url', 'forum_url'}
+
+
+@pytest.fixture
 def manga_keys():
     return {'request_hash', 'request_cached', 'request_cache_expiry', 'mal_id',
             'url', 'title', 'title_english', 'title_synonyms', 'title_japanese',
@@ -123,6 +135,12 @@ def user_keys():
             'username', 'url', 'image_url', 'last_online', 'gender', 'birthday',
             'location', 'joined', 'anime_stats', 'manga_stats', 'favorites',
             'about'}
+
+
+@pytest.fixture
+def animelist_keys():
+    return {'request_hash', 'request_cached', 'request_cache_expiry', 'anime'}
+
 
 @pytest.fixture
 def club_keys():

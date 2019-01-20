@@ -104,6 +104,8 @@ class AbstractJikan(ABC):
         url = self._add_page_to_url(url, page)
         # Check if subtype is valid
         if subtype is not None:
+            if page is None:
+                raise ClientException('Page is required if subtype is given')
             if subtype.lower() not in SUBTYPES[type.lower()]:
                 raise ClientException('Subtype is not valid for ' + type)
             url += '/' + subtype.lower()
