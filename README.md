@@ -113,7 +113,7 @@ requests = jikan.meta(request='requests', type='anime', period='today')
 status = jikan.meta(request='status', type='anime', period='today')
 ```
 
-### Async Usage (Python 3.5+)
+## Async Usage (Python 3.5+)
 ```python
 from jikanpy import AioJikan
 
@@ -146,7 +146,7 @@ async def main(loop):
 loop.run_until_complete(main(loop))
 ```
 
-### Testing
+## Testing
 ```shell
 # In root of repository
 $ python -m pytest
