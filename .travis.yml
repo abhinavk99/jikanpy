@@ -13,6 +13,8 @@ jobs:
     script: pytest
   - stage: Testing with Python 3.7
     python: '3.7'
+    sudo: required
+    dist: xenial
     install:
       - pip install -r requirements.txt
       - pip install -e .
