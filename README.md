@@ -102,8 +102,8 @@ nekomata1037 = jikan.user(username='Nekomata1037', request='history')
 nekomata1037 = jikan.user(username='Nekomata1037', request='animelist')
 nekomata1037 = jikan.user(username='Nekomata1037', request='animelist', argument='completed', page=2)
 # manga list
-nekomata1037 = jikan.user(username='Nekomata1037', request='mangalist')
-nekomata1037 = jikan.user(username='Nekomata1037', request='mangalist', argument='all')
+Xinil = jikan.user(username='Xinil', request='mangalist')
+Xinil = jikan.user(username='Xinil', request='mangalist', argument='all')
 
 # clubs
 fantasy_anime_league = jikan.club(379)
