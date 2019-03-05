@@ -115,6 +115,13 @@ requests = jikan.meta(request='requests', type='anime', period='today')
 status = jikan.meta(request='status', type='anime', period='today')
 ```
 
+If you're running an instance of [jikan-rest](https://github.com/jikan-me/jikan-rest) on your system, and want to use that instead of [api.jikan.moe](https://jikan.moe/), you can pass that to Jikan:
+
+```python
+from jikanpy import Jikan
+jikan = Jikan("http://localhost:8000/v3/")
+```
+
 ## Async Usage (Python 3.5+)
 ```python
 from jikanpy import AioJikan
