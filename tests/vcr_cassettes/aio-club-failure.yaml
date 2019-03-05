@@ -1,0 +1,35 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.jikan.moe/v3/club/-1
+  response:
+    body: {string: '{"error":"Invalid or incomplete endpoint"}'}
+    headers:
+      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Methods]
+      : '*'
+      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Origin]
+      : '*'
+      ? !!python/object/new:multidict._istr.istr [Cache-Control]
+      : no-cache, private
+      ? !!python/object/new:multidict._istr.istr [Connection]
+      : keep-alive
+      ? !!python/object/new:multidict._istr.istr [Content-Encoding]
+      : gzip
+      ? !!python/object/new:multidict._istr.istr [Content-Length]
+      : '62'
+      ? !!python/object/new:multidict._istr.istr [Content-Type]
+      : application/json
+      ? !!python/object/new:multidict._istr.istr [Date]
+      : Sun, 20 Jan 2019 01:03:15 GMT
+      ? !!python/object/new:multidict._istr.istr [Server]
+      : nginx/1.13.10
+      ? !!python/object/new:multidict._istr.istr [Vary]
+      : Accept-Encoding
+    status: {code: 404, message: Not Found}
+    url: !!python/object/new:yarl.URL
+      state: !!python/tuple
+      - !!python/object/new:urllib.parse.SplitResult [https, api.jikan.moe, /v3/club/-1,
+        '', '']
+version: 1

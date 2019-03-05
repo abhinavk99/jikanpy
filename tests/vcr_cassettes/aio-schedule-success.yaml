@@ -1,0 +1,122 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.jikan.moe/v3/schedule/monday
+  response:
+    body: {string: '{"request_hash":"request:schedule:8afa3ba4218f1b668cd1e15205fc3f8e7a861bc3","request_cached":true,"request_cache_expiry":10350,"monday":[{"mal_id":37510,"url":"https:\/\/myanimelist.net\/anime\/37510\/Mob_Psycho_100_II","title":"Mob
+        Psycho 100 II","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1918\/96303.jpg?s=2c35fd30b95cf4df4d59faa1c7779359","synopsis":"Second
+        Season of ONE''s Mob Psycho 100.","type":"TV","airing_start":"2019-01-07T14:00:00+00:00","episodes":null,"members":165328,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":36,"type":"anime","name":"Slice
+        of Life","url":"https:\/\/myanimelist.net\/anime\/genre\/36\/Slice_of_Life"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Web
+        manga","producers":[{"mal_id":4,"type":"anime","name":"Bones","url":"https:\/\/myanimelist.net\/anime\/producer\/4\/Bones"}],"score":8.75,"licensors":["Crunchyroll"],"r18":false,"kids":false},{"mal_id":37520,"url":"https:\/\/myanimelist.net\/anime\/37520\/Dororo","title":"Dororo","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1933\/97061.jpg?s=a78d6c4373ae407364066e833801c4d0","synopsis":"A
+        samurai lord has bartered away his newborn son''s organs to forty-eight demons
+        in exchange for dominance on the battlefield. Yet, the abandoned infant survives
+        thanks to a medicine man who equips him with primitive prosthetics\u2014lethal
+        ones with which the wronged son will use to hunt down the multitude of demons
+        to reclaim his body one piece at a time, before confronting his father. On
+        his journeys the young hero encounters an orphan who claims to be the greatest
+        thief in Japan. \r\n\r\n(Source: Vertical Inc.)","type":"TV","airing_start":"2019-01-07T13:30:00+00:00","episodes":null,"members":99631,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":6,"type":"anime","name":"Demons","url":"https:\/\/myanimelist.net\/anime\/genre\/6\/Demons"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Manga","producers":[{"mal_id":569,"type":"anime","name":"MAPPA","url":"https:\/\/myanimelist.net\/anime\/producer\/569\/MAPPA"},{"mal_id":200,"type":"anime","name":"Tezuka
+        Productions","url":"https:\/\/myanimelist.net\/anime\/producer\/200\/Tezuka_Productions"}],"score":8.36,"licensors":[],"r18":false,"kids":false},{"mal_id":31537,"url":"https:\/\/myanimelist.net\/anime\/31537\/Manaria_Friends","title":"Manaria
+        Friends","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1580\/95199.jpg?s=7118fa62ceabc0123e9f85e09c42063c","synopsis":"Mysteria
+        Academy is a prestigious magic school that teaches magic without discrimination
+        to the three factions (men, gods, demons), who usually are engaged in battle
+        with each other. Two of the academy''s students are Anne, a princess and honor
+        student, and Grea, a princess born from a dragon and a human.\r\n\r\n(Source:
+        ANN)\r\n\r\nEpisode 1 was previewed at a screening at the Cygames Fes 2018
+        December 16, 2018. Regular broadcasting will begin on January 21, 2019.","type":"TV","airing_start":"2018-12-15T15:30:00+00:00","episodes":10,"members":41194,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":6,"type":"anime","name":"Demons","url":"https:\/\/myanimelist.net\/anime\/genre\/6\/Demons"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Game","producers":[{"mal_id":1893,"type":"anime","name":"CygamesPictures","url":"https:\/\/myanimelist.net\/anime\/producer\/1893\/CygamesPictures"}],"score":6.44,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":36653,"url":"https:\/\/myanimelist.net\/anime\/36653\/Tsurune__Kazemai_Koukou_Kyuudoubu","title":"Tsurune:
+        Kazemai Koukou Kyuudoubu","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1360\/93571.jpg?s=6fbcb2e9ab942b78f46f0e8c54d0a00c","synopsis":"The
+        story follows Minato Narumiya. Minato played Japanese archery in middle school,
+        but after a certain incident, he ran away from the sport. In high school,
+        Minato meets new friends, and together as part of their school''s archery
+        club they aim to win the prefectural tournament. \r\n\r\n(Source: ANN)","type":"TV","airing_start":"2018-10-21T15:10:00+00:00","episodes":13,"members":38067,"genres":[{"mal_id":30,"type":"anime","name":"Sports","url":"https:\/\/myanimelist.net\/anime\/genre\/30\/Sports"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"}],"source":"Light
+        novel","producers":[{"mal_id":2,"type":"anime","name":"Kyoto Animation","url":"https:\/\/myanimelist.net\/anime\/producer\/2\/Kyoto_Animation"}],"score":7.47,"licensors":["Ponycan
+        USA","Sentai Filmworks"],"r18":false,"kids":false},{"mal_id":37920,"url":"https:\/\/myanimelist.net\/anime\/37920\/Ueno-san_wa_Bukiyou","title":"Ueno-san
+        wa Bukiyou","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1942\/93388.jpg?s=cf20c16ac921dfafe4800afaa189fee8","synopsis":"Ueno-san,
+        who is in her third year of junior high school, is in love with the concept
+        of falling in love. She makes full use of her inventions and tries to show
+        it off to Tanaka, her Science Club kouhai.\r\n\r\n(Source: MAL News)","type":"TV","airing_start":"2019-01-06T15:30:00+00:00","episodes":null,"members":23286,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":42,"type":"anime","name":"Seinen","url":"https:\/\/myanimelist.net\/anime\/genre\/42\/Seinen"}],"source":"Manga","producers":[{"mal_id":1829,"type":"anime","name":"Lesprit","url":"https:\/\/myanimelist.net\/anime\/producer\/1829\/Lesprit"}],"score":6.51,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":38797,"url":"https:\/\/myanimelist.net\/anime\/38797\/Papa_datte_Shitai","title":"Papa
+        datte, Shitai","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1273\/97100.jpg?s=200230513b456efd04a0edec2ed5ba5e","synopsis":"\"There
+        are Times I Cannot Hold It, Even If I''m a Father\"\r\n\r\nUniversity student
+        Asumi came to Naruse household to be a housekeeper for his part-time job.
+        The family consists of a single-father and a son Ichika. Among them, the father
+        Naruse is too sexy for Asumi!! Even if he is not gay, Asumi gets conscious
+        of Keiichi, and when he noticed that Keiichi is sexually unsatisfied by noticing
+        him watching adult video in his room, he would unconsciously get tempted to
+        attack him\u2026! \"Naruse-san, you''re too sexy for a father with a child...!\"\r\n\r\n(Source:
+        MAL News)","type":"TV","airing_start":"2019-01-06T16:00:00+00:00","episodes":8,"members":3949,"genres":[{"mal_id":33,"type":"anime","name":"Yaoi","url":"https:\/\/myanimelist.net\/anime\/genre\/33\/Yaoi"},{"mal_id":28,"type":"anime","name":"Shounen
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/28\/Shounen_Ai"}],"source":"Manga","producers":[{"mal_id":207,"type":"anime","name":"Magic
+        Bus","url":"https:\/\/myanimelist.net\/anime\/producer\/207\/Magic_Bus"}],"score":5.77,"licensors":[],"r18":true,"kids":false},{"mal_id":37283,"url":"https:\/\/myanimelist.net\/anime\/37283\/Beyblade_Burst_Chouzetsu","title":"Beyblade
+        Burst Chouzetsu","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1086\/91130.jpg?s=0e93b70068a00726e69d26aa8da5b7cd","synopsis":"(No
+        synopsis yet.)","type":"TV","airing_start":"2018-04-02T08:55:00+00:00","episodes":null,"members":1527,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":24,"type":"anime","name":"Sci-Fi","url":"https:\/\/myanimelist.net\/anime\/genre\/24\/Sci-Fi"},{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":30,"type":"anime","name":"Sports","url":"https:\/\/myanimelist.net\/anime\/genre\/30\/Sports"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}],"source":"Original","producers":[{"mal_id":28,"type":"anime","name":"OLM","url":"https:\/\/myanimelist.net\/anime\/producer\/28\/OLM"}],"score":6.56,"licensors":[],"r18":false,"kids":false},{"mal_id":33933,"url":"https:\/\/myanimelist.net\/anime\/33933\/Yasamura_Yasashi_no_Yasashii_Sekai","title":"Yasamura
+        Yasashi no Yasashii Sekai","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/81641.jpg?s=e73ce83aef511fd518854d38a8f0874c","synopsis":"
+        The series follows a mysterious but gentle-hearted man named Yasashi Yasamura
+        who spreads warmth and human kindness wherever he goes.\r\n\r\n(Source: Crunchyroll)","type":"TV","airing_start":"2016-09-01T15:00:00+00:00","episodes":16,"members":641,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"}],"source":"Original","producers":[{"mal_id":276,"type":"anime","name":"DLE","url":"https:\/\/myanimelist.net\/anime\/producer\/276\/DLE"}],"score":null,"licensors":[],"r18":false,"kids":false},{"mal_id":37096,"url":"https:\/\/myanimelist.net\/anime\/37096\/Puzzle___Dragon","title":"Puzzle
+        & Dragon","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1535\/95070.jpg?s=8565e732bf91de4bd76ea89e8a94c2e5","synopsis":"The
+        story is set in modern day Japan following the growth of the protagonist Taiga
+        Akashi, an elementary school kid who wants to be a professional gamer someday.
+        \r\n\r\n(Source: Crunchyroll)","type":"TV","airing_start":"2018-04-02T09:25:00+00:00","episodes":null,"members":547,"genres":[{"mal_id":11,"type":"anime","name":"Game","url":"https:\/\/myanimelist.net\/anime\/genre\/11\/Game"},{"mal_id":15,"type":"anime","name":"Kids","url":"https:\/\/myanimelist.net\/anime\/genre\/15\/Kids"}],"source":"Game","producers":[{"mal_id":1,"type":"anime","name":"Studio
+        Pierrot","url":"https:\/\/myanimelist.net\/anime\/producer\/1\/Studio_Pierrot"}],"score":null,"licensors":[],"r18":false,"kids":true},{"mal_id":18941,"url":"https:\/\/myanimelist.net\/anime\/18941\/Shimajirou_no_Wow","title":"Shimajirou
+        no Wow!","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/50737.jpg?s=1564fe5d8a93a91738498b4cfb45cc1b","synopsis":"Fourth
+        season of the Shimajirou children''s television series.","type":"TV","airing_start":"2012-04-01T22:30:00+00:00","episodes":null,"members":193,"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":15,"type":"anime","name":"Kids","url":"https:\/\/myanimelist.net\/anime\/genre\/15\/Kids"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"}],"source":"Other","producers":[{"mal_id":229,"type":"anime","name":"The
+        Answer Studio","url":"https:\/\/myanimelist.net\/anime\/producer\/229\/The_Answer_Studio"}],"score":null,"licensors":[],"r18":false,"kids":true},{"mal_id":36740,"url":"https:\/\/myanimelist.net\/anime\/36740\/Dragon_Egg","title":"Dragon
+        Egg","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/88840.jpg?s=f42f8a7b4904e4ecbcce4084989e8791","synopsis":"10
+        years ago, a mysterious stone which looks just like an egg was found. This
+        egg turns out to be an ancient legendary Dragon Egg and it later transformed
+        in to a dragon. People call this the \u2018First Hatching\u2019 and found
+        out that they are able to use a dragon\u2019s powerful energy only if they
+        can speak the language of dragon. Soon after they found out this, an international
+        society choose talented children to communicate with dragon and train them
+        to carry out impossible missions. This group of children are called as Knights
+        of Dragon. The Knights of Dragon carry out impossible missions successfully
+        by finding dragons and their language hidden all around the world. Everything
+        working out great only before they got attack from Defectors\u2026\r\n\r\n(Source:
+        Official YouTube channel)","type":"TV","airing_start":"2017-11-06T08:00:00+00:00","episodes":null,"members":140,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":15,"type":"anime","name":"Kids","url":"https:\/\/myanimelist.net\/anime\/genre\/15\/Kids"},{"mal_id":24,"type":"anime","name":"Sci-Fi","url":"https:\/\/myanimelist.net\/anime\/genre\/24\/Sci-Fi"}],"source":"Original","producers":[],"score":null,"licensors":[],"r18":false,"kids":true},{"mal_id":35372,"url":"https:\/\/myanimelist.net\/anime\/35372\/Otoppe","title":"Otoppe","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/85180.jpg?s=d79a23db87a9fbb22fdfc663b7ebd79f","synopsis":"The
+        series follows a young girl named Shina who hopes to become the world''s best
+        DJ, and is interested in new sounds. Shina explores a mysterious world filled
+        with Otoppe, strange creatures capable of unique sounds.","type":"TV","airing_start":"2017-04-02T23:40:00+00:00","episodes":null,"members":98,"genres":[{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":15,"type":"anime","name":"Kids","url":"https:\/\/myanimelist.net\/anime\/genre\/15\/Kids"},{"mal_id":19,"type":"anime","name":"Music","url":"https:\/\/myanimelist.net\/anime\/genre\/19\/Music"}],"source":"Original","producers":[],"score":null,"licensors":[],"r18":false,"kids":true},{"mal_id":37428,"url":"https:\/\/myanimelist.net\/anime\/37428\/Chara_to_Otamajakushi_Shima","title":"Chara
+        to Otamajakushi Shima","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1931\/90895.jpg?s=2352783071c690d179068b0335e22f70","synopsis":"The
+        anime is set on the titular Musical Note Island, where the god of music is
+        said to reside. The island is home to \"instrument animals,\" who are born
+        from music energy, and have parts of their body composed of a musical instrument.
+        One day, a witch arrives at the island. The warrior girl Cara must go on a
+        journey to defeat the witch and win back the peace on the island.\r\n\r\n(Source:
+        ANN)","type":"TV","airing_start":"2018-04-02T01:15:00+00:00","episodes":40,"members":78,"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":15,"type":"anime","name":"Kids","url":"https:\/\/myanimelist.net\/anime\/genre\/15\/Kids"}],"source":"Original","producers":[{"mal_id":1838,"type":"anime","name":"33
+        Collective","url":"https:\/\/myanimelist.net\/anime\/producer\/1838\/33_Collective"}],"score":null,"licensors":[],"r18":false,"kids":true},{"mal_id":38451,"url":"https:\/\/myanimelist.net\/anime\/38451\/Reizouko_no_Tsukenosuke","title":"Reizouko
+        no Tsukenosuke!","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1884\/95217.jpg?s=2b1f422db4d67803ebdded14bd8fbd6c","synopsis":"A
+        gag anime about foods in a refrigerator. The anime airs within the Oha Suta
+        children''s morning TV program and will receive a simultaneous manga serialization
+        by Kazumata Oguri.","type":"TV","airing_start":"2018-09-30T22:05:00+00:00","episodes":null,"members":51,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":15,"type":"anime","name":"Kids","url":"https:\/\/myanimelist.net\/anime\/genre\/15\/Kids"},{"mal_id":20,"type":"anime","name":"Parody","url":"https:\/\/myanimelist.net\/anime\/genre\/20\/Parody"}],"source":"Original","producers":[],"score":null,"licensors":[],"r18":false,"kids":true}]}'}
+    headers:
+      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Methods]
+      : '*'
+      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Origin]
+      : '*'
+      ? !!python/object/new:multidict._istr.istr [Cache-Control]
+      : private, must-revalidate
+      ? !!python/object/new:multidict._istr.istr [Connection]
+      : keep-alive
+      ? !!python/object/new:multidict._istr.istr [Content-Encoding]
+      : gzip
+      ? !!python/object/new:multidict._istr.istr [Content-Length]
+      : '4553'
+      ? !!python/object/new:multidict._istr.istr [Content-Type]
+      : application/json
+      ? !!python/object/new:multidict._istr.istr [Date]
+      : Sun, 20 Jan 2019 01:03:05 GMT
+      ? !!python/object/new:multidict._istr.istr [Etag]
+      : '"40a47e083e18655ae6f9c14621eff704"'
+      ? !!python/object/new:multidict._istr.istr [Server]
+      : nginx/1.13.10
+      ? !!python/object/new:multidict._istr.istr [Vary]
+      : Accept-Encoding
+      X-D-V-N: INIT-AC644301AWS [C-S-W]
+      X-Powered-By: Loli
+    status: {code: 200, message: OK}
+    url: !!python/object/new:yarl.URL
+      state: !!python/tuple
+      - !!python/object/new:urllib.parse.SplitResult [https, api.jikan.moe, /v3/schedule/monday,
+        '', '']
+version: 1

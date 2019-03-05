@@ -1,0 +1,61 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.21.0]
+    method: GET
+    uri: https://api.jikan.moe/v3/anime/457/episodes/1
+  response:
+    body:
+      string: !!binary |
+        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
+        Sm08ms7VcnuBPGi09p/f/gVgpJLVBisAAA==
+    headers:
+      Access-Control-Allow-Methods: ['*']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: ['private, must-revalidate']
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['1792']
+      Content-Type: [application/json]
+      Date: ['Sun, 20 Jan 2019 01:25:49 GMT']
+      ETag: ['"e9e3e81e2b900651f5c92fa27c266b12"']
+      Server: [nginx/1.13.10]
+      Vary: [Accept-Encoding]
+      X-D-V-N: ['INIT-AC644301AWS [C-S-W]']
+      X-Powered-By: [Loli]
+    status: {code: 200, message: OK}
+version: 1

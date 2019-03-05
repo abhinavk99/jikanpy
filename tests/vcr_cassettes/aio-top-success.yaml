@@ -1,0 +1,131 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.jikan.moe/v3/top/anime/1/tv
+  response:
+    body: {string: '{"request_hash":"request:top:7bdc100eb773528168eefd494c7fbc71e556c85d","request_cached":true,"request_cache_expiry":38261,"top":[{"mal_id":5114,"rank":1,"title":"Fullmetal
+        Alchemist: Brotherhood","url":"https:\/\/myanimelist.net\/anime\/5114\/Fullmetal_Alchemist__Brotherhood","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1223\/96541.jpg?s=faffcb677a5eacd17bf761edd78bfb3f","type":"TV","episodes":64,"start_date":"Apr
+        2009","end_date":"Jul 2010","members":1347686,"score":9.24},{"mal_id":9253,"rank":2,"title":"Steins;Gate","url":"https:\/\/myanimelist.net\/anime\/9253\/Steins_Gate","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/73199.jpg?s=97b97d568f25a02cf5a22dda13b5371f","type":"TV","episodes":24,"start_date":"Apr
+        2011","end_date":"Sep 2011","members":1132690,"score":9.14},{"mal_id":28977,"rank":3,"title":"Gintama\u00b0","url":"https:\/\/myanimelist.net\/anime\/28977\/Gintama\u00b0","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/72078.jpg?s=e9537ac90c08758594c787ede117f209","type":"TV","episodes":51,"start_date":"Apr
+        2015","end_date":"Mar 2016","members":230220,"score":9.13},{"mal_id":11061,"rank":4,"title":"Hunter
+        x Hunter (2011)","url":"https:\/\/myanimelist.net\/anime\/11061\/Hunter_x_Hunter_2011","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/33657.jpg?s=5724d8c22ae7a1dad72d8f4229ef803f","type":"TV","episodes":148,"start_date":"Oct
+        2011","end_date":"Sep 2014","members":834032,"score":9.12},{"mal_id":9969,"rank":5,"title":"Gintama''","url":"https:\/\/myanimelist.net\/anime\/9969\/Gintama","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/50361.jpg?s=b3a061db8c3d42a055d58f9df1f3dac7","type":"TV","episodes":51,"start_date":"Apr
+        2011","end_date":"Mar 2012","members":238744,"score":9.1},{"mal_id":15417,"rank":6,"title":"Gintama'':
+        Enchousen","url":"https:\/\/myanimelist.net\/anime\/15417\/Gintama__Enchousen","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/75172.jpg?s=38a6e800ace5bcbee7a17b6c351ba987","type":"TV","episodes":13,"start_date":"Oct
+        2012","end_date":"Mar 2013","members":139943,"score":9.05},{"mal_id":35180,"rank":7,"title":"3-gatsu
+        no Lion 2nd Season","url":"https:\/\/myanimelist.net\/anime\/35180\/3-gatsu_no_Lion_2nd_Season","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/88469.jpg?s=becfbf556902bc3501e06a07354b9d76","type":"TV","episodes":22,"start_date":"Oct
+        2017","end_date":"Mar 2018","members":118671,"score":9.04},{"mal_id":4181,"rank":8,"title":"Clannad:
+        After Story","url":"https:\/\/myanimelist.net\/anime\/4181\/Clannad__After_Story","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/24647.jpg?s=316823146f54557fbe7518a81f4fc57f","type":"TV","episodes":24,"start_date":"Oct
+        2008","end_date":"Mar 2009","members":658058,"score":9},{"mal_id":918,"rank":9,"title":"Gintama","url":"https:\/\/myanimelist.net\/anime\/918\/Gintama","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/73274.jpg?s=ed42453c10ba12b03b1600d02725a174","type":"TV","episodes":201,"start_date":"Apr
+        2006","end_date":"Mar 2010","members":504070,"score":9},{"mal_id":34096,"rank":10,"title":"Gintama.","url":"https:\/\/myanimelist.net\/anime\/34096\/Gintama","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/83528.jpg?s=948f092dd55fb2572f38a0e21f03b642","type":"TV","episodes":12,"start_date":"Jan
+        2017","end_date":"Mar 2017","members":110194,"score":9},{"mal_id":35247,"rank":11,"title":"Owarimonogatari
+        2nd Season","url":"https:\/\/myanimelist.net\/anime\/35247\/Owarimonogatari_2nd_Season","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/87322.jpg?s=3e60507a4b6016d83e7433aa4cb7853e","type":"TV","episodes":7,"start_date":"Aug
+        2017","end_date":"Aug 2017","members":145226,"score":8.99},{"mal_id":32935,"rank":12,"title":"Haikyuu!!:
+        Karasuno Koukou vs. Shiratorizawa Gakuen Koukou","url":"https:\/\/myanimelist.net\/anime\/32935\/Haikyuu__Karasuno_Koukou_vs_Shiratorizawa_Gakuen_Koukou","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/81992.jpg?s=6d977383e0b5dc1ba1c122213178e547","type":"TV","episodes":10,"start_date":"Oct
+        2016","end_date":"Dec 2016","members":302694,"score":8.97},{"mal_id":2904,"rank":13,"title":"Code
+        Geass: Hangyaku no Lelouch R2","url":"https:\/\/myanimelist.net\/anime\/2904\/Code_Geass__Hangyaku_no_Lelouch_R2","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/9391.jpg?s=be052972605dd5422ef2df117766cff0","type":"TV","episodes":25,"start_date":"Apr
+        2008","end_date":"Sep 2008","members":865980,"score":8.94},{"mal_id":34599,"rank":14,"title":"Made
+        in Abyss","url":"https:\/\/myanimelist.net\/anime\/34599\/Made_in_Abyss","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1922\/91900.jpg?s=23ed65f97696d10ba66163856a7ceb78","type":"TV","episodes":13,"start_date":"Jul
+        2017","end_date":"Sep 2017","members":434487,"score":8.88},{"mal_id":23273,"rank":15,"title":"Shigatsu
+        wa Kimi no Uso","url":"https:\/\/myanimelist.net\/anime\/23273\/Shigatsu_wa_Kimi_no_Uso","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/67177.jpg?s=bc267f764bffe825e1e8d60f7185a2e9","type":"TV","episodes":22,"start_date":"Oct
+        2014","end_date":"Mar 2015","members":821799,"score":8.87},{"mal_id":28891,"rank":16,"title":"Haikyuu!!
+        Second Season","url":"https:\/\/myanimelist.net\/anime\/28891\/Haikyuu_Second_Season","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/76662.jpg?s=06ccfffc7b27ac5532d268b9934a224a","type":"TV","episodes":25,"start_date":"Oct
+        2015","end_date":"Mar 2016","members":388139,"score":8.86},{"mal_id":37491,"rank":17,"title":"Gintama.:
+        Shirogane no Tamashii-hen - Kouhan-sen","url":"https:\/\/myanimelist.net\/anime\/37491\/Gintama__Shirogane_no_Tamashii-hen_-_Kouhan-sen","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1776\/96566.jpg?s=e1aed468f049dd9444375e9149d33d65","type":"TV","episodes":14,"start_date":"Jul
+        2018","end_date":"Oct 2018","members":42336,"score":8.85},{"mal_id":33095,"rank":18,"title":"Shouwa
+        Genroku Rakugo Shinjuu: Sukeroku Futatabi-hen","url":"https:\/\/myanimelist.net\/anime\/33095\/Shouwa_Genroku_Rakugo_Shinjuu__Sukeroku_Futatabi-hen","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/82947.jpg?s=9f1dd28adde3fea5a733d1cfd7be7ad6","type":"TV","episodes":12,"start_date":"Jan
+        2017","end_date":"Mar 2017","members":87775,"score":8.84},{"mal_id":36838,"rank":19,"title":"Gintama.:
+        Shirogane no Tamashii-hen","url":"https:\/\/myanimelist.net\/anime\/36838\/Gintama__Shirogane_no_Tamashii-hen","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/89603.jpg?s=635cb89402d5d39f43767f3942e91206","type":"TV","episodes":12,"start_date":"Jan
+        2018","end_date":"Mar 2018","members":59711,"score":8.82},{"mal_id":1,"rank":20,"title":"Cowboy
+        Bebop","url":"https:\/\/myanimelist.net\/anime\/1\/Cowboy_Bebop","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/19644.jpg?s=bb1e96eb0a0224a57aa45443eab92575","type":"TV","episodes":26,"start_date":"Apr
+        1998","end_date":"Apr 1999","members":791622,"score":8.81},{"mal_id":24701,"rank":21,"title":"Mushishi
+        Zoku Shou 2nd Season","url":"https:\/\/myanimelist.net\/anime\/24701\/Mushishi_Zoku_Shou_2nd_Season","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/68095.jpg?s=6025adedafce15a9d2c9363e225241ba","type":"TV","episodes":10,"start_date":"Oct
+        2014","end_date":"Dec 2014","members":133324,"score":8.81},{"mal_id":37991,"rank":22,"title":"JoJo
+        no Kimyou na Bouken: Ougon no Kaze","url":"https:\/\/myanimelist.net\/anime\/37991\/JoJo_no_Kimyou_na_Bouken__Ougon_no_Kaze","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1572\/95010.jpg?s=88db8e76960fce4e7aaa69f71cfbb4cb","type":"TV","episodes":39,"start_date":"Oct
+        2018","end_date":null,"members":111597,"score":8.8},{"mal_id":263,"rank":23,"title":"Hajime
+        no Ippo","url":"https:\/\/myanimelist.net\/anime\/263\/Hajime_no_Ippo","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/2025.jpg?s=fdb821ca62657cba4df132dea7baa387","type":"TV","episodes":75,"start_date":"Oct
+        2000","end_date":"Mar 2002","members":256282,"score":8.79},{"mal_id":1575,"rank":24,"title":"Code
+        Geass: Hangyaku no Lelouch","url":"https:\/\/myanimelist.net\/anime\/1575\/Code_Geass__Hangyaku_no_Lelouch","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/50331.jpg?s=afd09d7e5d76283418a1a22e7c122ca9","type":"TV","episodes":25,"start_date":"Oct
+        2006","end_date":"Jul 2007","members":1078174,"score":8.77},{"mal_id":17074,"rank":25,"title":"Monogatari
+        Series: Second Season","url":"https:\/\/myanimelist.net\/anime\/17074\/Monogatari_Series__Second_Season","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/52133.jpg?s=b22811f98b26399cd65787af1447848c","type":"TV","episodes":26,"start_date":"Jul
+        2013","end_date":"Dec 2013","members":341255,"score":8.77},{"mal_id":21939,"rank":26,"title":"Mushishi
+        Zoku Shou","url":"https:\/\/myanimelist.net\/anime\/21939\/Mushishi_Zoku_Shou","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/58533.jpg?s=ff40f900ea0877725ccde517b126c531","type":"TV","episodes":10,"start_date":"Apr
+        2014","end_date":"Jun 2014","members":161242,"score":8.76},{"mal_id":37779,"rank":27,"title":"Yakusoku
+        no Neverland","url":"https:\/\/myanimelist.net\/anime\/37779\/Yakusoku_no_Neverland","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1125\/96929.jpg?s=56b9d911caa0f0039dddef17c9977acb","type":"TV","episodes":12,"start_date":"Jan
+        2019","end_date":null,"members":141969,"score":8.75},{"mal_id":37510,"rank":28,"title":"Mob
+        Psycho 100 II","url":"https:\/\/myanimelist.net\/anime\/37510\/Mob_Psycho_100_II","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1918\/96303.jpg?s=b5b51cff7ba201e4f1acf37f4f44e224","type":"TV","episodes":null,"start_date":"Jan
+        2019","end_date":null,"members":166354,"score":8.75},{"mal_id":245,"rank":29,"title":"Great
+        Teacher Onizuka","url":"https:\/\/myanimelist.net\/anime\/245\/Great_Teacher_Onizuka","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/11460.jpg?s=7e890b7e93b7b57c2de4aa90211931bd","type":"TV","episodes":43,"start_date":"Jun
+        1999","end_date":"Sep 2000","members":395064,"score":8.73},{"mal_id":457,"rank":30,"title":"Mushishi","url":"https:\/\/myanimelist.net\/anime\/457\/Mushishi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/73862.jpg?s=d976f75f480430a0c9fde4455696131d","type":"TV","episodes":26,"start_date":"Oct
+        2005","end_date":"Jun 2006","members":444948,"score":8.73},{"mal_id":2001,"rank":31,"title":"Tengen
+        Toppa Gurren Lagann","url":"https:\/\/myanimelist.net\/anime\/2001\/Tengen_Toppa_Gurren_Lagann","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/5123.jpg?s=15bb64e0c8b13acfa5d0761308b66f59","type":"TV","episodes":27,"start_date":"Apr
+        2007","end_date":"Sep 2007","members":865240,"score":8.73},{"mal_id":5258,"rank":32,"title":"Hajime
+        no Ippo: New Challenger","url":"https:\/\/myanimelist.net\/anime\/5258\/Hajime_no_Ippo__New_Challenger","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/56617.jpg?s=4c8a3a8180c114c3771eb183e5318a0e","type":"TV","episodes":26,"start_date":"Jan
+        2009","end_date":"Jul 2009","members":139845,"score":8.72},{"mal_id":34591,"rank":33,"title":"Natsume
+        Yuujinchou Roku","url":"https:\/\/myanimelist.net\/anime\/34591\/Natsume_Yuujinchou_Roku","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/84416.jpg?s=931f8a6bfc42adf9257eeb7641bad75e","type":"TV","episodes":11,"start_date":"Apr
+        2017","end_date":"Jun 2017","members":80692,"score":8.72},{"mal_id":33486,"rank":34,"title":"Boku
+        no Hero Academia 2nd Season","url":"https:\/\/myanimelist.net\/anime\/33486\/Boku_no_Hero_Academia_2nd_Season","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/85221.jpg?s=bc4bd0a738a03bfe9176c5d83dc6f65e","type":"TV","episodes":25,"start_date":"Apr
+        2017","end_date":"Sep 2017","members":761324,"score":8.71},{"mal_id":11665,"rank":35,"title":"Natsume
+        Yuujinchou Shi","url":"https:\/\/myanimelist.net\/anime\/11665\/Natsume_Yuujinchou_Shi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/37449.jpg?s=2bb045b3120e6a3a23257bb39689ae30","type":"TV","episodes":13,"start_date":"Jan
+        2012","end_date":"Mar 2012","members":143393,"score":8.71},{"mal_id":30276,"rank":36,"title":"One
+        Punch Man","url":"https:\/\/myanimelist.net\/anime\/30276\/One_Punch_Man","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/76049.jpg?s=40b6c7dbbbb94c44675116d301150078","type":"TV","episodes":12,"start_date":"Oct
+        2015","end_date":"Dec 2015","members":1183228,"score":8.71},{"mal_id":36456,"rank":37,"title":"Boku
+        no Hero Academia 3rd Season","url":"https:\/\/myanimelist.net\/anime\/36456\/Boku_no_Hero_Academia_3rd_Season","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1319\/92084.jpg?s=35232941f9c872fd1f5af37fa389452b","type":"TV","episodes":25,"start_date":"Apr
+        2018","end_date":"Sep 2018","members":521991,"score":8.69},{"mal_id":19,"rank":38,"title":"Monster","url":"https:\/\/myanimelist.net\/anime\/19\/Monster","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/18793.jpg?s=08c4f10a101c3835eeb14ca0715512bd","type":"TV","episodes":74,"start_date":"Apr
+        2004","end_date":"Sep 2005","members":392583,"score":8.69},{"mal_id":1535,"rank":39,"title":"Death
+        Note","url":"https:\/\/myanimelist.net\/anime\/1535\/Death_Note","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/9453.jpg?s=b89e80691ac5cc0610847ccbe0b8424a","type":"TV","episodes":37,"start_date":"Oct
+        2006","end_date":"Jun 2007","members":1603227,"score":8.66},{"mal_id":12365,"rank":40,"title":"Bakuman.
+        3rd Season","url":"https:\/\/myanimelist.net\/anime\/12365\/Bakuman_3rd_Season","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/41845.jpg?s=3e8c09dddfce41e17d602c0cd81875e1","type":"TV","episodes":25,"start_date":"Oct
+        2012","end_date":"Mar 2013","members":199518,"score":8.65},{"mal_id":20583,"rank":41,"title":"Haikyuu!!","url":"https:\/\/myanimelist.net\/anime\/20583\/Haikyuu","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/76014.jpg?s=ef5c00cb929dcd690c87f56e6d1b0c8a","type":"TV","episodes":25,"start_date":"Apr
+        2014","end_date":"Sep 2014","members":552632,"score":8.65},{"mal_id":19647,"rank":42,"title":"Hajime
+        no Ippo: Rising","url":"https:\/\/myanimelist.net\/anime\/19647\/Hajime_no_Ippo__Rising","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/56147.jpg?s=7e50339d044aed8909d36bb9afa331d3","type":"TV","episodes":25,"start_date":"Oct
+        2013","end_date":"Mar 2014","members":116254,"score":8.65},{"mal_id":34612,"rank":43,"title":"Saiki
+        Kusuo no \u03a8-nan 2","url":"https:\/\/myanimelist.net\/anime\/34612\/Saiki_Kusuo_no_\u03a8-nan_2","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1961\/91383.jpg?s=98a1123f1f794ba0c851840461394e4f","type":"TV","episodes":24,"start_date":"Jan
+        2018","end_date":"Jun 2018","members":114470,"score":8.65},{"mal_id":7785,"rank":44,"title":"Yojouhan
+        Shinwa Taikei","url":"https:\/\/myanimelist.net\/anime\/7785\/Yojouhan_Shinwa_Taikei","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/50457.jpg?s=e159597465fa4799df1f8128a8683750","type":"TV","episodes":11,"start_date":"Apr
+        2010","end_date":"Jul 2010","members":206552,"score":8.65},{"mal_id":30654,"rank":45,"title":"Ansatsu
+        Kyoushitsu 2nd Season","url":"https:\/\/myanimelist.net\/anime\/30654\/Ansatsu_Kyoushitsu_2nd_Season","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/77966.jpg?s=4161bf9d25a2816af9642ead2cd3a831","type":"TV","episodes":25,"start_date":"Jan
+        2016","end_date":"Jul 2016","members":454457,"score":8.64},{"mal_id":11741,"rank":46,"title":"Fate\/Zero
+        2nd Season","url":"https:\/\/myanimelist.net\/anime\/11741\/Fate_Zero_2nd_Season","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/41125.jpg?s=78a6e73a2cd5856b28d8c182cd5a1a22","type":"TV","episodes":12,"start_date":"Apr
+        2012","end_date":"Jun 2012","members":550354,"score":8.64},{"mal_id":31933,"rank":47,"title":"JoJo
+        no Kimyou na Bouken: Diamond wa Kudakenai","url":"https:\/\/myanimelist.net\/anime\/31933\/JoJo_no_Kimyou_na_Bouken__Diamond_wa_Kudakenai","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/79156.jpg?s=9189ddeb4a702d774b985fe16f315a81","type":"TV","episodes":39,"start_date":"Apr
+        2016","end_date":"Dec 2016","members":232864,"score":8.64},{"mal_id":10379,"rank":48,"title":"Natsume
+        Yuujinchou San","url":"https:\/\/myanimelist.net\/anime\/10379\/Natsume_Yuujinchou_San","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/82394.jpg?s=f3bc38aa1e6c10580687828856d8dc28","type":"TV","episodes":13,"start_date":"Jul
+        2011","end_date":"Sep 2011","members":150371,"score":8.64},{"mal_id":22135,"rank":49,"title":"Ping
+        Pong the Animation","url":"https:\/\/myanimelist.net\/anime\/22135\/Ping_Pong_the_Animation","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/58041.jpg?s=fbfd98389b5a6f1a27979446e3f07abe","type":"TV","episodes":11,"start_date":"Apr
+        2014","end_date":"Jun 2014","members":165923,"score":8.64},{"mal_id":2921,"rank":50,"title":"Ashita
+        no Joe 2","url":"https:\/\/myanimelist.net\/anime\/2921\/Ashita_no_Joe_2","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/45028.jpg?s=bf58ff0c0759f78bf968a74ec535d0d2","type":"TV","episodes":47,"start_date":"Oct
+        1980","end_date":"Aug 1981","members":15793,"score":8.63}]}'}
+    headers:
+      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Methods]
+      : '*'
+      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Origin]
+      : '*'
+      ? !!python/object/new:multidict._istr.istr [Cache-Control]
+      : private, must-revalidate
+      ? !!python/object/new:multidict._istr.istr [Connection]
+      : keep-alive
+      ? !!python/object/new:multidict._istr.istr [Content-Encoding]
+      : gzip
+      ? !!python/object/new:multidict._istr.istr [Content-Length]
+      : '4281'
+      ? !!python/object/new:multidict._istr.istr [Content-Type]
+      : application/json
+      ? !!python/object/new:multidict._istr.istr [Date]
+      : Sun, 20 Jan 2019 02:37:58 GMT
+      ? !!python/object/new:multidict._istr.istr [Etag]
+      : '"4a47f1a45df5b2edf50ba7a0724687d9"'
+      ? !!python/object/new:multidict._istr.istr [Server]
+      : nginx/1.13.10
+      ? !!python/object/new:multidict._istr.istr [Vary]
+      : Accept-Encoding
+      X-D-V-N: INIT-AC644301AWS [C-S-W]
+      X-Powered-By: Loli
+    status: {code: 200, message: OK}
+    url: !!python/object/new:yarl.URL
+      state: !!python/tuple
+      - !!python/object/new:urllib.parse.SplitResult [https, api.jikan.moe, /v3/top/anime/1/tv,
+        '', '']
+version: 1

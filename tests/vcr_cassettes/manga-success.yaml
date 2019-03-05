@@ -1,0 +1,61 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://api.jikan.moe/v3/manga/25
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Methods: ['*']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: ['no-cache, private']
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['1995']
+      Content-Type: [application/json]
+      Date: ['Tue, 04 Sep 2018 04:15:55 GMT']
+      Server: [nginx/1.13.10]
+      Vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+version: 1

@@ -1,0 +1,72 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.jikan.moe/v3/club/379
+  response:
+    body: {string: '{"request_hash":"request:club:17ed3f28f4e574cb643a731b83e4619e8cae2307","request_cached":true,"request_cache_expiry":42080,"mal_id":379,"url":"https:\/\/myanimelist.net\/clubs.php?cid=379","image_url":"https:\/\/cdn.myanimelist.net\/images\/clubs\/5\/2984.jpg?s=1d420f3a90173f8d9d56f0012dfb9398","title":"Fantasy
+        Anime League","members_count":3283,"pictures_count":4,"category":"Games","created":"2007-07-10T00:00:00+00:00","type":"public","staff":[{"mal_id":0,"type":"profile","name":"AlexTheRiot","url":"https:\/\/myanimelist.net\/profile\/AlexTheRiot"},{"mal_id":0,"type":"profile","name":"Congress","url":"https:\/\/myanimelist.net\/profile\/Congress"},{"mal_id":0,"type":"profile","name":"FALbot","url":"https:\/\/myanimelist.net\/profile\/FALbot"},{"mal_id":0,"type":"profile","name":"kei-clone","url":"https:\/\/myanimelist.net\/profile\/kei-clone"},{"mal_id":0,"type":"profile","name":"Miked","url":"https:\/\/myanimelist.net\/profile\/Miked"},{"mal_id":0,"type":"profile","name":"Naruleach","url":"https:\/\/myanimelist.net\/profile\/Naruleach"},{"mal_id":0,"type":"profile","name":"Numi","url":"https:\/\/myanimelist.net\/profile\/Numi"},{"mal_id":0,"type":"profile","name":"Paulo27","url":"https:\/\/myanimelist.net\/profile\/Paulo27"},{"mal_id":0,"type":"profile","name":"_Ghost_","url":"https:\/\/myanimelist.net\/profile\/_Ghost_"}],"anime_relations":[{"mal_id":37561,"type":"anime","name":"Akanesasu
+        Shoujo","url":"https:\/\/myanimelist.net\/anime\/37561"},{"mal_id":37206,"type":"anime","name":"Anima
+        Yell!","url":"https:\/\/myanimelist.net\/anime\/37206"},{"mal_id":37584,"type":"anime","name":"Bakumatsu","url":"https:\/\/myanimelist.net\/anime\/37584"},{"mal_id":37716,"type":"anime","name":"Beelzebub-jou
+        no Okinimesu mama.","url":"https:\/\/myanimelist.net\/anime\/37716"},{"mal_id":37823,"type":"anime","name":"Conception","url":"https:\/\/myanimelist.net\/anime\/37823"},{"mal_id":37597,"type":"anime","name":"Dakaretai
+        Otoko 1-i ni Odosarete Imasu.","url":"https:\/\/myanimelist.net\/anime\/37597"},{"mal_id":37496,"type":"anime","name":"Double
+        Decker! Doug & Kirill","url":"https:\/\/myanimelist.net\/anime\/37496"},{"mal_id":36317,"type":"anime","name":"Gaikotsu
+        Shotenin Honda-san","url":"https:\/\/myanimelist.net\/anime\/36317"},{"mal_id":37657,"type":"anime","name":"Gakuen
+        Basara","url":"https:\/\/myanimelist.net\/anime\/37657"},{"mal_id":37989,"type":"anime","name":"Golden
+        Kamuy 2nd Season","url":"https:\/\/myanimelist.net\/anime\/37989"},{"mal_id":37490,"type":"anime","name":"Gyakuten
+        Saiban: Sono \"Shinjitsu\", Igi Ari! Season 2","url":"https:\/\/myanimelist.net\/anime\/37490"},{"mal_id":37555,"type":"anime","name":"Hangyakusei
+        Million Arthur","url":"https:\/\/myanimelist.net\/anime\/37555"},{"mal_id":36945,"type":"anime","name":"Himote
+        House","url":"https:\/\/myanimelist.net\/anime\/36945"},{"mal_id":37007,"type":"anime","name":"Hinomaruzumou","url":"https:\/\/myanimelist.net\/anime\/37007"},{"mal_id":37497,"type":"anime","name":"Irozuku
+        Sekai no Ashita kara","url":"https:\/\/myanimelist.net\/anime\/37497"},{"mal_id":37992,"type":"anime","name":"Jingai-san
+        no Yome","url":"https:\/\/myanimelist.net\/anime\/37992"},{"mal_id":37991,"type":"anime","name":"JoJo
+        no Kimyou na Bouken: Ougon no Kaze","url":"https:\/\/myanimelist.net\/anime\/37991"},{"mal_id":37447,"type":"anime","name":"Karakuri
+        Circus","url":"https:\/\/myanimelist.net\/anime\/37447"},{"mal_id":37965,"type":"anime","name":"Kaze
+        ga Tsuyoku Fuiteiru","url":"https:\/\/myanimelist.net\/anime\/37965"},{"mal_id":37475,"type":"anime","name":"Kishuku
+        Gakkou no Juliet","url":"https:\/\/myanimelist.net\/anime\/37475"},{"mal_id":37232,"type":"anime","name":"Merc
+        Storia: Mukiryoku no Shounen to Bin no Naka no Shoujo","url":"https:\/\/myanimelist.net\/anime\/37232"},{"mal_id":36632,"type":"anime","name":"Ore
+        ga Suki nano wa Imouto dakedo Imouto ja Nai","url":"https:\/\/myanimelist.net\/anime\/36632"},{"mal_id":37202,"type":"anime","name":"Radiant","url":"https:\/\/myanimelist.net\/anime\/37202"},{"mal_id":37221,"type":"anime","name":"Release
+        the Spyce","url":"https:\/\/myanimelist.net\/anime\/37221"},{"mal_id":35835,"type":"anime","name":"RErideD:
+        Tokigoe no Derrida","url":"https:\/\/myanimelist.net\/anime\/35835"},{"mal_id":37450,"type":"anime","name":"Seishun
+        Buta Yarou wa Bunny Girl Senpai no Yume wo Minai","url":"https:\/\/myanimelist.net\/anime\/37450"},{"mal_id":36037,"type":"anime","name":"Senran
+        Kagura Shinovi Master: Tokyo Youma-hen","url":"https:\/\/myanimelist.net\/anime\/36037"},{"mal_id":36000,"type":"anime","name":"Sora
+        to Umi no Aida","url":"https:\/\/myanimelist.net\/anime\/36000"},{"mal_id":35847,"type":"anime","name":"SSSS.Gridman","url":"https:\/\/myanimelist.net\/anime\/35847"},{"mal_id":37430,"type":"anime","name":"Tensei
+        shitara Slime Datta Ken","url":"https:\/\/myanimelist.net\/anime\/37430"},{"mal_id":36432,"type":"anime","name":"Toaru
+        Majutsu no Index III","url":"https:\/\/myanimelist.net\/anime\/36432"},{"mal_id":37579,"type":"anime","name":"Tonari
+        no Kyuuketsuki-san","url":"https:\/\/myanimelist.net\/anime\/37579"},{"mal_id":36653,"type":"anime","name":"Tsurune:
+        Kazemai Koukou Kyuudoubu","url":"https:\/\/myanimelist.net\/anime\/36653"},{"mal_id":37722,"type":"anime","name":"Uchi
+        no Maid ga Uzasugiru!","url":"https:\/\/myanimelist.net\/anime\/37722"},{"mal_id":36510,"type":"anime","name":"Ulysses:
+        Jehanne Darc to Renkin no Kishi","url":"https:\/\/myanimelist.net\/anime\/36510"},{"mal_id":37786,"type":"anime","name":"Yagate
+        Kimi ni Naru","url":"https:\/\/myanimelist.net\/anime\/37786"},{"mal_id":37976,"type":"anime","name":"Zombieland
+        Saga","url":"https:\/\/myanimelist.net\/anime\/37976"}],"manga_relations":[],"character_relations":[]}'}
+    headers:
+      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Methods]
+      : '*'
+      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Origin]
+      : '*'
+      ? !!python/object/new:multidict._istr.istr [Cache-Control]
+      : private, must-revalidate
+      ? !!python/object/new:multidict._istr.istr [Connection]
+      : keep-alive
+      ? !!python/object/new:multidict._istr.istr [Content-Encoding]
+      : gzip
+      ? !!python/object/new:multidict._istr.istr [Content-Length]
+      : '1485'
+      ? !!python/object/new:multidict._istr.istr [Content-Type]
+      : application/json
+      ? !!python/object/new:multidict._istr.istr [Date]
+      : Sun, 20 Jan 2019 01:03:10 GMT
+      ? !!python/object/new:multidict._istr.istr [Etag]
+      : '"a643f2cd5ebc8c55950e216ab2551079"'
+      ? !!python/object/new:multidict._istr.istr [Server]
+      : nginx/1.13.10
+      ? !!python/object/new:multidict._istr.istr [Vary]
+      : Accept-Encoding
+      X-D-V-N: INIT-AC644301AWS [C-S-W]
+      X-Powered-By: Loli
+    status: {code: 200, message: OK}
+    url: !!python/object/new:yarl.URL
+      state: !!python/tuple
+      - !!python/object/new:urllib.parse.SplitResult [https, api.jikan.moe, /v3/club/379,
+        '', '']
+version: 1

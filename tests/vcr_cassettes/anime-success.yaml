@@ -1,0 +1,71 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://api.jikan.moe/v3/anime/457
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Methods: ['*']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: ['no-cache, private']
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['2554']
+      Content-Type: [application/json]
+      Date: ['Tue, 04 Sep 2018 04:15:54 GMT']
+      Server: [nginx/1.13.10]
+      Vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+version: 1

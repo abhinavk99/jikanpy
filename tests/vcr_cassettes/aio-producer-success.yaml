@@ -1,0 +1,1247 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.jikan.moe/v3/producer/37
+  response:
+    body: {string: '{"request_hash":"request:producer:d2de71db835bd172070ed42e09e4378c87c55a6d","request_cached":true,"request_cache_expiry":42129,"meta":{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"},"anime":[{"mal_id":30831,"url":"https:\/\/myanimelist.net\/anime\/30831\/Kono_Subarashii_Sekai_ni_Shukufuku_wo","title":"Kono
+        Subarashii Sekai ni Shukufuku wo!","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/77831.jpg?s=c79dc6eecfc37d19d2fa0abe7de256b1","synopsis":"After
+        dying a laughable and pathetic death on his way back from buying a game, high
+        school student and recluse Kazuma Satou finds himself sitting before a beautiful
+        but obnoxious goddess named Aqua. She provides the NEET with two options:
+        continue on to heaven or reincarnate in every gamer''s dream\u2014a real fantasy
+        world! Choosing to start a new life, Kazuma is quickly tasked with defeating
+        a Demon King who is terrorizing villages. But before he goes, he can choose
+        one item of any kind to aid him in his quest, and the future hero selects
+        Aqua. But Kazuma has made a grave mistake\u2014Aqua is completely useless!\r\n\r\nUnfortunately,
+        their troubles don''t end here; it turns out that living in such a world is
+        far different from how it plays out in a game. Instead of going on a thrilling
+        adventure, the duo must first work to pay for their living expenses. Indeed,
+        their misfortunes have only just begun!\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2016-01-13T16:05:00+00:00","episodes":10,"members":687780,"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":20,"type":"anime","name":"Parody","url":"https:\/\/myanimelist.net\/anime\/genre\/20\/Parody"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.18,"licensors":["Crunchyroll"],"r18":false,"kids":false},{"mal_id":356,"url":"https:\/\/myanimelist.net\/anime\/356\/Fate_stay_night","title":"Fate\/stay
+        night","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/30327.jpg?s=c9c0269c7d13224b4ee9a26f50998963","synopsis":"After
+        a mysterious inferno kills his family, Shirou is saved and adopted by Kiritsugu
+        Emiya, who teaches him the ways of magic and justice.\r\n\r\nOne night, years
+        after Kiritsugu''s death, Shirou is cleaning at school, when he finds himself
+        caught in the middle of a deadly encounter between two superhumans known as
+        Servants. During his attempt to escape, the boy is caught by one of the Servants
+        and receives a life-threatening injury. Miraculously, he survives, but the
+        same Servant returns to finish what he started. In desperation, Shirou summons
+        a Servant of his own, a knight named Saber. The two must now participate in
+        the Fifth Holy Grail War, a battle royale of seven Servants and the mages
+        who summoned them, with the grand prize being none other than the omnipotent
+        Holy Grail itself.\r\n\r\nFate\/stay night follows Shirou as he struggles
+        to find the fine line between a hero and a killer, his ideals clashing with
+        the harsh reality around him. Will the boy become a hero like his foster father,
+        or die trying?\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2006-01-06T16:30:00+00:00","episodes":24,"members":540493,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"}],"source":"Visual
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.49,"licensors":["Geneon
+        Entertainment USA","Sentai Filmworks"],"r18":false,"kids":false},{"mal_id":32937,"url":"https:\/\/myanimelist.net\/anime\/32937\/Kono_Subarashii_Sekai_ni_Shukufuku_wo_2","title":"Kono
+        Subarashii Sekai ni Shukufuku wo! 2","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/83188.jpg?s=bbb6ea57f2394771eaf57685aec6e501","synopsis":"When
+        Kazuma Satou died, he was given two choices: pass on to heaven or be revived
+        in a fantasy world. After choosing the new world, the goddess Aqua tasked
+        him with defeating the Demon King, and let him choose any weapon to aid him.
+        Unfortunately, Kazuma chose to bring Aqua herself and has regretted the decision
+        ever since then.\r\n\r\nNot only is he stuck with a useless deity turned party
+        archpriest, the pair also has to make enough money for living expenses. To
+        add to their problems, their group continued to grow as more problematic adventurers
+        joined their ranks. Their token spellcaster, Megumin, is an explosion magic
+        specialist who can only cast one spell once per day and refuses to learn anything
+        else. There is also their stalwart crusader, Lalatina \"Darkness\" Dustiness
+        Ford, a helpless masochist who makes Kazuma look pure in comparison.\r\n\r\nKono
+        Subarashii Sekai ni Shukufuku wo! 2 continues to follow Kazuma and the rest
+        of his party through countless more adventures as they struggle to earn money
+        and have to deal with one another''s problematic personalities. However, things
+        rarely go as planned, and they are often sidetracked by their own idiotic
+        tendencies.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2017-01-11T16:05:00+00:00","episodes":10,"members":508830,"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":20,"type":"anime","name":"Parody","url":"https:\/\/myanimelist.net\/anime\/genre\/20\/Parody"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.37,"licensors":[],"r18":false,"kids":false},{"mal_id":934,"url":"https:\/\/myanimelist.net\/anime\/934\/Higurashi_no_Naku_Koro_ni","title":"Higurashi
+        no Naku Koro ni","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/19634.jpg?s=13196ca5a316e4fd402fc3383b1aa946","synopsis":"Keiichi
+        Maebara has just moved to the quiet little village of Hinamizawa in the summer
+        of 1983, and quickly becomes inseparable friends with schoolmates Rena Ryuuguu,
+        Mion Sonozaki, Satoko Houjou, and Rika Furude. However, darkness lurks underneath
+        the seemingly idyllic life they lead. \r\n\r\nAs the village prepares for
+        its annual festival, Keiichi learns about the local legends surrounding it.
+        To his horror, he discovers that there have been several murders and disappearances
+        in the village in the recent years, and that they all seem to be connected
+        to the festival and the village''s patron god, Oyashiro. Keiichi tries to
+        ask his new friends about these incidents, but they are suspiciously silent
+        and refuse to give him the answers he needs. As more and more bizarre events
+        occur, he wonders just what else his friends might be keeping from him, and
+        if he can even trust them at all.\r\n\r\nWhen madness and paranoia begin taking
+        root in Keiichi''s heart, he will stumble straight into the mysteries at work
+        in Higurashi no Naku Koro ni, a story that is told across multiple arcs.\r\n\r\n[Written
+        by MAL Rewrite]","type":"TV","airing_start":"2006-04-04T16:30:00+00:00","episodes":26,"members":482975,"genres":[{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":5,"type":"anime","name":"Dementia","url":"https:\/\/myanimelist.net\/anime\/genre\/5\/Dementia"},{"mal_id":14,"type":"anime","name":"Horror","url":"https:\/\/myanimelist.net\/anime\/genre\/14\/Horror"},{"mal_id":40,"type":"anime","name":"Psychological","url":"https:\/\/myanimelist.net\/anime\/genre\/40\/Psychological"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":41,"type":"anime","name":"Thriller","url":"https:\/\/myanimelist.net\/anime\/genre\/41\/Thriller"}],"source":"Visual
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.08,"licensors":["Geneon
+        Entertainment USA","Sentai Filmworks"],"r18":false,"kids":false},{"mal_id":8841,"url":"https:\/\/myanimelist.net\/anime\/8841\/Kore_wa_Zombie_Desu_ka","title":"Kore
+        wa Zombie Desu ka?","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/75521.jpg?s=b01597691be07c3227454aef8e2c43ab","synopsis":"Not
+        every zombie is the monstrous, brain-eating type.\r\n\r\nOne night while walking
+        home from the convenience store, regular high school boy Ayumu Aikawa is killed
+        by a serial killer, and is just as suddenly brought back to life by a necromancer
+        named Eucliwood Hellscythe. One small caveat: he''s now a zombie. Things get
+        even weirder for him when he accidentally steals a magical girl''s uniform,
+        and thus her powers! Haruna, the ex-magical girl, orders him to fight evil
+        creatures known as Megalo in her place until they can figure out a way to
+        get her powers back to her.\r\n\r\nIt seems that life is just going to get
+        stranger and stranger for poor Ayumu from here on out in Kore wa Zombie desu
+        ka?.","type":"TV","airing_start":"2011-01-10T15:00:00+00:00","episodes":12,"members":415760,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":9,"type":"anime","name":"Ecchi","url":"https:\/\/myanimelist.net\/anime\/genre\/9\/Ecchi"},{"mal_id":35,"type":"anime","name":"Harem","url":"https:\/\/myanimelist.net\/anime\/genre\/35\/Harem"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.56,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":3457,"url":"https:\/\/myanimelist.net\/anime\/3457\/Vampire_Knight","title":"Vampire
+        Knight","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/7327.jpg?s=a3621c27c6074424dd925d3477226825","synopsis":"Cross
+        Academy is an elite boarding school with two separate, isolated classes: the
+        Day Class and the Night Class. On the surface, Yuuki Cross and Zero Kiryuu
+        are prefects of the academy, and attempt to keep order between the students
+        as classes rotate in the evenings. As the Night Class is full of utterly gorgeous
+        elites, this can sometimes prove to be a bit difficult. It is completely necessary,
+        however, as those \"elites\" are actually vampires. Yuuki and Zero act as
+        guardians, protecting the secrets of the Night Class and the safety of their
+        ignorant morning counterparts.\r\n\r\nAs the adopted daughter of the academy''s
+        chairman, Yuuki takes her job with a serious and energetic attitude. It also
+        allows her to interact with her secret crush and savior, the president of
+        the Night students'' dorm, Kaname Kuran. Zero, on the other hand, has a deep-rooted
+        hatred against vampires, and at times, does not hesitate to kill.\r\n\r\nCan
+        vampires and humans co-exist, even in the strict setup of the Cross Academy?
+        Only time will tell.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2008-04-07T15:00:00+00:00","episodes":13,"members":370172,"genres":[{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":32,"type":"anime","name":"Vampire","url":"https:\/\/myanimelist.net\/anime\/genre\/32\/Vampire"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.28,"licensors":["Viz
+        Media"],"r18":false,"kids":false},{"mal_id":23321,"url":"https:\/\/myanimelist.net\/anime\/23321\/Log_Horizon_2nd_Season","title":"Log
+        Horizon 2nd Season","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/68097.jpg?s=201a0ed8a4bc88ee7505f31fc106586a","synopsis":"After
+        being trapped in the world of Elder Tale for six months, Shiroe and the other
+        Adventurers have begun to get the hang of things in their new environment.
+        The Adventurers are starting to gain the trust of the People of the Land,
+        and Akiba has flourished thanks to the law and order established by Shiroe''s
+        Round Table Alliance, regaining its everyday liveliness. Despite this success,
+        however, the Alliance faces a new crisis: they are running out of funds to
+        govern Akiba, and spies from the Minami district have infiltrated the city.\r\n\r\nAs
+        formidable forces rise in other districts, there is also a need to discover
+        more about the vast new world they are trapped in\u2014leading Shiroe to decide
+        that the time has come to venture outside the city. Accompanied by his friend
+        Naotsugu and the Sage of Mirror Lake Regan, the calculative Shiroe makes his
+        move, hoping to unravel new possibilities and eventually find a way home.\r\n\r\n[Written
+        by MAL Rewrite]","type":"TV","airing_start":"2014-10-04T08:30:00+00:00","episodes":25,"members":341862,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":11,"type":"anime","name":"Game","url":"https:\/\/myanimelist.net\/anime\/genre\/11\/Game"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"}],"source":"Novel","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.67,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":11499,"url":"https:\/\/myanimelist.net\/anime\/11499\/Sankarea","title":"Sankarea","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1487\/95651.jpg?s=b062a0da436851f75b7acc69b41e110a","synopsis":"Ever
+        since he was a child, zombie-obsessed Chihiro Furuya has wanted an undead
+        girlfriend. Soon enough, his love for all things zombie comes in handy when
+        his cat Baabu gets run over, prompting Chihiro to try to make a resurrection
+        potion and bring him back to life. During his endeavor, he sees a rich girl
+        named Rea Sanka yelling into an old well every day about her oppressive life.
+        After meeting and bonding with her, Chihiro is convinced by Rea to persevere
+        in saving Baabu. Eventually, he succeeds with the help of the poisonous hydrangea
+        flowers from Rea''s family garden.\r\n\r\nUnaware of the potion''s success
+        and seeking to escape the burdens of her life, Rea drinks the resurrection
+        potion, mistakenly thinking she will die. Though it doesn''t kill her, the
+        effects still linger and her death from a fatal accident causes her to be
+        reborn as a zombie. With help from Chihiro, Rea strives to adjust to her new\u2014albeit
+        undead\u2014life. \r\n\r\nFor a boy wanting a zombie girlfriend, this situation
+        would seem like a dream come true. But in Sankarea, Chihiro''s life becomes
+        stranger than usual as he deals with Rea''s odd new cravings and the unforeseen
+        consequences of her transformation.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2012-04-05T16:55:00+00:00","episodes":12,"members":334597,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":9,"type":"anime","name":"Ecchi","url":"https:\/\/myanimelist.net\/anime\/genre\/9\/Ecchi"},{"mal_id":14,"type":"anime","name":"Horror","url":"https:\/\/myanimelist.net\/anime\/genre\/14\/Horror"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.47,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":32542,"url":"https:\/\/myanimelist.net\/anime\/32542\/Sakamoto_Desu_ga","title":"Sakamoto
+        Desu ga?","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/79468.jpg?s=7d69e53cf525c9996a3cbcf4e215567c","synopsis":"Sophisticated,
+        suave, sublime; all words which describe the exceedingly handsome and patently
+        perfect Sakamoto. Though it is only his first day in high school, his attractiveness,
+        intelligence, and charm already has the girls swooning and the guys fuming
+        with jealousy. No one seems able to derail him, as all attempts at tripping
+        him up are quickly foiled. His sangfroid is indomitable, his wits peerless.
+        Will any of Sakamoto''s classmates, or even teachers, be able to reach his
+        level of excellence? Probably not, but they just might learn a thing or two
+        trying...\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2016-04-07T17:28:00+00:00","episodes":12,"members":334418,"genres":[{"mal_id":36,"type":"anime","name":"Slice
+        of Life","url":"https:\/\/myanimelist.net\/anime\/genre\/36\/Slice_of_Life"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"},{"mal_id":42,"type":"anime","name":"Seinen","url":"https:\/\/myanimelist.net\/anime\/genre\/42\/Seinen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.67,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":120,"url":"https:\/\/myanimelist.net\/anime\/120\/Fruits_Basket","title":"Fruits
+        Basket","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/75204.jpg?s=a9f3768dbe6929837f72a1d1e5513d59","synopsis":"After
+        the accident in which she lost her mother, 16-year-old Tooru moves in with
+        her grandfather, but due to his home being renovated, is unable to continue
+        living with him. Claiming she will find someone to stay with but also fearing
+        the criticism of her family and not wanting to burden any of her friends,
+        Tooru resorts to secretly living on her own in a tent in the woods.\r\n\r\nOne
+        night on her way back from work, she finds her tent buried underneath a landslide.
+        Yuki Souma, the \"prince\" of her school, and his cousin Shigure Souma, a
+        famous author, stumble across Tooru''s situation and invite her to stay with
+        them until her grandfather\u2019s home renovations are complete.\r\n\r\nUpon
+        arriving at the Souma house, Tooru discovers their secret: if a Souma is hugged
+        by someone of the opposite gender, they temporarily transform into one of
+        the animals of the zodiac! However, this strange phenomenon is no laughing
+        matter; rather, it is a terrible curse that holds a dark history. As she continues
+        her journey, meeting more members of the zodiac family, will Tooru''s kindhearted
+        yet resilient nature be enough to prepare her for what lies behind the Souma
+        household''s doors?\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2001-07-05T09:00:00+00:00","episodes":26,"members":309800,"genres":[{"mal_id":36,"type":"anime","name":"Slice
+        of Life","url":"https:\/\/myanimelist.net\/anime\/genre\/36\/Slice_of_Life"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.77,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":45,"url":"https:\/\/myanimelist.net\/anime\/45\/Rurouni_Kenshin__Meiji_Kenkaku_Romantan","title":"Rurouni
+        Kenshin: Meiji Kenkaku Romantan","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/6803.jpg?s=446d49a0ca1472d0a2c75664a4e427be","synopsis":"In
+        the final years of the Bakumatsu era lived a legendary assassin known as Hitokiri
+        Battousai. Feared as a merciless killer, he was unmatched throughout the country,
+        but mysteriously disappeared at the peak of the Japanese Revolution. It has
+        been ten peaceful years since then, but the very mention of Battousai still
+        strikes terror into the hearts of war veterans.\r\n\r\nUnbeknownst to them,
+        Battousai has abandoned his bloodstained lifestyle in an effort to repent
+        for his sins, now living as Kenshin Himura, a wandering swordsman with a cheerful
+        attitude and a strong will. Vowing never to kill again, Kenshin dedicates
+        himself to protecting the weak. One day, he stumbles across Kaoru Kamiya at
+        her kendo dojo, which is being threatened by an impostor claiming to be Battousai.
+        After receiving help from Kenshin, Kaoru allows him to stay at the dojo, and
+        so the former assassin temporarily ceases his travels.\r\n\r\nRurouni Kenshin:
+        Meiji Kenkaku Romantan tells the story of Kenshin as he strives to save those
+        in need of saving. However, as enemies from both past and present begin to
+        emerge, will the reformed killer be able to uphold his new ideals?\r\n\r\n[Written
+        by MAL Rewrite]","type":"TV","airing_start":"1996-01-10T10:30:00+00:00","episodes":94,"members":295578,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":21,"type":"anime","name":"Samurai","url":"https:\/\/myanimelist.net\/anime\/genre\/21\/Samurai"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"},{"mal_id":36,"type":"anime","name":"Studio
+        Gallop","url":"https:\/\/myanimelist.net\/anime\/producer\/36\/Studio_Gallop"}],"score":8.39,"licensors":["Media
+        Blasters"],"r18":false,"kids":false},{"mal_id":1889,"url":"https:\/\/myanimelist.net\/anime\/1889\/Higurashi_no_Naku_Koro_ni_Kai","title":"Higurashi
+        no Naku Koro ni Kai","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/14114.jpg?s=578111af7d9bc49222d12acfa69a2626","synopsis":"In
+        the small village of Hinamizawa, Rika Furude and her friends live together
+        in relative harmony. Beneath this mask of peace, however, lies a hidden darkness,
+        one that Rika understands all too well. In this eternal summer, she has been
+        witness to unspeakable horrors. Every time the clock resets, Rika must try
+        to find the villain behind these senseless deaths before tragedy strikes again.
+        However, trying to decipher a mystery when only half the clues are present
+        proves time and again to be disastrous, and each time she believes that things
+        will change, she inevitably fails. As the annual festival approaches, Rika
+        begins her descent from hope to despair in her struggle to break the chains
+        of fate entangling them all.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2007-07-05T17:30:00+00:00","episodes":24,"members":288807,"genres":[{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":40,"type":"anime","name":"Psychological","url":"https:\/\/myanimelist.net\/anime\/genre\/40\/Psychological"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":41,"type":"anime","name":"Thriller","url":"https:\/\/myanimelist.net\/anime\/genre\/41\/Thriller"}],"source":"Visual
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.32,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":10790,"url":"https:\/\/myanimelist.net\/anime\/10790\/Kore_wa_Zombie_Desu_ka_of_the_Dead","title":"Kore
+        wa Zombie Desu ka? of the Dead","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/37451.jpg?s=05e6a256924cf32786a63b45e33de23b","synopsis":"Aikawa
+        Ayumu was revived as a zombie by the cute necromancer Eucliwood Hellscythe.
+        After the zany, madcap adventures in the first season of Is This a Zombie?
+        ended, Ayumu thought his life might finally get back to normal, or as normal
+        as it can be for a zombie. However, destiny has other plans for him. Some
+        guys just can''t catch a break. \r\n\r\n(Source: FUNimation) ","type":"TV","airing_start":"2012-04-04T15:00:00+00:00","episodes":10,"members":254657,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":35,"type":"anime","name":"Harem","url":"https:\/\/myanimelist.net\/anime\/genre\/35\/Harem"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":9,"type":"anime","name":"Ecchi","url":"https:\/\/myanimelist.net\/anime\/genre\/9\/Ecchi"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.69,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":4752,"url":"https:\/\/myanimelist.net\/anime\/4752\/Vampire_Knight__Guilty","title":"Vampire
+        Knight: Guilty","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/10075.jpg?s=3a5e99078553103bd61ed636c7767493","synopsis":"As
+        a direct continuation of the first season, Zero comes back after his disappearance
+        from the academy. Despite her relief, Yuuki, whose past is still shrouded
+        in mystery, wonders what exactly happened to Zero during the separation. As
+        Zero continues having the strange vision that appeared since the day he drank
+        Kaname''s blood, he visits the now awakened Maria Kurenai in an attempt to
+        find answers. She only provides him with a cryptic answer that suggests who
+        the true enemy really might be.\r\n\r\nIn the meantime, vampires from the
+        Supreme Vampire Council arrive at the academy in order to punish Zero with
+        death for his sin of killing a pureblood. However, Kaname intervenes with
+        the council''s decision with not only the intention of saving Zero but with
+        another purpose unbeknown to everyone around him.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2008-10-06T15:00:00+00:00","episodes":13,"members":246778,"genres":[{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":32,"type":"anime","name":"Vampire","url":"https:\/\/myanimelist.net\/anime\/genre\/32\/Vampire"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.43,"licensors":["Viz
+        Media"],"r18":false,"kids":false},{"mal_id":228,"url":"https:\/\/myanimelist.net\/anime\/228\/Jigoku_Shoujo","title":"Jigoku
+        Shoujo","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1\/228.jpg?s=07e98ec02c74af31888a93f92865b7ff","synopsis":"Have
+        you heard of Hell Correspondence? Those with a powerful grudge may only access
+        this mysterious website at midnight, allowing them to enter anyone''s name
+        and have that person be ferried straight to hell. Ai Enma, the Hell Girl,
+        will not judge whether or not the chosen target deserves punishment; she will
+        merely exact revenge on them for you. Not much is known about this young girl
+        other than that she swiftly carries out her tasks with the help of three straw
+        dolls. There is just one catch, however\u2014as payment for carrying out such
+        a request, the user must condemn themselves to an afterlife in hell.\r\n\r\n[Written
+        by MAL Rewrite]","type":"TV","airing_start":"2005-10-04T15:00:00+00:00","episodes":26,"members":232251,"genres":[{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":14,"type":"anime","name":"Horror","url":"https:\/\/myanimelist.net\/anime\/genre\/14\/Horror"},{"mal_id":40,"type":"anime","name":"Psychological","url":"https:\/\/myanimelist.net\/anime\/genre\/40\/Psychological"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Original","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.73,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":5060,"url":"https:\/\/myanimelist.net\/anime\/5060\/Hetalia_Axis_Powers","title":"Hetalia
+        Axis Powers","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/75791.jpg?s=90278fbabf069764b47028909e936d20","synopsis":"What
+        if nations were people? What traits would they have? What would this mean
+        for historical events?\r\n\r\nHetalia Axis Powers takes these questions and
+        runs with them, personifying countries into characters. The show takes a comedic
+        and light approach to politics and historical events while educating the viewer.\r\n\r\nTaking
+        place primarily during the events of World War I and World War II, the story
+        focuses on the Axis Powers and occasionally throws the spotlight onto the
+        tumultuous relationship between the Allied Forces. The Axis Powers feature
+        the titular character North Italy, who is clumsy, carefree and loves pasta;
+        Germany, who is very serious but easily flustered; and Japan, who is stoic
+        but has bizarre interests.\r\n\r\nBased on Hidekaz Himaruya''s widely popular
+        webcomic turned print manga, Hetalia Axis Powers is a historical comedy that
+        pokes lightly at culture, examines the relationships between nations and breathes
+        fun into history.\r\n\r\n[Written By MAL Rewrite]","type":"ONA","airing_start":"2009-01-23T15:00:00+00:00","episodes":52,"members":182380,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":20,"type":"anime","name":"Parody","url":"https:\/\/myanimelist.net\/anime\/genre\/20\/Parody"}],"source":"Web
+        manga","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.65,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":44,"url":"https:\/\/myanimelist.net\/anime\/44\/Rurouni_Kenshin__Meiji_Kenkaku_Romantan_-_Tsuioku-hen","title":"Rurouni
+        Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1899\/94562.jpg?s=80af3afbb83d3160dc36144e1bdade36","synopsis":"When
+        mankind''s savagery surpasses his fear of death, there is little hope for
+        those who wish to live honest lives. Beneath a full moon, a young boy witnesses
+        the murder of the bandits who had enslaved him, and is then christened with
+        a new name by the man who rescued him. This boy is Shinta, now known as Kenshin
+        Himura, and he is destined to become a swordsman. The softness of his heart
+        does not befit the occupation, but his desire to protect the innocent is absolute.\r\n\r\nRurouni
+        Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen details the origins of the man
+        who would bear the name of Hitokiri Battousai long before he swore his oath
+        not to kill and before he earned his reputation as an assassin. The young
+        man\u2019s heart is divided between justice and corruption, while the fate
+        of a nation rests on his actions.\r\n\r\n[Written by MAL Rewrite]","type":"OVA","airing_start":"1999-02-19T15:00:00+00:00","episodes":4,"members":180237,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":17,"type":"anime","name":"Martial
+        Arts","url":"https:\/\/myanimelist.net\/anime\/genre\/17\/Martial_Arts"},{"mal_id":21,"type":"anime","name":"Samurai","url":"https:\/\/myanimelist.net\/anime\/genre\/21\/Samurai"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.78,"licensors":["ADV
+        Films","Aniplex of America"],"r18":false,"kids":false},{"mal_id":7592,"url":"https:\/\/myanimelist.net\/anime\/7592\/Nurarihyon_no_Mago","title":"Nurarihyon
+        no Mago","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/75631.jpg?s=8153b63aae00e9d491795543bc73f8e3","synopsis":"Rikuo
+        Nura doesn''t want anything to do with evil youkai, and just wants a normal
+        life. Too bad he''s a quarter youkai, and Nurarihyon, his grandfather, is
+        insistent that he takes over as head of the Nura Clan. He''s able to keep
+        his supernatural secret life hidden from his classmates, as he can only transform
+        into a youkai at night, for six hours at a time. \r\n\r\nUnfortunately for
+        him, various youkai factions are out to target both his youkai and human friends,
+        and like it or not, he needs to embrace his youkai side. Life is not easy
+        when you''re Nurarihyon''s grandson.","type":"TV","airing_start":"2010-07-05T15:00:00+00:00","episodes":24,"members":173515,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":6,"type":"anime","name":"Demons","url":"https:\/\/myanimelist.net\/anime\/genre\/6\/Demons"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.74,"licensors":["Viz
+        Media"],"r18":false,"kids":false},{"mal_id":20047,"url":"https:\/\/myanimelist.net\/anime\/20047\/Sakura_Trick","title":"Sakura
+        Trick","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/56189.jpg?s=e0762fc6b389a732724f76148e9004f7","synopsis":"Love
+        is in the air when the story of Sakura Trick begins. Haruka Takayama and Yuu
+        Sonoda were best friends in middle school, and are now attending Misato West
+        High School together. They are assigned to the same class in their first year,
+        but are given seats on opposite sides of the room! If that wasn''t enough,
+        it is announced at the entrance ceremony that the school will be closed in
+        three years. This doesn''t bother either of them, as they still plan on having
+        lots of fun together during their high school years.\r\n\r\nHaruka gets jealous
+        of Yuu making new friends though, so the two decide to deepen their bond.
+        \"Let''s do something we''d never do with other girls,\" Yuu says, and they
+        share a kiss in a vacant classroom after school one day. After that one kiss
+        leads to many kisses, the two begin to realize that the relationship they
+        share has changed completely. But what will happen to their relationship once
+        a disapproving older sister begins to suspect that something is going on between
+        the two?","type":"TV","airing_start":"2014-01-09T15:00:00+00:00","episodes":12,"members":158666,"genres":[{"mal_id":36,"type":"anime","name":"Slice
+        of Life","url":"https:\/\/myanimelist.net\/anime\/genre\/36\/Slice_of_Life"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"},{"mal_id":42,"type":"anime","name":"Seinen","url":"https:\/\/myanimelist.net\/anime\/genre\/42\/Seinen"},{"mal_id":26,"type":"anime","name":"Shoujo
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/26\/Shoujo_Ai"}],"source":"4-koma
+        manga","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.13,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":28735,"url":"https:\/\/myanimelist.net\/anime\/28735\/Shouwa_Genroku_Rakugo_Shinjuu","title":"Shouwa
+        Genroku Rakugo Shinjuu","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/77907.jpg?s=a868aa377a5b1ceaa07c3ddc23a70f75","synopsis":"Yotarou
+        is a former yakuza member fresh out of prison and fixated on just one thing:
+        rather than return to a life of crime, the young man aspires to take to the
+        stage of Rakugo, a traditional Japanese form of comedic storytelling. Inspired
+        during his incarceration by the performance of distinguished practitioner
+        Yakumo Yuurakutei, he sets his mind on meeting the man who changed his life.
+        After hearing Yotarou''s desperate appeal for his mentorship, Yakumo is left
+        with no choice but to accept his very first apprentice.\r\n\r\nAs he eagerly
+        begins his training, Yotarou meets Konatsu, an abrasive young woman who has
+        been under Yakumo''s care ever since her beloved father Sukeroku Yuurakutei,
+        another prolific Rakugo performer, passed away. Through her hidden passion,
+        Yotarou is drawn to Sukeroku''s unique style of Rakugo despite learning under
+        contrasting techniques. Upon seeing this, old memories and feelings return
+        to Yakumo who reminisces about a much earlier time when he made a promise
+        with his greatest rival.\r\n\r\nShouwa Genroku Rakugo Shinjuu is a story set
+        in both the past and present, depicting the art of Rakugo, the relationships
+        it creates, and the lives and hearts of those dedicated to keeping the unique
+        form of storytelling alive.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2016-01-08T17:25:00+00:00","episodes":13,"members":157389,"genres":[{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":43,"type":"anime","name":"Josei","url":"https:\/\/myanimelist.net\/anime\/genre\/43\/Josei"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.62,"licensors":[],"r18":false,"kids":false},{"mal_id":4896,"url":"https:\/\/myanimelist.net\/anime\/4896\/Umineko_no_Naku_Koro_ni","title":"Umineko
+        no Naku Koro ni","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/17709.jpg?s=df7afcc9d7bf1c77b71d4ee6bf1eeff9","synopsis":"Considered
+        as the third installment in the highly popular When They Cry series by 07th
+        Expansion, Umineko no Naku Koro ni takes place on the island of Rokkenjima,
+        owned by the immensely wealthy Ushiromiya family. As customary per year, the
+        entire family is gathering on the island for a conference that discusses the
+        current financial situations of each respective person. Because of the family
+        head''s poor health, this year involves the topic of the head of the family''s
+        inheritance and how it will be distributed.\r\n\r\nHowever, the family is
+        unaware that the distribution of his wealth is the least of Ushiromiya Kinzou''s
+        (family head) concerns for this year''s family conference. After being told
+        that his end was approaching by his longtime friend and physician, Kinzou
+        is desperate to meet his life''s true love one last time: the Golden Witch,
+        Beatrice. Having immersed himself in black magic for many of the later years
+        in his life, Kinzou instigates a ceremony to revive his beloved upon his family''s
+        arrival on Rokkenjima. Soon after, a violent typhoon traps the family on the
+        island and a string of mysterious murders commence, forcing the eighteen people
+        on the island to fight for their lives in a deadly struggle between fantasy
+        and reality.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2009-07-01T15:00:00+00:00","episodes":26,"members":156587,"genres":[{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":14,"type":"anime","name":"Horror","url":"https:\/\/myanimelist.net\/anime\/genre\/14\/Horror"},{"mal_id":40,"type":"anime","name":"Psychological","url":"https:\/\/myanimelist.net\/anime\/genre\/40\/Psychological"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Visual
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.25,"licensors":["NIS
+        America"," Inc."],"r18":false,"kids":false},{"mal_id":5525,"url":"https:\/\/myanimelist.net\/anime\/5525\/07-Ghost","title":"07-Ghost","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/22605.jpg?s=abaeff19c169a5ff51e890a8db0c3d40","synopsis":"Barsburg
+        Empire''s Military Academy is known for training elites who bring victory
+        to the empire. Students of the academy freely utilize an ability called \"Zaiphon\"
+        to fight, while the types of Zaiphon usable depends on the nature of the soldier.\r\n\r\nTeito
+        Klein, a student at the academy, is one of the most promising soldiers produced.
+        Although ridiculed by everyone for being a sklave (German for slave) with
+        no memories of his past, he is befriended by a fellow student called Mikage.
+        While preparing for the final exam, Teito uncovers a dark secret related to
+        his past. When an attempt to assassinate Ayanami, a high-ranking official
+        who killed his father, fails, Teito is locked away awaiting punishment.\r\n\r\nOnly
+        wanting the best for Teito, Mikage helps him escape. Teito ends up at the
+        7th District Church where he is taken in by the bishops. It is here that Teito
+        attempts to evade the grasp of Ayanami and the Military, so he can rediscover
+        his memories and learn why he is the person that can change the fate of the
+        world.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2009-04-06T15:00:00+00:00","episodes":25,"members":155088,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":6,"type":"anime","name":"Demons","url":"https:\/\/myanimelist.net\/anime\/genre\/6\/Demons"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":43,"type":"anime","name":"Josei","url":"https:\/\/myanimelist.net\/anime\/genre\/43\/Josei"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":38,"type":"anime","name":"Military","url":"https:\/\/myanimelist.net\/anime\/genre\/38\/Military"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.34,"licensors":["Discotek
+        Media"],"r18":false,"kids":false},{"mal_id":3092,"url":"https:\/\/myanimelist.net\/anime\/3092\/Junjou_Romantica","title":"Junjou
+        Romantica","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/8811.jpg?s=accb63ce82fb1c22345f720d1210410e","synopsis":"Misaki
+        Takahashi is a regular high school student who is preparing for his university
+        entrance exams. In order to reduce the stress of studying, or so he hopes,
+        he accepts the help of his older brother''s best friend, and famous author,
+        Akihiko Usami. However, Masaki is about to find out that Usami''s books are
+        of a very naughty genre, and that there may be something naughty waking up
+        inside Masaki as well.\r\n\r\nJunjou Romantica also follows the story of two
+        other couples loosely connected to Masaki and Usami''s \"Romantica.\"\r\n\r\nEgoist
+        shows the very passionate, but often complicated, relationship between university
+        professor Hiroki Kamijou (whose life has reached an all time low) and paediatrician
+        Nowaki Kusama, who falls for Hiroki at first sight and would do anything to
+        make him happy.\r\n\r\nThe third story, \"Terrorist,\" shows just how obsessive
+        love can become when rich eighteen-year-old Shinobu Takatsuki finally discovers
+        something that he cannot have so easily\u2014the literature professor You
+        Miyagi.\r\n\r\nThere is passion abound as these three couples try to achieve
+        their goals in life while also falling into temptation and anguish with their
+        partners. ","type":"TV","airing_start":"2008-04-10T15:00:00+00:00","episodes":12,"members":154912,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":28,"type":"anime","name":"Shounen
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/28\/Shounen_Ai"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.96,"licensors":["Nozomi
+        Entertainment"],"r18":false,"kids":false},{"mal_id":210,"url":"https:\/\/myanimelist.net\/anime\/210\/Ranma_\u00bd","title":"Ranma
+        \u00bd","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/6441.jpg?s=15be540f08d9a8bbdc7399b5bd242b3d","synopsis":"Ranma
+        Saotome is a top-class martial artist and prodigy at the Saotome \"Anything-Goes\"
+        school of martial arts. While training in China, he and his father meet a
+        terrible fate when they accidentally fall into a cursed spring. Now, Ranma
+        is cursed to turn into a girl when splashed with cold water, and only hot
+        water can turn him back into a boy.\r\n\r\nThings are only complicated further
+        when Ranma discovers that his father has arranged for him to marry one of
+        Soun Tendo''s three daughters in order to secure the future of the Tendo dojo.
+        Though Soun learns of Ranma''s predicament, he is still determined to go ahead
+        with the engagement, and chooses his youngest daughter Akane, who happens
+        to be a skilled martial artist herself and is notorious for hating men.\r\n\r\nRanma
+        \u00bd follows the hilarious adventures of Ranma and Akane as they encounter
+        various opponents, meet new love interests, and find different ways to make
+        each other angry, all while their engagement hangs over their head.\r\n\r\n[Written
+        by MAL Rewrite]","type":"TV","airing_start":"1989-04-14T15:00:00+00:00","episodes":161,"members":145267,"genres":[{"mal_id":36,"type":"anime","name":"Slice
+        of Life","url":"https:\/\/myanimelist.net\/anime\/genre\/36\/Slice_of_Life"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":17,"type":"anime","name":"Martial
+        Arts","url":"https:\/\/myanimelist.net\/anime\/genre\/17\/Martial_Arts"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.84,"licensors":["Viz
+        Media"],"r18":false,"kids":false},{"mal_id":6922,"url":"https:\/\/myanimelist.net\/anime\/6922\/Fate_stay_night_Movie__Unlimited_Blade_Works","title":"Fate\/stay
+        night Movie: Unlimited Blade Works","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1889\/95111.jpg?s=c12ea2caedb942a870d51eed038e909a","synopsis":"This
+        is the adaptation of the second route of the popular visual novel: Fate\/stay
+        night. In this route, Rin Toosaka will be the major female character. Revelations
+        about Shirou and his destiny will be made.\r\n\r\n(Source: AnimeNfo)","type":"Movie","airing_start":"2010-01-22T15:00:00+00:00","episodes":1,"members":143940,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Visual
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.51,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":32380,"url":"https:\/\/myanimelist.net\/anime\/32380\/Kono_Subarashii_Sekai_ni_Shukufuku_wo__Kono_Subarashii_Choker_ni_Shukufuku_wo","title":"Kono
+        Subarashii Sekai ni Shukufuku wo!: Kono Subarashii Choker ni Shukufuku wo!","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/80582.jpg?s=db811132c1e50834247e7712bbc95a0e","synopsis":"Kazuma
+        finds a choker at Wiz''s magic shop said to grant any one wish and decides
+        to put it on. The problem? He''ll die in four days from strangulation if the
+        wish isn''t granted. And Kazuma can''t remember what he wished for, so he
+        has no idea how his party members can help. The girls therefore have no choice
+        but to submit to his every whim if they want to save him.","type":"OVA","airing_start":"2016-06-23T15:00:00+00:00","episodes":1,"members":141981,"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.87,"licensors":[],"r18":false,"kids":false},{"mal_id":5909,"url":"https:\/\/myanimelist.net\/anime\/5909\/Seitokai_no_Ichizon","title":"Seitokai
+        no Ichizon","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/19646.jpg?s=9c7ad7c3920407318e50832a522cc285","synopsis":"Imagine
+        living life as the vice president of the student council, passing the days
+        eating snacks, playing games, and bonding with a harem of beautiful girls.
+        This is exactly the kind of life that high school student Ken Sugisaki leads,
+        or so he thinks!\r\n\r\nUsually, the officers of Hekiyou Academy''s student
+        council are elected by popular vote, but an additional position is granted
+        to the student who scores the highest on the exams. Ken, who historically
+        has had below average grades, worked hard to improve them to be accepted into
+        the student council, with the ultimate goal of surrounding himself with girls
+        who fawn over him.\r\n\r\nUnfortunately for the vice president, things do
+        not go quite as planned. Not only do the ladies of the council continually
+        rebuff his advances, they also prefer to focus on more important and \"boring\"
+        activities, such as organizing school events and managing the other clubs.
+        But a few minor hurdles like these won''t stop Ken from chasing after his
+        dreams, even if they seem a bit ridiculous.  \r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2009-10-02T15:00:00+00:00","episodes":12,"members":140271,"genres":[{"mal_id":35,"type":"anime","name":"Harem","url":"https:\/\/myanimelist.net\/anime\/genre\/35\/Harem"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":20,"type":"anime","name":"Parody","url":"https:\/\/myanimelist.net\/anime\/genre\/20\/Parody"},{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.44,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":9926,"url":"https:\/\/myanimelist.net\/anime\/9926\/Sekaiichi_Hatsukoi","title":"Sekaiichi
+        Hatsukoi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/29763.jpg?s=5913cc209b4289c25e2be47d4b0f2ef0","synopsis":"After
+        having to deal with jealousy from his co-workers for working under his father''s
+        name, prideful literary editor Ritsu Onodera is determined to establish himself
+        in the industry. To accomplish this, he quits his job at his father''s publishing
+        company and transfers to Marukawa Publishing. But instead of being placed
+        in their literary division, Ritsu finds himself working as the rookie manga
+        editor for the Emerald editing department, a team that operates under extremely
+        tight schedules in order to meet deadlines. There, Ritsu is introduced to
+        the infamous editor-in-chief Masamune Takano, a persistent man who strives
+        for results.\r\n\r\nAs it turns out, Takano is actually Ritsu''s high school
+        love, and it is the aftermath of that heartbreak has caused Ritsu''s reluctance
+        to fall in love again. Now with the two reunited after several years of separation,
+        the reestablishment of their relationship is marked by Takano''s vow to make
+        Ritsu say that he loves him again.\r\n\r\nSekaiichi Hatsukoi follows three
+        couples that are interconnected within the manga industry, with each being
+        subject to the budding of first love. \r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2011-04-08T15:00:00+00:00","episodes":12,"members":130121,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":28,"type":"anime","name":"Shounen
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/28\/Shounen_Ai"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.04,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":9330,"url":"https:\/\/myanimelist.net\/anime\/9330\/Dragon_Crisis","title":"Dragon
+        Crisis!","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/50311.jpg?s=d07dbfadd4d28ad51501d38ad4df2bc8","synopsis":"A
+        normal high school boy Kisaragi Ryuji''s peaceful life is turned into an adventure
+        by the return of his second cousin Eriko. Ryuji and Eriko seize a relic box
+        from a black broker. In the box, they find a red dragon girl Rose. In order
+        to protect Rose from the black organization, Ryuji decides to fight using
+        his power as a relic handler.","type":"TV","airing_start":"2011-01-10T16:30:00+00:00","episodes":12,"members":124644,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"},{"mal_id":42,"type":"anime","name":"Seinen","url":"https:\/\/myanimelist.net\/anime\/genre\/42\/Seinen"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.84,"licensors":[],"r18":false,"kids":false},{"mal_id":3652,"url":"https:\/\/myanimelist.net\/anime\/3652\/Higurashi_no_Naku_Koro_ni_Rei","title":"Higurashi
+        no Naku Koro ni Rei","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/14113.jpg?s=a0901082fed13219651f5dcb95cbb186","synopsis":"The
+        infamous series of unexplainable murders in Hinamizawa have been solved and
+        the chains of fate have broken due to the efforts of Rika Furude and her friends.
+        Rika believes she has finally obtained the normal and peaceful life she desired
+        with her friends; however, she is proven wrong when the wheels of fate begin
+        turning once again after an unfortunate accident.\r\n \r\nRika suddenly finds
+        herself in a \"perfect\" world, the constant cycle of brutal killings having
+        never taken place, where all of her friends are content and satisfied. Not
+        wanting to abandon the world that she fought so hard for, she learns she must
+        destroy an essential \"key\" to get back. But can Rika abandon the faultless
+        world she is given the chance to live in, after all of her battles have brought
+        her this far?\r\n\r\n[Written by MAL Rewrite]","type":"OVA","airing_start":"2009-02-24T15:00:00+00:00","episodes":5,"members":123841,"genres":[{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":40,"type":"anime","name":"Psychological","url":"https:\/\/myanimelist.net\/anime\/genre\/40\/Psychological"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":41,"type":"anime","name":"Thriller","url":"https:\/\/myanimelist.net\/anime\/genre\/41\/Thriller"}],"source":"Visual
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.52,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":6895,"url":"https:\/\/myanimelist.net\/anime\/6895\/Hakuouki","title":"Hakuouki","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/71800.jpg?s=6c1721de23f3035b8dca2ee75d059961","synopsis":"In
+        1864 Japan, a young woman named Chizuru Yukimura is searching for her missing
+        father, Koudou, a doctor by trade whose work often takes him far from home.
+        But with no word from him in months, Chizuru disguises herself as a man and
+        heads to Kyoto in search of him. Attracting the attention of ronin, she tries
+        to hide and ends up witnessing a horrifying sight: the ronin being brutally
+        murdered by crazed white-haired men. In a startling turn of events, members
+        of the Shinsengumi arrive to dispatch the creatures. But Chizuru''s safety
+        doesn''t last long, as this group of men tie her up and take her back to their
+        headquarters, unsure of whether to let her live or silence her permanently.\r\n\r\nHowever,
+        once she reveals the name of her father, the Shinsengumi decide to keep her
+        safe, as they too have been searching for him. But Koudou is more connected
+        to the Shinsengumi than they let on, and soon Chizuru finds herself embroiled
+        in a conflict between the Shinsengumi and their enemies, as well as political
+        tension in Kyoto.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2010-04-03T15:00:00+00:00","episodes":12,"members":117326,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":21,"type":"anime","name":"Samurai","url":"https:\/\/myanimelist.net\/anime\/genre\/21\/Samurai"},{"mal_id":43,"type":"anime","name":"Josei","url":"https:\/\/myanimelist.net\/anime\/genre\/43\/Josei"}],"source":"Visual
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.52,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":19315,"url":"https:\/\/myanimelist.net\/anime\/19315\/Pupa","title":"Pupa","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/54395.jpg?s=c989759d3b46a7518382b76745c22e60","synopsis":"Abandoned
+        by their abusive parents and with only each other to depend on, siblings Utsutsu
+        and Yume Hasegawa find themselves led astray by beautiful red butterflies
+        that have appeared in their world. Unbeknownst to them, these crimson winged
+        heralds trumpet the beginning of a cannibalistic nightmare\u2014a mysterious
+        virus known as Pupa is about to hatch.\r\n \r\nAfter succumbing to the full
+        effects of Pupa, Yume undergoes a grotesque metamorphosis into a monstrous
+        creature with an insatiable desire for flesh; Utsutsu, on the other hand,
+        is only partially affected, gaining remarkable regenerative powers instead.
+        Reaffirming the resolve to keep the promise he made to himself years ago,
+        Utsutsu is willing to sacrifice everything in order to always be there for
+        his precious little sister.\r\n\r\nPupa tells the story of a loving brother''s
+        desperate struggles to save his sister, while protecting the world from her
+        uncontrollable hunger.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2014-01-09T17:03:00+00:00","episodes":12,"members":114926,"genres":[{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":14,"type":"anime","name":"Horror","url":"https:\/\/myanimelist.net\/anime\/genre\/14\/Horror"},{"mal_id":40,"type":"anime","name":"Psychological","url":"https:\/\/myanimelist.net\/anime\/genre\/40\/Psychological"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":3.67,"licensors":[],"r18":false,"kids":false},{"mal_id":4814,"url":"https:\/\/myanimelist.net\/anime\/4814\/Junjou_Romantica_2","title":"Junjou
+        Romantica 2","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/38417.jpg?s=db02e084d8213684cd48e948dc1f96a5","synopsis":"The
+        second part of Junjou Romantica continuing the story.","type":"TV","airing_start":"2008-10-11T15:00:00+00:00","episodes":12,"members":114245,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":28,"type":"anime","name":"Shounen
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/28\/Shounen_Ai"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.12,"licensors":["Nozomi
+        Entertainment"],"r18":false,"kids":false},{"mal_id":34626,"url":"https:\/\/myanimelist.net\/anime\/34626\/Kono_Subarashii_Sekai_ni_Shukufuku_wo_2__Kono_Subarashii_Geijutsu_ni_Shukufuku_wo","title":"Kono
+        Subarashii Sekai ni Shukufuku wo! 2: Kono Subarashii Geijutsu ni Shukufuku
+        wo!","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/83539.jpg?s=ff62a8335148fa5ba120d5e70364451a","synopsis":"Bundled
+        with the 12th volume of the light novel.","type":"OVA","airing_start":"2017-07-23T15:00:00+00:00","episodes":1,"members":108877,"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.16,"licensors":[],"r18":false,"kids":false},{"mal_id":1594,"url":"https:\/\/myanimelist.net\/anime\/1594\/Jigoku_Shoujo_Futakomori","title":"Jigoku
+        Shoujo Futakomori","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/86975.jpg?s=31f44ff21bb8288b7f0e8e7d74be4725","synopsis":"Ai
+        Enma and her companions continue to offer their service of revenge against
+        those who have wronged others, and the price is as steep as ever\u2014for
+        damning the offender to hell, the person exacting vengeance is sent to the
+        abyss as well. As they cast soul after soul into the darkness, a new sinister
+        force is watching them: a little girl named Kikuri.\r\n\r\nWhile Ai continues
+        her duties, she meets a boy named Takuma Kurebayashi, known as the \"Devil''s
+        Child\" because of the horrific events that occur around him. Unfortunately,
+        Takuma''s reputation leads the townspeople to use him as a scapegoat for those
+        who have been ferried off to hell. When things quickly spiral out of control,
+        Ai must find a way to bring an end to this senseless violence, as it poses
+        a threat to her very existence.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2006-10-07T10:30:00+00:00","episodes":26,"members":106675,"genres":[{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":14,"type":"anime","name":"Horror","url":"https:\/\/myanimelist.net\/anime\/genre\/14\/Horror"},{"mal_id":40,"type":"anime","name":"Psychological","url":"https:\/\/myanimelist.net\/anime\/genre\/40\/Psychological"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Original","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.02,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":10049,"url":"https:\/\/myanimelist.net\/anime\/10049\/Nurarihyon_no_Mago__Sennen_Makyou","title":"Nurarihyon
+        no Mago: Sennen Makyou","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/77300.jpg?s=99a5f333f30ee1a5ef3b9eaf9102a187","synopsis":"At
+        first glance, Nura Rikuo seems like nothing more than a normal middle-schooler.
+        In actual fact, he is grandson of Nurarihyon, master of a youkai clan. Having
+        only recently resolved the hostilities between the Nura Clan and the Shikoku
+        Yokai, Rikuo finds no rest as an ancient enemy of the Nura Clan, Haguromo-Gitsune,
+        resurfaces. After 400 years of inactivity, Haguromo-Gitsune suddenly sweeps
+        through Kyoto with overwhelming power.\n\n(Source: AniDB)","type":"TV","airing_start":"2011-07-02T15:00:00+00:00","episodes":24,"members":105376,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":6,"type":"anime","name":"Demons","url":"https:\/\/myanimelist.net\/anime\/genre\/6\/Demons"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.09,"licensors":["Viz
+        Media"],"r18":false,"kids":false},{"mal_id":10209,"url":"https:\/\/myanimelist.net\/anime\/10209\/Kore_wa_Zombie_Desu_ka_OVA","title":"Kore
+        wa Zombie Desu ka? OVA","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/36243.jpg?s=e7427de5f32de88705864a7129748938","synopsis":"Two
+        OVAs released with the 8th and 10th volumes of the original novel. They fall
+        chronologically between the first and second seasons.","type":"OVA","airing_start":"2011-06-09T15:00:00+00:00","episodes":2,"members":97483,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":35,"type":"anime","name":"Harem","url":"https:\/\/myanimelist.net\/anime\/genre\/35\/Harem"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":9,"type":"anime","name":"Ecchi","url":"https:\/\/myanimelist.net\/anime\/genre\/9\/Ecchi"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.51,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":11123,"url":"https:\/\/myanimelist.net\/anime\/11123\/Sekaiichi_Hatsukoi_2","title":"Sekaiichi
+        Hatsukoi 2","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/34871.jpg?s=f98732113ad4f145afa0a611bb0f7d22","synopsis":"Second
+        season of Sekaiichi Hatsukoi.","type":"TV","airing_start":"2011-10-07T15:00:00+00:00","episodes":12,"members":95527,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":28,"type":"anime","name":"Shounen
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/28\/Shounen_Ai"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.2,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":132,"url":"https:\/\/myanimelist.net\/anime\/132\/GetBackers","title":"GetBackers","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/7547.jpg?s=85dbc01d084364c2ad3dac62fa33edab","synopsis":"Mido
+        Ban and Amano Ginji are known as the Get Backers, retrievers with a success
+        rate of 100%. Whatever is lost or stolen, they can definitely get it back.
+        Despite their powerful abilities and enthusiastic behavior, Ban and Ginji
+        are terminally broke no matter what they do simply because few people would
+        actually desire to hire them. As a result, the pair of them tend to do dangerous
+        jobs, often leading to unwanted re-encounters with their old (and dangerous)
+        friends.","type":"TV","airing_start":"2002-10-05T08:30:00+00:00","episodes":49,"members":90098,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"},{"mal_id":31,"type":"anime","name":"Super
+        Power","url":"https:\/\/myanimelist.net\/anime\/genre\/31\/Super_Power"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.68,"licensors":["ADV
+        Films","Sentai Filmworks"],"r18":false,"kids":false},{"mal_id":33095,"url":"https:\/\/myanimelist.net\/anime\/33095\/Shouwa_Genroku_Rakugo_Shinjuu__Sukeroku_Futatabi-hen","title":"Shouwa
+        Genroku Rakugo Shinjuu: Sukeroku Futatabi-hen","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/82947.jpg?s=70f8903a7e9232e8aaacb4ebb416e2c0","synopsis":"Even
+        after having risen to the utmost rank of shun''ichi, Yotaro struggles to find
+        his own identity in the world of rakugo. Caught between his master''s teachings
+        and the late Sukeroku''s unique style, his performance lacks an important
+        ingredient\u2014ego. And while his popularity packs the theaters, he is but
+        one of the few; rakugo is under threat of being eclipsed.\r\n\r\nMeanwhile
+        Yakumo, regarded by many as the last bastion of preserving the popularity
+        of rakugo, struggles to cope with his elderly state. Even though his performances
+        are still stellar, he fears that he is nearing his limits. His doubts grow
+        stronger as an old friend creeps ever closer. Konatsu, for her part, attempts
+        to raise her son as a single mother, which Yotaro is heavily opposed to. Instead,
+        he seeks to persuade her to marry him and in turn raise her son as his own.\r\n\r\nIn
+        Shouwa Genroku Rakugo Shinjuu: Sukeroku Futatabi-hen, the curtains fall on
+        Yotaro and Yakumo''s story, tasked with restoring the near-obsolete art form
+        as well as overcoming their internal conflicts.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2017-01-06T17:25:00+00:00","episodes":12,"members":87775,"genres":[{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":43,"type":"anime","name":"Josei","url":"https:\/\/myanimelist.net\/anime\/genre\/43\/Josei"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.84,"licensors":[],"r18":false,"kids":false},{"mal_id":243,"url":"https:\/\/myanimelist.net\/anime\/243\/Gravitation","title":"Gravitation","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/21856.jpg?s=6bf3bd1906aec4706b1029b0d60a7971","synopsis":"All
+        Shuichi ever dreamed about was following in the footsteps of his pop idol,
+        Ryuichi Sakuma and the band Nittle Grasper. Together with his best friend
+        Hiro, Shuichi''s formed a band called Bad Luck and they''ve even managed to
+        get signed to a major recording label! Unfortunately, the studio deadlines
+        are looming and Shuichi still hasn''t finished the lyrics for any of the songs.
+        What he needs is a little inspiration... but he''s been running a little low
+        in that department lately. While Hiro recommends finding a girlfriend, fate
+        has other things in store for him...\r\n\r\nWalking through the park late
+        one night, Shuichi''s latest lyrics flutter away and land at the feet of a
+        stunning stranger that takes his breath away. Unfortunately, that mysterious
+        stranger happens to be the famous novelist Eiri Yuki, who completely crushes
+        the young singer by telling him he has \"zero talent\". Now, Shuichi''s so
+        annoyed that he''s managed to finish his song just so he can find and confront
+        Yuki once again. But, are his actions really motivated by anger, or has he
+        actually fallen in love? \r\n\r\n(Source: RightStuf)","type":"TV","airing_start":"2000-10-04T09:30:00+00:00","episodes":13,"members":82628,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":19,"type":"anime","name":"Music","url":"https:\/\/myanimelist.net\/anime\/genre\/19\/Music"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"},{"mal_id":28,"type":"anime","name":"Shounen
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/28\/Shounen_Ai"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.18,"licensors":["Nozomi
+        Entertainment"],"r18":false,"kids":false},{"mal_id":8479,"url":"https:\/\/myanimelist.net\/anime\/8479\/Hetalia_World_Series","title":"Hetalia
+        World Series","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/75792.jpg?s=a942ae8d495c1f07506913c151e7553a","synopsis":"The
+        third and fourth seasons of the Hetalia Axis Powers anime. A continuation
+        of the first 2 seasons under a new name, still adapting the online webcomics
+        drawn by Himaruya Hidekaz.\n\nBased on a popular web-released manga series
+        by Hidekazu Himaruya, this has been described as a \"cynical gag\" story set
+        in Europe in the years between WW1 and WW2 (1915-1939), using exaggerated
+        caricatures of the different nationalities as portrayed by a gaggle of bish\u014dnen.
+        For example, the Italia Veneziano character is into pasta and women. The Deutsche
+        (German) bishi loves potatoes and sausages, and Nippon is an otaku boy. Installments
+        of the manga have jumped back and forth in setting from the ancient times
+        to modern-day geopolitics. The manga''s title comes the Japanese words for
+        \"useless\" (hetare) and Italy (Italia).\n\n(Source: ANI)","type":"ONA","airing_start":"2010-03-25T15:00:00+00:00","episodes":48,"members":80462,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":20,"type":"anime","name":"Parody","url":"https:\/\/myanimelist.net\/anime\/genre\/20\/Parody"}],"source":"Web
+        manga","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.83,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":479,"url":"https:\/\/myanimelist.net\/anime\/479\/Ueki_no_Housoku","title":"Ueki
+        no Housoku","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/20596.jpg?s=c03a0d313b8949d3e3bdf75b10ec8889","synopsis":"Kousuke
+        Ueki, a student of the Hinokuni Junior High School, is picked by a Celestial
+        King Candidate, Koba-sen, to participate in a competition where people battle
+        out to become the Celestial King and only the strongest will prevail. Embodied
+        with the ability to turn garbage into trees, Kousuke will be joining in the
+        battle against other junior high school students in this selection. This sets
+        the premise for the earth-friendly battle where the students will pit their
+        powers against the rest, with a reward of the Blank Talent giving motive for
+        students to win.\r\n\r\n(Source: ANN, edited)","type":"TV","airing_start":"2005-04-04T09:30:00+00:00","episodes":51,"members":79000,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":31,"type":"anime","name":"Super
+        Power","url":"https:\/\/myanimelist.net\/anime\/genre\/31\/Super_Power"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.84,"licensors":["Discotek
+        Media","Funimation","Geneon Entertainment USA"],"r18":false,"kids":false},{"mal_id":15613,"url":"https:\/\/myanimelist.net\/anime\/15613\/Hakkenden__Touhou_Hakken_Ibun","title":"Hakkenden:
+        Touhou Hakken Ibun","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/43007.jpg?s=43d87e4e7da91605518e0c13268dccc7","synopsis":"The
+        village of Ootsuka\u2014home to Shino Inuzuka, Sousuke Inukawa, and Hamaji\u2014was
+        lit on fire under the preconception that a virus had seen all of its life
+        eradicated. Now surrounded by flames and on the verge of death, the three
+        were approached by a strange man holding a sword. He tells them that they
+        must reach a decision if they want to live. That night changed everything
+        for these children.\r\n\r\nFive years later, the family of three now lives
+        under the watchful eye of the small Imperial Church in a nearby village. All
+        is fine and dandy until the Church attempts to reclaim the demonic sword of
+        Murasame. To accomplish this, they kidnap Hamaji to lure Shino, now a bearer
+        of Murasame''s soul, and Sousuke, who possesses the ability to transform into
+        a dog. The brothers must put their differences aside to rescue their beloved
+        sister from the Church in the Imperial Capital, signalling the beginning of
+        a very difficult journey. ","type":"TV","airing_start":"2013-01-05T17:58:00+00:00","episodes":13,"members":78609,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":6,"type":"anime","name":"Demons","url":"https:\/\/myanimelist.net\/anime\/genre\/6\/Demons"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.53,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":3713,"url":"https:\/\/myanimelist.net\/anime\/3713\/Jigoku_Shoujo_Mitsuganae","title":"Jigoku
+        Shoujo Mitsuganae","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/86976.jpg?s=ca1138c65a9cb30e41ce33c788322c21","synopsis":"Following
+        the events of Jigoku Shoujo Futakomori, Ai Enma, the Hell Girl, has disappeared.
+        Her former companions decide to lead normal lives, until their absent mistress
+        returns to them with a new companion, and in a way that none of them anticipated.\r\n\r\nYuzuki
+        Mikage is a normal schoolgirl who soon comes to understand the Hell Girl on
+        an intimate level. During a dream-like trance in the bathtub, Ai kisses Yuzuki
+        and possesses her. So when Yuzuki''s friend decides to type in the name of
+        their teacher in the Hell Correspondence website, Ai makes use of Yuzuki''s
+        body to accomplish her own task of ferrying the teacher''s soul to hell. Yuzuki
+        is disturbed by her new circumstances and wonders why she was chosen to continue
+        Ai''s work. Unfortunately for her, the Hell Girl and her assistants resume
+        operation of Hell Correspondence, and she is dragged along for the ride towards
+        hell itself.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2008-10-04T08:00:00+00:00","episodes":26,"members":76084,"genres":[{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":40,"type":"anime","name":"Psychological","url":"https:\/\/myanimelist.net\/anime\/genre\/40\/Psychological"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Original","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.73,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":15437,"url":"https:\/\/myanimelist.net\/anime\/15437\/Kore_wa_Zombie_Desu_ka_of_the_Dead__Hai_Minotake_ni_Attemasu","title":"Kore
+        wa Zombie Desu ka? of the Dead: Hai, Minotake ni Attemasu","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/43515.jpg?s=4d46d6099db31a35e96b2fe05138297b","synopsis":"An
+        unaired OVA episode of Kore wa Zombie Desu ka? of the Dead. It is the 11th
+        episode and was bundled with the sixth volume of the manga. ","type":"OVA","airing_start":"2012-10-19T15:00:00+00:00","episodes":1,"members":75388,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":35,"type":"anime","name":"Harem","url":"https:\/\/myanimelist.net\/anime\/genre\/35\/Harem"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":9,"type":"anime","name":"Ecchi","url":"https:\/\/myanimelist.net\/anime\/genre\/9\/Ecchi"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.58,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":122,"url":"https:\/\/myanimelist.net\/anime\/122\/Full_Moon_wo_Sagashite","title":"Full
+        Moon wo Sagashite","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/6265.jpg?s=17a17aa9576d3d7cb52da180833020cf","synopsis":"Two
+        years ago, Mitsuki Kouyama''s friend, Eichi Sakurai, moved to America before
+        she could confess her feelings to him. Though she cannot contact him, they
+        made a promise to fulfill their respective dreams: Mitsuki wants to become
+        a professional singer, and Eichi an astronomer. She hopes that one day her
+        music will reach him across the world with a brilliance like that of the full
+        moon.\r\n\r\nThere is just one catch: Mitsuki suffers from throat cancer,
+        which makes her voice quiet and singing strenuous. Her grandmother, who has
+        a hatred of music, insists that Mitsuki undergo surgery to remove the cancer,
+        but she refuses due to the risk of losing her voice. One day, two shinigami\u2014Meroko
+        Yui and Takuto Kira\u2014appear to tell her that she only has one year left
+        to live. This sudden revelation spurs Mitsuki into action, and she decides
+        that with Meroko and Takuto''s help, she will become a professional singer
+        in the time she has left.\r\n\r\nFull Moon wo Sagashite follows the emotional
+        story of Mitsuki and her shinigami friends as they discover what it means
+        to sing\u2014and ultimately, what it means to live.\r\n\r\n[Written by MAL
+        Rewrite]","type":"TV","airing_start":"2002-04-05T22:30:00+00:00","episodes":52,"members":74726,"genres":[{"mal_id":19,"type":"anime","name":"Music","url":"https:\/\/myanimelist.net\/anime\/genre\/19\/Music"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.05,"licensors":["Viz
+        Media"],"r18":false,"kids":false},{"mal_id":12461,"url":"https:\/\/myanimelist.net\/anime\/12461\/Hiiro_no_Kakera","title":"Hiiro
+        no Kakera","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/36925.jpg?s=ab9b7c42663ef6f9ab66d0d123b2546b","synopsis":"Gods
+        and ghosts only exist in fairy tales, right? That''s the impression that high
+        school girl Tamki Kasuga has before she goes to live with her grandmother
+        in the remote village of Kifumura. After being attacked by strange creatures
+        upon her arrival, she is soon informed that females in her family contain
+        the blood of the Tamayori Princess, who has the responsibility and power of
+        keeping gods and ghosts sealed away so that they can''t harm the general public.
+        At first Tamaki has trouble believing this, but having five beautiful young
+        men following her everywhere she goes acting as her guardians goes a long
+        way towards convincing her.\r\n\r\nThere''s more to this job than Tamaki first
+        realizes, however, and the path that lies ahead of her is fraught with peril
+        and danger. Will she be able to successfully take on the heavy role that has
+        been put on her shoulders?","type":"TV","airing_start":"2012-03-31T15:00:00+00:00","episodes":13,"members":74722,"genres":[{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Visual
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.87,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":251,"url":"https:\/\/myanimelist.net\/anime\/251\/Kyou_kara_Maou","title":"Kyou
+        kara Maou!","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/75544.jpg?s=3ad9d783ba86b1a092d1c406b218ebc2","synopsis":"Kyou
+        kara Maou! revolves around Yuri Shibuya, your average Japanese teenager. One
+        day, Yuri sees a classmate being harassed by bullies. Thanks to this intervention,
+        his friend is able to escape, but unfortunately Yuri becomes the new target
+        of the bullies in the process and gets his head shoved into a toilet. But
+        instead of water, the toilet contains a swirling portal that sucks him into
+        another world, largely resembling medieval Europe. There, he is told that
+        he will become the next Demon King due to his black hair and black eyes, traits
+        only possessed by the demon''s royal lineage.\r\n\r\nYuri''s arrival is met
+        with some skepticism by some of the demons, who view him as unworthy to be
+        their king. However, after Yuri wins a duel by utilizing his magical powers,
+        the demons slowly begin to acknowledge him as their monarch. Yuri must now
+        learn what it takes be a true Demon King, as he tries to keep the peace between
+        demons and humans in this strange new realm.","type":"TV","airing_start":"2004-04-02T15:00:00+00:00","episodes":78,"members":72855,"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":6,"type":"anime","name":"Demons","url":"https:\/\/myanimelist.net\/anime\/genre\/6\/Demons"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.83,"licensors":["Geneon
+        Entertainment USA"],"r18":false,"kids":false},{"mal_id":246,"url":"https:\/\/myanimelist.net\/anime\/246\/Groove_Adventure_Rave","title":"Groove
+        Adventure Rave","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/20134.jpg?s=c8edc7577747c0c056835f954dca583e","synopsis":"Long
+        ago, a war was waged between the forces of darkness and light as Dark Brings\u2014stones
+        containing dark power beyond human ability\u2014put the world at risk with
+        their destructive force. In order to stem the tide of darkness, a lone swordsman
+        used holy power known as the Rave to destroy the source of every Dark Brings.
+        The resulting explosion, which came to be known as the Overdrive, destroyed
+        a tenth of the world; fragments of the Rave were scattered throughout.\r\n\r\nGroove
+        Adventure Rave takes place fifty years after the Overdrive. A group known
+        as Demon Card has collected the remaining Dark Brings, using them to lay siege
+        to a number of towns. Meanwhile, a young swordsman by the name of Haru Glory
+        has inherited both the Rave and its guardian, Plue, making him the next Rave
+        Master. With the aid of an amnesiac drifter by the name of Elie and a silver-manipulating
+        blacksmith by the name of Musica, Haru must scour the world in search of the
+        scattered Rave Stones and put an end to the Dark Brings and Demon Card for
+        once and for all.","type":"TV","airing_start":"2001-10-12T15:00:00+00:00","episodes":51,"members":71274,"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.38,"licensors":["Tokyopop"],"r18":false,"kids":false},{"mal_id":13055,"url":"https:\/\/myanimelist.net\/anime\/13055\/Sankarea_OVA","title":"Sankarea
+        OVA","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/79032.jpg?s=d22fa58fd1f81de625487fa1c037dabe","synopsis":"Two
+        OVA episodes are bundled as DVDs with each of volumes 6 and 7 of the manga.\r\n\r\nThe
+        first OVA is a prequel story written by the manga''s author. Before the beginning
+        of the main story, Rea and Chihiro have already met at a certain place: an
+        outdoor hot-spring bath.\r\n\r\nThe second OVA takes place after the series
+        (effectively episode 14). The Furuya family finds a mysterious young girl
+        hiding under the household temple.","type":"OVA","airing_start":"2012-06-07T15:00:00+00:00","episodes":2,"members":71169,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":9,"type":"anime","name":"Ecchi","url":"https:\/\/myanimelist.net\/anime\/genre\/9\/Ecchi"},{"mal_id":14,"type":"anime","name":"Horror","url":"https:\/\/myanimelist.net\/anime\/genre\/14\/Horror"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.33,"licensors":[],"r18":false,"kids":false},{"mal_id":187,"url":"https:\/\/myanimelist.net\/anime\/187\/Initial_D_Third_Stage","title":"Initial
+        D Third Stage","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/40397.jpg?s=37b13b391a7a22e827781c36c26c2837","synopsis":"Shortly
+        after graduating from high school, Takumi is approached by RedSuns leader
+        Ryosuke Takahashi and offered to join him in forming a professional racing
+        team. Before coming up with an answer to the proposal, Takumi seeks retribution
+        by issuing a rematch to Emperor leader Kyouichi Sudou, who previously defeated
+        him due to an engine failure. He is also challenged by Kai Kogashiwa, a second-generation
+        street racer whose father was once a fierce rival of Takumi''s father Bunta.
+        \r\n","type":"Movie","airing_start":"2001-01-12T15:00:00+00:00","episodes":1,"members":70256,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":3,"type":"anime","name":"Cars","url":"https:\/\/myanimelist.net\/anime\/genre\/3\/Cars"},{"mal_id":30,"type":"anime","name":"Sports","url":"https:\/\/myanimelist.net\/anime\/genre\/30\/Sports"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":42,"type":"anime","name":"Seinen","url":"https:\/\/myanimelist.net\/anime\/genre\/42\/Seinen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.96,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":31680,"url":"https:\/\/myanimelist.net\/anime\/31680\/Super_Lovers","title":"Super
+        Lovers","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/78450.jpg?s=216313c42ffe2c6d09e897d2f62310a9","synopsis":"Upon
+        hearing news that his mother was on verge of death, Haru Kaidou\u2014the eldest
+        son of the family\u2014flies all the way to Canada. The moment he arrives,
+        he learns that not only did his mother fool him, but he is also supposed to
+        take care of his adoptive brother, Ren Kaidou, an antisocial kid who feels
+        more comfortable around dogs than people.\r\n\r\nDue to his new brother''s
+        distrustful nature, Haru initially has a hard time reaching out to Ren but
+        their relationship eventually grows. He makes a promise to Ren: they will
+        live together in Japan after Haru graduates from high school. However, due
+        to an unfortunate accident, Haru loses all memories of the summer they spent
+        together, including the promise he made. Five years later, expecting Haru
+        to keep his promise, Ren arrives in Tokyo; but to Haru, Ren is just a random
+        boy claiming to be his brother.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2016-04-06T14:30:00+00:00","episodes":10,"members":66861,"genres":[{"mal_id":36,"type":"anime","name":"Slice
+        of Life","url":"https:\/\/myanimelist.net\/anime\/genre\/36\/Slice_of_Life"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":28,"type":"anime","name":"Shounen
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/28\/Shounen_Ai"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.48,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":25649,"url":"https:\/\/myanimelist.net\/anime\/25649\/Junjou_Romantica_3","title":"Junjou
+        Romantica 3","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/74170.jpg?s=2c6933a088c6dc58b93802f0f64abcea","synopsis":"After
+        living together for three years, Misaki Takahashi and Akihiko \"Usagi\" Usami''s
+        relationship has been progressing smoothly. However, all great relationships
+        have problems, and theirs is just beginning. With a new rival on the horizon,
+        Usagi worries about Misaki''s feelings towards him. \r\n\r\nMeanwhile, Ryuuichirou
+        Isaka has always loved to intrude on Misaki and Usagi''s love life, but his
+        own love life hasn''t been all smooth sailing\u2014Isaka and his secretary
+        Kaoru Asahina have been dating for a few years; however, Asahina prefers to
+        keep their professional and private lives separate, often leading to troubled
+        waters between them.\r\n\r\nAs for Nowaki Kusama and Hiroki Kamijou, now that
+        their careers are finally taking off, they hardly see each other anymore.
+        With the time they spend together lessening, doubts and insecurities threaten
+        to creep in between them. On the other hand, the 17-year age gap between Shinobu
+        Takatsuki and You Miyagi has been a constant barrier in their relationship,
+        but as they learn more about each other, their self-consciousness continues
+        to fade.\r\n\r\nThe beloved couples of Junjou Romantica, Junjou Egoist, and
+        Junjou Terrorist are back again, this time with a new addition: Junjou Mistake!\r\n\r\n[Written
+        by MAL Rewrite]","type":"TV","airing_start":"2015-07-08T16:05:00+00:00","episodes":12,"members":63663,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":28,"type":"anime","name":"Shounen
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/28\/Shounen_Ai"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.06,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":9065,"url":"https:\/\/myanimelist.net\/anime\/9065\/Hakuouki_Hekketsuroku","title":"Hakuouki
+        Hekketsuroku","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/71797.jpg?s=7169ce83f153137a1c459148f58639ef","synopsis":"After
+        the conclusion of Hakuouki, Chizuru Yukimura and the Shinsengumi are forced
+        to flee Kyoto and set sail for Edo. In their commander Isami Kondou''s absence,
+        vice-commander Toshizou Hijikata steps in as acting commander. However, Hijikata
+        is not only struggling with the extra leadership duties\u2014which worries
+        everyone around him\u2014but also a newfound uncontrollable bloodlust. To
+        make matters worse, the urge does not affect him alone, and it is even beginning
+        to drive some of his subordinates mad.\r\n\r\nFinally, Kondou returns with
+        orders from the emperor to defend the castle, and a new name for their squad:
+        the Kouyou Chinbutai. But in war, the balance of power can shift suddenly
+        and allegiances can waver. In Hakuouki Hekketsuroku, Chizuru follows the Shinsengumi
+        into the heart of war and continues the search for her missing father, all
+        while the bond between her and Hijikata grows ever stronger.\r\n\r\n[Written
+        by MAL Rewrite]","type":"TV","airing_start":"2010-10-03T15:00:00+00:00","episodes":10,"members":62873,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":43,"type":"anime","name":"Josei","url":"https:\/\/myanimelist.net\/anime\/genre\/43\/Josei"},{"mal_id":21,"type":"anime","name":"Samurai","url":"https:\/\/myanimelist.net\/anime\/genre\/21\/Samurai"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Visual
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.72,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":31109,"url":"https:\/\/myanimelist.net\/anime\/31109\/Hatsukoi_Monster","title":"Hatsukoi
+        Monster","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/80182.jpg?s=96f54c798a8d050221208787f54c00eb","synopsis":"Freshman
+        Kaho Nikaidou is from an influential family, and as such, no one has ever
+        said anything even remotely mean to her, for fear of incurring her household''s
+        wrath. Wishing to be around people who will not treat her as special because
+        of her background, she leaves home to live at a dormitory for her new school
+        year. Shortly after arriving, Kaho accidentally wanders into traffic and is
+        saved by a tall, handsome stranger. When she asks for his name, he tells her
+        she is weird and walks away. Having finally met the only person to ever say
+        an unkind word to her, Kaho falls head over heels for her savior.\r\n\r\nAfter
+        meeting her rescuer yet again and discovering that his name is Kanade Takahashi,
+        she confesses her love to him. Kanade says he would like for them to be a
+        couple, but that Kaho may not want to date him after she finds out his secret.
+        To her shock, Kaho discovers the startling truth: Kanade is a fifth grader!\r\n\r\nDeciding
+        that she can''t date a fifth grader, Kaho intends to break up with him. But
+        as she spends more time with Kanade, she begins to care for him even more
+        and continues dating him. Hatsukoi Monster follows Kaho''s first steps into
+        love with Kanade, her immature, yet kind, fifth grade boyfriend.\r\n\r\n[Written
+        by MAL Rewrite]","type":"TV","airing_start":"2016-07-02T14:00:00+00:00","episodes":12,"members":62560,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":5.87,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":401,"url":"https:\/\/myanimelist.net\/anime\/401\/Rurouni_Kenshin__Meiji_Kenkaku_Romantan_-_Seisou-hen","title":"Rurouni
+        Kenshin: Meiji Kenkaku Romantan - Seisou-hen","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1971\/90877.jpg?s=285b7ad9ce5dde0c667f20d940f2ad88","synopsis":"Kaoru
+        goes to the harbor every day to see if Kenshin has returned. After a while,
+        she starts looking back at her life with Kenshin and all the things that have
+        happened.\r\n\r\n(Source: ANN)","type":"OVA","airing_start":"2001-12-02T15:00:00+00:00","episodes":2,"members":59856,"genres":[{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":21,"type":"anime","name":"Samurai","url":"https:\/\/myanimelist.net\/anime\/genre\/21\/Samurai"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.06,"licensors":["ADV
+        Films","Aniplex of America"],"r18":false,"kids":false},{"mal_id":885,"url":"https:\/\/myanimelist.net\/anime\/885\/Tenshi_no_Tamago","title":"Tenshi
+        no Tamago","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/63181.jpg?s=281ef1c6b4c636533890de681867e517","synopsis":"In
+        a desolate and dark world full of shadows, lives one little girl who seems
+        to do nothing but collect water in jars and protect a large egg she carries
+        everywhere. A mysterious man enters her life... and they discuss the world
+        around them. \r\n\r\n(Source: ANN)\r\n","type":"OVA","airing_start":"1985-12-21T15:00:00+00:00","episodes":1,"members":59846,"genres":[{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":5,"type":"anime","name":"Dementia","url":"https:\/\/myanimelist.net\/anime\/genre\/5\/Dementia"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"}],"source":"Original","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.64,"licensors":["Anchor
+        Bay Films"],"r18":false,"kids":false},{"mal_id":36124,"url":"https:\/\/myanimelist.net\/anime\/36124\/Itou_Junji__Collection","title":"Itou
+        Junji: Collection","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/88366.jpg?s=d2add5ac7f54529c0be3eca14f0488ee","synopsis":"In
+        the light of day and in the dead of night, mysterious horrors await in the
+        darkest shadows of every corner. They are unexplainable, inescapable, and
+        undefeatable. Be prepared, or you may become their next victim.\r\n\r\nSit
+        back in terror as traumatizing tales of unparalleled terror unfold. Tales,
+        such as that of a cursed jade carving that opens holes all over its victims''
+        bodies; deep nightmares that span decades; an attractive spirit at a misty
+        crossroad that grants cursed advice; and a slug that grows inside a girl''s
+        mouth. Tread carefully, for the horrifying supernatural tales of the Itou
+        Junji: Collection are not for the faint of heart.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2018-01-05T13:30:00+00:00","episodes":12,"members":59463,"genres":[{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":14,"type":"anime","name":"Horror","url":"https:\/\/myanimelist.net\/anime\/genre\/14\/Horror"},{"mal_id":6,"type":"anime","name":"Demons","url":"https:\/\/myanimelist.net\/anime\/genre\/6\/Demons"},{"mal_id":40,"type":"anime","name":"Psychological","url":"https:\/\/myanimelist.net\/anime\/genre\/40\/Psychological"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":41,"type":"anime","name":"Thriller","url":"https:\/\/myanimelist.net\/anime\/genre\/41\/Thriller"},{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.19,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":10491,"url":"https:\/\/myanimelist.net\/anime\/10491\/Higurashi_no_Naku_Koro_ni_Kira","title":"Higurashi
+        no Naku Koro ni Kira","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/29774.jpg?s=d7a799e264a66f81098d2a92b256e4f7","synopsis":"With
+        things such as story out of the way, Higurashi cranks up the fanservice with
+        Kira, a new OVA series to commemorate the series'' 10th anniversary, featuring
+        nail-biting situations such as Rika and Satoko becoming magical girls to battle
+        evil magic crime syndicates with the help of their trusty squad of cheerleaders,
+        among other things.\r\n\r\nThe excitement may be too much to handle. Do you
+        dare step inside the... \"different\" world of Higurashi no Naku Koro ni Kira?","type":"OVA","airing_start":"2011-07-20T15:00:00+00:00","episodes":4,"members":58474,"genres":[{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":20,"type":"anime","name":"Parody","url":"https:\/\/myanimelist.net\/anime\/genre\/20\/Parody"}],"source":"Original","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.59,"licensors":[],"r18":false,"kids":false},{"mal_id":591,"url":"https:\/\/myanimelist.net\/anime\/591\/Amaenaide_yo","title":"Amaenaide
+        yo!!","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/32071.jpg?s=f78a8b1c3d561c63be4cc3f432941dc9","synopsis":"Satonaka
+        Ikkou, a 16 year old boy, is a first year trainee at the Saienji Buddhist
+        Temple. He was sent there by his parents to be trained by his grandmother,
+        the Saienji Priestess. At the temple he finds himself surrounded by beautiful
+        female priestesses-in-training. Upon seeing a girl naked, Ikko has the ability
+        to turn into a super-monk, performing massive exorcisms for the good of the
+        temple.\r\n\r\n(Source: ANN)\r\n","type":"TV","airing_start":"2005-06-30T15:00:00+00:00","episodes":12,"members":57865,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":9,"type":"anime","name":"Ecchi","url":"https:\/\/myanimelist.net\/anime\/genre\/9\/Ecchi"},{"mal_id":35,"type":"anime","name":"Harem","url":"https:\/\/myanimelist.net\/anime\/genre\/35\/Harem"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.59,"licensors":["Media
+        Blasters","Nozomi Entertainment"],"r18":false,"kids":false},{"mal_id":18041,"url":"https:\/\/myanimelist.net\/anime\/18041\/Rozen_Maiden_2013","title":"Rozen
+        Maiden (2013)","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/52079.jpg?s=ccc3c98a7db91b3fbf1bc5d44681edb3","synopsis":"During
+        the events of the original Rozen Maiden, after circling \"yes\" on a paper
+        and agreeing to wind an unknown  \"something,\" a traumatized Jun Sakurada
+        fights alongside the lifelike dolls known as the Rozen Maidens. But what would
+        have happened if Jun had circled \"no\"?\r\n\r\nJun, having gotten over his
+        school trauma from his younger days, spends his time attending college and
+        working in a bookstore. However, he does not feel as though he belongs anywhere.
+        One day, he finds a book containing instructions on how to make a Rozen Maiden.
+        Mysteriously, when he arrives home that night, the second volume in the book
+        series has been delivered to his house, along with some pieces of a doll.
+        But as suddenly as they started arriving, the books stop coming, and Jun gets
+        a notice that says that the books have ceased being published. With an incomplete
+        doll in hand, and a message from his other self in another world, this Jun
+        also finds his way into the world of the Rozen Maidens.\r\n\r\n[Written by
+        MAL Rewrite]","type":"TV","airing_start":"2013-07-04T16:58:00+00:00","episodes":13,"members":57260,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":42,"type":"anime","name":"Seinen","url":"https:\/\/myanimelist.net\/anime\/genre\/42\/Seinen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.41,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":32094,"url":"https:\/\/myanimelist.net\/anime\/32094\/Reikenzan__Hoshikuzu-tachi_no_Utage","title":"Reikenzan:
+        Hoshikuzu-tachi no Utage","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/78196.jpg?s=0add841ca333858fe352609ffdd91474","synopsis":"Long
+        ago in the nine provinces of Kyushu, a calamitous event was prophesied to
+        take place: falling comets would exhaust the spiritual energies of both the
+        heavens and the lands and thus bring about an age of chaos upon the world.
+        But contrary to the prophecy, the comets passed by with no calamity taking
+        place. At the same time, as if touched by the phenomenon, a boy was born in
+        a remote village of the Sokei region by the name of Ouriku.\r\n\r\nTwelve
+        years later, as the memories of the event have faded from people''s minds,
+        the Reikenzan clan\u2014one of the five supreme sects of the nine provinces\u2014decides
+        to hold an examination in order to gather the most talented individuals fit
+        to become disciples and eventually sages. Hearing about this news, Ouriku
+        and his servant Ouchou head toward the site, unaware that the organizer Oubu,
+        despite her elegant appearance, is infamous for being extremely irresponsible
+        and carefree; hence, making the trials in the examination unpredictable.\r\n\r\nReikenzan:
+        Hoshikuzu-tachi no Utage follows the story of Ouriku as he journeys through
+        these trials to become a powerful sage.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2016-01-08T15:00:00+00:00","episodes":12,"members":57121,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.22,"licensors":[],"r18":false,"kids":false},{"mal_id":209,"url":"https:\/\/myanimelist.net\/anime\/209\/ROD__The_TV","title":"R.O.D:
+        The TV","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/73350.jpg?s=fa03594e01aaee8740fc46fa8a762096","synopsis":"Anita
+        King, Maggie Mui, and Michelle Cheung are the Paper Sisters. They run the
+        Three Sisters Detective Agency in Hong Kong which is dedicated to solving
+        cases involving books. They are hired as local guides for Nenene Sumiregawa,
+        a Japanese novelist who has been struggling with writer''s block following
+        the disappearance of her longtime friend, Yomiko Readman. The sisters are
+        all Paper Masters\u2014individuals with the power to control paper\u2014and
+        with their abilities, they save Nenene from the dangerous terrorists targeting
+        her at a book signing. But in case they strike again, the sisters remain as
+        her bodyguards to protect her from further harm.\r\n\r\nThis is a dream come
+        true for bookworms Maggie and Michelle who love Nenene''s stories, but the
+        young Anita cannot stand books despite her powers over paper. The three struggle
+        to adapt to their new daily life in Japan, guarding Nenene while continuing
+        their detective work under a mysterious organization, Dokusensha. However,
+        the more they get to know Nenene, the more they discover the link between
+        her, the disappearance of her friend Yomiko, and the mysterious books Dokusensha
+        sends the Paper Masters to investigate. What began as a simple job ends up
+        a bigger case than they have ever had before. Are these girls really willing
+        to risk their lives over literature?\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2003-08-31T15:00:00+00:00","episodes":26,"members":55183,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":24,"type":"anime","name":"Sci-Fi","url":"https:\/\/myanimelist.net\/anime\/genre\/24\/Sci-Fi"},{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":31,"type":"anime","name":"Super
+        Power","url":"https:\/\/myanimelist.net\/anime\/genre\/31\/Super_Power"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"}],"source":"Light
+        novel","producers":[{"mal_id":7,"type":"anime","name":"J.C.Staff","url":"https:\/\/myanimelist.net\/anime\/producer\/7\/JCStaff"}],"score":7.61,"licensors":["Aniplex
+        of America","Geneon Entertainment USA"],"r18":false,"kids":false},{"mal_id":2899,"url":"https:\/\/myanimelist.net\/anime\/2899\/Higurashi_no_Naku_Koro_ni_Special__Nekogoroshi-hen","title":"Higurashi
+        no Naku Koro ni Special: Nekogoroshi-hen","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1616\/90394.jpg?s=45a79dfc6e46109275db0ba4e836aac6","synopsis":"After
+        losing a bet, Keichi, Mion, Rena, Satoko and Rika parade around the town in
+        costumes. When they come to a fork in the road, they decide to go to Yagouchi,
+        a nearby abandoned village. Once there Keichii and Rena learn the mystery
+        of a strange haunted quarry as they debate whether or not to check it out.","type":"Special","airing_start":"2007-08-01T15:00:00+00:00","episodes":1,"members":54992,"genres":[{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.28,"licensors":[],"r18":false,"kids":false},{"mal_id":16694,"url":"https:\/\/myanimelist.net\/anime\/16694\/Sankarea__Wagahai_mo_Zombie_de_Aru","title":"Sankarea:
+        Wagahai mo... Zombie de Aru...","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/44918.jpg?s=c2ef4d5be7ec2185f1f4a0acefd652cc","synopsis":"Extra
+        episode included on BD\/DVD vol. 6; effectively episode 13. \r\n\r\nDespite
+        their decaying bodies, Rea\u2019s zombie power comes in handy both at school
+        and at home, and Babu gets interested in another cat\u2014although this particular
+        feline is one of the living.\r\n\r\n(Source: FUNimation)","type":"Special","airing_start":"2012-11-29T15:00:00+00:00","episodes":1,"members":53429,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":14,"type":"anime","name":"Horror","url":"https:\/\/myanimelist.net\/anime\/genre\/14\/Horror"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":9,"type":"anime","name":"Ecchi","url":"https:\/\/myanimelist.net\/anime\/genre\/9\/Ecchi"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.35,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":208,"url":"https:\/\/myanimelist.net\/anime\/208\/ROD__Read_or_Die","title":"R.O.D:
+        Read or Die","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1\/208.jpg?s=af57949edbaaefacccb29ea013aa4c39","synopsis":"Yomiko
+        Readman is a lovable, near-sighted bibliomaniac working as a substitute teacher
+        at a Japanese high school. Her real identity, however, is that of a secret
+        agent for the British Library Special Operations Division. Her codename: \"The
+        Paper.\" The moniker denotes her supernatural ability to freely manipulate
+        paper into any object she can imagine, including tools and weapons in her
+        fight against the powerful and self-serving IJIN (Great Historical Figure)
+        Army! Along with her partner, the enigmatic \"Ms. Deep,\" Yomiko travels across
+        the world in attempt to solve the mystery behind the reincarnation of historical
+        figures and their attempt to control the world.\r\n\r\n(Source: RightStuf)","type":"OVA","airing_start":"2001-05-22T15:00:00+00:00","episodes":3,"members":49110,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":24,"type":"anime","name":"Sci-Fi","url":"https:\/\/myanimelist.net\/anime\/genre\/24\/Sci-Fi"},{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.73,"licensors":["Aniplex
+        of America","Manga Entertainment"],"r18":false,"kids":false},{"mal_id":7661,"url":"https:\/\/myanimelist.net\/anime\/7661\/Giant_Killing","title":"Giant
+        Killing","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/30191.jpg?s=27dd0c75f2c998dfdaa1555dadb214f8","synopsis":"East
+        Tokyo United (ETU) has been struggling in Japan''s top soccer league for the
+        past few years. It has taken everything they have just to avoid relegation.
+        To make matters even worse, the team has lost five matches in a row, leading
+        to abysmal team morale. Even the fans are beginning to abandon them, and rumors
+        hint that the home ground municipality is going to withdraw their support.
+        With countless coaches fired and poor financial choices in hiring players,
+        it is a downward spiral for ETU.\r\n\r\nThe board of directors, under pressure
+        from general manager Kousei Gotou, takes a gamble and hires a new coach\u2014the
+        slightly eccentric Takeshi Tatsumi. Though considered a great soccer player
+        when he was younger, Tatsumi abandoned ETU years ago. However, since then,
+        he has proven himself successful as the manager of one of England''s lower
+        division amateur teams.\r\n\r\nTatsumi''s task won''t be easy; ETU fans call
+        him a traitor, and the team is pitted against others with larger budgets and
+        better players. Yet even the underdog can take down a goliath, and Tatsumi
+        claims he is an expert at giant killing.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2010-04-03T15:00:00+00:00","episodes":26,"members":47902,"genres":[{"mal_id":30,"type":"anime","name":"Sports","url":"https:\/\/myanimelist.net\/anime\/genre\/30\/Sports"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":42,"type":"anime","name":"Seinen","url":"https:\/\/myanimelist.net\/anime\/genre\/42\/Seinen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.65,"licensors":[],"r18":false,"kids":false},{"mal_id":15195,"url":"https:\/\/myanimelist.net\/anime\/15195\/Hetalia__The_Beautiful_World","title":"Hetalia:
+        The Beautiful World","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/46073.jpg?s=708e0de9f67082c0d9dccff349dd92b4","synopsis":"The
+        fifth season of Hetalia.","type":"ONA","airing_start":"2013-01-24T15:00:00+00:00","episodes":20,"members":47860,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":20,"type":"anime","name":"Parody","url":"https:\/\/myanimelist.net\/anime\/genre\/20\/Parody"}],"source":"Web
+        manga","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.83,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":3359,"url":"https:\/\/myanimelist.net\/anime\/3359\/Amatsuki","title":"Amatsuki","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/75555.jpg?s=2dbbca81144acc458ad4f6f05654d6f2","synopsis":"Tokidoki
+        is a Japanese high school student who, when he fails his history class, is
+        sent to a high-tech history museum that virtually recreates the Edo period
+        to do make-up work. However, what was supposed to be a simple school project
+        becomes much more complicated when he''s attacked by two supernatural beings
+        known as \"the nue\" and \"the yakou\" and loses the vision in his left eye.
+        After he''s saved from the nue by a girl named Kuchiha, he realizes that he''s
+        no longer wearing the simulation goggles, and is trapped in the virtual Edo.\r\n\r\n(Source:
+        Wikipedia)","type":"TV","airing_start":"2008-04-04T17:30:00+00:00","episodes":13,"members":47839,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":6,"type":"anime","name":"Demons","url":"https:\/\/myanimelist.net\/anime\/genre\/6\/Demons"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":43,"type":"anime","name":"Josei","url":"https:\/\/myanimelist.net\/anime\/genre\/43\/Josei"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.98,"licensors":[],"r18":false,"kids":false},{"mal_id":907,"url":"https:\/\/myanimelist.net\/anime\/907\/Princess_Princess","title":"Princess
+        Princess","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/75530.jpg?s=81f124aa10c955b5e6035e5e0c881792","synopsis":"Tooru
+        Kouno''s attractive appearance draws unexpected attention on his first day
+        at an all-boys school. Having to transfer to a school without girls has been
+        bad enough, but adding to his list of frustrations are boys staring at him
+        all day long. However, he hopes that there may be girls around, since he ran
+        into a lovely pink-haired girl on campus earlier that day.\r\n\r\nAfter being
+        escorted to his dorm by his classmate, Yuujirou Shihoudani, he meets a student
+        named Mikoto Yutaka, who looks eerily similar to the girl he saw previously.
+        To his shock, he realizes Mikoto is the girl and confronts him about this
+        revelation. Yuujirou divulges that he and Mikoto crossdress as part of their
+        job: a school tradition in which attractive first years are chosen as idols
+        called \"Princesses\" in order to boost the morale of the students\u2014and
+        because of his looks, Tooru has been chosen by the student council as their
+        third Princess!\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"2006-04-04T18:10:00+00:00","episodes":12,"members":47364,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.11,"licensors":["Media
+        Blasters"],"r18":false,"kids":false},{"mal_id":8063,"url":"https:\/\/myanimelist.net\/anime\/8063\/Sekaiichi_Hatsukoi_OVA","title":"Sekaiichi
+        Hatsukoi OVA","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/35863.jpg?s=b1d83cf989297333a514e77dd228ab88","synopsis":"Two
+        OVA episodes featuring additional stories. \r\n\r\nEpisode 0: Ritsu and Takano
+        used to date back in high school, but broke up due to a misunderstanding.
+        This is that story. \r\n\r\nEpisode 12.5: Hatori and Chiaki go to visit the
+        latter''s family. It''s really awkward in many, many ways. ","type":"OVA","airing_start":"2011-03-21T15:00:00+00:00","episodes":2,"members":46635,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":28,"type":"anime","name":"Shounen
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/28\/Shounen_Ai"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.12,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":7337,"url":"https:\/\/myanimelist.net\/anime\/7337\/Hetalia_Axis_Powers_Movie__Paint_it_White","title":"Hetalia
+        Axis Powers Movie: Paint it, White","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/30761.jpg?s=88c8107587f16f1820189e38a6e7a0cc","synopsis":"The
+        movie involves a mysterious force causing unusual incidents to happen all
+        over the world, and the nations having to try to ward off the threat of human
+        extinction from the alien race known as Pict, who seek to transform mankind
+        and drain the color from the world (with America deciding that the world will
+        be saved under his command).\n\n(Source: WikiHetalia)","type":"Movie","airing_start":"2010-06-04T15:00:00+00:00","episodes":1,"members":44985,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":20,"type":"anime","name":"Parody","url":"https:\/\/myanimelist.net\/anime\/genre\/20\/Parody"}],"source":"Web
+        manga","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.37,"licensors":["Funimation"],"r18":false,"kids":false},{"mal_id":419,"url":"https:\/\/myanimelist.net\/anime\/419\/Samurai_Deeper_Kyou","title":"Samurai
+        Deeper Kyou","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/23744.jpg?s=b53caa144618c621e1ed21e08771123d","synopsis":"In
+        the year 1600, at the fog-covered battlefield of Sekigahara, a fierce battle
+        was waged by two exemplary swordsmen. One was Kyoushirou Mibu, a skilled and
+        noble warrior in possession of the unique powers of the Mibu Clan. The other
+        was the thousand-man slayer, with eyes and hair the color of blood, \"Demon
+        Eyes\" Kyou. Their legendary clash was cut short when a meteor from the heavens
+        fell down upon that battlefield, leaving both to vanish in its wake.\r\n\r\nSamurai
+        Deeper Kyou begins four years after that battle, when a gun-wielding bounty
+        hunter by the name of Yuya Shiina hunts down Kyoushirou\u2014now a perverted,
+        traveling medicine-man who has built up a large debt. On her way to claim
+        his bounty, they are attacked by an inhuman monster that seeks to devour Kyoushirou.
+        This encounter awakens \"Demon Eyes\" Kyou, whose mind has been trapped inside
+        of Kyoushirou''s body ever since that fateful battle. Thus begins a grand
+        tale of legendary two swordsmen and the discovery of their secrets.","type":"TV","airing_start":"2002-07-01T16:55:00+00:00","episodes":26,"members":44164,"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":21,"type":"anime","name":"Samurai","url":"https:\/\/myanimelist.net\/anime\/genre\/21\/Samurai"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.99,"licensors":["Media
+        Blasters","NYAV Post"],"r18":false,"kids":false},{"mal_id":16700,"url":"https:\/\/myanimelist.net\/anime\/16700\/Higurashi_no_Naku_Koro_ni_Kaku__Outbreak","title":"Higurashi
+        no Naku Koro ni Kaku: Outbreak","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/51063.jpg?s=a1d8050b23d654df23940dd9701ef8e7","synopsis":"The
+        story is set in the same Hinamizawa village of the previous stories. The village
+        has been completely sealed off due to a mysterious virus in 1983, and Maebara
+        Keiichi and Ryuuguu Rena deal with the outbreak.\n\n(Source: ANN)","type":"OVA","airing_start":"2013-08-14T15:00:00+00:00","episodes":1,"members":43902,"genres":[{"mal_id":14,"type":"anime","name":"Horror","url":"https:\/\/myanimelist.net\/anime\/genre\/14\/Horror"},{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":40,"type":"anime","name":"Psychological","url":"https:\/\/myanimelist.net\/anime\/genre\/40\/Psychological"},{"mal_id":41,"type":"anime","name":"Thriller","url":"https:\/\/myanimelist.net\/anime\/genre\/41\/Thriller"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.33,"licensors":[],"r18":false,"kids":false},{"mal_id":18055,"url":"https:\/\/myanimelist.net\/anime\/18055\/Hakkenden__Touhou_Hakken_Ibun_2nd_Season","title":"Hakkenden:
+        Touhou Hakken Ibun 2nd Season","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/50885.jpg?s=f44e8ada82e4cd687eade3468c7b488c","synopsis":"Second
+        season of Hakkenden: Touhou Hakken Ibun.","type":"TV","airing_start":"2013-07-06T15:00:00+00:00","episodes":13,"members":43773,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":6,"type":"anime","name":"Demons","url":"https:\/\/myanimelist.net\/anime\/genre\/6\/Demons"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.76,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":33524,"url":"https:\/\/myanimelist.net\/anime\/33524\/Sakamoto_Desu_ga_Special","title":"Sakamoto
+        Desu ga? Special","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/80646.jpg?s=1a4d8de13bbddff61b3ee5dcd25e9625","synopsis":"Unaired
+        episode 13 included with the fifth Blu-ray and DVD volume.","type":"Special","airing_start":"2016-09-25T15:00:00+00:00","episodes":1,"members":43447,"genres":[{"mal_id":36,"type":"anime","name":"Slice
+        of Life","url":"https:\/\/myanimelist.net\/anime\/genre\/36\/Slice_of_Life"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"},{"mal_id":42,"type":"anime","name":"Seinen","url":"https:\/\/myanimelist.net\/anime\/genre\/42\/Seinen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.85,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":158,"url":"https:\/\/myanimelist.net\/anime\/158\/Maria-sama_ga_Miteru","title":"Maria-sama
+        ga Miteru","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/75207.jpg?s=5396ef3a83ecc61e8279dcbb63947f3b","synopsis":"When
+        Yumi Fukuzawa entered the Lillian Girls'' Academy, a prestigious all-girls
+        Catholic school in Tokyo, she never imagined she would catch the eye of beautiful
+        and demure Sachiko Ogasawara, one of the school''s most popular students.
+        Now Sachiko has offered to be Yumi''s soeur, her \"sister\" and guide for
+        all her years at the academy. The whole idea has Yumi completely flustered\u2014after
+        all, they hardly know each other!\r\n\r\nThe entire campus is abuzz with rumors
+        about the two of them, but Yumi is conflicted over accepting Sachiko''s offer.
+        While she admires Sachiko, being her soeur would also mean constantly being
+        at the center of the entire school''s attention!\r\n\r\n(Source: RightStuf)","type":"TV","airing_start":"2004-01-07T15:00:00+00:00","episodes":13,"members":43127,"genres":[{"mal_id":36,"type":"anime","name":"Slice
+        of Life","url":"https:\/\/myanimelist.net\/anime\/genre\/36\/Slice_of_Life"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"},{"mal_id":26,"type":"anime","name":"Shoujo
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/26\/Shoujo_Ai"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.43,"licensors":["Maiden
+        Japan","Nozomi Entertainment"],"r18":false,"kids":false},{"mal_id":7705,"url":"https:\/\/myanimelist.net\/anime\/7705\/Starry\u2606Sky","title":"Starry\u2606Sky","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/27459.jpg?s=651fc8ce3c05ec41f7193711ca8d95b9","synopsis":"The
+        protagonist, Tsukiko Yahisa, enrolled to a school that was recently changed
+        from all-boys school to co-ed. Since the area where the school is conveniently
+        rural and the rather exclusive curriculums the school has, up until now the
+        protagonist is the only one female who enrolled to the school.\r\n\r\nIn Starry
+        Sky, the 13 constellations of the Zodiac are personified into handsome young
+        men. The anime will be directed by Kiyomo Sayaka who worked with Vampire Knight.
+        Similar to Hetalia - Axis Powers, Starry Sky''s anime will be distributed
+        through the Animate.tv website and other means.","type":"ONA","airing_start":"2010-12-22T15:00:00+00:00","episodes":26,"members":42984,"genres":[{"mal_id":35,"type":"anime","name":"Harem","url":"https:\/\/myanimelist.net\/anime\/genre\/35\/Harem"},{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"}],"source":"Visual
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.25,"licensors":[],"r18":false,"kids":false},{"mal_id":11135,"url":"https:\/\/myanimelist.net\/anime\/11135\/Hybrid_Child","title":"Hybrid
+        Child","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/65605.jpg?s=c776c3d8314a89abdfcb6ac44145fb83","synopsis":"The
+        skilled craftsman Kuroda created artificial humans called Hybrid Child\u2014creatures
+        who are neither machines nor dolls, but rather a reflection of the love shown
+        to them. While they can feel human emotions and have their own consciousness,
+        they are not real humans and require love to grow.\r\n\r\nKotarou Izumi is
+        the young heir to the noble Izumi family, so it is frowned upon when he brings
+        an abandoned Hybrid Child he found in the garbage into their household. His
+        family even attempts to throw away Hazuki\u2014Kotarou''s name for the Hybrid
+        Child\u2014multiple times when he is not paying attention. But through overcoming
+        these obstacles, their love and the bond connecting them grow stronger. However,
+        ten years pass before a horrifying realization dawns on them: a Hybrid Child
+        might not have an endless life span.\r\n\r\nHybrid Child is a collection of
+        three short love stories, depicting the relationship between the artificial
+        humans and their owners.\r\n\r\n[Written by MAL Rewrite]","type":"OVA","airing_start":"2014-10-28T15:00:00+00:00","episodes":4,"members":42496,"genres":[{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":24,"type":"anime","name":"Sci-Fi","url":"https:\/\/myanimelist.net\/anime\/genre\/24\/Sci-Fi"},{"mal_id":28,"type":"anime","name":"Shounen
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/28\/Shounen_Ai"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.98,"licensors":[],"r18":false,"kids":false},{"mal_id":1557,"url":"https:\/\/myanimelist.net\/anime\/1557\/Shounen_Onmyouji","title":"Shounen
+        Onmyouji","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/23852.jpg?s=f7aef48b9ab0599b569b17a2c5f5bfcb","synopsis":"Masahiro
+        is the grandson of the great onmyouji, Abe no Seimei. However, he lost his
+        sixth sense that enables him to see supernatural beings, which is very important
+        for an onmyouji. Thus, he is left with no choice but to try and pick a different
+        career. But one day, a strange mononoke appears, which he names Mokkun, who
+        shows him his true potential powers after fighting a demon. With the assistance
+        of Mokkun, his quest to become the greatest onmyouji begins.","type":"TV","airing_start":"2006-10-02T15:00:00+00:00","episodes":26,"members":41303,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":6,"type":"anime","name":"Demons","url":"https:\/\/myanimelist.net\/anime\/genre\/6\/Demons"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.66,"licensors":["Funimation","Geneon
+        Entertainment USA"],"r18":false,"kids":false},{"mal_id":886,"url":"https:\/\/myanimelist.net\/anime\/886\/Amaenaide_yo_Katsu","title":"Amaenaide
+        yo!! Katsu!!","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/15153.jpg?s=33235da58ab12afa2b4c43f8f5cc29e3","synopsis":"In
+        this sequel, a girl named Kazusano Kazuki join up with the 6 girls and Ikko.
+        With Kazuki around, Ikko will find himself in more embarassing situations
+        with these priestesses-in-training.\n(Source: ANN)","type":"TV","airing_start":"2006-01-03T15:00:00+00:00","episodes":12,"members":39576,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":9,"type":"anime","name":"Ecchi","url":"https:\/\/myanimelist.net\/anime\/genre\/9\/Ecchi"},{"mal_id":35,"type":"anime","name":"Harem","url":"https:\/\/myanimelist.net\/anime\/genre\/35\/Harem"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.81,"licensors":["Media
+        Blasters","Nozomi Entertainment"],"r18":false,"kids":false},{"mal_id":13115,"url":"https:\/\/myanimelist.net\/anime\/13115\/Hakuouki_Reimeiroku","title":"Hakuouki
+        Reimeiroku","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/71798.jpg?s=4096446dc3151e18ed448f85fc2376cc","synopsis":"The
+        year is 1863 and as Japan''s long festering wounds of political discord erupt
+        into violent waves of street clashes and murder, the Tokugawa Shogunate sends
+        a new force of masterless samurai called the Roshigumi to the aid of the Aizu
+        forces in Kyoto. However the new \"police\" are anything but a cohesive force
+        and assassination has already split them into two opposing factions. The stronger
+        is led by the brutal Serizawa Kamo and the lesser by the more honorable but
+        less assertive Isami Kondo. It is into this pack of wolves that Ryunosuke
+        Ibuki is dragged by the rabid Serizawa. Forced to be a virtual slave by blood
+        debt, he hates the samurai and everything they stand for. But as he sees how
+        the other half of the samurai live, he begins to believe that there may still
+        be a chance, for both himself and Japan, if only Kondo will step up and take
+        down the mad dog Serizawa! \r\n\r\n(Source: Sentai Filmworks) ","type":"TV","airing_start":"2012-07-08T15:00:00+00:00","episodes":12,"members":39290,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":21,"type":"anime","name":"Samurai","url":"https:\/\/myanimelist.net\/anime\/genre\/21\/Samurai"},{"mal_id":43,"type":"anime","name":"Josei","url":"https:\/\/myanimelist.net\/anime\/genre\/43\/Josei"}],"source":"Visual
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.59,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":1293,"url":"https:\/\/myanimelist.net\/anime\/1293\/Urusei_Yatsura","title":"Urusei
+        Yatsura","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/17573.jpg?s=3c0131b9a65336c1be0ca47c9d0863c2","synopsis":"Not
+        much is notable about the lecherous Ataru Moroboshi, but his extraordinary
+        bad luck sticks out like the horns in an alien''s head. When Earth is threatened
+        by a fleet of alien invaders known as the Oni, Ataru is selected to represent
+        humanity in a duel against one of them. It''s a stroke of rare luck for Ataru
+        that the duel is in fact a game of tag, and that his opponent is Lum, daughter
+        of the Oni''s leader, who places her personal dignity above victory\u2014as
+        Ataru finds out by seizing Lum''s bikini top and with it, victory.\r\n\r\nHowever,
+        misfortune kicks in again when Lum mistakes Ataru''s promise to marry his
+        girlfriend, Shinobu Miyake, as the desire to wed Lum herself, and decides
+        she rather likes the idea. Wielding her influence as an alien princess, she
+        moves in with him. Forced to deal with the consequences of his womanizing
+        ways, Ataru must balance his crumbling relationship with Shinobu while keeping
+        Lum happy, all the while flirting with every woman he meets.\r\n\r\n[Written
+        by MAL Rewrite]","type":"TV","airing_start":"1981-10-13T15:00:00+00:00","episodes":195,"members":39220,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":24,"type":"anime","name":"Sci-Fi","url":"https:\/\/myanimelist.net\/anime\/genre\/24\/Sci-Fi"},{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"},{"mal_id":1,"type":"anime","name":"Studio
+        Pierrot","url":"https:\/\/myanimelist.net\/anime\/producer\/1\/Studio_Pierrot"}],"score":7.76,"licensors":["AnimEigo"],"r18":false,"kids":false},{"mal_id":33417,"url":"https:\/\/myanimelist.net\/anime\/33417\/Super_Lovers_2","title":"Super
+        Lovers 2","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/83807.jpg?s=40d0640d685b3dacef7fa31006815698","synopsis":"Second
+        season of Super Lovers.","type":"TV","airing_start":"2017-01-12T14:30:00+00:00","episodes":10,"members":38815,"genres":[{"mal_id":36,"type":"anime","name":"Slice
+        of Life","url":"https:\/\/myanimelist.net\/anime\/genre\/36\/Slice_of_Life"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":28,"type":"anime","name":"Shounen
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/28\/Shounen_Ai"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.68,"licensors":[],"r18":false,"kids":false},{"mal_id":20371,"url":"https:\/\/myanimelist.net\/anime\/20371\/Sekaiichi_Hatsukoi_Movie__Yokozawa_Takafumi_no_Baai","title":"Sekaiichi
+        Hatsukoi Movie: Yokozawa Takafumi no Baai","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/65927.jpg?s=53490537f4e2f095691613df17f9f5c4","synopsis":"Movie
+        adaptation of the Sekaiichi Hatsukoi: Yokozawa Takafumi no Baai BL light novel.","type":"Movie","airing_start":"2014-03-14T15:00:00+00:00","episodes":1,"members":35966,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":28,"type":"anime","name":"Shounen
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/28\/Shounen_Ai"}],"source":"Light
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.14,"licensors":[],"r18":false,"kids":false},{"mal_id":14645,"url":"https:\/\/myanimelist.net\/anime\/14645\/Hiiro_no_Kakera_Dai_Ni_Shou","title":"Hiiro
+        no Kakera Dai Ni Shou","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/42709.jpg?s=d68a00a7511b3f4e0035737c1de4707b","synopsis":"Second
+        season of Hiiro no Kakera.","type":"TV","airing_start":"2012-09-29T15:00:00+00:00","episodes":13,"members":35492,"genres":[{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Visual
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.35,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":1453,"url":"https:\/\/myanimelist.net\/anime\/1453\/Maison_Ikkoku","title":"Maison
+        Ikkoku","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/17576.jpg?s=7ac4b3bb56dde5c2c4c73914a17fc630","synopsis":"In
+        the town of Clock Hill, there is an old boarding house called Maison Ikkoku.
+        While the residence itself is fairly normal, most of its occupants are not.
+        Yuusaku Godai, its most quiet tenant, has finally reached his limit with his
+        neighbors'' constant disruptions and boisterous partying. Wanting a calmer
+        place to call home so that he can study in peace, he prepares to move away.\r\n\r\nHowever,
+        his plans to leave are suddenly interrupted when he meets the new boarding
+        house manager, Kyoko Otonashi. Falling madly in love with her, he decides
+        that the boarding house may not be such a bad place to live after all. Unfortunately
+        for him, Kyoko has her own romantic troubles: she is a widow whose husband
+        died six months into their marriage. And despite her blossoming feelings for
+        Godai, Kyoko still cherishes her dearly departed husband, and she believes
+        that no other man could possibly fill the void in her heart. But with Godai''s
+        persistence and some help of the other eccentric tenants, she may experience
+        true love once again.\r\n\r\n[Written by MAL Rewrite]","type":"TV","airing_start":"1986-03-25T15:00:00+00:00","episodes":96,"members":35087,"genres":[{"mal_id":36,"type":"anime","name":"Slice
+        of Life","url":"https:\/\/myanimelist.net\/anime\/genre\/36\/Slice_of_Life"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":42,"type":"anime","name":"Seinen","url":"https:\/\/myanimelist.net\/anime\/genre\/42\/Seinen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.24,"licensors":["Viz
+        Media"],"r18":false,"kids":false},{"mal_id":6064,"url":"https:\/\/myanimelist.net\/anime\/6064\/Higurashi_no_Naku_Koro_ni_Kai_Specials","title":"Higurashi
+        no Naku Koro ni Kai Specials","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/13242.jpg?s=cff6695fbc00c2d3e23a1d63b9e16aeb","synopsis":"Specials
+        that come with the DVDs.","type":"Special","airing_start":"2007-09-20T15:00:00+00:00","episodes":24,"members":34293,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":20,"type":"anime","name":"Parody","url":"https:\/\/myanimelist.net\/anime\/genre\/20\/Parody"}],"source":"Visual
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.4,"licensors":[],"r18":false,"kids":false},{"mal_id":34966,"url":"https:\/\/myanimelist.net\/anime\/34966\/Jigoku_Shoujo__Yoi_no_Togi","title":"Jigoku
+        Shoujo: Yoi no Togi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1110\/92117.jpg?s=9c7f7152021008ccc90a5412971a878c","synopsis":"If
+        you have a grudge against someone, you can access the Hell Correspondence
+        website at the stroke of midnight, type in your grudge''s name, and the Hell
+        Girl, Ai Enma, will appear to grant your wish. However, the price for ridding
+        yourself of such a burden is a steep one: in return for condemning the soul
+        of your tormentor to Hell, your soul will also face eternal damnation. In
+        her long vigil as the Hell Girl, Ai has met many willing to pay such a cost.\r\n\r\nIn
+        Jigoku Shoujo: Yoi no Togi, Ai and her enigmatic companions continue to carry
+        out their work, ferrying soul after suffering soul into the depths of Hell.
+        However, as of late, a mysterious girl has been following them. This strange
+        child, unable to even remember her own identity, questions Ai about her duty
+        as the Hell Girl. Who is this girl, and what connection does she have to Ai?\r\n\r\n[Written
+        by MAL Rewrite]","type":"TV","airing_start":"2017-07-14T15:00:00+00:00","episodes":6,"members":33323,"genres":[{"mal_id":14,"type":"anime","name":"Horror","url":"https:\/\/myanimelist.net\/anime\/genre\/14\/Horror"},{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":40,"type":"anime","name":"Psychological","url":"https:\/\/myanimelist.net\/anime\/genre\/40\/Psychological"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Original","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.6,"licensors":["Aniplex
+        of America"],"r18":false,"kids":false},{"mal_id":13767,"url":"https:\/\/myanimelist.net\/anime\/13767\/Junjou_Romantica_OVA","title":"Junjou
+        Romantica OVA","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/60389.jpg?s=fa445877efcc0c68def8dec8dc408f1e","synopsis":"OVAs
+        that come with the limited premium edition of volumes 16 and 20 of the manga
+        series.","type":"OVA","airing_start":"2012-12-19T15:00:00+00:00","episodes":2,"members":32878,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":28,"type":"anime","name":"Shounen
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/28\/Shounen_Ai"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":8.02,"licensors":[],"r18":false,"kids":false},{"mal_id":173,"url":"https:\/\/myanimelist.net\/anime\/173\/Tactics","title":"Tactics","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/37549.jpg?s=ce3a64b822ec8f61139c92d21015f821","synopsis":"Ichinomiya
+        Kantarou grew up with the ability to see demons, but was isolated and bullied
+        by others who did not share the same gift. Instead, he became being friends
+        with the demons, gaining a great attachment to their existence. One day, Kantarou
+        was told about the strongest demon, the one known as the ogre-eating Tengu.
+        Amazed by the news of his strength, Kantarou vowed to find this demon who
+        was far stronger than any other, deciding to call him Haruka when he did so.
+        Since this time, Kantarou searched far and wide for the ogre-eating Tengu
+        with no luck, making his living by becoming a folklore writer and demon-buster.
+        On a particular job, Kantarou had finally found news of a nearby shrine supposedly
+        the place where the ogre-eating Tengu was sealed.","type":"TV","airing_start":"2004-10-05T15:00:00+00:00","episodes":25,"members":32312,"genres":[{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":6,"type":"anime","name":"Demons","url":"https:\/\/myanimelist.net\/anime\/genre\/6\/Demons"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.29,"licensors":[],"r18":false,"kids":false},{"mal_id":879,"url":"https:\/\/myanimelist.net\/anime\/879\/Simoun","title":"Simoun","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/29109.jpg?s=a3998ddc3fa798086b8566e0d745e41e","synopsis":"In
+        the peaceful theocracy of Simulicram, everyone is born female. At age 17,
+        each maiden undergoes a special ceremony where she chooses her sex. However,
+        only Pairs of maiden priestesses can synchronize with the ancient flying ships
+        known as Simoun needed to defend Simulicram. These Pairs refrain from undergoing
+        the ceremony as long as they wish to keep piloting their Simoun.\r\n\r\nAer
+        is recruited to be a Simoun pilot after a terrifying attack by an enemy nation
+        decimates the squadron known as Chor Tempest. To earn her wings she needs
+        to find her way into the heart of Neviril, Regina of Chor Tempest. But Neviril''s
+        heart still belongs to her previous Pair, lost in the battle when she attempted
+        a forbidden Simoun maneuver.\r\n\r\n(Source: Media Blasters) ","type":"TV","airing_start":"2006-04-02T15:00:00+00:00","episodes":26,"members":31161,"genres":[{"mal_id":38,"type":"anime","name":"Military","url":"https:\/\/myanimelist.net\/anime\/genre\/38\/Military"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":26,"type":"anime","name":"Shoujo
+        Ai","url":"https:\/\/myanimelist.net\/anime\/genre\/26\/Shoujo_Ai"}],"source":"Original","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.52,"licensors":["Media
+        Blasters"],"r18":false,"kids":false},{"mal_id":3298,"url":"https:\/\/myanimelist.net\/anime\/3298\/Hatenkou_Yuugi","title":"Hatenkou
+        Yuugi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/19931.jpg?s=b6e3f785d5c7f477e09e347b26523dce","synopsis":"\"See
+        the world\"\r\n\r\nWith these words, Rahzel, the daughter of a rich family,
+        is kicked out of her house and sent on her journey. Along the way she meets
+        up with Heat and Alzeid, two men with very different personalities but very
+        similar journeys. Rahzel is a clever, stubborn, and confident girl, who, with
+        the powers of her magic and mind helps the people she runs into on her journey
+        to discover the world. ","type":"TV","airing_start":"2008-01-04T15:00:00+00:00","episodes":10,"members":30138,"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":43,"type":"anime","name":"Josei","url":"https:\/\/myanimelist.net\/anime\/genre\/43\/Josei"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.24,"licensors":["Sentai
+        Filmworks"],"r18":false,"kids":false},{"mal_id":335,"url":"https:\/\/myanimelist.net\/anime\/335\/Matantei_Loki_Ragnarok","title":"Matantei
+        Loki Ragnarok","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/75300.jpg?s=57662d4377f66c37768ef6ca9cddf0d4","synopsis":"Loki,
+        the Norse god of mischief, has been exiled to the human world for what was
+        apparently a bad joke. Along with being exiled, he''s forced to take the form
+        of a child. He''s told the only way he can get back to the world of the gods
+        is if he can collect auras of evil that take over human hearts, and so to
+        do this he runs a detective agency. Loki is soon joined by a human girl named
+        Mayura who is a maniac for mysteries, and she soon helps out in her own way.
+        However, soon other Norse gods begin to appear, and most have the intent to
+        assassinate Loki for reasons unclear. \n\n(Source: ANN) \n","type":"TV","airing_start":"2003-04-04T15:00:00+00:00","episodes":26,"members":29757,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.37,"licensors":["ADV
+        Films","Sentai Filmworks"],"r18":false,"kids":false},{"mal_id":563,"url":"https:\/\/myanimelist.net\/anime\/563\/DNA\u00b2","title":"DNA\u00b2","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1317\/95422.jpg?s=16df2c76d6d6dd3bc3e4b2c31f866ff1","synopsis":"Karin,
+        a DNA operator from the future, is on a mission to change the course of History
+        by stopping Junta Momonari from becoming the Mega-Playboy who fathered 100
+        children and led to the overpopulation of the world. But Junta is no playboy;
+        in fact he is allergic to girls. But when Karin shoots him with the wrong
+        DNA-altering bullet, he starts sporadically becoming the Mega-Playboy capable
+        of charming any woman. Karin must try to restore the situation to normal before
+        the change to Mega-Playboy becomes irreversible. \n\n(Source: ANN)","type":"TV","airing_start":"1994-10-07T08:30:00+00:00","episodes":12,"members":29422,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":24,"type":"anime","name":"Sci-Fi","url":"https:\/\/myanimelist.net\/anime\/genre\/24\/Sci-Fi"}],"source":"Manga","producers":[{"mal_id":11,"type":"anime","name":"Madhouse","url":"https:\/\/myanimelist.net\/anime\/producer\/11\/Madhouse"},{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.79,"licensors":["Central
+        Park Media","Discotek Media"],"r18":false,"kids":false},{"mal_id":7559,"url":"https:\/\/myanimelist.net\/anime\/7559\/Fate_stay_night_TV_Reproduction","title":"Fate\/stay
+        night TV Reproduction","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/33537.jpg?s=acace92427541c457c003bcaca4de7e2","synopsis":"An
+        edited and condensed version of the TV series.","type":"OVA","airing_start":"2010-01-16T15:00:00+00:00","episodes":2,"members":29196,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}],"source":"Visual
+        novel","producers":[{"mal_id":37,"type":"anime","name":"Studio Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.99,"licensors":[],"r18":false,"kids":false},{"mal_id":8422,"url":"https:\/\/myanimelist.net\/anime\/8422\/Vampire_Knight__Gekiai_no_Portrait","title":"Vampire
+        Knight: Gekiai no Portrait","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/59837.jpg?s=31ffe2ce5ebae4769adbd189cb20cc70","synopsis":"Aidou
+        has the idea to hold elections for Moon Dorm''s President. The candidates
+        are Kaname and the current president Ichijou. Who will win? \r\n\r\n","type":"Special","airing_start":"2008-11-25T15:00:00+00:00","episodes":1,"members":29104,"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":32,"type":"anime","name":"Vampire","url":"https:\/\/myanimelist.net\/anime\/genre\/32\/Vampire"},{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.98,"licensors":[],"r18":false,"kids":false},{"mal_id":107,"url":"https:\/\/myanimelist.net\/anime\/107\/Ou_Dorobou_Jing","title":"Ou
+        Dorobou Jing","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1961\/92115.jpg?s=2559045d2f7f19eae2322e5ed72dba01","synopsis":"Jing
+        may appear to be a young boy, but his remarkable skills make him one of the
+        most feared thieves on the planet. Along with his feathered partner Kir, Jing
+        travels from town to town, stealing anything of value regardless of the amount
+        of security. But when he''s in a pinch, he has one more trick up his sleeve:
+        Kir bonds with Jing''s right arm to perform the effectively deadly \"Kir Royale\"
+        attack. And because of all this, Jing is infamously known by many as the \"King
+        of Bandits.\" \n","type":"TV","airing_start":"2002-05-14T15:00:00+00:00","episodes":13,"members":28585,"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":24,"type":"anime","name":"Sci-Fi","url":"https:\/\/myanimelist.net\/anime\/genre\/24\/Sci-Fi"},{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}],"source":"Manga","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":7.31,"licensors":["ADV
+        Films"],"r18":false,"kids":false},{"mal_id":2031,"url":"https:\/\/myanimelist.net\/anime\/2031\/Shining_Tears_X_Wind","title":"Shining
+        Tears X Wind","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/2298.jpg?s=6535796909db2504239d3ad0a5de8b18","synopsis":"Mysterious
+        disappearances are occurring one after the other in Tatsumi Town. Kiriya has
+        a vision from a mysterious beautiful girl with pointy ears. A book talking
+        for an alternative world is found. And Mao searching for her long lost friend,
+        Zero, comes to our world. But what she didn\u2019t expect is to find Souma
+        and Kureha, and even less, to accidentally take them to her world. Now, Souma
+        and Kureha have to find a way to come back. But other forces are playing their
+        part in the darkness and Souma with Kureha will find that going back is harder
+        than they first anticipated.\r\n\r\n(Source: ANN) ","type":"TV","airing_start":"2007-04-06T16:30:00+00:00","episodes":13,"members":27539,"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":16,"type":"anime","name":"Magic","url":"https:\/\/myanimelist.net\/anime\/genre\/16\/Magic"}],"source":"Game","producers":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"score":6.59,"licensors":["Discotek
+        Media"],"r18":false,"kids":false}]}'}
+    headers:
+      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Methods]
+      : '*'
+      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Origin]
+      : '*'
+      ? !!python/object/new:multidict._istr.istr [Cache-Control]
+      : private, must-revalidate
+      ? !!python/object/new:multidict._istr.istr [Connection]
+      : keep-alive
+      ? !!python/object/new:multidict._istr.istr [Content-Encoding]
+      : gzip
+      ? !!python/object/new:multidict._istr.istr [Content-Type]
+      : application/json
+      ? !!python/object/new:multidict._istr.istr [Date]
+      : Sun, 20 Jan 2019 01:03:07 GMT
+      ? !!python/object/new:multidict._istr.istr [Etag]
+      : '"dc0163b572e25e137c78f7e09af6e113"'
+      ? !!python/object/new:multidict._istr.istr [Server]
+      : nginx/1.13.10
+      ? !!python/object/new:multidict._istr.istr [Transfer-Encoding]
+      : chunked
+      ? !!python/object/new:multidict._istr.istr [Vary]
+      : Accept-Encoding
+      X-D-V-N: INIT-AC644301AWS [C-S-W]
+      X-Powered-By: Loli
+    status: {code: 200, message: OK}
+    url: !!python/object/new:yarl.URL
+      state: !!python/tuple
+      - !!python/object/new:urllib.parse.SplitResult [https, api.jikan.moe, /v3/producer/37,
+        '', '']
+version: 1

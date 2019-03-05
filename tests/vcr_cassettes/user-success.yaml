@@ -1,0 +1,63 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.21.0]
+    method: GET
+    uri: https://api.jikan.moe/v3/user/nekomata1037
+  response:
+    body:
+      string: !!binary |
+        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
+        nIPpY6IUAAA=
+    headers:
+      Access-Control-Allow-Methods: ['*']
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: ['private, must-revalidate']
+      Connection: [keep-alive]
+      Content-Encoding: [gzip]
+      Content-Length: ['1889']
+      Content-Type: [application/json]
+      Date: ['Sun, 20 Jan 2019 02:53:34 GMT']
+      ETag: ['"9beaf672c3b9c9badc22a1dffc9bc15d"']
+      Server: [nginx/1.13.10]
+      Vary: [Accept-Encoding]
+      X-D-V-N: ['INIT-AC644301AWS [C-S-W]']
+      X-Powered-By: [Loli]
+    status: {code: 200, message: OK}
+version: 1
