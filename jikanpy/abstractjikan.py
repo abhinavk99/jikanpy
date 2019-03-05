@@ -17,8 +17,9 @@ class AbstractJikan(ABC):
     so use it responsibly.
     """
 
-    def __init__(self, use_ssl=True):
-        selected_base = BASE_URL_SSL if use_ssl else BASE_URL
+    def __init__(self, selected_base=None, use_ssl=True):
+        if selected_base is None:
+            selected_base = BASE_URL_SSL if use_ssl else BASE_URL
         self.base = selected_base + '{endpoint}/{id}'
         self.search_base = selected_base + 'search/{search_type}?q={query}'
         self.season_base = selected_base + 'season/{year}/{season}'
