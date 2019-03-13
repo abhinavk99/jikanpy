@@ -200,12 +200,12 @@ class AbstractJikan(ABC):
         extension -- special information to get, possible values in the docs
         page -- page number of the results (default None)
         """
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def _get_creator(self, creator_type, creator_id, page=None):
         """Gets the response from Jikan API for producer and magazine"""
-        pass
+        raise NotImplementedError
 
     def anime(self, id, extension=None, page=None):
         return self._get('anime', id, extension, page)
@@ -237,7 +237,7 @@ class AbstractJikan(ABC):
         page -- page number of the results (default None)
         parameters - dictionary containing key,value pairs for ?key=value in url query
         """
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def season(self, year, season):
@@ -248,21 +248,21 @@ class AbstractJikan(ABC):
         year -- year to get anime of
         season -- season to get anime of (winter, spring, summer, fall)
         """
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def season_archive(self):
         """
         Gets all the years and their respective seasons from MyAnimeList
         """
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def season_later(self):
         """
         Gets anime that have been announced for upcoming seasons
         """
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def schedule(self, day=None):
@@ -272,7 +272,7 @@ class AbstractJikan(ABC):
         Keyword Arguments:
         day -- day to get anime of (default None)
         """
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def top(self, type, page=None, subtype=None):
@@ -284,7 +284,7 @@ class AbstractJikan(ABC):
         page -- page number of the results (default None)
         subtype -- subtype to get filtered top items, possible values in docs
         """
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def genre(self, type, genre_id, page=None):
@@ -296,7 +296,7 @@ class AbstractJikan(ABC):
         genre_id -- genre ID from MyAnimeList
         page -- page number of the results (default None)
         """
-        pass
+        raise NotImplementedError
 
     def producer(self, producer_id, page=None):
         """
@@ -329,7 +329,7 @@ class AbstractJikan(ABC):
         argument -- data for history (anime, manga), page number for friends, type of list
         page -- page number for animelist and mangalist
         """
-        pass
+        raise NotImplementedError
 
     @abstractmethod
     def meta(self, request, type, period):
@@ -341,4 +341,4 @@ class AbstractJikan(ABC):
         type -- type to get info on, possible values in docs
         period -- time period (today, weekly, monthly)
         """
-        pass
+        raise NotImplementedError
