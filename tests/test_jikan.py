@@ -1,8 +1,8 @@
 import pytest
 import vcr
 
-from jikanpy.jikan import Jikan
-from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
+from jikanpy import Jikan
+from jikanpy import APIException, ClientException, DeprecatedEndpoint
 
 from constants import *
 from fixtures import *
@@ -165,7 +165,8 @@ def test_user_success(user_keys, jikan):
 
 @vcr.use_cassette('tests/vcr_cassettes/animelist-success.yaml')
 def test_animelist_success(animelist_keys, jikan):
-    animelist_info = jikan.user(username=USERNAME, request='animelist', argument='all')
+    animelist_info = jikan.user(
+        username=USERNAME, request='animelist', argument='all')
 
     assert isinstance(animelist_info, dict)
     assert animelist_keys.issubset(animelist_info.keys())
@@ -312,7 +313,8 @@ def test_user_animelist_failure(jikan):
 @vcr.use_cassette('tests/vcr_cassettes/user-page-failure.yaml')
 def test_user_page_failure(jikan):
     with pytest.raises(ClientException):
-        jikan.user(username='user', request='animelist', page='x', argument='all')
+        jikan.user(username='user', request='animelist',
+                   page='x', argument='all')
 
 
 @vcr.use_cassette('tests/vcr_cassettes/user-history-failure.yaml')

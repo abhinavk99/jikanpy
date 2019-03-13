@@ -3,8 +3,8 @@ import vcr
 
 import asyncio
 
-from jikanpy.aiojikan import AioJikan
-from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
+from jikanpy import AioJikan
+from jikanpy import APIException, ClientException, DeprecatedEndpoint
 
 from constants import *
 from fixtures import *
