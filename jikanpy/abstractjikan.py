@@ -338,7 +338,7 @@ class AbstractJikan(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def meta(self, request, type, period):
+    def meta(self, request, type, period, offset):
         """
         Gets meta information regarding the Jikan REST API
 
