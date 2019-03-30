@@ -67,14 +67,14 @@ class AbstractJikan(ABC):
         url = self.search_base.format(search_type=search_type, query=query)
         url = self._add_page_to_url(url, page, delimiter='&page=')
         if parameters is not None:
-            url += '?'
+            url += '&'
             for key, value in parameters.items():
                 values = SEARCH_PARAMS.get(key)
                 if values is None:
                     raise ClientException('The key is not valid')
                 elif isinstance(values, tuple) and value not in values:
                     raise ClientException('The value is not valid')
-                url += key + '=' + str(value) + "&"
+                url += key + '=' + str(value) + '&'
         return url
 
     def _get_season_url(self, year, season):
