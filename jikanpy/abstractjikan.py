@@ -169,15 +169,21 @@ class AbstractJikan(ABC):
 
     def _get_meta_url(self, request, type, period):
         """Create URL for meta endpoint"""
-        url = self.meta_base.format(request=request, type=type, period=period)
+        url = self.meta_base.format(request=request)
         # Check if request is valid
         if request not in META['request']:
             raise ClientException('Request must be \'requests\' or \'status\'')
-        if type not in META['type']:
-            raise ClientException('Type is not valid')
-        if period not in META['period']:
+        if request == 'status' and (type is not None or period is not None or offset is not None):
             raise ClientException(
-                'Period must be \'today\', \'weekly\', or \'monthly\'')
+                'There is no type or period for the \'status\' request')
+        if request == 'requests':
+            if type not in META['type']:
+                raise ClientException('Type is not valid')
+            if period not in META['period']:
+                raise ClientException(
+                    'Period must be \'today\', \'weekly\', or \'monthly\'')
+            url += '/' + type + '/' + period
+            url = self._add_page_to_url(url, offset)
         return url
 
     def _add_page_to_url(self, url, page, delimiter='/'):

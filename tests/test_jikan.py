@@ -359,6 +359,12 @@ def test_meta_period_failure(jikan):
         jikan.meta(request='requests', type='anime', period='x')
 
 
+@vcr.use_cassette('tests/vcr_cassettes/meta-status-failure.yaml')
+def test_meta_status_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.meta(request='status', type='x', period='x')
+
+
 @vcr.use_cassette('tests/vcr_cassettes/user-list-failure.yaml')
 def test_user_list_failure(jikan):
     with pytest.raises(DeprecatedEndpoint):

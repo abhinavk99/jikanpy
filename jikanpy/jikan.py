@@ -63,8 +63,8 @@ class Jikan(AbstractJikan):
         self._check_response(response, username=username, request=request)
         return response.json()
 
-    def meta(self, request, type, period):
-        url = self._get_meta_url(request, type, period)
+    def meta(self, request, type=None, period=None, offset=None):
+        url = self._get_meta_url(request, type, period, offset)
         response = session.get(url)
         self._check_response(response, request=request,
                              type=type, period=period)
