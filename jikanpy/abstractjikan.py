@@ -150,18 +150,19 @@ class AbstractJikan(ABC):
                     'You must provide an argument if you provide a page for animelist or mangalist'
                 )
             if argument is not None:
-                if request.lower() == 'history' and argument.lower() not in USER_HISTORY_ARGUMENTS:
-                    raise ClientException(
-                        'Argument for history request should be anime or manga')
                 if request.lower() == 'friends' and not isinstance(argument, int):
                     raise ClientException(
                         'Argument for friends request must be a page number integer')
-                if request.lower() == 'animelist' and argument.lower() not in USER_ANIMELIST_ARGUMENTS:
-                    raise ClientException(
-                        'Argument for animelist request is not valid')
-                if request.lower() == 'mangalist' and argument.lower() not in USER_MANGALIST_ARGUMENTS:
-                    raise ClientException(
-                        'Argument for mangalist request is not valid')
+                if isinstance(argument, str):
+                    if request.lower() == 'history' and argument.lower() not in USER_HISTORY_ARGUMENTS:
+                        raise ClientException(
+                            'Argument for history request should be anime or manga')
+                    if request.lower() == 'animelist' and argument.lower() not in USER_ANIMELIST_ARGUMENTS:
+                        raise ClientException(
+                            'Argument for animelist request is not valid')
+                    if request.lower() == 'mangalist' and argument.lower() not in USER_MANGALIST_ARGUMENTS:
+                        raise ClientException(
+                            'Argument for mangalist request is not valid')
                 url += '/' + str(argument)
                 if request.lower() in ('animelist', 'mangalist'):
                     url = self._add_page_to_url(url, page)

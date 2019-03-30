@@ -67,4 +67,4 @@ def test_user_not_implemented(abstract_jikan):
 
 def test_meta_not_implemented(abstract_jikan):
     with pytest.raises(NotImplementedError):
-        abstract_jikan.meta(None, None, None)
+        abstract_jikan.meta(None, None, None, None)
