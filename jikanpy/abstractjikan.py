@@ -1,11 +1,8 @@
 from abc import ABC, abstractmethod
-from typing import Mapping, Dict, Optional, Union, TYPE_CHECKING
+from typing import Mapping, Dict, Optional, Union, Any, TYPE_CHECKING
 
 from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
 from jikanpy.parameters import *
-
-if TYPE_CHECKING:
-    from requests.models import Response
 
 
 BASE_URL: str = 'http://api.jikan.moe/v3/'
@@ -38,7 +35,7 @@ class AbstractJikan(ABC):
         self.season_archive_url: str = selected_base + 'season/archive'
         self.season_later_url: str = selected_base + 'season/later'
 
-    def _check_response(self, response: Response, **kwargs: Mapping) -> None:
+    def _check_response(self, response: Any, **kwargs: Mapping) -> None:
         """
         Check if the response is an error
 
