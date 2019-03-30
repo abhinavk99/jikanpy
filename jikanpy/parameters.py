@@ -1,5 +1,9 @@
+from __future__ import annotations
+
+from typing import Dict, Union, Tuple, Iterable
+
 # Possible extensions for endpoints
-EXTENSIONS = {
+EXTENSIONS: Dict[str, Union[str, Tuple[str, ...]]] = {
     'anime': (
         'characters_staff',
         'episodes',
@@ -36,7 +40,7 @@ EXTENSIONS = {
 }
 
 # Possible search parameters for ?key=value
-SEARCH_PARAMS = {
+SEARCH_PARAMS: Dict[str, Union[str, Tuple[Union[int, str], ...], Iterable[int]]] = {
     'type': (
         'tv',
         'ova',
@@ -74,10 +78,10 @@ SEARCH_PARAMS = {
 }
 
 # Possible seasons
-SEASONS = ('winter', 'spring', 'summer', 'fall')
+SEASONS: Tuple[str, ...] = ('winter', 'spring', 'summer', 'fall')
 
 # Possible days
-DAYS = (
+DAYS: Tuple[str, ...] = (
     'monday',
     'tuesday',
     'wednesday',
@@ -90,7 +94,7 @@ DAYS = (
 )
 
 # Possible subtypes for top endpoint
-SUBTYPES = {
+SUBTYPES: Dict[str, Tuple[str, ...]] = {
     'anime': (
         'airing',
         'upcoming',
@@ -114,27 +118,28 @@ SUBTYPES = {
 }
 
 # Possible types for genre
-GENRE_TYPES = ('anime', 'manga')
+GENRE_TYPES: Tuple[str, ...] = ('anime', 'manga')
 
 # Possible creator types/endpoints
-CREATOR_TYPES = ('producer', 'magazine')
+CREATOR_TYPES: Tuple[str, ...] = ('producer', 'magazine')
 
 # Possible requests for user endpoint
-USER_REQUESTS = ('profile', 'history', 'friends', 'animelist', 'mangalist')
+USER_REQUESTS: Tuple[str, ...] = (
+    'profile', 'history', 'friends', 'animelist', 'mangalist')
 
 # Possible arguments for history request in user endpoint
-USER_HISTORY_ARGUMENTS = ('anime', 'manga')
+USER_HISTORY_ARGUMENTS: Tuple[str, ...] = ('anime', 'manga')
 
 # Possible arguments for animelist request in user endpoint
-USER_ANIMELIST_ARGUMENTS = (
+USER_ANIMELIST_ARGUMENTS: Tuple[str, ...] = (
     'all', 'watching', 'completed', 'onhold', 'dropped', 'plantowatch', 'ptw')
 
 # Possible arguments for mangalist request in user endpoint
-USER_MANGALIST_ARGUMENTS = (
+USER_MANGALIST_ARGUMENTS: Tuple[str, ...] = (
     'all', 'reading', 'completed', 'onhold', 'dropped', 'plantoread', 'ptr')
 
 # Possible parameters for meta
-META = {
+META: Dict[str, Tuple[str, ...]] = {
     'request': (
         'requests',
         'status'
