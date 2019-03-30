@@ -8,9 +8,7 @@ jobs:
     install:
       - pip install -r requirements-dev.txt
       - pip install -e .
-    script:
-      - python -m pytest
-      - mypy jikanpy
+    script: python -m pytest
   - stage: Testing with Python 3.7
     python: '3.7'
     sudo: required

@@ -35,7 +35,7 @@ class AbstractJikan(ABC):
         self.season_archive_url: str = selected_base + 'season/archive'
         self.season_later_url: str = selected_base + 'season/later'
 
-    def _check_response(self, response: Any, **kwargs: Mapping) -> None:
+    def _check_response(self, response: Any, **kwargs: Union[int, Optional[str]]) -> None:
         """
         Check if the response is an error
 
