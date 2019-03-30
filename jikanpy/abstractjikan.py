@@ -216,8 +216,8 @@ class AbstractJikan(ABC):
     def anime(self, id, extension=None, page=None):
         return self._get('anime', id, extension, page)
 
-    def manga(self, id, extension=None):
-        return self._get('manga', id, extension)
+    def manga(self, id, extension=None, page=None) -> Dict:
+        return self._get('manga', id, extension, page)
 
     def character(self, id, extension=None):
         return self._get('character', id, extension)
