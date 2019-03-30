@@ -84,7 +84,9 @@ DAYS = (
     'thursday',
     'friday',
     'saturday',
-    'sunday'
+    'sunday',
+    'other',
+    'unknown'
 )
 
 # Possible subtypes for top endpoint
