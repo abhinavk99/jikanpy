@@ -8,18 +8,22 @@ jobs:
       - '3.5'
       - '3.6'
     install:
-      - pip install -r requirements.txt
+      - pip install -r requirements-dev.txt
       - pip install -e .
-    script: pytest
+    script:
+      - pytest
+      - mypy jikanpy
   - stage: Testing with Python 3.7
     python: '3.7'
     sudo: required
     dist: xenial
     install:
-      - pip install -r requirements.txt
+      - pip install -r requirements-dev.txt
       - pip install -e .
       - pip install pytest-cov codecov
-    script: pytest
+    script:
+      - pytest
+      - mypy jikanpy
     after_success:
      - pytest --cov jikanpy tests/
      - codecov
