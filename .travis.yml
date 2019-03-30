@@ -9,7 +9,7 @@ jobs:
       - pip install -r requirements-dev.txt
       - pip install -e .
     script:
-      - pytest
+      - python -m pytest
       - mypy jikanpy
   - stage: Testing with Python 3.7
     python: '3.7'
@@ -20,7 +20,7 @@ jobs:
       - pip install -e .
       - pip install pytest-cov codecov
     script:
-      - pytest
+      - python -m pytest
       - mypy jikanpy
     after_success:
      - pytest --cov jikanpy tests/
