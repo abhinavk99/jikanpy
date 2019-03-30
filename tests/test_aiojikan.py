@@ -397,6 +397,13 @@ async def test_meta_period_failure(aio_jikan):
     await aio_jikan.close()
 
 
+@vcr.use_cassette('tests/vcr_cassettes/aio-meta-status-failure.yaml')
+async def test_meta_status_failure(aio_jikan):
+    with pytest.raises(ClientException):
+        await aio_jikan.meta(request='status', type='x', period='x')
+    await aio_jikan.close()
+
+
 @vcr.use_cassette('tests/vcr_cassettes/aio-user-list-failure.yaml')
 async def test_user_list_failure(aio_jikan):
     with pytest.raises(DeprecatedEndpoint):

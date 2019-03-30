@@ -1,11 +1,12 @@
 from abc import ABC, abstractmethod
+from typing import Mapping, Dict, Optional, Union, Any, TYPE_CHECKING
 
 from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
 from jikanpy.parameters import *
 
 
-BASE_URL = 'http://api.jikan.moe/v3/'
-BASE_URL_SSL = 'https://api.jikan.moe/v3/'
+BASE_URL: str = 'http://api.jikan.moe/v3/'
+BASE_URL_SSL: str = 'https://api.jikan.moe/v3/'
 
 
 class AbstractJikan(ABC):
@@ -17,23 +18,24 @@ class AbstractJikan(ABC):
     so use it responsibly.
     """
 
-    def __init__(self, selected_base=None, use_ssl=True):
+    def __init__(self, selected_base: Optional[str] = None, use_ssl: bool = True) -> None:
+        super().__init__()
         if selected_base is None:
             selected_base = BASE_URL_SSL if use_ssl else BASE_URL
-        self.base = selected_base + '{endpoint}/{id}'
-        self.search_base = selected_base + 'search/{search_type}?q={query}'
-        self.season_base = selected_base + 'season/{year}/{season}'
-        self.schedule_base = selected_base + 'schedule'
-        self.top_base = selected_base + 'top/{type}'
-        self.meta_base = selected_base + 'meta/{request}/{type}/{period}'
-        self.genre_base = selected_base + 'genre/{type}/{genre_id}'
-        self.creator_base = selected_base + '{creator_type}/{creator_id}'
-        self.user_base = selected_base + 'user/{username}'
-        self.season_archive_url = selected_base + 'season/archive'
-        self.season_later_url = selected_base + 'season/later'
-        super().__init__()
+        self.base: str = selected_base + '{endpoint}/{id}'
+        self.search_base: str = selected_base + \
+            'search/{search_type}?q={query}'
+        self.season_base: str = selected_base + 'season/{year}/{season}'
+        self.schedule_base: str = selected_base + 'schedule'
+        self.top_base: str = selected_base + 'top/{type}'
+        self.meta_base: str = selected_base + 'meta/{request}'
+        self.genre_base: str = selected_base + 'genre/{type}/{genre_id}'
+        self.creator_base: str = selected_base + '{creator_type}/{creator_id}'
+        self.user_base: str = selected_base + 'user/{username}'
+        self.season_archive_url: str = selected_base + 'season/archive'
+        self.season_later_url: str = selected_base + 'season/later'
 
-    def _check_response(self, response, **kwargs):
+    def _check_response(self, response: Any, **kwargs: Union[int, Optional[str]]) -> None:
         """
         Check if the response is an error
 
@@ -42,7 +44,7 @@ class AbstractJikan(ABC):
         kwargs -- keyword arguments
         """
         if response.status_code >= 400:
-            err_str = '{} {}: error for '.format(
+            err_str: str = '{} {}: error for '.format(
                 response.status_code,
                 response.json().get('error')
             )
@@ -50,9 +52,9 @@ class AbstractJikan(ABC):
                                  for k, v in kwargs.items())
             raise APIException(err_str)
 
-    def _get_url(self, endpoint, id, extension, page):
+    def _get_url(self, endpoint: str, id: int, extension: Optional[str], page: Optional[int]) -> str:
         """Create URL for anime, manga, character, person, and club endpoints"""
-        url = self.base.format(endpoint=endpoint, id=id)
+        url: str = self.base.format(endpoint=endpoint, id=id)
         # Check if extension is valid
         if extension is not None:
             if extension not in EXTENSIONS[endpoint]:
@@ -62,32 +64,34 @@ class AbstractJikan(ABC):
                 url = self._add_page_to_url(url, page)
         return url
 
-    def _get_search_url(self, search_type, query, page, parameters):
+    def _get_search_url(self, search_type: str, query: str, page: Optional[int],
+                        parameters: Optional[Mapping]) -> str:
         """Create URL for search endpoint"""
-        url = self.search_base.format(search_type=search_type, query=query)
+        url: str = self.search_base.format(
+            search_type=search_type, query=query)
         url = self._add_page_to_url(url, page, delimiter='&page=')
         if parameters is not None:
-            url += '?'
+            url += '&'
             for key, value in parameters.items():
                 values = SEARCH_PARAMS.get(key)
                 if values is None:
                     raise ClientException('The key is not valid')
                 elif isinstance(values, tuple) and value not in values:
                     raise ClientException('The value is not valid')
-                url += key + '=' + str(value) + "&"
+                url += key + '=' + str(value) + '&'
         return url
 
-    def _get_season_url(self, year, season):
+    def _get_season_url(self, year: int, season: str) -> str:
         """Create URL for season endpoint"""
-        url = self.season_base.format(year=year, season=season.lower())
+        url: str = self.season_base.format(year=year, season=season.lower())
         # Check if year and season are valid
         if not (isinstance(year, int) and season.lower() in SEASONS):
             raise ClientException('Season or year is not valid')
         return url
 
-    def _get_schedule_url(self, day):
+    def _get_schedule_url(self, day: Optional[str]) -> str:
         """Create URL for schedule endpoint"""
-        url = self.schedule_base
+        url: str = self.schedule_base
         # Check if day is valid
         if day is not None:
             if day.lower() not in DAYS:
@@ -96,9 +100,9 @@ class AbstractJikan(ABC):
                 url += '/' + day.lower()
         return url
 
-    def _get_top_url(self, type, page, subtype):
+    def _get_top_url(self, type: str, page: Optional[int], subtype: Optional[str]) -> str:
         """Create URL for top endpoint"""
-        url = self.top_base.format(type=type.lower())
+        url: str = self.top_base.format(type=type.lower())
         # Check if type is valid
         if type.lower() not in SUBTYPES:
             raise ClientException('Type must be anime or manga')
@@ -112,9 +116,9 @@ class AbstractJikan(ABC):
             url += '/' + subtype.lower()
         return url
 
-    def _get_genre_url(self, type, genre_id, page):
+    def _get_genre_url(self, type: str, genre_id: int, page: Optional[int]) -> str:
         """Create URL for genre endpoint"""
-        url = self.genre_base.format(type=type.lower(), genre_id=genre_id)
+        url: str = self.genre_base.format(type=type.lower(), genre_id=genre_id)
         # Check if type is valid
         if type.lower() not in GENRE_TYPES:
             raise ClientException('Type must be anime or manga')
@@ -123,10 +127,10 @@ class AbstractJikan(ABC):
         url = self._add_page_to_url(url, page)
         return url
 
-    def _get_creator_url(self, creator_type, creator_id, page):
+    def _get_creator_url(self, creator_type: str, creator_id: int, page: Optional[int]) -> str:
         """Create URL for producer and magazine endpoints"""
-        url = self.creator_base.format(creator_type=creator_type.lower(),
-                                       creator_id=creator_id)
+        url: str = self.creator_base.format(creator_type=creator_type.lower(),
+                                            creator_id=creator_id)
         # Check if type is valid
         if creator_type.lower() not in CREATOR_TYPES:
             raise ClientException('Type must be producer or magazine')
@@ -135,9 +139,10 @@ class AbstractJikan(ABC):
         url = self._add_page_to_url(url, page)
         return url
 
-    def _get_user_url(self, username, request, argument, page):
+    def _get_user_url(self, username: str, request: Optional[str], argument: Optional[Union[int, str]],
+                      page: Optional[int]) -> str:
         """Create URL for user endpoint"""
-        url = self.user_base.format(username=username.lower())
+        url: str = self.user_base.format(username=username.lower())
         if request is not None:
             if request not in USER_REQUESTS:
                 raise ClientException('Invalid request for user endpoint')
@@ -150,37 +155,45 @@ class AbstractJikan(ABC):
                     'You must provide an argument if you provide a page for animelist or mangalist'
                 )
             if argument is not None:
-                if request.lower() == 'history' and argument.lower() not in USER_HISTORY_ARGUMENTS:
-                    raise ClientException(
-                        'Argument for history request should be anime or manga')
                 if request.lower() == 'friends' and not isinstance(argument, int):
                     raise ClientException(
                         'Argument for friends request must be a page number integer')
-                if request.lower() == 'animelist' and argument.lower() not in USER_ANIMELIST_ARGUMENTS:
-                    raise ClientException(
-                        'Argument for animelist request is not valid')
-                if request.lower() == 'mangalist' and argument.lower() not in USER_MANGALIST_ARGUMENTS:
-                    raise ClientException(
-                        'Argument for mangalist request is not valid')
+                if isinstance(argument, str):
+                    if request.lower() == 'history' and argument.lower() not in USER_HISTORY_ARGUMENTS:
+                        raise ClientException(
+                            'Argument for history request should be anime or manga')
+                    if request.lower() == 'animelist' and argument.lower() not in USER_ANIMELIST_ARGUMENTS:
+                        raise ClientException(
+                            'Argument for animelist request is not valid')
+                    if request.lower() == 'mangalist' and argument.lower() not in USER_MANGALIST_ARGUMENTS:
+                        raise ClientException(
+                            'Argument for mangalist request is not valid')
                 url += '/' + str(argument)
                 if request.lower() in ('animelist', 'mangalist'):
                     url = self._add_page_to_url(url, page)
         return url
 
-    def _get_meta_url(self, request, type, period):
+    def _get_meta_url(self, request: str, type: Optional[str], period: Optional[str],
+                      offset: Optional[int]) -> str:
         """Create URL for meta endpoint"""
-        url = self.meta_base.format(request=request, type=type, period=period)
+        url: str = self.meta_base.format(request=request)
         # Check if request is valid
         if request not in META['request']:
             raise ClientException('Request must be \'requests\' or \'status\'')
-        if type not in META['type']:
-            raise ClientException('Type is not valid')
-        if period not in META['period']:
+        if request == 'status' and (type is not None or period is not None or offset is not None):
             raise ClientException(
-                'Period must be \'today\', \'weekly\', or \'monthly\'')
+                'There is no type or period for the \'status\' request')
+        if request == 'requests':
+            if type not in META['type']:
+                raise ClientException('Type is not valid')
+            if period not in META['period']:
+                raise ClientException(
+                    'Period must be \'today\', \'weekly\', or \'monthly\'')
+            url += '/' + type + '/' + period
+            url = self._add_page_to_url(url, offset)
         return url
 
-    def _add_page_to_url(self, url, page, delimiter='/'):
+    def _add_page_to_url(self, url: str, page: Optional[int], delimiter: str = '/') -> str:
         """Add page to URL if it exists and is valid"""
         if page is not None:
             if not isinstance(page, int):
@@ -190,7 +203,8 @@ class AbstractJikan(ABC):
         return url
 
     @abstractmethod
-    def _get(self, endpoint, id, extension, page=None):
+    def _get(self, endpoint: str, id: int, extension: Optional[str],
+             page: Optional[int] = None) -> Dict:
         """
         Gets the response from Jikan API given the endpoint
 
@@ -203,31 +217,33 @@ class AbstractJikan(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def _get_creator(self, creator_type, creator_id, page=None):
+    def _get_creator(self, creator_type: str, creator_id: int,
+                     page: Optional[int] = None) -> Dict:
         """Gets the response from Jikan API for producer and magazine"""
         raise NotImplementedError
 
-    def anime(self, id, extension=None, page=None):
+    def anime(self, id: int, extension: Optional[str] = None, page: Optional[int] = None) -> Dict:
         return self._get('anime', id, extension, page)
 
-    def manga(self, id, extension=None):
-        return self._get('manga', id, extension)
+    def manga(self, id: int, extension: Optional[str] = None, page: Optional[int] = None) -> Dict:
+        return self._get('manga', id, extension, page)
 
-    def character(self, id, extension=None):
+    def character(self, id: int, extension: Optional[str] = None) -> Dict:
         return self._get('character', id, extension)
 
-    def person(self, id, extension=None):
+    def person(self, id: int, extension: Optional[str] = None) -> Dict:
         return self._get('person', id, extension)
 
-    def club(self, id, extension=None):
+    def club(self, id: int, extension: Optional[str] = None) -> Dict:
         return self._get('club', id, extension)
 
-    def user_list(self, id, extension=None):
+    def user_list(self, id: int, extension: Optional[str] = None) -> Dict:
         """Gets user list information"""
         raise DeprecatedEndpoint('user_list is a deprecated endpoint')
 
     @abstractmethod
-    def search(self, search_type, query, page=None, parameters=None):
+    def search(self, search_type: str, query: str, page: Optional[int] = None,
+               parameters: Optional[Mapping] = None) -> Dict:
         """
         Searches for a query on MyAnimeList
 
@@ -240,7 +256,7 @@ class AbstractJikan(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def season(self, year, season):
+    def season(self, year: int, season: str) -> Dict:
         """
         Gets information on anime of the specific season
 
@@ -251,21 +267,21 @@ class AbstractJikan(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def season_archive(self):
+    def season_archive(self) -> Dict:
         """
         Gets all the years and their respective seasons from MyAnimeList
         """
         raise NotImplementedError
 
     @abstractmethod
-    def season_later(self):
+    def season_later(self) -> Dict:
         """
         Gets anime that have been announced for upcoming seasons
         """
         raise NotImplementedError
 
     @abstractmethod
-    def schedule(self, day=None):
+    def schedule(self, day: Optional[str] = None) -> Dict:
         """
         Gets anime scheduled for the specific day
 
@@ -275,7 +291,7 @@ class AbstractJikan(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def top(self, type, page=None, subtype=None):
+    def top(self, type: str, page: Optional[int] = None, subtype: Optional[str] = None) -> Dict:
         """
         Gets top items on MyAnimeList
 
@@ -287,7 +303,7 @@ class AbstractJikan(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def genre(self, type, genre_id, page=None):
+    def genre(self, type: str, genre_id: int, page: Optional[int] = None) -> Dict:
         """
         Gets anime or manga by genre
 
@@ -298,7 +314,7 @@ class AbstractJikan(ABC):
         """
         raise NotImplementedError
 
-    def producer(self, producer_id, page=None):
+    def producer(self, producer_id: int, page: Optional[int] = None) -> Dict:
         """
         Gets anime by the producer/studio/licensor
 
@@ -308,7 +324,7 @@ class AbstractJikan(ABC):
         """
         return self._get_creator('producer', producer_id, page)
 
-    def magazine(self, magazine_id, page=None):
+    def magazine(self, magazine_id: int, page: Optional[int] = None) -> Dict:
         """
         Gets manga by the magazine/serializer/publisher
 
@@ -319,7 +335,8 @@ class AbstractJikan(ABC):
         return self._get_creator('magazine', magazine_id, page)
 
     @abstractmethod
-    def user(self, username, request, argument=None, page=None):
+    def user(self, username: str, request: Optional[str], argument: Optional[Union[int, str]] = None,
+             page: Optional[int] = None) -> Dict:
         """
         Gets user data
 
@@ -332,7 +349,8 @@ class AbstractJikan(ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def meta(self, request, type, period):
+    def meta(self, request: str, type: Optional[str], period: Optional[str],
+             offset: Optional[int]) -> Dict:
         """
         Gets meta information regarding the Jikan REST API
 

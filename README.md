@@ -6,7 +6,7 @@ Jikanpy
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 Jikanpy is a Python wrapper for [Jikan](https://github.com/jikan-me/jikan),
-providing bindings for all API functionality. Because it is intended to be
+providing bindings for all API functionality supporting 3.6+. Because it is intended to be
 pretty much identical, please consult [Jikan's
 documentation](https://jikan.docs.apiary.io/#) for thornier details on how it is meant to
 be used. Perhaps most importantly, Jikanpy does not make any attempts to rate
@@ -122,7 +122,7 @@ from jikanpy import Jikan
 jikan = Jikan("http://localhost:8000/v3/")
 ```
 
-## Async Usage (Python 3.5+)
+## Async Usage
 ```python
 from jikanpy import AioJikan
 

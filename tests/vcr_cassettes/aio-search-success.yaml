@@ -3,196 +3,266 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.jikan.moe/v3/search/anime?q=naruto?type=tv&
+    uri: https://api.jikan.moe/v3/search/anime?q=naruto&type=tv&
   response:
-    body: {string: '{"request_hash":"request:search:db7df3c12d5c5493db4736118de3fe95cbc4e088","request_cached":false,"request_cache_expiry":43200,"results":[{"mal_id":20,"url":"https:\/\/myanimelist.net\/anime\/20\/Naruto","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17405.jpg?s=59241469eb470604a792add6fbe7cce6","title":"Naruto","airing":false,"synopsis":"Moments
+    body: {string: '{"request_hash":"request:search:925120415bcf91592c1aced82cf1c1388f87d1fd","request_cached":true,"request_cache_expiry":43073,"results":[{"mal_id":20,"url":"https:\/\/myanimelist.net\/anime\/20\/Naruto","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17405.jpg?s=59241469eb470604a792add6fbe7cce6","title":"Naruto","airing":false,"synopsis":"Moments
         prior to Naruto Uzumaki''s birth, a huge demon known as the Kyuubi, the Nine-Tailed
         Fox, attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In
-        order to put an end to the Kyuubi''...","type":"TV","episodes":220,"score":7.9,"start_date":"2002-10-03T00:00:00+00:00","end_date":"2007-02-08T00:00:00+00:00","members":1085870,"rated":"PG-13"},{"mal_id":10075,"url":"https:\/\/myanimelist.net\/anime\/10075\/Naruto_x_UT","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/30485.jpg?s=0e585f452876ec490cd1f922d26fad36","title":"Naruto
-        x UT","airing":false,"synopsis":"All-new animation offered throughout UNIQLO
-        clothing stores in Japan on January 1, 2011. The DVD contains an exclusive
-        version of Mayonaka Orchestra, by the Japanese rock band Aqua Timez. A limited
-        nu...","type":"OVA","episodes":1,"score":7.52,"start_date":"2011-01-01T00:00:00+00:00","end_date":"2011-01-01T00:00:00+00:00","members":30904,"rated":"PG-13"},{"mal_id":1735,"url":"https:\/\/myanimelist.net\/anime\/1735\/Naruto__Shippuuden","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/17407.jpg?s=2bf24a22a339223dcadb1cdfc3307b61","title":"Naruto:
+        order to put an end to the Kyuubi''...","type":"TV","episodes":220,"score":7.91,"start_date":"2002-10-03T00:00:00+00:00","end_date":"2007-02-08T00:00:00+00:00","members":1124509,"rated":"PG-13"},{"mal_id":1735,"url":"https:\/\/myanimelist.net\/anime\/1735\/Naruto__Shippuuden","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/17407.jpg?s=2bf24a22a339223dcadb1cdfc3307b61","title":"Naruto:
         Shippuuden","airing":false,"synopsis":"It has been two and a half years since
         Naruto Uzumaki left Konohagakure, the Hidden Leaf Village, for intense training
         following events which fueled his desire to be stronger. Now Akatsuki, the
-        myster...","type":"TV","episodes":500,"score":8.19,"start_date":"2007-02-15T00:00:00+00:00","end_date":"2017-03-23T00:00:00+00:00","members":887322,"rated":"PG-13"},{"mal_id":4134,"url":"https:\/\/myanimelist.net\/anime\/4134\/Naruto_Shippuuden__Shippuu_Konoha_Gakuen_Den","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/51895.jpg?s=50657ee2b01cf3e31680314e7fe65981","title":"Naruto
-        Shippuuden: Shippuu! \"Konoha Gakuen\" Den","airing":false,"synopsis":"Naruto
-        school special. Naruto is a new cool student and when he meets Sasuke they
-        start fighting.","type":"Special","episodes":1,"score":7.25,"start_date":"2008-02-06T00:00:00+00:00","end_date":"2008-02-06T00:00:00+00:00","members":42224,"rated":"PG-13"},{"mal_id":8246,"url":"https:\/\/myanimelist.net\/anime\/8246\/Naruto__Shippuuden_Movie_4_-_The_Lost_Tower","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/23344.jpg?s=accb3be6ff4e0c4d7612bdaad5e466bc","title":"Naruto:
-        Shippuuden Movie 4 - The Lost Tower","airing":false,"synopsis":"Assigned on
-        a mission to capture Mukade, a missing-nin, Naruto Uzumaki sets out for the
-        once glorious historic ruins of \"Ouran\", where he pursues and corners the
-        rogue ninja. Mukade''s goal is revealed...","type":"Movie","episodes":1,"score":7.52,"start_date":"2010-07-31T00:00:00+00:00","end_date":"2010-07-31T00:00:00+00:00","members":121600,"rated":"PG-13"},{"mal_id":16870,"url":"https:\/\/myanimelist.net\/anime\/16870\/The_Last__Naruto_the_Movie","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/67631.jpg?s=d84468711f6c7b6c122e4822fb4ab805","title":"The
-        Last: Naruto the Movie","airing":false,"synopsis":"It has been two years since
-        the Fourth Shinobi World War, and the world is once again existing in harmony\u2014that
-        is, until another threat surfaces and once again puts the planet on the very
-        brink of des...","type":"Movie","episodes":1,"score":7.88,"start_date":"2014-12-06T00:00:00+00:00","end_date":"2014-12-06T00:00:00+00:00","members":180641,"rated":"PG-13"},{"mal_id":4437,"url":"https:\/\/myanimelist.net\/anime\/4437\/Naruto__Shippuuden_Movie_2_-_Kizuna","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/17830.jpg?s=bb43646538390435098f5ef84faa0437","title":"Naruto:
-        Shippuuden Movie 2 - Kizuna","airing":false,"synopsis":"A mysterious group
-        of ninjas makes a surprise attack on the Konohagakure, which takes great damage.
-        The nightmare of another Shinobi World War could become a reality. Sasuke,
-        who left Konoha to kill h...","type":"Movie","episodes":1,"score":7.4,"start_date":"2008-08-02T00:00:00+00:00","end_date":"2008-08-02T00:00:00+00:00","members":134645,"rated":"PG-13"},{"mal_id":2472,"url":"https:\/\/myanimelist.net\/anime\/2472\/Naruto__Shippuuden_Movie_1","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/79705.jpg?s=80162f3e16a4b76638f535bf23ac324c","title":"Naruto:
-        Shippuuden Movie 1","airing":false,"synopsis":"A group of ninja is planning
-        to revive a powerful demon, and once its spirit is reunited with its body,
-        the world will be destroyed. The only way to prevent this from happening is
-        for Shion, a shrine...","type":"Movie","episodes":1,"score":7.4,"start_date":"2007-08-04T00:00:00+00:00","end_date":"2007-08-04T00:00:00+00:00","members":149363,"rated":"PG-13"},{"mal_id":28755,"url":"https:\/\/myanimelist.net\/anime\/28755\/Boruto__Naruto_the_Movie","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/78280.jpg?s=9d8b257b29ff99f0f136562547d0d465","title":"Boruto:
-        Naruto the Movie","airing":false,"synopsis":"Boruto Uzumaki has inherited
-        the mischievous spirit and endless energy from his famous father, the 7th
-        Hokage, Naruto. As he enters his Chunin exams, a harsh decision made by Naruto
-        angers Boruto, cau...","type":"Movie","episodes":1,"score":7.8,"start_date":"2015-08-07T00:00:00+00:00","end_date":"2015-08-07T00:00:00+00:00","members":191548,"rated":"PG-13"},{"mal_id":34566,"url":"https:\/\/myanimelist.net\/anime\/34566\/Boruto__Naruto_Next_Generations","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/84460.jpg?s=ae561b0c245d07556cbdfbbf1ee374a9","title":"Boruto:
+        myster...","type":"TV","episodes":500,"score":8.2,"start_date":"2007-02-15T00:00:00+00:00","end_date":"2017-03-23T00:00:00+00:00","members":921102,"rated":"PG-13"},{"mal_id":34566,"url":"https:\/\/myanimelist.net\/anime\/34566\/Boruto__Naruto_Next_Generations","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/84460.jpg?s=ae561b0c245d07556cbdfbbf1ee374a9","title":"Boruto:
         Naruto Next Generations","airing":true,"synopsis":"Following the successful
         end of the Fourth Shinobi World War, Konohagakure has been enjoying a period
         of peace, prosperity, and extraordinary technological advancement. This is
-        all due to the efforts...","type":"TV","episodes":0,"score":6.87,"start_date":"2017-04-05T00:00:00+00:00","end_date":null,"members":263449,"rated":"PG-13"},{"mal_id":442,"url":"https:\/\/myanimelist.net\/anime\/442\/Naruto_Movie_1__Dai_Katsugeki_Yuki_Hime_Shinobu_Houjou_Dattebayo","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/76015.jpg?s=cf22c3c0297cf6dca2fb1c97ced2cd41","title":"Naruto
-        Movie 1: Dai Katsugeki!! Yuki Hime Shinobu Houjou Dattebayo!","airing":false,"synopsis":"Naruto
-        Uzumaki and his squadmates, Sasuke Uchiha and Sakura Haruno, are sent on a
-        mission to escort a movie crew on its way to film in the Land of Snow. They
-        soon find out that they are accompanying a...","type":"Movie","episodes":1,"score":7.17,"start_date":"2004-08-21T00:00:00+00:00","end_date":"2004-08-21T00:00:00+00:00","members":158738,"rated":"PG-13"},{"mal_id":10589,"url":"https:\/\/myanimelist.net\/anime\/10589\/Naruto__Shippuuden_Movie_5_-_Blood_Prison","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/41403.jpg?s=f4f60444cfbcda379ad585d64316a1c6","title":"Naruto:
-        Shippuuden Movie 5 - Blood Prison","airing":false,"synopsis":"After being
-        captured for attempting to assassinate the leader of Kumogakure, the Raikage,
-        and killing Jounin from Kirigakure and Iwagakure, Naruto is imprisoned in
-        Houzukijou, a criminal containment f...","type":"Movie","episodes":1,"score":7.59,"start_date":"2011-07-30T00:00:00+00:00","end_date":"2011-07-30T00:00:00+00:00","members":110900,"rated":"PG-13"},{"mal_id":19511,"url":"https:\/\/myanimelist.net\/anime\/19511\/Naruto_Shippuuden__Sunny_Side_Battle","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1047\/91638.jpg?s=0fc6795322dd479caca2103d775de05b","title":"Naruto
-        Shippuuden: Sunny Side Battle","airing":false,"synopsis":"A comedy-filled
-        filler with a plot revolving around the two Uchiha Brothers, Mangekyo Sharingan,
-        chickens, and fried eggs.","type":"Special","episodes":1,"score":7.39,"start_date":"2013-10-06T00:00:00+00:00","end_date":"2013-10-06T00:00:00+00:00","members":24536,"rated":"PG-13"},{"mal_id":936,"url":"https:\/\/myanimelist.net\/anime\/936\/Naruto_Movie_2__Dai_Gekitotsu_Maboroshi_no_Chiteiiseki_Dattebayo","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/76016.jpg?s=77c701f8a3bd608240c69f4080212431","title":"Naruto
-        Movie 2: Dai Gekitotsu! Maboroshi no Chiteiiseki Dattebayo!","airing":false,"synopsis":"Naruto,
-        Shikamaru, and Sakura are executing their mission of delivering a lost pet
-        to a certain village. However, right in the midst of things, troops led by
-        the mysterious knight, Temujin, attack the...","type":"Movie","episodes":1,"score":6.98,"start_date":"2005-08-06T00:00:00+00:00","end_date":"2005-08-06T00:00:00+00:00","members":127919,"rated":"PG-13"},{"mal_id":32365,"url":"https:\/\/myanimelist.net\/anime\/32365\/Boruto__Naruto_the_Movie_-_Naruto_ga_Hokage_ni_Natta_Hi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/77678.jpg?s=fc407cec1b4439623be598ad1eb31867","title":"Boruto:
-        Naruto the Movie - Naruto ga Hokage ni Natta Hi","airing":false,"synopsis":"Bundled
-        with the limited edition of Blu-ray\/DVD of Boruto: Naruto the Movie.","type":"Special","episodes":1,"score":7.6,"start_date":"2016-07-06T00:00:00+00:00","end_date":"2016-07-06T00:00:00+00:00","members":49156,"rated":"PG-13"},{"mal_id":13667,"url":"https:\/\/myanimelist.net\/anime\/13667\/Naruto__Shippuuden_Movie_6_-_Road_to_Ninja","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/51863.jpg?s=27ab188d97eb1262acf899c2e9813bbe","title":"Naruto:
-        Shippuuden Movie 6 - Road to Ninja","airing":false,"synopsis":"Ten years ago,
-        a gigantic demon beast known as the Nine-Tailed Demon Fox was released from
-        its jinchuuriki by an unknown shinobi wearing a mask. The village of Konohagakure
-        was close to destruction by...","type":"Movie","episodes":1,"score":7.8,"start_date":"2012-07-28T00:00:00+00:00","end_date":"2012-07-28T00:00:00+00:00","members":139557,"rated":"PG-13"},{"mal_id":2144,"url":"https:\/\/myanimelist.net\/anime\/2144\/Naruto_Movie_3__Dai_Koufun_Mikazuki_Jima_no_Animaru_Panikku_Dattebayo","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/76017.jpg?s=07ffbcb450ac4c783fc80d64c302cd4c","title":"Naruto
-        Movie 3: Dai Koufun! Mikazuki Jima no Animaru Panikku Dattebayo!","airing":false,"synopsis":"Naruto,
-        Kakashi, Sakura, and Lee are sent to protect a prince during his trip around
-        the world and see that he returns safely to his home in the Moon Country.
-        The Moon Country happens to be really ric...","type":"Movie","episodes":1,"score":6.96,"start_date":"2006-08-05T00:00:00+00:00","end_date":"2006-08-05T00:00:00+00:00","members":117652,"rated":"PG-13"},{"mal_id":12979,"url":"https:\/\/myanimelist.net\/anime\/12979\/Naruto_SD__Rock_Lee_no_Seishun_Full-Power_Ninden","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/36475.jpg?s=afbabba381a6eebe252dc3c6ed09067a","title":"Naruto
+        all due to the efforts...","type":"TV","episodes":0,"score":6.79,"start_date":"2017-04-05T00:00:00+00:00","end_date":null,"members":280195,"rated":"PG-13"},{"mal_id":12979,"url":"https:\/\/myanimelist.net\/anime\/12979\/Naruto_SD__Rock_Lee_no_Seishun_Full-Power_Ninden","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/36475.jpg?s=afbabba381a6eebe252dc3c6ed09067a","title":"Naruto
         SD: Rock Lee no Seishun Full-Power Ninden","airing":false,"synopsis":"Welcome
         to the Hidden Leaf Village. The village where Uzumaki Naruto, star of the
         TV show \"Naruto\" makes his home. Every day, countless powerful ninjas carry
-        out missions and train to hone their skill...","type":"TV","episodes":51,"score":7.24,"start_date":"2012-04-03T00:00:00+00:00","end_date":"2013-03-26T00:00:00+00:00","members":43855,"rated":"PG-13"},{"mal_id":7367,"url":"https:\/\/myanimelist.net\/anime\/7367\/Naruto__The_Cross_Roads","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/27050.jpg?s=5dd6d0b9017576c7b5c94d2dab8fdf7d","title":"Naruto:
-        The Cross Roads","airing":false,"synopsis":"This year is the 10th anniversary
-        of Naruto''s serialization start. This work will feature an episode with Team
-        Kakashi from Naruto''s youth era. It will be surprisingly different from the
-        TV series, do...","type":"Special","episodes":1,"score":6.93,"start_date":"2009-10-12T00:00:00+00:00","end_date":"2009-10-12T00:00:00+00:00","members":29651,"rated":"PG-13"},{"mal_id":761,"url":"https:\/\/myanimelist.net\/anime\/761\/Naruto__Akaki_Yotsuba_no_Clover_wo_Sagase","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/11240.jpg?s=9c3e8b5fbbc6163c4c25c67d54692406","title":"Naruto:
-        Akaki Yotsuba no Clover wo Sagase","airing":false,"synopsis":"The grandson
-        of the 3rd Hokage, Konohamaru, finally has a crush on a girl, but he has a
-        big problem she is soon to be moving away from the hidden leaf village. Konohamaru
-        trying to make her stay seeks...","type":"Special","episodes":1,"score":6.56,"start_date":"2003-05-24T00:00:00+00:00","end_date":"2003-05-24T00:00:00+00:00","members":56043,"rated":"PG-13"},{"mal_id":36564,"url":"https:\/\/myanimelist.net\/anime\/36564\/Kamiusagi_Rope_x_Boruto__Naruto_Next_Generations","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/88377.jpg?s=79fc85f6fc2e86282ec74b6fc1c1e204","title":"Kamiusagi
-        Rope x Boruto: Naruto Next Generations","airing":false,"synopsis":"A 3-way
-        collaboration between Kamiusagi Rope, Boruto: Naruto Next Generations, and
-        TOHO Cinemas. The purpose is to promote a new TOHO theater opening up in Ueno
-        on November 4, 2017. The collaboration...","type":"ONA","episodes":1,"score":5.76,"start_date":"2017-10-12T00:00:00+00:00","end_date":"2017-10-12T00:00:00+00:00","members":2956,"rated":"G"},{"mal_id":1074,"url":"https:\/\/myanimelist.net\/anime\/1074\/Naruto_Narutimate_Hero_3__Tsuini_Gekitotsu_Jounin_vs_Genin_Musabetsu_Dairansen_taikai_Kaisai","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/11244.jpg?s=04a45f30a2d3fa666388fcb5dab37750","title":"Naruto
-        Narutimate Hero 3: Tsuini Gekitotsu! Jounin vs. Genin!! Musabetsu Dairansen
-        taikai Kaisai!!","airing":false,"synopsis":"A contest is made by the Fifth
-        Hokage called Jonin vs Genin. The point is to collect crystals for points,
-        with the higher-ranked Chunin and Jonin holding crystals worth more points.
-        The Genin have blu...","type":"OVA","episodes":1,"score":6.85,"start_date":"2005-12-22T00:00:00+00:00","end_date":"2005-12-22T00:00:00+00:00","members":54804,"rated":"PG-13"},{"mal_id":10659,"url":"https:\/\/myanimelist.net\/anime\/10659\/Naruto_Soyokazeden_Movie__Naruto_to_Mashin_to_Mitsu_no_Onegai_Dattebayo","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/31573.jpg?s=6a58b632acb146691169f14b2d9f5860","title":"Naruto
-        Soyokazeden Movie: Naruto to Mashin to Mitsu no Onegai Dattebayo!!","airing":false,"synopsis":"Naruto
-        discovers a genie''s bottle while he and the gang are at a genin grill party.
-        When everyone finds out about the genie''s ability to grant wishes, the ultimate
-        chase begins. (Source: AniDB)","type":"Movie","episodes":1,"score":7.07,"start_date":"2010-07-31T00:00:00+00:00","end_date":"2010-07-31T00:00:00+00:00","members":31691,"rated":"PG-13"},{"mal_id":10686,"url":"https:\/\/myanimelist.net\/anime\/10686\/Naruto__Honoo_no_Chuunin_Shiken_Naruto_vs_Konohamaru","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/30813.jpg?s=55399a5c0c95cad6a6fb83e09dba727c","title":"Naruto:
-        Honoo no Chuunin Shiken! Naruto vs. Konohamaru!!","airing":false,"synopsis":"Naruto
-        faces off against his old pupil Konohamaru in a tournament during the chuunin
-        entrance exams.","type":"Movie","episodes":1,"score":7.25,"start_date":"2011-07-30T00:00:00+00:00","end_date":"2011-07-30T00:00:00+00:00","members":41588,"rated":"PG-13"},{"mal_id":594,"url":"https:\/\/myanimelist.net\/anime\/594\/Naruto__Takigakure_no_Shitou_-_Ore_ga_Eiyuu_Dattebayo","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/20921.jpg?s=ea9c1b5c96a68b2a7b2616e8c25512c1","title":"Naruto:
-        Takigakure no Shitou - Ore ga Eiyuu Dattebayo!","airing":false,"synopsis":"A
-        routine rank-C mission turned into a full-blown battle as the Hidden Fall
-        village is attacked by enemy ninjas. Now Naruto, Sasuke and Sakura must help
-        the leader of the Hidden Fall, Shibuki, protect...","type":"Special","episodes":1,"score":6.83,"start_date":"2003-12-20T00:00:00+00:00","end_date":"2003-12-20T00:00:00+00:00","members":62125,"rated":"PG-13"},{"mal_id":6325,"url":"https:\/\/myanimelist.net\/anime\/6325\/Naruto__Shippuuden_Movie_3_-_Hi_no_Ishi_wo_Tsugu_Mono","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/14686.jpg?s=5085346e3ea0153df38c5b15de5b1abf","title":"Naruto:
-        Shippuuden Movie 3 - Hi no Ishi wo Tsugu Mono","airing":false,"synopsis":"Ninjas
-        with bloodline limits begin disappearing in all the countries and blame points
-        toward the fire nation. By Tsunade''s order, Kakashi is sacrificed to prevent
-        an all out war. After inheriting char...","type":"Movie","episodes":1,"score":7.46,"start_date":"2009-08-01T00:00:00+00:00","end_date":"2009-08-01T00:00:00+00:00","members":112778,"rated":"PG-13"},{"mal_id":838,"url":"https:\/\/myanimelist.net\/anime\/838\/Narutaru__Mukuro_Naru_Hoshi_Tama_Taru_Ko","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/12023.jpg?s=8dfc94b92c45916f8de54db0ca5054de","title":"Narutaru:
+        out missions and train to hone their skill...","type":"TV","episodes":51,"score":7.24,"start_date":"2012-04-03T00:00:00+00:00","end_date":"2013-03-26T00:00:00+00:00","members":45138,"rated":"PG-13"},{"mal_id":838,"url":"https:\/\/myanimelist.net\/anime\/838\/Narutaru__Mukuro_Naru_Hoshi_Tama_Taru_Ko","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/12023.jpg?s=8dfc94b92c45916f8de54db0ca5054de","title":"Narutaru:
         Mukuro Naru Hoshi Tama Taru Ko","airing":false,"synopsis":"During her summer
         holiday at her grandparents house Tamai Shiina, a young and cheerful schoolgirl,
         meets a strange looking creature. They befriend each other and Shiina names
-        it \"Hoshimaru: The Round...","type":"TV","episodes":13,"score":6.17,"start_date":"2003-07-07T00:00:00+00:00","end_date":"2003-09-29T00:00:00+00:00","members":24338,"rated":"R"},{"mal_id":952,"url":"https:\/\/myanimelist.net\/anime\/952\/Magical_Nyan_Nyan_Taruto","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1\/952.jpg?s=dc4e285b7587bcceb59d1cd68f64e261","title":"Magical
+        it \"Hoshimaru: The Round...","type":"TV","episodes":13,"score":6.16,"start_date":"2003-07-07T00:00:00+00:00","end_date":"2003-09-29T00:00:00+00:00","members":24778,"rated":"R"},{"mal_id":952,"url":"https:\/\/myanimelist.net\/anime\/952\/Magical_Nyan_Nyan_Taruto","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1\/952.jpg?s=dc4e285b7587bcceb59d1cd68f64e261","title":"Magical
         Nyan Nyan Taruto","airing":false,"synopsis":"Taruto is a little cat who has
         just moved to a new city with her master''s family. Taruto spends her days
         making friends and exploring her new home town. She also has a knack for getting
-        herself into t...","type":"TV","episodes":12,"score":6.37,"start_date":"2001-07-05T00:00:00+00:00","end_date":"2001-09-27T00:00:00+00:00","members":4745,"rated":"G"},{"mal_id":12565,"url":"https:\/\/myanimelist.net\/anime\/12565\/Fate_Prototype","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/51045.jpg?s=60c220409ef9769257e78130313bead6","title":"Fate\/Prototype","airing":false,"synopsis":"Fate\/Prototype
-        is a digest version of Kinoko Nasu''s original version of Fate\/stay night.","type":"OVA","episodes":1,"score":6.87,"start_date":"2011-12-31T00:00:00+00:00","end_date":"2011-12-31T00:00:00+00:00","members":66095,"rated":"PG-13"},{"mal_id":2248,"url":"https:\/\/myanimelist.net\/anime\/2248\/Naruto__Dai_Katsugeki_Yuki_Hime_Shinobu_Houjou_Dattebayo_Special__Konoha_Annual_Sports_Festival","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1\/2473.jpg?s=540fd3ee478ab403e24fb781cae1e4ed","title":"Naruto:
-        Dai Katsugeki!! Yuki Hime Shinobu Houjou Dattebayo! Special: Konoha Annual
-        Sports Festival","airing":false,"synopsis":"The genin of Kohona are having
-        a sports day filled with races, obstacle courses and of course the relay and
-        the prize is a paid vacation for the winner. Unfortunately Naruto and his
-        stomach are gettin...","type":"Special","episodes":1,"score":6.94,"start_date":"2004-08-21T00:00:00+00:00","end_date":"2004-08-21T00:00:00+00:00","members":55352,"rated":"PG-13"},{"mal_id":3806,"url":"https:\/\/myanimelist.net\/anime\/3806\/Sasuga_no_Sarutobi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/6775.jpg?s=a6a3f890b75a1caca175e8065f09c0cf","title":"Sasuga
+        herself into t...","type":"TV","episodes":12,"score":6.37,"start_date":"2001-07-05T00:00:00+00:00","end_date":"2001-09-27T00:00:00+00:00","members":4846,"rated":"G"},{"mal_id":3806,"url":"https:\/\/myanimelist.net\/anime\/3806\/Sasuga_no_Sarutobi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/6775.jpg?s=a6a3f890b75a1caca175e8065f09c0cf","title":"Sasuga
         no Sarutobi","airing":false,"synopsis":"Nikumaru, meaning \"meatball\" in
         Japanese, is a seventeen-year-old student at Ninja High School, a special
         school for the training of ninja. He is short and chubby, but he possesses
-        a super technique k...","type":"TV","episodes":69,"score":6.64,"start_date":"1982-10-17T00:00:00+00:00","end_date":"1984-03-11T00:00:00+00:00","members":770,"rated":"G"},{"mal_id":6311,"url":"https:\/\/myanimelist.net\/anime\/6311\/Sarutobi_Ecchan","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/59333.jpg?s=b0d1bc06f4e54240b35d5f5720f22de1","title":"Sarutobi
+        a super technique k...","type":"TV","episodes":69,"score":6.66,"start_date":"1982-10-17T00:00:00+00:00","end_date":"1984-03-11T00:00:00+00:00","members":801,"rated":"G"},{"mal_id":6311,"url":"https:\/\/myanimelist.net\/anime\/6311\/Sarutobi_Ecchan","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/59333.jpg?s=b0d1bc06f4e54240b35d5f5720f22de1","title":"Sarutobi
         Ecchan","airing":false,"synopsis":"A strange girl transfers to Mitsuba Elementary
         School. At first glance, she is a normal student. However, she is a great
         athlete, and can talk to animals. Accoding to her, she is the 33rd descendant
-        o...","type":"TV","episodes":26,"score":6.03,"start_date":"1971-10-04T00:00:00+00:00","end_date":"1972-03-27T00:00:00+00:00","members":520,"rated":"PG"},{"mal_id":4948,"url":"https:\/\/myanimelist.net\/anime\/4948\/Shounen_Sarutobi_Sasuke","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/45482.jpg?s=ee1e0ba9942a07774ec3bfbc1f8282be","title":"Shounen
-        Sarutobi Sasuke","airing":false,"synopsis":"\"Magic Boy\" was the first ever
-        Japanese animation to be released theatrically in North America. Sasuke, a
-        boy vexed by an evil witch, studies magic and uses his powers to defeat her.
-        (Source: bcdb)","type":"Movie","episodes":1,"score":6.11,"start_date":"2059-12-25T00:00:00+00:00","end_date":"2059-12-25T00:00:00+00:00","members":922,"rated":"PG"},{"mal_id":5091,"url":"https:\/\/myanimelist.net\/anime\/5091\/Manga_Sarutobi_Sasuke","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/57257.jpg?s=954861fd427ad164c69e2beb1673e1af","title":"Manga
+        o...","type":"TV","episodes":26,"score":6.05,"start_date":"1971-10-04T00:00:00+00:00","end_date":"1972-03-27T00:00:00+00:00","members":539,"rated":"PG"},{"mal_id":5091,"url":"https:\/\/myanimelist.net\/anime\/5091\/Manga_Sarutobi_Sasuke","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/57257.jpg?s=954861fd427ad164c69e2beb1673e1af","title":"Manga
         Sarutobi Sasuke","airing":false,"synopsis":"Sasuke is the story of a ninja
         child that starts right after the battle of Sekigahara where Tokugawa Ieyasu
         becomes shogun of Japan. Sarutobi Sasuke (Jump Like Monkey Sasuke) was a famous
-        ninja in the...","type":"TV","episodes":24,"score":6.8,"start_date":"1979-10-09T00:00:00+00:00","end_date":"1980-04-15T00:00:00+00:00","members":793,"rated":"PG"},{"mal_id":5554,"url":"https:\/\/myanimelist.net\/anime\/5554\/Eguchi_Hisashi_no_Nantoka_Narudesho","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/58919.jpg?s=4dc99179d2fa12caad791f01ad4bc7d6","title":"Eguchi
-        Hisashi no Nantoka Narudesho!","airing":false,"synopsis":"Part anime, part
-        live action, and part puppet show.","type":"OVA","episodes":1,"score":5.74,"start_date":"1990-01-25T00:00:00+00:00","end_date":"1990-01-25T00:00:00+00:00","members":524,"rated":"R+"},{"mal_id":11285,"url":"https:\/\/myanimelist.net\/anime\/11285\/Black\u2605Rock_Shooter_TV","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/53909.jpg?s=748577470c073b8819dc2810d9146411","title":"Black\u2605Rock
-        Shooter (TV)","airing":false,"synopsis":"On the first day of junior high school,
-        Mato Kuroi happens to run into Yomi Takanashi, a shy, withdrawn girl whom
-        she immediately takes an interest in. Mato tries her best to make conversation
-        with Yo...","type":"TV","episodes":8,"score":6.97,"start_date":"2012-02-03T00:00:00+00:00","end_date":"2012-03-23T00:00:00+00:00","members":258763,"rated":"PG-13"},{"mal_id":35072,"url":"https:\/\/myanimelist.net\/anime\/35072\/Boruto__Jump_Festa_2016_Special","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/84622.jpg?s=c2abafee8537e4c7eb2225d2310cf617","title":"Boruto:
-        Jump Festa 2016 Special","airing":false,"synopsis":"The special anime adaptation
-        of Boruto will be screening at Shueisha\u2019s by-invitation anime event Jump
-        Special Anime Festa 2016!","type":"Special","episodes":1,"score":6.44,"start_date":"2016-11-27T00:00:00+00:00","end_date":"2016-11-27T00:00:00+00:00","members":7231,"rated":"PG-13"},{"mal_id":19703,"url":"https:\/\/myanimelist.net\/anime\/19703\/Kyousou_Giga_TV","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/85431.jpg?s=f4232b2908ffe6d3b19a97b633b8d80c","title":"Kyousou
-        Giga (TV)","airing":false,"synopsis":"Long ago, there was a monk named Myoue
-        who could bring anything he drew to life. He quietly lived with his wife Koto\u2014a
-        black rabbit in human form\u2014and their three children: Yakushimaru, Kurama,
-        and Yas...","type":"TV","episodes":10,"score":7.87,"start_date":"2013-10-10T00:00:00+00:00","end_date":"2013-12-19T00:00:00+00:00","members":106482,"rated":"PG-13"},{"mal_id":534,"url":"https:\/\/myanimelist.net\/anime\/534\/Slayers","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/19870.jpg?s=6a9e2bce307ed27c7e63716b8dbea0f3","title":"Slayers","airing":false,"synopsis":"Powerful,
-        avaricious sorceress Lina Inverse travels around the world, stealing treasures
-        from bandits who cross her path. Her latest victims, a band of thieves, wait
-        in ambush in a forest, thirsting f...","type":"TV","episodes":26,"score":7.83,"start_date":"1995-04-07T00:00:00+00:00","end_date":"1995-09-29T00:00:00+00:00","members":95235,"rated":"PG-13"},{"mal_id":50,"url":"https:\/\/myanimelist.net\/anime\/50\/Aa_Megami-sama_TV","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/17841.jpg?s=d44799a50db201fab84204e9e1e4c6d8","title":"Aa!
-        Megami-sama! (TV)","airing":false,"synopsis":"In a world where humans can
-        have their wish granted via the Goddess Help Hotline, a human, Keiichi Morisato,
-        summons the Goddess Belldandy by accident and jokes that she should stay with
-        him forever....","type":"TV","episodes":24,"score":7.42,"start_date":"2005-01-07T00:00:00+00:00","end_date":"2005-07-08T00:00:00+00:00","members":116993,"rated":"PG-13"},{"mal_id":5702,"url":"https:\/\/myanimelist.net\/anime\/5702\/Sora_wo_Miageru_Shoujo_no_Hitomi_ni_Utsuru_Sekai","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/24030.jpg?s=27a3e8f82f8fbc0a1000e4c67922ec60","title":"Sora
-        wo Miageru Shoujo no Hitomi ni Utsuru Sekai","airing":false,"synopsis":"To
-        save both the Magical Kingdom and the Heavens and restore the flow of akuto,
-        the flow of energy of everything, the Magical King Munto must follow a vision
-        and find the girl Yumemi in the normal wor...","type":"TV","episodes":9,"score":7.21,"start_date":"2009-01-14T00:00:00+00:00","end_date":"2009-03-11T00:00:00+00:00","members":30476,"rated":"PG-13"},{"mal_id":30895,"url":"https:\/\/myanimelist.net\/anime\/30895\/HaruChika__Haruta_to_Chika_wa_Seishun_suru","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/77835.jpg?s=0d851d926bba48d6f496fa5988a59ad9","title":"HaruChika:
-        Haruta to Chika wa Seishun suru","airing":false,"synopsis":"Chika Homura begins
-        her high school career with a goal: to develop a \"cute girl\" persona. After
-        quitting the volleyball team despite her all-star status, Chika decides to
-        join her school''s underrated...","type":"TV","episodes":12,"score":6.42,"start_date":"2016-01-07T00:00:00+00:00","end_date":"2016-03-24T00:00:00+00:00","members":65220,"rated":"PG-13"},{"mal_id":840,"url":"https:\/\/myanimelist.net\/anime\/840\/Narue_no_Sekai","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/19048.jpg?s=67d9ecd185af80afe163db672fd821c2","title":"Narue
+        ninja in the...","type":"TV","episodes":24,"score":6.82,"start_date":"1979-10-09T00:00:00+00:00","end_date":"1980-04-15T00:00:00+00:00","members":824,"rated":"PG"},{"mal_id":840,"url":"https:\/\/myanimelist.net\/anime\/840\/Narue_no_Sekai","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/19048.jpg?s=67d9ecd185af80afe163db672fd821c2","title":"Narue
         no Sekai","airing":false,"synopsis":"Meet Narue, an adorable schoolgirl with
         a secret. She''s really an alien with powers right out of a sci-fi comic!
         But growing up is never easy, and sometimes it doesn''t help when you''re
-        from outer spac...","type":"TV","episodes":12,"score":6.65,"start_date":"2003-04-05T00:00:00+00:00","end_date":"2003-06-28T00:00:00+00:00","members":13976,"rated":"PG-13"},{"mal_id":20723,"url":"https:\/\/myanimelist.net\/anime\/20723\/Kyousou_Giga_TV_Recaps","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/57233.jpg?s=82208d0104eff0c811e00baa69f563fd","title":"Kyousou
-        Giga (TV) Recaps","airing":false,"synopsis":"Recaps of ONA (Episode 0) and
-        2013 TV Anime Series (Episode 10.5).","type":"Special","episodes":2,"score":6.65,"start_date":"2013-10-03T00:00:00+00:00","end_date":"2013-12-26T00:00:00+00:00","members":8705,"rated":"PG-13"},{"mal_id":29325,"url":"https:\/\/myanimelist.net\/anime\/29325\/Ghost_in_the_Shell__Arise_-_Alternative_Architecture","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/72037.jpg?s=0df1040c3b64911506262d77432e4732","title":"Ghost
+        from outer spac...","type":"TV","episodes":12,"score":6.65,"start_date":"2003-04-05T00:00:00+00:00","end_date":"2003-06-28T00:00:00+00:00","members":14137,"rated":"PG-13"},{"mal_id":30895,"url":"https:\/\/myanimelist.net\/anime\/30895\/HaruChika__Haruta_to_Chika_wa_Seishun_suru","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/77835.jpg?s=0d851d926bba48d6f496fa5988a59ad9","title":"HaruChika:
+        Haruta to Chika wa Seishun suru","airing":false,"synopsis":"Chika Homura begins
+        her high school career with a goal: to develop a \"cute girl\" persona. After
+        quitting the volleyball team despite her all-star status, Chika decides to
+        join her school''s underrated...","type":"TV","episodes":12,"score":6.42,"start_date":"2016-01-07T00:00:00+00:00","end_date":"2016-03-24T00:00:00+00:00","members":66332,"rated":"PG-13"},{"mal_id":37786,"url":"https:\/\/myanimelist.net\/anime\/37786\/Yagate_Kimi_ni_Naru","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1783\/96153.jpg?s=417ebf7092dad72389d824b840bf37b5","title":"Yagate
+        Kimi ni Naru","airing":false,"synopsis":"Yuu has always loved shoujo manga
+        and awaits the day she gets a love confession that sends her heart aflutter
+        with bubbles and blushes, and yet when a junior high classmate confesses his
+        feelings to h...","type":"TV","episodes":13,"score":8.02,"start_date":"2018-10-05T00:00:00+00:00","end_date":"2018-12-28T00:00:00+00:00","members":95772,"rated":"PG-13"},{"mal_id":28621,"url":"https:\/\/myanimelist.net\/anime\/28621\/Subete_ga_F_ni_Naru__The_Perfect_Insider","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/76071.jpg?s=fdc6902408ec1ded27127502ae9f0863","title":"Subete
+        ga F ni Naru: The Perfect Insider","airing":false,"synopsis":"In a research
+        facility hidden away on a remote island, genius programmer Shiki Magata has
+        lived as a recluse for years. She rarely sees guests, but associate professor
+        Souhei Saikawa and university st...","type":"TV","episodes":11,"score":7.31,"start_date":"2015-10-09T00:00:00+00:00","end_date":"2015-12-18T00:00:00+00:00","members":114238,"rated":"R"},{"mal_id":28825,"url":"https:\/\/myanimelist.net\/anime\/28825\/Himouto_Umaru-chan","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/75086.jpg?s=3859e8b6e84fb62187f8f71e86f02484","title":"Himouto!
+        Umaru-chan","airing":false,"synopsis":"People are not always who they appear
+        to be, as is the case with Umaru Doma, the perfect high school girl\u2014that
+        is, until she gets home! Once the front door closes, the real fun begins.
+        When she dons h...","type":"TV","episodes":12,"score":7.36,"start_date":"2015-07-09T00:00:00+00:00","end_date":"2015-09-24T00:00:00+00:00","members":318941,"rated":"PG-13"},{"mal_id":605,"url":"https:\/\/myanimelist.net\/anime\/605\/Tenshi_ni_Narumon","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1671\/94180.jpg?s=d380bffffdc4436a56216f930bc47003","title":"Tenshi
+        ni Narumon!","airing":false,"synopsis":"Yuusuke was just a normal kid going
+        to high school. Then one day, the cute and behaloed Noelle fell, quite literally,
+        into his life, naked as a baby and every bit as innocent. Before he can even
+        fatho...","type":"TV","episodes":26,"score":6.8,"start_date":"1999-04-07T00:00:00+00:00","end_date":"1999-09-29T00:00:00+00:00","members":5023,"rated":"PG-13"},{"mal_id":335,"url":"https:\/\/myanimelist.net\/anime\/335\/Matantei_Loki_Ragnarok","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/75300.jpg?s=73a332998988f64e81d4c70550b3c9f4","title":"Matantei
+        Loki Ragnarok","airing":false,"synopsis":"Loki, the Norse god of mischief,
+        has been exiled to the human world for what was apparently a bad joke. Along
+        with being exiled, he''s forced to take the form of a child. He''s told the
+        only way he can...","type":"TV","episodes":26,"score":7.37,"start_date":"2003-04-05T00:00:00+00:00","end_date":"2003-09-27T00:00:00+00:00","members":30108,"rated":"PG-13"},{"mal_id":7580,"url":"https:\/\/myanimelist.net\/anime\/7580\/Ikkitousen__Xtreme_Xecutor","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/18209.jpg?s=17387dbd01b8d7ff42e8ef4573da36db","title":"Ikkitousen:
+        Xtreme Xecutor","airing":false,"synopsis":"Life gets crazy for Hakufu when
+        she takes on a pupil that acts just like her! A tournament between the school
+        heads start, but due to Hakufu''s negligence, her pupil ends up taking her
+        place. The tourn...","type":"TV","episodes":12,"score":6.88,"start_date":"2010-03-26T00:00:00+00:00","end_date":"2010-06-11T00:00:00+00:00","members":36250,"rated":"R+"},{"mal_id":247,"url":"https:\/\/myanimelist.net\/anime\/247\/Harukanaru_Toki_no_Naka_de__Hachiyou_Shou","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/7227.jpg?s=8bd939befc234ebd8d071ec6a43d3cd5","title":"Harukanaru
+        Toki no Naka de: Hachiyou Shou","airing":false,"synopsis":"Akane Motomiya
+        and her friends Tenma and Shimon are pulled by a demon into another world,
+        where Akane becomes the Priestess of the Dragon God. The people of this world
+        tell her that she is the only on...","type":"TV","episodes":26,"score":7.13,"start_date":"2004-10-06T00:00:00+00:00","end_date":"2005-03-30T00:00:00+00:00","members":18066,"rated":"PG-13"},{"mal_id":417,"url":"https:\/\/myanimelist.net\/anime\/417\/Ragnar\u00f6k_The_Animation","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/2589.jpg?s=6fa615e9abd5342098020d9256b56540","title":"Ragnar\u00f6k
+        The Animation","airing":false,"synopsis":"A great evil is sweeping over the
+        realm; an evil that the young swordsman Roan and his life-long companion,
+        the acolyte Yufa, must face head on! For these two travel toward their destiny,
+        from the hig...","type":"TV","episodes":26,"score":6.54,"start_date":"2004-04-07T00:00:00+00:00","end_date":"2004-09-29T00:00:00+00:00","members":38833,"rated":"PG-13"},{"mal_id":266,"url":"https:\/\/myanimelist.net\/anime\/266\/Gunparade_March__Arata_Naru_Kougunka","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/75520.jpg?s=c14806de2c70520af060ea6ec5e3a9a9","title":"Gunparade
+        March: Arata Naru Kougunka","airing":false,"synopsis":"It began in 1945, at
+        the end of the Pacific War. Alien invaders filled the earth''s Skies, and
+        mankind was forced to confront an unprecedented threat. For the first time
+        in human history, people of all...","type":"TV","episodes":12,"score":6.88,"start_date":"2003-02-06T00:00:00+00:00","end_date":"2003-04-24T00:00:00+00:00","members":12234,"rated":"PG-13"},{"mal_id":2129,"url":"https:\/\/myanimelist.net\/anime\/2129\/True_Tears","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/18578.jpg?s=a8c1b1add79da91b24b63505ea34aa78","title":"True
+        Tears","airing":false,"synopsis":"Living under the same roof with the girl
+        he has a crush on should be a dream for Shinichirou Nakagami, but the reality
+        is closer to a nightmare. At school, Hiromi is bright, academically successful,
+        a...","type":"TV","episodes":13,"score":7.46,"start_date":"2008-01-06T00:00:00+00:00","end_date":"2008-03-30T00:00:00+00:00","members":152561,"rated":"PG-13"},{"mal_id":12967,"url":"https:\/\/myanimelist.net\/anime\/12967\/Arcana_Famiglia","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/39495.jpg?s=bae33a8a371e2c9e63acfcfcfd85c536","title":"Arcana
+        Famiglia","airing":false,"synopsis":"\u200bOn the island of Regalo, a group
+        of supernaturally powered mafia-like protectors called the Arcana Famiglia
+        safeguard the people from any who would harm them. The members of their organization,
+        havin...","type":"TV","episodes":12,"score":6.39,"start_date":"2012-07-01T00:00:00+00:00","end_date":"2012-09-16T00:00:00+00:00","members":142876,"rated":"PG-13"},{"mal_id":35376,"url":"https:\/\/myanimelist.net\/anime\/35376\/Himouto_Umaru-chan_R","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/89671.jpg?s=6738f488de9d186ada8bef69306b6864","title":"Himouto!
+        Umaru-chan R","airing":false,"synopsis":"Umaru Doma is a model student who
+        has a hidden side: when she gets home each day, she puts on her hamster hoodie
+        and turns into a sluggish otaku fond of junk food. As Umaru continues these
+        daily antic...","type":"TV","episodes":12,"score":7.48,"start_date":"2017-10-08T00:00:00+00:00","end_date":"2017-12-24T00:00:00+00:00","members":112175,"rated":"PG-13"},{"mal_id":38331,"url":"https:\/\/myanimelist.net\/anime\/38331\/Stand_My_Heroes__Piece_of_Truth","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1014\/99953.jpg?s=4d6f33dee60a14b04507bd4778c20033","title":"Stand
+        My Heroes: Piece of Truth","airing":true,"synopsis":"The heroine is a new
+        officer works under the Narcotics Control Department of the Ministry of Health,
+        a.k.a Matori. Narcotic medicines don''t work on her, and the story begins
+        with her just entering the...","type":"TV","episodes":0,"score":0,"start_date":"2019-10-01T00:00:00+00:00","end_date":null,"members":637,"rated":null},{"mal_id":30503,"url":"https:\/\/myanimelist.net\/anime\/30503\/Noragami_Aragoto","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1689\/94850.jpg?s=fab6fe8f945df387aa69be2dc6c48870","title":"Noragami
+        Aragoto","airing":false,"synopsis":"Yato and Yukine have finally mended their
+        relationship as god and Regalia, and everyone has returned to their daily
+        life. Yato remains a minor and unknown deity who continues taking odd jobs
+        for five...","type":"TV","episodes":13,"score":8.39,"start_date":"2015-10-03T00:00:00+00:00","end_date":"2015-12-26T00:00:00+00:00","members":651635,"rated":"PG-13"},{"mal_id":30851,"url":"https:\/\/myanimelist.net\/anime\/30851\/Q_Transformers__Saranaru_Ninki_Mono_e_no_Michi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/74246.jpg?s=0945ce0f09ab083ca8904b01b5176a39","title":"Q
+        Transformers: Saranaru Ninki Mono e no Michi","airing":false,"synopsis":"Second
+        season of Q Transformers.","type":"TV","episodes":13,"score":5.66,"start_date":"2015-07-06T00:00:00+00:00","end_date":"2015-10-01T00:00:00+00:00","members":410,"rated":"PG-13"},{"mal_id":962,"url":"https:\/\/myanimelist.net\/anime\/962\/Aria_The_Natural","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/77621.jpg?s=ae1ae2d423d00d727a4937347a201902","title":"Aria
+        The Natural","airing":false,"synopsis":"Akari Mizunashi continues her training
+        to become a Prima Undine (a professional tour guide gondolier) along with
+        her friends Aika and Alice in the peaceful city of Neo Venezia. Despite the
+        fact that t...","type":"TV","episodes":26,"score":8.24,"start_date":"2006-04-03T00:00:00+00:00","end_date":"2006-09-25T00:00:00+00:00","members":52082,"rated":"G"},{"mal_id":10137,"url":"https:\/\/myanimelist.net\/anime\/10137\/Manga_Naruhodo_Monogatari","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/28066.jpg?s=829f6930cc9745e951089430c3bdc02f","title":"Manga
+        Naruhodo Monogatari","airing":false,"synopsis":"No synopsis has been added
+        for this series yet. Click here to update this information.","type":"TV","episodes":102,"score":0,"start_date":"1986-04-05T00:00:00+00:00","end_date":"1988-03-26T00:00:00+00:00","members":194,"rated":"G"},{"mal_id":39468,"url":"https:\/\/myanimelist.net\/anime\/39468\/Honzuki_no_Gekokujou__Shisho_ni_Naru_Tame_ni_wa_Shudan_wo_Erandeiraremasen","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1453\/99656.jpg?s=011d4988ae51d3729650d6b687a35d6a","title":"Honzuki
+        no Gekokujou: Shisho ni Naru Tame ni wa Shudan wo Erandeiraremasen","airing":false,"synopsis":"Motosu
+        Urano, a book-loving college student who just got her Librarian certification
+        and was supposed to enter the job of her dreams after graduation, was killed
+        during a massive earthquake crushing h...","type":"TV","episodes":0,"score":0,"start_date":null,"end_date":null,"members":723,"rated":null},{"mal_id":877,"url":"https:\/\/myanimelist.net\/anime\/877\/Nana","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/11232.jpg?s=fdcbc61fd7e6407fe3810192a1684acd","title":"Nana","airing":false,"synopsis":"Nana
+        Komatsu is a helpless, na\u00efve 20-year-old who easily falls in love and
+        becomes dependent and clingy to those around her. Even though she nurses ambitious
+        dreams of removing herself from her provin...","type":"TV","episodes":47,"score":8.49,"start_date":"2006-04-05T00:00:00+00:00","end_date":"2007-03-28T00:00:00+00:00","members":290642,"rated":"R+"},{"mal_id":20457,"url":"https:\/\/myanimelist.net\/anime\/20457\/Inari_Konkon_Koi_Iroha","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/64897.jpg?s=7477f95e389a7af19cfc494a891a3922","title":"Inari,
+        Konkon, Koi Iroha.","airing":false,"synopsis":"Clumsy, below average intellect,
+        and shy \u2013 these are some of the traits that Inari Fushimi possesses.
+        Despite her shortcomings, she is very considerate of others. She can''t ignore
+        anyone''s plea for he...","type":"TV","episodes":10,"score":7.27,"start_date":"2014-01-16T00:00:00+00:00","end_date":"2014-03-20T00:00:00+00:00","members":99181,"rated":"PG-13"},{"mal_id":135,"url":"https:\/\/myanimelist.net\/anime\/135\/Hikaru_no_Go","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/78317.jpg?s=e9a9f1e0d1f8768fbe889d762ca5674d","title":"Hikaru
+        no Go","airing":false,"synopsis":"12-year-old Shindou Hikaru is just your
+        average 6th grader. One day, while searching through his grandfather''s attic,
+        he comes across an old Go board. Upon touching the Go board, Hikaru is possessed
+        b...","type":"TV","episodes":75,"score":8.16,"start_date":"2001-10-10T00:00:00+00:00","end_date":"2003-03-26T00:00:00+00:00","members":90884,"rated":"PG-13"},{"mal_id":36704,"url":"https:\/\/myanimelist.net\/anime\/36704\/Free__Dive_to_the_Future","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1243\/95025.jpg?s=0a818c7bf705b0a016559ae34d378983","title":"Free!:
+        Dive to the Future","airing":false,"synopsis":"In the new series, Haruka,
+        who is attending college in Tokyo, meets Asahi again and reawakens his memories
+        from his middle school years, including those of Ikuya. Makoto is working
+        toward a new dream...","type":"TV","episodes":12,"score":7.7,"start_date":"2018-07-12T00:00:00+00:00","end_date":"2018-09-27T00:00:00+00:00","members":54625,"rated":"PG-13"},{"mal_id":34262,"url":"https:\/\/myanimelist.net\/anime\/34262\/Oushitsu_Kyoushi_Heine","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/85517.jpg?s=5b4cce980727638c555010d93d7aedbb","title":"Oushitsu
+        Kyoushi Heine","airing":false,"synopsis":"Equally charming and stern, Heine
+        Wittgenstein is a brilliant man who commands respect, despite his short, childlike
+        stature. Thus, the king of Grannzreich has called upon Heine to undertake
+        a dauntin...","type":"TV","episodes":12,"score":7.58,"start_date":"2017-04-05T00:00:00+00:00","end_date":"2017-06-21T00:00:00+00:00","members":71634,"rated":"PG-13"},{"mal_id":25879,"url":"https:\/\/myanimelist.net\/anime\/25879\/Working","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/73886.jpg?s=522027c9dd38a3f0d2d210ea08ec9be2","title":"Working!!!","airing":false,"synopsis":"As
+        the stories of those connected to Wagnaria come to a close, only one thing
+        is certain: the workplace is about to get crazier than ever before! Whether
+        it be incredibly awkward romances, relentless...","type":"TV","episodes":13,"score":8.12,"start_date":"2015-07-05T00:00:00+00:00","end_date":"2015-09-27T00:00:00+00:00","members":143104,"rated":"PG-13"},{"mal_id":4181,"url":"https:\/\/myanimelist.net\/anime\/4181\/Clannad__After_Story","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/24647.jpg?s=316823146f54557fbe7518a81f4fc57f","title":"Clannad:
+        After Story","airing":false,"synopsis":"Clannad: After Story, the sequel to
+        the critically acclaimed slice-of-life series Clannad, begins after Tomoya
+        Okazaki and Nagisa Furukawa graduate from high school. Together, they experience
+        the emot...","type":"TV","episodes":24,"score":8.99,"start_date":"2008-10-03T00:00:00+00:00","end_date":"2009-03-27T00:00:00+00:00","members":675333,"rated":"PG-13"},{"mal_id":37714,"url":"https:\/\/myanimelist.net\/anime\/37714\/Shin_Manga_Naruhodo_Monogatari","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1129\/91822.jpg?s=8b41cfe84972c08873e7aed444297d10","title":"Shin
+        Manga Naruhodo Monogatari","airing":false,"synopsis":"","type":"TV","episodes":40,"score":0,"start_date":"1988-04-02T00:00:00+00:00","end_date":"1989-01-28T00:00:00+00:00","members":66,"rated":null},{"mal_id":19311,"url":"https:\/\/myanimelist.net\/anime\/19311\/Turuturutu_Narongi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/51791.jpg?s=3d78027b43e7ac42f5265c628c7637e7","title":"Turuturutu
+        Narongi","airing":false,"synopsis":"Somewhere in this world, there is a town
+        named Lala in a forest called Lulu. This is the home of Nalong and many other
+        furry little creatures. Nalong lives with his father and 10 brothers, and
+        attends...","type":"TV","episodes":52,"score":0,"start_date":"2004-12-01T00:00:00+00:00","end_date":"2006-01-01T00:00:00+00:00","members":141,"rated":"G"},{"mal_id":6956,"url":"https:\/\/myanimelist.net\/anime\/6956\/Working","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/75262.jpg?s=6077f0616e8fab853db4a3039b86c457","title":"Working!!","airing":false,"synopsis":"Due
+        to his love for small, cute things, Souta Takanashi cannot turn childlike
+        Popura Taneshima down when she recruits him to work for Wagnaria, a family
+        restaurant located in Hokkaido. Takanashi takes...","type":"TV","episodes":13,"score":7.78,"start_date":"2010-04-04T00:00:00+00:00","end_date":"2010-06-27T00:00:00+00:00","members":280012,"rated":"PG-13"},{"mal_id":10521,"url":"https:\/\/myanimelist.net\/anime\/10521\/Working","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/75263.jpg?s=9d6d204e54b7a7ec2c6183478a722917","title":"Working''!!","airing":false,"synopsis":"The
+        exciting antics of Wagnaria return as more ridiculous incidents occur, friendships
+        are deepened, and new feelings are discovered. In addition to Souta Takanashi
+        and his wacky co-workers, more ecce...","type":"TV","episodes":13,"score":7.94,"start_date":"2011-10-01T00:00:00+00:00","end_date":"2011-12-24T00:00:00+00:00","members":173227,"rated":"PG-13"},{"mal_id":33094,"url":"https:\/\/myanimelist.net\/anime\/33094\/WWWWorking","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/82287.jpg?s=a9aa605b205fbcfae976d95d788fe985","title":"WWW.Working!!","airing":false,"synopsis":"Daisuke
+        Higashida is a serious first-year student at Higashizaka High School. He lives
+        a peaceful everyday life even though he is not satisfied with the family who
+        doesn''t laugh at all and makes him t...","type":"TV","episodes":13,"score":7.53,"start_date":"2016-10-01T00:00:00+00:00","end_date":"2016-12-24T00:00:00+00:00","members":94287,"rated":"PG-13"},{"mal_id":38150,"url":"https:\/\/myanimelist.net\/anime\/38150\/Namu_Amida_Butsu__Rendai_Utena","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1598\/99004.jpg?s=15853c990151488a50dfc6fdab10e537","title":"Namu
+        Amida Butsu!: Rendai Utena","airing":true,"synopsis":"The pain that everyone
+        cannot escape when living: the living, old, sick, and death. The way to save
+        it is through Buddhist enlightenment. At the end of a war, a prince who obtained
+        the Buddhist enligh...","type":"TV","episodes":0,"score":0,"start_date":"2019-04-08T00:00:00+00:00","end_date":null,"members":2598,"rated":null},{"mal_id":33274,"url":"https:\/\/myanimelist.net\/anime\/33274\/Onara_Gorou","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/79963.jpg?s=9369b0c0c34291a6f07fb8df6b4217f4","title":"Onara
+        Gorou","airing":false,"synopsis":"Onara Gorou follows the everyday life of
+        Gorou, the \"most admirable of farts,\" as he solves problems in ways that
+        only a fart can. (Source: ANN)","type":"TV","episodes":13,"score":5.6,"start_date":"2016-07-03T00:00:00+00:00","end_date":"2016-09-24T00:00:00+00:00","members":8377,"rated":"PG"},{"mal_id":4744,"url":"https:\/\/myanimelist.net\/anime\/4744\/Akaneiro_ni_Somaru_Saka","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/21525.jpg?s=c92037e0c839f37233d6e9b5ffa3c490","title":"Akaneiro
+        ni Somaru Saka","airing":false,"synopsis":"Yuuhi Katagiri is not your average
+        girl \u2013 she''s the treasured daughter of the Katagiri family. She''s generally
+        kept under strict supervision, but one day ends up walking home from school
+        on her own. T...","type":"TV","episodes":12,"score":6.58,"start_date":"2008-10-03T00:00:00+00:00","end_date":"2008-12-19T00:00:00+00:00","members":116701,"rated":"R+"},{"mal_id":21995,"url":"https:\/\/myanimelist.net\/anime\/21995\/Ao_Haru_Ride","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/64813.jpg?s=9e4c5b58a128fac9cba4ad5b68957c39","title":"Ao
+        Haru Ride","airing":false,"synopsis":"Futaba Yoshioka used to be an attractive
+        and popular middle-schooler\u2014well liked by the opposite sex, but ostracized
+        by the girls. Nevertheless, she was able to brush all that off, because the
+        only opi...","type":"TV","episodes":12,"score":7.8,"start_date":"2014-07-08T00:00:00+00:00","end_date":"2014-09-23T00:00:00+00:00","members":382705,"rated":"PG-13"},{"mal_id":3297,"url":"https:\/\/myanimelist.net\/anime\/3297\/Aria_The_Origination","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/77623.jpg?s=9423b1d79350b92de1c3a4babb29ea6b","title":"Aria
+        The Origination","airing":false,"synopsis":"In the 24th century on the planet
+        Aqua, three girls\u2014Akari Mizunashi, Alice Carroll, and Aika S. Granzchesta\u2014continue
+        to work hard toward achieving their goal of becoming Prima Undines: professional
+        to...","type":"TV","episodes":13,"score":8.57,"start_date":"2008-01-08T00:00:00+00:00","end_date":"2008-04-01T00:00:00+00:00","members":77928,"rated":"G"},{"mal_id":37007,"url":"https:\/\/myanimelist.net\/anime\/37007\/Hinomaruzumou","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1974\/95289.jpg?s=f7a184c751b856cb8f2154e59cdaee52","title":"Hinomaruzumou","airing":false,"synopsis":"It
+        is a divine ritual, a martial art, a combat sport\u2014it''s sumo!! A \"small\"
+        new student, Ushio Hinomaru, appears before the weak little sumo club of Oodachi
+        High School! The words \"big\" and \"heavy\" are...","type":"TV","episodes":24,"score":7.65,"start_date":"2018-10-05T00:00:00+00:00","end_date":"2019-03-29T00:00:00+00:00","members":41556,"rated":"PG-13"},{"mal_id":967,"url":"https:\/\/myanimelist.net\/anime\/967\/Hokuto_no_Ken","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/18502.jpg?s=300395af58865909f3e1abbdc9dcdb52","title":"Hokuto
+        no Ken","airing":false,"synopsis":"In the year 19XX, after being betrayed
+        and left for dead, bravehearted warrior Kenshirou wanders a post-apocalyptic
+        wasteland on a quest to track down his rival, Shin, who has kidnapped his
+        beloved fi...","type":"TV","episodes":109,"score":7.97,"start_date":"1984-10-04T00:00:00+00:00","end_date":"1987-03-05T00:00:00+00:00","members":70913,"rated":"R"},{"mal_id":29715,"url":"https:\/\/myanimelist.net\/anime\/29715\/Nar_Doma","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/72092.jpg?s=d27f9fe59394ed7833276602b95a75af","title":"Nar
+        Doma","airing":false,"synopsis":"The \"unorthodox hard surreal gag\" comedy
+        centers around the narcissistic (narushi na) Hagito and the masochistic (domazo
+        na) Kei. Together they are \"Nar Doma.\" Hagito is a handsome yet pitiful
+        man wit...","type":"TV","episodes":26,"score":5.55,"start_date":"2015-05-17T00:00:00+00:00","end_date":"2015-11-12T00:00:00+00:00","members":2295,"rated":"PG-13"},{"mal_id":29325,"url":"https:\/\/myanimelist.net\/anime\/29325\/Ghost_in_the_Shell__Arise_-_Alternative_Architecture","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/72037.jpg?s=0df1040c3b64911506262d77432e4732","title":"Ghost
         in the Shell: Arise - Alternative Architecture","airing":false,"synopsis":"A
         TV anime version of Ghost in the Shell: Arise. The first eight episodes are
         an edited version of the four movies while the last two features a new arc
-        called \"Pyrophoric Cult.\" The plot involves the...","type":"TV","episodes":10,"score":7.31,"start_date":"2015-04-05T00:00:00+00:00","end_date":"2015-06-14T00:00:00+00:00","members":31678,"rated":"R"},{"mal_id":4690,"url":"https:\/\/myanimelist.net\/anime\/4690\/Cyborg_009_1979","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/56741.jpg?s=b1d765cc26ae301e9338b2c6075f4107","title":"Cyborg
-        009 (1979)","airing":false,"synopsis":"Joe Shimamura and his companions may
-        seem like regular men, but they are anything but. Joe is actually Cyborg 009,
-        member of a team of cyborgs who fight for the greater good. Each cyborg is
-        outfitted...","type":"TV","episodes":50,"score":7.24,"start_date":"1979-03-06T00:00:00+00:00","end_date":"1980-03-25T00:00:00+00:00","members":5503,"rated":"PG-13"},{"mal_id":10671,"url":"https:\/\/myanimelist.net\/anime\/10671\/Morita-san_wa_Mukuchi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/30166.jpg?s=005547be8229b871680afc4da100e370","title":"Morita-san
-        wa Mukuchi.","airing":false,"synopsis":"Morita Mayu, a high school girl. She
-        is extremely reticent and her silence and habit of looking at people''s eyes
-        straightly sometimes cause misunderstanding. The reason behind it is not because
-        she do...","type":"TV","episodes":13,"score":6.58,"start_date":"2011-07-06T00:00:00+00:00","end_date":"2011-09-28T00:00:00+00:00","members":18177,"rated":"PG-13"},{"mal_id":696,"url":"https:\/\/myanimelist.net\/anime\/696\/Tenchi_Muyou","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/61663.jpg?s=f2379a388000bd2ec510c879b6109500","title":"Tenchi
-        Muyou!","airing":false,"synopsis":"Tenchi Masaki may be a 17-year-old young
-        man in rural Japan, but little does he know how bad his day will be getting.
-        When a space pirate chased by a pair of Galaxy Police officers crash-lands
-        at his...","type":"TV","episodes":26,"score":7.51,"start_date":"1995-04-02T00:00:00+00:00","end_date":"1995-09-24T00:00:00+00:00","members":50394,"rated":"PG-13"},{"mal_id":133,"url":"https:\/\/myanimelist.net\/anime\/133\/Green_Green","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/75251.jpg?s=4746d4e87b5b61830e99c7892d989be2","title":"Green
-        Green","airing":false,"synopsis":"Kanenone Gakuen is an all-male boarding
-        school located in the countryside of Japan. Although an all-male school is
-        nothing new, life can become quite difficult when there are no female students
-        for mi...","type":"TV","episodes":12,"score":6.34,"start_date":"2003-07-12T00:00:00+00:00","end_date":"2003-09-27T00:00:00+00:00","members":94919,"rated":"R+"},{"mal_id":1000,"url":"https:\/\/myanimelist.net\/anime\/1000\/Uchuu_Kaizoku_Captain_Herlock","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1362\/90305.jpg?s=f01c5d13eb2448dc08c54211323ed6ba","title":"Uchuu
-        Kaizoku Captain Herlock","airing":false,"synopsis":"It is 2977 AD and mankind
-        has become stagnant. Robots do all the work, the masses are kept tranquil
-        by subliminal messages, and government officials are lazy, caring only about
-        recreational activities...","type":"TV","episodes":42,"score":7.8,"start_date":"1978-03-14T00:00:00+00:00","end_date":"1979-02-13T00:00:00+00:00","members":21791,"rated":"PG-13"}],"last_page":20}'}
+        called \"Pyrophoric Cult.\" The plot involves the...","type":"TV","episodes":10,"score":7.31,"start_date":"2015-04-05T00:00:00+00:00","end_date":"2015-06-14T00:00:00+00:00","members":32288,"rated":"R"},{"mal_id":21033,"url":"https:\/\/myanimelist.net\/anime\/21033\/Seikoku_no_Dragonar","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/56419.jpg?s=3b263990a49e0de6238033736192dffd","title":"Seikoku
+        no Dragonar","airing":false,"synopsis":"Learning to ride and tame dragons
+        comes easy to most students at Ansarivan Dragonar Academy\u2014except for
+        first-year student Ash Blake, who is known by his fellow classmates as the
+        \"number one problem ch...","type":"TV","episodes":12,"score":6.69,"start_date":"2014-04-05T00:00:00+00:00","end_date":"2014-06-21T00:00:00+00:00","members":130987,"rated":"R+"},{"mal_id":33462,"url":"https:\/\/myanimelist.net\/anime\/33462\/Bernard-jou_Iwaku","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/81589.jpg?s=e0f1fa192bc95c4a3e71e5cd9fcec498","title":"Bernard-jou
+        Iwaku.","airing":false,"synopsis":"\u200bSawako Machida\u2014or \"Miss Bernard,\"
+        as she prefers to be called\u2014can frequently be found in the school library
+        with a book in hand. Whether or not she has read it, however, is another matter
+        entirely. I...","type":"TV","episodes":12,"score":6.02,"start_date":"2016-10-07T00:00:00+00:00","end_date":"2016-12-23T00:00:00+00:00","members":15958,"rated":"PG-13"},{"mal_id":36649,"url":"https:\/\/myanimelist.net\/anime\/36649\/Banana_Fish","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1190\/93472.jpg?s=a44d13e8e51c4c0e8f80f019e142614c","title":"Banana
+        Fish","airing":false,"synopsis":"Aslan Jade Callenreese, known as Ash Lynx,
+        was a runaway picked off the streets of New York City and raised by the infamous
+        godfather of the mafia, Dino Golzine. Now 17 years old and the boss of his
+        o...","type":"TV","episodes":24,"score":8.32,"start_date":"2018-07-06T00:00:00+00:00","end_date":"2018-12-21T00:00:00+00:00","members":131962,"rated":"R"},{"mal_id":35413,"url":"https:\/\/myanimelist.net\/anime\/35413\/Imouto_sae_Ireba_Ii","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/88472.jpg?s=9322a0e1bea0842a323ab8097e13a3e4","title":"Imouto
+        sae Ireba Ii.","airing":false,"synopsis":"Itsuki Hashima is a light novelist
+        obsessed with little sisters, strictly focusing on them when he writes his
+        stories. Despite his personality, he is surrounded by a tight circle of friends:
+        Nayuta Ka...","type":"TV","episodes":12,"score":7.52,"start_date":"2017-10-08T00:00:00+00:00","end_date":"2017-12-24T00:00:00+00:00","members":146954,"rated":"R+"},{"mal_id":18139,"url":"https:\/\/myanimelist.net\/anime\/18139\/Tonari_no_Seki-kun","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/55489.jpg?s=8fc1e99796de3c5f40a8832daba5c89f","title":"Tonari
+        no Seki-kun","airing":false,"synopsis":"The original manga revolves around
+        a girl named Yokoi who sits next to a boy only known as Seki-kun. During class,
+        Seki-kun continues to not pay attention and instead creates amazing little
+        distractio...","type":"TV","episodes":21,"score":7.66,"start_date":"2014-01-06T00:00:00+00:00","end_date":"2014-05-26T00:00:00+00:00","members":137819,"rated":"G"},{"mal_id":33788,"url":"https:\/\/myanimelist.net\/anime\/33788\/Marginal4__Kiss_kara_Tsukuru_Big_Bang","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/83799.jpg?s=53129dc428a0ddc3386a7b985af4c17e","title":"Marginal#4:
+        Kiss kara Tsukuru Big Bang","airing":false,"synopsis":"On February 13, as
+        snow flurries dance in the air, a new idol unit is born at Pythagoras Production.
+        They are the idols who will deliver their kiss to the ends of the galaxy:
+        \"Marginal #4.\" Its member...","type":"TV","episodes":12,"score":6.8,"start_date":"2017-01-12T00:00:00+00:00","end_date":"2017-03-30T00:00:00+00:00","members":11288,"rated":"PG-13"},{"mal_id":1356,"url":"https:\/\/myanimelist.net\/anime\/1356\/Hokuto_no_Ken_2","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/4120.jpg?s=1dac0c98430eab9081d52c0512fe2f5d","title":"Hokuto
+        no Ken 2","airing":false,"synopsis":"In the second series after Raoh has been
+        defeated by Kenshiro a new rival appears. The Gentou Kouken warriors. Falco
+        the successor of the Gentou Kouken takes orders from an evil ruler by the
+        name of J...","type":"TV","episodes":43,"score":7.59,"start_date":"1987-03-12T00:00:00+00:00","end_date":"1988-02-18T00:00:00+00:00","members":17673,"rated":"R"},{"mal_id":11785,"url":"https:\/\/myanimelist.net\/anime\/11785\/Haiyore_Nyaruko-san","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/49081.jpg?s=6f324decb780258bf84256a8ffe6651c","title":"Haiyore!
+        Nyaruko-san","airing":false,"synopsis":"Mahiro Yasaka is just an ordinary
+        high school student, until one day he is suddenly attacked by a dangerous
+        monster. Just when everything seems to be lost, he is saved by a silver-haired
+        girl named Ny...","type":"TV","episodes":12,"score":7.18,"start_date":"2012-04-10T00:00:00+00:00","end_date":"2012-06-26T00:00:00+00:00","members":227020,"rated":"PG-13"},{"mal_id":10165,"url":"https:\/\/myanimelist.net\/anime\/10165\/Nichijou","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/75617.jpg?s=a6141f357026aca2496b1a9debaf9d2b","title":"Nichijou","airing":false,"synopsis":"Nichijou
+        primarily focuses on the daily antics of a trio of childhood friends\u2014high
+        school girls Mio Naganohara, Yuuko Aioi and Mai Minakami\u2014whose stories
+        soon intertwine with the young genius Hakase S...","type":"TV","episodes":26,"score":8.51,"start_date":"2011-04-03T00:00:00+00:00","end_date":"2011-09-25T00:00:00+00:00","members":438036,"rated":"PG-13"},{"mal_id":35983,"url":"https:\/\/myanimelist.net\/anime\/35983\/Harukana_Receive","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1924\/95212.jpg?s=ad83d8f9e28386e6c45f965877f84c21","title":"Harukana
+        Receive","airing":false,"synopsis":"In beach volleyball, there is no room
+        for aces. To achieve victory, each player must find their one, irreplaceable
+        partner that they can rely on in the court of sand. At least, that is what
+        Haruka Ooz...","type":"TV","episodes":12,"score":6.84,"start_date":"2018-07-06T00:00:00+00:00","end_date":"2018-09-21T00:00:00+00:00","members":55754,"rated":"PG-13"},{"mal_id":2605,"url":"https:\/\/myanimelist.net\/anime\/2605\/Sayonara_Zetsubou_Sensei","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/6559.jpg?s=1fa13ba08de3616a0913c6d847572f10","title":"Sayonara
+        Zetsubou Sensei","airing":false,"synopsis":"Nozomu Itoshiki is a high school
+        teacher so pessimistic that even the smallest of misfortunes can send him
+        into a pit of raging despair; some of these \"catastrophes\" even lead to
+        suicide attempts. Say...","type":"TV","episodes":12,"score":7.96,"start_date":"2007-07-08T00:00:00+00:00","end_date":"2007-09-23T00:00:00+00:00","members":231386,"rated":"R"},{"mal_id":5274,"url":"https:\/\/myanimelist.net\/anime\/5274\/Magical\u2605Taruruuto-kun","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17853.jpg?s=bb5521d43ee8760eb795cb20566d1e6d","title":"Magical\u2605Taruruuto-kun","airing":false,"synopsis":"Magical
+        Taruruto-kun is a magical boy, fighting, and comedy TV show based on the manga
+        of the same name by Tatsuya Egawa which ran in Weekly Shounen Jump.","type":"TV","episodes":87,"score":6.76,"start_date":"1990-09-09T00:00:00+00:00","end_date":"1992-05-10T00:00:00+00:00","members":722,"rated":"PG-13"},{"mal_id":3467,"url":"https:\/\/myanimelist.net\/anime\/3467\/Nogizaka_Haruka_no_Himitsu","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/56965.jpg?s=63b1a4b11c9f46089e1a160bf3598610","title":"Nogizaka
+        Haruka no Himitsu","airing":false,"synopsis":"Hakujo Academy is a private
+        high school with a student body filled with elite students. At the top of
+        this list is the beautiful Haruka Nogizaka, an intelligent and wealthy girl
+        who comes from a prest...","type":"TV","episodes":12,"score":7.3,"start_date":"2008-07-03T00:00:00+00:00","end_date":"2008-09-25T00:00:00+00:00","members":101509,"rated":"PG-13"},{"mal_id":169,"url":"https:\/\/myanimelist.net\/anime\/169\/Shingetsutan_Tsukihime","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/20669.jpg?s=9f565c7f964819699773c4d4c06cfb64","title":"Shingetsutan
+        Tsukihime","airing":false,"synopsis":"Shiki Toono sustained a life threatening
+        injury as a child, and due to that incident he was sent away from the Toono
+        household and was given to a relative to be raised. Years later, when Shiki
+        is in h...","type":"TV","episodes":12,"score":7.01,"start_date":"2003-10-10T00:00:00+00:00","end_date":"2003-12-26T00:00:00+00:00","members":115814,"rated":"R"},{"mal_id":440,"url":"https:\/\/myanimelist.net\/anime\/440\/Shoujo_Kakumei_Utena","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1078\/95285.jpg?s=0c863ebe72921213b3679c2ce4ec3778","title":"Shoujo
+        Kakumei Utena","airing":false,"synopsis":"After meeting a traveling prince
+        who consoled her after the deaths of her parents, Utena Tenjou vowed to become
+        a prince herself. The prince left Utena only with a ring bearing a strange
+        rose crest an...","type":"TV","episodes":39,"score":8.21,"start_date":"1997-04-02T00:00:00+00:00","end_date":"1997-12-24T00:00:00+00:00","members":117829,"rated":"PG-13"},{"mal_id":34009,"url":"https:\/\/myanimelist.net\/anime\/34009\/To_Be_Hero","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/82347.jpg?s=2a2850a22ce3cfaa2b27f5980e05801f","title":"To
+        Be Hero","airing":false,"synopsis":"For Uncle, a lecherous but handsome toilet
+        designer, it is just an ordinary day of neglecting his duties as a single
+        parent to hit on women and talk about his \"superpower\": his ability to tell
+        a lady''...","type":"TV","episodes":12,"score":7.03,"start_date":"2016-10-05T00:00:00+00:00","end_date":"2016-12-21T00:00:00+00:00","members":37706,"rated":"PG-13"},{"mal_id":30205,"url":"https:\/\/myanimelist.net\/anime\/30205\/Aoharu_x_Kikanjuu","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/76271.jpg?s=fd0fda134b396214bb3f988c364c2d11","title":"Aoharu
+        x Kikanjuu","airing":false,"synopsis":"Hotaru Tachibana has a strong sense
+        of justice and just cannot help confronting those who choose to perform malicious
+        acts. Furthermore, Hotaru is actually a girl who likes to disguise herself
+        as a bo...","type":"TV","episodes":12,"score":7.28,"start_date":"2015-07-03T00:00:00+00:00","end_date":"2015-09-18T00:00:00+00:00","members":147912,"rated":"PG-13"},{"mal_id":12145,"url":"https:\/\/myanimelist.net\/anime\/12145\/Backkom","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/65879.jpg?s=44f9879aa9c2733ed88f66b73c7d65f0","title":"Backkom","airing":false,"synopsis":"A
+        series of animated shorts centered on the fictional polar bear and main character
+        of the same name. Each three-minute episode focuses on the bear''s curiosity
+        and have many moments of slapstick. Bern...","type":"TV","episodes":52,"score":5.96,"start_date":"2005-01-01T00:00:00+00:00","end_date":"2005-01-01T00:00:00+00:00","members":1040,"rated":"G"},{"mal_id":38083,"url":"https:\/\/myanimelist.net\/anime\/38083\/Ken_En_Ken__Aoki_Kagayaki","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1339\/95573.jpg?s=505c9b3cd193d5eb7eabb26a577f4064","title":"Ken
+        En Ken: Aoki Kagayaki","airing":false,"synopsis":"Yin and Ning are two sisters
+        who have been wandering the land together ever since their village was destroyed
+        by the villainous Taibai Empire. Their childhood friend, Zhao, has been enslaved
+        by the Ta...","type":"TV","episodes":13,"score":6.17,"start_date":"2018-10-02T00:00:00+00:00","end_date":"2018-12-25T00:00:00+00:00","members":9992,"rated":"PG-13"}],"last_page":1}'}
     headers:
       ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Methods]
       : '*'
@@ -205,22 +275,20 @@ interactions:
       ? !!python/object/new:multidict._istr.istr [Content-Encoding]
       : gzip
       ? !!python/object/new:multidict._istr.istr [Content-Type]
-      : application/json
+      : application/json; charset=utf-8
       ? !!python/object/new:multidict._istr.istr [Date]
-      : Sun, 20 Jan 2019 02:10:41 GMT
+      : Sat, 30 Mar 2019 01:21:28 GMT
       ? !!python/object/new:multidict._istr.istr [Etag]
-      : '"ff7803a713320847a7ab4883ca075109"'
+      : '"2ffed19e8ceca4fc57bff622631086e7"'
       ? !!python/object/new:multidict._istr.istr [Server]
-      : nginx/1.13.10
+      : nginx/1.15.5 (Ubuntu)
       ? !!python/object/new:multidict._istr.istr [Transfer-Encoding]
       : chunked
       ? !!python/object/new:multidict._istr.istr [Vary]
       : Accept-Encoding
-      X-D-V-N: INIT-AC644301AWS [C-S-W]
-      X-Powered-By: Loli
     status: {code: 200, message: OK}
     url: !!python/object/new:yarl.URL
       state: !!python/tuple
       - !!python/object/new:urllib.parse.SplitResult [https, api.jikan.moe, /v3/search/anime,
-        'q=naruto?type=tv&', '']
+        q=naruto&type=tv&, '']
 version: 1

@@ -3,23 +3,23 @@ cache: pip
 
 jobs:
   include:
-  - stage: Testing with Python 3.5 and 3.6
-    python:
-      - '3.5'
-      - '3.6'
+  - stage: Testing with Python 3.6
+    python: '3.6'
     install:
-      - pip install -r requirements.txt
+      - pip install -r requirements-dev.txt
       - pip install -e .
-    script: pytest
+    script: python -m pytest
   - stage: Testing with Python 3.7
     python: '3.7'
     sudo: required
     dist: xenial
     install:
-      - pip install -r requirements.txt
+      - pip install -r requirements-dev.txt
       - pip install -e .
       - pip install pytest-cov codecov
-    script: pytest
+    script:
+      - python -m pytest
+      - mypy jikanpy
     after_success:
      - pytest --cov jikanpy tests/
      - codecov
