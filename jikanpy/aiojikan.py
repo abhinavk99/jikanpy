@@ -79,8 +79,7 @@ class AioJikan(AbstractJikan):
         json = await response.json()
         return json
 
-    # type: ignore
-    async def schedule(self, day: Optional[str] = None) -> Dict:
+    async def schedule(self, day: Optional[str] = None) -> Dict:  # type: ignore
         url: str = self._get_schedule_url(day)
         response = await self.session.get(url)
         await self._check_response(response, day=day)
