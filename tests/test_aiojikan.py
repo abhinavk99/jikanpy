@@ -409,3 +409,9 @@ async def test_user_list_failure(aio_jikan):
     with pytest.raises(DeprecatedEndpoint):
         await aio_jikan.user_list(1)
     await aio_jikan.close()
+
+
+async def test_empty_response_json(aio_jikan, response_mock):
+    with pytest.raises(APIException):
+        await aio_jikan._check_response(response_mock)
+    await aio_jikan.close()

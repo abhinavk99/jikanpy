@@ -1,4 +1,5 @@
 from typing import Optional, Dict, Any, Mapping, Union, Generator
+import json
 
 import aiohttp
 import asyncio
@@ -21,10 +22,14 @@ class AioJikan(AbstractJikan):
                               **kwargs: Union[int, Optional[str]]) -> None:
         """Overrides _check_response in AbstractJikan"""
         if response.status >= 400:
-            json = await response.json()
+            try:
+                json_resp = await response.json()
+                error_msg = json_resp.get('error')
+            except json.decoder.JSONDecodeError:
+                error_msg = ''
             err_str: str = '{} {}: error for '.format(
                 response.status,
-                json.get('error')
+                error_msg
             )
             err_str += ', '.join('='.join((str(k), str(v)))
                                  for k, v in kwargs.items())
@@ -74,7 +79,8 @@ class AioJikan(AbstractJikan):
         json = await response.json()
         return json
 
-    async def schedule(self, day: Optional[str] = None) -> Dict:  # type: ignore
+    # type: ignore
+    async def schedule(self, day: Optional[str] = None) -> Dict:
         url: str = self._get_schedule_url(day)
         response = await self.session.get(url)
         await self._check_response(response, day=day)
