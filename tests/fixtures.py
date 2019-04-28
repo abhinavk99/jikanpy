@@ -1,5 +1,19 @@
 import pytest
 
+import json
+
+
+@pytest.fixture
+def response_mock():
+    class ResponseMock():
+        def __init__(self):
+            self.status = 403
+            self.status_code = 403
+
+        def json(self):
+            raise json.decoder.JSONDecodeError('Failed', '', 0)
+    return ResponseMock()
+
 
 @pytest.fixture
 def anime_keys():

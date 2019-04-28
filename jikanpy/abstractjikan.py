@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Mapping, Dict, Optional, Union, Any, TYPE_CHECKING
+import json
 
 from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
 from jikanpy.parameters import *
@@ -44,9 +45,14 @@ class AbstractJikan(ABC):
         kwargs -- keyword arguments
         """
         if response.status_code >= 400:
+            try:
+                json_resp = response.json()
+                error_msg = json_resp.get('error')
+            except json.decoder.JSONDecodeError:
+                error_msg = ''
             err_str: str = '{} {}: error for '.format(
                 response.status_code,
-                response.json().get('error')
+                error_msg
             )
             err_str += ', '.join('='.join((str(k), str(v)))
                                  for k, v in kwargs.items())

@@ -369,3 +369,8 @@ def test_meta_status_failure(jikan):
 def test_user_list_failure(jikan):
     with pytest.raises(DeprecatedEndpoint):
         jikan.user_list(1)
+
+
+def test_empty_response_json(jikan, response_mock):
+    with pytest.raises(APIException):
+        jikan._check_response(response_mock)
