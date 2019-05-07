@@ -68,7 +68,8 @@ SEARCH_PARAMS: Dict[str, Union[str, Tuple[Union[int, str], ...], Iterable[int]]]
         'r',
         'rx'
     ),
-    'genre': range(1, 44),
+    'anime_genre': tuple(range(1, 44)),
+    'manga_genre': tuple(range(1, 46)),
     'score': '',
     'start_date': '',
     'end_date': '',

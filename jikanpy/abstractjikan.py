@@ -79,6 +79,8 @@ class AbstractJikan(ABC):
         if parameters is not None:
             url += '&'
             for key, value in parameters.items():
+                if key == 'genre':
+                    key = search_type + '_' + key
                 values = SEARCH_PARAMS.get(key)
                 if values is None:
                     raise ClientException('The key is not valid')
