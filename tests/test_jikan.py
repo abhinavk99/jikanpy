@@ -64,7 +64,7 @@ def test_person_success(person_keys, jikan):
 @vcr.use_cassette('tests/vcr_cassettes/search-success.yaml')
 def test_search_success(search_keys, jikan):
     search_info = jikan.search(
-        search_type='anime', query='naruto', parameters={'type': 'tv'})
+        search_type='anime', query='naruto', parameters={'genre': 10})
 
     assert isinstance(search_info, dict)
     assert search_keys.issubset(search_info.keys())

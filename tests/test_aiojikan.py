@@ -72,7 +72,7 @@ async def test_person_success(person_keys, aio_jikan):
 @vcr.use_cassette('tests/vcr_cassettes/aio-search-success.yaml')
 async def test_search_success(search_keys, aio_jikan):
     search_info = await aio_jikan.search(
-        search_type='anime', query='naruto', parameters={'type': 'tv'})
+        search_type='anime', query='naruto', parameters={'genre': 10})
 
     assert isinstance(search_info, dict)
     assert search_keys.issubset(search_info.keys())
