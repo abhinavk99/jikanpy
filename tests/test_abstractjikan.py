@@ -12,7 +12,7 @@ def abstract_jikan():
 
 def test_get_creator_url_type_failure(abstract_jikan):
     with pytest.raises(ClientException):
-        abstract_jikan._get_creator_url('x', 1, 1)
+        abstract_jikan._get_creator_url("x", 1, 1)
 
 
 def test_get_not_implemented(abstract_jikan):

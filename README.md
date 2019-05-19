@@ -104,6 +104,8 @@ nekomata1037 = jikan.user(username='Nekomata1037', request='animelist', argument
 # manga list
 xinil = jikan.user(username='Xinil', request='mangalist')
 xinil = jikan.user(username='Xinil', request='mangalist', argument='all')
+# user info filters (see Jikan docs for valid filters)
+nekomata1037 = jikan.user(username='Nekomata1037', request='animelist', parameters={'year': 2019})
 
 # clubs
 fantasy_anime_league = jikan.club(379)
