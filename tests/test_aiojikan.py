@@ -200,7 +200,7 @@ async def test_user_success(user_keys, aio_jikan):
 @vcr.use_cassette("tests/vcr_cassettes/aio-animelist-success.yaml")
 async def test_animelist_success(animelist_keys, aio_jikan):
     animelist_info = await aio_jikan.user(
-        username=USERNAME, request="animelist", argument="all"
+        username=USERNAME, request="animelist", argument="all", parameters={"search": "fate"}
     )
 
     assert isinstance(animelist_info, dict)

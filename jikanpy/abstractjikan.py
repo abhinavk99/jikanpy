@@ -186,6 +186,7 @@ class AbstractJikan(ABC):
         request: Optional[str],
         argument: Optional[Union[int, str]],
         page: Optional[int],
+        parameters: Optional[Mapping],
     ) -> str:
         """Create URL for user endpoint"""
         url: str = self.user_base.format(username=username.lower())
@@ -233,6 +234,10 @@ class AbstractJikan(ABC):
                 url += "/" + str(argument)
                 if request.lower() in ("animelist", "mangalist"):
                     url = self._add_page_to_url(url, page)
+        if parameters is not None:
+            url += "?"
+            for key, value in parameters.items():
+                url += key + "=" + str(value) + "&"
         return url
 
     def _get_meta_url(
@@ -325,7 +330,7 @@ class AbstractJikan(ABC):
         search_type: str,
         query: str,
         page: Optional[int] = None,
-        parameters: Optional[Mapping] = None,
+        parameters: Optional[Mapping[str, Optional[Union[int, str, float]]]] = None,
     ) -> Dict:
         """
         Searches for a query on MyAnimeList
@@ -426,6 +431,7 @@ class AbstractJikan(ABC):
         request: Optional[str],
         argument: Optional[Union[int, str]] = None,
         page: Optional[int] = None,
+        parameters: Optional[Mapping] = None,
     ) -> Dict:
         """
         Gets user data

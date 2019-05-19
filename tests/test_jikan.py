@@ -179,7 +179,7 @@ def test_user_success(user_keys, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/animelist-success.yaml")
 def test_animelist_success(animelist_keys, jikan):
-    animelist_info = jikan.user(username=USERNAME, request="animelist", argument="all")
+    animelist_info = jikan.user(username=USERNAME, request="animelist", argument="all", parameters={"search": "fate"})
 
     assert isinstance(animelist_info, dict)
     assert animelist_keys.issubset(animelist_info.keys())

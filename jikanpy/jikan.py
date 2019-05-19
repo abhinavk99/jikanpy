@@ -82,8 +82,9 @@ class Jikan(AbstractJikan):
         request: Optional[str] = None,
         argument: Optional[Union[int, str]] = None,
         page: Optional[int] = None,
+        parameters: Optional[Mapping] = None,
     ) -> Dict:
-        url: str = self._get_user_url(username, request, argument, page)
+        url: str = self._get_user_url(username, request, argument, page, parameters)
         response: Any = session.get(url)
         self._check_response(response, username=username, request=request)
         return response.json()

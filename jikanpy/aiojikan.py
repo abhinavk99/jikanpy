@@ -124,8 +124,9 @@ class AioJikan(AbstractJikan):
         request: Optional[str] = None,
         argument: Optional[Union[int, str]] = None,
         page: Optional[int] = None,
+        parameters: Optional[Mapping] = None,
     ) -> Dict:
-        url: str = self._get_user_url(username, request, argument, page)
+        url: str = self._get_user_url(username, request, argument, page, parameters)
         response = await self.session.get(url)
         await self._check_response(response, username=username, request=request)
         json = await response.json()
