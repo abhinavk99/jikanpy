@@ -77,7 +77,7 @@ def test_person_success(person_keys, jikan):
 @vcr.use_cassette("tests/vcr_cassettes/search-success.yaml")
 def test_search_success(search_keys, jikan):
     search_info = jikan.search(
-        search_type="anime", query="naruto", parameters={"genre": 1}
+        search_type="anime", query="naruto", parameters={"genre": "1,2", "limit": 10}
     )
 
     assert isinstance(search_info, dict)
@@ -235,6 +235,24 @@ def test_search_key_failure(jikan):
 def test_search_value_failure(jikan):
     with pytest.raises(ClientException):
         jikan.search(search_type="anime", query="naruto", parameters={"type": "x"})
+
+
+@vcr.use_cassette("tests/vcr_cassettes/search-rated-failure.yaml")
+def test_search_rated_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.search(search_type="manga", query="naruto", parameters={"rated": "pg13"})
+
+
+@vcr.use_cassette("tests/vcr_cassettes/search-char-param-failure.yaml")
+def test_search_char_param_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.search(search_type="character", query="naruto", parameters={"limit": 10})
+
+
+@vcr.use_cassette("tests/vcr_cassettes/search-genre-failure.yaml")
+def test_search_genre_failure(jikan):
+    with pytest.raises(ClientException):
+        jikan.search(search_type="anime", query="naruto", parameters={"genre": "1,100"})
 
 
 @vcr.use_cassette("tests/vcr_cassettes/season-failure.yaml")

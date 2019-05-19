@@ -1,4 +1,5 @@
-from typing import Dict, Union, Tuple, Iterable
+import string
+from typing import Dict, Union, Tuple
 
 # Possible extensions for endpoints
 EXTENSIONS: Dict[str, Union[str, Tuple[str, ...]]] = {
@@ -32,29 +33,56 @@ EXTENSIONS: Dict[str, Union[str, Tuple[str, ...]]] = {
 }
 
 # Possible search parameters for ?key=value
-SEARCH_PARAMS: Dict[str, Union[str, Tuple[Union[int, str], ...], Iterable[int]]] = {
-    "type": (
-        "tv",
-        "ova",
-        "movie",
-        "special",
-        "ona",
-        "music",
-        "manga",
-        "novel",
-        "oneshot",
-        "doujin",
-        "manhwa",
-        "manhua",
-    ),
-    "status": ("airing", "completed", "complete", "tba", "upcoming"),
-    "rated": ("g", "pg", "pg13", "r17", "r", "rx"),
-    "anime_genre": tuple(range(1, 44)),
-    "manga_genre": tuple(range(1, 46)),
+SEARCH_PARAMS: Dict[
+    str, Union[Dict[str, Tuple[Union[int, str], ...]], str, Tuple[Union[int, str], ...]]
+] = {
+    "anime": {
+        "type": ("tv", "ova", "movie", "special", "ona", "music"),
+        "status": ("airing", "completed", "complete", "to_be_aired", "tba", "upcoming"),
+        "rated": ("g", "pg", "pg13", "r17", "r", "rx"),
+        "genre": tuple(range(1, 44)),
+        "order_by": (
+            "title",
+            "start_date",
+            "end_date",
+            "score",
+            "type",
+            "members",
+            "id",
+            "episodes",
+            "rating",
+        ),
+    },
+    "manga": {
+        "type": ("manga", "novel", "oneshot", "doujin", "manhwa", "manhua"),
+        "status": (
+            "publishing",
+            "completed",
+            "complete",
+            "to_be_published",
+            "tbp",
+            "upcoming",
+        ),
+        "genre": tuple(range(1, 46)),
+        "order_by": (
+            "title",
+            "start_date",
+            "end_date",
+            "score",
+            "type",
+            "members",
+            "id",
+            "chapters",
+            "volumes",
+        ),
+    },
     "score": "",
     "start_date": "",
     "end_date": "",
     "genre_exclude": (0, 1),
+    "limit": "",
+    "sort": ("ascending", "asc", "descending", "desc"),
+    "letter": tuple(string.ascii_lowercase),  # tuple of the lowercase letters
 }
 
 # Possible seasons

@@ -32,7 +32,7 @@ class Jikan(AbstractJikan):
         search_type: str,
         query: str,
         page: Optional[int] = None,
-        parameters: Optional[Mapping] = None,
+        parameters: Optional[Mapping[str, Optional[Union[int, str, float]]]] = None,
     ) -> Dict:
         url: str = self._get_search_url(search_type, query, page, parameters)
         response: Any = session.get(url)

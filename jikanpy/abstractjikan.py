@@ -89,19 +89,29 @@ class AbstractJikan(ABC):
         search_type: str,
         query: str,
         page: Optional[int],
-        parameters: Optional[Mapping],
+        parameters: Optional[Mapping[str, Optional[Union[int, str, float]]]],
     ) -> str:
         """Create URL for search endpoint"""
         url: str = self.search_base.format(search_type=search_type, query=query)
         url = self._add_page_to_url(url, page, delimiter="&page=")
         if parameters is not None:
+            if search_type.lower() not in ("anime", "manga"):
+                raise ClientException("Parameters are only for anime or manga search")
             url += "&"
             for key, value in parameters.items():
-                if key == "genre":
-                    key = search_type + "_" + key
-                values = SEARCH_PARAMS.get(key)
+                if key == "rated" and search_type.lower() == "manga":
+                    raise ClientException("rated parameter only for anime search")
+                if key in ("type", "status", "rated", "genre", "order_by"):
+                    values = SEARCH_PARAMS[search_type][key]  # type: ignore
+                else:
+                    values = SEARCH_PARAMS.get(key)
                 if values is None:
                     raise ClientException("The key is not valid")
+                elif key == "genre" and isinstance(value, str):
+                    genres = value.split(",")
+                    for genre in genres:
+                        if int(genre) not in values:
+                            raise ClientException("Invalid genre passed in")
                 elif isinstance(values, tuple) and value not in values:
                     raise ClientException("The value is not valid")
                 url += key + "=" + str(value) + "&"

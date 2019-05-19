@@ -85,7 +85,7 @@ async def test_person_success(person_keys, aio_jikan):
 @vcr.use_cassette("tests/vcr_cassettes/aio-search-success.yaml")
 async def test_search_success(search_keys, aio_jikan):
     search_info = await aio_jikan.search(
-        search_type="anime", query="naruto", parameters={"genre": 1}
+        search_type="anime", query="naruto", parameters={"genre": "1,2", "limit": 10}
     )
 
     assert isinstance(search_info, dict)
@@ -269,6 +269,29 @@ async def test_search_value_failure(aio_jikan):
         await aio_jikan.search(
             search_type="anime", query="naruto", parameters={"type": "x"}
         )
+    await aio_jikan.close()
+
+
+@vcr.use_cassette("tests/vcr_cassettes/aio-search-rated-failure.yaml")
+async def test_search_rated_failure(aio_jikan):
+    with pytest.raises(ClientException):
+        await aio_jikan.search(
+            search_type="manga", query="naruto", parameters={"rated": "pg13"}
+        )
+    await aio_jikan.close()
+
+
+@vcr.use_cassette("tests/vcr_cassettes/aio-search-char-param-failure.yaml")
+async def test_search_char_param_failure(aio_jikan):
+    with pytest.raises(ClientException):
+        await aio_jikan.search(search_type="character", query="naruto", parameters={"limit": 10})
+    await aio_jikan.close()
+
+
+@vcr.use_cassette("tests/vcr_cassettes/aio-search-genre-failure.yaml")
+async def test_search_genre_failure(aio_jikan):
+    with pytest.raises(ClientException):
+        await aio_jikan.search(search_type="anime", query="naruto", parameters={"genre": "1,100"})
     await aio_jikan.close()
 
 
