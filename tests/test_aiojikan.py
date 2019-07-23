@@ -93,6 +93,21 @@ async def test_search_success(search_keys, aio_jikan):
     await aio_jikan.close()
 
 
+@vcr.use_cassette("tests/vcr_cassettes/aio-search-genre-exclude-success.yaml")
+async def test_search_genre_exclude_boolean_success(search_keys, aio_jikan):
+    search_info = await aio_jikan.search(
+        search_type="anime",
+        query="naruto",
+        parameters={"genre": "1,2", "genre_exclude": True, "limit": 2},
+    )
+
+    assert isinstance(search_info, dict)
+    assert search_keys.issubset(search_info.keys())
+    assert search_info["results"][0]["title"] == "Naruto"
+    assert search_info["results"][1]["title"] == "Naruto: Shippuuden"
+    await aio_jikan.close()
+
+
 @vcr.use_cassette("tests/vcr_cassettes/aio-season-success.yaml")
 async def test_season_success(season_keys, seasonal_anime_keys, aio_jikan):
     season_info = await aio_jikan.season(year=YEAR, season=SEASON)
@@ -200,7 +215,10 @@ async def test_user_success(user_keys, aio_jikan):
 @vcr.use_cassette("tests/vcr_cassettes/aio-animelist-success.yaml")
 async def test_animelist_success(animelist_keys, aio_jikan):
     animelist_info = await aio_jikan.user(
-        username=USERNAME, request="animelist", argument="all", parameters={"search": "fate"}
+        username=USERNAME,
+        request="animelist",
+        argument="all",
+        parameters={"search": "fate"},
     )
 
     assert isinstance(animelist_info, dict)
@@ -284,14 +302,18 @@ async def test_search_rated_failure(aio_jikan):
 @vcr.use_cassette("tests/vcr_cassettes/aio-search-char-param-failure.yaml")
 async def test_search_char_param_failure(aio_jikan):
     with pytest.raises(ClientException):
-        await aio_jikan.search(search_type="character", query="naruto", parameters={"limit": 10})
+        await aio_jikan.search(
+            search_type="character", query="naruto", parameters={"limit": 10}
+        )
     await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-search-genre-failure.yaml")
 async def test_search_genre_failure(aio_jikan):
     with pytest.raises(ClientException):
-        await aio_jikan.search(search_type="anime", query="naruto", parameters={"genre": "1,100"})
+        await aio_jikan.search(
+            search_type="anime", query="naruto", parameters={"genre": "1,100"}
+        )
     await aio_jikan.close()
 
 

@@ -103,6 +103,8 @@ class AbstractJikan(ABC):
                     raise ClientException("rated parameter only for anime search")
                 if key in ("type", "status", "rated", "genre", "order_by"):
                     values = SEARCH_PARAMS[search_type][key]  # type: ignore
+                elif key == "genre_exclude" and isinstance(value, bool):
+                    value = int(value)
                 else:
                     values = SEARCH_PARAMS.get(key)
                 if values is None:

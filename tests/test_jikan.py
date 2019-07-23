@@ -84,6 +84,20 @@ def test_search_success(search_keys, jikan):
     assert search_keys.issubset(search_info.keys())
 
 
+@vcr.use_cassette("tests/vcr_cassettes/search-genre-exclude-success.yaml")
+def test_search_genre_exclude_boolean_success(search_keys, jikan):
+    search_info = jikan.search(
+        search_type="anime",
+        query="naruto",
+        parameters={"genre": "1,2", "genre_exclude": True, "limit": 2},
+    )
+
+    assert isinstance(search_info, dict)
+    assert search_keys.issubset(search_info.keys())
+    assert search_info["results"][0]["title"] == "Naruto"
+    assert search_info["results"][1]["title"] == "Naruto: Shippuuden"
+
+
 @vcr.use_cassette("tests/vcr_cassettes/season-success.yaml")
 def test_season_success(season_keys, seasonal_anime_keys, jikan):
     season_info = jikan.season(year=YEAR, season=SEASON)
@@ -179,7 +193,12 @@ def test_user_success(user_keys, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/animelist-success.yaml")
 def test_animelist_success(animelist_keys, jikan):
-    animelist_info = jikan.user(username=USERNAME, request="animelist", argument="all", parameters={"search": "fate"})
+    animelist_info = jikan.user(
+        username=USERNAME,
+        request="animelist",
+        argument="all",
+        parameters={"search": "fate"},
+    )
 
     assert isinstance(animelist_info, dict)
     assert animelist_keys.issubset(animelist_info.keys())
