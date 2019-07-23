@@ -1,0 +1,68 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.21.0
+    method: GET
+    uri: https://api.jikan.moe/v3/search/anime?q=naruto&genre=1,2&genre_exclude=1&limit=2&
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6WUbW/TMBDHv4qVN3tBmzrOUxMJId4A02BCYuwNRZVjXxrTxA62s65M++5csidY
+        B0xCSiKf/T/fne/nXAUWvg/g/LrhrgnKO7N0wK1oSpBRUkU0S6oiL5Z5LLKYyyyjmaAFlbnM0yRm
+        tVgGs/uNBBcNyKD0doBHs2u47JXdB2USR0VRjKtuaL0Lyi9XQcfbtUI/RmfBYFvMpfG+d+VqsVp0
+        e65VB61yPtTgV4vJXC0YXS1OuR28wQRUxzewfuwqpA4P3Cepu98mivHNE5qG3/rNK/cyLVgSJVkB
+        VZLTjCY8LxiXMqsryIWADIN55VvAQPfRubJKb4Ky5q3Dut1em94pLC34YDrQ3pHeKmOJN+TGh3z+
+        MXR8q44cqZT1zYxw0gwbIBI6o8lWm50m3BHfADnZD0OlZtP4VGmYn3HVgiRvzCW6ec/FFq0To03D
+        N3w7WLjRvlNSgibvgdfkXLUtVo16LcnOAh9dGn5hREiONTFWwpRdP3iUEEAVWg/Rj8IwHAvf92Pd
+        Z+c4hl45IwGLZGPXnDAW1/KwYGh4bv1acj+qGaVsHtE5jc8oLafnxfQdN9HyF1k+RyVdHso66Cqw
+        GCqKlmyZjvCgE/ISfHw7j+LgevaAUJTH6fMhGtV3GK3XnxrV98OAx/ZfSKU3ROW3RLGqZglnjMdx
+        wVgsBZdVJGQt4pjmVRYdEFWS3xL5M13HHpuICAH22e/M1F0Eibc12eMddsQpLeARc6SF2j+Xlxqp
+        VdqDdkC85UpjJjjZtmY3juBionvXKNGQeoCRy0Y5xNgpCyNDFRDnrdEbsCE5NTvyesu9G7a3QHd7
+        53HlL3Sl9IGuZfgEXBM1UfoPuCKUxXP2BIP3cBV5nKT5AVtfZ0HL8S/W44EgXtc/AQAHnwU3BQAA
+    headers:
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '684'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 23 Jul 2019 03:06:59 GMT
+      ETag:
+      - '"4c8b239b5936ddcf8be5a067b1ce4273"'
+      Expires:
+      - Sun, 28 Jul 2019 03:06:58 GMT
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Vary:
+      - Accept-Encoding
+      X-Cache-Status:
+      - MISS
+      X-Powered-By:
+      - lolis
+      X-Request-Cache-Ttl:
+      - '431999'
+      X-Request-Cached:
+      - '1'
+      X-Request-Hash:
+      - request:search:ed14b1064b979873c63ad6606c090d7d75432fc8
+    status:
+      code: 200
+      message: OK
+version: 1

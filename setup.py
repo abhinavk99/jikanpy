@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="jikanpy",
-    version="3.1.0",
+    version="3.1.1",
     description="Python wrapper for the Jikan API",
     author="Andrew Conant, Abhinav Kasamsetty",
     package_data={"jikanpy": ["py.typed"]},
