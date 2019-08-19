@@ -406,6 +406,24 @@ def test_meta_period_failure(jikan):
         jikan.meta(request="requests", type="anime", period="x")
 
 
+@vcr.use_cassette("tests/vcr_cassettes/meta-args-missing.yaml")
+def test_meta_args_missing(jikan):
+    with pytest.raises(ClientException):
+        jikan.meta(request="requests")
+
+
+@vcr.use_cassette("tests/vcr_cassettes/meta-type-missing.yaml")
+def test_meta_type_missing(jikan):
+    with pytest.raises(ClientException):
+        jikan.meta(request="requests", period="day")
+
+
+@vcr.use_cassette("tests/vcr_cassettes/meta-period-missing.yaml")
+def test_meta_period_missing(jikan):
+    with pytest.raises(ClientException):
+        jikan.meta(request="requests", type="anime")
+
+
 @vcr.use_cassette("tests/vcr_cassettes/meta-status-failure.yaml")
 def test_meta_status_failure(jikan):
     with pytest.raises(ClientException):

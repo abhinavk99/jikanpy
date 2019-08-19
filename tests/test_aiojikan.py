@@ -466,6 +466,27 @@ async def test_meta_period_failure(aio_jikan):
     await aio_jikan.close()
 
 
+@vcr.use_cassette("tests/vcr_cassettes/aio-meta-args-missing.yaml")
+async def test_meta_args_missing(aio_jikan):
+    with pytest.raises(ClientException):
+        await aio_jikan.meta(request="requests")
+    await aio_jikan.close()
+
+
+@vcr.use_cassette("tests/vcr_cassettes/aio-meta-type-missing.yaml")
+async def test_meta_type_missing(aio_jikan):
+    with pytest.raises(ClientException):
+        await aio_jikan.meta(request="requests", period="day")
+    await aio_jikan.close()
+
+
+@vcr.use_cassette("tests/vcr_cassettes/aio-meta-period-missing.yaml")
+async def test_meta_period_missing(aio_jikan):
+    with pytest.raises(ClientException):
+        await aio_jikan.meta(request="requests", type="anime")
+    await aio_jikan.close()
+
+
 @vcr.use_cassette("tests/vcr_cassettes/aio-meta-status-failure.yaml")
 async def test_meta_status_failure(aio_jikan):
     with pytest.raises(ClientException):

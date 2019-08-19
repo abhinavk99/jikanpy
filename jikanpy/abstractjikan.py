@@ -259,6 +259,8 @@ class AbstractJikan(ABC):
         ):
             raise ClientException("There is no type or period for the 'status' request")
         if request == "requests":
+            if type is None or period is None:
+                raise ClientException("'requests' requires 'type' and 'period'")
             if type not in META["type"]:
                 raise ClientException("Type is not valid")
             if period not in META["period"]:
