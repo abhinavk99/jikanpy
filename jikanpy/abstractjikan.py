@@ -76,6 +76,7 @@ class AbstractJikan(ABC):
         response_dict: Dict,
         url: str
     ) -> Dict:
+        """Adds the response headers and jikan endpoint url to response dictionary"""
         response_dict["jikan_url"] = url
         response_dict["headers"] = dict(response.headers)  # converts from CIMultiDictProxy for aiohttp.ClientResponse
         return response_dict
