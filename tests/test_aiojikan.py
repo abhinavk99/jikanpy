@@ -503,5 +503,5 @@ async def test_user_list_failure(aio_jikan):
 
 async def test_empty_response_json(aio_jikan, response_mock):
     with pytest.raises(APIException):
-        await aio_jikan._check_response(response_mock)
+        await aio_jikan._wrap_response(response_mock, url="")
     await aio_jikan.close()

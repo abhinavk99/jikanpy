@@ -438,4 +438,4 @@ def test_user_list_failure(jikan):
 
 def test_empty_response_json(jikan, response_mock):
     with pytest.raises(APIException):
-        jikan._check_response(response_mock)
+        jikan._wrap_response(response_mock, url="")

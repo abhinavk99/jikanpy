@@ -9,6 +9,15 @@ def response_mock():
         def __init__(self):
             self.status = 403
             self.status_code = 403
+            # simulate a banned user
+            self.text = """<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx/1.15.5 (Ubuntu)</center>
+</body>
+</html>
+"""
 
         def json(self):
             raise json.decoder.JSONDecodeError("Failed", "", 0)
