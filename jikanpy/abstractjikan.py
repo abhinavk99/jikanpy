@@ -56,7 +56,7 @@ class AbstractJikan(ABC):
         self,
         response_dict: Dict,
         response_status_code: int,
-        **kwargs: Union[int, Optional[str]]
+        **kwargs: Union[int, Optional[str]],
     ) -> None:
         """
         Check if the response is an error
@@ -77,11 +77,12 @@ class AbstractJikan(ABC):
         self,
         response: Union[requests.Response, aiohttp.ClientResponse],
         response_dict: Dict,
-        url: str
+        url: str,
     ) -> Dict:
         """Adds the response headers and jikan endpoint url to response dictionary"""
         response_dict["jikan_url"] = url
-        response_dict["headers"] = dict(response.headers)  # converts from CIMultiDictProxy for aiohttp.ClientResponse
+        # dict() is to convert from CIMultiDictProxy for aiohttp.ClientResponse
+        response_dict["headers"] = dict(response.headers)
         return response_dict
 
     @abstractmethod
@@ -89,7 +90,7 @@ class AbstractJikan(ABC):
         self,
         response: Any,  # Union[requests.Response, aiohttp.ClientResponse
         url: str,
-        **kwargs: Union[int, Optional[str]]
+        **kwargs: Union[int, Optional[str]],
     ) -> Dict:
         """Parses the response as json, then runs _check_response and _add_jikan_metadata"""
         raise NotImplementedError

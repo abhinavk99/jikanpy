@@ -23,18 +23,20 @@ class AioJikan(AbstractJikan):
             aiohttp.ClientSession(loop=self.loop) if session is None else session
         )
 
-    async def _wrap_response( # type: ignore
+    async def _wrap_response(  # type: ignore
         self,
         response: aiohttp.ClientResponse,
         url: str,
-        **kwargs: Union[int, Optional[str]]
+        **kwargs: Union[int, Optional[str]],
     ) -> Dict:
         json_response: Dict = {}
         try:
             json_response = await response.json()
         except json.decoder.JSONDecodeError:
             pass
-        self._check_response(response_dict=json_response, response_status_code=response.status, **kwargs)
+        self._check_response(
+            response_dict=json_response, response_status_code=response.status, **kwargs
+        )
         return self._add_jikan_metadata(response, json_response, url)
 
     async def _get(  # type: ignore
@@ -53,7 +55,9 @@ class AioJikan(AbstractJikan):
     ) -> Dict:
         url: str = self._get_creator_url(creator_type, creator_id, page)
         response: aiohttp.ClientResponse = await self.session.get(url)
-        return await self._wrap_response(response, url, id=creator_id, endpoint=creator_type)
+        return await self._wrap_response(
+            response, url, id=creator_id, endpoint=creator_type
+        )
 
     async def search(  # type: ignore
         self,
@@ -73,7 +77,9 @@ class AioJikan(AbstractJikan):
         return await self._wrap_response(response, url, year=year, season=season)
 
     async def season_archive(self) -> Dict:  # type: ignore
-        response: aiohttp.ClientResponse = await self.session.get(self.season_archive_url)
+        response: aiohttp.ClientResponse = await self.session.get(
+            self.season_archive_url
+        )
         return await self._wrap_response(response, self.season_archive_url)
 
     async def season_later(self) -> Dict:  # type: ignore
@@ -109,7 +115,9 @@ class AioJikan(AbstractJikan):
     ) -> Dict:
         url: str = self._get_user_url(username, request, argument, page, parameters)
         response: aiohttp.ClientResponse = await self.session.get(url)
-        return await self._wrap_response(response, url, username=username, request=request)
+        return await self._wrap_response(
+            response, url, username=username, request=request
+        )
 
     async def meta(  # type: ignore
         self,
@@ -120,7 +128,9 @@ class AioJikan(AbstractJikan):
     ) -> Dict:
         url: str = self._get_meta_url(request, type, period, offset)
         response: aiohttp.ClientResponse = await self.session.get(url)
-        return await self._wrap_response(response, url, request=request, type=type, period=period)
+        return await self._wrap_response(
+            response, url, request=request, type=type, period=period
+        )
 
     async def close(self) -> None:
         await self.session.close()

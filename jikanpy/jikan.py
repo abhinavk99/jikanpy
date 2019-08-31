@@ -11,10 +11,7 @@ class Jikan(AbstractJikan):
     """Synchronous Jikan wrapper"""
 
     def _wrap_response(
-        self,
-        response: requests.Response,
-        url: str,
-        **kwargs: Union[int, Optional[str]]
+        self, response: requests.Response, url: str, **kwargs: Union[int, Optional[str]]
     ) -> Dict:
         json_response: Dict = {}
         try:
@@ -24,7 +21,11 @@ class Jikan(AbstractJikan):
             # this could happen, for example, when someone has been IP banned
             # and it returns the typical nginx 403 forbidden page
             pass
-        self._check_response(response_dict=json_response, response_status_code=response.status_code, **kwargs)
+        self._check_response(
+            response_dict=json_response,
+            response_status_code=response.status_code,
+            **kwargs,
+        )
         return self._add_jikan_metadata(response, json_response, url)
 
     def _get(
@@ -108,4 +109,6 @@ class Jikan(AbstractJikan):
     ) -> Dict:
         url: str = self._get_meta_url(request, type, period, offset)
         response: requests.Response = session.get(url)
-        return self._wrap_response(response, url, request=request, type=type, period=period)
+        return self._wrap_response(
+            response, url, request=request, type=type, period=period
+        )
