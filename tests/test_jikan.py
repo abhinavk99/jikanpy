@@ -28,7 +28,7 @@ def jikan():
 
 
 @vcr.use_cassette("tests/vcr_cassettes/wrap-response.yaml")
-def test_wrap_response(jikan):
+def test_wrap_response(header_keys, jikan):
     anime_info = jikan.anime(MUSHISHI_ID)
     mushishi_url = jikan._get_url("anime", MUSHISHI_ID, extension=None, page=None)
 
@@ -37,17 +37,8 @@ def test_wrap_response(jikan):
     assert "headers" in anime_info
     assert isinstance(anime_info["headers"], dict)
     assert mushishi_url == anime_info["jikan_url"]
-
-
-# Test against headers mentioned in documentation
-# https://jikan.docs.apiary.io/#introduction/information/caching
-@vcr.use_cassette("tests/vcr_cassettes/wrap-response.yaml")
-def test_header_contents(header_keys, jikan):
-    anime_info = jikan.anime(MUSHISHI_ID)
-
-    assert isinstance(anime_info, dict)
-    assert "headers" in anime_info
-    assert isinstance(anime_info["headers"], dict)
+    # Test against headers mentioned in documentation
+    # https://jikan.docs.apiary.io/#introduction/information/caching
     assert header_keys.issubset(anime_info["headers"].keys())
 
 
