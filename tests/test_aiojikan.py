@@ -29,6 +29,19 @@ def aio_jikan(event_loop):
     return AioJikan(loop=event_loop)
 
 
+@vcr.use_cassette("tests/vcr_cassettes/aio-wrap-response.yaml")
+async def test_wrap_response(aio_jikan):
+    anime_info = await aio_jikan.anime(MUSHISHI_ID)
+    mushishi_url = aio_jikan._get_url("anime", MUSHISHI_ID, extension=None, page=None)
+
+    assert isinstance(anime_info, dict)
+    assert "jikan_url" in anime_info
+    assert "headers" in anime_info
+    assert isinstance(anime_info["headers"], dict)
+    assert mushishi_url == anime_info["jikan_url"]
+    await aio_jikan.close()
+
+
 @vcr.use_cassette("tests/vcr_cassettes/aio-anime-success.yaml")
 async def test_anime_success(anime_keys, aio_jikan):
     anime_info = await aio_jikan.anime(MUSHISHI_ID)

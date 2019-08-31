@@ -1,0 +1,96 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.jikan.moe/v3/anime/457
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Methods:
+      - '*'
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '2609'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 31 Aug 2019 21:19:26 GMT
+      ETag:
+      - '"95f4ab8888d32d317d0f0e080bb4ae1a"'
+      Server:
+      - nginx/1.14.0 (Ubuntu)
+      Vary:
+      - Accept-Encoding
+      X-Cache-Status:
+      - HIT
+      X-Request-Cache-Ttl:
+      - '55606'
+      X-Request-Cached:
+      - '1'
+      X-Request-Hash:
+      - request:anime:047ce4420fa843606934309866d292274c149a83
+    status:
+      code: 200
+      message: OK
+version: 1

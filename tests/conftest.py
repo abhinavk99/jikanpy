@@ -362,3 +362,14 @@ def club_keys():
         "manga_relations",
         "character_relations",
     }
+
+
+@pytest.fixture
+def header_keys():
+    return {
+        "X-Cache-Status",
+        "X-Request-Hash",
+        "X-Request-Cached",
+        "X-Request-Cache-Ttl",
+        "ETag",
+    }
