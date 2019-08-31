@@ -1,6 +1,9 @@
 from abc import ABC, abstractmethod
 from typing import Mapping, Dict, Optional, Union, Any
 
+import requests
+import aiohttp
+
 from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
 from jikanpy.parameters import (
     EXTENSIONS,
@@ -72,7 +75,7 @@ class AbstractJikan(ABC):
 
     def _add_jikan_metadata(
         self,
-        response: Any,  # Union[requests.Response, aiohttp.ClientResponse]
+        response: Union[requests.Response, aiohttp.ClientResponse],
         response_dict: Dict,
         url: str
     ) -> Dict:
@@ -84,7 +87,7 @@ class AbstractJikan(ABC):
     @abstractmethod
     def _wrap_response(
         self,
-        response: Any,
+        response: Any,  # Union[requests.Response, aiohttp.ClientResponse
         url: str,
         **kwargs: Union[int, Optional[str]]
     ) -> Dict:
