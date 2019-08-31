@@ -82,7 +82,8 @@ SEARCH_PARAMS: Dict[
     "genre_exclude": (0, 1),
     "limit": "",
     "sort": ("ascending", "asc", "descending", "desc"),
-    "letter": tuple(string.ascii_lowercase),  # tuple of the lowercase letters
+    # tuple of lowercase letters and '.'
+    "letter": tuple(string.ascii_lowercase + "."),
 }
 
 # Possible seasons
