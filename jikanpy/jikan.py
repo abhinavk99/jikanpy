@@ -1,4 +1,7 @@
+import json
 from typing import Optional, Dict, Any, Mapping, Union
+
+import requests
 
 from jikanpy.abstractjikan import AbstractJikan
 from jikanpy import session
@@ -6,6 +9,24 @@ from jikanpy import session
 
 class Jikan(AbstractJikan):
     """Synchronous Jikan wrapper"""
+
+    def _wrap_response(
+        self, response: requests.Response, url: str, **kwargs: Union[int, Optional[str]]
+    ) -> Dict:
+        json_response: Dict = {}
+        try:
+            json_response = response.json()
+        except json.decoder.JSONDecodeError:
+            # json failed to be parsed
+            # this could happen, for example, when someone has been IP banned
+            # and it returns the typical nginx 403 forbidden page
+            pass
+        self._check_response(
+            response_dict=json_response,
+            response_status_code=response.status_code,
+            **kwargs,
+        )
+        return self._add_jikan_metadata(response, json_response, url)
 
     def _get(
         self,
@@ -15,17 +36,15 @@ class Jikan(AbstractJikan):
         page: Optional[int] = None,
     ) -> Dict:
         url: str = self._get_url(endpoint, id, extension, page)
-        response: Any = session.get(url)
-        self._check_response(response, id=id, endpoint=endpoint)
-        return response.json()
+        response: requests.Response = session.get(url)
+        return self._wrap_response(response, url, id=id, endpoint=endpoint)
 
     def _get_creator(
         self, creator_type: str, creator_id: int, page: Optional[int] = None
     ) -> Dict:
         url: str = self._get_creator_url(creator_type, creator_id, page)
-        response: Any = session.get(url)
-        self._check_response(response, id=creator_id, endpoint=creator_type)
-        return response.json()
+        response: requests.Response = session.get(url)
+        return self._wrap_response(response, url, id=creator_id, endpoint=creator_type)
 
     def search(
         self,
@@ -35,46 +54,39 @@ class Jikan(AbstractJikan):
         parameters: Optional[Mapping[str, Optional[Union[int, str, float]]]] = None,
     ) -> Dict:
         url: str = self._get_search_url(search_type, query, page, parameters)
-        response: Any = session.get(url)
+        response: requests.Response = session.get(url)
         kwargs: Dict[str, str] = {"search type": search_type, "query": query}
-        self._check_response(response, **kwargs)
-        return response.json()
+        return self._wrap_response(response, url, **kwargs)
 
     def season(self, year: int, season: str) -> Dict:
         url: str = self._get_season_url(year, season)
-        response: Any = session.get(url)
-        self._check_response(response, year=year, season=season)
-        return response.json()
+        response: requests.Response = session.get(url)
+        return self._wrap_response(response, url, year=year, season=season)
 
     def season_archive(self) -> Dict:
-        response: Any = session.get(self.season_archive_url)
-        self._check_response(response)
-        return response.json()
+        response: requests.Response = session.get(self.season_archive_url)
+        return self._wrap_response(response, self.season_archive_url)
 
     def season_later(self) -> Dict:
-        response: Any = session.get(self.season_later_url)
-        self._check_response(response)
-        return response.json()
+        response: requests.Response = session.get(self.season_later_url)
+        return self._wrap_response(response, self.season_later_url)
 
     def schedule(self, day: Optional[str] = None) -> Dict:
         url: str = self._get_schedule_url(day)
-        response: Any = session.get(url)
-        self._check_response(response, day=day)
-        return response.json()
+        response: requests.Response = session.get(url)
+        return self._wrap_response(response, url, day=day)
 
     def top(
         self, type: str, page: Optional[int] = None, subtype: Optional[str] = None
     ) -> Dict:
         url: str = self._get_top_url(type, page, subtype)
-        response: Any = session.get(url)
-        self._check_response(response, type=type)
-        return response.json()
+        response: requests.Response = session.get(url)
+        return self._wrap_response(response, url, type=type)
 
     def genre(self, type: str, genre_id: int, page: Optional[int] = None) -> Dict:
         url: str = self._get_genre_url(type, genre_id, page)
-        response: Any = session.get(url)
-        self._check_response(response, id=genre_id, type=type)
-        return response.json()
+        response: requests.Response = session.get(url)
+        return self._wrap_response(response, url, id=genre_id, type=type)
 
     def user(
         self,
@@ -85,9 +97,8 @@ class Jikan(AbstractJikan):
         parameters: Optional[Mapping] = None,
     ) -> Dict:
         url: str = self._get_user_url(username, request, argument, page, parameters)
-        response: Any = session.get(url)
-        self._check_response(response, username=username, request=request)
-        return response.json()
+        response: requests.Response = session.get(url)
+        return self._wrap_response(response, url, username=username, request=request)
 
     def meta(
         self,
@@ -97,6 +108,7 @@ class Jikan(AbstractJikan):
         offset: Optional[int] = None,
     ) -> Dict:
         url: str = self._get_meta_url(request, type, period, offset)
-        response: Any = session.get(url)
-        self._check_response(response, request=request, type=type, period=period)
-        return response.json()
+        response: requests.Response = session.get(url)
+        return self._wrap_response(
+            response, url, request=request, type=type, period=period
+        )

@@ -1,6 +1,8 @@
 from abc import ABC, abstractmethod
 from typing import Mapping, Dict, Optional, Union, Any
-import json
+
+import requests
+import aiohttp
 
 from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
 from jikanpy.parameters import (
@@ -51,24 +53,47 @@ class AbstractJikan(ABC):
         self.season_later_url: str = selected_base + "season/later"
 
     def _check_response(
-        self, response: Any, **kwargs: Union[int, Optional[str]]
+        self,
+        response_dict: Dict,
+        response_status_code: int,
+        **kwargs: Union[int, Optional[str]],
     ) -> None:
         """
         Check if the response is an error
 
         Keyword Arguments:
-        response -- response from the API call
+        response_dict -- parsed response from the API call
+                         is empty ({}) when there was a json.decoder.JSONDecodeError
+        response_status -- the corresponding http code for the response
         kwargs -- keyword arguments
         """
-        if response.status_code >= 400:
-            try:
-                json_resp = response.json()
-                error_msg = json_resp.get("error")
-            except json.decoder.JSONDecodeError:
-                error_msg = ""
-            err_str: str = "{} {}: error for ".format(response.status_code, error_msg)
+        if response_status_code >= 400:
+            error_msg = response_dict.get("error", "")
+            err_str: str = "{} {}: error for ".format(response_status_code, error_msg)
             err_str += ", ".join("=".join((str(k), str(v))) for k, v in kwargs.items())
             raise APIException(err_str)
+
+    def _add_jikan_metadata(
+        self,
+        response: Union[requests.Response, aiohttp.ClientResponse],
+        response_dict: Dict,
+        url: str,
+    ) -> Dict:
+        """Adds the response headers and jikan endpoint url to response dictionary"""
+        response_dict["jikan_url"] = url
+        # dict() is to convert from CIMultiDictProxy for aiohttp.ClientResponse
+        response_dict["headers"] = dict(response.headers)
+        return response_dict
+
+    @abstractmethod
+    def _wrap_response(
+        self,
+        response: Any,  # Union[requests.Response, aiohttp.ClientResponse
+        url: str,
+        **kwargs: Union[int, Optional[str]],
+    ) -> Dict:
+        """Parses the response as json, then runs _check_response and _add_jikan_metadata"""
+        raise NotImplementedError
 
     def _get_url(
         self, endpoint: str, id: int, extension: Optional[str], page: Optional[int]

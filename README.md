@@ -14,6 +14,11 @@ limit itself, so use it as responsibly as you would use the API primitively and
 remember that Jikan API has limitations, check out [this section](https://jikan.docs.apiary.io/#introduction/information/rate-limiting)
 of documentation in order to see to what extent the API is limited or throttled.
 
+In addition to the typical response from the API, each response contains two additional fields:
+
+* `jikan_url`: The URL that was requested; for example: `https://api.jikan.moe/v3/anime/1`.
+* `headers`: The response headers from Jikan, detailed [here](https://jikan.docs.apiary.io/#introduction/information/caching).
+
 ## Installation
 ```shell
 $ pip install git+git://github.com/AWConant/jikanpy.git

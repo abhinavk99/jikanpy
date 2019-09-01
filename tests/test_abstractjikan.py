@@ -15,6 +15,11 @@ def test_get_creator_url_type_failure(abstract_jikan):
         abstract_jikan._get_creator_url("x", 1, 1)
 
 
+def test_wrap_response_not_implemented(abstract_jikan):
+    with pytest.raises(NotImplementedError):
+        abstract_jikan._wrap_response(None, None)
+
+
 def test_get_not_implemented(abstract_jikan):
     with pytest.raises(NotImplementedError):
         abstract_jikan._get(None, None, None)

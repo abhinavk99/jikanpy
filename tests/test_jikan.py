@@ -27,6 +27,21 @@ def jikan():
     return Jikan()
 
 
+@vcr.use_cassette("tests/vcr_cassettes/wrap-response.yaml")
+def test_wrap_response(header_keys, jikan):
+    anime_info = jikan.anime(MUSHISHI_ID)
+    mushishi_url = jikan._get_url("anime", MUSHISHI_ID, extension=None, page=None)
+
+    assert isinstance(anime_info, dict)
+    assert "jikan_url" in anime_info
+    assert "headers" in anime_info
+    assert isinstance(anime_info["headers"], dict)
+    assert mushishi_url == anime_info["jikan_url"]
+    # Test against headers mentioned in documentation
+    # https://jikan.docs.apiary.io/#introduction/information/caching
+    assert header_keys.issubset(anime_info["headers"].keys())
+
+
 @vcr.use_cassette("tests/vcr_cassettes/anime-success.yaml")
 def test_anime_success(anime_keys, jikan):
     anime_info = jikan.anime(MUSHISHI_ID)
@@ -438,4 +453,4 @@ def test_user_list_failure(jikan):
 
 def test_empty_response_json(jikan, response_mock):
     with pytest.raises(APIException):
-        jikan._check_response(response_mock)
+        jikan._wrap_response(response_mock, url="")
