@@ -122,23 +122,16 @@ requests = jikan.meta(request='requests', type='anime', period='today')
 status = jikan.meta(request='status', type='anime', period='today')
 ```
 
-If you're running an instance of [jikan-rest](https://github.com/jikan-me/jikan-rest) on your system, and want to use that instead of [api.jikan.moe](https://jikan.moe/), you can pass that to Jikan:
-
-```python
-from jikanpy import Jikan
-jikan = Jikan("http://localhost:8000/v3/")
-```
-
 ## Async Usage
 ```python
+import asyncio
 from jikanpy import AioJikan
 
 loop = asyncio.get_event_loop()
 
-aio_jikan = AioJikan(loop=loop)
-
-
 async def main(loop):
+    aio_jikan = AioJikan(loop=loop)
+
     mushishi = await aio_jikan.anime(457)
     fma = await aio_jikan.manga(25)
     ginko = await aio_jikan.character(425)
@@ -158,6 +151,65 @@ async def main(loop):
     # Close the connection to Jikan API
     await aio_jikan.close()
 
+
+loop.run_until_complete(main(loop))
+```
+
+## Overriding default settings in Jikan and AioJikan with constructor arguments
+
+If you're running an instance of [jikan-rest](https://github.com/jikan-me/jikan-rest) on your system, and want to use that instead of [api.jikan.moe](https://jikan.moe/), you can pass that to Jikan:
+
+```python
+from jikanpy import Jikan
+jikan = Jikan(selected_base='http://localhost:8000/v3/')
+```
+
+You can also choose whether or not to use the HTTPS version of the [api.jikan.moe](https://jikan.moe/) URL or not,
+which defaults to True.
+
+```python
+from jikanpy import Jikan
+jikan_1 = Jikan()               # HTTPS
+jikan_2 = Jikan(use_ssl=True)   # HTTPS
+jikan_3 = Jikan(use_ssl=False)  # HTTP
+```
+
+If you want to use your own Requests session, you can do that too.
+
+```python
+import requests
+from jikanpy import Jikan
+
+session = requests.Session()
+# Set custom persistent headers that will be used with all HTTP requests with your session
+session.headers.update({'x-test': 'true'})
+
+jikan = Jikan(session=session)
+```
+
+You can use any or all of these constructor arguments when creating an instance of Jikan.
+
+AioJikan also has `selected_base`, `use_ssl`, and `session` (although AioJikan uses AioHTTP session, not Requests),
+but also has `loop`, to provide your own asynchronous event loop.
+
+```python
+import aiohttp
+import asyncio
+
+from jikanpy import AioJikan
+
+loop = asyncio.get_event_loop()
+
+async def main(loop):
+    # Construct AioJikan with own base URL and custom AioHTTP session with custom persistent headers and event loop
+    session = aiohttp.ClientSession(loop=loop, headers={'x-test': 'true'})
+    aio_jikan_1 = AioJikan(selected_base='http://localhost:8000/v3/', session=session)
+
+    # Construct AioJikan with jikan.moe HTTP URL and event loop that will be used in internal AioHTTP session
+    aio_jikan_2 = AioJikan(use_ssl=False, loop=loop)
+
+    await aio_jikan_1.close()
+    await aio_jikan_2.close()
 
 loop.run_until_complete(main(loop))
 ```

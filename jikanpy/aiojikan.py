@@ -1,5 +1,5 @@
 import json
-from typing import Optional, Dict, Any, Mapping, Union
+from typing import Optional, Dict, Mapping, Union
 
 import aiohttp
 import asyncio
@@ -14,8 +14,8 @@ class AioJikan(AbstractJikan):
         self,
         selected_base: Optional[str] = None,
         use_ssl: bool = True,
-        session: Optional[Any] = None,
-        loop: Optional[Any] = None,
+        session: Optional[aiohttp.ClientSession] = None,
+        loop: Optional[asyncio.AbstractEventLoop] = None,
     ) -> None:
         super().__init__(selected_base=selected_base, use_ssl=use_ssl)
         self.loop = asyncio.get_event_loop() if loop is None else loop
