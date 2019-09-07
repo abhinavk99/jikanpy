@@ -1,5 +1,12 @@
 # Changelog for Jikanpy
 
+## [3.3.0] - 2019-09-07
+### Added
+- Ability to pass in own Requests session to Jikan in constructor
+
+### Fixed
+- Made type hints for session and loop in constructors more accurate
+
 ## [3.2.0] - 2019-09-07
 ### Added
 - Jikan URL and response headers to Jikanpy response
