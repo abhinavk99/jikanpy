@@ -208,6 +208,9 @@ async def main(loop):
     # Construct AioJikan with jikan.moe HTTP URL and event loop that will be used in internal AioHTTP session
     aio_jikan_2 = AioJikan(use_ssl=False, loop=loop)
 
+    await aio_jikan_1.close()
+    await aio_jikan_2.close()
+
 loop.run_until_complete(main(loop))
 ```
 
