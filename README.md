@@ -29,6 +29,15 @@ $ pip install git+git://github.com/AWConant/jikanpy.git
 from jikanpy import Jikan
 jikan = Jikan()
 
+# provide your own base API URL, whether to use HTTPS (defaults to True),
+# and/or your own Python Requests session
+import requests
+session = requests.Session()
+second_jikan = Jikan(selected_base='https://yourapi.com/', use_ssl=True, session=session)
+
+# set persistent headers that will be used with all HTTP requests with your session
+session.headers.update({'x-test': 'true'})
+
 # json of all anime info specified by Jikan docs
 mushishi = jikan.anime(457)
 
@@ -126,7 +135,7 @@ If you're running an instance of [jikan-rest](https://github.com/jikan-me/jikan-
 
 ```python
 from jikanpy import Jikan
-jikan = Jikan("http://localhost:8000/v3/")
+jikan = Jikan(selected_base='http://localhost:8000/v3/')
 ```
 
 ## Async Usage
@@ -135,10 +144,18 @@ from jikanpy import AioJikan
 
 loop = asyncio.get_event_loop()
 
-aio_jikan = AioJikan(loop=loop)
-
-
 async def main(loop):
+    aio_jikan = AioJikan(loop=loop)
+
+    # provide your own base API URL, whether to use HTTPS (defaults to True),
+    # and/or your own Python Requests session
+    import aiohttp
+    session = aiohttp.ClientSession(loop=loop)
+    second_aio_jikan = AioJikan(selected_base='https://yourapi.com/', use_ssl=True, session=session, loop=loop)
+
+    # create aiohttp session with persistent headers
+    headers_session = aiohttp.ClientSession(loop=loop, headers={'x-test': 'true'})
+
     mushishi = await aio_jikan.anime(457)
     fma = await aio_jikan.manga(25)
     ginko = await aio_jikan.character(425)
