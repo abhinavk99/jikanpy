@@ -1,5 +1,13 @@
 # Changelog for Jikanpy
 
+## [3.2.0] - 2019-09-07
+### Added
+- Jikan URL and response headers to Jikanpy response
+
+### Fixed
+- Error handling when type or period argument is None for meta method
+- Bug in which letter argument for search method didn't allow the character .
+
 ## [3.1.2] - 2019-07-23
 ### Added
 - This changelog
