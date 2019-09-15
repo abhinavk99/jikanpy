@@ -1,5 +1,9 @@
 # Changelog for Jikanpy
 
+## [3.4.0] - 2019-09-15
+### Added
+- Added Jikanpy to PyPI
+
 ## [3.3.0] - 2019-09-07
 ### Added
 - Ability to pass in own Requests session to Jikan in constructor

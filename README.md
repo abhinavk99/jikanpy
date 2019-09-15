@@ -21,7 +21,7 @@ In addition to the typical response from the API, each response contains two add
 
 ## Installation
 ```shell
-$ pip install git+git://github.com/AWConant/jikanpy.git
+$ pip install jikanpy
 ```
 
 ## Usage
