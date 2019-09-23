@@ -4,6 +4,7 @@ Jikanpy
 [![Travis (.org)](https://img.shields.io/travis/AWConant/jikanpy.svg?style=flat-square)](https://travis-ci.org/AWConant/jikanpy)
 [![Codecov](https://img.shields.io/codecov/c/github/AWConant/jikanpy.svg?style=flat-square)](https://codecov.io/gh/AWConant/jikanpy/)
 [![pypi Version](https://img.shields.io/pypi/v/jikanpy.svg?style=flat-square)](https://pypi.org/project/jikanpy/)
+[![PyPi downloads](https://img.shields.io/pypi/dm/jikanpy?style=flat-square)](https://pypi.org/project/jikanpy/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/ambv/black)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
