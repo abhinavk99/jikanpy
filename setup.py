@@ -6,8 +6,9 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="jikanpy",
-    version="3.4.0",
+    version="3.4.1",
     description="Python wrapper for the Jikan API",
+    license="MIT",
     long_description=README,
     long_description_content_type="text/markdown",
     author="Andrew Conant, Abhinav Kasamsetty",
@@ -20,6 +21,8 @@ setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
+        "License :: OSI Approved :: MIT License",
     ],
     zip_safe=False,
+    python_requires=">=3.6",
 )
