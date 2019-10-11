@@ -368,7 +368,7 @@ class AbstractJikan(ABC):
         search_type -- where to search (anime, manga, person, character)
         query -- query to search for
         page -- page number of the results (default None)
-        parameters - dictionary containing key,value pairs for ?key=value in url query
+        parameters -- dictionary containing key,value pairs for ?key=value in url query
         """
         raise NotImplementedError
 
@@ -470,6 +470,7 @@ class AbstractJikan(ABC):
         request -- type of data to get (profile, history, friends, animelist, mangalist)
         argument -- data for history (anime, manga), page number for friends, type of list
         page -- page number for animelist and mangalist
+        parameters -- dictionary containing key,value pairs for ?key=value in url query
         """
         raise NotImplementedError
 
@@ -488,5 +489,6 @@ class AbstractJikan(ABC):
         request -- requests (requests, status)
         type -- type to get info on, possible values in docs
         period -- time period (today, weekly, monthly)
+        offset -- 1,000 requests are shown per page, offset used to show more
         """
         raise NotImplementedError

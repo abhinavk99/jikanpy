@@ -1,5 +1,9 @@
 # Changelog for Jikanpy
 
+## [3.4.1] - 2019-10-02
+### Added
+- Added MIT license to Jikanpy
+
 ## [3.4.0] - 2019-09-15
 ### Added
 - Added Jikanpy to PyPI
