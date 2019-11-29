@@ -15,6 +15,7 @@ EXTENSIONS: Dict[str, Union[str, Tuple[str, ...]]] = {
         "reviews",
         "recommendations",
         "userupdates",
+        'forum/episodes'
     ),
     "manga": (
         "characters",
