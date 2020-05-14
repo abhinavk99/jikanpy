@@ -25,8 +25,8 @@ jobs:
         - codecov
         - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
         - chmod +x send.sh
-        - ./send.sh success $PASS_WEBHOOK_URL
+        - ./send.sh success $WEBHOOK_URL_PASS
       after failure:
         - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
         - chmod +x send.sh
-        - ./send.sh failure $FAIL_WEBHOOK_URL
+        - ./send.sh failure $WEBHOOK_URL_FAIL
