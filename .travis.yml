@@ -11,22 +11,20 @@ jobs:
       script: python -m pytest
     - stage: Testing with Python 3.7
       python: '3.7'
-      sudo: required
       dist: xenial
       install:
         - pip install -r requirements-dev.txt
         - pip install -e .
-        - pip install pytest-cov codecov
+        - pip install pytest-cov
       script:
-        - python -m pytest
+        - pytest --cov jikanpy tests/
         - mypy jikanpy
       after_success:
-        - pytest --cov jikanpy tests/
-        - codecov
+        - bash <(curl -s https://codecov.io/bash)
         - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
         - chmod +x send.sh
         - ./send.sh success $WEBHOOK_URL_PASS
-      after failure:
+      after_failure:
         - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
         - chmod +x send.sh
         - ./send.sh failure $WEBHOOK_URL_FAIL
