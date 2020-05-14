@@ -3,23 +3,30 @@ cache: pip
 
 jobs:
   include:
-  - stage: Testing with Python 3.6
-    python: '3.6'
-    install:
-      - pip install -r requirements-dev.txt
-      - pip install -e .
-    script: python -m pytest
-  - stage: Testing with Python 3.7
-    python: '3.7'
-    sudo: required
-    dist: xenial
-    install:
-      - pip install -r requirements-dev.txt
-      - pip install -e .
-      - pip install pytest-cov codecov
-    script:
-      - python -m pytest
-      - mypy jikanpy
-    after_success:
-     - pytest --cov jikanpy tests/
-     - codecov
+    - stage: Testing with Python 3.6
+      python: '3.6'
+      install:
+        - pip install -r requirements-dev.txt
+        - pip install -e .
+      script: python -m pytest
+    - stage: Testing with Python 3.7
+      python: '3.7'
+      sudo: required
+      dist: xenial
+      install:
+        - pip install -r requirements-dev.txt
+        - pip install -e .
+        - pip install pytest-cov codecov
+      script:
+        - python -m pytest
+        - mypy jikanpy
+      after_success:
+        - pytest --cov jikanpy tests/
+        - codecov
+        - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
+        - chmod +x send.sh
+        - ./send.sh success $PASS_WEBHOOK_URL
+      after failure:
+        - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
+        - chmod +x send.sh
+        - ./send.sh failure $FAIL_WEBHOOK_URL

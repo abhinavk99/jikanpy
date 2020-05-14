@@ -1,8 +1,7 @@
-Jikanpy
-=======
+# Jikanpy
 
-[![Travis (.org)](https://img.shields.io/travis/AWConant/jikanpy.svg?style=flat-square)](https://travis-ci.org/AWConant/jikanpy)
-[![Codecov](https://img.shields.io/codecov/c/github/AWConant/jikanpy.svg?style=flat-square)](https://codecov.io/gh/AWConant/jikanpy/)
+[![Travis (.org)](https://img.shields.io/travis/AWConant/jikanpy.svg?style=flat-square)](https://travis-ci.org/abhinavk99/jikanpy)
+[![Codecov](https://img.shields.io/codecov/c/github/AWConant/jikanpy.svg?style=flat-square)](https://codecov.io/gh/abhinavk99/jikanpy/)
 [![pypi Version](https://img.shields.io/pypi/v/jikanpy.svg?style=flat-square)](https://pypi.org/project/jikanpy/)
 [![PyPi downloads](https://img.shields.io/pypi/dm/jikanpy?style=flat-square)](https://pypi.org/project/jikanpy/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/ambv/black)
@@ -19,15 +18,17 @@ of documentation in order to see to what extent the API is limited or throttled.
 
 In addition to the typical response from the API, each response contains two additional fields:
 
-* `jikan_url`: The URL that was requested; for example: `https://api.jikan.moe/v3/anime/1`.
-* `headers`: The response headers from Jikan, detailed [here](https://jikan.docs.apiary.io/#introduction/information/caching).
+- `jikan_url`: The URL that was requested; for example: `https://api.jikan.moe/v3/anime/1`.
+- `headers`: The response headers from Jikan, detailed [here](https://jikan.docs.apiary.io/#introduction/information/caching).
 
 ## Installation
+
 ```shell
 $ pip install jikanpy
 ```
 
 ## Usage
+
 ```python
 from jikanpy import Jikan
 jikan = Jikan()
@@ -126,6 +127,7 @@ status = jikan.meta(request='status', type='anime', period='today')
 ```
 
 ## Async Usage
+
 ```python
 import asyncio
 from jikanpy import AioJikan
@@ -218,6 +220,7 @@ loop.run_until_complete(main(loop))
 ```
 
 ## Testing
+
 ```shell
 # In root of repository
 $ pytest
