@@ -11,10 +11,10 @@ setup(
     license="MIT",
     long_description=README,
     long_description_content_type="text/markdown",
-    author="Andrew Conant, Abhinav Kasamsetty",
+    author="Abhinav Kasamsetty",
     package_data={"jikanpy": ["py.typed"]},
     packages=["jikanpy"],
-    url="https://github.com/AWConant/jikanpy",
+    url="https://github.com/abhinavk99/jikanpy",
     install_requires=["requests", "aiohttp"],
     keywords=["jikan", "jikanpy", "api", "myanimelist"],
     classifiers=[
