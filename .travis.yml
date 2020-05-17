@@ -3,15 +3,20 @@ cache: pip
 
 jobs:
   include:
-    - stage: Testing with Python 3.6
+    - stage: Testing
       python: '3.6'
       install:
         - pip install -r requirements-dev.txt
         - pip install -e .
-      script: python -m pytest
-    - stage: Testing with Python 3.7
+      script: pytest
+    - stage: Testing
       python: '3.7'
-      dist: xenial
+      install:
+        - pip install -r requirements-dev.txt
+        - pip install -e .
+      script: pytest
+    - stage: Testing
+      python: '3.8'
       install:
         - pip install -r requirements-dev.txt
         - pip install -e .
