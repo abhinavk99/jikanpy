@@ -197,8 +197,8 @@ from jikanpy import AioJikan
 async def main():
     # Construct AioJikan with own base URL and custom AioHTTP session with custom persistent headers
     session = aiohttp.ClientSession(loop=loop, headers={'x-test': 'true'})
-    async with AioJikan(selected_base='http://localhost:8000/v3/', session=session) as aio_jikan:
-        pass
+    aio_jikan = AioJikan(selected_base='http://localhost:8000/v3/', session=session)
+    await session.close()
 
 asyncio.run(main())
 ```
