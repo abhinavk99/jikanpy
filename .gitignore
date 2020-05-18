@@ -1,5 +1,6 @@
 .vscode/
 .pytest_cache/
+manual_testing.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

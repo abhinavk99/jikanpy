@@ -16,6 +16,9 @@ limit itself, so use it as responsibly as you would use the API primitively and
 remember that Jikan API has limitations, check out [this section](https://jikan.docs.apiary.io/#introduction/information/rate-limiting)
 of documentation in order to see to what extent the API is limited or throttled.
 
+You can use either Jikan or AioJikan depending on whether you want a synchronous wrapper class or an
+asynchronous wrapper class respectively. More usage details are below.
+
 In addition to the typical response from the API, each response contains two additional fields:
 
 - `jikan_url`: The URL that was requested; for example: `https://api.jikan.moe/v3/anime/1`.
@@ -132,32 +135,31 @@ status = jikan.meta(request='status', type='anime', period='today')
 import asyncio
 from jikanpy import AioJikan
 
-loop = asyncio.get_event_loop()
+async def main():
+    async with AioJikan() as aio_jikan:
+        mushishi = await aio_jikan.anime(457)
+        fma = await aio_jikan.manga(25)
+        ginko = await aio_jikan.character(425)
+        kana_hanazawa = await aio_jikan.person(185)
+        naruto = await aio_jikan.search(search_type='anime', query='naruto')
+        winter_2018 = await aio_jikan.season(year=2018, season='winter')
+        archive = await aio_jikan.season_archive()
+        later = await aio_jikan.season_later()
+        monday = await aio_jikan.schedule(day='monday')
+        top_anime = await aio_jikan.top(type='anime')
+        meta = await aio_jikan.meta(request='requests', type='anime', period='today')
+        action = await aio_jikan.genre(type='anime', genre_id=1)
+        deen = await aio_jikan.producer(producer_id=37)
+        jump = await aio_jikan.magazine(magazine_id=83)
+        nekomata1037 = await aio_jikan.user(username='Nekomata1037')
+        fantasy_anime_league = await aio_jikan.club(379)
 
-async def main(loop):
-    aio_jikan = AioJikan(loop=loop)
-
+    # You can also construct AioJikan like below, but make sure to close the object
+    aio_jikan_2 = AioJikan()
     mushishi = await aio_jikan.anime(457)
-    fma = await aio_jikan.manga(25)
-    ginko = await aio_jikan.character(425)
-    kana_hanazawa = await aio_jikan.person(185)
-    naruto = await aio_jikan.search(search_type='anime', query='naruto')
-    winter_2018 = await aio_jikan.season(year=2018, season='winter')
-    archive = await aio_jikan.season_archive()
-    later = await aio_jikan.season_later()
-    monday = await aio_jikan.schedule(day='monday')
-    top_anime = await aio_jikan.top(type='anime')
-    meta = await aio_jikan.meta(request='requests', type='anime', period='today')
-    action = await aio_jikan.genre(type='anime', genre_id=1)
-    deen = await aio_jikan.producer(producer_id=37)
-    jump = await aio_jikan.magazine(magazine_id=83)
-    nekomata1037 = await aio_jikan.user(username='Nekomata1037')
-    fantasy_anime_league = await aio_jikan.club(379)
-    # Close the connection to Jikan API
-    await aio_jikan.close()
+    await aio_jikan_2.close()
 
-
-loop.run_until_complete(main(loop))
+asyncio.run(main())
 ```
 
 ## Overriding default settings in Jikan and AioJikan with constructor arguments
@@ -184,8 +186,7 @@ jikan = Jikan(session=session)
 
 You can use any or all of these constructor arguments when creating an instance of Jikan.
 
-AioJikan also has `selected_base` and `session` (although AioJikan uses AioHTTP session, not Requests),
-but also has `loop`, to provide your own asynchronous event loop.
+AioJikan also has `selected_base` and `session` (although AioJikan uses AioHTTP session, not Requests).
 
 ```python
 import aiohttp
@@ -193,20 +194,13 @@ import asyncio
 
 from jikanpy import AioJikan
 
-loop = asyncio.get_event_loop()
-
-async def main(loop):
-    # Construct AioJikan with own base URL and custom AioHTTP session with custom persistent headers and event loop
+async def main():
+    # Construct AioJikan with own base URL and custom AioHTTP session with custom persistent headers
     session = aiohttp.ClientSession(loop=loop, headers={'x-test': 'true'})
-    aio_jikan_1 = AioJikan(selected_base='http://localhost:8000/v3/', session=session)
+    async with AioJikan(selected_base='http://localhost:8000/v3/', session=session) as aio_jikan:
+        pass
 
-    # Construct AioJikan with event loop that will be used in internal AioHTTP session
-    aio_jikan_2 = AioJikan(loop=loop)
-
-    await aio_jikan_1.close()
-    await aio_jikan_2.close()
-
-loop.run_until_complete(main(loop))
+asyncio.run(main())
 ```
 
 ## Testing

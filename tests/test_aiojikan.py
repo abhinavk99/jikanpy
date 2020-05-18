@@ -25,8 +25,8 @@ pytestmark = pytest.mark.asyncio
 
 
 @pytest.fixture
-def aio_jikan(event_loop):
-    return AioJikan(loop=event_loop)
+def aio_jikan():
+    return AioJikan()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-wrap-response.yaml")
@@ -63,6 +63,7 @@ async def test_anime_episodes_success(anime_episodes_keys, episode_keys, aio_jik
     for episode in anime_episodes_info["episodes"]:
         assert episode_keys.issubset(episode.keys())
     assert anime_episodes_keys.issubset(anime_episodes_info.keys())
+    await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-manga-success.yaml")
