@@ -1,18 +1,12 @@
 import pytest
 
 from jikanpy.abstractjikan import AbstractJikan
-from jikanpy import ClientException
 
 
 @pytest.fixture
 def abstract_jikan():
     AbstractJikan.__abstractmethods__ = set()
     return AbstractJikan()
-
-
-def test_get_creator_url_type_failure(abstract_jikan):
-    with pytest.raises(ClientException):
-        abstract_jikan._get_creator_url("x", 1, 1)
 
 
 def test_wrap_response_not_implemented(abstract_jikan):
