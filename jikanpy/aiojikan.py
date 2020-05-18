@@ -1,10 +1,13 @@
 import json
-from typing import Optional, Dict, Mapping, Union
+from typing import Optional, Dict, Mapping, Union, Any, TypeVar
 
 import aiohttp
 import asyncio
 
 from jikanpy.abstractjikan import AbstractJikan
+
+# Bind type variable to AioJikan so that it can be used in type hints
+T = TypeVar("T", bound="AioJikan")
 
 
 class AioJikan(AbstractJikan):
@@ -14,13 +17,18 @@ class AioJikan(AbstractJikan):
         self,
         selected_base: Optional[str] = None,
         session: Optional[aiohttp.ClientSession] = None,
-        loop: Optional[asyncio.AbstractEventLoop] = None,
     ) -> None:
         super().__init__(selected_base=selected_base)
-        self.loop = asyncio.get_event_loop() if loop is None else loop
-        self.session = (
-            aiohttp.ClientSession(loop=self.loop) if session is None else session
-        )
+        self.session = aiohttp.ClientSession() if session is None else session
+
+    async def __aenter__(self: T) -> T:
+        return self
+
+    async def __aexit__(self, *excinfo: Any) -> None:
+        await self.close()
+
+    async def close(self) -> None:
+        await self.session.close()
 
     async def _wrap_response(  # type: ignore
         self,
@@ -130,6 +138,3 @@ class AioJikan(AbstractJikan):
         return await self._wrap_response(
             response, url, request=request, type=type, period=period
         )
-
-    async def close(self) -> None:
-        await self.session.close()
