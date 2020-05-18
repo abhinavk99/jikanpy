@@ -169,16 +169,6 @@ from jikanpy import Jikan
 jikan = Jikan(selected_base='http://localhost:8000/v3/')
 ```
 
-You can also choose whether or not to use the HTTPS version of the [api.jikan.moe](https://jikan.moe/) URL or not,
-which defaults to True.
-
-```python
-from jikanpy import Jikan
-jikan_1 = Jikan()               # HTTPS
-jikan_2 = Jikan(use_ssl=True)   # HTTPS
-jikan_3 = Jikan(use_ssl=False)  # HTTP
-```
-
 If you want to use your own Requests session, you can do that too.
 
 ```python
@@ -194,7 +184,7 @@ jikan = Jikan(session=session)
 
 You can use any or all of these constructor arguments when creating an instance of Jikan.
 
-AioJikan also has `selected_base`, `use_ssl`, and `session` (although AioJikan uses AioHTTP session, not Requests),
+AioJikan also has `selected_base` and `session` (although AioJikan uses AioHTTP session, not Requests),
 but also has `loop`, to provide your own asynchronous event loop.
 
 ```python
@@ -210,8 +200,8 @@ async def main(loop):
     session = aiohttp.ClientSession(loop=loop, headers={'x-test': 'true'})
     aio_jikan_1 = AioJikan(selected_base='http://localhost:8000/v3/', session=session)
 
-    # Construct AioJikan with jikan.moe HTTP URL and event loop that will be used in internal AioHTTP session
-    aio_jikan_2 = AioJikan(use_ssl=False, loop=loop)
+    # Construct AioJikan with event loop that will be used in internal AioHTTP session
+    aio_jikan_2 = AioJikan(loop=loop)
 
     await aio_jikan_1.close()
     await aio_jikan_2.close()

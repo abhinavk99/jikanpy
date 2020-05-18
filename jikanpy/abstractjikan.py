@@ -21,10 +21,6 @@ from jikanpy.parameters import (
 )
 
 
-BASE_URL: str = "http://api.jikan.moe/v3/"
-BASE_URL_SSL: str = "https://api.jikan.moe/v3/"
-
-
 class AbstractJikan(ABC):
     """
     Base class for wrapper for calls to the jikan.moe unofficial MyAnimeList API.
@@ -34,12 +30,8 @@ class AbstractJikan(ABC):
     so use it responsibly.
     """
 
-    def __init__(
-        self, selected_base: Optional[str] = None, use_ssl: bool = True
-    ) -> None:
+    def __init__(self, selected_base: str = "https://api.jikan.moe/v3/") -> None:
         super().__init__()
-        if selected_base is None:
-            selected_base = BASE_URL_SSL if use_ssl else BASE_URL
         self.base: str = selected_base + "{endpoint}/{id}"
         self.search_base: str = selected_base + "search/{search_type}?q={query}"
         self.season_base: str = selected_base + "season/{year}/{season}"

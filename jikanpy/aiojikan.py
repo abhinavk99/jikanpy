@@ -13,11 +13,10 @@ class AioJikan(AbstractJikan):
     def __init__(
         self,
         selected_base: Optional[str] = None,
-        use_ssl: bool = True,
         session: Optional[aiohttp.ClientSession] = None,
         loop: Optional[asyncio.AbstractEventLoop] = None,
     ) -> None:
-        super().__init__(selected_base=selected_base, use_ssl=use_ssl)
+        super().__init__(selected_base=selected_base)
         self.loop = asyncio.get_event_loop() if loop is None else loop
         self.session = (
             aiohttp.ClientSession(loop=self.loop) if session is None else session

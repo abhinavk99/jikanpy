@@ -12,10 +12,9 @@ class Jikan(AbstractJikan):
     def __init__(
         self,
         selected_base: Optional[str] = None,
-        use_ssl: bool = True,
         session: Optional[requests.Session] = None,
     ) -> None:
-        super().__init__(selected_base=selected_base, use_ssl=use_ssl)
+        super().__init__(selected_base=selected_base)
         self.session = requests.Session() if session is None else session
 
     def _wrap_response(
