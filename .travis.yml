@@ -26,10 +26,10 @@ jobs:
         - mypy jikanpy
       after_success:
         - bash <(curl -s https://codecov.io/bash)
-        - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
-        - chmod +x send.sh
-        - ./send.sh success $WEBHOOK_URL_PASS
+        - test $TRAVIS_BRANCH = "master" && wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
+        - test $TRAVIS_BRANCH = "master" && chmod +x send.sh
+        - test $TRAVIS_BRANCH = "master" && ./send.sh success $WEBHOOK_URL_PASS
       after_failure:
-        - wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
-        - chmod +x send.sh
-        - ./send.sh failure $WEBHOOK_URL_FAIL
+        - test $TRAVIS_BRANCH = "master" && wget https://raw.githubusercontent.com/k3rn31p4nic/travis-ci-discord-webhook/master/send.sh
+        - test $TRAVIS_BRANCH = "master" && chmod +x send.sh
+        - test $TRAVIS_BRANCH = "master" && ./send.sh failure $WEBHOOK_URL_FAIL
