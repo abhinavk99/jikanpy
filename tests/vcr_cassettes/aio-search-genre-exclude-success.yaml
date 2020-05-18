@@ -3,68 +3,36 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.jikan.moe/v3/search/anime?q=naruto&genre=1,2&genre_exclude=1&limit=2&
+    uri: https://api.jikan.moe/v3/search/anime?q=naruto&genre=1,2&genre_exclude=True&limit=2
   response:
     body:
-      string: '{"request_hash":"request:search:ed14b1064b979873c63ad6606c090d7d75432fc8","request_cached":false,"request_cache_expiry":432000,"results":[{"mal_id":20,"url":"https:\/\/myanimelist.net\/anime\/20\/Naruto","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17405.jpg?s=59241469eb470604a792add6fbe7cce6","title":"Naruto","airing":false,"synopsis":"Moments
-        prior to Naruto Uzumaki''s birth, a huge demon known as the Kyuubi, the Nine-Tailed
-        Fox, attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In
-        order to put an end to the Kyuubi''...","type":"TV","episodes":220,"score":7.92,"start_date":"2002-10-03T00:00:00+00:00","end_date":"2007-02-08T00:00:00+00:00","members":1182859,"rated":"PG-13"},{"mal_id":1735,"url":"https:\/\/myanimelist.net\/anime\/1735\/Naruto__Shippuuden","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/17407.jpg?s=2bf24a22a339223dcadb1cdfc3307b61","title":"Naruto:
-        Shippuuden","airing":false,"synopsis":"It has been two and a half years since
-        Naruto Uzumaki left Konohagakure, the Hidden Leaf Village, for intense training
-        following events which fueled his desire to be stronger. Now Akatsuki, the
-        myster...","type":"TV","episodes":500,"score":8.2,"start_date":"2007-02-15T00:00:00+00:00","end_date":"2017-03-23T00:00:00+00:00","members":973457,"rated":"PG-13"}],"last_page":1}'
+      string: '{"request_hash":"request:search:5c58cb9e7ce03abae06951e735f9fe6dbf66de4f","request_cached":false,"request_cache_expiry":432000,"results":[{"mal_id":4134,"url":"https:\/\/myanimelist.net\/anime\/4134\/Naruto__Shippuuden_-_Shippuu_Konoha_Gakuen_Den","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/51895.jpg?s=50657ee2b01cf3e31680314e7fe65981","title":"Naruto:
+        Shippuuden - Shippuu! \"Konoha Gakuen\" Den","airing":false,"synopsis":"Naruto
+        school special. Naruto is a new cool student and when he meets Sasuke they
+        start fighting.","type":"Special","episodes":1,"score":7.17,"start_date":"2008-02-06T00:00:00+00:00","end_date":"2008-02-06T00:00:00+00:00","members":47155,"rated":"PG-13"},{"mal_id":838,"url":"https:\/\/myanimelist.net\/anime\/838\/Narutaru__Mukuro_Naru_Hoshi_Tama_Taru_Ko","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/12023.jpg?s=8dfc94b92c45916f8de54db0ca5054de","title":"Narutaru:
+        Mukuro Naru Hoshi Tama Taru Ko","airing":false,"synopsis":"During her summer
+        holiday at her grandparents house Tamai Shiina, a young and cheerful schoolgirl,
+        meets a strange looking creature. They befriend each other and Shiina names
+        it \"Hoshimaru: The Round...","type":"TV","episodes":13,"score":6.1,"start_date":"2003-07-07T00:00:00+00:00","end_date":"2003-09-29T00:00:00+00:00","members":26978,"rated":"R"}],"last_page":3}'
     headers:
-      ? !!python/object/new:multidict._istr.istr
-      - Access-Control-Allow-Methods
-      : '*'
-      ? !!python/object/new:multidict._istr.istr
-      - Access-Control-Allow-Origin
-      : '*'
-      ? !!python/object/new:multidict._istr.istr
-      - Cache-Control
-      : private, must-revalidate
-      ? !!python/object/new:multidict._istr.istr
-      - Connection
-      : keep-alive
-      ? !!python/object/new:multidict._istr.istr
-      - Content-Encoding
-      : gzip
-      ? !!python/object/new:multidict._istr.istr
-      - Content-Length
-      : '680'
-      ? !!python/object/new:multidict._istr.istr
-      - Content-Type
-      : application/json
-      ? !!python/object/new:multidict._istr.istr
-      - Date
-      : Tue, 23 Jul 2019 03:06:58 GMT
-      ? !!python/object/new:multidict._istr.istr
-      - Etag
-      : '"4c8b239b5936ddcf8be5a067b1ce4273"'
-      ? !!python/object/new:multidict._istr.istr
-      - Expires
-      : Sun, 28 Jul 2019 03:06:58 GMT
-      ? !!python/object/new:multidict._istr.istr
-      - Server
-      : nginx/1.14.0 (Ubuntu)
-      ? !!python/object/new:multidict._istr.istr
-      - Vary
-      : Accept-Encoding
+      Access-Control-Allow-Methods: '*'
+      Access-Control-Allow-Origin: '*'
+      Cache-Control: private, must-revalidate
+      Connection: keep-alive
+      Content-Encoding: gzip
+      Content-Length: '693'
+      Content-Type: application/json
+      Date: Mon, 18 May 2020 03:15:43 GMT
+      ETag: '"45adb99ff0733980863e5c6bae4ed9b3"'
+      Expires: Sat, 23 May 2020 03:15:43 GMT
+      Server: Jikan/3.4
+      Vary: Accept-Encoding
       X-Cache-Status: MISS
-      X-Powered-By: lolis
       X-Request-Cache-Ttl: '432000'
       X-Request-Cached: ''
-      X-Request-Hash: request:search:ed14b1064b979873c63ad6606c090d7d75432fc8
+      X-Request-Hash: request:search:5c58cb9e7ce03abae06951e735f9fe6dbf66de4f
     status:
       code: 200
       message: OK
-    url: !!python/object/new:yarl.URL
-      state: !!python/tuple
-      - !!python/object/new:urllib.parse.SplitResult
-        - https
-        - api.jikan.moe
-        - /v3/search/anime
-        - q=naruto&genre=1,2&genre_exclude=1&limit=2&
-        - ''
+    url: https://api.jikan.moe/v3/search/anime?q=naruto&genre=1,2&genre_exclude=True&limit=2
 version: 1

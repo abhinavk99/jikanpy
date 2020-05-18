@@ -2,7 +2,7 @@ import pytest
 import vcr
 
 from jikanpy import AioJikan
-from jikanpy import APIException, ClientException, DeprecatedEndpoint
+from jikanpy import APIException, DeprecatedEndpoint
 
 from constants import (
     MUSHISHI_ID,
@@ -107,7 +107,7 @@ async def test_search_success(search_keys, aio_jikan):
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-search-genre-exclude-success.yaml")
-async def test_search_genre_exclude_boolean_success(search_keys, aio_jikan):
+async def test_search_genre_exclude_success(search_keys, aio_jikan):
     search_info = await aio_jikan.search(
         search_type="anime",
         query="naruto",
@@ -116,8 +116,13 @@ async def test_search_genre_exclude_boolean_success(search_keys, aio_jikan):
 
     assert isinstance(search_info, dict)
     assert search_keys.issubset(search_info.keys())
-    assert search_info["results"][0]["title"] == "Naruto"
-    assert search_info["results"][1]["title"] == "Naruto: Shippuuden"
+    assert (
+        search_info["results"][0]["title"]
+        == 'Naruto: Shippuuden - Shippuu! "Konoha Gakuen" Den'
+    )
+    assert (
+        search_info["results"][1]["title"] == "Narutaru: Mukuro Naru Hoshi Tama Taru Ko"
+    )
     await aio_jikan.close()
 
 
@@ -264,13 +269,6 @@ async def test_anime_failure(aio_jikan):
     await aio_jikan.close()
 
 
-@vcr.use_cassette("tests/vcr_cassettes/aio-anime-extension-failure.yaml")
-async def test_anime_extension_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.anime(MUSHISHI_ID, extension="x")
-    await aio_jikan.close()
-
-
 @vcr.use_cassette("tests/vcr_cassettes/aio-manga-failure.yaml")
 async def test_manga_failure(aio_jikan):
     with pytest.raises(APIException):
@@ -285,51 +283,6 @@ async def test_character_failure(aio_jikan):
     await aio_jikan.close()
 
 
-@vcr.use_cassette("tests/vcr_cassettes/aio-search-key-failure.yaml")
-async def test_search_key_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.search(
-            search_type="anime", query="naruto", parameters={"x": "tv"}
-        )
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-search-value-failure.yaml")
-async def test_search_value_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.search(
-            search_type="anime", query="naruto", parameters={"type": "x"}
-        )
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-search-rated-failure.yaml")
-async def test_search_rated_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.search(
-            search_type="manga", query="naruto", parameters={"rated": "pg13"}
-        )
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-search-char-param-failure.yaml")
-async def test_search_char_param_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.search(
-            search_type="character", query="naruto", parameters={"limit": 10}
-        )
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-search-genre-failure.yaml")
-async def test_search_genre_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.search(
-            search_type="anime", query="naruto", parameters={"genre": "1,100"}
-        )
-    await aio_jikan.close()
-
-
 @vcr.use_cassette("tests/vcr_cassettes/aio-season-failure.yaml")
 async def test_season_failure(aio_jikan):
     with pytest.raises(APIException):
@@ -337,173 +290,10 @@ async def test_season_failure(aio_jikan):
     await aio_jikan.close()
 
 
-@vcr.use_cassette("tests/vcr_cassettes/aio-season-client-failure.yaml")
-async def test_season_client_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.season(year="x", season=SEASON)
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-schedule-failure.yaml")
-async def test_schedule_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.schedule(day="x")
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-top-failure.yaml")
-async def test_top_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.top(type="x")
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-top-subtype-failure.yaml")
-async def test_top_subtype_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.top(type=TYPE, page=1, subtype="x")
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-top-page-failure.yaml")
-async def test_top_page_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.top(type=TYPE, subtype=SUBTYPE)
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-genre-failure.yaml")
-async def test_genre_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.genre(type="x", genre_id=GENRE)
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-genre-id-failure.yaml")
-async def test_genre_id_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.genre(type=TYPE, genre_id="x")
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-producer-failure.yaml")
-async def test_producer_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.producer(producer_id="producer")
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-magazine-failure.yaml")
-async def test_magazine_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.magazine(magazine_id="magazine")
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-user-failure.yaml")
-async def test_user_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.user(username="user", request="friends", argument="x")
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-user-request-failure.yaml")
-async def test_user_request_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.user(username="user", request="x", argument="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-user-profile-failure.yaml")
-async def test_user_profile_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.user(username="user", request="profile", argument="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-user-animelist-failure.yaml")
-async def test_user_animelist_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.user(username="user", request="animelist", page=1)
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-user-page-failure.yaml")
-async def test_user_page_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.user(
-            username="user", request="animelist", page="x", argument="all"
-        )
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-user-history-failure.yaml")
-async def test_user_history_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.user(username="user", request="history", argument="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-user-animelist-argument-failure.yaml")
-async def test_user_animelist_argument_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.user(username="user", request="animelist", argument="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-user-mangalist-argument-failure.yaml")
-async def test_user_mangalist_argument_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.user(username="user", request="mangalist", argument="x")
-
-
 @vcr.use_cassette("tests/vcr_cassettes/aio-club-failure.yaml")
 async def test_club_failure(aio_jikan):
     with pytest.raises(APIException):
         await aio_jikan.club(-1)
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-meta-failure.yaml")
-async def test_meta_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.meta(request="x", type="x", period="x")
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-meta-type-failure.yaml")
-async def test_meta_type_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.meta(request="requests", type="x", period="x")
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-meta-period-failure.yaml")
-async def test_meta_period_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.meta(request="requests", type="anime", period="x")
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-meta-args-missing.yaml")
-async def test_meta_args_missing(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.meta(request="requests")
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-meta-type-missing.yaml")
-async def test_meta_type_missing(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.meta(request="requests", period="day")
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-meta-period-missing.yaml")
-async def test_meta_period_missing(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.meta(request="requests", type="anime")
-    await aio_jikan.close()
-
-
-@vcr.use_cassette("tests/vcr_cassettes/aio-meta-status-failure.yaml")
-async def test_meta_status_failure(aio_jikan):
-    with pytest.raises(ClientException):
-        await aio_jikan.meta(request="status", type="x", period="x")
     await aio_jikan.close()
 
 

@@ -2,7 +2,7 @@ import pytest
 import vcr
 
 from jikanpy import Jikan
-from jikanpy import APIException, ClientException, DeprecatedEndpoint
+from jikanpy import APIException, DeprecatedEndpoint
 
 from constants import (
     MUSHISHI_ID,
@@ -100,7 +100,7 @@ def test_search_success(search_keys, jikan):
 
 
 @vcr.use_cassette("tests/vcr_cassettes/search-genre-exclude-success.yaml")
-def test_search_genre_exclude_boolean_success(search_keys, jikan):
+def test_search_genre_exclude_success(search_keys, jikan):
     search_info = jikan.search(
         search_type="anime",
         query="naruto",
@@ -109,8 +109,13 @@ def test_search_genre_exclude_boolean_success(search_keys, jikan):
 
     assert isinstance(search_info, dict)
     assert search_keys.issubset(search_info.keys())
-    assert search_info["results"][0]["title"] == "Naruto"
-    assert search_info["results"][1]["title"] == "Naruto: Shippuuden"
+    assert (
+        search_info["results"][0]["title"]
+        == 'Naruto: Shippuuden - Shippuu! "Konoha Gakuen" Den'
+    )
+    assert (
+        search_info["results"][1]["title"] == "Narutaru: Mukuro Naru Hoshi Tama Taru Ko"
+    )
 
 
 @vcr.use_cassette("tests/vcr_cassettes/season-success.yaml")
@@ -241,12 +246,6 @@ def test_anime_failure(jikan):
         jikan.anime(-1)
 
 
-@vcr.use_cassette("tests/vcr_cassettes/anime-extension-failure.yaml")
-def test_anime_extension_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.anime(MUSHISHI_ID, extension="x")
-
-
 @vcr.use_cassette("tests/vcr_cassettes/manga-failure.yaml")
 def test_manga_failure(jikan):
     with pytest.raises(APIException):
@@ -259,190 +258,16 @@ def test_character_failure(jikan):
         jikan.character(-1)
 
 
-@vcr.use_cassette("tests/vcr_cassettes/search-key-failure.yaml")
-def test_search_key_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.search(search_type="anime", query="naruto", parameters={"x": "tv"})
-
-
-@vcr.use_cassette("tests/vcr_cassettes/search-value-failure.yaml")
-def test_search_value_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.search(search_type="anime", query="naruto", parameters={"type": "x"})
-
-
-@vcr.use_cassette("tests/vcr_cassettes/search-rated-failure.yaml")
-def test_search_rated_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.search(search_type="manga", query="naruto", parameters={"rated": "pg13"})
-
-
-@vcr.use_cassette("tests/vcr_cassettes/search-char-param-failure.yaml")
-def test_search_char_param_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.search(search_type="character", query="naruto", parameters={"limit": 10})
-
-
-@vcr.use_cassette("tests/vcr_cassettes/search-genre-failure.yaml")
-def test_search_genre_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.search(search_type="anime", query="naruto", parameters={"genre": "1,100"})
-
-
 @vcr.use_cassette("tests/vcr_cassettes/season-failure.yaml")
 def test_season_failure(jikan):
     with pytest.raises(APIException):
         jikan.season(year=-1, season=SEASON)
 
 
-@vcr.use_cassette("tests/vcr_cassettes/season-client-failure.yaml")
-def test_season_client_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.season(year="x", season=SEASON)
-
-
-@vcr.use_cassette("tests/vcr_cassettes/schedule-failure.yaml")
-def test_schedule_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.schedule(day="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/top-failure.yaml")
-def test_top_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.top(type="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/top-subtype-failure.yaml")
-def test_top_subtype_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.top(type=TYPE, page=1, subtype="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/top-page-failure.yaml")
-def test_top_page_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.top(type=TYPE, subtype=SUBTYPE)
-
-
-@vcr.use_cassette("tests/vcr_cassettes/genre-failure.yaml")
-def test_genre_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.genre(type="x", genre_id=GENRE)
-
-
-@vcr.use_cassette("tests/vcr_cassettes/genre-id-failure.yaml")
-def test_genre_id_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.genre(type=TYPE, genre_id="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/producer-failure.yaml")
-def test_producer_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.producer(producer_id="producer")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/magazine-failure.yaml")
-def test_magazine_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.magazine(magazine_id="magazine")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/user-failure.yaml")
-def test_user_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.user(username="user", request="friends", argument="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/user-request-failure.yaml")
-def test_user_request_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.user(username="user", request="x", argument="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/user-profile-failure.yaml")
-def test_user_profile_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.user(username="user", request="profile", argument="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/user-animelist-failure.yaml")
-def test_user_animelist_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.user(username="user", request="animelist", page=1)
-
-
-@vcr.use_cassette("tests/vcr_cassettes/user-page-failure.yaml")
-def test_user_page_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.user(username="user", request="animelist", page="x", argument="all")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/user-history-failure.yaml")
-def test_user_history_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.user(username="user", request="history", argument="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/user-animelist-argument-failure.yaml")
-def test_user_animelist_argument_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.user(username="user", request="animelist", argument="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/user-mangalist-argument-failure.yaml")
-def test_user_mangalist_argument_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.user(username="user", request="mangalist", argument="x")
-
-
 @vcr.use_cassette("tests/vcr_cassettes/club-failure.yaml")
 def test_club_failure(jikan):
     with pytest.raises(APIException):
         jikan.club(-1)
-
-
-@vcr.use_cassette("tests/vcr_cassettes/meta-failure.yaml")
-def test_meta_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.meta(request="x", type="x", period="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/meta-type-failure.yaml")
-def test_meta_type_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.meta(request="requests", type="x", period="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/meta-period-failure.yaml")
-def test_meta_period_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.meta(request="requests", type="anime", period="x")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/meta-args-missing.yaml")
-def test_meta_args_missing(jikan):
-    with pytest.raises(ClientException):
-        jikan.meta(request="requests")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/meta-type-missing.yaml")
-def test_meta_type_missing(jikan):
-    with pytest.raises(ClientException):
-        jikan.meta(request="requests", period="day")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/meta-period-missing.yaml")
-def test_meta_period_missing(jikan):
-    with pytest.raises(ClientException):
-        jikan.meta(request="requests", type="anime")
-
-
-@vcr.use_cassette("tests/vcr_cassettes/meta-status-failure.yaml")
-def test_meta_status_failure(jikan):
-    with pytest.raises(ClientException):
-        jikan.meta(request="status", type="x", period="x")
 
 
 @vcr.use_cassette("tests/vcr_cassettes/user-list-failure.yaml")

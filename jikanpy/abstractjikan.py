@@ -4,21 +4,7 @@ from typing import Mapping, Dict, Optional, Union, Any
 import requests
 import aiohttp
 
-from jikanpy.exceptions import APIException, ClientException, DeprecatedEndpoint
-from jikanpy.parameters import (
-    EXTENSIONS,
-    SEARCH_PARAMS,
-    SEASONS,
-    DAYS,
-    SUBTYPES,
-    GENRE_TYPES,
-    CREATOR_TYPES,
-    USER_REQUESTS,
-    USER_HISTORY_ARGUMENTS,
-    USER_ANIMELIST_ARGUMENTS,
-    USER_MANGALIST_ARGUMENTS,
-    META,
-)
+from jikanpy.exceptions import APIException, DeprecatedEndpoint
 
 
 class AbstractJikan(ABC):
@@ -30,8 +16,12 @@ class AbstractJikan(ABC):
     so use it responsibly.
     """
 
-    def __init__(self, selected_base: str = "https://api.jikan.moe/v3/") -> None:
+    BASE_URL = "https://api.jikan.moe/v3/"
+
+    def __init__(self, selected_base: str = None) -> None:
         super().__init__()
+        if selected_base is None:
+            selected_base = self.BASE_URL
         self.base: str = selected_base + "{endpoint}/{id}"
         self.search_base: str = selected_base + "search/{search_type}?q={query}"
         self.season_base: str = selected_base + "season/{year}/{season}"
@@ -87,18 +77,20 @@ class AbstractJikan(ABC):
         """Parses the response as json, then runs _check_response and _add_jikan_metadata"""
         raise NotImplementedError
 
+    def _get_url_with_page(
+        self, url: str, page: Optional[int], delimiter: str = "/"
+    ) -> str:
+        """Add page to URL if it exists"""
+        return url if page is None else f"{url}{delimiter}{page}"
+
     def _get_url(
         self, endpoint: str, id: int, extension: Optional[str], page: Optional[int]
     ) -> str:
         """Create URL for anime, manga, character, person, and club endpoints"""
         url: str = self.base.format(endpoint=endpoint, id=id)
-        # Check if extension is valid
         if extension is not None:
-            if extension not in EXTENSIONS[endpoint]:
-                raise ClientException("The extension is not valid")
-            url += "/" + extension
-            if extension in ("episodes", "reviews", "userupdates", "members"):
-                url = self._add_page_to_url(url, page)
+            url += f"/{extension}"
+            url = self._get_url_with_page(url, page)
         return url
 
     def _get_search_url(
@@ -110,79 +102,33 @@ class AbstractJikan(ABC):
     ) -> str:
         """Create URL for search endpoint"""
         url: str = self.search_base.format(search_type=search_type, query=query)
-        url = self._add_page_to_url(url, page, delimiter="&page=")
+        url = self._get_url_with_page(url, page, delimiter="&page=")
         if parameters is not None:
-            if search_type.lower() not in ("anime", "manga"):
-                raise ClientException("Parameters are only for anime or manga search")
-            url += "&"
-            for key, value in parameters.items():
-                if key == "rated" and search_type.lower() == "manga":
-                    raise ClientException("rated parameter only for anime search")
-                if key in ("type", "status", "rated", "genre", "order_by"):
-                    values = SEARCH_PARAMS[search_type][key]  # type: ignore
-                elif key == "genre_exclude" and isinstance(value, bool):
-                    value = int(value)
-                else:
-                    values = SEARCH_PARAMS.get(key)
-                if values is None:
-                    raise ClientException("The key is not valid")
-                elif key == "genre" and isinstance(value, str):
-                    genres = value.split(",")
-                    for genre in genres:
-                        if int(genre) not in values:
-                            raise ClientException("Invalid genre passed in")
-                elif isinstance(values, tuple) and value not in values:
-                    raise ClientException("The value is not valid")
-                url += key + "=" + str(value) + "&"
+            url += "".join(f"&{k}={v}" for k, v in parameters.items())
         return url
 
     def _get_season_url(self, year: int, season: str) -> str:
         """Create URL for season endpoint"""
-        url: str = self.season_base.format(year=year, season=season.lower())
-        # Check if year and season are valid
-        if not (isinstance(year, int) and season.lower() in SEASONS):
-            raise ClientException("Season or year is not valid")
-        return url
+        return self.season_base.format(year=year, season=season.lower())
 
     def _get_schedule_url(self, day: Optional[str]) -> str:
         """Create URL for schedule endpoint"""
-        url: str = self.schedule_base
-        # Check if day is valid
-        if day is not None:
-            if day.lower() not in DAYS:
-                raise ClientException("Day is not valid")
-            else:
-                url += "/" + day.lower()
-        return url
+        return (
+            self.schedule_base if day is None else f"{self.schedule_base}/{day.lower()}"
+        )
 
     def _get_top_url(
         self, type: str, page: Optional[int], subtype: Optional[str]
     ) -> str:
         """Create URL for top endpoint"""
         url: str = self.top_base.format(type=type.lower())
-        # Check if type is valid
-        if type.lower() not in SUBTYPES:
-            raise ClientException("Type must be anime or manga")
-        url = self._add_page_to_url(url, page)
-        # Check if subtype is valid
-        if subtype is not None:
-            if page is None:
-                raise ClientException("Page is required if subtype is given")
-            if subtype.lower() not in SUBTYPES[type.lower()]:
-                raise ClientException("Subtype is not valid for " + type)
-            url += "/" + subtype.lower()
-        return url
+        url = self._get_url_with_page(url, page)
+        return url if subtype is None else f"{url}/{subtype.lower()}"
 
     def _get_genre_url(self, type: str, genre_id: int, page: Optional[int]) -> str:
         """Create URL for genre endpoint"""
         url: str = self.genre_base.format(type=type.lower(), genre_id=genre_id)
-        # Check if type is valid
-        if type.lower() not in GENRE_TYPES:
-            raise ClientException("Type must be anime or manga")
-        if not isinstance(genre_id, int):
-            raise ClientException("ID must be an integer")
-        url = self._add_page_to_url(url, page)
-        return url
+        return self._get_url_with_page(url, page)
 
     def _get_creator_url(
         self, creator_type: str, creator_id: int, page: Optional[int]
@@ -191,13 +137,7 @@ class AbstractJikan(ABC):
         url: str = self.creator_base.format(
             creator_type=creator_type.lower(), creator_id=creator_id
         )
-        # Check if type is valid
-        if creator_type.lower() not in CREATOR_TYPES:
-            raise ClientException("Type must be producer or magazine")
-        if not isinstance(creator_id, int):
-            raise ClientException("ID must be an integer")
-        url = self._add_page_to_url(url, page)
-        return url
+        return self._get_url_with_page(url, page)
 
     def _get_user_url(
         self,
@@ -210,53 +150,13 @@ class AbstractJikan(ABC):
         """Create URL for user endpoint"""
         url: str = self.user_base.format(username=username.lower())
         if request is not None:
-            if request not in USER_REQUESTS:
-                raise ClientException("Invalid request for user endpoint")
-            url += "/" + request
-            if request.lower() == "profile" and argument is not None:
-                raise ClientException("No argument should be given for profile request")
-            if (
-                request.lower() in ("animelist", "mangalist")
-                and argument is None
-                and page is not None
-            ):
-                raise ClientException(
-                    "You must provide an argument if you provide a page for animelist or mangalist"
-                )
+            url += f"/{request}"
             if argument is not None:
-                if request.lower() == "friends" and not isinstance(argument, int):
-                    raise ClientException(
-                        "Argument for friends request must be a page number integer"
-                    )
-                if isinstance(argument, str):
-                    if (
-                        request.lower() == "history"
-                        and argument.lower() not in USER_HISTORY_ARGUMENTS
-                    ):
-                        raise ClientException(
-                            "Argument for history request should be anime or manga"
-                        )
-                    if (
-                        request.lower() == "animelist"
-                        and argument.lower() not in USER_ANIMELIST_ARGUMENTS
-                    ):
-                        raise ClientException(
-                            "Argument for animelist request is not valid"
-                        )
-                    if (
-                        request.lower() == "mangalist"
-                        and argument.lower() not in USER_MANGALIST_ARGUMENTS
-                    ):
-                        raise ClientException(
-                            "Argument for mangalist request is not valid"
-                        )
-                url += "/" + str(argument)
-                if request.lower() in ("animelist", "mangalist"):
-                    url = self._add_page_to_url(url, page)
+                url += f"/{argument}"
+                url = self._get_url_with_page(url, page)
         if parameters is not None:
-            url += "?"
-            for key, value in parameters.items():
-                url += key + "=" + str(value) + "&"
+            param_str = "&".join(f"{k}={v}" for k, v in parameters.items())
+            url += f"?{param_str}"
         return url
 
     def _get_meta_url(
@@ -268,33 +168,8 @@ class AbstractJikan(ABC):
     ) -> str:
         """Create URL for meta endpoint"""
         url: str = self.meta_base.format(request=request)
-        # Check if request is valid
-        if request not in META["request"]:
-            raise ClientException("Request must be 'requests' or 'status'")
-        if request == "status" and (
-            type is not None or period is not None or offset is not None
-        ):
-            raise ClientException("There is no type or period for the 'status' request")
-        if request == "requests":
-            if type is None or period is None:
-                raise ClientException("'requests' requires 'type' and 'period'")
-            if type not in META["type"]:
-                raise ClientException("Type is not valid")
-            if period not in META["period"]:
-                raise ClientException("Period must be 'today', 'weekly', or 'monthly'")
-            url += "/" + type + "/" + period
-            url = self._add_page_to_url(url, offset)
-        return url
-
-    def _add_page_to_url(
-        self, url: str, page: Optional[int], delimiter: str = "/"
-    ) -> str:
-        """Add page to URL if it exists and is valid"""
-        if page is not None:
-            if not isinstance(page, int):
-                raise ClientException("The parameter 'page' must be an integer")
-            url += delimiter + str(page)
-        return url
+        url += f"/{type}/{period}"
+        return self._get_url_with_page(url, offset)
 
     @abstractmethod
     def _get(

@@ -9,24 +9,25 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.21.0
+      - python-requests/2.23.0
     method: GET
-    uri: https://api.jikan.moe/v3/search/anime?q=naruto&genre=1,2&genre_exclude=1&limit=2&
+    uri: https://api.jikan.moe/v3/search/anime?q=naruto&genre=1,2&genre_exclude=True&limit=2
   response:
     body:
       string: !!binary |
-        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
+        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
+        E644611MBQAA
     headers:
       Access-Control-Allow-Methods:
       - '*'
@@ -39,29 +40,27 @@ interactions:
       Content-Encoding:
       - gzip
       Content-Length:
-      - '684'
+      - '693'
       Content-Type:
       - application/json
       Date:
-      - Tue, 23 Jul 2019 03:06:59 GMT
+      - Mon, 18 May 2020 03:15:49 GMT
       ETag:
-      - '"4c8b239b5936ddcf8be5a067b1ce4273"'
+      - '"45adb99ff0733980863e5c6bae4ed9b3"'
       Expires:
-      - Sun, 28 Jul 2019 03:06:58 GMT
+      - Sat, 23 May 2020 03:15:49 GMT
       Server:
-      - nginx/1.14.0 (Ubuntu)
+      - Jikan/3.4
       Vary:
       - Accept-Encoding
       X-Cache-Status:
       - MISS
-      X-Powered-By:
-      - lolis
       X-Request-Cache-Ttl:
-      - '431999'
+      - '432000'
       X-Request-Cached:
-      - '1'
+      - ''
       X-Request-Hash:
-      - request:search:ed14b1064b979873c63ad6606c090d7d75432fc8
+      - request:search:5c58cb9e7ce03abae06951e735f9fe6dbf66de4f
     status:
       code: 200
       message: OK
