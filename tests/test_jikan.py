@@ -1,8 +1,7 @@
 import pytest
 import vcr
 
-from jikanpy import Jikan
-from jikanpy import APIException, DeprecatedEndpoint
+from jikanpy import Jikan, utils, APIException, DeprecatedEndpoint
 
 from constants import (
     MUSHISHI_ID,
@@ -30,7 +29,7 @@ def jikan():
 @vcr.use_cassette("tests/vcr_cassettes/wrap-response.yaml")
 def test_wrap_response(header_keys, jikan):
     anime_info = jikan.anime(MUSHISHI_ID)
-    mushishi_url = jikan._get_url("anime", MUSHISHI_ID, extension=None, page=None)
+    mushishi_url = utils.get_main_url("anime", MUSHISHI_ID, extension=None, page=None)
 
     assert isinstance(anime_info, dict)
     assert "jikan_url" in anime_info
