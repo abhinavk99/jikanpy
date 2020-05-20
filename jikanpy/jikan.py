@@ -119,15 +119,18 @@ class Jikan:
         """
         return self._get("person", id, extension)
 
-    def club(self, id: int, extension: Optional[str] = None) -> Dict:
+    def club(
+        self, id: int, extension: Optional[str] = None, page: Optional[int] = None
+    ) -> Dict:
         """
         Gets information on a club
 
         Keyword Arguments:
         id -- id of the club to get the information of
         extension -- special information to get, possible values in the docs
+        page -- page number of the results (default None)
         """
-        return self._get("club", id, extension)
+        return self._get("club", id, extension, page)
 
     def user_list(self, id: int, extension: Optional[str] = None) -> Dict:
         """Gets user list information"""

@@ -142,15 +142,18 @@ class AioJikan:
         """
         return await self._get("person", id, extension)
 
-    async def club(self, id: int, extension: Optional[str] = None) -> Dict:
+    async def club(
+        self, id: int, extension: Optional[str] = None, page: Optional[int] = None
+    ) -> Dict:
         """
         Gets information on a club
 
         Keyword Arguments:
         id -- id of the club to get the information of
         extension -- special information to get, possible values in the docs
+        page -- page number of the results (default None)
         """
-        return await self._get("club", id, extension)
+        return await self._get("club", id, extension, page)
 
     async def user_list(self, id: int, extension: Optional[str] = None) -> Dict:
         """Gets user list information"""
