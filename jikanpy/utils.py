@@ -114,7 +114,7 @@ def get_user_url(
         url += f"/{request}"
         if argument is not None:
             url += f"/{argument}"
-            url = get_url_with_page(url, page)
+        url = get_url_with_page(url, page)
     if parameters is not None:
         param_str = "&".join(f"{k}={v}" for k, v in parameters.items())
         url += f"?{param_str}"
