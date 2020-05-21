@@ -402,13 +402,13 @@ class Jikan:
             Dict: Dictionary containing information about the user.
 
         Examples:
-            >>> jikan.user(username='Nekomata1037')
-            >>> jikan.user(username='Nekomata1037', request='profile')
-            >>> jikan.user(username='Nekomata1037', request='friends', page=2)
-            >>> jikan.user(username='Nekomata1037', request='history')
-            >>> jikan.user(username='Nekomata1037', request='animelist', argument='ptw')
-            >>> jikan.user(username='Nekomata1037', request='animelist', parameters={'page': 2})
-            >>> jikan.user(username='Nekomata1037', request='animelist', argument='ptw', parameters={'page': 2})
+            >>> jikan.user(username='Xinil')
+            >>> jikan.user(username='Xinil', request='profile')
+            >>> jikan.user(username='Xinil', request='friends', page=2)
+            >>> jikan.user(username='Xinil', request='history')
+            >>> jikan.user(username='Xinil', request='animelist', argument='ptw')
+            >>> jikan.user(username='Xinil', request='animelist', parameters={'page': 2})
+            >>> jikan.user(username='Xinil', request='animelist', argument='ptw', parameters={'page': 2})
         """
         url = utils.get_user_url(username, request, argument, page, parameters)
         response = self.session.get(url)

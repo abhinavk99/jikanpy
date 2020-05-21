@@ -442,13 +442,13 @@ class AioJikan:
             Dict: Dictionary containing information about the user.
 
         Examples:
-            >>> await jikan.user(username='Nekomata1037')
-            >>> await jikan.user(username='Nekomata1037', request='profile')
-            >>> await jikan.user(username='Nekomata1037', request='friends', page=2)
-            >>> await jikan.user(username='Nekomata1037', request='history')
-            >>> await jikan.user(username='Nekomata1037', request='animelist', argument='ptw')
-            >>> await jikan.user(username='Nekomata1037', request='animelist', parameters={'page': 2})
-            >>> await jikan.user(username='Nekomata1037', request='animelist', argument='ptw', parameters={'page': 2})
+            >>> await jikan.user(username='Xinil')
+            >>> await jikan.user(username='Xinil', request='profile')
+            >>> await jikan.user(username='Xinil', request='friends', page=2)
+            >>> await jikan.user(username='Xinil', request='history')
+            >>> await jikan.user(username='Xinil', request='animelist', argument='ptw')
+            >>> await jikan.user(username='Xinil', request='animelist', parameters={'page': 2})
+            >>> await jikan.user(username='Xinil', request='animelist', argument='ptw', parameters={'page': 2})
         """
         session = await self._get_session()
         url = utils.get_user_url(username, request, argument, page, parameters)
