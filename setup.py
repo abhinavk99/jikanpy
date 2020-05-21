@@ -3,13 +3,14 @@ from setuptools import setup
 
 HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
+CHANGELOG = (HERE / "CHANGELOG.md").read_text()
 
 setup(
     name="jikanpy",
     version="4.0.0",
     description="Python wrapper for the Jikan API",
     license="MIT",
-    long_description=README,
+    long_description=README + CHANGELOG,
     long_description_content_type="text/markdown",
     author="Abhinav Kasamsetty",
     package_data={"jikanpy": ["py.typed"]},

@@ -17,6 +17,7 @@
 ### Removed
 
 - Removed checking arguments and throwing ClientException from invalid arguments
+- Removed ClientException because it isn't being raised anymore
 - Removed use_ssl argument so only HTTPS Jikan URL is available
 - Removed loop argument for AioJikan
 - Unnecessary type hints for variable instantiations
