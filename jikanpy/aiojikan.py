@@ -1,3 +1,8 @@
+"""AioJikan
+====================================
+aiojikan.py contains the AioJikan class, an asynchronous Jikan wrapper.
+"""
+
 import asyncio
 import json
 from typing import Optional, Dict, Mapping, Union, Any, TypeVar
@@ -12,12 +17,31 @@ T = TypeVar("T", bound="AioJikan")
 
 
 class AioJikan:
-    """
-    Asynchronous Jikan wrapper for the jikan.moe unofficial MyAnimeList API.
+    """Asynchronous Jikan wrapper for the jikan.moe unofficial MyAnimeList API.
 
     Note that the API has a limit of 30 requests/minute and 2 requests/second;
     this module does not make any effort to prevent abuse of that limit,
     so use it responsibly.
+
+    Usage Example:
+        ::
+
+            import asyncio
+            from jikanpy import AioJikan
+
+            async def main():
+                async with AioJikan() as aio_jikan:
+                    pass
+
+                # You can also construct AioJikan like below, but make sure to close the object
+                aio_jikan_2 = AioJikan()
+                await aio_jikan_2.close()
+
+            asyncio.run(main())
+
+    Attributes:
+        base: The base URL of the Jikan API being accessed.
+        session: The aiohttp session.
     """
 
     def __init__(
@@ -25,12 +49,21 @@ class AioJikan:
         selected_base: Optional[str] = None,
         session: Optional[aiohttp.ClientSession] = None,
     ) -> None:
-        """
-        Constructor for AioJikan object
+        """Constructs the AioJikan object.
 
-        Keyword Arguments:
-        selected_base -- base url of Jikan API (default https://api.jikan.moe/v3)
-        session -- aiohttp session
+        Args:
+            selected_base (str, optional): Base url of Jikan API. Defaults to
+                the official Jikan API URL.
+            session (aiohttp.ClientSession, optional) -- Requests session.
+                Defaults to a new aiohttp session object.
+
+        Returns:
+            AioJikan: Instance of AioJikan.
+
+        Examples:
+            >>> aio_jikan_1 = AioJikan()
+            >>> aio_jikan_2 = AioJikan(selected_base='http://localhost:8000/v3/')
+            >>> aio_jikan_3 = AioJikan(session=aiohttp.ClientSession(headers={'x-test': 'true'}))
         """
         self.base = utils.BASE_URL if selected_base is None else selected_base
         self.session = session
@@ -99,64 +132,105 @@ class AioJikan:
     async def anime(
         self, id: int, extension: Optional[str] = None, page: Optional[int] = None
     ) -> Dict:
-        """
-        Gets information on an anime
+        """Gets information on an anime.
 
-        Keyword Arguments:
-        id -- id of the anime to get the information of
-        extension -- special information to get, possible values in the docs
-        page -- page number of the results (default None)
+        Args:
+            id (:obj:`int`): ID of the anime to get the information of.
+            extension (:obj:`str`, optional): Special information to get of the
+                anime. Possible values are in the Jikan API documentation.
+                Defaults to None.
+            page (:obj:`int`, optional) -- Page number of the results. Defaults
+                to None.
+
+        Returns:
+            Dict: Dictionary containing information about the anime.
+        
+        Examples:
+            >>> await jikan.anime(14719)
+            >>> await jikan.anime(14719, extension='episodes')
+            >>> await jikan.anime(14719, extension='episodes', page=2)
+            >>> await jikan.anime(14719, extension='news')
         """
         return await self._get("anime", id, extension, page)
 
     async def manga(
         self, id: int, extension: Optional[str] = None, page: Optional[int] = None
     ) -> Dict:
-        """
-        Gets information on a manga
+        """Gets information on a manga.
 
-        Keyword Arguments:
-        id -- id of the manga to get the information of
-        extension -- special information to get, possible values in the docs
-        page -- page number of the results (default None)
+        Args:
+            id (:obj:`int`): ID of the manga to get the information of.
+            extension (:obj:`str`, optional): Special information to get of the
+                manga. Possible values are in the Jikan API documentation.
+                Defaults to None.
+            page (:obj:`int`, optional) -- Page number of the results. Defaults
+                to None.
+
+        Returns:
+            Dict: Dictionary containing information about the manga.
+        
+        Examples:
+            >>> await jikan.manga(1630)
         """
         return await self._get("manga", id, extension, page)
 
     async def character(self, id: int, extension: Optional[str] = None) -> Dict:
-        """
-        Gets information on a character
+        """Gets information on a character.
 
-        Keyword Arguments:
-        id -- id of the character to get the information of
-        extension -- special information to get, possible values in the docs
+        Args:
+            id (:obj:`int`): ID of the character to get the information of.
+            extension (:obj:`str`, optional): Special information to get of the
+                character. Possible values are in the Jikan API documentation.
+                Defaults to None.
+
+        Returns:
+            Dict: Dictionary containing information about the character.
+        
+        Examples:
+            >>> await jikan.character(6356)
         """
         return await self._get("character", id, extension)
 
     async def person(self, id: int, extension: Optional[str] = None) -> Dict:
-        """
-        Gets information on a person
+        """Gets information on a person.
 
-        Keyword Arguments:
-        id -- id of the person to get the information of
-        extension -- special information to get, possible values in the docs
+        Args:
+            id (:obj:`int`): ID of the person to get the information of.
+            extension (:obj:`str`, optional): Special information to get of the
+                person. Possible values are in the Jikan API documentation.
+                Defaults to None.
+
+        Returns:
+            Dict: Dictionary containing information about the person.
+        
+        Examples:
+            >>> await jikan.person(2)
         """
         return await self._get("person", id, extension)
 
     async def club(
         self, id: int, extension: Optional[str] = None, page: Optional[int] = None
     ) -> Dict:
-        """
-        Gets information on a club
+        """Gets information on a club.
 
-        Keyword Arguments:
-        id -- id of the club to get the information of
-        extension -- special information to get, possible values in the docs
-        page -- page number of the results (default None)
+        Args:
+            id (:obj:`int`): ID of the club to get the information of.
+            extension (:obj:`str`, optional): Special information to get of the
+                club. Possible values are in the Jikan API documentation.
+                Defaults to None.
+            page (:obj:`int`, optional) -- Page number of the results. Defaults
+                to None.
+
+        Returns:
+            Dict: Dictionary containing information about the club.
+        
+        Examples:
+            >>> await jikan.club(379)
         """
         return await self._get("club", id, extension, page)
 
     async def user_list(self, id: int, extension: Optional[str] = None) -> Dict:
-        """Gets user list information"""
+        """Deprecated: Gets user list information."""
         raise DeprecatedEndpoint("user_list is a deprecated endpoint")
 
     async def search(
@@ -166,14 +240,25 @@ class AioJikan:
         page: Optional[int] = None,
         parameters: Optional[Mapping[str, Optional[Union[int, str, float]]]] = None,
     ) -> Dict:
-        """
-        Searches for a query on MyAnimeList
+        """Searches for a query on MyAnimeList.
 
-        Keyword Arguments:
-        search_type -- where to search (anime, manga, person, character)
-        query -- query to search for
-        page -- page number of the results (default None)
-        parameters -- dictionary containing key,value pairs for ?key=value in url query
+        Args:
+            search_type (:obj:`str`): Where to search. Possible values are
+                anime, manga, person, and character.
+            query (:obj:`str`): Query to search for.
+            page (:obj:`int`, optional): Page number of the results. Defaults to
+                None.
+            parameters (:obj:`dict`, optional): Dictionary containing key,value
+                pairs for ?key=value in url query. Defaults to None.
+
+        Returns:
+            Dict: Dictionary containing search results.
+
+        Examples:
+            >>> await jikan.search('anime', 'Jojo')
+            >>> await jikan.search('anime', 'Jojo', page=2)
+            >>> await jikan.search('anime', 'Jojo', parameters={'type': 'tv'})
+            >>> await jikan.search('anime', 'Jojo', page=2, parameters={'genre': 37, 'type': 'tv'})
         """
         session = await self._get_session()
         url = utils.get_search_url(search_type, query, page, parameters)
@@ -182,12 +267,19 @@ class AioJikan:
         return await self._wrap_response(response, url, **kwargs)
 
     async def season(self, year: int, season: str) -> Dict:
-        """
-        Gets information on anime of the specific season
+        """Gets information on anime of the specific season.
 
-        Keyword Arguments:
-        year -- year to get anime of
-        season -- season to get anime of (winter, spring, summer, fall)
+        Args:
+            year (:obj:`int`): Year to get anime of.
+            season (:obj:`str`): Season to get anime of. Possible values are
+                winter, spring, summer, and fall.
+
+        Returns:
+            Dict: Dictionary containing information on anime of the season.
+
+        Examples:
+            >>> await jikan.season(year=2018, season='winter')
+            >>> await jikan.season(year=2016, season='spring')
         """
         session = await self._get_session()
         url = utils.get_season_url(year, season)
@@ -195,23 +287,44 @@ class AioJikan:
         return await self._wrap_response(response, url, year=year, season=season)
 
     async def season_archive(self) -> Dict:
-        """Gets all the years and their respective seasons from MyAnimeList"""
+        """Gets all the years and their respective seasons from MyAnimeList.
+
+        Returns:
+            Dict: Dictionary containing all the years and seasons.
+
+        Examples:
+            >>> await jikan.season_archive()
+        """
         session = await self._get_session()
         response = await session.get(utils.SEASON_ARCHIVE_URL)
         return await self._wrap_response(response, utils.SEASON_ARCHIVE_URL)
 
     async def season_later(self) -> Dict:
-        """Gets anime that have been announced for upcoming seasons"""
+        """Gets anime that have been announced for upcoming seasons.
+
+        Returns:
+            Dict: Dictionary containing anime in upcoming seasons.
+
+        Examples:
+            >>> await jikan.season_later()
+        """
         session = await self._get_session()
         response = await session.get(utils.SEASON_LATER_URL)
         return await self._wrap_response(response, utils.SEASON_LATER_URL)
 
     async def schedule(self, day: Optional[str] = None) -> Dict:
-        """
-        Gets anime scheduled for the specific day
+        """Gets anime scheduled.
 
-        Keyword Arguments:
-        day -- day to get anime of (default None)
+        Args:
+            day (:obj:`str`, optional): Day of the week to get the scheduled
+                anime. Defaults to None.
+
+        Returns:
+            Dict: Dictionary containing anime scheduled.
+
+        Examples:
+            >>> await jikan.schedule()
+            >>> await jikan.schedule(day='monday')
         """
         session = await self._get_session()
         url = utils.get_schedule_url(day)
@@ -221,13 +334,23 @@ class AioJikan:
     async def top(
         self, type: str, page: Optional[int] = None, subtype: Optional[str] = None
     ) -> Dict:
-        """
-        Gets top items on MyAnimeList
+        """Gets top items on MyAnimeList.
 
-        Keyword Arguments:
-        type -- type to get top items from (anime, manga)
-        page -- page number of the results (default None)
-        subtype -- subtype to get filtered top items, possible values in docs
+        Args:
+            type (:obj:`str`): Type to get top items from. Possible values are
+                anime and manga.
+            page (:obj:`int`, optional): Page number of the results. Defaults to
+                None.
+            subtype (:obj:`str`, optional): Subtype to get filtered top items.
+                Possible values are in the Jikan API documentation.  Defaults to
+                None.
+
+        Returns:
+            Dict: Dictionary containing top items on MyAnimeList.
+
+        Examples:
+            >>> await jikan.top(type='manga')
+            >>> await jikan.top(type='anime', page=2, subtype='upcoming')
         """
         session = await self._get_session()
         url = utils.get_top_url(type, page, subtype)
@@ -235,13 +358,21 @@ class AioJikan:
         return await self._wrap_response(response, url, type=type)
 
     async def genre(self, type: str, genre_id: int, page: Optional[int] = None) -> Dict:
-        """
-        Gets anime or manga by genre
+        """Gets anime or manga by genre.
 
-        Keyword Arguments:
-        type -- type to get items from (anime, manga)
-        genre_id -- genre ID from MyAnimeList
-        page -- page number of the results (default None)
+        Args:
+            type (:obj:`str`): Type to get items from. Possible values are anime
+                and manga.
+            genre_id (:obj:`int`): Genre ID from MyAnimeList.
+            page (:obj:`int`, optional): Page number of the results. Defaults to
+                None.
+
+        Returns:
+            Dict: Dictionary containing anime or manga by genre.
+
+        Examples:
+            >>> await jikan.genre(type='anime', genre_id=1)
+            >>> await jikan.genre(type='manga', genre_id=2)
         """
         session = await self._get_session()
         url = utils.get_genre_url(type, genre_id, page)
@@ -249,22 +380,37 @@ class AioJikan:
         return await self._wrap_response(response, url, id=genre_id, type=type)
 
     async def producer(self, producer_id: int, page: Optional[int] = None) -> Dict:
-        """
-        Gets anime by the producer/studio/licensor
+        """Gets anime by the producer/studio/licensor.
 
-        Keyword Arguments:
-        producer_id -- producer ID from MyAnimeList
-        page -- page number of the results (default None)
+        Args:
+            producer_id (:obj:`int`): Producer ID from MyAnimeList.
+            page (:obj:`int`, optional): Page number of the results. Defaults to
+                None.
+
+        Returns:
+            Dict: Dictionary containing anime by the producer/studio/licensor.
+
+        Examples:
+            >>> await jikan.producer(producer_id=4)
+            >>> await jikan.producer(producer_id=4, page=2)
         """
         return await self._get_creator("producer", producer_id, page)
 
     async def magazine(self, magazine_id: int, page: Optional[int] = None) -> Dict:
-        """
-        Gets manga by the magazine/serializer/publisher
+        """Gets manga by the magazine/serializer/publisher.
 
-        Keyword Arguments:
-        magazine_id -- magazine ID from MyAnimeList
-        page -- page number of the results (default None)
+        Args:
+            magazine_id (:obj:`int`): Magazine ID from MyAnimeList.
+            page (:obj:`int`, optional): Page number of the results. Defaults to
+                None.
+
+        Returns:
+            Dict: Dictionary containing manga by the
+                magazine/serializer/publisher.
+
+        Examples:
+            >>> await jikan.magazine(magazine_id=83)
+            >>> await jikan.magazine(magazine_id=83, page=2)
         """
         return await self._get_creator("magazine", magazine_id, page)
 
@@ -276,15 +422,33 @@ class AioJikan:
         page: Optional[int] = None,
         parameters: Optional[Mapping] = None,
     ) -> Dict:
-        """
-        Gets user data
+        """Gets information about the user.
 
-        Keyword Arguments:
-        username -- MyAnimeList username
-        request -- type of data to get (profile, history, friends, animelist, mangalist)
-        argument -- data for history (anime, manga), page number for friends, type of list
-        page -- page number for animelist and mangalist
-        parameters -- dictionary containing key,value pairs for ?key=value in url query
+        Args:
+            username (:obj:`str`): MyAnimeList username.
+            request (:obj:`str`, optional): Type of data to get. Possible values
+                are profile, history, friends, animelist, and mangalist.
+                Defaults to None.
+            argument (:obj:`str` or :obj:`int`, optional): For history, possible
+                values are anime and manga. For animelist and mangalist,
+                possible values are in the Jikan API documentation.  Defaults to
+                None.
+            page (:obj:`int`, optional): Page number for friends. Defaults to
+                None.
+            parameters (:obj:`dict`, optional): Dictionary containing key,value
+                pairs for ?key=value in url query. Defaults to None.
+
+        Returns:
+            Dict: Dictionary containing information about the user.
+
+        Examples:
+            >>> await jikan.user(username='Nekomata1037')
+            >>> await jikan.user(username='Nekomata1037', request='profile')
+            >>> await jikan.user(username='Nekomata1037', request='friends', page=2)
+            >>> await jikan.user(username='Nekomata1037', request='history')
+            >>> await jikan.user(username='Nekomata1037', request='animelist', argument='ptw')
+            >>> await jikan.user(username='Nekomata1037', request='animelist', parameters={'page': 2})
+            >>> await jikan.user(username='Nekomata1037', request='animelist', argument='ptw', parameters={'page': 2})
         """
         session = await self._get_session()
         url = utils.get_user_url(username, request, argument, page, parameters)
@@ -300,14 +464,27 @@ class AioJikan:
         period: Optional[str] = None,
         offset: Optional[int] = None,
     ) -> Dict:
-        """
-        Gets meta information regarding the Jikan REST API
+        """Gets meta information regarding the Jikan API.
 
-        Keyword Arguments:
-        request -- requests (requests, status)
-        type -- type to get info on, possible values in docs
-        period -- time period (today, weekly, monthly)
-        offset -- 1,000 requests are shown per page, offset used to show more
+        Args:
+            request (:obj:`str`): Type of request. Possible values are requests
+                and status.
+            type (:obj:`str`, optional): Type of information to get for
+                requests. Possible values are in the Jikan API documentation.
+                Defaults to None.
+            period (:obj:`str`, optional): Time period to get for requests.
+                Possible values are today, weekly, and monthly. Defaults to
+                None.
+            offset (:obj:`int`, optional): 1,000 requests are shown per page.
+                Offset is used to show more. Defaults to None.
+
+        Returns:
+            Dict: Dictionary containing meta information.
+
+        Examples:
+            >>> await jikan.meta('requests')
+            >>> await jikan.meta('requests', type='anime', period='today')
+            >>> await jikan.meta('status')
         """
         session = await self._get_session()
         url = utils.get_meta_url(request, type, period, offset)
