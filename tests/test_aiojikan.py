@@ -28,6 +28,11 @@ def aio_jikan():
     return AioJikan()
 
 
+async def test_construct_using_async_with():
+    async with AioJikan() as aio_jikan:
+        assert isinstance(aio_jikan, AioJikan)
+
+
 @vcr.use_cassette("tests/vcr_cassettes/aio-wrap-response.yaml")
 async def test_wrap_response(aio_jikan):
     anime_info = await aio_jikan.anime(MUSHISHI_ID)
