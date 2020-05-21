@@ -36,7 +36,7 @@ $ pip install jikanpy
 ## Usage Examples
 
 Below are some basic examples of how to use Jikan and AioJikan. Please read the
-documentation below to see all the methods and more examples.
+[documentation below](https://github.com/abhinavk99/jikanpy#documentation) to see all the methods and more examples.
 
 ### Usage Examples with Jikan
 
