@@ -1,5 +1,31 @@
 # Changelog for Jikanpy
 
+## [4.0.0] - 2020-05-20
+
+### Added
+
+- Documentation at https://jikanpy.readthedocs.io
+- AioJikan can be constructed using 'async with' technique
+- Optional page argument to club method
+
+### Changed
+
+- AbstractJikan rewritten as utility methods
+- Docstrings rewritten to follow Google style guide
+- Updated all requirements to current versions
+
+### Removed
+
+- Removed checking arguments and throwing ClientException from invalid arguments
+- Removed use_ssl argument so only HTTPS Jikan URL is available
+- Removed loop argument for AioJikan
+- Unnecessary type hints for variable instantiations
+
+### Fixed
+
+- Lazy construct aiohttp session in AioJikan to stop DeprecationWarning
+- Issue where page couldn't be added to user method URL when argument not passed in
+
 ## [3.4.2] - 2019-11-29
 
 ### Added

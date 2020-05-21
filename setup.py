@@ -6,7 +6,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="jikanpy",
-    version="3.4.2",
+    version="4.0.0",
     description="Python wrapper for the Jikan API",
     license="MIT",
     long_description=README,
