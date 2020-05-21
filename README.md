@@ -4,7 +4,7 @@
 [![Codecov](https://img.shields.io/codecov/c/github/abhinavk99/jikanpy.svg?style=flat-square)](https://codecov.io/gh/abhinavk99/jikanpy/)
 [![pypi Version](https://img.shields.io/pypi/v/jikanpy.svg?style=flat-square)](https://pypi.org/project/jikanpy/)
 [![PyPi downloads](https://img.shields.io/pypi/dm/jikanpy?style=flat-square)](https://pypi.org/project/jikanpy/)
-[![Documentation](https://readthedocs.org/projects/pip/badge/?version=latest&style=flat-square)](https://jikanpy.readthedocs.io/en/latest/)
+[![Documentation](https://readthedocs.org/projects/jikanpy/badge/?version=latest&style=flat-square)](https://jikanpy.readthedocs.io/en/latest/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/ambv/black)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
