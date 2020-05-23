@@ -89,7 +89,7 @@ you can pass that to Jikan:
 
 ```python
 from jikanpy import Jikan
-jikan = Jikan(selected_base='http://localhost:8000/v3/')
+jikan = Jikan(selected_base='http://localhost:8000/v3')
 ```
 
 If you want to use your own Requests session, you can do that too.
@@ -120,7 +120,7 @@ from jikanpy import AioJikan
 async def main():
     # Construct AioJikan with own base URL and custom AioHTTP session with custom persistent headers
     session = aiohttp.ClientSession(headers={'x-test': 'true'})
-    aio_jikan = AioJikan(selected_base='http://localhost:8000/v3/', session=session)
+    aio_jikan = AioJikan(selected_base='http://localhost:8000/v3', session=session)
     await session.close()
 
 asyncio.run(main())

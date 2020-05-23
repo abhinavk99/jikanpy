@@ -62,7 +62,7 @@ class AioJikan:
 
         Examples:
             >>> aio_jikan_1 = AioJikan()
-            >>> aio_jikan_2 = AioJikan(selected_base='http://localhost:8000/v3/')
+            >>> aio_jikan_2 = AioJikan(selected_base='http://localhost:8000/v3')
             >>> aio_jikan_3 = AioJikan(session=aiohttp.ClientSession(headers={'x-test': 'true'}))
         """
         self.base = utils.BASE_URL if selected_base is None else selected_base
@@ -114,7 +114,7 @@ class AioJikan:
         anime, manga, character, person, club
         """
         session = await self._get_session()
-        url = utils.get_main_url(endpoint, id, extension, page)
+        url = utils.get_main_url(self.base, endpoint, id, extension, page)
         response: aiohttp.ClientResponse = await session.get(url)
         return await self._wrap_response(response, url, id=id, endpoint=endpoint)
 
@@ -123,7 +123,7 @@ class AioJikan:
     ) -> Dict:
         """Gets the response from Jikan API for producer and magazine"""
         session = await self._get_session()
-        url = utils.get_creator_url(creator_type, creator_id, page)
+        url = utils.get_creator_url(self.base, creator_type, creator_id, page)
         response = await session.get(url)
         return await self._wrap_response(
             response, url, id=creator_id, endpoint=creator_type
@@ -261,7 +261,7 @@ class AioJikan:
             >>> await jikan.search('anime', 'Jojo', page=2, parameters={'genre': 37, 'type': 'tv'})
         """
         session = await self._get_session()
-        url = utils.get_search_url(search_type, query, page, parameters)
+        url = utils.get_search_url(self.base, search_type, query, page, parameters)
         response = await session.get(url)
         kwargs = {"search type": search_type, "query": query}
         return await self._wrap_response(response, url, **kwargs)
@@ -282,7 +282,7 @@ class AioJikan:
             >>> await jikan.season(year=2016, season='spring')
         """
         session = await self._get_session()
-        url = utils.get_season_url(year, season)
+        url = utils.get_season_url(self.base, year, season)
         response = await session.get(url)
         return await self._wrap_response(response, url, year=year, season=season)
 
@@ -295,9 +295,10 @@ class AioJikan:
         Examples:
             >>> await jikan.season_archive()
         """
+        url = utils.get_season_archive_url(self.base)
         session = await self._get_session()
-        response = await session.get(utils.SEASON_ARCHIVE_URL)
-        return await self._wrap_response(response, utils.SEASON_ARCHIVE_URL)
+        response = await session.get(url)
+        return await self._wrap_response(response, url)
 
     async def season_later(self) -> Dict:
         """Gets anime that have been announced for upcoming seasons.
@@ -308,9 +309,10 @@ class AioJikan:
         Examples:
             >>> await jikan.season_later()
         """
+        url = utils.get_season_later_url(self.base)
         session = await self._get_session()
-        response = await session.get(utils.SEASON_LATER_URL)
-        return await self._wrap_response(response, utils.SEASON_LATER_URL)
+        response = await session.get(url)
+        return await self._wrap_response(response, url)
 
     async def schedule(self, day: Optional[str] = None) -> Dict:
         """Gets anime scheduled.
@@ -327,7 +329,7 @@ class AioJikan:
             >>> await jikan.schedule(day='monday')
         """
         session = await self._get_session()
-        url = utils.get_schedule_url(day)
+        url = utils.get_schedule_url(self.base, day)
         response = await session.get(url)
         return await self._wrap_response(response, url, day=day)
 
@@ -353,7 +355,7 @@ class AioJikan:
             >>> await jikan.top(type='anime', page=2, subtype='upcoming')
         """
         session = await self._get_session()
-        url = utils.get_top_url(type, page, subtype)
+        url = utils.get_top_url(self.base, type, page, subtype)
         response = await session.get(url)
         return await self._wrap_response(response, url, type=type)
 
@@ -375,7 +377,7 @@ class AioJikan:
             >>> await jikan.genre(type='manga', genre_id=2)
         """
         session = await self._get_session()
-        url = utils.get_genre_url(type, genre_id, page)
+        url = utils.get_genre_url(self.base, type, genre_id, page)
         response = await session.get(url)
         return await self._wrap_response(response, url, id=genre_id, type=type)
 
@@ -451,7 +453,9 @@ class AioJikan:
             >>> await jikan.user(username='Xinil', request='animelist', argument='ptw', parameters={'page': 2})
         """
         session = await self._get_session()
-        url = utils.get_user_url(username, request, argument, page, parameters)
+        url = utils.get_user_url(
+            self.base, username, request, argument, page, parameters
+        )
         response = await session.get(url)
         return await self._wrap_response(
             response, url, username=username, request=request
@@ -487,7 +491,7 @@ class AioJikan:
             >>> await jikan.meta('status')
         """
         session = await self._get_session()
-        url = utils.get_meta_url(request, type, period, offset)
+        url = utils.get_meta_url(self.base, request, type, period, offset)
         response = await session.get(url)
         return await self._wrap_response(
             response, url, request=request, type=type, period=period

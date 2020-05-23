@@ -36,7 +36,9 @@ async def test_construct_using_async_with():
 @vcr.use_cassette("tests/vcr_cassettes/aio-wrap-response.yaml")
 async def test_wrap_response(aio_jikan):
     anime_info = await aio_jikan.anime(MUSHISHI_ID)
-    mushishi_url = utils.get_main_url("anime", MUSHISHI_ID, extension=None, page=None)
+    mushishi_url = utils.get_main_url(
+        aio_jikan.base, "anime", MUSHISHI_ID, extension=None, page=None
+    )
 
     assert isinstance(anime_info, dict)
     assert "jikan_url" in anime_info
