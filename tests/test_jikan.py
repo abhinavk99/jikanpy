@@ -29,7 +29,9 @@ def jikan():
 @vcr.use_cassette("tests/vcr_cassettes/wrap-response.yaml")
 def test_wrap_response(header_keys, jikan):
     anime_info = jikan.anime(MUSHISHI_ID)
-    mushishi_url = utils.get_main_url("anime", MUSHISHI_ID, extension=None, page=None)
+    mushishi_url = utils.get_main_url(
+        jikan.base, "anime", MUSHISHI_ID, extension=None, page=None
+    )
 
     assert isinstance(anime_info, dict)
     assert "jikan_url" in anime_info
@@ -278,3 +280,11 @@ def test_user_list_failure(jikan):
 def test_empty_response_json(jikan, response_mock):
     with pytest.raises(APIException):
         jikan._wrap_response(response_mock, url="")
+
+
+def test_season_urls(jikan):
+    season_archive_url = utils.get_season_archive_url(jikan.base)
+    season_later_url = utils.get_season_later_url(jikan.base)
+    assert season_archive_url.endswith("season/archive")
+    assert season_later_url.endswith("season/later")
+    assert season_archive_url.startswith(jikan.base)

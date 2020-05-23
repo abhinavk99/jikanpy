@@ -1,5 +1,11 @@
 # Changelog for Jikanpy
 
+## [4.1.0] - 2020-05-23
+
+### Fixed
+
+- Bug where selected_base wasn't being used
+
 ## [4.0.0] - 2020-05-20
 
 ### Added
