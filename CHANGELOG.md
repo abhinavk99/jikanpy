@@ -5,6 +5,7 @@
 ### Fixed
 
 - Bug where selected_base wasn't being used
+- Bug where trailing slash or whitespace in selected_base argument wouldn't work
 
 ## [4.0.0] - 2020-05-20
 

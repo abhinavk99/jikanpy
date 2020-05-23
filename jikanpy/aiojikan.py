@@ -65,7 +65,9 @@ class AioJikan:
             >>> aio_jikan_2 = AioJikan(selected_base='http://localhost:8000/v3')
             >>> aio_jikan_3 = AioJikan(session=aiohttp.ClientSession(headers={'x-test': 'true'}))
         """
-        self.base = utils.BASE_URL if selected_base is None else selected_base
+        self.base = (
+            utils.BASE_URL if selected_base is None else selected_base.rstrip("/ ")
+        )
         self.session = session
 
     async def __aenter__(self: T) -> T:

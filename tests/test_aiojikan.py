@@ -29,8 +29,16 @@ def aio_jikan():
 
 
 async def test_construct_using_async_with():
-    async with AioJikan() as aio_jikan:
-        assert isinstance(aio_jikan, AioJikan)
+    async with AioJikan() as temp_aio_jikan:
+        assert isinstance(temp_aio_jikan, AioJikan)
+
+
+async def test_strip_base_url():
+    async with AioJikan("http://localhost:8000/v3/") as temp_aio_jikan:
+        assert temp_aio_jikan.base == "http://localhost:8000/v3"
+
+    async with AioJikan("http://localhost:8000/v3/ ") as temp_aio_jikan_2:
+        assert temp_aio_jikan_2.base == "http://localhost:8000/v3"
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-wrap-response.yaml")

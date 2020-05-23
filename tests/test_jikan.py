@@ -26,6 +26,14 @@ def jikan():
     return Jikan()
 
 
+def test_strip_base_url():
+    temp_jikan = Jikan("http://localhost:8000/v3/")
+    assert temp_jikan.base == "http://localhost:8000/v3"
+
+    temp_jikan_2 = Jikan("http://localhost:8000/v3/ ")
+    assert temp_jikan_2.base == "http://localhost:8000/v3"
+
+
 @vcr.use_cassette("tests/vcr_cassettes/wrap-response.yaml")
 def test_wrap_response(header_keys, jikan):
     anime_info = jikan.anime(MUSHISHI_ID)

@@ -51,7 +51,9 @@ class Jikan:
             >>> jikan_2 = Jikan(selected_base='http://localhost:8000/v3')
             >>> jikan_3 = jikan = Jikan(session=requests.Session())
         """
-        self.base = utils.BASE_URL if selected_base is None else selected_base
+        self.base = (
+            utils.BASE_URL if selected_base is None else selected_base.rstrip("/ ")
+        )
         self.session = requests.Session() if session is None else session
 
     def _wrap_response(
