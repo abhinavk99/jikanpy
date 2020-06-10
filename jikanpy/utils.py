@@ -1,4 +1,9 @@
-from typing import Optional, Dict, Mapping, Union
+"""Jikan/AioJikan Utilities
+====================================
+utils.py contains utility methods used in Jikan and AioJikan.
+"""
+
+from typing import Optional, Dict, Mapping, Union, Any
 
 import aiohttp
 import requests
@@ -9,7 +14,9 @@ BASE_URL = "https://api.jikan.moe/v3"
 
 
 def check_response(
-    response_dict: Dict, response_status_code: int, **kwargs: Union[int, Optional[str]],
+    response_dict: Dict[str, Any],
+    response_status_code: int,
+    **kwargs: Union[int, Optional[str]],
 ) -> None:
     """
         Check if the response is an error
@@ -29,12 +36,12 @@ def check_response(
 
 def add_jikan_metadata(
     response: Union[requests.Response, aiohttp.ClientResponse],
-    response_dict: Dict,
+    response_dict: Dict[str, Any],
     url: str,
-) -> Dict:
+) -> Dict[str, Any]:
     """Adds the response headers and jikan endpoint url to response dictionary"""
     response_dict["jikan_url"] = url
-    # dict() is to convert from CIMultiDictProxy for aiohttp.ClientResponse
+    # dict() is to convert from CIMultiDict[str, Any]Proxy for aiohttp.ClientResponse
     response_dict["headers"] = dict(response.headers)
     return response_dict
 
@@ -90,10 +97,12 @@ def get_schedule_url(base_url: str, day: Optional[str]) -> str:
 
 
 def get_season_archive_url(base_url: str) -> str:
+    """Create URL for season archive endpoint"""
     return f"{base_url}/season/archive"
 
 
 def get_season_later_url(base_url: str) -> str:
+    """Create URL for season later endpoint"""
     return f"{base_url}/season/later"
 
 
@@ -118,7 +127,7 @@ def get_user_url(
     request: Optional[str],
     argument: Optional[Union[int, str]],
     page: Optional[int],
-    parameters: Optional[Mapping],
+    parameters: Optional[Mapping[str, Any]],
 ) -> str:
     """Create URL for user endpoint"""
     url = f"{base_url}/user/{username.lower()}"
