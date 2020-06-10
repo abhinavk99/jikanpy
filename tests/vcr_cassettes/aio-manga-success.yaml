@@ -5,11 +5,12 @@ interactions:
     method: GET
     uri: https://api.jikan.moe/v3/manga/25
   response:
-    body: {string: '{"request_hash":"request:manga:c277accf70c490102064350cfc8b7fc318716029","request_cached":true,"request_cache_expiry":21980,"mal_id":25,"url":"https:\/\/myanimelist.net\/manga\/25\/Fullmetal_Alchemist","title":"Fullmetal
+    body:
+      string: '{"request_hash":"request:manga:c277accf70c490102064350cfc8b7fc318716029","request_cached":true,"request_cache_expiry":-1591764528,"mal_id":25,"url":"https:\/\/myanimelist.net\/manga\/25\/Fullmetal_Alchemist","title":"Fullmetal
         Alchemist","title_english":"Fullmetal Alchemist","title_synonyms":["Full Metal
         Alchemist","Hagane no Renkinjutsushi","FMA","HagaRen","Fullmetal Alchemist
-        Gaiden"],"title_japanese":"\u92fc\u306e\u932c\u91d1\u8853\u5e2b","status":"Finished","image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/27600.jpg","type":"Manga","volumes":27,"chapters":116,"publishing":false,"published":{"from":"2001-07-12T00:00:00+00:00","to":"2010-09-11T00:00:00+00:00","prop":{"from":{"day":null,"month":null,"year":null},"to":{"day":null,"month":null,"year":null}},"string":"Jul  12,
-        2001 to Sep  11, 2010"},"rank":3,"score":9.13,"scored_by":94132,"popularity":11,"members":164072,"favorites":23488,"synopsis":"Alchemists
+        Gaiden"],"title_japanese":"\u92fc\u306e\u932c\u91d1\u8853\u5e2b","status":"Finished","image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/27600.jpg","type":"Manga","volumes":27,"chapters":116,"publishing":false,"published":{"from":"2001-07-12T00:00:00+00:00","to":"2010-09-11T00:00:00+00:00","prop":{"from":{"day":12,"month":7,"year":2001},"to":{"day":11,"month":9,"year":2010}},"string":"Jul  12,
+        2001 to Sep  11, 2010"},"rank":3,"score":9.13,"scored_by":108355,"popularity":11,"members":192679,"favorites":25990,"synopsis":"Alchemists
         are knowledgeable and naturally talented individuals who can manipulate and
         modify matter due to their art. Yet despite the wide range of possibilities,
         alchemy is not as all-powerful as most would believe. Human transmutation
@@ -44,35 +45,26 @@ interactions:
         Alchemist","url":"https:\/\/myanimelist.net\/anime\/121\/Fullmetal_Alchemist"},{"mal_id":5114,"type":"anime","name":"Fullmetal
         Alchemist: Brotherhood","url":"https:\/\/myanimelist.net\/anime\/5114\/Fullmetal_Alchemist__Brotherhood"}]},"genres":[{"mal_id":1,"type":"manga","name":"Action","url":"https:\/\/myanimelist.net\/manga\/genre\/1\/Action"},{"mal_id":2,"type":"manga","name":"Adventure","url":"https:\/\/myanimelist.net\/manga\/genre\/2\/Adventure"},{"mal_id":4,"type":"manga","name":"Comedy","url":"https:\/\/myanimelist.net\/manga\/genre\/4\/Comedy"},{"mal_id":8,"type":"manga","name":"Drama","url":"https:\/\/myanimelist.net\/manga\/genre\/8\/Drama"},{"mal_id":27,"type":"manga","name":"Shounen","url":"https:\/\/myanimelist.net\/manga\/genre\/27\/Shounen"},{"mal_id":38,"type":"manga","name":"Military","url":"https:\/\/myanimelist.net\/manga\/genre\/38\/Military"}],"authors":[{"mal_id":1874,"type":"people","name":"Arakawa,
         Hiromu","url":"https:\/\/myanimelist.net\/people\/1874\/Hiromu_Arakawa"}],"serializations":[{"mal_id":13,"type":"manga","name":"Shounen
-        Gangan","url":"https:\/\/myanimelist.net\/manga\/magazine\/13\/Shounen_Gangan"}]}'}
+        Gangan","url":"https:\/\/myanimelist.net\/manga\/magazine\/13\/Shounen_Gangan"}]}'
     headers:
-      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Methods]
-      : '*'
-      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Origin]
-      : '*'
-      ? !!python/object/new:multidict._istr.istr [Cache-Control]
-      : private, must-revalidate
-      ? !!python/object/new:multidict._istr.istr [Connection]
-      : keep-alive
-      ? !!python/object/new:multidict._istr.istr [Content-Encoding]
-      : gzip
-      ? !!python/object/new:multidict._istr.istr [Content-Length]
-      : '2019'
-      ? !!python/object/new:multidict._istr.istr [Content-Type]
-      : application/json
-      ? !!python/object/new:multidict._istr.istr [Date]
-      : Sun, 20 Jan 2019 01:02:07 GMT
-      ? !!python/object/new:multidict._istr.istr [Etag]
-      : '"4eadac4b177a34fc95304878ce2bf197"'
-      ? !!python/object/new:multidict._istr.istr [Server]
-      : nginx/1.13.10
-      ? !!python/object/new:multidict._istr.istr [Vary]
-      : Accept-Encoding
-      X-D-V-N: INIT-AC644301AWS [C-S-W]
-      X-Powered-By: Loli
-    status: {code: 200, message: OK}
-    url: !!python/object/new:yarl.URL
-      state: !!python/tuple
-      - !!python/object/new:urllib.parse.SplitResult [https, api.jikan.moe, /v3/manga/25,
-        '', '']
+      Access-Control-Allow-Methods: '*'
+      Access-Control-Allow-Origin: '*'
+      Cache-Control: private, must-revalidate
+      Connection: keep-alive
+      Content-Encoding: gzip
+      Content-Length: '2030'
+      Content-Type: application/json
+      Date: Wed, 10 Jun 2020 05:24:58 GMT
+      ETag: '"76c3fab313577a29b034977bd14fc872"'
+      Expires: Thu, 01 Jan 1970 00:00:00 GMT
+      Server: Jikan/3.4
+      Vary: Accept-Encoding
+      X-Cache-Status: HIT
+      X-Request-Cache-Ttl: '-1591764529'
+      X-Request-Cached: '1'
+      X-Request-Hash: request:manga:c277accf70c490102064350cfc8b7fc318716029
+    status:
+      code: 200
+      message: OK
+    url: https://api.jikan.moe/v3/manga/25
 version: 1

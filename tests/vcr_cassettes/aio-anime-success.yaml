@@ -5,10 +5,11 @@ interactions:
     method: GET
     uri: https://api.jikan.moe/v3/anime/457
   response:
-    body: {string: '{"request_hash":"request:anime:047ce4420fa843606934309866d292274c149a83","request_cached":true,"request_cache_expiry":22896,"mal_id":457,"url":"https:\/\/myanimelist.net\/anime\/457\/Mushishi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/73862.jpg","trailer_url":"https:\/\/www.youtube.com\/embed\/h371H0KIuPo?enablejsapi=1&wmode=opaque&autoplay=1","title":"Mushishi","title_english":"Mushi-Shi","title_japanese":"\u87f2\u5e2b","title_synonyms":[],"type":"TV","source":"Manga","episodes":26,"status":"Finished
+    body:
+      string: '{"request_hash":"request:anime:047ce4420fa843606934309866d292274c149a83","request_cached":true,"request_cache_expiry":-1591765039,"mal_id":457,"url":"https:\/\/myanimelist.net\/anime\/457\/Mushishi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/73862.jpg","trailer_url":"https:\/\/www.youtube.com\/embed\/h371H0KIuPo?enablejsapi=1&wmode=opaque&autoplay=1","title":"Mushishi","title_english":"Mushi-Shi","title_japanese":"\u87f2\u5e2b","title_synonyms":[],"type":"TV","source":"Manga","episodes":26,"status":"Finished
         Airing","airing":false,"aired":{"from":"2005-10-23T00:00:00+00:00","to":"2006-06-19T00:00:00+00:00","prop":{"from":{"day":23,"month":10,"year":2005},"to":{"day":19,"month":6,"year":2006}},"string":"Oct
         23, 2005 to Jun 19, 2006"},"duration":"25 min per ep","rating":"PG-13 - Teens
-        13 or older","score":8.73,"scored_by":157810,"rank":40,"popularity":124,"members":445385,"favorites":19091,"synopsis":"\"Mushi\":
+        13 or older","score":8.71,"scored_by":182575,"rank":42,"popularity":143,"members":536675,"favorites":21157,"synopsis":"\"Mushi\":
         the most basic forms of life in the world. They exist without any goals or
         purposes aside from simply \"being.\" They are beyond the shackles of the
         words \"good\" and \"evil.\" Mushi can exist in countless forms and are capable
@@ -29,9 +30,10 @@ interactions:
         Award in the Television category in 2006. The series premiered on October
         23, 2005, but went on hiatus on March 12, 2006 after having aired 20 episodes.
         Broadcast resumed on May 15, and aired the remaining 6 episodes, concluding
-        on June 19, 2006.","premiered":"Fall 2005","broadcast":"Sundays at 03:40 (JST)","related":{"Adaptation":[{"mal_id":418,"type":"manga","name":"Mushishi","url":"https:\/\/myanimelist.net\/manga\/418\/Mushishi"}],"Sequel":[{"mal_id":21329,"type":"anime","name":"Mushishi
-        Special: Hihamukage","url":"https:\/\/myanimelist.net\/anime\/21329\/Mushishi_Special__Hihamukage"},{"mal_id":21939,"type":"anime","name":"Mushishi
-        Zoku Shou","url":"https:\/\/myanimelist.net\/anime\/21939\/Mushishi_Zoku_Shou"}]},"producers":[{"mal_id":52,"type":"anime","name":"Avex
+        on June 19, 2006.","premiered":"Fall 2005","broadcast":"Sundays at 03:40 (JST)","related":{"Adaptation":[{"mal_id":418,"type":"manga","name":"Mushishi","url":"https:\/\/myanimelist.net\/manga\/418\/Mushishi"}],"Sequel":[{"mal_id":21329,"type":"anime","name":"Mushishi:
+        Hihamukage","url":"https:\/\/myanimelist.net\/anime\/21329\/Mushishi__Hihamukage"},{"mal_id":21939,"type":"anime","name":"Mushishi
+        Zoku Shou","url":"https:\/\/myanimelist.net\/anime\/21939\/Mushishi_Zoku_Shou"}],"Summary":[{"mal_id":39738,"type":"anime","name":"Mushishi
+        Recap","url":"https:\/\/myanimelist.net\/anime\/39738\/Mushishi_Recap"}]},"producers":[{"mal_id":52,"type":"anime","name":"Avex
         Entertainment","url":"https:\/\/myanimelist.net\/anime\/producer\/52\/Avex_Entertainment"},{"mal_id":82,"type":"anime","name":"Marvelous","url":"https:\/\/myanimelist.net\/anime\/producer\/82\/Marvelous"},{"mal_id":147,"type":"anime","name":"SKY
         Perfect Well Think","url":"https:\/\/myanimelist.net\/anime\/producer\/147\/SKY_Perfect_Well_Think"},{"mal_id":711,"type":"anime","name":"Delfi
         Sound","url":"https:\/\/myanimelist.net\/anime\/producer\/711\/Delfi_Sound"}],"licensors":[{"mal_id":102,"type":"anime","name":"Funimation","url":"https:\/\/myanimelist.net\/anime\/producer\/102\/Funimation"}],"studios":[{"mal_id":8,"type":"anime","name":"Artland","url":"https:\/\/myanimelist.net\/anime\/producer\/8\/Artland"}],"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":36,"type":"anime","name":"Slice
@@ -60,35 +62,26 @@ interactions:
         by Masuda Toshio (ep 23)","\"Kagarinokou\" (\u7bdd\u91ce\u884c) by Masuda
         Toshio (ep 24)","\"Ganpuku Ganka\" (\u773c\u798f\u773c\u798d) by Masuda Toshio
         (ep 25)","\"Kusa wo Fumu Oto\" (\u8349\u3092\u8e0f\u3080\u97f3) by Masuda
-        Toshio (ep 26)"]}'}
+        Toshio (ep 26)"]}'
     headers:
-      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Methods]
-      : '*'
-      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Origin]
-      : '*'
-      ? !!python/object/new:multidict._istr.istr [Cache-Control]
-      : private, must-revalidate
-      ? !!python/object/new:multidict._istr.istr [Connection]
-      : keep-alive
-      ? !!python/object/new:multidict._istr.istr [Content-Encoding]
-      : gzip
-      ? !!python/object/new:multidict._istr.istr [Content-Length]
-      : '2589'
-      ? !!python/object/new:multidict._istr.istr [Content-Type]
-      : application/json
-      ? !!python/object/new:multidict._istr.istr [Date]
-      : Sun, 20 Jan 2019 01:01:19 GMT
-      ? !!python/object/new:multidict._istr.istr [Etag]
-      : '"a7430b6ef3deb61b39834493cb1e4983"'
-      ? !!python/object/new:multidict._istr.istr [Server]
-      : nginx/1.13.10
-      ? !!python/object/new:multidict._istr.istr [Vary]
-      : Accept-Encoding
-      X-D-V-N: INIT-AC644301AWS [C-S-W]
-      X-Powered-By: Loli
-    status: {code: 200, message: OK}
-    url: !!python/object/new:yarl.URL
-      state: !!python/tuple
-      - !!python/object/new:urllib.parse.SplitResult [https, api.jikan.moe, /v3/anime/457,
-        '', '']
+      Access-Control-Allow-Methods: '*'
+      Access-Control-Allow-Origin: '*'
+      Cache-Control: private, must-revalidate
+      Connection: keep-alive
+      Content-Encoding: gzip
+      Content-Length: '2613'
+      Content-Type: application/json
+      Date: Wed, 10 Jun 2020 05:24:55 GMT
+      ETag: '"43c77e15f4e7bfc7cc69a0e79f3c1911"'
+      Expires: Thu, 01 Jan 1970 00:00:00 GMT
+      Server: Jikan/3.4
+      Vary: Accept-Encoding
+      X-Cache-Status: HIT
+      X-Request-Cache-Ttl: '-1591765040'
+      X-Request-Cached: '1'
+      X-Request-Hash: request:anime:047ce4420fa843606934309866d292274c149a83
+    status:
+      code: 200
+      message: OK
+    url: https://api.jikan.moe/v3/anime/457
 version: 1

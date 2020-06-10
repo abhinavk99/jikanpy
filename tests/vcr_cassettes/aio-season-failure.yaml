@@ -5,31 +5,17 @@ interactions:
     method: GET
     uri: https://api.jikan.moe/v3/season/-1/winter
   response:
-    body: {string: '{"error":"Invalid or incomplete endpoint"}'}
+    body:
+      string: "<html>\r\n<head><title>429 Too Many Requests</title></head>\r\n<body>\r\n<center><h1>429
+        Too Many Requests</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
     headers:
-      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Methods]
-      : '*'
-      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Origin]
-      : '*'
-      ? !!python/object/new:multidict._istr.istr [Cache-Control]
-      : no-cache, private
-      ? !!python/object/new:multidict._istr.istr [Connection]
-      : keep-alive
-      ? !!python/object/new:multidict._istr.istr [Content-Encoding]
-      : gzip
-      ? !!python/object/new:multidict._istr.istr [Content-Length]
-      : '62'
-      ? !!python/object/new:multidict._istr.istr [Content-Type]
-      : application/json
-      ? !!python/object/new:multidict._istr.istr [Date]
-      : Sun, 20 Jan 2019 01:03:14 GMT
-      ? !!python/object/new:multidict._istr.istr [Server]
-      : nginx/1.13.10
-      ? !!python/object/new:multidict._istr.istr [Vary]
-      : Accept-Encoding
-    status: {code: 404, message: Not Found}
-    url: !!python/object/new:yarl.URL
-      state: !!python/tuple
-      - !!python/object/new:urllib.parse.SplitResult [https, api.jikan.moe, /v3/season/-1/winter,
-        '', '']
+      Connection: keep-alive
+      Content-Length: '162'
+      Content-Type: text/html
+      Date: Wed, 10 Jun 2020 05:25:27 GMT
+      Server: Jikan/3.4
+    status:
+      code: 429
+      message: Too Many Requests
+    url: https://api.jikan.moe/v3/season/-1/winter
 version: 1

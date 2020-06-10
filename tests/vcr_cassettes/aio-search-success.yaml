@@ -3,98 +3,136 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.jikan.moe/v3/search/anime?q=naruto&genre=1,2&limit=10&
+    uri: https://api.jikan.moe/v3/search/anime?q=naruto&genre=1,2&limit=10
   response:
     body:
-      string: '{"request_hash":"request:search:c79bea65a6c4ad49167bafaa0bd987d55e12bf12","request_cached":true,"request_cache_expiry":431824,"results":[{"mal_id":20,"url":"https:\/\/myanimelist.net\/anime\/20\/Naruto","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17405.jpg?s=59241469eb470604a792add6fbe7cce6","title":"Naruto","airing":false,"synopsis":"Moments
+      string: '{"request_hash":"request:search:d13705e9cdf827eaa975b96638a7eb4c1e23a261","request_cached":true,"request_cache_expiry":0,"last_page":3,"results":[{"mal_id":34566,"url":"https:\/\/myanimelist.net\/anime\/34566\/Boruto__Naruto_Next_Generations","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/84460.jpg","title":"Boruto:
+        Naruto Next Generations","type":"TV","episodes":null,"airing":true,"score":6.16,"members":381494,"synopsis":"Following
+        the successful end of the Fourth Shinobi World War, Konohagakure has been
+        enjoying a period of peace, prosperity, and extraordinary technological advancement.
+        This is all due to the efforts of the Allied Shinobi Forces and the village''s
+        Seventh Hokage, Naruto Uzumaki. Now resembling a modern metropolis, Konohagakure
+        has changed, particularly the life of a shinobi. Under the watchful eye of
+        Naruto and his old comrades, a new generation of shinobi has stepped up to
+        learn the ways of the ninja. Boruto Uzumaki is often the center of attention
+        as the son of the Seventh Hokage. Despite having inherited Naruto''s boisterous
+        and stubborn demeanor, Boruto is considered a prodigy and is able to unleash
+        his potential with the help of supportive friends and family. Unfortunately,
+        this has only worsened his arrogance and his desire to surpass Naruto which,
+        along with his father''s busy lifestyle, has strained their relationship.
+        However, a sinister force brewing within the village may threaten Boruto''s
+        carefree life. New friends and familiar faces join Boruto as a new story begins
+        in Boruto: Naruto Next Generations. [Written by MAL Rewrite]","start_date":"2017-04-05T00:00:00+00:00","rated":"PG-13
+        - Teens 13 or older"},{"mal_id":28755,"url":"https:\/\/myanimelist.net\/anime\/28755\/Boruto__Naruto_the_Movie","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/78280.jpg","title":"Boruto:
+        Naruto the Movie","type":"Movie","episodes":1,"airing":false,"score":7.63,"members":253151,"synopsis":"The
+        spirited Boruto Uzumaki, son of Seventh Hokage Naruto, is a skilled ninja
+        who possesses the same brashness and passion his father once had. However,
+        the constant absence of his father, who is busy with his Hokage duties, puts
+        a damper on Boruto''s fire. Upon learning that his father will watch the aspiring
+        ninjas who will participate in the upcoming Chunin exams, Boruto is driven
+        to prove to him that he is worthy of his attention. In order to do so, he
+        enlists the help of Naruto''s childhood friend and rival, Sasuke Uchiha. The
+        Chunin exams begin and progress smoothly, until suddenly, the Konohagakure
+        is attacked by a new foe that threatens the long-standing peace of the village.
+        Now facing real danger, Naruto and his comrades must work together to protect
+        the future of their cherished home and defeat the evil that terrorizes their
+        world. As this battle ensues, Boruto comes to realize the struggles his father
+        once experienced\u2014and what it truly means to be a ninja. [Written by MAL
+        Rewrite]","start_date":"2015-08-07T00:00:00+00:00","rated":"PG-13 - Teens
+        13 or older"},{"mal_id":32365,"url":"https:\/\/myanimelist.net\/anime\/32365\/Boruto__Naruto_the_Movie_-_Naruto_ga_Hokage_ni_Natta_Hi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/77678.jpg","title":"Boruto:
+        Naruto the Movie - Naruto ga Hokage ni Natta Hi","type":"Special","episodes":1,"airing":false,"score":7.47,"members":62951,"synopsis":"Bundled
+        with the limited edition of Blu-ray\/DVD of Boruto: Naruto the Movie.","start_date":"2016-07-06T00:00:00+00:00","rated":"PG-13
+        - Teens 13 or older"},{"mal_id":36564,"url":"https:\/\/myanimelist.net\/anime\/36564\/Kamiusagi_Rope_x_Boruto__Naruto_Next_Generations","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/88377.jpg","title":"Kamiusagi
+        Rope x Boruto: Naruto Next Generations","type":"ONA","episodes":1,"airing":false,"score":5.63,"members":4072,"synopsis":"A
+        3-way collaboration between Kamiusagi Rope, Boruto: Naruto Next Generations,
+        and TOHO Cinemas. The purpose is to promote a new TOHO theater opening up
+        in Ueno on November 4, 2017. The collaboration video will also be available
+        to view in TOHO Cinemas in Tokyo, Kanagawa, Chiba, and Saitama from Ocotober
+        21 - December 1.","start_date":"2017-10-12T00:00:00+00:00","rated":"G - All
+        Ages"},{"mal_id":20,"url":"https:\/\/myanimelist.net\/anime\/20\/Naruto","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17405.jpg","title":"Naruto","type":"TV","episodes":220,"airing":false,"score":7.88,"members":1416338,"synopsis":"Moments
         prior to Naruto Uzumaki''s birth, a huge demon known as the Kyuubi, the Nine-Tailed
         Fox, attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In
-        order to put an end to the Kyuubi''...","type":"TV","episodes":220,"score":7.91,"start_date":"2002-10-03T00:00:00+00:00","end_date":"2007-02-08T00:00:00+00:00","members":1149798,"rated":"PG-13"},{"mal_id":1735,"url":"https:\/\/myanimelist.net\/anime\/1735\/Naruto__Shippuuden","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/17407.jpg?s=2bf24a22a339223dcadb1cdfc3307b61","title":"Naruto:
-        Shippuuden","airing":false,"synopsis":"It has been two and a half years since
-        Naruto Uzumaki left Konohagakure, the Hidden Leaf Village, for intense training
-        following events which fueled his desire to be stronger. Now Akatsuki, the
-        myster...","type":"TV","episodes":500,"score":8.2,"start_date":"2007-02-15T00:00:00+00:00","end_date":"2017-03-23T00:00:00+00:00","members":943904,"rated":"PG-13"},{"mal_id":2472,"url":"https:\/\/myanimelist.net\/anime\/2472\/Naruto__Shippuuden_Movie_1","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/79705.jpg?s=80162f3e16a4b76638f535bf23ac324c","title":"Naruto:
-        Shippuuden Movie 1","airing":false,"synopsis":"A group of ninja is planning
-        to revive a powerful demon, and once its spirit is reunited with its body,
-        the world will be destroyed. The only way to prevent this from happening is
-        for Shion, a shrine...","type":"Movie","episodes":1,"score":7.4,"start_date":"2007-08-04T00:00:00+00:00","end_date":"2007-08-04T00:00:00+00:00","members":155259,"rated":"PG-13"},{"mal_id":34566,"url":"https:\/\/myanimelist.net\/anime\/34566\/Boruto__Naruto_Next_Generations","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/84460.jpg?s=ae561b0c245d07556cbdfbbf1ee374a9","title":"Boruto:
-        Naruto Next Generations","airing":true,"synopsis":"Following the successful
-        end of the Fourth Shinobi World War, Konohagakure has been enjoying a period
-        of peace, prosperity, and extraordinary technological advancement. This is
-        all due to the efforts...","type":"TV","episodes":0,"score":6.72,"start_date":"2017-04-05T00:00:00+00:00","end_date":null,"members":290913,"rated":"PG-13"},{"mal_id":10589,"url":"https:\/\/myanimelist.net\/anime\/10589\/Naruto__Shippuuden_Movie_5_-_Blood_Prison","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/41403.jpg?s=f4f60444cfbcda379ad585d64316a1c6","title":"Naruto:
-        Shippuuden Movie 5 - Blood Prison","airing":false,"synopsis":"After being
-        captured for attempting to assassinate the leader of Kumogakure, the Raikage,
-        and killing Jounin from Kirigakure and Iwagakure, Naruto is imprisoned in
-        Houzukijou, a criminal containment f...","type":"Movie","episodes":1,"score":7.59,"start_date":"2011-07-30T00:00:00+00:00","end_date":"2011-07-30T00:00:00+00:00","members":116062,"rated":"PG-13"},{"mal_id":13667,"url":"https:\/\/myanimelist.net\/anime\/13667\/Naruto__Shippuuden_Movie_6_-_Road_to_Ninja","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/51863.jpg?s=27ab188d97eb1262acf899c2e9813bbe","title":"Naruto:
-        Shippuuden Movie 6 - Road to Ninja","airing":false,"synopsis":"Ten years ago,
-        a gigantic demon beast known as the Nine-Tailed Demon Fox was released from
-        its jinchuuriki by an unknown shinobi wearing a mask. The village of Konohagakure
-        was close to destruction by...","type":"Movie","episodes":1,"score":7.8,"start_date":"2012-07-28T00:00:00+00:00","end_date":"2012-07-28T00:00:00+00:00","members":147591,"rated":"PG-13"},{"mal_id":2144,"url":"https:\/\/myanimelist.net\/anime\/2144\/Naruto_Movie_3__Dai_Koufun_Mikazuki_Jima_no_Animaru_Panikku_Dattebayo","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/76017.jpg?s=07ffbcb450ac4c783fc80d64c302cd4c","title":"Naruto
-        Movie 3: Dai Koufun! Mikazuki Jima no Animaru Panikku Dattebayo!","airing":false,"synopsis":"Naruto,
+        order to put an end to the Kyuubi''s rampage, the leader of the village, the
+        Fourth Hokage, sacrificed his life and sealed the monstrous beast inside the
+        newborn Naruto. Now, Naruto is a hyperactive and knuckle-headed ninja still
+        living in Konohagakure. Shunned because of the Kyuubi inside him, Naruto struggles
+        to find his place in the village, while his burning desire to become the Hokage
+        of Konohagakure leads him not only to some great new friends, but also some
+        deadly foes. [Written by MAL Rewrite]","start_date":"2002-10-03T00:00:00+00:00","end_date":"2007-02-08T00:00:00+00:00","rated":"PG-13
+        - Teens 13 or older"},{"mal_id":442,"url":"https:\/\/myanimelist.net\/anime\/442\/Naruto_Movie_1__Dai_Katsugeki_Yuki_Hime_Shinobu_Houjou_Dattebayo","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/76015.jpg","title":"Naruto
+        Movie 1: Dai Katsugeki!! Yuki Hime Shinobu Houjou Dattebayo!","type":"Movie","episodes":1,"airing":false,"score":7.12,"members":184059,"synopsis":"Naruto
+        Uzumaki and his squadmates, Sasuke Uchiha and Sakura Haruno, are sent on a
+        mission to escort a movie crew on its way to film in the Land of Snow. They
+        soon find out that they are accompanying a famous actress, Yukie Fujikaze,
+        who persistently refuses to travel there, making the trip far more difficult
+        than originally intended. After a surprising encounter with ninjas from the
+        Land of Snow, Naruto discovers that there is more to Yukie than meets the
+        eye. Dai Katsugeki!! Yuki Hime Shinobu Houjou Dattebayo! follows the group
+        as they attempt to overcome the obstacles in the Land of Snow and unveil Yukie''s
+        true purpose there as well. [Written by MAL Rewrite]","start_date":"2004-08-21T00:00:00+00:00","rated":"PG-13
+        - Teens 13 or older"},{"mal_id":936,"url":"https:\/\/myanimelist.net\/anime\/936\/Naruto_Movie_2__Dai_Gekitotsu_Maboroshi_no_Chiteiiseki_Dattebayo","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/76016.jpg","title":"Naruto
+        Movie 2: Dai Gekitotsu! Maboroshi no Chiteiiseki Dattebayo!","type":"Movie","episodes":1,"airing":false,"score":6.92,"members":147787,"synopsis":"Naruto,
+        Shikamaru, and Sakura are executing their mission of delivering a lost pet
+        to a certain village. However, right in the midst of things, troops led by
+        the mysterious knight, Temujin, attack them. In the violent battle, the three
+        become separated. Temujin challenges Naruto to a fight and at the end of the
+        fierce battle, both fall together from a high cliff. Furthermore, Shikamaru,
+        having been left behind, beholds a giant moving fortress as it appears before
+        his very eyes. In order to get a grasp on the situation, he infiltrates the
+        fortress by himself, however once there he witnesses a frightening sight...
+        (Source: ANN)","start_date":"2005-08-06T00:00:00+00:00","rated":"PG-13 - Teens
+        13 or older"},{"mal_id":2144,"url":"https:\/\/myanimelist.net\/anime\/2144\/Naruto_Movie_3__Dai_Koufun_Mikazuki_Jima_no_Animaru_Panikku_Dattebayo","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/76017.jpg","title":"Naruto
+        Movie 3: Dai Koufun! Mikazuki Jima no Animaru Panikku Dattebayo!","type":"Movie","episodes":1,"airing":false,"score":6.91,"members":134454,"synopsis":"Naruto,
         Kakashi, Sakura, and Lee are sent to protect a prince during his trip around
         the world and see that he returns safely to his home in the Moon Country.
-        The Moon Country happens to be really ric...","type":"Movie","episodes":1,"score":6.96,"start_date":"2006-08-05T00:00:00+00:00","end_date":"2006-08-05T00:00:00+00:00","members":121211,"rated":"PG-13"},{"mal_id":7367,"url":"https:\/\/myanimelist.net\/anime\/7367\/Naruto__The_Cross_Roads","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/27050.jpg?s=5dd6d0b9017576c7b5c94d2dab8fdf7d","title":"Naruto:
-        The Cross Roads","airing":false,"synopsis":"This year is the 10th anniversary
-        of Naruto''s serialization start. This work will feature an episode with Team
-        Kakashi from Naruto''s youth era. It will be surprisingly different from the
-        TV series, do...","type":"Special","episodes":1,"score":6.93,"start_date":"2009-10-12T00:00:00+00:00","end_date":"2009-10-12T00:00:00+00:00","members":30727,"rated":"PG-13"},{"mal_id":10686,"url":"https:\/\/myanimelist.net\/anime\/10686\/Naruto__Honoo_no_Chuunin_Shiken_Naruto_vs_Konohamaru","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/30813.jpg?s=55399a5c0c95cad6a6fb83e09dba727c","title":"Naruto:
-        Honoo no Chuunin Shiken! Naruto vs. Konohamaru!!","airing":false,"synopsis":"Naruto
-        faces off against his old pupil Konohamaru in a tournament during the chuunin
-        entrance exams.","type":"Movie","episodes":1,"score":7.25,"start_date":"2011-07-30T00:00:00+00:00","end_date":"2011-07-30T00:00:00+00:00","members":43202,"rated":"PG-13"},{"mal_id":594,"url":"https:\/\/myanimelist.net\/anime\/594\/Naruto__Takigakure_no_Shitou_-_Ore_ga_Eiyuu_Dattebayo","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/20921.jpg?s=ea9c1b5c96a68b2a7b2616e8c25512c1","title":"Naruto:
-        Takigakure no Shitou - Ore ga Eiyuu Dattebayo!","airing":false,"synopsis":"A
-        routine rank-C mission turned into a full-blown battle as the Hidden Fall
-        village is attacked by enemy ninjas. Now Naruto, Sasuke and Sakura must help
-        the leader of the Hidden Fall, Shibuki, protect...","type":"Special","episodes":1,"score":6.83,"start_date":"2003-12-20T00:00:00+00:00","end_date":"2003-12-20T00:00:00+00:00","members":63466,"rated":"PG-13"}],"last_page":1}'
+        The Moon Country happens to be really rich and as such the Prince tends to
+        buy anything his heart desires, during his travels the Prince would come across
+        a circus group that features a rare Sabre-toothed tiger that he just had to
+        have. So he purchased the entire group. Suddenly a mission to protect just
+        the spoiled prince that hardly listened to anything said, turns in to a mission
+        to look after animals and a prince that doesn''t listen to what they say,
+        and in the end somehow get them all back safely to their home country. All
+        the while there are three mysterious Ninja wielding some frightening jutsu
+        waiting for them. Why are they attacking them? What do they want with Team
+        Kakashi!?! (Source: NarutoFan)","start_date":"2006-08-05T00:00:00+00:00","rated":"PG-13
+        - Teens 13 or older"},{"mal_id":1074,"url":"https:\/\/myanimelist.net\/anime\/1074\/Naruto_Narutimate_Hero_3__Tsuini_Gekitotsu_Jounin_vs_Genin_Musabetsu_Dairansen_Taikai_Kaisai","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/11244.jpg","title":"Naruto
+        Narutimate Hero 3: Tsuini Gekitotsu! Jounin vs. Genin!! Musabetsu Dairansen
+        Taikai Kaisai!!","type":"OVA","episodes":1,"airing":false,"score":6.78,"members":60160,"synopsis":"A
+        contest is made by the Fifth Hokage called Jonin vs Genin. The point is to
+        collect crystals for points, with the higher-ranked Chunin and Jonin holding
+        crystals worth more points. The Genin have blue crystals, while the Chunin
+        and Jonin have red crystals. The video shows various fights between the Genin
+        and Jonin, which each instance ending in the Jonin unknowingly losing their
+        crystal (or discarding it). (Source: Wikipedia)","start_date":"2005-12-22T00:00:00+00:00","rated":"PG-13
+        - Teens 13 or older"},{"mal_id":12979,"url":"https:\/\/myanimelist.net\/anime\/12979\/Naruto_SD__Rock_Lee_no_Seishun_Full-Power_Ninden","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/36475.jpg","title":"Naruto
+        SD: Rock Lee no Seishun Full-Power Ninden","type":"TV","episodes":51,"airing":false,"score":7.16,"members":53990,"synopsis":"Welcome
+        to the Hidden Leaf Village. The village where Uzumaki Naruto, star of the
+        TV show \"Naruto\" makes his home. Every day, countless powerful ninjas carry
+        out missions and train to hone their skills. Our main character is one of
+        these powerful ninjas...but it''s not Naruto! It''s the ninja who can''t use
+        ninjutsu, Rock Lee! In spite of his handicap, Lee has big dreams. He works
+        hard every day to perfect his hand-to-hand combat skills and become a splendid
+        ninja! And to achieve his dream, he puts in more effort than anyone else.
+        Under the hot-blooded tutelage of his teacher Guy, he works alongside his
+        teammates Tenten and Neji. Watch the Beautiful Green Beast Rock Lee train,
+        go on missions, and have all sorts of adventures! (Source: Crunchyroll)","start_date":"2012-04-03T00:00:00+00:00","end_date":"2013-03-26T00:00:00+00:00","rated":"PG-13
+        - Teens 13 or older"}]}'
     headers:
-      ? !!python/object/new:multidict._istr.istr
-      - Access-Control-Allow-Methods
-      : '*'
-      ? !!python/object/new:multidict._istr.istr
-      - Access-Control-Allow-Origin
-      : '*'
-      ? !!python/object/new:multidict._istr.istr
-      - Cache-Control
-      : private, must-revalidate
-      ? !!python/object/new:multidict._istr.istr
-      - Connection
-      : keep-alive
-      ? !!python/object/new:multidict._istr.istr
-      - Content-Encoding
-      : gzip
-      ? !!python/object/new:multidict._istr.istr
-      - Content-Length
-      : '2303'
-      ? !!python/object/new:multidict._istr.istr
-      - Content-Type
-      : application/json; charset=utf-8
-      ? !!python/object/new:multidict._istr.istr
-      - Date
-      : Sun, 19 May 2019 00:39:31 GMT
-      ? !!python/object/new:multidict._istr.istr
-      - Etag
-      : '"1bbdb58cd4a7361f26f2356f82b8c413"'
-      ? !!python/object/new:multidict._istr.istr
-      - Expires
-      : Fri, 24 May 2019 00:36:35 GMT
-      ? !!python/object/new:multidict._istr.istr
-      - Server
-      : nginx/1.14.0 (Ubuntu)
-      ? !!python/object/new:multidict._istr.istr
-      - Vary
-      : Accept-Encoding
+      Access-Control-Allow-Methods: '*'
+      Access-Control-Allow-Origin: '*'
+      Cache-Control: private, must-revalidate
+      Connection: keep-alive
+      Content-Encoding: gzip
+      Content-Length: '4210'
+      Content-Type: application/json
+      Date: Wed, 10 Jun 2020 05:25:05 GMT
+      Server: Jikan/3.4
+      Vary: Accept-Encoding
       X-Cache-Status: MISS
-      X-Request-Cache-Ttl: '431824'
-      X-Request-Cached: '1'
-      X-Request-Hash: request:search:c79bea65a6c4ad49167bafaa0bd987d55e12bf12
+      expires: '-1'
+      pragma: no-cache
     status:
       code: 200
       message: OK
-    url: !!python/object/new:yarl.URL
-      state: !!python/tuple
-      - !!python/object/new:urllib.parse.SplitResult
-        - https
-        - api.jikan.moe
-        - /v3/search/anime
-        - q=naruto&genre=1,2&limit=10&
-        - ''
+    url: https://api.jikan.moe/v3/search/anime?q=naruto&genre=1,2&limit=10
 version: 1

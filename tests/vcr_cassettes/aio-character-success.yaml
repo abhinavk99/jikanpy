@@ -5,56 +5,25 @@ interactions:
     method: GET
     uri: https://api.jikan.moe/v3/character/425
   response:
-    body: {string: '{"request_hash":"request:character:9402d3f101f25eb384d51c9dbe1bca309172a2f3","request_cached":true,"request_cache_expiry":42073,"mal_id":425,"url":"https:\/\/myanimelist.net\/character\/425\/Ginko","name":"Ginko","name_kanji":"\u30ae\u30f3\u30b3","nicknames":["Mushishi","Yoki"],"about":"Ginko
-        employs himself as a Mushi master (mushishi), traveling from place to place
-        to research Mushi and aid people suffering from problems caused by them.\r\nGinko
-        is a rare person who attracts mushi. This inspires his peripatetic lifestyle;
-        staying in one place too long will gather a potentially dangerous amount of
-        mushi. He also smokes constantly in order to keep mushi away.\r\nIn terms
-        of personality, Ginko is rather laid back, but can be very serious when it
-        comes to protecting people from mushi. He also often stresses that the mushi
-        are not evil, but they merely exist as a part of the nature and try to survive
-        like every other living being.","member_favorites":11660,"image_url":"https:\/\/cdn.myanimelist.net\/images\/characters\/10\/303235.jpg","animeography":[{"mal_id":457,"name":"Mushishi","url":"https:\/\/myanimelist.net\/anime\/457\/Mushishi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/73862.jpg?s=0a89662e6319657e18ec050e5afc27a7","role":"Main"},{"mal_id":21329,"name":"Mushishi
-        Special: Hihamukage","url":"https:\/\/myanimelist.net\/anime\/21329\/Mushishi_Special__Hihamukage","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/59315.jpg?s=eaa8da2fb1eb611069034430935219b1","role":"Main"},{"mal_id":21939,"name":"Mushishi
-        Zoku Shou","url":"https:\/\/myanimelist.net\/anime\/21939\/Mushishi_Zoku_Shou","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/58533.jpg?s=fb01827590d9996c962cbafef47baa12","role":"Main"},{"mal_id":24687,"name":"Mushishi
-        Zoku Shou: Odoro no Michi","url":"https:\/\/myanimelist.net\/anime\/24687\/Mushishi_Zoku_Shou__Odoro_no_Michi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/63539.jpg?s=b2f0ecc9df57445e0061f0bbe12a2c0f","role":"Main"},{"mal_id":24701,"name":"Mushishi
-        Zoku Shou 2nd Season","url":"https:\/\/myanimelist.net\/anime\/24701\/Mushishi_Zoku_Shou_2nd_Season","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/68095.jpg?s=8a28ab63f4b9082276b63319f23834f5","role":"Main"},{"mal_id":28957,"name":"Mushishi
-        Zoku Shou: Suzu no Shizuku","url":"https:\/\/myanimelist.net\/anime\/28957\/Mushishi_Zoku_Shou__Suzu_no_Shizuku","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/72689.jpg?s=24d44db390eca26e57d5730e6c6bb446","role":"Main"}],"mangaography":[{"mal_id":418,"name":"Mushishi","url":"https:\/\/myanimelist.net\/manga\/418\/Mushishi","image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/159514.jpg?s=4f12f1ecda6bfde090cec2f5b181016e","role":"Main"},{"mal_id":62023,"name":"Mushishi
-        Tokubetsu-hen: Hihamukage","url":"https:\/\/myanimelist.net\/manga\/62023\/Mushishi_Tokubetsu-hen__Hihamukage","image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/123403.jpg?s=c7596b08f4bc90505cdae400c36223cb","role":"Main"}],"voice_actors":[{"mal_id":26,"name":"Willingham,
-        Travis","url":"https:\/\/myanimelist.net\/people\/26\/Travis_Willingham","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/2\/51804v.jpg","language":"English"},{"mal_id":99,"name":"Sawashiro,
-        Miyuki","url":"https:\/\/myanimelist.net\/people\/99\/Miyuki_Sawashiro","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/1\/54600v.jpg","language":"Japanese"},{"mal_id":216,"name":"Nakano,
-        Yuto","url":"https:\/\/myanimelist.net\/people\/216\/Yuto_Nakano","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/2\/8057v.jpg","language":"Japanese"},{"mal_id":5084,"name":"Andreatto,
-        Rodrigo","url":"https:\/\/myanimelist.net\/people\/5084\/Rodrigo_Andreatto","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/2\/41874v.jpg","language":"Brazilian"},{"mal_id":9157,"name":"Chiesse,
-        Nestor","url":"https:\/\/myanimelist.net\/people\/9157\/Nestor_Chiesse","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/3\/6808v.jpg","language":"Brazilian"},{"mal_id":46024,"name":"Aparicio,
-        Marta","url":"https:\/\/myanimelist.net\/people\/46024\/Marta_Aparicio","image_url":"https:\/\/cdn.myanimelist.net\/images\/questionmark_23.gif","language":"Spanish"}]}'}
+    body:
+      string: '{"status":403,"type":"BadResponseException","message":"Jikan failed
+        to connect to MyAnimeList. MyAnimeList may be down\/unavailable or refuses
+        to connect","error":"403 on https:\/\/myanimelist.net\/character\/425"}'
     headers:
-      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Methods]
-      : '*'
-      ? !!python/object/new:multidict._istr.istr [Access-Control-Allow-Origin]
-      : '*'
-      ? !!python/object/new:multidict._istr.istr [Cache-Control]
-      : private, must-revalidate
-      ? !!python/object/new:multidict._istr.istr [Connection]
-      : keep-alive
-      ? !!python/object/new:multidict._istr.istr [Content-Encoding]
-      : gzip
-      ? !!python/object/new:multidict._istr.istr [Content-Length]
-      : '1444'
-      ? !!python/object/new:multidict._istr.istr [Content-Type]
-      : application/json
-      ? !!python/object/new:multidict._istr.istr [Date]
-      : Sun, 20 Jan 2019 01:02:59 GMT
-      ? !!python/object/new:multidict._istr.istr [Etag]
-      : '"939a3de2e323be8db4715fe9a2fc8a9e"'
-      ? !!python/object/new:multidict._istr.istr [Server]
-      : nginx/1.13.10
-      ? !!python/object/new:multidict._istr.istr [Vary]
-      : Accept-Encoding
-      X-D-V-N: INIT-AC644301AWS [C-S-W]
-      X-Powered-By: Loli
-    status: {code: 200, message: OK}
-    url: !!python/object/new:yarl.URL
-      state: !!python/tuple
-      - !!python/object/new:urllib.parse.SplitResult [https, api.jikan.moe, /v3/character/425,
-        '', '']
+      Access-Control-Allow-Methods: '*'
+      Access-Control-Allow-Origin: '*'
+      Cache-Control: private, must-revalidate
+      Connection: keep-alive
+      Content-Encoding: gzip
+      Content-Length: '179'
+      Content-Type: application/json
+      Date: Wed, 10 Jun 2020 05:25:01 GMT
+      Server: Jikan/3.4
+      Vary: Accept-Encoding
+      expires: '-1'
+      pragma: no-cache
+    status:
+      code: 503
+      message: Service Unavailable
+    url: https://api.jikan.moe/v3/character/425
 version: 1

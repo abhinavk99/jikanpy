@@ -1,6 +1,21 @@
 import pytest
 
+import asyncio
 import json
+import sys
+
+
+def pytest_sessionstart(session):
+    """
+    Called after the Session object has been created and
+    before performing collection and entering the run test loop.
+    """
+    if (
+        sys.version_info[0] == 3
+        and sys.version_info[1] >= 8
+        and sys.platform.startswith("win")
+    ):
+        asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
 
 @pytest.fixture
@@ -248,7 +263,6 @@ def top_anime_keys():
         "score",
         "members",
         "start_date",
-        "end_date",
         "episodes",
     }
 
@@ -279,7 +293,6 @@ def subset_anime_keys():
         "image_url",
         "synopsis",
         "type",
-        "airing_start",
         "episodes",
         "members",
         "genres",
@@ -306,7 +319,6 @@ def magazine_manga_keys():
         "image_url",
         "synopsis",
         "type",
-        "publishing_start",
         "volumes",
         "members",
         "genres",
