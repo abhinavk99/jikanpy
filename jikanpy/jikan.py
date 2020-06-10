@@ -7,6 +7,7 @@ import json
 from typing import Optional, Dict, Mapping, Union, Any
 
 import requests
+import simplejson
 
 from jikanpy import utils
 from jikanpy.exceptions import DeprecatedEndpoint
@@ -66,7 +67,9 @@ class Jikan:
         json_response: Dict[str, Any] = {}
         try:
             json_response = response.json()
-        except json.decoder.JSONDecodeError:
+            if not isinstance(json_response, dict):
+                json_response = {"data": json_response}
+        except (json.decoder.JSONDecodeError, simplejson.JSONDecodeError):
             # json failed to be parsed
             # this could happen, for example, when someone has been IP banned
             # and it returns the typical nginx 403 forbidden page

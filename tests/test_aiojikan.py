@@ -56,6 +56,15 @@ async def test_wrap_response(aio_jikan):
     await aio_jikan.close()
 
 
+async def test_wrap_non_dict_response(aio_jikan, aio_response_non_dict_mock):
+    wrapped_response = await aio_jikan._wrap_response(aio_response_non_dict_mock, "")
+
+    assert isinstance(wrapped_response, dict)
+    assert "data" in wrapped_response
+    assert wrapped_response["data"] == await aio_response_non_dict_mock.json()
+    await aio_jikan.close()
+
+
 @vcr.use_cassette("tests/vcr_cassettes/aio-anime-success.yaml")
 async def test_anime_success(anime_keys, aio_jikan):
     anime_info = await aio_jikan.anime(MUSHISHI_ID)
@@ -322,4 +331,10 @@ async def test_user_list_failure(aio_jikan):
 async def test_empty_response_json(aio_jikan, response_mock):
     with pytest.raises(APIException):
         await aio_jikan._wrap_response(response_mock, url="")
+    await aio_jikan.close()
+
+
+async def test_empty_response_json_with_simplejson(aio_jikan, response_simplejson_mock):
+    with pytest.raises(APIException):
+        await aio_jikan._wrap_response(response_simplejson_mock, url="")
     await aio_jikan.close()

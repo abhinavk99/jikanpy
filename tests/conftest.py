@@ -4,6 +4,8 @@ import asyncio
 import json
 import sys
 
+import simplejson
+
 
 def pytest_sessionstart(session):
     """
@@ -36,6 +38,56 @@ def response_mock():
 
         def json(self):
             raise json.decoder.JSONDecodeError("Failed", "", 0)
+
+    return ResponseMock()
+
+
+@pytest.fixture
+def response_simplejson_mock():
+    class ResponseMock:
+        def __init__(self):
+            self.status = 403
+            self.status_code = 403
+            # simulate a banned user
+            self.text = """<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx/1.15.5 (Ubuntu)</center>
+</body>
+</html>
+"""
+
+        def json(self):
+            raise simplejson.JSONDecodeError("Failed", "", 0)
+
+    return ResponseMock()
+
+
+@pytest.fixture
+def response_non_dict_mock():
+    class ResponseMock:
+        def __init__(self):
+            self.status = 200
+            self.status_code = 200
+            self.headers = {"Content-Type": "application/json"}
+
+        def json(self):
+            return ["One Piece", "Jojo"]
+
+    return ResponseMock()
+
+
+@pytest.fixture
+def aio_response_non_dict_mock():
+    class ResponseMock:
+        def __init__(self):
+            self.status = 200
+            self.status_code = 200
+            self.headers = {"Content-Type": "application/json"}
+
+        async def json(self):
+            return ["One Piece", "Jojo"]
 
     return ResponseMock()
 
