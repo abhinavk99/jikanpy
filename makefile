@@ -1,3 +1,6 @@
+all:
+	@echo No argument passed into makefile, exiting...
+
 build-wheel:
 	python setup.py sdist bdist_wheel
 

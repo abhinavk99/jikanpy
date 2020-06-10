@@ -4,7 +4,7 @@ jikan.py contains the Jikan class, a synchronous Jikan wrapper.
 """
 
 import json
-from typing import Optional, Dict, Mapping, Union
+from typing import Optional, Dict, Mapping, Union, Any
 
 import requests
 
@@ -56,11 +56,14 @@ class Jikan:
         )
         self.session = requests.Session() if session is None else session
 
+    @staticmethod
     def _wrap_response(
-        self, response: requests.Response, url: str, **kwargs: Union[int, Optional[str]]
-    ) -> Dict:
-        """Parses the response as json, then runs check_response and add_jikan_metadata"""
-        json_response: Dict = {}
+        response: requests.Response, url: str, **kwargs: Union[int, Optional[str]]
+    ) -> Dict[str, Any]:
+        """Parses the response as json, then runs check_response and
+        add_jikan_metadata
+        """
+        json_response: Dict[str, Any] = {}
         try:
             json_response = response.json()
         except json.decoder.JSONDecodeError:
@@ -81,9 +84,8 @@ class Jikan:
         id: int,
         extension: Optional[str],
         page: Optional[int] = None,
-    ) -> Dict:
-        """
-        Gets the response from Jikan API given the endpoint:
+    ) -> Dict[str, Any]:
+        """Gets the response from Jikan API given the endpoint:
         anime, manga, character, person, club
         """
         url = utils.get_main_url(self.base, endpoint, id, extension, page)
@@ -92,7 +94,7 @@ class Jikan:
 
     def _get_creator(
         self, creator_type: str, creator_id: int, page: Optional[int] = None
-    ) -> Dict:
+    ) -> Dict[str, Any]:
         """Gets the response from Jikan API for producer and magazine"""
         url = utils.get_creator_url(self.base, creator_type, creator_id, page)
         response = self.session.get(url)
@@ -100,7 +102,7 @@ class Jikan:
 
     def anime(
         self, id: int, extension: Optional[str] = None, page: Optional[int] = None
-    ) -> Dict:
+    ) -> Dict[str, Any]:
         """Gets information on an anime.
 
         Args:
@@ -113,7 +115,7 @@ class Jikan:
 
         Returns:
             Dict: Dictionary containing information about the anime.
-        
+
         Examples:
             >>> jikan.anime(14719)
             >>> jikan.anime(14719, extension='episodes')
@@ -124,7 +126,7 @@ class Jikan:
 
     def manga(
         self, id: int, extension: Optional[str] = None, page: Optional[int] = None
-    ) -> Dict:
+    ) -> Dict[str, Any]:
         """Gets information on a manga.
 
         Args:
@@ -137,13 +139,13 @@ class Jikan:
 
         Returns:
             Dict: Dictionary containing information about the manga.
-        
+
         Examples:
             >>> jikan.manga(1630)
         """
         return self._get("manga", id, extension, page)
 
-    def character(self, id: int, extension: Optional[str] = None) -> Dict:
+    def character(self, id: int, extension: Optional[str] = None) -> Dict[str, Any]:
         """Gets information on a character.
 
         Args:
@@ -154,13 +156,13 @@ class Jikan:
 
         Returns:
             Dict: Dictionary containing information about the character.
-        
+
         Examples:
             >>> jikan.character(6356)
         """
         return self._get("character", id, extension)
 
-    def person(self, id: int, extension: Optional[str] = None) -> Dict:
+    def person(self, id: int, extension: Optional[str] = None) -> Dict[str, Any]:
         """Gets information on a person.
 
         Args:
@@ -171,7 +173,7 @@ class Jikan:
 
         Returns:
             Dict: Dictionary containing information about the person.
-        
+
         Examples:
             >>> jikan.person(2)
         """
@@ -179,7 +181,7 @@ class Jikan:
 
     def club(
         self, id: int, extension: Optional[str] = None, page: Optional[int] = None
-    ) -> Dict:
+    ) -> Dict[str, Any]:
         """Gets information on a club.
 
         Args:
@@ -192,13 +194,14 @@ class Jikan:
 
         Returns:
             Dict: Dictionary containing information about the club.
-        
+
         Examples:
             >>> jikan.club(379)
         """
         return self._get("club", id, extension, page)
 
-    def user_list(self, id: int, extension: Optional[str] = None) -> Dict:
+    @staticmethod
+    def user_list(id: int, extension: Optional[str] = None) -> Dict[str, Any]:
         """Deprecated: Gets user list information."""
         raise DeprecatedEndpoint("user_list is a deprecated endpoint")
 
@@ -208,7 +211,7 @@ class Jikan:
         query: str,
         page: Optional[int] = None,
         parameters: Optional[Mapping[str, Optional[Union[int, str, float]]]] = None,
-    ) -> Dict:
+    ) -> Dict[str, Any]:
         """Searches for a query on MyAnimeList.
 
         Args:
@@ -227,14 +230,16 @@ class Jikan:
             >>> jikan.search('anime', 'Jojo')
             >>> jikan.search('anime', 'Jojo', page=2)
             >>> jikan.search('anime', 'Jojo', parameters={'type': 'tv'})
-            >>> jikan.search('anime', 'Jojo', page=2, parameters={'genre': 37, 'type': 'tv'})
+            >>> jikan.search(
+                    'anime', 'Jojo', page=2, parameters={'genre': 37, 'type': 'tv'}
+                )
         """
         url = utils.get_search_url(self.base, search_type, query, page, parameters)
         response = self.session.get(url)
         kwargs = {"search type": search_type, "query": query}
         return self._wrap_response(response, url, **kwargs)
 
-    def season(self, year: int, season: str) -> Dict:
+    def season(self, year: int, season: str) -> Dict[str, Any]:
         """Gets information on anime of the specific season.
 
         Args:
@@ -253,7 +258,7 @@ class Jikan:
         response = self.session.get(url)
         return self._wrap_response(response, url, year=year, season=season)
 
-    def season_archive(self) -> Dict:
+    def season_archive(self) -> Dict[str, Any]:
         """Gets all the years and their respective seasons from MyAnimeList.
 
         Returns:
@@ -266,7 +271,7 @@ class Jikan:
         response = self.session.get(url)
         return self._wrap_response(response, url)
 
-    def season_later(self) -> Dict:
+    def season_later(self) -> Dict[str, Any]:
         """Gets anime that have been announced for upcoming seasons.
 
         Returns:
@@ -279,7 +284,7 @@ class Jikan:
         response = self.session.get(url)
         return self._wrap_response(response, url)
 
-    def schedule(self, day: Optional[str] = None) -> Dict:
+    def schedule(self, day: Optional[str] = None) -> Dict[str, Any]:
         """Gets anime scheduled.
 
         Args:
@@ -299,7 +304,7 @@ class Jikan:
 
     def top(
         self, type: str, page: Optional[int] = None, subtype: Optional[str] = None
-    ) -> Dict:
+    ) -> Dict[str, Any]:
         """Gets top items on MyAnimeList.
 
         Args:
@@ -322,7 +327,9 @@ class Jikan:
         response = self.session.get(url)
         return self._wrap_response(response, url, type=type)
 
-    def genre(self, type: str, genre_id: int, page: Optional[int] = None) -> Dict:
+    def genre(
+        self, type: str, genre_id: int, page: Optional[int] = None
+    ) -> Dict[str, Any]:
         """Gets anime or manga by genre.
 
         Args:
@@ -343,7 +350,7 @@ class Jikan:
         response = self.session.get(url)
         return self._wrap_response(response, url, id=genre_id, type=type)
 
-    def producer(self, producer_id: int, page: Optional[int] = None) -> Dict:
+    def producer(self, producer_id: int, page: Optional[int] = None) -> Dict[str, Any]:
         """Gets anime by the producer/studio/licensor.
 
         Args:
@@ -360,7 +367,7 @@ class Jikan:
         """
         return self._get_creator("producer", producer_id, page)
 
-    def magazine(self, magazine_id: int, page: Optional[int] = None) -> Dict:
+    def magazine(self, magazine_id: int, page: Optional[int] = None) -> Dict[str, Any]:
         """Gets manga by the magazine/serializer/publisher.
 
         Args:
@@ -384,8 +391,8 @@ class Jikan:
         request: Optional[str] = None,
         argument: Optional[Union[int, str]] = None,
         page: Optional[int] = None,
-        parameters: Optional[Mapping] = None,
-    ) -> Dict:
+        parameters: Optional[Mapping[str, Any]] = None,
+    ) -> Dict[str, Any]:
         """Gets information about the user.
 
         Args:
@@ -411,8 +418,15 @@ class Jikan:
             >>> jikan.user(username='Xinil', request='friends', page=2)
             >>> jikan.user(username='Xinil', request='history')
             >>> jikan.user(username='Xinil', request='animelist', argument='ptw')
-            >>> jikan.user(username='Xinil', request='animelist', parameters={'page': 2})
-            >>> jikan.user(username='Xinil', request='animelist', argument='ptw', parameters={'page': 2})
+            >>> jikan.user(
+                    username='Xinil', request='animelist', parameters={'page': 2}
+                )
+            >>> jikan.user(
+                    username='Xinil',
+                    request='animelist',
+                    argument='ptw',
+                    parameters={'page': 2}
+                )
         """
         url = utils.get_user_url(
             self.base, username, request, argument, page, parameters
@@ -426,7 +440,7 @@ class Jikan:
         type: Optional[str] = None,
         period: Optional[str] = None,
         offset: Optional[int] = None,
-    ) -> Dict:
+    ) -> Dict[str, Any]:
         """Gets meta information regarding the Jikan API.
 
         Args:

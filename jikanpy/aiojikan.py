@@ -3,7 +3,6 @@
 aiojikan.py contains the AioJikan class, an asynchronous Jikan wrapper.
 """
 
-import asyncio
 import json
 from typing import Optional, Dict, Mapping, Union, Any, TypeVar
 
@@ -13,7 +12,7 @@ from jikanpy import utils
 from jikanpy.exceptions import DeprecatedEndpoint
 
 # Bind type variable to AioJikan so that it can be used in type hints
-T = TypeVar("T", bound="AioJikan")
+AioJikanT = TypeVar("AioJikanT", bound="AioJikan")
 
 
 class AioJikan:
@@ -33,7 +32,8 @@ class AioJikan:
                 async with AioJikan() as aio_jikan:
                     pass
 
-                # You can also construct AioJikan like below, but make sure to close the object
+                # You can also construct AioJikan like below, but make sure to close
+                # the object
                 aio_jikan_2 = AioJikan()
                 await aio_jikan_2.close()
 
@@ -63,14 +63,16 @@ class AioJikan:
         Examples:
             >>> aio_jikan_1 = AioJikan()
             >>> aio_jikan_2 = AioJikan(selected_base='http://localhost:8000/v3')
-            >>> aio_jikan_3 = AioJikan(session=aiohttp.ClientSession(headers={'x-test': 'true'}))
+            >>> aio_jikan_3 = AioJikan(
+                    session=aiohttp.ClientSession(headers={'x-test': 'true'})
+                )
         """
         self.base = (
             utils.BASE_URL if selected_base is None else selected_base.rstrip("/ ")
         )
         self.session = session
 
-    async def __aenter__(self: T) -> T:
+    async def __aenter__(self: AioJikanT) -> AioJikanT:
         return self
 
     async def __aexit__(self, *excinfo: Any) -> None:
@@ -92,9 +94,11 @@ class AioJikan:
         response: aiohttp.ClientResponse,
         url: str,
         **kwargs: Union[int, Optional[str]],
-    ) -> Dict:
-        """Parses the response as json, then runs check_response and add_jikan_metadata"""
-        json_response: Dict = {}
+    ) -> Dict[str, Any]:
+        """Parses the response as json, then runs check_response and
+        add_jikan_metadata
+        """
+        json_response: Dict[str, Any] = {}
         try:
             json_response = await response.json()
         except json.decoder.JSONDecodeError:
@@ -110,9 +114,8 @@ class AioJikan:
         id: int,
         extension: Optional[str],
         page: Optional[int] = None,
-    ) -> Dict:
-        """
-        Gets the response from Jikan API given the endpoint:
+    ) -> Dict[str, Any]:
+        """Gets the response from Jikan API given the endpoint:
         anime, manga, character, person, club
         """
         session = await self._get_session()
@@ -122,7 +125,7 @@ class AioJikan:
 
     async def _get_creator(
         self, creator_type: str, creator_id: int, page: Optional[int] = None
-    ) -> Dict:
+    ) -> Dict[str, Any]:
         """Gets the response from Jikan API for producer and magazine"""
         session = await self._get_session()
         url = utils.get_creator_url(self.base, creator_type, creator_id, page)
@@ -133,7 +136,7 @@ class AioJikan:
 
     async def anime(
         self, id: int, extension: Optional[str] = None, page: Optional[int] = None
-    ) -> Dict:
+    ) -> Dict[str, Any]:
         """Gets information on an anime.
 
         Args:
@@ -145,8 +148,8 @@ class AioJikan:
                 to None.
 
         Returns:
-            Dict: Dictionary containing information about the anime.
-        
+            Dict[str, Any]: Dictionary containing information about the anime.
+
         Examples:
             >>> await jikan.anime(14719)
             >>> await jikan.anime(14719, extension='episodes')
@@ -157,7 +160,7 @@ class AioJikan:
 
     async def manga(
         self, id: int, extension: Optional[str] = None, page: Optional[int] = None
-    ) -> Dict:
+    ) -> Dict[str, Any]:
         """Gets information on a manga.
 
         Args:
@@ -170,13 +173,15 @@ class AioJikan:
 
         Returns:
             Dict: Dictionary containing information about the manga.
-        
+
         Examples:
             >>> await jikan.manga(1630)
         """
         return await self._get("manga", id, extension, page)
 
-    async def character(self, id: int, extension: Optional[str] = None) -> Dict:
+    async def character(
+        self, id: int, extension: Optional[str] = None
+    ) -> Dict[str, Any]:
         """Gets information on a character.
 
         Args:
@@ -187,13 +192,13 @@ class AioJikan:
 
         Returns:
             Dict: Dictionary containing information about the character.
-        
+
         Examples:
             >>> await jikan.character(6356)
         """
         return await self._get("character", id, extension)
 
-    async def person(self, id: int, extension: Optional[str] = None) -> Dict:
+    async def person(self, id: int, extension: Optional[str] = None) -> Dict[str, Any]:
         """Gets information on a person.
 
         Args:
@@ -204,7 +209,7 @@ class AioJikan:
 
         Returns:
             Dict: Dictionary containing information about the person.
-        
+
         Examples:
             >>> await jikan.person(2)
         """
@@ -212,7 +217,7 @@ class AioJikan:
 
     async def club(
         self, id: int, extension: Optional[str] = None, page: Optional[int] = None
-    ) -> Dict:
+    ) -> Dict[str, Any]:
         """Gets information on a club.
 
         Args:
@@ -225,13 +230,15 @@ class AioJikan:
 
         Returns:
             Dict: Dictionary containing information about the club.
-        
+
         Examples:
             >>> await jikan.club(379)
         """
         return await self._get("club", id, extension, page)
 
-    async def user_list(self, id: int, extension: Optional[str] = None) -> Dict:
+    async def user_list(
+        self, id: int, extension: Optional[str] = None
+    ) -> Dict[str, Any]:
         """Deprecated: Gets user list information."""
         raise DeprecatedEndpoint("user_list is a deprecated endpoint")
 
@@ -241,7 +248,7 @@ class AioJikan:
         query: str,
         page: Optional[int] = None,
         parameters: Optional[Mapping[str, Optional[Union[int, str, float]]]] = None,
-    ) -> Dict:
+    ) -> Dict[str, Any]:
         """Searches for a query on MyAnimeList.
 
         Args:
@@ -260,7 +267,9 @@ class AioJikan:
             >>> await jikan.search('anime', 'Jojo')
             >>> await jikan.search('anime', 'Jojo', page=2)
             >>> await jikan.search('anime', 'Jojo', parameters={'type': 'tv'})
-            >>> await jikan.search('anime', 'Jojo', page=2, parameters={'genre': 37, 'type': 'tv'})
+            >>> await jikan.search(
+                    'anime', 'Jojo', page=2, parameters={'genre': 37, 'type': 'tv'}
+                )
         """
         session = await self._get_session()
         url = utils.get_search_url(self.base, search_type, query, page, parameters)
@@ -268,7 +277,7 @@ class AioJikan:
         kwargs = {"search type": search_type, "query": query}
         return await self._wrap_response(response, url, **kwargs)
 
-    async def season(self, year: int, season: str) -> Dict:
+    async def season(self, year: int, season: str) -> Dict[str, Any]:
         """Gets information on anime of the specific season.
 
         Args:
@@ -288,7 +297,7 @@ class AioJikan:
         response = await session.get(url)
         return await self._wrap_response(response, url, year=year, season=season)
 
-    async def season_archive(self) -> Dict:
+    async def season_archive(self) -> Dict[str, Any]:
         """Gets all the years and their respective seasons from MyAnimeList.
 
         Returns:
@@ -302,7 +311,7 @@ class AioJikan:
         response = await session.get(url)
         return await self._wrap_response(response, url)
 
-    async def season_later(self) -> Dict:
+    async def season_later(self) -> Dict[str, Any]:
         """Gets anime that have been announced for upcoming seasons.
 
         Returns:
@@ -316,7 +325,7 @@ class AioJikan:
         response = await session.get(url)
         return await self._wrap_response(response, url)
 
-    async def schedule(self, day: Optional[str] = None) -> Dict:
+    async def schedule(self, day: Optional[str] = None) -> Dict[str, Any]:
         """Gets anime scheduled.
 
         Args:
@@ -337,7 +346,7 @@ class AioJikan:
 
     async def top(
         self, type: str, page: Optional[int] = None, subtype: Optional[str] = None
-    ) -> Dict:
+    ) -> Dict[str, Any]:
         """Gets top items on MyAnimeList.
 
         Args:
@@ -361,7 +370,9 @@ class AioJikan:
         response = await session.get(url)
         return await self._wrap_response(response, url, type=type)
 
-    async def genre(self, type: str, genre_id: int, page: Optional[int] = None) -> Dict:
+    async def genre(
+        self, type: str, genre_id: int, page: Optional[int] = None
+    ) -> Dict[str, Any]:
         """Gets anime or manga by genre.
 
         Args:
@@ -383,7 +394,9 @@ class AioJikan:
         response = await session.get(url)
         return await self._wrap_response(response, url, id=genre_id, type=type)
 
-    async def producer(self, producer_id: int, page: Optional[int] = None) -> Dict:
+    async def producer(
+        self, producer_id: int, page: Optional[int] = None
+    ) -> Dict[str, Any]:
         """Gets anime by the producer/studio/licensor.
 
         Args:
@@ -400,7 +413,9 @@ class AioJikan:
         """
         return await self._get_creator("producer", producer_id, page)
 
-    async def magazine(self, magazine_id: int, page: Optional[int] = None) -> Dict:
+    async def magazine(
+        self, magazine_id: int, page: Optional[int] = None
+    ) -> Dict[str, Any]:
         """Gets manga by the magazine/serializer/publisher.
 
         Args:
@@ -424,8 +439,8 @@ class AioJikan:
         request: Optional[str] = None,
         argument: Optional[Union[int, str]] = None,
         page: Optional[int] = None,
-        parameters: Optional[Mapping] = None,
-    ) -> Dict:
+        parameters: Optional[Mapping[str, Any]] = None,
+    ) -> Dict[str, Any]:
         """Gets information about the user.
 
         Args:
@@ -451,8 +466,15 @@ class AioJikan:
             >>> await jikan.user(username='Xinil', request='friends', page=2)
             >>> await jikan.user(username='Xinil', request='history')
             >>> await jikan.user(username='Xinil', request='animelist', argument='ptw')
-            >>> await jikan.user(username='Xinil', request='animelist', parameters={'page': 2})
-            >>> await jikan.user(username='Xinil', request='animelist', argument='ptw', parameters={'page': 2})
+            >>> await jikan.user(
+                    username='Xinil', request='animelist', parameters={'page': 2}
+                )
+            >>> await jikan.user(
+                    username='Xinil',
+                    request='animelist',
+                    argument='ptw',
+                    parameters={'page': 2}
+                )
         """
         session = await self._get_session()
         url = utils.get_user_url(
@@ -469,7 +491,7 @@ class AioJikan:
         type: Optional[str] = None,
         period: Optional[str] = None,
         offset: Optional[int] = None,
-    ) -> Dict:
+    ) -> Dict[str, Any]:
         """Gets meta information regarding the Jikan API.
 
         Args:

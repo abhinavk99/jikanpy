@@ -1,3 +1,9 @@
+"""Jikan/AioJikan Exceptions
+====================================
+exceptions.py contains exceptions used in Jikan and AioJikan.
+"""
+
+
 class JikanException(Exception):
     """Base exception class for Jikan.py"""
 
