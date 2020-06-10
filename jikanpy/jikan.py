@@ -78,6 +78,11 @@ class Jikan:
             raise APIException(response.status_code, json_response, **kwargs)
         return utils.add_jikan_metadata(response, json_response, url)
 
+    def _request(self, url: str, **kwargs: Union[int, Optional[str]]) -> Dict[str, Any]:
+        """Makes a request to the Jikan API given the url and wraps the response."""
+        response = self.session.get(url)
+        return self._wrap_response(response, url, **kwargs)
+
     def _get(
         self,
         endpoint: str,
@@ -89,16 +94,14 @@ class Jikan:
         anime, manga, character, person, club
         """
         url = utils.get_main_url(self.base, endpoint, id, extension, page)
-        response = self.session.get(url)
-        return self._wrap_response(response, url, id=id, endpoint=endpoint)
+        return self._request(url, id=id, endpoint=endpoint)
 
     def _get_creator(
         self, creator_type: str, creator_id: int, page: Optional[int] = None
     ) -> Dict[str, Any]:
         """Gets the response from Jikan API for producer and magazine"""
         url = utils.get_creator_url(self.base, creator_type, creator_id, page)
-        response = self.session.get(url)
-        return self._wrap_response(response, url, id=creator_id, endpoint=creator_type)
+        return self._request(url, id=creator_id, endpoint=creator_type)
 
     def anime(
         self, id: int, extension: Optional[str] = None, page: Optional[int] = None
@@ -235,9 +238,8 @@ class Jikan:
                 )
         """
         url = utils.get_search_url(self.base, search_type, query, page, parameters)
-        response = self.session.get(url)
         kwargs = {"search type": search_type, "query": query}
-        return self._wrap_response(response, url, **kwargs)
+        return self._request(url, **kwargs)
 
     def season(self, year: int, season: str) -> Dict[str, Any]:
         """Gets information on anime of the specific season.
@@ -255,8 +257,7 @@ class Jikan:
             >>> jikan.season(year=2016, season='spring')
         """
         url = utils.get_season_url(self.base, year, season)
-        response = self.session.get(url)
-        return self._wrap_response(response, url, year=year, season=season)
+        return self._request(url, year=year, season=season)
 
     def season_archive(self) -> Dict[str, Any]:
         """Gets all the years and their respective seasons from MyAnimeList.
@@ -268,8 +269,7 @@ class Jikan:
             >>> jikan.season_archive()
         """
         url = utils.get_season_archive_url(self.base)
-        response = self.session.get(url)
-        return self._wrap_response(response, url)
+        return self._request(url)
 
     def season_later(self) -> Dict[str, Any]:
         """Gets anime that have been announced for upcoming seasons.
@@ -281,8 +281,7 @@ class Jikan:
             >>> jikan.season_later()
         """
         url = utils.get_season_later_url(self.base)
-        response = self.session.get(url)
-        return self._wrap_response(response, url)
+        return self._request(url)
 
     def schedule(self, day: Optional[str] = None) -> Dict[str, Any]:
         """Gets anime scheduled.
@@ -299,8 +298,7 @@ class Jikan:
             >>> jikan.schedule(day='monday')
         """
         url = utils.get_schedule_url(self.base, day)
-        response = self.session.get(url)
-        return self._wrap_response(response, url, day=day)
+        return self._request(url, day=day)
 
     def top(
         self, type: str, page: Optional[int] = None, subtype: Optional[str] = None
@@ -324,8 +322,7 @@ class Jikan:
             >>> jikan.top(type='anime', page=2, subtype='upcoming')
         """
         url = utils.get_top_url(self.base, type, page, subtype)
-        response = self.session.get(url)
-        return self._wrap_response(response, url, type=type)
+        return self._request(url, type=type)
 
     def genre(
         self, type: str, genre_id: int, page: Optional[int] = None
@@ -347,8 +344,7 @@ class Jikan:
             >>> jikan.genre(type='manga', genre_id=2)
         """
         url = utils.get_genre_url(self.base, type, genre_id, page)
-        response = self.session.get(url)
-        return self._wrap_response(response, url, id=genre_id, type=type)
+        return self._request(url, id=genre_id, type=type)
 
     def producer(self, producer_id: int, page: Optional[int] = None) -> Dict[str, Any]:
         """Gets anime by the producer/studio/licensor.
@@ -431,8 +427,7 @@ class Jikan:
         url = utils.get_user_url(
             self.base, username, request, argument, page, parameters
         )
-        response = self.session.get(url)
-        return self._wrap_response(response, url, username=username, request=request)
+        return self._request(url, username=username, request=request)
 
     def meta(
         self,
@@ -464,7 +459,4 @@ class Jikan:
             >>> jikan.meta('status')
         """
         url = utils.get_meta_url(self.base, request, type, period, offset)
-        response = self.session.get(url)
-        return self._wrap_response(
-            response, url, request=request, type=type, period=period
-        )
+        return self._request(url, request=request, type=type, period=period)
