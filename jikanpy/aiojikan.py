@@ -10,7 +10,7 @@ import aiohttp
 import simplejson
 
 from jikanpy import utils
-from jikanpy.exceptions import DeprecatedEndpoint
+from jikanpy.exceptions import APIException, DeprecatedEndpoint
 
 # Bind type variable to AioJikan so that it can be used in type hints
 AioJikanT = TypeVar("AioJikanT", bound="AioJikan")
@@ -106,9 +106,8 @@ class AioJikan:
                 json_response = {"data": json_response}
         except (json.decoder.JSONDecodeError, simplejson.JSONDecodeError):
             pass
-        utils.check_response(
-            response_dict=json_response, response_status_code=response.status, **kwargs
-        )
+        if response.status >= 400:
+            raise APIException(response.status, json_response, **kwargs)
         return utils.add_jikan_metadata(response, json_response, url)
 
     async def _get(

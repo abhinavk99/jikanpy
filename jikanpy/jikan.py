@@ -10,7 +10,7 @@ import requests
 import simplejson
 
 from jikanpy import utils
-from jikanpy.exceptions import DeprecatedEndpoint
+from jikanpy.exceptions import APIException, DeprecatedEndpoint
 
 
 class Jikan:
@@ -74,11 +74,8 @@ class Jikan:
             # this could happen, for example, when someone has been IP banned
             # and it returns the typical nginx 403 forbidden page
             pass
-        utils.check_response(
-            response_dict=json_response,
-            response_status_code=response.status_code,
-            **kwargs,
-        )
+        if response.status_code >= 400:
+            raise APIException(response.status_code, json_response, **kwargs)
         return utils.add_jikan_metadata(response, json_response, url)
 
     def _get(
