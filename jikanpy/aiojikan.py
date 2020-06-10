@@ -7,6 +7,7 @@ import json
 from typing import Optional, Dict, Mapping, Union, Any, TypeVar
 
 import aiohttp
+import simplejson
 
 from jikanpy import utils
 from jikanpy.exceptions import DeprecatedEndpoint
@@ -101,7 +102,9 @@ class AioJikan:
         json_response: Dict[str, Any] = {}
         try:
             json_response = await response.json()
-        except json.decoder.JSONDecodeError:
+            if not isinstance(json_response, dict):
+                json_response = {"data": json_response}
+        except (json.decoder.JSONDecodeError, simplejson.JSONDecodeError):
             pass
         utils.check_response(
             response_dict=json_response, response_status_code=response.status, **kwargs

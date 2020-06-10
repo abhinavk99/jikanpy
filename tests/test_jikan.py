@@ -51,6 +51,14 @@ def test_wrap_response(header_keys, jikan):
     assert header_keys.issubset(anime_info["headers"].keys())
 
 
+def test_wrap_non_dict_response(jikan, response_non_dict_mock):
+    wrapped_response = jikan._wrap_response(response_non_dict_mock, "")
+
+    assert isinstance(wrapped_response, dict)
+    assert "data" in wrapped_response
+    assert wrapped_response["data"] == response_non_dict_mock.json()
+
+
 @vcr.use_cassette("tests/vcr_cassettes/anime-success.yaml")
 def test_anime_success(anime_keys, jikan):
     anime_info = jikan.anime(MUSHISHI_ID)
@@ -288,6 +296,11 @@ def test_user_list_failure(jikan):
 def test_empty_response_json(jikan, response_mock):
     with pytest.raises(APIException):
         jikan._wrap_response(response_mock, url="")
+
+
+def test_empty_response_json_with_simplejson(jikan, response_simplejson_mock):
+    with pytest.raises(APIException):
+        jikan._wrap_response(response_simplejson_mock, url="")
 
 
 def test_season_urls(jikan):
