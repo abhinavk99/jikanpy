@@ -1,5 +1,21 @@
 # Changelog for Jikanpy
 
+## [4.2.0] - 2020-06-10
+
+### Added
+
+- Revamped how APIException works so it displays more information whether or not the HTTP response is JSON
+
+### Changed
+
+- Some refactoring to fix typing and linting errors from mypy, flake8, and pylint
+- Updated some unit tests and commented out ones that don't work because of Jikan 503 errors
+
+### Fixed
+
+- Bug where jikanpy would crash when the JSON response can't be decoded with the simplejson JSON parser
+- Bug where jikanpy would crash when the JSON response is a list instead of a dict
+
 ## [4.1.0] - 2020-05-23
 
 ### Fixed
