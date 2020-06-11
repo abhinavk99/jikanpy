@@ -1,5 +1,7 @@
-import pytest
+# type: ignore
+# pylint: disable=missing-module-docstring,missing-function-docstring
 
+# pylint: disable=import-error
 from jikanpy import utils
 
 

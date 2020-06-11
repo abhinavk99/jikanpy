@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 MUSHISHI_ID = 457
 FULLMETAL_ID = 25
 GINKO_ID = 425
