@@ -293,14 +293,18 @@ def test_user_list_failure(jikan):
         jikan.user_list(1)
 
 
+@pytest.mark.parametrize("response_mock", (True, False), indirect=True)
 def test_empty_response_json(jikan, response_mock):
-    with pytest.raises(APIException):
+    with pytest.raises(APIException) as err:
         jikan._wrap_response(response_mock, url="")
 
-
-def test_empty_response_json_with_simplejson(jikan, response_simplejson_mock):
-    with pytest.raises(APIException):
-        jikan._wrap_response(response_simplejson_mock, url="")
+        assert err.status_code == response_mock.status_code
+        assert isinstance(err.error_json, dict)
+        assert "error" in err.error_json
+        assert err.error_json["error"] == response_mock.text
+        assert isinstance(err.relevant_params, dict)
+        assert "url" in err.relevant_params
+        assert err.relevant_params["url"] == ""
 
 
 def test_season_urls(jikan):

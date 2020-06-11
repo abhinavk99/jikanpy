@@ -12,6 +12,9 @@ def pytest_sessionstart(session):
     Called after the Session object has been created and
     before performing collection and entering the run test loop.
     """
+    # The default event loop on Windows causes an exception saying Event loop
+    # closed to be thrown on Python 3.8 with Windows
+    # https://github.com/encode/httpx/issues/914
     if (
         sys.version_info[0] == 3
         and sys.version_info[1] >= 8
@@ -21,10 +24,9 @@ def pytest_sessionstart(session):
 
 
 @pytest.fixture
-def response_mock():
+def response_mock(use_json_decoder=True):
     class ResponseMock:
         def __init__(self):
-            self.status = 403
             self.status_code = 403
             # simulate a banned user
             self.text = """<html>
@@ -37,19 +39,27 @@ def response_mock():
 """
 
         def json(self):
-            raise json.decoder.JSONDecodeError("Failed", "", 0)
+            if use_json_decoder:
+                raise json.decoder.JSONDecodeError("Failed", "", 0)
+            raise simplejson.JSONDecodeError("Failed", "", 0)
 
     return ResponseMock()
 
 
 @pytest.fixture
-def response_simplejson_mock():
+def aio_response_mock(use_json_decoder=True):
     class ResponseMock:
         def __init__(self):
             self.status = 403
-            self.status_code = 403
-            # simulate a banned user
-            self.text = """<html>
+
+        async def json(self):
+            if use_json_decoder:
+                raise json.decoder.JSONDecodeError("Failed", "", 0)
+            raise simplejson.JSONDecodeError("Failed", "", 0)
+
+        async def text(self):
+            """Simulate a banned user"""
+            return """<html>
 <head><title>403 Forbidden</title></head>
 <body>
 <center><h1>403 Forbidden</h1></center>
@@ -57,9 +67,6 @@ def response_simplejson_mock():
 </body>
 </html>
 """
-
-        def json(self):
-            raise simplejson.JSONDecodeError("Failed", "", 0)
 
     return ResponseMock()
 
@@ -68,7 +75,6 @@ def response_simplejson_mock():
 def response_non_dict_mock():
     class ResponseMock:
         def __init__(self):
-            self.status = 200
             self.status_code = 200
             self.headers = {"Content-Type": "application/json"}
 
@@ -83,7 +89,6 @@ def aio_response_non_dict_mock():
     class ResponseMock:
         def __init__(self):
             self.status = 200
-            self.status_code = 200
             self.headers = {"Content-Type": "application/json"}
 
         async def json(self):

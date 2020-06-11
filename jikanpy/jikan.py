@@ -73,7 +73,7 @@ class Jikan:
             # json failed to be parsed
             # this could happen, for example, when someone has been IP banned
             # and it returns the typical nginx 403 forbidden page
-            pass
+            json_response = {"error": response.text}
         if response.status_code >= 400:
             raise APIException(response.status_code, json_response, **kwargs)
         return utils.add_jikan_metadata(response, json_response, url)
