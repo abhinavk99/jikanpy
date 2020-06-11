@@ -1,5 +1,11 @@
 # Changelog for Jikanpy
 
+## [4.2.1] - 2020-06-11
+
+### Fixed
+
+- Bug where simplejson wasn't being installed as a dependency
+
 ## [4.2.0] - 2020-06-10
 
 ### Added

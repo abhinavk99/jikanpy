@@ -7,7 +7,7 @@ CHANGELOG = (HERE / "CHANGELOG.md").read_text()
 
 setup(
     name="jikanpy",
-    version="4.2.0",
+    version="4.2.1",
     description="Python wrapper for the Jikan API",
     license="MIT",
     long_description=README + CHANGELOG,
@@ -16,7 +16,7 @@ setup(
     package_data={"jikanpy": ["py.typed"]},
     packages=["jikanpy"],
     url="https://github.com/abhinavk99/jikanpy",
-    install_requires=["requests", "aiohttp"],
+    install_requires=["requests", "aiohttp", "simplejson"],
     keywords=["jikan", "jikanpy", "api", "myanimelist"],
     classifiers=[
         "Programming Language :: Python :: 3",
