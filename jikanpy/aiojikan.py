@@ -105,7 +105,7 @@ class AioJikan:
             if not isinstance(json_response, dict):
                 json_response = {"data": json_response}
         except (json.decoder.JSONDecodeError, simplejson.JSONDecodeError):
-            pass
+            json_response = {"error": await response.text()}
         if response.status >= 400:
             raise APIException(response.status, json_response, **kwargs)
         return utils.add_jikan_metadata(response, json_response, url)

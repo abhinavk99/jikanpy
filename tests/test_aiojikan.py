@@ -328,13 +328,16 @@ async def test_user_list_failure(aio_jikan):
     await aio_jikan.close()
 
 
-async def test_empty_response_json(aio_jikan, response_mock):
-    with pytest.raises(APIException):
-        await aio_jikan._wrap_response(response_mock, url="")
-    await aio_jikan.close()
+@pytest.mark.parametrize("aio_response_mock", (True, False), indirect=True)
+async def test_empty_response_json(aio_jikan, aio_response_mock):
+    with pytest.raises(APIException) as err:
+        await aio_jikan._wrap_response(aio_response_mock, url="")
 
-
-async def test_empty_response_json_with_simplejson(aio_jikan, response_simplejson_mock):
-    with pytest.raises(APIException):
-        await aio_jikan._wrap_response(response_simplejson_mock, url="")
+        assert err.status_code == aio_response_mock.status
+        assert isinstance(err.error_json, dict)
+        assert "error" in err.error_json
+        assert err.error_json["error"] == await aio_response_mock.text()
+        assert isinstance(err.relevant_params, dict)
+        assert "url" in err.relevant_params
+        assert err.relevant_params["url"] == ""
     await aio_jikan.close()
