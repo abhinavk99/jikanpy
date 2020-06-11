@@ -1,12 +1,16 @@
-import pytest
+# type: ignore
+# pylint: disable=missing-module-docstring,missing-class-docstring,no-self-use
+# pylint: disable=missing-function-docstring,too-few-public-methods
 
 import asyncio
 import json
 import sys
 
+import pytest
 import simplejson
 
 
+# pylint: disable=unused-argument
 def pytest_sessionstart(session):
     """
     Called after the Session object has been created and

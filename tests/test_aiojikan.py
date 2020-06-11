@@ -1,9 +1,15 @@
+# type: ignore
+# pylint: disable=missing-module-docstring,missing-function-docstring
+# pylint: disable=redefined-outer-name,protected-access
+
 import pytest
 import vcr
 
+# pylint: disable=import-error
 from jikanpy import AioJikan, utils, APIException, DeprecatedEndpoint
 
-from constants import (
+# pylint: disable=unused-import
+from constants import (  # noqa: F401
     MUSHISHI_ID,
     FULLMETAL_ID,
     GINKO_ID,

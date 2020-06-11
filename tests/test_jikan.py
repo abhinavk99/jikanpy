@@ -1,6 +1,11 @@
+# type: ignore
+# pylint: disable=missing-module-docstring,missing-function-docstring
+# pylint: disable=redefined-outer-name,protected-access
+
 import pytest
 import vcr
 
+# pylint: disable=import-error
 from jikanpy import Jikan, utils, APIException, DeprecatedEndpoint
 
 from constants import (
