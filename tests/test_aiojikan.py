@@ -336,14 +336,22 @@ async def test_user_list_failure(aio_jikan):
 
 @pytest.mark.parametrize("aio_response_mock", (True, False), indirect=True)
 async def test_empty_response_json(aio_jikan, aio_response_mock):
-    with pytest.raises(APIException) as err:
-        await aio_jikan._wrap_response(aio_response_mock, url="")
+    with pytest.raises(APIException) as err_info:
+        await aio_jikan._wrap_response(aio_response_mock, url=utils.BASE_URL, param=1)
 
-        assert err.status_code == aio_response_mock.status
-        assert isinstance(err.error_json, dict)
-        assert "error" in err.error_json
-        assert err.error_json["error"] == await aio_response_mock.text()
-        assert isinstance(err.relevant_params, dict)
-        assert "url" in err.relevant_params
-        assert err.relevant_params["url"] == ""
+    err = err_info.value
+    err_text = await aio_response_mock.text()
+    assert err.status_code == aio_response_mock.status
+    assert isinstance(err.error_json, dict)
+    assert "error" in err.error_json
+    assert err.error_json["error"] == err_text
+    assert isinstance(err.relevant_params, dict)
+    assert "param" in err.relevant_params
+    assert err.relevant_params["param"] == 1
+    assert str(err) == f"HTTP {aio_response_mock.status} - error={err_text} for param=1"
+    assert repr(err).startswith(
+        f"APIException(status_code={aio_response_mock.status}, error_json={{'error': '"
+    )
+    assert repr(err).endswith("'}, relevant_params={'param': 1})")
+
     await aio_jikan.close()
