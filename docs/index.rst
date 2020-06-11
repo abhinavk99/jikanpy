@@ -7,11 +7,15 @@ Jikan
 .. autoclass:: jikanpy.Jikan
    :members:
 
+   .. automethod:: __init__
+
 AioJikan
 --------
 
 .. autoclass:: jikanpy.AioJikan
    :members:
+
+   .. automethod:: __init__
 
 
 .. toctree::
