@@ -7,14 +7,16 @@ CHANGELOG = (HERE / "CHANGELOG.md").read_text()
 
 setup(
     name="jikanpy",
-    version="4.2.1",
+    version="4.2.2",
     description="Python wrapper for the Jikan API",
     license="MIT",
     long_description=README + CHANGELOG,
     long_description_content_type="text/markdown",
     author="Abhinav Kasamsetty",
+    author_email="abhinavkasamsetty@gmail.com",
     package_data={"jikanpy": ["py.typed"]},
     packages=["jikanpy"],
+    data_files=[(".", ["CHANGELOG.md"])],
     url="https://github.com/abhinavk99/jikanpy",
     install_requires=["requests", "aiohttp", "simplejson"],
     keywords=["jikan", "jikanpy", "api", "myanimelist"],

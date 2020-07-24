@@ -1,5 +1,11 @@
 # Changelog for Jikanpy
 
+## [4.2.2] - 2020-07-24
+
+### Fixed
+
+- Bug where downloading jikanpy from the distribution would fail because CHANGELOG.md wasn't included and setup.py uses it
+
 ## [4.2.1] - 2020-06-11
 
 ### Fixed
