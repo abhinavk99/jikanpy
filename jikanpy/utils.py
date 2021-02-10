@@ -62,7 +62,10 @@ def get_search_url(
         url += "".join(f"&{k}={v}" for k, v in parameters.items())
     return url
 
-def get_season_url(base_url: str, year: Optional[int] = None, season: Optional[str] = None) -> str:
+
+def get_season_url(
+    base_url: str, year: Optional[int] = None, season: Optional[str] = None
+) -> str:
     """Creates the URL for the season endpoint."""
     if year is None or season is None:
         return f"{base_url}/season"
