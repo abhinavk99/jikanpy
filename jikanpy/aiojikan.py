@@ -279,18 +279,20 @@ class AioJikan:
         kwargs = {"search type": search_type, "query": query}
         return await self._request(url, **kwargs)
 
-    async def season(self, year: int, season: str) -> Dict[str, Any]:
-        """Gets information on anime of the specific season.
+    async def season(self, year: Optional[int] = None, season: Optional[str] = None) -> Dict[str, Any]:
+        """Gets information on anime of the specific season or the current seasaon if 
+            no parameters are specified.
 
         Args:
-            year (:obj:`int`): Year to get anime of.
-            season (:obj:`str`): Season to get anime of. Possible values are
-                winter, spring, summer, and fall.
+            year (:obj:`int`, optional): Year to get anime of. Defaults to None.
+            season (:obj:`str`, optional): Season to get anime of. Possible values are
+                winter, spring, summer, and fall. Defaults to None.
 
         Returns:
             Dict: Dictionary containing information on anime of the season.
 
         Examples:
+            >>> await jikan.season()
             >>> await jikan.season(year=2018, season='winter')
             >>> await jikan.season(year=2016, season='spring')
         """
