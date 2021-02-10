@@ -241,8 +241,10 @@ class Jikan:
         kwargs = {"search type": search_type, "query": query}
         return self._request(url, **kwargs)
 
-    def season(self, year: Optional[int] = None, season: Optional[str] = None) -> Dict[str, Any]:
-        """Gets information on anime of the specific season or the current seasaon if 
+    def season(
+        self, year: Optional[int] = None, season: Optional[str] = None
+    ) -> Dict[str, Any]:
+        """Gets information on anime of the specific season or the current seasaon if
             no parameters are specified.
 
         Args:
