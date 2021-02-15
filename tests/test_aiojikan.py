@@ -167,6 +167,17 @@ async def test_search_genre_exclude_success(search_keys, aio_jikan):
 #     await aio_jikan.close()
 
 
+
+@vcr.use_cassette("tests/vcr_cassettes/aio-current-season-success.yaml")
+async def test_season_current_success(season_keys, seasonal_anime_keys, aio_jikan):
+    season_info = await aio_jikan.season()
+
+    assert isinstance(season_info, dict)
+    assert season_keys.issubset(season_info.keys())
+    for anime in season_info["anime"]:
+        assert seasonal_anime_keys.issubset(anime.keys())
+    await aio_jikan.close()
+
 @vcr.use_cassette("tests/vcr_cassettes/aio-season-archive-success.yaml")
 async def test_season_archive_success(
     season_archive_keys, archived_years_keys, aio_jikan
