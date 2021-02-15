@@ -171,6 +171,14 @@ def test_season_later_success(season_keys, seasonal_anime_keys, jikan):
     for anime in season_later_info["anime"]:
         assert seasonal_anime_keys.issubset(anime.keys())
 
+@vcr.use_cassette("tests/vcr_cassettes/current-season-success.yaml")
+def test_season_current_success(season_keys, seasonal_anime_keys, jikan):
+    season_info = jikan.season()
+
+    assert isinstance(season_info, dict)
+    assert season_keys.issubset(season_info.keys())
+    for anime in season_info["anime"]:
+        assert seasonal_anime_keys.issubset(anime.keys())
 
 @vcr.use_cassette("tests/vcr_cassettes/schedule-success.yaml")
 def test_schedule_success(schedule_keys, subset_anime_keys, jikan):
