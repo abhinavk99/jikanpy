@@ -1,6 +1,6 @@
 # JikanPy
 
-[![Travis (.org)](https://img.shields.io/travis/abhinavk99/jikanpy.svg?style=flat-square)](https://travis-ci.org/abhinavk99/jikanpy)
+[![Travis (.com)](https://img.shields.io/travis/com/abhinavk99/jikanpy?style=flat-square)](https://travis-ci.com/abhinavk99/jikanpy)
 [![Codecov](https://img.shields.io/codecov/c/github/abhinavk99/jikanpy.svg?style=flat-square)](https://codecov.io/gh/abhinavk99/jikanpy/)
 [![pypi Version](https://img.shields.io/pypi/v/jikanpy.svg?style=flat-square)](https://pypi.org/project/jikanpy/)
 [![PyPi downloads](https://img.shields.io/pypi/dm/jikanpy?style=flat-square)](https://pypi.org/project/jikanpy/)
