@@ -6,24 +6,43 @@ interactions:
     uri: https://api.jikan.moe/v3/user/nekomata1037
   response:
     body:
-      string: '{"status":403,"type":"BadResponseException","message":"Jikan failed
-        to connect to MyAnimeList. MyAnimeList may be down\/unavailable or refuses
-        to connect","error":"403 on https:\/\/myanimelist.net\/profile\/nekomata1037\/"}'
+      string: '{"request_hash":"request:user:491bfd17af33e9772825623e2590565732c69709","request_cached":true,"request_cache_expiry":2731,"user_id":4901676,"username":"Nekomata1037","url":"https:\/\/myanimelist.net\/profile\/Nekomata1037","image_url":"https:\/\/cdn.myanimelist.net\/images\/userimages\/4901676.jpg?t=1613304000","last_online":"2021-02-14T03:58:00+00:00","gender":"Male","birthday":"1998-11-23T00:00:00+00:00","location":"Pakistan","joined":"2015-09-27T00:00:00+00:00","anime_stats":{"days_watched":103.3,"mean_score":8.18,"watching":41,"completed":434,"on_hold":15,"dropped":3,"plan_to_watch":388,"total_entries":881,"rewatched":18,"episodes_watched":6109},"manga_stats":{"days_read":87.7,"mean_score":8.43,"reading":364,"completed":142,"on_hold":3,"dropped":1,"plan_to_read":57,"total_entries":567,"reread":1,"chapters_read":15780,"volumes_read":766},"favorites":{"anime":[{"mal_id":9253,"url":"https:\/\/myanimelist.net\/anime\/9253\/Steins_Gate","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/73199.jpg?s=8de9a601ba6c3110fbde67fa26d0656c","name":"Steins;Gate"},{"mal_id":30484,"url":"https:\/\/myanimelist.net\/anime\/30484\/Steins_Gate_0","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1375\/93521.jpg?s=8034dfe554275f6bd9e24464d01f0792","name":"Steins;Gate
+        0"},{"mal_id":37450,"url":"https:\/\/myanimelist.net\/anime\/37450\/Seishun_Buta_Yarou_wa_Bunny_Girl_Senpai_no_Yume_wo_Minai","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1301\/93586.jpg?s=15d6fa5dca503416858d1d6f989ada4b","name":"Seishun
+        Buta Yarou wa Bunny Girl Senpai no Yume wo Minai"},{"mal_id":28211,"url":"https:\/\/myanimelist.net\/anime\/28211\/Harmony","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/76993.jpg?s=75b2c4530d6990ac4aafcc574dfbb779","name":"Harmony"},{"mal_id":31240,"url":"https:\/\/myanimelist.net\/anime\/31240\/Re_Zero_kara_Hajimeru_Isekai_Seikatsu","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/79410.jpg?s=a90b05054565c07aff87e4b5fa86d14d","name":"Re:Zero
+        kara Hajimeru Isekai Seikatsu"}],"manga":[],"characters":[{"mal_id":34470,"url":"https:\/\/myanimelist.net\/character\/34470\/Kurisu_Makise","image_url":"https:\/\/cdn.myanimelist.net\/images\/characters\/10\/114399.jpg?s=8bdbe2cd8303e475f27cbf5b4b99d394","name":"Makise,
+        Kurisu"},{"mal_id":35252,"url":"https:\/\/myanimelist.net\/character\/35252\/Rintarou_Okabe","image_url":"https:\/\/cdn.myanimelist.net\/images\/characters\/6\/122643.jpg?s=ed465bedfd3d6ccaa01278c9031f919f","name":"Okabe,
+        Rintarou"},{"mal_id":55131,"url":"https:\/\/myanimelist.net\/character\/55131\/Houtarou_Oreki","image_url":"https:\/\/cdn.myanimelist.net\/images\/characters\/15\/308148.jpg?s=3f7020a6818f130080fc282cfe8e6992","name":"Oreki,
+        Houtarou"}],"people":[{"mal_id":39950,"url":"https:\/\/myanimelist.net\/people\/39950\/Sayuri","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/1\/57707.jpg?s=7a1afd22686ff503b1a81be6edd3921a","name":"Sayuri"},{"mal_id":137,"url":"https:\/\/myanimelist.net\/people\/137\/Show_Hayami","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/2\/54479.jpg?s=dfced7ea21a0cfbd9c88d9adefac717c","name":"Hayami,
+        Show"},{"mal_id":113,"url":"https:\/\/myanimelist.net\/people\/113\/Rikiya_Koyama","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/1\/54010.jpg?s=3c4871bb7f7a4c39c86e652f197ac680","name":"Koyama,
+        Rikiya"},{"mal_id":8509,"url":"https:\/\/myanimelist.net\/people\/8509\/Hiroyuki_Sawano","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/1\/40318.jpg?s=fd757adabba8c72d879dd1e831c5adb2","name":"Sawano,
+        Hiroyuki"},{"mal_id":16479,"url":"https:\/\/myanimelist.net\/people\/16479\/nano","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/1\/46344.jpg?s=2038a6c8bfc94a7b964186a49ce3df3b","name":"nano"},{"mal_id":99,"url":"https:\/\/myanimelist.net\/people\/99\/Miyuki_Sawashiro","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/1\/54600.jpg?s=5a5909022ff608f8df2f9f0ddb79f899","name":"Sawashiro,
+        Miyuki"},{"mal_id":8913,"url":"https:\/\/myanimelist.net\/people\/8913\/supercell","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/1\/40136.jpg?s=478b1ef269aaf0f9d674ed31c181d119","name":"supercell"},{"mal_id":19169,"url":"https:\/\/myanimelist.net\/people\/19169\/EGOIST","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/2\/23655.jpg?s=2851e1df594bffa68737a56f3e37f96f","name":"EGOIST"}]},"about":"<div
+        style=\"text-align: center;\"><a href=\"https:\/\/jikan.moe\" target=\"_blank\"
+        rel=\"nofollow noopener noreferrer\"><img class=\"userimg\" src=\"https:\/\/image.myanimelist.net\/ui\/OK6W_koKDTOqqqLDbIoPAlfW3vHhBzO_m5KdmpfU-Dg\"><\/a><\/div><br>\r\nI''ve
+        made an unofficial MyAnimeList RESTful API. You can check it out here:<br>\r\n<a
+        href=\"https:\/\/jikan.moe\" target=\"_blank\" rel=\"nofollow noopener noreferrer\">https:\/\/jikan.moe<\/a><br>\r\n<br>\r\nForum:
+        <a href=\"https:\/\/myanimelist.net\/forum\/?topicid=1616529\" rel=\"nofollow\">https:\/\/myanimelist.net\/forum\/?topicid=1616529<\/a><br>\r\nGitHub:
+        <a href=\"https:\/\/github.com\/jikan-me\/jikan\" target=\"_blank\" rel=\"nofollow
+        noopener noreferrer\">https:\/\/github.com\/jikan-me\/jikan<\/a>"}'
     headers:
       Access-Control-Allow-Methods: '*'
       Access-Control-Allow-Origin: '*'
       Cache-Control: private, must-revalidate
       Connection: keep-alive
       Content-Encoding: gzip
-      Content-Length: '188'
+      Content-Length: '1833'
       Content-Type: application/json
-      Date: Wed, 10 Jun 2020 05:25:19 GMT
-      Server: Jikan/3.4
+      Date: Mon, 15 Feb 2021 23:38:46 GMT
+      ETag: '"3f186755ba4cd030aec602596c9ff74c"'
+      Expires: Tue, 16 Feb 2021 00:24:17 GMT
+      Server: nginx/1.18.0 (Ubuntu)
       Vary: Accept-Encoding
-      expires: '-1'
-      pragma: no-cache
+      X-Cache-Status: MISS
+      X-Request-Cache-Ttl: '2731'
+      X-Request-Cached: '1'
+      X-Request-Hash: request:user:491bfd17af33e9772825623e2590565732c69709
     status:
-      code: 503
-      message: Service Unavailable
+      code: 200
+      message: OK
     url: https://api.jikan.moe/v3/user/nekomata1037
 version: 1

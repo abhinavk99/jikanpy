@@ -81,18 +81,18 @@ async def test_anime_success(anime_keys, aio_jikan):
     await aio_jikan.close()
 
 
-# @vcr.use_cassette("tests/vcr_cassettes/aio-anime-episodes-success.yaml")
-# async def test_anime_episodes_success(anime_episodes_keys, episode_keys, aio_jikan):
-#     anime_episodes_info = await aio_jikan.anime(
-#         MUSHISHI_ID, extension="episodes", page=1
-#     )
+@vcr.use_cassette("tests/vcr_cassettes/aio-anime-episodes-success.yaml")
+async def test_anime_episodes_success(anime_episodes_keys, episode_keys, aio_jikan):
+    anime_episodes_info = await aio_jikan.anime(
+        MUSHISHI_ID, extension="episodes", page=1
+    )
 
-#     assert isinstance(anime_episodes_info, dict)
-#     assert isinstance(anime_episodes_info["episodes"], list)
-#     for episode in anime_episodes_info["episodes"]:
-#         assert episode_keys.issubset(episode.keys())
-#     assert anime_episodes_keys.issubset(anime_episodes_info.keys())
-#     await aio_jikan.close()
+    assert isinstance(anime_episodes_info, dict)
+    assert isinstance(anime_episodes_info["episodes"], list)
+    for episode in anime_episodes_info["episodes"]:
+        assert episode_keys.issubset(episode.keys())
+    assert anime_episodes_keys.issubset(anime_episodes_info.keys())
+    await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-manga-success.yaml")
@@ -105,14 +105,14 @@ async def test_manga_success(manga_keys, aio_jikan):
     await aio_jikan.close()
 
 
-# @vcr.use_cassette("tests/vcr_cassettes/aio-character-success.yaml")
-# async def test_character_success(character_keys, aio_jikan):
-#     character_info = await aio_jikan.character(GINKO_ID)
+@vcr.use_cassette("tests/vcr_cassettes/aio-character-success.yaml")
+async def test_character_success(character_keys, aio_jikan):
+    character_info = await aio_jikan.character(GINKO_ID)
 
-#     assert isinstance(character_info, dict)
-#     assert character_info["name"] == "Ginko"
-#     assert character_keys.issubset(character_info.keys())
-#     await aio_jikan.close()
+    assert isinstance(character_info, dict)
+    assert character_info["name"] == "Ginko"
+    assert character_keys.issubset(character_info.keys())
+    await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-person-success.yaml")
@@ -156,16 +156,15 @@ async def test_search_genre_exclude_success(search_keys, aio_jikan):
     await aio_jikan.close()
 
 
-# @vcr.use_cassette("tests/vcr_cassettes/aio-season-success.yaml")
-# async def test_season_success(season_keys, seasonal_anime_keys, aio_jikan):
-#     season_info = await aio_jikan.season(year=YEAR, season=SEASON)
+@vcr.use_cassette("tests/vcr_cassettes/aio-season-success.yaml")
+async def test_season_success(season_keys, seasonal_anime_keys, aio_jikan):
+    season_info = await aio_jikan.season(year=YEAR, season=SEASON)
 
-#     assert isinstance(season_info, dict)
-#     assert season_keys.issubset(season_info.keys())
-#     for anime in season_info["anime"]:
-#         assert seasonal_anime_keys.issubset(anime.keys())
-#     await aio_jikan.close()
-
+    assert isinstance(season_info, dict)
+    assert season_keys.issubset(season_info.keys())
+    for anime in season_info["anime"]:
+        assert seasonal_anime_keys.issubset(anime.keys())
+    await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-current-season-success.yaml")
@@ -177,6 +176,7 @@ async def test_season_current_success(season_keys, seasonal_anime_keys, aio_jika
     for anime in season_info["anime"]:
         assert seasonal_anime_keys.issubset(anime.keys())
     await aio_jikan.close()
+
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-season-archive-success.yaml")
 async def test_season_archive_success(
@@ -260,39 +260,39 @@ async def test_magazine_success(magazine_keys, magazine_manga_keys, aio_jikan):
     await aio_jikan.close()
 
 
-# @vcr.use_cassette("tests/vcr_cassettes/aio-user-success.yaml")
-# async def test_user_success(user_keys, aio_jikan):
-#     user_info = await aio_jikan.user(username=USERNAME)
+@vcr.use_cassette("tests/vcr_cassettes/aio-user-success.yaml")
+async def test_user_success(user_keys, aio_jikan):
+    user_info = await aio_jikan.user(username=USERNAME)
 
-#     assert isinstance(user_info, dict)
-#     assert user_info["username"] == "Nekomata1037"
-#     assert user_info["gender"] == "Male"
-#     assert user_keys.issubset(user_info.keys())
-#     await aio_jikan.close()
-
-
-# @vcr.use_cassette("tests/vcr_cassettes/aio-animelist-success.yaml")
-# async def test_animelist_success(animelist_keys, aio_jikan):
-#     animelist_info = await aio_jikan.user(
-#         username=USERNAME,
-#         request="animelist",
-#         argument="all",
-#         parameters={"search": "fate"},
-#     )
-
-#     assert isinstance(animelist_info, dict)
-#     assert animelist_keys.issubset(animelist_info.keys())
-#     await aio_jikan.close()
+    assert isinstance(user_info, dict)
+    assert user_info["username"] == "Nekomata1037"
+    assert user_info["gender"] == "Male"
+    assert user_keys.issubset(user_info.keys())
+    await aio_jikan.close()
 
 
-# @vcr.use_cassette("tests/vcr_cassettes/aio-club-success.yaml")
-# async def test_club_success(club_keys, aio_jikan):
-#     club_info = await aio_jikan.club(CLUB_ID)
+@vcr.use_cassette("tests/vcr_cassettes/aio-animelist-success.yaml")
+async def test_animelist_success(animelist_keys, aio_jikan):
+    animelist_info = await aio_jikan.user(
+        username=USERNAME,
+        request="animelist",
+        argument="all",
+        parameters={"search": "fate"},
+    )
 
-#     assert isinstance(club_info, dict)
-#     assert club_info["title"] == "Fantasy Anime League"
-#     assert club_keys.issubset(club_info.keys())
-#     await aio_jikan.close()
+    assert isinstance(animelist_info, dict)
+    assert animelist_keys.issubset(animelist_info.keys())
+    await aio_jikan.close()
+
+
+@vcr.use_cassette("tests/vcr_cassettes/aio-club-success.yaml")
+async def test_club_success(club_keys, aio_jikan):
+    club_info = await aio_jikan.club(CLUB_ID)
+
+    assert isinstance(club_info, dict)
+    assert club_info["title"] == "Fantasy Anime League"
+    assert club_keys.issubset(club_info.keys())
+    await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-meta-success.yaml")
