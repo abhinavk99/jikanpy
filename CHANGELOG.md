@@ -1,5 +1,11 @@
 # Changelog for Jikanpy
 
+## [4.3.0] - 2021-02-15
+
+### Added
+
+- Calling season method with no arguments defaults to current season
+
 ## [4.2.2] - 2020-07-24
 
 ### Fixed
