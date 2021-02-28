@@ -1,5 +1,11 @@
 # Changelog for Jikanpy
 
+## [4.3.1] - 2021-02-27
+
+### Changed
+
+- Updated aiohttp to 3.7.4
+
 ## [4.3.0] - 2021-02-15
 
 ### Added
