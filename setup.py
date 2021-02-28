@@ -7,7 +7,7 @@ CHANGELOG = (HERE / "CHANGELOG.md").read_text()
 
 setup(
     name="jikanpy",
-    version="4.3.0",
+    version="4.3.1",
     description="Python wrapper for the Jikan API",
     license="MIT",
     long_description=README + CHANGELOG,
