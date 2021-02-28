@@ -19,8 +19,16 @@ def add_jikan_metadata(
 ) -> Dict[str, Any]:
     """Adds the response headers and jikan endpoint url to response dictionary."""
     response_dict["jikan_url"] = url
-    # dict() is to convert from CIMultiDict[str, Any]Proxy for aiohttp.ClientResponse
-    response_dict["headers"] = dict(response.headers)
+
+    # We need this if statement so that static type checking can determine what the type
+    # of response is
+    if isinstance(response, aiohttp.ClientResponse):
+        # Convert from CIMultiDictProxy[str] for aiohttp.ClientResponse
+        response_dict["headers"] = dict(response.headers)
+    else:
+        # Convert from CaseInsensitiveDict[str] for requests.Response
+        response_dict["headers"] = dict(response.headers)
+
     return response_dict
 
 
