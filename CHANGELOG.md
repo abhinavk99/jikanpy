@@ -1,5 +1,11 @@
 # Changelog for Jikanpy
 
+## [4.3.2] - 2021-04-15
+
+### Fixed
+
+- Don't include the CHANGELOG.md as a `data_file`, just read it while building releases. Previously this could cause CHANGELOG.md to be installed into the users data dir (`/usr/` or `~/.local/` depending on how its installed). See [#90](https://github.com/abhinavk99/jikanpy/issues/90)
+
 ## [4.3.1] - 2021-02-27
 
 ### Changed
