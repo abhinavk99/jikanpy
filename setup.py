@@ -3,11 +3,14 @@ from setuptools import setup
 
 HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
-CHANGELOG = (HERE / "CHANGELOG.md").read_text()
+# optionally read the CHANGELOG.md file, to include this with pypi releases
+# may not be necessary, just to be safe
+CHANGELOG_FILE = HERE / "CHANGELOG.md"
+CHANGELOG = CHANGELOG_FILE.read_text() if CHANGELOG_FILE.exists() else ""
 
 setup(
     name="jikanpy",
-    version="4.3.1",
+    version="4.3.2",
     description="Python wrapper for the Jikan API",
     license="MIT",
     long_description=README + CHANGELOG,
@@ -16,7 +19,6 @@ setup(
     author_email="abhinavkasamsetty@gmail.com",
     package_data={"jikanpy": ["py.typed"]},
     packages=["jikanpy"],
-    data_files=[(".", ["CHANGELOG.md"])],
     url="https://github.com/abhinavk99/jikanpy",
     install_requires=["requests", "aiohttp", "simplejson"],
     keywords=["jikan", "jikanpy", "api", "myanimelist"],
