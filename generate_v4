@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-set -o pipefail
-
-main() {
-    echo hello world
-}
-
-main || exit $?

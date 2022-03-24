@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# script to use the OpenAPI generator to create/regenerate the client
+
+THIS_DIR="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
+cd "${THIS_DIR}" || exit $?
+
+set -e
+set -o pipefail
+
+setup() {
+	python3 -m pip install pipx
+	pipx install openapi-python-client --include-deps
+}
+
+generate_and_copy() {
+	set -u
+	local target='./generated'
+	[[ -d "$target" ]] && rm -rf "$target"
+	mkdir -p "$target"
+	cd "$target"
+	# TODO: could use the update flag?
+	# but not doing this in place anyways so not particularly any need
+	pipx run openapi-python-client generate --url 'https://raw.githubusercontent.com/jikan-me/jikan-rest/master/storage/api-docs/api-docs.json'
+	cd "$THIS_DIR"
+	mv "${target}/jikan-api-client/jikan_api_client" ./
+}
+
+main() {
+	setup || return $?
+	(generate_and_copy || return $?)
+}
+
+main "$@" || exit $?

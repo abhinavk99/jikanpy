@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "jikanpy-v4-alpha"
+version = "0.0.1"
+description = "A client library for accessing Jikan API"
+authors = []
+readme = "README.md"
+packages = [{ include = "jikan_api_client" }, { include = "jikanpy" }]
+include = ["jikan_api_client/py.typed", "jikanpy/py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+httpx = ">=0.15.4,<0.23.0"
+attrs = ">=21.3.0"
+python-dateutil = "^2.8.0"
+
+black = { version = ">=20.8b1", optional = true }
+mypy = { version = ">=0.782", optional = true }
+pytest = { version = ">=5.4.2", optional = true }
+flake8 = { version = ">=4.0.0", optional = true }
+
+[tool.poetry.extras]
+testing = ["black", "mypy", "pytest", "flake8"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target_version = ['py37', 'py38', 'py39', 'py310']
+exclude = '''
+(
+  /(
+    | \.git
+    | \.venv
+    | \.mypy_cache
+  )/
+)
+'''
