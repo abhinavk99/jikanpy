@@ -63,7 +63,7 @@ class AioJikan:
 
         Examples:
             >>> aio_jikan_1 = AioJikan()
-            >>> aio_jikan_2 = AioJikan(selected_base='http://localhost:8000/v3')
+            >>> aio_jikan_2 = AioJikan(selected_base='http://localhost:8000/v4')
             >>> aio_jikan_3 = AioJikan(
                     session=aiohttp.ClientSession(headers={'x-test': 'true'})
                 )

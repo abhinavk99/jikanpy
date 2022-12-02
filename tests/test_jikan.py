@@ -32,11 +32,11 @@ def jikan():
 
 
 def test_strip_base_url():
-    temp_jikan = Jikan("http://localhost:8000/v3/")
-    assert temp_jikan.base == "http://localhost:8000/v3"
+    temp_jikan = Jikan("http://localhost:8000/v4/")
+    assert temp_jikan.base == "http://localhost:8000/v4"
 
-    temp_jikan_2 = Jikan("http://localhost:8000/v3/ ")
-    assert temp_jikan_2.base == "http://localhost:8000/v3"
+    temp_jikan_2 = Jikan("http://localhost:8000/v4/ ")
+    assert temp_jikan_2.base == "http://localhost:8000/v4"
 
 
 @vcr.use_cassette("tests/vcr_cassettes/wrap-response.yaml")

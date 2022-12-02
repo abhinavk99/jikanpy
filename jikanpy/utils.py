@@ -9,7 +9,7 @@ import aiohttp
 import requests
 
 
-BASE_URL = "https://api.jikan.moe/v3"
+BASE_URL = "https://api.jikan.moe/v4"
 
 
 def add_jikan_metadata(

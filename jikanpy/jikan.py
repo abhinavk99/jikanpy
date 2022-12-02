@@ -49,7 +49,7 @@ class Jikan:
 
         Examples:
             >>> jikan_1 = Jikan()
-            >>> jikan_2 = Jikan(selected_base='http://localhost:8000/v3')
+            >>> jikan_2 = Jikan(selected_base='http://localhost:8000/v4')
             >>> jikan_3 = jikan = Jikan(session=requests.Session())
         """
         self.base = (

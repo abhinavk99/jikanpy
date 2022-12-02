@@ -40,11 +40,11 @@ async def test_construct_using_async_with():
 
 
 async def test_strip_base_url():
-    async with AioJikan("http://localhost:8000/v3/") as temp_aio_jikan:
-        assert temp_aio_jikan.base == "http://localhost:8000/v3"
+    async with AioJikan("http://localhost:8000/v4/") as temp_aio_jikan:
+        assert temp_aio_jikan.base == "http://localhost:8000/v4"
 
-    async with AioJikan("http://localhost:8000/v3/ ") as temp_aio_jikan_2:
-        assert temp_aio_jikan_2.base == "http://localhost:8000/v3"
+    async with AioJikan("http://localhost:8000/v4/ ") as temp_aio_jikan_2:
+        assert temp_aio_jikan_2.base == "http://localhost:8000/v4"
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-wrap-response.yaml")
