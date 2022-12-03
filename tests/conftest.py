@@ -441,8 +441,7 @@ def club_keys():
 def header_keys():
     return {
         "X-Cache-Status",
-        "X-Request-Hash",
-        "X-Request-Cached",
-        "X-Request-Cache-Ttl",
-        "ETag",
+        "Last-Modified",
+        "X-Request-Fingerprint",
+        #"ETag", # TODO: Uncomment once implemented
     }

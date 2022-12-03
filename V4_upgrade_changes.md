@@ -25,10 +25,12 @@
 
 - Cache Validation - the new `ETag` header in all request responses gives the MD5 hash of the response. Can be used
 	to verify content by using `If-None-Match` in request header
+		- waiting to find out if this is implemented yet
 
 
 
 # Todo
 - [X] Remove meta endpoint calls and tests
 - [X] Update response header information
-- [X] Implement cache validation
+- [ ] Implement cache validation
+	- May not be possible, ETag doesn't appear to be implemented yet
