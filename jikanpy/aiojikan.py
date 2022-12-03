@@ -482,27 +482,5 @@ class AioJikan:
         period: Optional[str] = None,
         offset: Optional[int] = None,
     ) -> Dict[str, Any]:
-        """Gets meta information regarding the Jikan API.
-
-        Args:
-            request (:obj:`str`): Type of request. Possible values are requests
-                and status.
-            type (:obj:`str`, optional): Type of information to get for
-                requests. Possible values are in the Jikan API documentation.
-                Defaults to None.
-            period (:obj:`str`, optional): Time period to get for requests.
-                Possible values are today, weekly, and monthly. Defaults to
-                None.
-            offset (:obj:`int`, optional): 1,000 requests are shown per page.
-                Offset is used to show more. Defaults to None.
-
-        Returns:
-            Dict: Dictionary containing meta information.
-
-        Examples:
-            >>> await jikan.meta('requests')
-            >>> await jikan.meta('requests', type='anime', period='today')
-            >>> await jikan.meta('status')
-        """
-        url = utils.get_meta_url(self.base, request, type, period, offset)
-        return await self._request(url, request=request, type=type, period=period)
+        """Deprecated: Gets meta information."""
+        raise DeprecatedEndpoint("meta is a deprecated endpoint")

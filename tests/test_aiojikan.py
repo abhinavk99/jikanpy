@@ -295,14 +295,6 @@ async def test_club_success(club_keys, aio_jikan):
     await aio_jikan.close()
 
 
-@vcr.use_cassette("tests/vcr_cassettes/aio-meta-success.yaml")
-async def test_meta_success(aio_jikan):
-    meta_info = await aio_jikan.meta(request="requests", type="anime", period="today")
-
-    assert isinstance(meta_info, dict)
-    await aio_jikan.close()
-
-
 @vcr.use_cassette("tests/vcr_cassettes/aio-anime-failure.yaml")
 async def test_anime_failure(aio_jikan):
     with pytest.raises(APIException):

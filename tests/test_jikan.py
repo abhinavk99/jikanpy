@@ -263,13 +263,6 @@ def test_club_success(club_keys, jikan):
     assert club_keys.issubset(club_info.keys())
 
 
-@vcr.use_cassette("tests/vcr_cassettes/meta-success.yaml")
-def test_meta_success(jikan):
-    meta_info = jikan.meta(request="requests", type="anime", period="today")
-
-    assert isinstance(meta_info, dict)
-
-
 @vcr.use_cassette("tests/vcr_cassettes/anime-failure.yaml")
 def test_anime_failure(jikan):
     with pytest.raises(APIException):

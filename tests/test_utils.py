@@ -237,38 +237,3 @@ def test_get_user_url_with_animelist_and_page_parameter():
         == "https://api.jikan.moe/v4/user/xinil/animelist/completed?page=2"
     )
 
-
-def test_get_meta_url():
-    assert (
-        utils.get_meta_url(
-            utils.BASE_URL, "status", type=None, period=None, offset=None
-        )
-        == "https://api.jikan.moe/v4/meta/status"
-    )
-
-
-def test_get_meta_url_with_type_and_no_period():
-    assert (
-        utils.get_meta_url(
-            utils.BASE_URL, "requests", type="anime", period=None, offset=None,
-        )
-        == "https://api.jikan.moe/v4/meta/requests"
-    )
-
-
-def test_get_meta_url_with_no_type_and_period():
-    assert (
-        utils.get_meta_url(
-            utils.BASE_URL, "requests", type=None, period="weekly", offset=None,
-        )
-        == "https://api.jikan.moe/v4/meta/requests"
-    )
-
-
-def test_get_meta_url_with_weekly_anime_requests_and_offset():
-    assert (
-        utils.get_meta_url(
-            utils.BASE_URL, "requests", type="anime", period="weekly", offset=2,
-        )
-        == "https://api.jikan.moe/v4/meta/requests/anime/weekly/2"
-    )
