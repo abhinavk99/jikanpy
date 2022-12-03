@@ -34,3 +34,4 @@
 - [X] Update response header information
 - [ ] Implement cache validation
 	- May not be possible, ETag doesn't appear to be implemented yet
+- [ ] Update return structure parsing

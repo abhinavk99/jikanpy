@@ -69,6 +69,9 @@ class Jikan:
             json_response = response.json()
             if not isinstance(json_response, dict):
                 json_response = {"data": json_response}
+            else:
+                json_response = json_response["data"]
+    
         except (json.decoder.JSONDecodeError, simplejson.JSONDecodeError):
             # json failed to be parsed
             # this could happen, for example, when someone has been IP banned

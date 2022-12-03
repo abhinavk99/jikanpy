@@ -104,13 +104,12 @@ def aio_response_non_dict_mock():
 @pytest.fixture
 def anime_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
         "mal_id",
         "url",
-        "image_url",
-        "trailer_url",
+        "images",
+        "trailer",
+        "approved",
+        "titles",
         "title",
         "title_english",
         "title_japanese",
@@ -131,15 +130,16 @@ def anime_keys():
         "favorites",
         "synopsis",
         "background",
-        "premiered",
+        "season",
+        "year",
         "broadcast",
-        "related",
         "producers",
         "licensors",
         "studios",
         "genres",
-        "opening_themes",
-        "ending_themes",
+        "explicit_genres",
+        "themes",
+        "demographics",
     }
 
 
