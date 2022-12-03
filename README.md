@@ -130,5 +130,7 @@ asyncio.run(main())
 
 ```shell
 # In root of repository
-$ pytest
+$ pytest -m pytest tests/
+# Optionally, you can run a single test:
+$ pytest -m pytest tests/test_jikan.py::test_anime_episodes_success
 ```
