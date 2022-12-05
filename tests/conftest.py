@@ -151,8 +151,9 @@ def anime_episodes_keys():
         "title",
         "title_japanese",
         "title_romanji",
-        "duration",
+        # "duration", # API doc says this should be returned, but isn't
         "aired",
+        "score", # undocumented
         "filler",
         "recap",
         "forum_url",
@@ -214,95 +215,93 @@ def manga_keys():
 @pytest.fixture
 def character_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
         "mal_id",
         "url",
+        "images",
         "name",
         "name_kanji",
         "nicknames",
+        "favorites",
         "about",
-        "member_favorites",
-        "image_url",
-        "animeography",
-        "mangaography",
-        "voice_actors",
     }
 
 
 @pytest.fixture
 def person_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
         "mal_id",
         "url",
-        "image_url",
+        "images",
         "website_url",
         "name",
         "given_name",
         "family_name",
         "alternate_names",
         "birthday",
-        "member_favorites",
+        "favorites",
         "about",
-        "voice_acting_roles",
-        "anime_staff_positions",
-        "published_manga",
     }
 
 
 @pytest.fixture
 def search_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
-        "results",
-        "last_page",
+        "data",
     }
 
 
 @pytest.fixture
 def season_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
-        "season_name",
-        "season_year",
-        "anime",
+        "data",
     }
 
 
 @pytest.fixture
 def seasonal_anime_keys():
     return {
-        "mal_id",
-        "url",
-        "title",
-        "image_url",
-        "synopsis",
-        "type",
-        "airing_start",
-        "episodes",
-        "members",
-        "genres",
-        "source",
-        "producers",
-        "score",
-        "licensors",
-        "r18",
-        "kids",
-        "continuing",
+    "mal_id",
+    "url",
+    "images",
+    "trailer",
+    "approved",
+    "titles",
+    "title",
+    "title_english",
+    "title_japanese",
+    "title_synonyms",
+    "type",
+    "source",
+    "episodes",
+    "status",
+    "airing",
+    "aired",
+    "duration",
+    "rating",
+    "score",
+    "scored_by",
+    "rank",
+    "popularity",
+    "members",
+    "favorites",
+    "synopsis",
+    "background",
+    "season",
+    "year",
+    "broadcast",
+    "producers",
+    "licensors",
+    "studios",
+    "genres",
+    "explicit_genres",
+    "themes",
+    "demographics",
     }
 
 
 @pytest.fixture
 def season_archive_keys():
-    return {"request_hash", "request_cached", "request_cache_expiry", "archive"}
+    return {"data"}
 
 
 @pytest.fixture
