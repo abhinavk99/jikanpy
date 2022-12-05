@@ -164,9 +164,9 @@ class Jikan:
         Examples:
             >>> jikan.character(6356)
         """
-        return self._get("character", id, extension)
+        return self._get("characters", id, extension)
 
-    def person(self, id: int, extension: Optional[str] = None) -> Dict[str, Any]:
+    def people(self, id: int, extension: Optional[str] = None) -> Dict[str, Any]:
         """Gets information on a person.
 
         Args:
@@ -181,7 +181,7 @@ class Jikan:
         Examples:
             >>> jikan.person(2)
         """
-        return self._get("person", id, extension)
+        return self._get("people", id, extension)
 
     def club(
         self, id: int, extension: Optional[str] = None, page: Optional[int] = None
@@ -264,36 +264,43 @@ class Jikan:
         url = utils.get_season_url(self.base, year, season)
         return self._request(url, year=year, season=season)
 
-    def season_archive(self) -> Dict[str, Any]:
-        """Gets all the years and their respective seasons from MyAnimeList.
+    def season_history(self) -> Dict[str, Any]:
+        """Gets all the years and their respective season names from MyAnimeList.
 
         Returns:
-            Dict: Dictionary containing all the years and seasons.
+            Dict: Dictionary containing all the years and season names.
 
         Examples:
-            >>> jikan.season_archive()
+            >>> jikan.season_history()
         """
-        url = utils.get_season_archive_url(self.base)
+        url = utils.get_season_history(self.base)
         return self._request(url)
 
-    def season_later(self) -> Dict[str, Any]:
+
+    def season_upcoming(self) -> Dict[str, Any]:
         """Gets anime that have been announced for upcoming seasons.
-
         Returns:
-            Dict: Dictionary containing anime in upcoming seasons.
-
+            Dict: Dict containing a list of dict elements of anime in upcoming seasons.
         Examples:
-            >>> jikan.season_later()
+            >>> jikan.season_upcoming()
         """
-        url = utils.get_season_later_url(self.base)
+        url = utils.get_season_upcoming_url(self.base)
         return self._request(url)
 
-    def schedule(self, day: Optional[str] = None) -> Dict[str, Any]:
+    def schedule(self,
+        day: Optional[str] = None,
+        page: Optional[int] = None,
+        parameters: Optional[Mapping[str, Optional[Union[int, str, float]]]] = None,
+    ) -> Dict[str, Any]:
         """Gets anime scheduled.
 
         Args:
             day (:obj:`str`, optional): Day of the week to get the scheduled
                 anime. Defaults to None.
+            page (:obj:`int`, optional): Page number of the results. Defaults to
+                None.
+            parameters (:obj:`dict`, optional): Dictionary containing key,value
+                pairs for ?key=value in url query. Defaults to None.
 
         Returns:
             Dict: Dictionary containing anime scheduled.
@@ -302,7 +309,7 @@ class Jikan:
             >>> jikan.schedule()
             >>> jikan.schedule(day='monday')
         """
-        url = utils.get_schedule_url(self.base, day)
+        url = utils.get_schedule_url(self.base, day, page=page, parameters=parameters)
         return self._request(url, day=day)
 
     def top(

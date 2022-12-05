@@ -18,6 +18,13 @@ Updating this as I go and plan to use it to help me put PR together.
 - Responses are now wrapped in a single key dict: {'data' : usual_response}
 - Search has more argument options
 - `/character` endpoint is now `/characters`
+- `/anime/{id}/episodes` now returns a `List[dict]` object for episodes
+	- `page` parameter should probably be re-worked. Url it constructs now gets that number episode
+- `person` endpoint is renamed to `people`
+- search is now spread to a particular endpoint instead of just `/search`
+- `/season` is now `/seasons` with different parameters
+- `/schedule` is now `/schedules` with query parameters instead of url params
+- `page` is now a query param instead of a url append
 
 
 ## Things new in v4
@@ -43,12 +50,20 @@ Updating this as I go and plan to use it to help me put PR together.
 # Todo
 - [X] Update response header information
 - [ ] Implement cache validation
-	- May not be possible, ETag doesn't appear to be implemented yet. Awaiting Discord response from Jikan devs
+	- May not be possible, ETag is currently broken. Opened an issue [here](https://github.com/jikan-me/jikan-rest/issues/322)
 - [ ] Update parsing for new response structure
-	- [X] Unwrap extra "data" dict
 	- [ ] Update response dict keys in test fixtures
 	- [ ] Support pagination for relevant endpionts
 - [ ] Add support for new endpoints
 - [ ] Deprecate unsupported endpoints
 	- [X] Remove meta endpoint calls and tests
+	- [ ] Updated search url construction
 - [ ] Change behavior for modified endpoints
+	- [X] Update `person` method to `people` to reflect endpoint change
+	- [X] change season utils to reflect new endpoint behavior
+		- [X] removed `get_season_archive_url` and `get_season_later_url` in utils
+		- [X] added `get_season_upcoming_url` and `get_season_now_url` in utils
+		- [X] repalced `get_season_later` with `get_season_upcoming` in jikan.py
+	- [ ] change scheudle utils to reflect new endpoint behvaior
+		- [X] Deprecated `get_url_with_page` method and replaced calls with query behavior
+		- [ ]
