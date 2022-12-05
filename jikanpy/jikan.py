@@ -309,7 +309,13 @@ class Jikan:
             >>> jikan.schedule()
             >>> jikan.schedule(day='monday')
         """
-        url = utils.get_schedule_url(self.base, day, page=page, parameters=parameters)
+        if page is not None:
+            if parameters is None:
+                parameters = {}
+
+            parameters['page'] = page
+
+        url = utils.get_schedule_url(self.base, day=day, parameters=parameters)
         return self._request(url, day=day)
 
     def top(

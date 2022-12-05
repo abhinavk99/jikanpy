@@ -189,8 +189,7 @@ def test_schedule_success(schedule_keys, subset_anime_keys, jikan):
 
     assert isinstance(schedule_info, dict)
     assert schedule_keys.issubset(schedule_info.keys())
-    assert DAY.lower() in schedule_info
-    for anime in schedule_info[DAY]:
+    for anime in schedule_info["data"]:
         assert subset_anime_keys.issubset(anime.keys())
 
 

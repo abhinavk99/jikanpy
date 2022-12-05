@@ -311,7 +311,7 @@ def archived_years_keys():
 
 @pytest.fixture
 def schedule_keys():
-    return {"request_hash", "request_cached", "request_cache_expiry", "monday"}
+    return {"data"}
 
 
 @pytest.fixture
@@ -357,19 +357,40 @@ def subset_anime_keys():
     return {
         "mal_id",
         "url",
+        "images",
+        "trailer",
+        "approved",
+        "titles",
         "title",
-        "image_url",
-        "synopsis",
+        "title_english",
+        "title_japanese",
+        "title_synonyms",
         "type",
-        "episodes",
-        "members",
-        "genres",
         "source",
-        "producers",
+        "episodes",
+        "status",
+        "airing",
+        "aired",
+        "duration",
+        "rating",
         "score",
+        "scored_by",
+        "rank",
+        "popularity",
+        "members",
+        "favorites",
+        "synopsis",
+        "background",
+        "season",
+        "year",
+        "broadcast",
+        "producers",
         "licensors",
-        "r18",
-        "kids",
+        "studios",
+        "genres",
+        "explicit_genres",
+        "themes",
+        "demographics",
     }
 
 
