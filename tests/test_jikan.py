@@ -267,8 +267,8 @@ def test_club_success(club_keys, jikan):
     club_info = jikan.club(CLUB_ID)
 
     assert isinstance(club_info, dict)
-    assert club_info["title"] == "Fantasy Anime League"
-    assert club_keys.issubset(club_info.keys())
+    assert club_info["data"]["name"] == "Fantasy Anime League"
+    assert club_keys.issubset(club_info["data"].keys())
 
 
 @vcr.use_cassette("tests/vcr_cassettes/anime-failure.yaml")

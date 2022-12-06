@@ -27,6 +27,8 @@ Updating this as I go and plan to use it to help me put PR together.
 - `page` is now a query param instead of a url append
 - `/top`'s `subtype` url params are now replaced with query params
 - `/genre` is renamed to `/genres` and only returns a list of genres with MAL urls. Paging no longer supported
+- `/club` is renamed to `/clubs`. Paging is no longer supported
+
 
 ## Things new in v4
 
@@ -69,4 +71,5 @@ Updating this as I go and plan to use it to help me put PR together.
 	- [X] change `get_schedule_url` in utils to reflect changes to `/schedule` behvaior
 	- [X] modify `get_top_url` in utils to reflect changes `/top` endpoint 
 	- [X] modify `top` in jikan to reflect changes to `/top` endpoint
+	- [X] modify `club` in jikan to reflect changes. (right now only supports `/getClubsByID`)
 	

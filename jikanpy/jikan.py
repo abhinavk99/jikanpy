@@ -184,8 +184,10 @@ class Jikan:
         return self._get("people", id, extension)
 
     def club(
-        self, id: int, extension: Optional[str] = None, page: Optional[int] = None
-    ) -> Dict[str, Any]:
+        self,
+        id: int,
+        extension: Optional[str] = None,
+        ) -> Dict[str, Any]:
         """Gets information on a club.
 
         Args:
@@ -193,8 +195,6 @@ class Jikan:
             extension (:obj:`str`, optional): Special information to get of the
                 club. Possible values are in the Jikan API documentation.
                 Defaults to None.
-            page (:obj:`int`, optional) -- Page number of the results. Defaults
-                to None.
 
         Returns:
             Dict: Dictionary containing information about the club.
@@ -202,7 +202,7 @@ class Jikan:
         Examples:
             >>> jikan.club(379)
         """
-        return self._get("club", id, extension, page)
+        return self._get("clubs", id, extension)
 
     @staticmethod
     def user_list(id: int, extension: Optional[str] = None) -> Dict[str, Any]:
