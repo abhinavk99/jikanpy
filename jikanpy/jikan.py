@@ -290,7 +290,7 @@ class Jikan:
     def schedule(self,
         day: Optional[str] = None,
         page: Optional[int] = None,
-        parameters: Optional[Mapping[str, Optional[Union[int, str, float]]]] = None,
+        parameters: Optional[Mapping[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Gets anime scheduled.
 
@@ -319,7 +319,10 @@ class Jikan:
         return self._request(url, day=day)
 
     def top(
-        self, type: str, page: Optional[int] = None, subtype: Optional[str] = None
+        self,
+        type: str,
+        page: Optional[int] = None, 
+        parameters: Optional[Mapping[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Gets top items on MyAnimeList.
 
@@ -328,9 +331,8 @@ class Jikan:
                 anime and manga.
             page (:obj:`int`, optional): Page number of the results. Defaults to
                 None.
-            subtype (:obj:`str`, optional): Subtype to get filtered top items.
-                Possible values are in the Jikan API documentation.  Defaults to
-                None.
+            parameters (:obj:`dict`, optional): Dictionary containing key,value
+                pairs for ?key=value in url query. Defaults to None.
 
         Returns:
             Dict: Dictionary containing top items on MyAnimeList.
@@ -339,7 +341,7 @@ class Jikan:
             >>> jikan.top(type='manga')
             >>> jikan.top(type='anime', page=2, subtype='upcoming')
         """
-        url = utils.get_top_url(self.base, type, page, subtype)
+        url = utils.get_top_url(self.base, type, page, parameters)
         return self._request(url, type=type)
 
     def genre(

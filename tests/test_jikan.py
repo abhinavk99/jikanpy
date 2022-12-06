@@ -195,11 +195,11 @@ def test_schedule_success(schedule_keys, subset_anime_keys, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/top-success.yaml")
 def test_top_success(top_keys, top_anime_keys, jikan):
-    top_info = jikan.top(type=TYPE, page=1, subtype=SUBTYPE)
+    top_info = jikan.top(type=TYPE, page=1, parameters={'type': SUBTYPE})
 
     assert isinstance(top_info, dict)
     assert top_keys.issubset(top_info.keys())
-    for anime in top_info["top"]:
+    for anime in top_info["data"]:
         assert top_anime_keys.issubset(anime.keys())
 
 

@@ -51,7 +51,7 @@ def get_main_url(
 
 
 def get_creator_url(
-    base_url: str, creator_type: str, creator_id: int, page: Optional[int]
+    base_url: str, creator_type: str, creator_id: int, page: Optional[int] = None,
 ) -> str:
     """Creates the URL for the producer and magazine endpoints."""
     url = f"{base_url}/{creator_type}/{creator_id}"
@@ -117,13 +117,21 @@ def get_schedule_url(base_url: str, day: Optional[str] = None, parameters: Optio
 
 
 def get_top_url(
-    base_url: str, type: str, page: Optional[int], subtype: Optional[str]
+    base_url: str, type: str, page: Optional[int] = None, parameters: Optional[Mapping[str, Any]] = None
 ) -> str:
     """Creates the URL for the top endpoint."""
     url = f"{base_url}/top/{type.lower()}"
     if page is not None:
-        url += f'&page={page}'
-    return url if subtype is None else f"{url}/{subtype.lower()}"
+        url += f'?page={page}'
+
+    if page is None and parameters is not None:
+        k, v = parameters.popitem()
+        url += f"?{k}={v}"
+        url += "".join(f"&{k}={v}" for k, v in parameters.items())
+    elif page is not None and parameters is not None:
+        url += "".join(f"&{k}={v}" for k, v in parameters.items())
+
+    return url
 
 
 def get_genre_url(base_url: str, type: str, genre_id: int, page: Optional[int]) -> str:
