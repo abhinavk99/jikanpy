@@ -316,34 +316,57 @@ def schedule_keys():
 
 @pytest.fixture
 def top_keys():
-    return {"request_hash", "request_cached", "request_cache_expiry", "top"}
+    return {"data"}
 
 
 @pytest.fixture
 def top_anime_keys():
     return {
         "mal_id",
-        "rank",
         "url",
-        "image_url",
+        "images",
+        "trailer",
+        "approved",
+        "titles",
         "title",
+        "title_english",
+        "title_japanese",
+        "title_synonyms",
         "type",
-        "score",
-        "members",
-        "start_date",
+        "source",
         "episodes",
+        "status",
+        "airing",
+        "aired",
+        "duration",
+        "rating",
+        "score",
+        "scored_by",
+        "rank",
+        "popularity",
+        "members",
+        "favorites",
+        "synopsis",
+        "background",
+        "season",
+        "year",
+        "broadcast",
+        "producers",
+        "licensors",
+        "studios",
+        "genres",
+        "explicit_genres",
+        "themes",
+        "demographics",
     }
-
 
 @pytest.fixture
 def genre_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
-        "mal_url",
-        "item_count",
-        "anime",
+        "mal_id",
+        "name",
+        "url",
+        "count",
     }
 
 

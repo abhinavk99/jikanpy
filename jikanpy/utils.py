@@ -134,11 +134,11 @@ def get_top_url(
     return url
 
 
-def get_genre_url(base_url: str, type: str, genre_id: int, page: Optional[int]) -> str:
+def get_genre_url(base_url: str, type: str, filter: Optional[str]) -> str:
     """Creates the URL for the genre endpoint."""
-    url = f"{base_url}/genre/{type.lower()}/{genre_id}"
-    if page is not None:
-        url += f'&page={page}'
+    url = f"{base_url}/genres/{type.lower()}"
+    if filter is not None:
+        url += f'?filter={filter}'
     return url
 
 

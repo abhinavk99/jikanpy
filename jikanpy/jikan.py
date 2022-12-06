@@ -344,27 +344,28 @@ class Jikan:
         url = utils.get_top_url(self.base, type, page, parameters)
         return self._request(url, type=type)
 
-    def genre(
-        self, type: str, genre_id: int, page: Optional[int] = None
+    def genres(
+        self,
+        type: str,
+        filter: Optional[str] = None,
     ) -> Dict[str, Any]:
         """Gets anime or manga by genre.
 
         Args:
             type (:obj:`str`): Type to get items from. Possible values are anime
                 and manga.
-            genre_id (:obj:`int`): Genre ID from MyAnimeList.
-            page (:obj:`int`, optional): Page number of the results. Defaults to
-                None.
+            filter (:obj:`str`, optional): Filter genres by "genres", "explicity_genres",
+                "themes", or "demographics". Defaults to None.
 
         Returns:
-            Dict: Dictionary containing anime or manga by genre.
+            Dict: Dictionary containing MAL genres and search URLs
 
         Examples:
-            >>> jikan.genre(type='anime', genre_id=1)
-            >>> jikan.genre(type='manga', genre_id=2)
+            >>> jikan.genre(type='anime')
+            >>> jikan.genre(type='manga', filter='themes')
         """
-        url = utils.get_genre_url(self.base, type, genre_id, page)
-        return self._request(url, id=genre_id, type=type)
+        url = utils.get_genre_url(self.base, type=type, filter=filter)
+        return self._request(url, type=type, filter=filter)
 
     def producer(self, producer_id: int, page: Optional[int] = None) -> Dict[str, Any]:
         """Gets anime by the producer/studio/licensor.

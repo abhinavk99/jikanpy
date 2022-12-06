@@ -203,15 +203,21 @@ def test_top_success(top_keys, top_anime_keys, jikan):
         assert top_anime_keys.issubset(anime.keys())
 
 
-@vcr.use_cassette("tests/vcr_cassettes/genre-success.yaml")
-def test_genre_success(genre_keys, subset_anime_keys, jikan):
-    genre_info = jikan.genre(type=TYPE, genre_id=GENRE)
+@vcr.use_cassette("tests/vcr_cassettes/genre-anime-success.yaml")
+def test_genre_anime_success(genre_keys, jikan):
+    genre_info = jikan.genres(type="anime")
 
     assert isinstance(genre_info, dict)
-    assert genre_keys.issubset(genre_info.keys())
-    for anime in genre_info["anime"]:
-        assert subset_anime_keys.issubset(anime.keys())
+    for anime in genre_info["data"]:
+        assert genre_keys.issubset(anime.keys())
 
+@vcr.use_cassette("tests/vcr_cassettes/genre-manga-success.yaml")
+def test_genre_manga_success(genre_keys, jikan):
+    genre_info = jikan.genres(type="manga")
+
+    assert isinstance(genre_info, dict)
+    for anime in genre_info["data"]:
+        assert genre_keys.issubset(anime.keys())
 
 @vcr.use_cassette("tests/vcr_cassettes/producer-success.yaml")
 def test_producer_success(producer_keys, subset_anime_keys, jikan):
