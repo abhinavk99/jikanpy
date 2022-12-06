@@ -21,14 +21,14 @@ Updating this as I go and plan to use it to help me put PR together.
 - `/anime/{id}/episodes` now returns a `List[dict]` object for episodes
 	- `page` parameter should probably be re-worked. Url it constructs now gets that number episode
 - `person` endpoint is renamed to `people`
-- search is now spread to a particular endpoint instead of just `/search`
+- search is now spread to a particular endpoint instead of just `/search`. `/search` is removed.
 - `/season` is now `/seasons` with different parameters
 - `/schedule` is now `/schedules` with query parameters instead of url params
 - `page` is now a query param instead of a url append
 - `/top`'s `subtype` url params are now replaced with query params
 - `/genre` is renamed to `/genres` and only returns a list of genres with MAL urls. Paging no longer supported
 - `/club` is renamed to `/clubs`. Paging is no longer supported
-
+- `/user` is renamed to `/users`. endpoint still has lots of url params. Will take some re working
 
 ## Things new in v4
 
@@ -63,6 +63,7 @@ Updating this as I go and plan to use it to help me put PR together.
 	- [X] Deprecated `get_url_with_page` method and replaced calls with query behavior
 	- [ ] Updated search url construction
 - [ ] Change behavior for modified endpoints
+	- [ ] update `search` method in `jikan` to support all endpoints
 	- [X] Update `person` method to `people` to reflect endpoint change
 	- [X] change season utils to reflect new endpoint behavior
 		- [X] removed `get_season_archive_url` and `get_season_later_url` in utils

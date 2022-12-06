@@ -415,14 +415,12 @@ class Jikan:
         Args:
             username (:obj:`str`): MyAnimeList username.
             request (:obj:`str`, optional): Type of data to get. Possible values
-                are profile, history, friends, animelist, and mangalist.
-                Defaults to None.
+                are statistics, favorites, userupdates, about, history, friends, reviews,
+                recommendations, clubs, and External. Defaults to None.
             argument (:obj:`str` or :obj:`int`, optional): For history, possible
-                values are anime and manga. For animelist and mangalist,
-                possible values are in the Jikan API documentation.  Defaults to
-                None.
-            page (:obj:`int`, optional): Page number for friends. Defaults to
-                None.
+                values are anime and manga. Defaults to None.
+            page (:obj:`int`, optional): Page number for friends, reviews, recommendations,
+            and clubs. Defaults to None.
             parameters (:obj:`dict`, optional): Dictionary containing key,value
                 pairs for ?key=value in url query. Defaults to None.
 
@@ -434,15 +432,10 @@ class Jikan:
             >>> jikan.user(username='Xinil', request='profile')
             >>> jikan.user(username='Xinil', request='friends', page=2)
             >>> jikan.user(username='Xinil', request='history')
-            >>> jikan.user(username='Xinil', request='animelist', argument='ptw')
-            >>> jikan.user(
-                    username='Xinil', request='animelist', parameters={'page': 2}
-                )
             >>> jikan.user(
                     username='Xinil',
-                    request='animelist',
-                    argument='ptw',
-                    parameters={'page': 2}
+                    request='history',
+                    argument='anime',
                 )
         """
         url = utils.get_user_url(

@@ -1,0 +1,54 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
+    method: GET
+    uri: https://api.jikan.moe/v4/clubs/379
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA2WPQYvCMBCF/4rM1drEumvXgIgXTx49BmSaDjVLEkOTHor43512PbkwzMCbed9j
+        HtBiRlAP8OiutgW1qXcFDL0DBbecY1JaaOFHDNaTsymXgbIWxg1NKuMtHoxt9+yBAqzHjtLE+o3d
+        NGbh+skybSj/8f68b64W60qLzbb6+vkuJ9bzWUBAT8w5YciYxsVx8i/OhN1AnO3JN9RzuCzAYKbu
+        3o98XfPK9MQCfwaVlPWKay0vUqq5lnPnKzSGEvshDo2zhiNf3kOqgBsBAAA=
+    headers:
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, s-maxage=86400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 06 Dec 2022 16:59:41 GMT
+      Expires:
+      - Wed, 07 Dec 2022 16:59:41 GMT
+      Last-Modified:
+      - Tue, 06 Dec 2022 16:59:41 GMT
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Cache-Status:
+      - MISS
+      X-Request-Fingerprint:
+      - request:clubs:c33775d88601ccc7af19eaa8634668ddf8456bda
+    status:
+      code: 200
+      message: OK
+version: 1

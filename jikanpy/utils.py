@@ -151,13 +151,15 @@ def get_user_url(
     parameters: Optional[Mapping[str, Any]],
 ) -> str:
     """Creates the URL for the user endpoint."""
-    url = f"{base_url}/user/{username.lower()}"
+    url = f"{base_url}/users/{username.lower()}"
     if request is not None:
         url += f"/{request}"
         if argument is not None:
-            url += f"/{argument}"
-        if page is not None:
-            url += f'&page={page}'
+            url += f"?{argument}"
+        if argument is None and page is not None:
+            url += f'?page={page}'
+        else if argment is not None and page is not None:
+            url += f'&page={page}'            
     if parameters is not None:
         param_str = "&".join(f"{k}={v}" for k, v in parameters.items())
         url += f"?{param_str}"

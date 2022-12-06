@@ -469,22 +469,14 @@ def animelist_keys():
 @pytest.fixture
 def club_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
         "mal_id",
+        "name",
         "url",
-        "image_url",
-        "title",
-        "members_count",
-        "pictures_count",
+        "images",
+        "members",
         "category",
         "created",
-        "type",
-        "staff",
-        "anime_relations",
-        "manga_relations",
-        "character_relations",
+        "access"
     }
 
 
