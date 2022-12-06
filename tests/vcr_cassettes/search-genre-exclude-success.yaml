@@ -11,26 +11,44 @@ interactions:
       User-Agent:
       - python-requests/2.23.0
     method: GET
-    uri: https://api.jikan.moe/v3/search/anime?q=naruto&genre=1,2&genre_exclude=True&limit=2
+    uri: https://api.jikan.moe/v4/anime?q=naruto&genre=1,2&genre_exclude=True&limit=2
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA6WU227TQBCGX2XwLYmzPh8kxE2lIiEQaituCLLW63G8xCf2oBJVfXdmnTSFVkAl
-        pF0nOzM7/2/vZ995Cr9b1KbquO688mFZauRKdGUiklzUBWYCWcRrjiwtkgCzKGmLFtOmbtO0wbj1
-        VudGgosOG69sea/xSbjCH7NUB6+Mo5Ax5rLa9kZ75Zc7b+B9JWljHETxyrOqJzudMbMut5vtZjjw
-        UQ7YS238Ec12syy3G1e93Xzkypqpqq47Oc/WNjhW64dF9X4ap45Xl3xvKX6BI7mVA99h9VRENKP/
-        TGgp1WfBhEaQF4n/bd691W8SliYZYlizQLQRRkGasyiIMaPHkxR5QFpGmh5J52iyhEeTsH5YvIKt
-        d/QJR59bD45OuVRy3J2fpz6M06ylPvcDLbpp6kHPKCTvfTiFpQYOI96CWLLG6RngYwO3HSl3CAOi
-        0XDNtd0jmA4PVMWVgVbuOkOavvN+mJ3162NzCuAs9dQg6QdkRkyK0pkfZLRwm6uGG7eBjjdfs3DN
-        0hvGymW8Xq6uxdi8pGzAoUZFQnEWJAmxQlsID+/T5TqIvPvVIzF5lL8cGCo+8UKzqj7YvVVT5QLV
-        u0l3srrhA6eLcuD8FykBoxmyMDqhkjetKOK6CEWcFEHa5g0mcVMzwRNGf/ApKjRLOPpbDhUWf+D8
-        gfMHi78/83FhXYZOWoG2w0A/3dTLhh+AmyW6U4TDzBWBoSlnNS7NpYNSjnxFAB0mSy0cNfT6ompt
-        f+JtJ1W/OiHECRxqtUPop2nvNIVCbqxCH24cVzW2StKxA9JXACbjxF3Pow6MfEAN0tA7sNzisNw5
-        7YQrkm98/xcSbz7/DmF0pjD1g+cQRmuW0fgXhFRWrMPiLxCGaZHljxBeefdfV17P6cs206F7ZXT/
-        E644611MBQAA
+        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
     headers:
       Access-Control-Allow-Methods:
-      - '*'
+      - GET
       Access-Control-Allow-Origin:
       - '*'
       Cache-Control:
@@ -39,28 +57,22 @@ interactions:
       - keep-alive
       Content-Encoding:
       - gzip
-      Content-Length:
-      - '693'
       Content-Type:
       - application/json
       Date:
-      - Mon, 18 May 2020 03:15:49 GMT
-      ETag:
-      - '"45adb99ff0733980863e5c6bae4ed9b3"'
-      Expires:
-      - Sat, 23 May 2020 03:15:49 GMT
+      - Mon, 05 Dec 2022 19:21:29 GMT
       Server:
-      - Jikan/3.4
+      - nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding:
+      - chunked
       Vary:
       - Accept-Encoding
       X-Cache-Status:
       - MISS
-      X-Request-Cache-Ttl:
-      - '432000'
-      X-Request-Cached:
-      - ''
-      X-Request-Hash:
-      - request:search:5c58cb9e7ce03abae06951e735f9fe6dbf66de4f
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
     status:
       code: 200
       message: OK

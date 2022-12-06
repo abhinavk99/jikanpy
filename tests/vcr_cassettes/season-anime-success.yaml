@@ -454,7 +454,7 @@ interactions:
       Content-Type:
       - application/json
       Date:
-      - Mon, 05 Dec 2022 19:35:15 GMT
+      - Mon, 05 Dec 2022 20:01:19 GMT
       Expires:
       - Tue, 06 Dec 2022 19:11:42 GMT
       Last-Modified:
@@ -466,7 +466,7 @@ interactions:
       Vary:
       - Accept-Encoding
       X-Cache-Status:
-      - MISS
+      - HIT
       X-Request-Fingerprint:
       - request:seasons:fbc5d2015756a23838c5f877ca9da3c083265e65
     status:

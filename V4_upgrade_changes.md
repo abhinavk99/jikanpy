@@ -25,7 +25,8 @@ Updating this as I go and plan to use it to help me put PR together.
 - `/season` is now `/seasons` with different parameters
 - `/schedule` is now `/schedules` with query parameters instead of url params
 - `page` is now a query param instead of a url append
-
+- `/top`'s `subtype` url params are now replaced with query params
+- `/genre` is renamed to `/genres` and only returns a list of genres with MAL urls. Paging no longer supported
 
 ## Things new in v4
 
@@ -57,6 +58,7 @@ Updating this as I go and plan to use it to help me put PR together.
 - [ ] Add support for new endpoints
 - [ ] Deprecate unsupported endpoints
 	- [X] Remove meta endpoint calls and tests
+	- [X] Deprecated `get_url_with_page` method and replaced calls with query behavior
 	- [ ] Updated search url construction
 - [ ] Change behavior for modified endpoints
 	- [X] Update `person` method to `people` to reflect endpoint change
@@ -64,6 +66,7 @@ Updating this as I go and plan to use it to help me put PR together.
 		- [X] removed `get_season_archive_url` and `get_season_later_url` in utils
 		- [X] added `get_season_upcoming_url` and `get_season_now_url` in utils
 		- [X] repalced `get_season_later` with `get_season_upcoming` in jikan.py
-	- [ ] change scheudle utils to reflect new endpoint behvaior
-		- [X] Deprecated `get_url_with_page` method and replaced calls with query behavior
-		- [ ]
+	- [X] change `get_schedule_url` in utils to reflect changes to `/schedule` behvaior
+	- [X] modify `get_top_url` in utils to reflect changes `/top` endpoint 
+	- [X] modify `top` in jikan to reflect changes to `/top` endpoint
+	
