@@ -273,7 +273,7 @@ class Jikan:
         Examples:
             >>> jikan.season_history()
         """
-        url = utils.get_season_history(self.base)
+        url = utils.get_season_history_url(self.base)
         return self._request(url)
 
 

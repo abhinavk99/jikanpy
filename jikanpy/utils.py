@@ -94,7 +94,7 @@ def get_season_now_url(base_url: str) -> str:
     """Creates the URL for the season later endpoint."""
     return f"{base_url}/seasons/now"
 
-def get_season_history(base_url: str) -> str:
+def get_season_history_url(base_url: str) -> str:
     """Creats the URL for the getSeasonList endpoint."""
     return f"{base_url}/seasons"
 

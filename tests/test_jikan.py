@@ -331,8 +331,8 @@ def test_empty_response_json(jikan, response_mock):
 
 
 def test_season_urls(jikan):
-    season_archive_url = utils.get_season_archive_url(jikan.base)
-    season_later_url = utils.get_season_later_url(jikan.base)
-    assert season_archive_url.endswith("season/archive")
-    assert season_later_url.endswith("season/later")
+    season_archive_url = utils.get_season_history_url(jikan.base)
+    season_later_url = utils.get_season_upcoming_url(jikan.base)
+    assert season_archive_url.endswith("seasons")
+    assert season_later_url.endswith("seasons/upcoming")
     assert season_archive_url.startswith(jikan.base)
