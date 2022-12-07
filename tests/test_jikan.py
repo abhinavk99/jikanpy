@@ -243,7 +243,13 @@ def test_user_success(user_keys_full, jikan):
     assert user_info["data"]["gender"] == "Male"
     assert user_keys_full.issubset(user_info["data"].keys())
 
+@vcr.use_cassette("tests/vcr_cassettes/user-id-success.yaml")
+def test_user_id_success(user_id_keys, jikan):
+    user_info = jikan.user_by_id(user_id=1)
 
+    assert isinstance(user_info, dict)
+    assert user_info["data"]["username"] == "Xinil"
+    assert user_id_keys.issubset(user_info["data"].keys())
 
 @vcr.use_cassette("tests/vcr_cassettes/club-success.yaml")
 def test_club_success(club_keys, jikan):
@@ -252,6 +258,7 @@ def test_club_success(club_keys, jikan):
     assert isinstance(club_info, dict)
     assert club_info["data"]["name"] == "Fantasy Anime League"
     assert club_keys.issubset(club_info["data"].keys())
+
 
 
 @vcr.use_cassette("tests/vcr_cassettes/anime-failure.yaml")

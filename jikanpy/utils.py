@@ -168,6 +168,12 @@ def get_user_url(
         url += f"?{param_str}"
     return url
 
+def get_user_id_url(
+    base_url: str,
+    user_id: int,
+) -> str:
+    """Creates the URL for the userbyid endpoint."""
+    return f"{base_url}/users/userbyid/{user_id}"
 
 def get_meta_url(
     base_url: str,

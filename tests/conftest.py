@@ -473,6 +473,13 @@ def user_keys_full():
     "external",
     }
 
+@pytest.fixture
+def user_id_keys():
+    return {
+        "url",
+        "username",
+    }
+
 
 @pytest.fixture
 def animelist_keys():
