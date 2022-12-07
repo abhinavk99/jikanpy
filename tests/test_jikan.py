@@ -235,26 +235,14 @@ def test_magazine_success(magazine_keys, magazine_manga_keys, jikan):
     assert magazine_keys.issubset(magazine_info["data"][0].keys())
 
 @vcr.use_cassette("tests/vcr_cassettes/user-success.yaml")
-def test_user_success(user_keys, jikan):
-    user_info = jikan.user(username=USERNAME)
+def test_user_success(user_keys_full, jikan):
+    user_info = jikan.user(username=USERNAME, request="full")
 
     assert isinstance(user_info, dict)
-    assert user_info["username"] == "Nekomata1037"
-    assert user_info["gender"] == "Male"
-    assert user_keys.issubset(user_info.keys())
+    assert user_info["data"]["username"] == "Nekomata1037"
+    assert user_info["data"]["gender"] == "Male"
+    assert user_keys_full.issubset(user_info["data"].keys())
 
-
-@vcr.use_cassette("tests/vcr_cassettes/animelist-success.yaml")
-def test_animelist_success(animelist_keys, jikan):
-    animelist_info = jikan.user(
-        username=USERNAME,
-        request="animelist",
-        argument="all",
-        parameters={"search": "fate"},
-    )
-
-    assert isinstance(animelist_info, dict)
-    assert animelist_keys.issubset(animelist_info.keys())
 
 
 @vcr.use_cassette("tests/vcr_cassettes/club-success.yaml")

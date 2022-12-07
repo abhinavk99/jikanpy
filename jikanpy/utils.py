@@ -161,7 +161,7 @@ def get_user_url(
             url += f"?{argument}"
         if argument is None and page is not None:
             url += f'?page={page}'
-        elif argment is not None and page is not None:
+        elif argument is not None and page is not None:
             url += f'&page={page}'            
     if parameters is not None:
         param_str = "&".join(f"{k}={v}" for k, v in parameters.items())

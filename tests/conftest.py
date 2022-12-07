@@ -455,23 +455,22 @@ def magazine_manga_keys():
 
 
 @pytest.fixture
-def user_keys():
+def user_keys_full():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
-        "username",
-        "url",
-        "image_url",
-        "last_online",
-        "gender",
-        "birthday",
-        "location",
-        "joined",
-        "anime_stats",
-        "manga_stats",
-        "favorites",
-        "about",
+    "mal_id",
+    "username",
+    "url",
+    "images",
+    "last_online",
+    "gender",
+    "birthday",
+    "location",
+    "joined",
+    "statistics",
+    "favorites",
+    "updates",
+    "about",
+    "external",
     }
 
 
