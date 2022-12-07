@@ -396,6 +396,8 @@ class Jikan:
         self,
         username: str,
         extension: Optional[str] = None,
+        page: Optional[int] = None,
+        parameters: Optional[Mapping[str, str]] = None,
     ) -> Dict[str, Any]:
         """Gets information about the user.
 
@@ -404,25 +406,26 @@ class Jikan:
             extension (:obj:`str`, optional): Special information to get of the
                 producer. Possible values are in the Jikan API documentation.
                 Defaults to None.
+            page (:obj:`int`, optional): Page number of the results.Check API doc
+                for information on which extensions accept paging. Defaults to
+                None.
+            parameters (:obj:`dict`, optional): Dictionary containing key,value
+                pairs for ?key=value in url query. Check API doc for information
+                on which extensions accept paramters. Defaults to None.
 
         Returns:
             Dict: Dictionary containing information about the user.
 
         Examples:
             >>> jikan.user(username='Xinil')
-            >>> jikan.user(username='Xinil', request='profile')
-            >>> jikan.user(username='Xinil', request='friends', page=2)
-            >>> jikan.user(username='Xinil', request='history')
-            >>> jikan.user(
-                    username='Xinil',
-                    request='history',
-                    argument='anime',
-                )
+            >>> jikan.user(username='Xinil', extension='full')
+            >>> jikan.user(username='Xinil', extension='friends', page=2)
+            >>> jikan.user(username='Xinil', extension='history', paramters={'type': 'anime'})
         """
         url = utils.get_user_url(
-            self.base, username, request, argument, page, parameters
+            self.base, username, extension, page, parameters
         )
-        return self._request(url, username=username, request=request)
+        return self._request(url, username=username, extension=extension)
 
     def user_by_id(
         self,

@@ -148,24 +148,28 @@ def get_genre_url(base_url: str, type: str, filter: Optional[str]) -> str:
 def get_user_url(
     base_url: str,
     username: str,
-    request: Optional[str],
-    argument: Optional[Union[int, str]],
+    extension: Optional[str],
     page: Optional[int],
     parameters: Optional[Mapping[str, Any]],
 ) -> str:
     """Creates the URL for the user endpoint."""
     url = f"{base_url}/users/{username.lower()}"
-    if request is not None:
-        url += f"/{request}"
-        if argument is not None:
-            url += f"?{argument}"
-        if argument is None and page is not None:
-            url += f'?page={page}'
-        elif argument is not None and page is not None:
-            url += f'&page={page}'            
+    if extension is not None:
+        url += f"/{extension}"
+    
+    query_params = {}
+
+    if page is not None:
+        query_params["page"] = page
     if parameters is not None:
-        param_str = "&".join(f"{k}={v}" for k, v in parameters.items())
-        url += f"?{param_str}"
+        for k,v in parameters.items():
+            query_params[k] = v
+
+    if query_params != {}:
+        k,v = query_params.popitem()
+        param_str = f'?{k}={v}'
+        param_str += "".join(f"&{k}={v}" for k, v in parameters.items())
+
     return url
 
 def get_user_id_url(

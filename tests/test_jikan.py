@@ -236,12 +236,21 @@ def test_magazine_success(magazine_keys, magazine_manga_keys, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/user-success.yaml")
 def test_user_success(user_keys_full, jikan):
-    user_info = jikan.user(username=USERNAME, request="full")
+    user_info = jikan.user(username=USERNAME, extension="full")
 
     assert isinstance(user_info, dict)
     assert user_info["data"]["username"] == "Nekomata1037"
     assert user_info["data"]["gender"] == "Male"
     assert user_keys_full.issubset(user_info["data"].keys())
+
+@vcr.use_cassette("tests/vcr_cassettes/user-friends-success.yaml")
+def test_user_friends_success(user_keys_friends, jikan):
+    user_info = jikan.user(username=USERNAME, extension="friends")
+
+    assert isinstance(user_info, dict)
+    assert user_info["data"][0]["user"]["username"] == "purplepinapples"
+    assert user_keys_friends.issubset(user_info["data"][0].keys())
+
 
 @vcr.use_cassette("tests/vcr_cassettes/user-id-success.yaml")
 def test_user_id_success(user_id_keys, jikan):

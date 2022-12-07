@@ -474,6 +474,14 @@ def user_keys_full():
     }
 
 @pytest.fixture
+def user_keys_friends():
+    return {
+        "user",
+        "last_online",
+        "friends_since"
+    }
+
+@pytest.fixture
 def user_id_keys():
     return {
         "url",
