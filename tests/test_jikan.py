@@ -224,9 +224,7 @@ def test_producer_success(producer_keys, subset_anime_keys, jikan):
     producer_info = jikan.producer(producer_id=PRODUCER)
 
     assert isinstance(producer_info, dict)
-    assert producer_keys.issubset(producer_info.keys())
-    for anime in producer_info["anime"]:
-        assert subset_anime_keys.issubset(anime.keys())
+    assert producer_keys.issubset(producer_info["data"].keys())
 
 
 @vcr.use_cassette("tests/vcr_cassettes/magazine-success.yaml")

@@ -39,14 +39,17 @@ def get_url_with_page(url: str, page: Optional[int], delimiter: str = "/") -> st
 
 
 def get_main_url(
-    base_url: str, endpoint: str, id: int, extension: Optional[str], page: Optional[int]
+    base_url: str,
+    endpoint: str,
+    id: int, extension: Optional[str] = None,
+    page: Optional[int] = None,
 ) -> str:
     """Creates the URL for the anime, manga, character, person, and club endpoints."""
     url = f"{base_url}/{endpoint}/{id}"
     if extension is not None:
         url += f"/{extension}"
     if page is not None:
-        url += f'&page={page}'
+        url += f'?page={page}'
     return url
 
 
@@ -158,7 +161,7 @@ def get_user_url(
             url += f"?{argument}"
         if argument is None and page is not None:
             url += f'?page={page}'
-        else if argment is not None and page is not None:
+        elif argment is not None and page is not None:
             url += f'&page={page}'            
     if parameters is not None:
         param_str = "&".join(f"{k}={v}" for k, v in parameters.items())

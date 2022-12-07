@@ -372,7 +372,16 @@ def genre_keys():
 
 @pytest.fixture
 def producer_keys():
-    return {"request_hash", "request_cached", "request_cache_expiry", "meta", "anime"}
+    return {
+        "mal_id",
+        "url",
+        "titles",
+        "images",
+        "favorites",
+        "count",
+        "established",
+        "about"
+    }
 
 
 @pytest.fixture

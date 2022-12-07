@@ -220,7 +220,7 @@ class Jikan:
 
         Args:
             search_type (:obj:`str`): Where to search. Possible values are
-                anime, manga, person, and character.
+                anime, manga, people, producers, and characters.
             query (:obj:`str`): Query to search for.
             page (:obj:`int`, optional): Page number of the results. Defaults to
                 None.
@@ -367,22 +367,26 @@ class Jikan:
         url = utils.get_genre_url(self.base, type=type, filter=filter)
         return self._request(url, type=type, filter=filter)
 
-    def producer(self, producer_id: int, page: Optional[int] = None) -> Dict[str, Any]:
+    def producer(self,
+                producer_id: int,
+                extension: Optional[str] = None
+        ) -> Dict[str, Any]:
         """Gets anime by the producer/studio/licensor.
 
         Args:
-            producer_id (:obj:`int`): Producer ID from MyAnimeList.
-            page (:obj:`int`, optional): Page number of the results. Defaults to
-                None.
-
+            producer_id (:obj:`int`, optional): Producer ID from MyAnimeList.
+            extension (:obj:`str`, optional): Special information to get of the
+                producer. Possible values are in the Jikan API documentation.
+                Defaults to None.
         Returns:
-            Dict: Dictionary containing anime by the producer/studio/licensor.
+            Dict: Dictionary containing producer information
 
         Examples:
             >>> jikan.producer(producer_id=4)
-            >>> jikan.producer(producer_id=4, page=2)
+            >>> jikan.producer(producer_id=4, extension='full')
+            >>> jikan.producer(producer_id=4, extension='external')
         """
-        return self._get_creator("producer", producer_id, page)
+        return self._get("producers", producer_id, extension)
 
     def magazine(self, magazine_id: int, page: Optional[int] = None) -> Dict[str, Any]:
         """Gets manga by the magazine/serializer/publisher.
