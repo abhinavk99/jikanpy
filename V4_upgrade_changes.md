@@ -5,6 +5,7 @@ Updating this as I go and plan to use it to help me put PR together.
 
 ## Things in v3 removed in v4
 - The entire meta endpoint has been removed
+- Getting magazine by ID is now unsupported
 
 ## Things in v3 modified in v4
 - Cache TTL is now 24 hours for all requests
@@ -29,6 +30,8 @@ Updating this as I go and plan to use it to help me put PR together.
 - `/genre` is renamed to `/genres` and only returns a list of genres with MAL urls. Paging no longer supported
 - `/club` is renamed to `/clubs`. Paging is no longer supported
 - `/user` is renamed to `/users`. endpoint still has lots of url params. Will take some re working
+- `/producer` is renamed to `/producers`. Paging is only spported on search. No longer returns anime
+- `/magazine` is renamed to `/magazines`. Is only a search endpoint now
 
 ## Things new in v4
 
@@ -61,6 +64,7 @@ Updating this as I go and plan to use it to help me put PR together.
 - [ ] Deprecate unsupported endpoints
 	- [X] Remove meta endpoint calls and tests
 	- [X] Deprecated `get_url_with_page` method and replaced calls with query behavior
+	- [X] Depcreated `magazine` method
 	- [ ] Updated search url construction
 - [ ] Change behavior for modified endpoints
 	- [ ] update `search` method in `jikan` to support all endpoints
@@ -73,4 +77,5 @@ Updating this as I go and plan to use it to help me put PR together.
 	- [X] modify `get_top_url` in utils to reflect changes `/top` endpoint 
 	- [X] modify `top` in jikan to reflect changes to `/top` endpoint
 	- [X] modify `club` in jikan to reflect changes. (right now only supports `/getClubsByID`)
+	- [X] modify `producer` in jikan to reflect changes 
 	

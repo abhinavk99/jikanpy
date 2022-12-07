@@ -1,0 +1,61 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
+    method: GET
+    uri: https://api.jikan.moe/v4/magazines?q=young
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA62WX2+bMBTFvwryyzYJjQB2CHlLW23rpErT/jxsY7I8YiVWwURgprVVvnvtgF3s
+        UGly9xSJwO8c33vs6wdwIDvGiWANB+sHUJFO4D+sY78riuVfFKyTEOxJhzn9K8Ynou1pCMq+bSnX
+        z+IQMEHrTkHKpudCfohCIBpBKrCGeQgOtNVEdDyGYEsEAeufD6AmFWZbiVikWQg4qeUrYFMqS8F3
+        idqBEPStpIC9EIduXURFVN8RzmpasU685VTIB4TviPrZkXvGaREpWhENGKwxozN4DJ9k0TI2qhe0
+        64jo+kE3uNyT+qAq42NAcotIAwcHeAIcrcTLqZcELp7zcjOCvbxI7pmXCVB7yadeYrR4asdVc9ts
+        ad38j8IocBFp4j9WRrbTmHlHafWyZBSRYrixiGEylUzT3EjeUP6qe4GmZBWRhHRnUYTOKtGcZvDl
+        QEtGquD6ltz35Z75LhxNXeCRiifU0VZmpTJ/SuXXhpOWBVwn4WNfH/wimctIDjTMdQpGmjZh5RFO
+        EjBob0q/3QBVAAbBAaH7j5DVjHSyG41i8O2TX/FTtQeNKj5hRuGVpZu4opIsD1GvIhtFzTBRT62l
+        xqtZ0WDTks43bfHKVscGNppAme0hiedNXMnE+npIYseEho0ecnsUnDV8cHDdVYRvPcfAwnFgYCZ2
+        Vhlgtpw38YO2jV8VJNLxMLK0A6sReeIaOB3OXtKSpZU1ZPZ4h9mcpLoBvGjuwcxSV1eB87FnHzNJ
+        PLt6ZeUzldPTbx/GyzMjmqZdWD2AyN0Ll03NSr8iILMHNGT23IlRhhzRq5bs5MI3O7/yK6KWHlB4
+        QD1z+XHU3yue3x0jgVrXQEzWE3viLt3ofWB+WVcorTow9EV4Krhy5bwn6Mqo2WMzXVhRQqnbVfV6
+        8Pqm4WJf3b3xO9VSNBXHI2w6YKwqL6G7q04mLogQlWe2JNKyYFh6uhx/HR8BuVUVPN8MAAA=
+    headers:
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 07 Dec 2022 19:38:32 GMT
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Cache-Status:
+      - MISS
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+version: 1

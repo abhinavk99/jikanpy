@@ -428,7 +428,12 @@ def subset_anime_keys():
 
 @pytest.fixture
 def magazine_keys():
-    return {"request_hash", "request_cached", "request_cache_expiry", "meta", "manga"}
+    return {
+        "mal_id",
+        "name",
+        "url",
+        "count",
+    }
 
 
 @pytest.fixture

@@ -220,7 +220,7 @@ class Jikan:
 
         Args:
             search_type (:obj:`str`): Where to search. Possible values are
-                anime, manga, people, producers, and characters.
+                anime, manga, people, producers, magazines, and characters.
             query (:obj:`str`): Query to search for.
             page (:obj:`int`, optional): Page number of the results. Defaults to
                 None.
@@ -389,22 +389,8 @@ class Jikan:
         return self._get("producers", producer_id, extension)
 
     def magazine(self, magazine_id: int, page: Optional[int] = None) -> Dict[str, Any]:
-        """Gets manga by the magazine/serializer/publisher.
-
-        Args:
-            magazine_id (:obj:`int`): Magazine ID from MyAnimeList.
-            page (:obj:`int`, optional): Page number of the results. Defaults to
-                None.
-
-        Returns:
-            Dict: Dictionary containing manga by the
-                magazine/serializer/publisher.
-
-        Examples:
-            >>> jikan.magazine(magazine_id=83)
-            >>> jikan.magazine(magazine_id=83, page=2)
-        """
-        return self._get_creator("magazine", magazine_id, page)
+        """Deprecated: Gets Magazine information by ID."""
+        raise DeprecatedEndpoint("magazine is a deprecated endpoint")
 
     def user(
         self,

@@ -229,13 +229,10 @@ def test_producer_success(producer_keys, subset_anime_keys, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/magazine-success.yaml")
 def test_magazine_success(magazine_keys, magazine_manga_keys, jikan):
-    magazine_info = jikan.magazine(magazine_id=MAGAZINE)
+    magazine_info = jikan.search("magazines",query="young")
 
     assert isinstance(magazine_info, dict)
-    assert magazine_keys.issubset(magazine_info.keys())
-    for manga in magazine_info["manga"]:
-        assert magazine_manga_keys.issubset(manga.keys())
-
+    assert magazine_keys.issubset(magazine_info["data"][0].keys())
 
 @vcr.use_cassette("tests/vcr_cassettes/user-success.yaml")
 def test_user_success(user_keys, jikan):
