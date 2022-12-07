@@ -16,7 +16,7 @@ Updating this as I go and plan to use it to help me put PR together.
 	- New: `Last-Modified` details the cache set date
 	- New: `X-Request-Fingerprint` details the unique request fingerprint
 
-- Responses are now wrapped in a single key dict: {'data' : usual_response}
+- Responses are now wrapped in a single key-dict: {'data' : usual_response}
 - `/character` endpoint is now `/characters`
 - `/anime/{id}/episodes` now returns a `List[dict]` object for episodes
 	- `page` parameter should probably be re-worked. Url it constructs now gets that number episode
@@ -37,7 +37,7 @@ The `search` method in `jikan` only supports: anime, characters, clubs, magazine
 	These are all the endpoints that currently have `get`*endpoint_name*`Search` child endpoints.
 Other endpoints may have some other method of search, but it's more like a filtered list since they don't support the `q` query parameter. They also typically have non-uniform URL parameters which make it difficult to construct the URLs in one place.
 Therefore, other search-like endpoints should be handled by their own methods.
-For example, the endpoints `schedules`, `seasons`, and `genres` all have a `get` endpoint, they require different URL params and no query params. So these searches can be handled via extensions inside the method.
+For example, the endpoints `schedules`, `seasons`, and `genres` all have some `get` endpoint (but specifically not a `getSchedulesSearch` for example) , but they require different URL params and no query params. So these searches can be handled via extensions inside the method. 
 
 ## Things new in v4
 
@@ -57,7 +57,11 @@ For example, the endpoints `schedules`, `seasons`, and `genres` all have a `get`
 - Some pre-existing endpoints have new child endpoints
 	- ex: Some old endpoints (need to make a list of which) now support `/full` (e.g. `/manga/1/full`) to get all information about the series
 
-
+- New endpoints/end-points not previously support in by this wrapper:
+	- `/random`
+	- `/recommendations`
+	- `/reviews`
+	- `/watch`
 
 # Todo
 - [X] Update response header information
@@ -70,7 +74,7 @@ For example, the endpoints `schedules`, `seasons`, and `genres` all have a `get`
 - [ ] Deprecate unsupported endpoints
 	- [X] Remove meta endpoint calls and tests
 	- [X] Deprecated `get_url_with_page` method and replaced calls with query behavior
-	- [X] Depcreated `magazine` method
+	- [X] Depcreated `magazine` method since behavior is changed.
 	- [X] Updated search url construction. Search now supports search on anime, characters, clubs, magazines, 			manga, people, producers, and users.
 - [ ] Change behavior for modified endpoints
 	- [x] update `search` method in `jikan` to support all qeury-able endpoints
@@ -78,13 +82,15 @@ For example, the endpoints `schedules`, `seasons`, and `genres` all have a `get`
 	- [X] change season utils to reflect new endpoint behavior
 		- [X] removed `get_season_archive_url` and `get_season_later_url` in utils
 		- [X] added `get_season_upcoming_url` and `get_season_now_url` in utils
+			- [X] Remove this and put into extension
 		- [X] repalced `get_season_later` with `get_season_upcoming` in jikan.py
+			- [X] remove this and put into extension
 	- [X] change `get_schedule_url` in utils to reflect changes to `/schedule` behvaior
 	- [X] modify `get_top_url` in utils to reflect changes `/top` endpoint 
 	- [X] modify `top` in jikan to reflect changes to `/top` endpoint
 	- [X] modify `club` in jikan to reflect changes. (right now only supports `/getClubsByID`)
 	- [X] modify `producer` in jikan to reflect changes 
 	- [X] modify `user` in jikan to reflect changes
-	- [ ] Setup filtered search as extensions
+	- [ ] Setup filtered searches as extensions
 
 	

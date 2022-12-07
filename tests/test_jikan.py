@@ -195,7 +195,7 @@ def test_season_history_success(season_archive_keys, archived_years_keys, jikan)
 
 @vcr.use_cassette("tests/vcr_cassettes/season-upcoming-success.yaml")
 def test_season_upcoming_success(season_keys, seasonal_anime_keys, jikan):
-    season_later_info = jikan.season_upcoming()
+    season_later_info = jikan.season(extension="upcoming")
 
     assert isinstance(season_later_info, dict)
     assert season_keys.issubset(season_later_info.keys())
@@ -204,7 +204,7 @@ def test_season_upcoming_success(season_keys, seasonal_anime_keys, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/current-season-success.yaml")
 def test_season_current_success(season_keys, seasonal_anime_keys, jikan):
-    season_info = jikan.season()
+    season_info = jikan.season(extension='now')
 
     assert isinstance(season_info, dict)
     assert season_keys.issubset(season_info.keys())

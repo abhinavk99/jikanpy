@@ -111,8 +111,8 @@ class Jikan:
 
         Args:
             id (:obj:`int`): ID of the anime to get the information of.
-            extension (:obj:`str`, optional): Special information to get of the
-                anime. Possible values are in the Jikan API documentation.
+            extension (:obj:`str`, optional): Special information (via URL param)
+                to get of the anime. Possible values are in the Jikan API documentation.
                 Defaults to None.
             page (:obj:`int`, optional) -- Page number of the results. Defaults
                 to None.
@@ -135,8 +135,8 @@ class Jikan:
 
         Args:
             id (:obj:`int`): ID of the manga to get the information of.
-            extension (:obj:`str`, optional): Special information to get of the
-                manga. Possible values are in the Jikan API documentation.
+            extension (:obj:`str`, optional): Special information (via URL param) 
+                to get of the manga. Possible values are in the Jikan API documentation.
                 Defaults to None.
             page (:obj:`int`, optional) -- Page number of the results. Defaults
                 to None.
@@ -154,9 +154,9 @@ class Jikan:
 
         Args:
             id (:obj:`int`): ID of the character to get the information of.
-            extension (:obj:`str`, optional): Special information to get of the
-                character. Possible values are in the Jikan API documentation.
-                Defaults to None.
+            extension (:obj:`str`, optional): Special information (via URL param)
+                to get of the character. Possible values are in the Jikan API
+                documentation. Defaults to None.
 
         Returns:
             Dict: Dictionary containing information about the character.
@@ -171,8 +171,8 @@ class Jikan:
 
         Args:
             id (:obj:`int`): ID of the person to get the information of.
-            extension (:obj:`str`, optional): Special information to get of the
-                person. Possible values are in the Jikan API documentation.
+            extension (:obj:`str`, optional): Special information (via URL param) 
+                to get of the person. Possible values are in the Jikan API documentation.
                 Defaults to None.
 
         Returns:
@@ -192,8 +192,8 @@ class Jikan:
 
         Args:
             id (:obj:`int`): ID of the club to get the information of.
-            extension (:obj:`str`, optional): Special information to get of the
-                club. Possible values are in the Jikan API documentation.
+            extension (:obj:`str`, optional): Special information (via URL param)
+                to get of the club. Possible values are in the Jikan API documentation.
                 Defaults to None.
 
         Returns:
@@ -220,7 +220,8 @@ class Jikan:
 
         Args:
             search_type (:obj:`str`): Where to search. Possible values are
-                anime, manga, magazines, people, producers, and characters.
+                anime, characters, clubs, magazines, manga, people, producers,
+                and users. 
             query (:obj:`str`): Query to search for.
             page (:obj:`int`, optional): Page number of the results. Defaults to
                 None.
@@ -243,15 +244,27 @@ class Jikan:
         return self._request(url, **kwargs)
 
     def season(
-        self, year: Optional[int] = None, season: Optional[str] = None
+        self,
+        year: Optional[int] = None,
+        season: Optional[str] = None,
+        extension: Optional[str] = None,
+        page: Optional[int] = None,
+        parameters: Optional[Mapping[str,Any]] = None,
     ) -> Dict[str, Any]:
-        """Gets information on anime of the specific season or the current seasaon if
-            no parameters are specified.
+        """Gets information on anime of the specific season.
 
         Args:
             year (:obj:`int`, optional): Year to get anime of. Defaults to None.
             season (:obj:`str`, optional): Season to get anime of. Possible values are
                 winter, spring, summer, and fall. Defaults to None.
+            extension (:obj:`str`, optional): Special information (via URL param) to
+                get of the season. Possible values are in the Jikan API documentation. 
+                Note: getSeasonsList is unsupported here, instead use season_history.
+                Defaults to None.
+            page (:obj:`int`, optional): Page number of the results. Defaults to
+                None.
+            parameters (:obj:`dict`, optional): Dictionary containing key,value
+                pairs for ?key=value in url query. Defaults to None.
 
         Returns:
             Dict: Dictionary containing information on anime of the season.
@@ -260,9 +273,17 @@ class Jikan:
             >>> jikan.season()
             >>> jikan.season(year=2018, season='winter')
             >>> jikan.season(year=2016, season='spring')
+            >>> jikan.season(extension='now')
+            >>> jikan.season(extension='upcoming')
+            >>> jikan.season(
+                    year=2021,
+                    season='winter',
+                    page=2,
+                    parameters={'filter': 'tv'}
+                )
         """
-        url = utils.get_season_url(self.base, year, season)
-        return self._request(url, year=year, season=season)
+        url = utils.get_season_url(self.base, year, season, extension, page, parameters)
+        return self._request(url, year=year, season=season, extension=extension, page=page, parameters=parameters)
 
     def season_history(self) -> Dict[str, Any]:
         """Gets all the years and their respective season names from MyAnimeList.
@@ -274,17 +295,6 @@ class Jikan:
             >>> jikan.season_history()
         """
         url = utils.get_season_history_url(self.base)
-        return self._request(url)
-
-
-    def season_upcoming(self) -> Dict[str, Any]:
-        """Gets anime that have been announced for upcoming seasons.
-        Returns:
-            Dict: Dict containing a list of dict elements of anime in upcoming seasons.
-        Examples:
-            >>> jikan.season_upcoming()
-        """
-        url = utils.get_season_upcoming_url(self.base)
         return self._request(url)
 
     def schedule(self,
@@ -328,7 +338,7 @@ class Jikan:
 
         Args:
             type (:obj:`str`): Type to get top items from. Possible values are
-                anime and manga.
+                anime, manga, people, characters, and reviews.
             page (:obj:`int`, optional): Page number of the results. Defaults to
                 None.
             parameters (:obj:`dict`, optional): Dictionary containing key,value
@@ -339,7 +349,7 @@ class Jikan:
 
         Examples:
             >>> jikan.top(type='manga')
-            >>> jikan.top(type='anime', page=2, subtype='upcoming')
+            >>> jikan.top(type='anime', page=2)
         """
         url = utils.get_top_url(self.base, type, page, parameters)
         return self._request(url, type=type)
@@ -375,9 +385,9 @@ class Jikan:
 
         Args:
             producer_id (:obj:`int`, optional): Producer ID from MyAnimeList.
-            extension (:obj:`str`, optional): Special information to get of the
-                producer. Possible values are in the Jikan API documentation.
-                Defaults to None.
+            extension (:obj:`str`, optional): Special information (via URL param)
+                to get of the producer. Possible values are in the Jikan API
+                documentation. Defaults to None.
         Returns:
             Dict: Dictionary containing producer information
 
@@ -403,8 +413,8 @@ class Jikan:
 
         Args:
             username (:obj:`str`): MyAnimeList username.
-            extension (:obj:`str`, optional): Special information to get of the
-                producer. Possible values are in the Jikan API documentation.
+            extension (:obj:`str`, optional): Special information (via URL param)
+                to get of the producer. Possible values are in the Jikan API documentation.
                 Defaults to None.
             page (:obj:`int`, optional): Page number of the results.Check API doc
                 for information on which extensions accept paging. Defaults to

@@ -80,22 +80,43 @@ def get_search_url(
 
 
 def get_season_url(
-    base_url: str, year: Optional[int] = None, season: Optional[str] = None
+    base_url: str,
+    year: Optional[int] = None,
+    season: Optional[str] = None,
+    extension: Optional[str] = None,
+    page: Optional[int] = None,
+    parameters: Optional[Mapping[str, Any]] = None,
 ) -> str:
     """Creates the URL for the season endpoint."""
-    if year is None or season is None:
-        return f"{base_url}/seasons/now"
-    return f"{base_url}/seasons/{year}/{season.lower()}"
+    url = f'{base_url}/seasons'
 
+    # Not enforcing that year and season are both specified
+    #  just in case they add the posibility to get anime of
+    #  entire year later e.g.: /seasons/2022
+    if year is not None or season is not None:
+        url += f'/{year}/{season}'
 
-def get_season_upcoming_url(base_url: str) -> str:
-    """Creates the URL for the season archive endpoint."""
-    return f"{base_url}/seasons/upcoming"
+    # nor enforcing that extensions and year/season are 
+    #   mutually exclusive
+    if extension is not None:
+        url += f'/{extension}'
 
+    query_params = {}
 
-def get_season_now_url(base_url: str) -> str:
-    """Creates the URL for the season later endpoint."""
-    return f"{base_url}/seasons/now"
+    if page is not None:
+        query_params["page"] = page
+
+    if parameters is not None:
+        for k, v in parameters.items():
+            query_params[k] = v
+
+    if query_params != {}:
+        k, v = query_params.popitem()
+        url += f'?{k}=v'
+        url += "".join(f"&{k}={v}" for k, v in parameters.items())
+
+    return url
+
 
 def get_season_history_url(base_url: str) -> str:
     """Creats the URL for the getSeasonList endpoint."""
@@ -120,7 +141,9 @@ def get_schedule_url(base_url: str, day: Optional[str] = None, parameters: Optio
 
 
 def get_top_url(
-    base_url: str, type: str, page: Optional[int] = None, parameters: Optional[Mapping[str, Any]] = None
+    base_url: str,
+    type: str, page: Optional[int] = None,
+    parameters: Optional[Mapping[str, Any]] = None,
 ) -> str:
     """Creates the URL for the top endpoint."""
     url = f"{base_url}/top/{type.lower()}"
