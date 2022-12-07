@@ -220,7 +220,7 @@ class Jikan:
 
         Args:
             search_type (:obj:`str`): Where to search. Possible values are
-                anime, manga, people, producers, magazines, and characters.
+                anime, manga, magazines, people, producers, and characters.
             query (:obj:`str`): Query to search for.
             page (:obj:`int`, optional): Page number of the results. Defaults to
                 None.

@@ -453,6 +453,14 @@ def magazine_manga_keys():
         "serialization",
     }
 
+@pytest.fixture
+def user_keys():
+    return {
+        "url",
+        "username",
+        "images",
+        "last_online",
+    }
 
 @pytest.fixture
 def user_keys_full():

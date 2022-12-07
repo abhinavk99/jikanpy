@@ -17,7 +17,6 @@ Updating this as I go and plan to use it to help me put PR together.
 	- New: `X-Request-Fingerprint` details the unique request fingerprint
 
 - Responses are now wrapped in a single key dict: {'data' : usual_response}
-- Search has more argument options
 - `/character` endpoint is now `/characters`
 - `/anime/{id}/episodes` now returns a `List[dict]` object for episodes
 	- `page` parameter should probably be re-worked. Url it constructs now gets that number episode
@@ -32,6 +31,13 @@ Updating this as I go and plan to use it to help me put PR together.
 - `/user` is renamed to `/users`. endpoint still has lots of url params. Will take some re working
 - `/producer` is renamed to `/producers`. Paging is only spported on search. No longer returns anime
 - `/magazine` is renamed to `/magazines`. Is only a search endpoint now
+
+### More on search
+The `search` method in `jikan` only supports: anime, characters, clubs, magazines, manga, people, producers, and users.
+	These are all the endpoints that currently have `get`*endpoint_name*`Search` child endpoints.
+Other endpoints may have some other method of search, but it's more like a filtered list since they don't support the `q` query parameter. They also typically have non-uniform URL parameters which make it difficult to construct the URLs in one place.
+Therefore, other search-like endpoints should be handled by their own methods.
+For example, the endpoints `schedules`, `seasons`, and `genres` all have a `get` endpoint, they require different URL params and no query params. So these searches can be handled via extensions inside the method.
 
 ## Things new in v4
 
@@ -56,18 +62,18 @@ Updating this as I go and plan to use it to help me put PR together.
 # Todo
 - [X] Update response header information
 - [ ] Implement cache validation
-	- May not be possible, ETag is currently broken. Opened an issue [here](https://github.com/jikan-me/jikan-rest/issues/322)
+	- Not possible at the momement. Opened an issue [here](https://github.com/jikan-me/jikan-rest/issues/322)
 - [ ] Update parsing for new response structure
-	- [ ] Update response dict keys in test fixtures
-	- [ ] Support pagination for relevant endpionts
+	- [X] Update response dict keys in test fixtures
+	- [X] Support pagination for relevant endpionts
 - [ ] Add support for new endpoints
 - [ ] Deprecate unsupported endpoints
 	- [X] Remove meta endpoint calls and tests
 	- [X] Deprecated `get_url_with_page` method and replaced calls with query behavior
 	- [X] Depcreated `magazine` method
-	- [ ] Updated search url construction
+	- [X] Updated search url construction. Search now supports search on anime, characters, clubs, magazines, 			manga, people, producers, and users.
 - [ ] Change behavior for modified endpoints
-	- [ ] update `search` method in `jikan` to support all endpoints
+	- [x] update `search` method in `jikan` to support all qeury-able endpoints
 	- [X] Update `person` method to `people` to reflect endpoint change
 	- [X] change season utils to reflect new endpoint behavior
 		- [X] removed `get_season_archive_url` and `get_season_later_url` in utils
@@ -78,4 +84,7 @@ Updating this as I go and plan to use it to help me put PR together.
 	- [X] modify `top` in jikan to reflect changes to `/top` endpoint
 	- [X] modify `club` in jikan to reflect changes. (right now only supports `/getClubsByID`)
 	- [X] modify `producer` in jikan to reflect changes 
+	- [X] modify `user` in jikan to reflect changes
+	- [ ] Setup filtered search as extensions
+
 	

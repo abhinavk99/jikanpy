@@ -119,6 +119,25 @@ def test_search_success(search_keys, jikan):
     assert search_keys.issubset(search_info.keys())
 
 
+@vcr.use_cassette("tests/vcr_cassettes/search-manga-success.yaml")
+def test_search_manga_success(search_keys, jikan):
+    search_info = jikan.search(
+        search_type="manga", query="jujutsu kaisen", parameters={"limit": 10}
+    )
+    assert search_info["data"][0]["mal_id"] == 113138
+    assert isinstance(search_info, dict)
+    assert search_keys.issubset(search_info.keys())
+
+@vcr.use_cassette("tests/vcr_cassettes/search-light-novel-success.yaml")
+def test_search_ln_success(search_keys, jikan):
+    search_info = jikan.search(
+        search_type="manga", query="mushoku tensei", parameters={"limit": 10, "type":'lightnovel'}
+    )
+    assert search_info["data"][0]["mal_id"] == 70261
+    assert isinstance(search_info, dict)
+    assert search_keys.issubset(search_info.keys())
+
+
 @vcr.use_cassette("tests/vcr_cassettes/search-genre-exclude-success.yaml")
 def test_search_genre_exclude_success(search_keys, jikan):
     search_info = jikan.search(
@@ -137,6 +156,15 @@ def test_search_genre_exclude_success(search_keys, jikan):
         search_info["data"][1]["title"] == "Naruto"
     )
 
+@vcr.use_cassette("tests/vcr_cassettes/search-user-success.yaml")
+def test_search_user_success(user_keys, jikan):
+    search_info = jikan.search(
+        search_type="users", query="Xinil", parameters={"limit": 10}
+    )
+
+    assert search_info["data"][5]["username"] == 'Xinil'
+    assert isinstance(search_info, dict)
+    assert user_keys.issubset(search_info["data"][0].keys())
 
 @vcr.use_cassette("tests/vcr_cassettes/season-success.yaml")
 def test_season_success(season_keys, jikan):
