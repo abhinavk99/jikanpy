@@ -81,6 +81,14 @@ def test_anime_episodes_success(anime_episodes_keys, episode_keys, jikan):
     for episode in anime_episodes_info["data"]:
         assert anime_episodes_keys.issubset(episode.keys())
 
+@vcr.use_cassette("tests/vcr_cassettes/anime-episode-by-id-success.yaml")
+def test_anime_episode_by_id_success(episode_keys, jikan):
+    anime_episodes_info = jikan.anime_episode_by_id(anime_id=MUSHISHI_ID, episode_id=1)
+
+    assert isinstance(anime_episodes_info, dict)
+    assert episode_keys.issubset(anime_episodes_info['data'].keys())
+
+
 
 @vcr.use_cassette("tests/vcr_cassettes/manga-success.yaml")
 def test_manga_success(manga_keys, jikan):

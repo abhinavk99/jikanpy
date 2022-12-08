@@ -124,6 +124,27 @@ class Jikan:
         """
         return self._get("anime", id, extension, page)
 
+    # Extended functionality because this endpoint is the only outlier to the pattern
+    def anime_episode_by_id(
+        self,
+        anime_id: int,
+        episode_id: int
+    ) -> Dict[str, Any]:
+        """Gets episode by anime ID and episode ID.
+
+            Args:
+                anime_id (:obj:`int`): ID of the anime to get the episode of.
+                episode_id (:obj:`int`): ID of the episode to get.
+
+            Returns:
+                Dict: Dictionary containing information about the episode.
+
+            Examples:
+                >>> jikan.anime_episode_by_id(anime_id=1, episode_id=1)
+            """
+        url = f'{self.base}/anime/{anime_id}/episodes/{episode_id}'
+        return self._request(url)
+
     def manga(
         self, id: int, extension: Optional[str] = None, page: Optional[int] = None
     ) -> Dict[str, Any]:

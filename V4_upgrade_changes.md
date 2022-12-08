@@ -96,6 +96,7 @@ For example, the endpoints `schedules`, `seasons`, and `genres` all have some `g
 	- [X] modify `producer` in jikan to reflect changes 
 	- [X] modify `user` in jikan to reflect changes
 	- [X] Setup filtered searches as extensions
-	- [ ] fix getAnimeEpisodeById suppport
+	- [X] fix getAnimeEpisodeById suppport
 - [ ] Duplicate changes in aiojikan
 	
+users of _get: anime, manga, character, people, club, producer

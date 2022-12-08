@@ -1,0 +1,56 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
+    method: GET
+    uri: https://api.jikan.moe/v4/anime/457/episodes/1
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAz1Q22rDMAz9FeGnjWWN08vK/AN96lMLg2Eoaqw0ah07+LISSv99XmEFITg6R4cj
+        3YTBhELdxID2wEaophI5WKFEn9IYla51PUzoeCDLMc0cJV0/oK6Xq7Wutzn2XErXNHL0pswbUYnE
+        yVJx2fcEm0DkYEeY/onDGUd0FP8UOq+NaXReyA/SeUW4fqqCH9CduYi2bHxgcB6+sdAmB0zsXYm7
+        XMpKIAcq2cVcytV7I9/ni72U6lFv8rP0stOxtRSE6tBGqkSgFscnipPzY+RYPDbsLh7Y/VBMfMJE
+        EVI5osVI4DtAOPoJrr0v0AS8sjvFCrh7AAfHCco7wFKXoEdnKmj9QJA8WO5oBi87n0NLCr74wiMZ
+        xldxv/8CVzf184cBAAA=
+    headers:
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, s-maxage=86400
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 08 Dec 2022 02:23:40 GMT
+      Expires:
+      - Tue, 06 Dec 2022 18:17:49 GMT
+      Last-Modified:
+      - Mon, 05 Dec 2022 18:17:49 GMT
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Cache-Status:
+      - STALE
+      X-Request-Fingerprint:
+      - request:anime:315a713cceb9b7e1b19ddc421d374970d6b8b371
+    status:
+      code: 200
+      message: OK
+version: 1
