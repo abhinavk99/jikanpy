@@ -97,13 +97,6 @@ class Jikan:
         url = utils.get_main_url(self.base, endpoint, id, extension, page)
         return self._request(url, id=id, endpoint=endpoint)
 
-    def _get_creator(
-        self, creator_type: str, creator_id: int, page: Optional[int] = None
-    ) -> Dict[str, Any]:
-        """Gets the response from Jikan API for producer and magazine"""
-        url = utils.get_creator_url(self.base, creator_type, creator_id, page)
-        return self._request(url, id=creator_id, endpoint=creator_type)
-
     def anime(
         self,
         id: int, 

@@ -63,19 +63,8 @@ def get_main_url(
         k, v = query_params.popitem()
         url += f'?{k}={v}'
         url += "".join(f"&{k}={v}" for k, v in parameters.items())
-        
+
     return url
-
-
-def get_creator_url(
-    base_url: str, creator_type: str, creator_id: int, page: Optional[int] = None,
-) -> str:
-    """Creates the URL for the producer and magazine endpoints."""
-    url = f"{base_url}/{creator_type}/{creator_id}"
-    if page is not None:
-        url += f'&page={page}'
-    return url
-
 
 def get_search_url(
     base_url: str,

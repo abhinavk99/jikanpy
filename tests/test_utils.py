@@ -35,20 +35,6 @@ def test_get_main_url_with_no_extension_and_page():
     )
 
 
-def test_get_creator_url():
-    assert (
-        utils.get_creator_url(utils.BASE_URL, "producer", 2, page=None)
-        == "https://api.jikan.moe/v4/producer/2"
-    )
-
-
-def test_get_creator_url_with_page():
-    assert (
-        utils.get_creator_url(utils.BASE_URL, "producer", 2, page=2)
-        == "https://api.jikan.moe/v4/producer/2/2"
-    )
-
-
 def test_get_search_url():
     assert (
         utils.get_search_url(
