@@ -117,7 +117,7 @@ class Jikan:
             extension (:obj:`str`, optional): Special information (via URL param)
                 to get of the anime. Possible values are in the Jikan API documentation.
                 Defaults to None.
-            page (:obj:`int`, optional) -- Page number of the results. Defaults
+            page (:obj:`int`, optional): Page number of the results. Defaults
                 to None.
 
         Returns:
@@ -141,7 +141,7 @@ class Jikan:
             extension (:obj:`str`, optional): Special information (via URL param) 
                 to get of the manga. Possible values are in the Jikan API documentation.
                 Defaults to None.
-            page (:obj:`int`, optional) -- Page number of the results. Defaults
+            page (:obj:`int`, optional): Page number of the results. Defaults
                 to None.
 
         Returns:
@@ -226,7 +226,7 @@ class Jikan:
                 anime, characters, clubs, magazines, manga, people, producers,
                 and users. 
             query (:obj:`str`): Query to search for.
-            page (:obj:`int`, optional): Page number of the results. Defaults to
+            page (:obj:`int`, optional): -- Page number of the results. Defaults to
                 None.
             parameters (:obj:`dict`, optional): Dictionary containing key,value
                 pairs for ?key=value in url query. Defaults to None.
@@ -419,7 +419,7 @@ class Jikan:
             extension (:obj:`str`, optional): Special information (via URL param)
                 to get of the producer. Possible values are in the Jikan API documentation.
                 Defaults to None.
-            page (:obj:`int`, optional): Page number of the results.Check API doc
+            page (:obj:`int`, optional): Page number of the results. Check API doc
                 for information on which extensions accept paging. Defaults to
                 None.
             parameters (:obj:`dict`, optional): Dictionary containing key,value
@@ -488,5 +488,29 @@ class Jikan:
             >>> jikan.random(type='users')
         """
 
-        url = f'{self.base}/random/{type}'
+        url = f'{self.base}/random/{type.lower()}'
         return self._request(url,type=type)
+
+    def recommendations(
+        self,
+        type: str,
+        page: Optional[int] = None,
+    ) -> Dict[str, Any]:
+        """Gets recommendations for `type` resource.
+
+        Args:
+            type (:obj:`str`): Type of of resource to get. Available types
+                are: anime and manga.
+            page (:obj:`int`, optional): Page number of the results. Defaults
+                to None.
+
+        Returns:
+            Dict: Dictionary containing resource information.
+
+        Examples:
+            >>> jikan.recommendations(type='anime')
+            >>> jikan.recommendations(type='manga', page=2)
+        """
+
+        url = utils.get_recommendations_url(self.base,type=type,page=page)
+        return self._request(url, type=type, page=page)

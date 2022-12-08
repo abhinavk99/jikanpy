@@ -216,3 +216,15 @@ def get_meta_url(
     if page is not None:
         url += f'&page={page}'
     return url
+
+def get_recommendations_url(
+    base_url: str,
+    type: str,
+    page: Optional[int] = None,
+) -> str:
+    """Creates the URL for the recommendations endpoint."""
+    url = f'{base_url}/recommendations/{type.lower()}'
+    if page is None:
+        return url
+    else:
+        return f'{url}?page={page}'

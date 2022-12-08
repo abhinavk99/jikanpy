@@ -303,6 +303,14 @@ def test_random_anime_success(anime_keys, jikan):
     assert isinstance(anime, dict)
     assert anime_keys.issubset(anime['data'].keys())
 
+@vcr.use_cassette("tests/vcr_cassettes/recommendations-success.yaml")
+def test_recommendations_success(recommendation_keys, jikan):
+    recommendations = jikan.recommendations(type='anime')
+
+    assert isinstance(recommendations, dict)
+    for rec in recommendations["data"]:
+        assert recommendation_keys.issubset(rec.keys())
+
 
 @vcr.use_cassette("tests/vcr_cassettes/anime-failure.yaml")
 def test_anime_failure(jikan):

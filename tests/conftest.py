@@ -256,6 +256,15 @@ def season_keys():
         "data",
     }
 
+@pytest.fixture
+def recommendation_keys():
+    return {
+        "mal_id",
+        "entry",
+        "content",
+        "user",
+    }
+
 
 @pytest.fixture
 def seasonal_anime_keys():
