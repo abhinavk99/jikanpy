@@ -5,21 +5,6 @@
 from jikanpy import utils
 
 
-def test_get_url_with_page():
-    assert utils.get_url_with_page(utils.BASE_URL, 2) == "https://api.jikan.moe/v4/2"
-
-
-def test_get_url_with_page_none_page():
-    assert utils.get_url_with_page(utils.BASE_URL, None) == utils.BASE_URL
-
-
-def test_get_url_with_page_delimiter():
-    assert (
-        utils.get_url_with_page(utils.BASE_URL, 2, "&page=")
-        == "https://api.jikan.moe/v4&page=2"
-    )
-
-
 def test_get_main_url():
     assert (
         utils.get_main_url(utils.BASE_URL, "anime", 2, extension=None, page=None)
