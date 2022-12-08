@@ -67,16 +67,20 @@ For example, the endpoints `schedules`, `seasons`, and `genres` all have some `g
 - [X] Update response header information
 - [ ] Implement cache validation
 	- Not possible at the momement. Opened an issue [here](https://github.com/jikan-me/jikan-rest/issues/322)
-- [ ] Update parsing for new response structure
+- [X] Update parsing for new response structure
 	- [X] Update response dict keys in test fixtures
 	- [X] Support pagination for relevant endpionts
 - [ ] Add support for new endpoints
-- [ ] Deprecate unsupported endpoints
+	- [ ] Add support for `/random`
+	- [ ] Add support for `/recommendations`
+	- [ ] Add support for `/reviews`
+	- [ ] Add support for `/watch`
+- [X] Deprecate unsupported endpoints
 	- [X] Remove meta endpoint calls and tests
 	- [X] Deprecated `get_url_with_page` method and replaced calls with query behavior
 	- [X] Depcreated `magazine` method since behavior is changed.
 	- [X] Updated search url construction. Search now supports search on anime, characters, clubs, magazines, 			manga, people, producers, and users.
-- [ ] Change behavior for modified endpoints
+- [X] Change behavior for modified endpoints
 	- [x] update `search` method in `jikan` to support all qeury-able endpoints
 	- [X] Update `person` method to `people` to reflect endpoint change
 	- [X] change season utils to reflect new endpoint behavior
@@ -91,6 +95,6 @@ For example, the endpoints `schedules`, `seasons`, and `genres` all have some `g
 	- [X] modify `club` in jikan to reflect changes. (right now only supports `/getClubsByID`)
 	- [X] modify `producer` in jikan to reflect changes 
 	- [X] modify `user` in jikan to reflect changes
-	- [ ] Setup filtered searches as extensions
-
+	- [X] Setup filtered searches as extensions
+- [ ] Duplicate changes in aiojikan
 	

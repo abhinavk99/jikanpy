@@ -381,13 +381,13 @@ class Jikan:
         return self._request(url, type=type, filter=filter)
 
     def producer(self,
-                producer_id: int,
+                id: int,
                 extension: Optional[str] = None
         ) -> Dict[str, Any]:
         """Gets anime by the producer/studio/licensor.
 
         Args:
-            producer_id (:obj:`int`, optional): Producer ID from MyAnimeList.
+            id (:obj:`int`, optional): Producer ID from MyAnimeList.
             extension (:obj:`str`, optional): Special information (via URL param)
                 to get of the producer. Possible values are in the Jikan API
                 documentation. Defaults to None.
@@ -395,11 +395,11 @@ class Jikan:
             Dict: Dictionary containing producer information
 
         Examples:
-            >>> jikan.producer(producer_id=4)
-            >>> jikan.producer(producer_id=4, extension='full')
-            >>> jikan.producer(producer_id=4, extension='external')
+            >>> jikan.producer(id=4)
+            >>> jikan.producer(id=4, extension='full')
+            >>> jikan.producer(id=4, extension='external')
         """
-        return self._get("producers", producer_id, extension)
+        return self._get("producers", id, extension)
 
     def magazine(self, magazine_id: int, page: Optional[int] = None) -> Dict[str, Any]:
         """Deprecated: Gets Magazine information by ID."""
@@ -468,3 +468,25 @@ class Jikan:
     ) -> Dict[str, Any]:
         """Deprecated: Gets meta information."""
         raise DeprecatedEndpoint("meta is a deprecated endpoint")
+
+    def random(
+        self,
+        type: str
+    ) -> Dict[str, Any]:
+        """Gets a random `type` resource.
+
+        Args:
+            type (:obj:`str`): Type of resource to get. Available types
+                are: anime, manga, characters, people, users.
+
+        Returns:
+            Dict: Dictionary containing resource information.
+
+        Examples:
+            >>> jikan.random(type='anime')
+            >>> jikan.random(type='characters')
+            >>> jikan.random(type='users')
+        """
+
+        url = f'{self.base}/random/{type}'
+        return self._request(url,type=type)

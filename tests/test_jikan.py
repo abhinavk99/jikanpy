@@ -249,7 +249,7 @@ def test_genre_manga_success(genre_keys, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/producer-success.yaml")
 def test_producer_success(producer_keys, subset_anime_keys, jikan):
-    producer_info = jikan.producer(producer_id=PRODUCER)
+    producer_info = jikan.producer(id=PRODUCER)
 
     assert isinstance(producer_info, dict)
     assert producer_keys.issubset(producer_info["data"].keys())
@@ -296,6 +296,12 @@ def test_club_success(club_keys, jikan):
     assert club_info["data"]["name"] == "Fantasy Anime League"
     assert club_keys.issubset(club_info["data"].keys())
 
+@vcr.use_cassette("tests/vcr_cassettes/random-anime-success.yaml")
+def test_random_anime_success(anime_keys, jikan):
+    anime = jikan.random(type='anime')
+
+    assert isinstance(anime, dict)
+    assert anime_keys.issubset(anime['data'].keys())
 
 
 @vcr.use_cassette("tests/vcr_cassettes/anime-failure.yaml")
@@ -359,7 +365,5 @@ def test_empty_response_json(jikan, response_mock):
 
 def test_season_urls(jikan):
     season_archive_url = utils.get_season_history_url(jikan.base)
-    season_later_url = utils.get_season_upcoming_url(jikan.base)
     assert season_archive_url.endswith("seasons")
-    assert season_later_url.endswith("seasons/upcoming")
     assert season_archive_url.startswith(jikan.base)
