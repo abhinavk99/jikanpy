@@ -71,9 +71,9 @@ For example, the endpoints `schedules`, `seasons`, and `genres` all have some `g
 	- [X] Update response dict keys in test fixtures
 	- [X] Support pagination for relevant endpionts
 - [ ] Add support for new endpoints
-	- [ ] Add support for `/random`
-	- [ ] Add support for `/recommendations`
-	- [ ] Add support for `/reviews`
+	- [X] Add support for `/random`
+	- [X] Add support for `/recommendations`
+	- [X] Add support for `/reviews`
 	- [ ] Add support for `/watch`
 - [X] Deprecate unsupported endpoints
 	- [X] Remove meta endpoint calls and tests

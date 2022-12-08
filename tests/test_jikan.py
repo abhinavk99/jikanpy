@@ -309,7 +309,15 @@ def test_recommendations_success(recommendation_keys, jikan):
 
     assert isinstance(recommendations, dict)
     for rec in recommendations["data"]:
-        assert recommendation_keys.issubset(rec.keys())
+        assert recommendations_keys.issubset(rec.keys())
+
+@vcr.use_cassette("tests/vcr_cassettes/reviews-success.yaml")
+def test_reviews_success(reviews_keys, jikan):
+    reviews = jikan.reviews(type='anime')
+
+    assert isinstance(reviews, dict)
+    for rec in reviews["data"]:
+        assert reviews_keys.issubset(rec.keys())
 
 
 @vcr.use_cassette("tests/vcr_cassettes/anime-failure.yaml")

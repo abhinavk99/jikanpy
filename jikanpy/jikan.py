@@ -514,3 +514,27 @@ class Jikan:
 
         url = utils.get_recommendations_url(self.base,type=type,page=page)
         return self._request(url, type=type, page=page)
+
+    def reviews(
+        self,
+        type: str,
+        page: Optional[int] = None,
+    ) -> Dict[str, Any]:
+        """Gets reviews for `type` resource.
+
+        Args:
+            type (:obj:`str`): Type of of resource to get. Available types
+                are: anime and manga.
+            page (:obj:`int`, optional): Page number of the results. Defaults
+                to None.
+
+        Returns:
+            Dict: Dictionary containing resource information.
+
+        Examples:
+            >>> jikan.reviews(type='anime')
+            >>> jikan.reviews(type='manga', page=2)
+        """
+
+        url = utils.get_recommendations_url(self.base,type=type,page=page)
+        return self._request(url, type=type, page=page)

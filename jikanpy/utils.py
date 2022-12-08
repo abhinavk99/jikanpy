@@ -228,3 +228,16 @@ def get_recommendations_url(
         return url
     else:
         return f'{url}?page={page}'
+
+
+def get_reviews_url(
+    base_url: str,
+    type: str,
+    page: Optional[int] = None,
+) -> str:
+    """Creates the URL for the reviews endpoint."""
+    url = f'{base_url}/reviews/{type.lower()}'
+    if page is None:
+        return url
+    else:
+        return f'{url}?page={page}'
