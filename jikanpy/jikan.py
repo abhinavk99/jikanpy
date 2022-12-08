@@ -538,3 +538,32 @@ class Jikan:
 
         url = utils.get_recommendations_url(self.base,type=type,page=page)
         return self._request(url, type=type, page=page)
+
+    def watch(
+        self,
+        extension: str,
+        parameters: Optional[Mapping[str, str]] = None,
+    ) -> Dict[str, Any]:
+        """Gets information about recent activity of `type` resource.
+
+        Args:
+            extension (:obj:`str`, optional): Special information (via URL param)
+                to get of the producer. Possible values are in the Jikan API documentation.
+                Defaults to None.
+            parameters (:obj:`dict`, optional): Dictionary containing key,value
+                pairs for ?key=value in url query. Check API doc for information
+                on which extensions accept paramters. Defaults to None.
+
+        Returns:
+            Dict: Dictionary containing information about the w
+
+        Examples:
+            >>> jikan.watch(extension='episodes')
+            >>> jikan.watch(extension='episodes/popular')
+            >>> jikan.watch(extension='promos')
+            >>> jikan.watch(extension='promos/popular', paramters={'limit': 10})
+        """
+        url = utils.get_watch_url(
+            self.base, extension,  parameters
+        )
+        return self._request(url, extension=extension)

@@ -241,3 +241,16 @@ def get_reviews_url(
         return url
     else:
         return f'{url}?page={page}'
+
+def get_watch_url(
+    base_url: str,
+    extension: str,
+    parameters: Optional[int] = None,
+) -> str:
+    """Creates the URL for the reviews endpoint."""
+    url = f'{base_url}/watch/{extension.lower()}'
+    
+    if parameters is not None:
+        url += "".join(f"&{k}={v}" for k, v in parameters.items())
+
+    return url

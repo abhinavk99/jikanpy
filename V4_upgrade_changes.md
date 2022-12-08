@@ -74,7 +74,7 @@ For example, the endpoints `schedules`, `seasons`, and `genres` all have some `g
 	- [X] Add support for `/random`
 	- [X] Add support for `/recommendations`
 	- [X] Add support for `/reviews`
-	- [ ] Add support for `/watch`
+	- [X] Add support for `/watch`
 - [X] Deprecate unsupported endpoints
 	- [X] Remove meta endpoint calls and tests
 	- [X] Deprecated `get_url_with_page` method and replaced calls with query behavior

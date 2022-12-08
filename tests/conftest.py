@@ -276,6 +276,21 @@ def reviews_keys():
     }
 
 @pytest.fixture
+def watch_episodes_keys():
+    return {
+        "entry",
+        "episodes",
+        "region_locked",
+    }
+
+@pytest.fixture
+def watch_promos_keys():
+    return {
+        "entry",
+        "trailer",
+    }
+
+@pytest.fixture
 def seasonal_anime_keys():
     return {
     "mal_id",

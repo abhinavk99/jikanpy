@@ -304,7 +304,7 @@ def test_random_anime_success(anime_keys, jikan):
     assert anime_keys.issubset(anime['data'].keys())
 
 @vcr.use_cassette("tests/vcr_cassettes/recommendations-success.yaml")
-def test_recommendations_success(recommendation_keys, jikan):
+def test_recommendations_success(recommendations_keys, jikan):
     recommendations = jikan.recommendations(type='anime')
 
     assert isinstance(recommendations, dict)
@@ -318,6 +318,38 @@ def test_reviews_success(reviews_keys, jikan):
     assert isinstance(reviews, dict)
     for rec in reviews["data"]:
         assert reviews_keys.issubset(rec.keys())
+
+@vcr.use_cassette("tests/vcr_cassettes/watch-episodes-success.yaml")
+def test_watch_episodes_success(watch_episodes_keys, jikan):
+    watch_eps = jikan.watch(extension='episodes')
+
+    assert isinstance(watch_eps, dict)
+    for item in watch_eps["data"]:
+        assert watch_episodes_keys.issubset(item.keys())
+
+@vcr.use_cassette("tests/vcr_cassettes/watch-episodes-popular-success.yaml")
+def test_watch_episodes_success(watch_episodes_keys, jikan):
+    watch_eps = jikan.watch(extension='episodes/popular')
+
+    assert isinstance(watch_eps, dict)
+    for item in watch_eps["data"]:
+        assert watch_episodes_keys.issubset(item.keys())
+
+@vcr.use_cassette("tests/vcr_cassettes/watch-promos-success.yaml")
+def test_watch_promos_success(watch_promos_keys, jikan):
+    promos = jikan.watch(extension='promos')
+
+    assert isinstance(promos, dict)
+    for item in promos["data"]:
+        assert watch_promos_keys.issubset(item.keys())
+
+@vcr.use_cassette("tests/vcr_cassettes/watch-promos-popular-success.yaml")
+def test_watch_promos_success(watch_promos_keys, jikan):
+    promos = jikan.watch(extension='promos/popular')
+
+    assert isinstance(promos, dict)
+    for item in promos["data"]:
+        assert watch_promos_keys.issubset(item.keys())
 
 
 @vcr.use_cassette("tests/vcr_cassettes/anime-failure.yaml")
