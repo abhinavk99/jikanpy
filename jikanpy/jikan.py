@@ -105,7 +105,10 @@ class Jikan:
         return self._request(url, id=creator_id, endpoint=creator_type)
 
     def anime(
-        self, id: int, extension: Optional[str] = None, page: Optional[int] = None
+        self,
+        id: int, 
+        extension: Optional[str] = None, 
+        page: Optional[int] = None,
     ) -> Dict[str, Any]:
         """Gets information on an anime.
 
