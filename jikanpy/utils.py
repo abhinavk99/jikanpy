@@ -62,7 +62,7 @@ def get_main_url(
     if query_params != {}:
         k, v = query_params.popitem()
         url += f'?{k}={v}'
-        url += "".join(f"&{k}={v}" for k, v in parameters.items())
+        url += "".join(f"&{k}={v}" for k, v in query_params.items())
 
     return url
 
@@ -97,7 +97,7 @@ def get_season_url(
     #  just in case they add the posibility to get anime of
     #  entire year later e.g.: /seasons/2022
     if year is not None or season is not None:
-        url += f'/{year}/{season}'
+        url += f'/{year}/{season.lower()}'
 
     # nor enforcing that extensions and year/season are 
     #   mutually exclusive
@@ -116,7 +116,7 @@ def get_season_url(
     if query_params != {}:
         k, v = query_params.popitem()
         url += f'?{k}=v'
-        url += "".join(f"&{k}={v}" for k, v in parameters.items())
+        url += "".join(f"&{k}={v}" for k, v in query_params.items())
 
     return url
 
@@ -131,7 +131,7 @@ def get_schedule_url(base_url: str, day: Optional[str] = None, parameters: Optio
     url = f"{base_url}/schedules"
 
     if day is not None:
-        url += f"?filter={day}"
+        url += f"?filter={day.lower()}"
 
     if day is None and parameters is not None:
         k, v = parameters.popitem()
@@ -163,7 +163,7 @@ def get_top_url(
     return url
 
 
-def get_genre_url(base_url: str, type: str, filter: Optional[str]) -> str:
+def get_genre_url(base_url: str, type: str, filter: Optional[str] = None) -> str:
     """Creates the URL for the genre endpoint."""
     url = f"{base_url}/genres/{type.lower()}"
     if filter is not None:
@@ -193,8 +193,8 @@ def get_user_url(
 
     if query_params != {}:
         k,v = query_params.popitem()
-        param_str = f'?{k}={v}'
-        param_str += "".join(f"&{k}={v}" for k, v in parameters.items())
+        url += f'?{k}={v}'
+        url += "".join(f"&{k}={v}" for k, v in query_params.items())
 
     return url
 
