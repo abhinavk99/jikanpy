@@ -1,0 +1,53 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.jikan.moe/v4/magazines?q=young
+  response:
+    body:
+      string: '{"pagination":{"last_visible_page":2,"has_next_page":true,"current_page":1,"items":{"count":25,"total":49,"per_page":25}},"data":[{"mal_id":1037,"name":"Action
+        Young","url":"https:\/\/myanimelist.net\/manga\/magazine\/1037\/Action_Young","count":4},{"mal_id":561,"name":"Bessatsu
+        Young Champion","url":"https:\/\/myanimelist.net\/manga\/magazine\/561\/Bessatsu_Young_Champion","count":16},{"mal_id":240,"name":"Bessatsu
+        Young Magazine","url":"https:\/\/myanimelist.net\/manga\/magazine\/240\/Bessatsu_Young_Magazine","count":19},{"mal_id":1507,"name":"Dokodemo
+        Young Champion","url":"https:\/\/myanimelist.net\/manga\/magazine\/1507\/Dokodemo_Young_Champion","count":16},{"mal_id":103,"name":"Feel
+        Young","url":"https:\/\/myanimelist.net\/manga\/magazine\/103\/Feel_Young","count":142},{"mal_id":339,"name":"Men''s
+        Young","url":"https:\/\/myanimelist.net\/manga\/magazine\/339\/Mens_Young","count":44},{"mal_id":1035,"name":"Men''s
+        Young Special Ikazuchi","url":"https:\/\/myanimelist.net\/manga\/magazine\/1035\/Mens_Young_Special_Ikazuchi","count":7},{"mal_id":290,"name":"Tonari
+        no Young Jump","url":"https:\/\/myanimelist.net\/manga\/magazine\/290\/Tonari_no_Young_Jump","count":79},{"mal_id":403,"name":"Young
+        Ace","url":"https:\/\/myanimelist.net\/manga\/magazine\/403\/Young_Ace","count":155},{"mal_id":1340,"name":"Young
+        Ace UP","url":"https:\/\/myanimelist.net\/manga\/magazine\/1340\/Young_Ace_UP","count":85},{"mal_id":2,"name":"Young
+        Animal","url":"https:\/\/myanimelist.net\/manga\/magazine\/2\/Young_Animal","count":143},{"mal_id":118,"name":"Young
+        Animal Arashi","url":"https:\/\/myanimelist.net\/manga\/magazine\/118\/Young_Animal_Arashi","count":57},{"mal_id":1121,"name":"Young
+        Animal Densi","url":"https:\/\/myanimelist.net\/manga\/magazine\/1121\/Young_Animal_Densi","count":9},{"mal_id":560,"name":"Young
+        Animal Island","url":"https:\/\/myanimelist.net\/manga\/magazine\/560\/Young_Animal_Island","count":15},{"mal_id":1476,"name":"Young
+        Animal Zero","url":"https:\/\/myanimelist.net\/manga\/magazine\/1476\/Young_Animal_Zero","count":17},{"mal_id":926,"name":"Young
+        Champ","url":"https:\/\/myanimelist.net\/manga\/magazine\/926\/Young_Champ","count":16},{"mal_id":47,"name":"Young
+        Champion Magazine","url":"https:\/\/myanimelist.net\/manga\/magazine\/47\/Young_Champion_Magazine","count":79},{"mal_id":216,"name":"Young
+        Champion Retsu","url":"https:\/\/myanimelist.net\/manga\/magazine\/216\/Young_Champion_Retsu","count":77},{"mal_id":451,"name":"Young
+        Comic","url":"https:\/\/myanimelist.net\/manga\/magazine\/451\/Young_Comic","count":85},{"mal_id":1575,"name":"Young
+        Dragon Age","url":"https:\/\/myanimelist.net\/manga\/magazine\/1575\/Young_Dragon_Age","count":16},{"mal_id":24,"name":"Young
+        Gangan","url":"https:\/\/myanimelist.net\/manga\/magazine\/24\/Young_Gangan","count":172},{"mal_id":1067,"name":"Young
+        Hip","url":"https:\/\/myanimelist.net\/manga\/magazine\/1067\/Young_Hip","count":2},{"mal_id":87,"name":"Young
+        Jump","url":"https:\/\/myanimelist.net\/manga\/magazine\/87\/Young_Jump","count":307},{"mal_id":535,"name":"Young
+        Jump (Monthly)","url":"https:\/\/myanimelist.net\/manga\/magazine\/535\/Young_Jump_Monthly","count":14},{"mal_id":1646,"name":"Young
+        Jump Battle","url":"https:\/\/myanimelist.net\/manga\/magazine\/1646\/Young_Jump_Battle","count":5}]}'
+    headers:
+      Access-Control-Allow-Methods: GET
+      Access-Control-Allow-Origin: '*'
+      Cache-Control: private, must-revalidate
+      Connection: keep-alive
+      Content-Encoding: gzip
+      Content-Type: application/json
+      Date: Fri, 09 Dec 2022 22:44:24 GMT
+      Expires: '-1'
+      Pragma: no-cache
+      Server: nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding: chunked
+      Vary: Accept-Encoding
+      X-Cache-Status: MISS
+    status:
+      code: 200
+      message: OK
+    url: https://api.jikan.moe/v4/magazines?q=young
+version: 1

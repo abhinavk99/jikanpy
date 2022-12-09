@@ -1,0 +1,166 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.jikan.moe/v4/manga?q=jujutsu+kaisen&limit=10
+  response:
+    body:
+      string: '{"pagination":{"last_visible_page":1,"has_next_page":false,"current_page":1,"items":{"count":8,"total":8,"per_page":10}},"data":[{"mal_id":113138,"url":"https:\/\/myanimelist.net\/manga\/113138\/Jujutsu_Kaisen","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/210341.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/210341t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/210341l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/210341.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/210341t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/210341l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Jujutsu
+        Kaisen"},{"type":"Synonym","title":"Sorcery Fight"},{"type":"Synonym","title":"Sorcery
+        Fight"},{"type":"Japanese","title":"\u546a\u8853\u5efb\u6226"},{"type":"English","title":"Jujutsu
+        Kaisen"}],"title":"Jujutsu Kaisen","title_english":"Jujutsu Kaisen","title_japanese":"\u546a\u8853\u5efb\u6226","title_synonyms":["Sorcery
+        Fight"],"type":"Manga","chapters":null,"volumes":null,"status":"Publishing","publishing":true,"published":{"from":"2018-03-05T00:00:00+00:00","to":null,"prop":{"from":{"day":5,"month":3,"year":2018},"to":{"day":null,"month":null,"year":null}},"string":"Mar
+        5, 2018 to ?"},"score":8.54,"scored":8.54,"scored_by":137846,"rank":111,"popularity":14,"members":315542,"favorites":24212,"synopsis":"Hidden
+        in plain sight, an age-old conflict rages on. Supernatural monsters known
+        as \"Curses\" terrorize humanity from the shadows, and powerful humans known
+        as \"Jujutsu\" sorcerers use mystical arts to exterminate them. When high
+        school student Yuuji Itadori finds a dried-up finger of the legendary Curse
+        Sukuna Ryoumen, he suddenly finds himself joining this bloody conflict. Attacked
+        by a Curse attracted to the finger''s power, Yuuji makes a reckless decision
+        to protect himself, gaining the power to combat Curses in the process but
+        also unwittingly unleashing the malicious Sukuna into the world once more.
+        Though Yuuji can control and confine Sukuna to his own body, the Jujutsu world
+        classifies Yuuji as a dangerous, high-level Curse who must be exterminated.
+        Detained and sentenced to death, Yuuji meets Satoru Gojou\u2014a teacher at
+        Jujutsu High School\u2014who explains that despite his imminent execution,
+        there is an alternative for him. Being a rare vessel to Sukuna, if Yuuji were
+        to die, then Sukuna would perish too. Therefore, if Yuuji were to consume
+        the many other remnants of Sukuna, then Yuuji''s subsequent execution would
+        truly eradicate the malicious demon. Taking up this chance to make the world
+        safer and live his life for a little longer, Yuuji enrolls in Jujutsu High,
+        jumping headfirst into a harsh and unforgiving battlefield. [Written by MAL
+        Rewrite]","background":"As a part of the JUMP START initiative, the first
+        three chapters of Jujutsu Kaisen were published in English in VIZ Media''s
+        digital Weekly Shonen Jump on the same day as the Japanese release. After,
+        the series was added to the MANGA Plus simulpub service, and has been released
+        in print by the same publisher since December 3, 2019.","authors":[{"mal_id":47924,"type":"people","name":"Akutami,
+        Gege","url":"https:\/\/myanimelist.net\/people\/47924\/Gege_Akutami"}],"serializations":[{"mal_id":83,"type":"manga","name":"Shounen
+        Jump (Weekly)","url":"https:\/\/myanimelist.net\/manga\/magazine\/83\/Shounen_Jump_Weekly"}],"genres":[{"mal_id":1,"type":"manga","name":"Action","url":"https:\/\/myanimelist.net\/manga\/genre\/1\/Action"},{"mal_id":10,"type":"manga","name":"Fantasy","url":"https:\/\/myanimelist.net\/manga\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[{"mal_id":23,"type":"manga","name":"School","url":"https:\/\/myanimelist.net\/manga\/genre\/23\/School"}],"demographics":[{"mal_id":27,"type":"manga","name":"Shounen","url":"https:\/\/myanimelist.net\/manga\/genre\/27\/Shounen"}]},{"mal_id":115710,"url":"https:\/\/myanimelist.net\/manga\/115710\/Jujutsu_Kaisen_0__Tokyo_Toritsu_Jujutsu_Koutou_Senmon_Gakkou","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/219336.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/219336t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/219336l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/219336.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/219336t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/219336l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Jujutsu
+        Kaisen 0: Tokyo Toritsu Jujutsu Koutou Senmon Gakkou"},{"type":"Synonym","title":"Tokyo
+        Metropolitan Magic Technical School"},{"type":"Synonym","title":"Tokyo Metropolitan
+        Magic Technical School"},{"type":"Japanese","title":"\u546a\u8853\u5efb\u6226
+        0 \u6771\u4eac\u90fd\u7acb\u546a\u8853\u9ad8\u7b49\u5c02\u9580\u5b66\u6821"},{"type":"English","title":"Jujutsu
+        Kaisen 0"}],"title":"Jujutsu Kaisen 0: Tokyo Toritsu Jujutsu Koutou Senmon
+        Gakkou","title_english":"Jujutsu Kaisen 0","title_japanese":"\u546a\u8853\u5efb\u6226
+        0 \u6771\u4eac\u90fd\u7acb\u546a\u8853\u9ad8\u7b49\u5c02\u9580\u5b66\u6821","title_synonyms":["Tokyo
+        Metropolitan Magic Technical School"],"type":"Manga","chapters":4,"volumes":1,"status":"Finished","publishing":false,"published":{"from":"2017-04-28T00:00:00+00:00","to":"2017-07-28T00:00:00+00:00","prop":{"from":{"day":28,"month":4,"year":2017},"to":{"day":28,"month":7,"year":2017}},"string":"Apr
+        28, 2017 to Jul 28, 2017"},"score":8.09,"scored":8.09,"scored_by":53611,"rank":546,"popularity":154,"members":79572,"favorites":1317,"synopsis":"Yuuta
+        Okkotsu is haunted. Ever since his childhood friend Rika died in a traffic
+        accident, her ghost has stuck with him. But her spirit does not appear as
+        the sweet girl Yuuta once knew. Instead, she manifests as a monstrous and
+        powerful entity who fiercely protects him. Unable to control Rika''s violent
+        behavior, Yuuta is helpless to stop the bloodshed that follows from her brutal
+        vengeance. As a result, when apprehended by \"Jujutsu\" sorcerers\u2014the
+        secret guardians of the world, trained to combat forces like Rika\u2014Yuuta
+        wishes to be completely isolated so that no one else can get hurt. Yet his
+        apprehender, the master sorcerer Satoru Gojou, has different plans for him:
+        he will join Jujutsu High School and learn to control Rika in order to help
+        people. Now a first-year at this school, Yuuta starts to learn Jujutsu arts
+        and combat malignant beings. Alongside his new classmates Maki Zenin, a Jujutsu
+        weapons expert; Toge Inumaki, a spellcaster who uses his words as weapons;
+        and Panda, a seemingly walking and talking panda bear, Yuuta begins to find
+        his place in the world and, for once, to feel comfortable with his abilities.
+        However, as his training progresses, Yuuta comes to learn that the dangers
+        of the Jujutsu world go far beyond that of wicked spirits. [Written by MAL
+        Rewrite]","background":"Jujutsu Kaisen 0: Tokyo Toritsu Jujutsu Koutou Senmon
+        Gakkou is the prototype serialization of Jujutsu Kaisen. The story remains
+        canon to the main series and it features a different central cast. Character
+        designs used in this prototype were later altered in the main series; for
+        instance, Toge Inumaki''s initial design was later used for Jujutsu Kaisen''s
+        main protagonist Yuuji Itadori, while Toge underwent a redesign. It was published
+        in English as Jujutsu Kaisen 0 by VIZ Media under the Shounen Jump imprint
+        on January 5, 2021.","authors":[{"mal_id":47924,"type":"people","name":"Akutami,
+        Gege","url":"https:\/\/myanimelist.net\/people\/47924\/Gege_Akutami"}],"serializations":[{"mal_id":1366,"type":"manga","name":"Jump
+        GIGA","url":"https:\/\/myanimelist.net\/manga\/magazine\/1366\/Jump_GIGA"}],"genres":[{"mal_id":1,"type":"manga","name":"Action","url":"https:\/\/myanimelist.net\/manga\/genre\/1\/Action"},{"mal_id":37,"type":"manga","name":"Supernatural","url":"https:\/\/myanimelist.net\/manga\/genre\/37\/Supernatural"}],"explicit_genres":[],"themes":[{"mal_id":6,"type":"manga","name":"Mythology","url":"https:\/\/myanimelist.net\/manga\/genre\/6\/Mythology"}],"demographics":[{"mal_id":27,"type":"manga","name":"Shounen","url":"https:\/\/myanimelist.net\/manga\/genre\/27\/Shounen"}]},{"mal_id":146643,"url":"https:\/\/myanimelist.net\/manga\/146643\/Jujutsu_Kaisen_Bangai-hen","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/259446.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/259446t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/259446l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/259446.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/259446t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/259446l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Jujutsu
+        Kaisen Bangai-hen"},{"type":"Japanese","title":"\u546a\u8853\u5efb\u6226 \u756a\u5916\u7de8"},{"type":"English","title":"Jujutsu
+        Kaisen Bonus Manga"}],"title":"Jujutsu Kaisen Bangai-hen","title_english":"Jujutsu
+        Kaisen Bonus Manga","title_japanese":"\u546a\u8853\u5efb\u6226 \u756a\u5916\u7de8","title_synonyms":[],"type":"One-shot","chapters":1,"volumes":null,"status":"Finished","publishing":false,"published":{"from":"2021-12-13T00:00:00+00:00","to":null,"prop":{"from":{"day":13,"month":12,"year":2021},"to":{"day":null,"month":null,"year":null}},"string":"Dec
+        13, 2021"},"score":6.8,"scored":6.8,"scored_by":225,"rank":10758,"popularity":16948,"members":632,"favorites":1,"synopsis":"Jujutsu
+        Kaisen Bangai-hen shows the daily lives of Yuuta Okkotsu and his classmates
+        when they were first years.","background":"Jujutsu Kaisen Bangai-hen was published
+        in the 2022 #2 issue of Weekly Shounen Jump and was later included in the
+        Jujutsu Kaisen 0.5 booklet, which was distributed at the Jujutsu Kaisen 0
+        Movie premiere on December 24, 2021. It was published digitally as an English
+        simulpub as Jujutsu Kaisen Bonus Manga through MANGA Plus service.","authors":[{"mal_id":47924,"type":"people","name":"Akutami,
+        Gege","url":"https:\/\/myanimelist.net\/people\/47924\/Gege_Akutami"}],"serializations":[{"mal_id":83,"type":"manga","name":"Shounen
+        Jump (Weekly)","url":"https:\/\/myanimelist.net\/manga\/magazine\/83\/Shounen_Jump_Weekly"}],"genres":[{"mal_id":4,"type":"manga","name":"Comedy","url":"https:\/\/myanimelist.net\/manga\/genre\/4\/Comedy"}],"explicit_genres":[],"themes":[{"mal_id":57,"type":"manga","name":"Gag
+        Humor","url":"https:\/\/myanimelist.net\/manga\/genre\/57\/Gag_Humor"}],"demographics":[{"mal_id":27,"type":"manga","name":"Shounen","url":"https:\/\/myanimelist.net\/manga\/genre\/27\/Shounen"}]},{"mal_id":133048,"url":"https:\/\/myanimelist.net\/manga\/133048\/Jujutsu_Kaisen__Yoake_no_Ibara_Michi","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/244857.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/244857t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/244857l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/244857.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/244857t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/244857l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Jujutsu
+        Kaisen: Yoake no Ibara Michi"},{"type":"Synonym","title":"Jujutsu Kaisen:
+        Thorny Road to Dawn"},{"type":"Synonym","title":"Jujutsu Kaisen: Thorny Road
+        to Dawn"},{"type":"Japanese","title":"\u546a\u8853\u5efb\u6226 \u591c\u660e\u3051\u306e\u3044\u3070\u3089\u9053"},{"type":"English","title":"Jujutsu
+        Kaisen: Thorny Road at Dawn"}],"title":"Jujutsu Kaisen: Yoake no Ibara Michi","title_english":"Jujutsu
+        Kaisen: Thorny Road at Dawn","title_japanese":"\u546a\u8853\u5efb\u6226 \u591c\u660e\u3051\u306e\u3044\u3070\u3089\u9053","title_synonyms":["Jujutsu
+        Kaisen: Thorny Road to Dawn"],"type":"Light Novel","chapters":5,"volumes":1,"status":"Finished","publishing":false,"published":{"from":"2020-01-04T00:00:00+00:00","to":null,"prop":{"from":{"day":4,"month":1,"year":2020},"to":{"day":null,"month":null,"year":null}},"string":"Jan
+        4, 2020"},"score":7.44,"scored":7.44,"scored_by":163,"rank":3160,"popularity":8970,"members":1631,"favorites":13,"synopsis":"Kugisaki
+        encounters a talent agent while she was out. However the man who spoke to
+        her was actually a cursed user with an ulterior motive! When Kugisaki''s life
+        was in danger, the person who rushed to her aid was actually Inumaki...?!
+        (Source: Shueisha, translated)","background":null,"authors":[{"mal_id":35997,"type":"people","name":"Kitakuni,
+        Ballad","url":"https:\/\/myanimelist.net\/people\/35997\/Ballad_Kitakuni"}],"serializations":[],"genres":[{"mal_id":1,"type":"manga","name":"Action","url":"https:\/\/myanimelist.net\/manga\/genre\/1\/Action"},{"mal_id":37,"type":"manga","name":"Supernatural","url":"https:\/\/myanimelist.net\/manga\/genre\/37\/Supernatural"}],"explicit_genres":[],"themes":[{"mal_id":17,"type":"manga","name":"Martial
+        Arts","url":"https:\/\/myanimelist.net\/manga\/genre\/17\/Martial_Arts"}],"demographics":[{"mal_id":27,"type":"manga","name":"Shounen","url":"https:\/\/myanimelist.net\/manga\/genre\/27\/Shounen"}]},{"mal_id":133047,"url":"https:\/\/myanimelist.net\/manga\/133047\/Jujutsu_Kaisen__Yuku_Natsu_to_Kaeru_Aki","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/244856.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/244856t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/244856l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/244856.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/244856t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/244856l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Jujutsu
+        Kaisen: Yuku Natsu to Kaeru Aki"},{"type":"Synonym","title":"Jujutsu Kaisen:
+        Iku Natsu to Kaeru Aki"},{"type":"Synonym","title":"Jujutsu Kaisen: Soaring
+        Summer and Returning Autumn"},{"type":"Synonym","title":"Jujutsu Kaisen: Iku
+        Natsu to Kaeru Aki"},{"type":"Synonym","title":"Jujutsu Kaisen: Soaring Summer
+        and Returning Autumn"},{"type":"Japanese","title":"\u546a\u8853\u5efb\u6226
+        \u901d\u304f\u590f\u3068\u9084\u308b\u79cb"},{"type":"English","title":"Jujutsu
+        Kaisen: Summer of Ashes, Autumn of Dust"}],"title":"Jujutsu Kaisen: Yuku Natsu
+        to Kaeru Aki","title_english":"Jujutsu Kaisen: Summer of Ashes, Autumn of
+        Dust","title_japanese":"\u546a\u8853\u5efb\u6226 \u901d\u304f\u590f\u3068\u9084\u308b\u79cb","title_synonyms":["Jujutsu
+        Kaisen: Iku Natsu to Kaeru Aki","Jujutsu Kaisen: Soaring Summer and Returning
+        Autumn"],"type":"Light Novel","chapters":5,"volumes":1,"status":"Finished","publishing":false,"published":{"from":"2019-05-01T00:00:00+00:00","to":null,"prop":{"from":{"day":1,"month":5,"year":2019},"to":{"day":null,"month":null,"year":null}},"string":"May
+        1, 2019"},"score":7.52,"scored":7.52,"scored_by":235,"rank":2586,"popularity":8645,"members":1715,"favorites":17,"synopsis":"Cursed
+        spirits have struck the opening blow at Satozakura High School in an unfolding
+        conflict against the Jujutsu Sorcerers. But while this epic and unyielding
+        battle intensifies, the heroes of Jujutsu Kaisen have other mysteries to solve...such
+        as why Yuji and Megumi see Gojo at a maid cafe, whether Nanami can uncover
+        the secret behind a website that claims to sell dolls that resurrect the dead,
+        and what happens when a blind old man is able to see the scheming Mahito.
+        (Source: VIZ Media)","background":null,"authors":[{"mal_id":35997,"type":"people","name":"Kitakuni,
+        Ballad","url":"https:\/\/myanimelist.net\/people\/35997\/Ballad_Kitakuni"}],"serializations":[],"genres":[{"mal_id":1,"type":"manga","name":"Action","url":"https:\/\/myanimelist.net\/manga\/genre\/1\/Action"},{"mal_id":37,"type":"manga","name":"Supernatural","url":"https:\/\/myanimelist.net\/manga\/genre\/37\/Supernatural"}],"explicit_genres":[],"themes":[{"mal_id":17,"type":"manga","name":"Martial
+        Arts","url":"https:\/\/myanimelist.net\/manga\/genre\/17\/Martial_Arts"}],"demographics":[{"mal_id":27,"type":"manga","name":"Shounen","url":"https:\/\/myanimelist.net\/manga\/genre\/27\/Shounen"}]},{"mal_id":95550,"url":"https:\/\/myanimelist.net\/manga\/95550\/Jujutsu_Houritsuka_Mikaya","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/172423.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/172423t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/172423l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/172423.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/172423t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/172423l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Jujutsu
+        Houritsuka Mikaya"},{"type":"Japanese","title":"\u546a\u8853\u6cd5\u5f8b\u5bb6\u30df\u30ab\u30e4"},{"type":"English","title":"The
+        magical files of Mikaya"}],"title":"Jujutsu Houritsuka Mikaya","title_english":"The
+        magical files of Mikaya","title_japanese":"\u546a\u8853\u6cd5\u5f8b\u5bb6\u30df\u30ab\u30e4","title_synonyms":[],"type":"Light
+        Novel","chapters":null,"volumes":null,"status":"Publishing","publishing":true,"published":{"from":"2016-02-25T00:00:00+00:00","to":null,"prop":{"from":{"day":25,"month":2,"year":2016},"to":{"day":null,"month":null,"year":null}},"string":"Feb
+        25, 2016 to ?"},"score":null,"scored":null,"scored_by":null,"rank":25492,"popularity":42369,"members":76,"favorites":1,"synopsis":"Looking
+        for information on the light novel Jujutsu Houritsuka Mikaya (The magical
+        files of Mikaya)? Find out more with MyAnimeList, the world''s most active
+        online anime and manga community and database.","background":null,"authors":[{"mal_id":37103,"type":"people","name":"Yaminabe,
+        Tellmin","url":"https:\/\/myanimelist.net\/people\/37103\/Tellmin_Yaminabe"},{"mal_id":39846,"type":"people","name":"Ookuwa,
+        Yasuhiro","url":"https:\/\/myanimelist.net\/people\/39846\/Yasuhiro_Ookuwa"}],"serializations":[],"genres":[{"mal_id":10,"type":"manga","name":"Fantasy","url":"https:\/\/myanimelist.net\/manga\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[],"demographics":[]},{"mal_id":94486,"url":"https:\/\/myanimelist.net\/manga\/94486\/Zero__Taiheiyou_Senki_-_Kaisen-hen","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/204719.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/204719t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/204719l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/204719.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/204719t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/204719l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Zero:
+        Taiheiyou Senki - Kaisen-hen"},{"type":"Japanese","title":"ZERO \u592a\u5e73\u6d0b\u6226\u8a18\u300c\u958b\u6226\u7de8\u300d"}],"title":"Zero:
+        Taiheiyou Senki - Kaisen-hen","title_english":null,"title_japanese":"ZERO
+        \u592a\u5e73\u6d0b\u6226\u8a18\u300c\u958b\u6226\u7de8\u300d","title_synonyms":[],"type":"Manga","chapters":5,"volumes":1,"status":"Finished","publishing":false,"published":{"from":"2009-01-11T00:00:00+00:00","to":"2010-08-17T00:00:00+00:00","prop":{"from":{"day":11,"month":1,"year":2009},"to":{"day":17,"month":8,"year":2010}},"string":"Jan
+        11, 2009 to Aug 17, 2010"},"score":null,"scored":null,"scored_by":null,"rank":25165,"popularity":60089,"members":18,"favorites":0,"synopsis":"Stories
+        of Mitsubishi Zero pilots during the Pacific War.","background":null,"authors":[{"mal_id":2285,"type":"people","name":"Kobayashi,
+        Motofumi","url":"https:\/\/myanimelist.net\/people\/2285\/Motofumi_Kobayashi"}],"serializations":[{"mal_id":1436,"type":"manga","name":"Genbun
+        Magazine","url":"https:\/\/myanimelist.net\/manga\/magazine\/1436\/Genbun_Magazine"}],"genres":[],"explicit_genres":[],"themes":[{"mal_id":13,"type":"manga","name":"Historical","url":"https:\/\/myanimelist.net\/manga\/genre\/13\/Historical"},{"mal_id":38,"type":"manga","name":"Military","url":"https:\/\/myanimelist.net\/manga\/genre\/38\/Military"}],"demographics":[]},{"mal_id":88916,"url":"https:\/\/myanimelist.net\/manga\/88916\/Miko_to_Maid_no_Fuuunroku__Senritsu_no_Mariana-Oki_Kaisen","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/155085.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/155085t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/155085l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/155085.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/155085t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/155085l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Miko
+        to Maid no Fuuunroku: Senritsu no Mariana-Oki Kaisen"},{"type":"Japanese","title":"\u5deb\u5973\u3068\u30e1\u30a4\u30c9\u306e\u98a8\u96f2\u9332\u3000\u2014\u6226\u6144\u306e\u30de\u30ea\u30a2\u30ca\u6c96\u6d77\u6226\u2014"}],"title":"Miko
+        to Maid no Fuuunroku: Senritsu no Mariana-Oki Kaisen","title_english":null,"title_japanese":"\u5deb\u5973\u3068\u30e1\u30a4\u30c9\u306e\u98a8\u96f2\u9332\u3000\u2014\u6226\u6144\u306e\u30de\u30ea\u30a2\u30ca\u6c96\u6d77\u6226\u2014","title_synonyms":[],"type":"Light
+        Novel","chapters":null,"volumes":1,"status":"Finished","publishing":false,"published":{"from":"2013-08-23T00:00:00+00:00","to":null,"prop":{"from":{"day":23,"month":8,"year":2013},"to":{"day":null,"month":null,"year":null}},"string":"Aug
+        23, 2013"},"score":null,"scored":null,"scored_by":null,"rank":36288,"popularity":59312,"members":21,"favorites":0,"synopsis":"Looking
+        for information on the light novel Miko to Maid no Fuuunroku: Senritsu no
+        Mariana-Oki Kaisen? Find out more with MyAnimeList, the world''s most active
+        online anime and manga community and database.","background":null,"authors":[{"mal_id":25877,"type":"people","name":"Yoshida,
+        Chikashi","url":"https:\/\/myanimelist.net\/people\/25877\/Chikashi_Yoshida"},{"mal_id":37833,"type":"people","name":"Chiyoko","url":"https:\/\/myanimelist.net\/people\/37833\/Chiyoko"}],"serializations":[],"genres":[{"mal_id":1,"type":"manga","name":"Action","url":"https:\/\/myanimelist.net\/manga\/genre\/1\/Action"}],"explicit_genres":[],"themes":[],"demographics":[]}]}'
+    headers:
+      Access-Control-Allow-Methods: GET
+      Access-Control-Allow-Origin: '*'
+      Cache-Control: private, must-revalidate
+      Connection: keep-alive
+      Content-Encoding: gzip
+      Content-Type: application/json
+      Date: Fri, 09 Dec 2022 22:44:09 GMT
+      Expires: '-1'
+      Pragma: no-cache
+      Server: nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding: chunked
+      Vary: Accept-Encoding
+      X-Cache-Status: MISS
+    status:
+      code: 200
+      message: OK
+    url: https://api.jikan.moe/v4/manga?q=jujutsu+kaisen&limit=10
+version: 1

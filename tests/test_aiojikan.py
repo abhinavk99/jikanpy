@@ -4,6 +4,7 @@
 
 import pytest
 import vcr
+import time
 
 # pylint: disable=import-error
 from jikanpy import AioJikan, utils, APIException, DeprecatedEndpoint
@@ -33,6 +34,10 @@ pytestmark = pytest.mark.asyncio
 def aio_jikan():
     return AioJikan()
 
+@pytest.fixture(autouse=True)
+def slow_down_tests():
+    yield
+    time.sleep(0.1)
 
 async def test_construct_using_async_with():
     async with AioJikan() as temp_aio_jikan:
@@ -94,7 +99,7 @@ async def test_anime_episodes_success(anime_episodes_keys, episode_keys, aio_jik
     await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-anime-episode-by-id-success.yaml")
-def test_anime_episode_by_id_success(episode_keys, aio_jikan):
+async def test_anime_episode_by_id_success(episode_keys, aio_jikan):
     anime_episodes_info = await aio_jikan.anime_episode_by_id(anime_id=MUSHISHI_ID, episode_id=1)
 
     assert isinstance(anime_episodes_info, dict)
@@ -123,7 +128,7 @@ async def test_character_success(character_keys, aio_jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-person-success.yaml")
 async def test_person_success(person_keys, aio_jikan):
-    person_info = await aio_jikan.person(KANA_HANAZAWA_ID)
+    person_info = await aio_jikan.people(KANA_HANAZAWA_ID)
 
     assert isinstance(person_info, dict)
     assert person_info["data"]["name"] == "Kana Hanazawa"
@@ -142,7 +147,7 @@ async def test_search_success(search_keys, aio_jikan):
     await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-search-manga-success.yaml")
-def test_search_manga_success(search_keys, aio_jikan):
+async def test_search_manga_success(search_keys, aio_jikan):
     search_info = await aio_jikan.search(
         search_type="manga", query="jujutsu kaisen", parameters={"limit": 10}
     )
@@ -152,8 +157,8 @@ def test_search_manga_success(search_keys, aio_jikan):
     await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-search-light-novel-success.yaml")
-def test_search_ln_success(search_keys, aio_jikan):
-    search_info = aio_jikan.search(
+async def test_search_ln_success(search_keys, aio_jikan):
+    search_info = await aio_jikan.search(
         search_type="manga", query="mushoku tensei", parameters={"limit": 10, "type":'lightnovel'}
     )
     assert search_info["data"][0]["mal_id"] == 70261
@@ -181,7 +186,7 @@ async def test_search_genre_exclude_success(search_keys, aio_jikan):
     await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-search-user-success.yaml")
-def test_search_user_success(user_keys, aio_jikan):
+async def test_search_user_success(user_keys, aio_jikan):
     search_info = await aio_jikan.search(
         search_type="users", query="Xinil", parameters={"limit": 10}
     )
@@ -193,7 +198,7 @@ def test_search_user_success(user_keys, aio_jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-season-success.yaml")
 async def test_season_success(season_keys, seasonal_anime_keys, aio_jikan):
-    season_info = await aio_jikan.season(year=YEAR, season=SEASON)
+    season_info = await aio_jikan.seasons(year=YEAR, season=SEASON)
 
     assert isinstance(season_info, dict)
     assert season_keys.issubset(season_info.keys())
@@ -208,6 +213,7 @@ async def test_season_current_success(season_keys, seasonal_anime_keys, aio_jika
     assert season_keys.issubset(season_info.keys())
     for anime in season_info["data"]:
         assert seasonal_anime_keys.issubset(anime.keys())
+    await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-schedule-success.yaml")
 async def test_schedule_success(schedule_keys, subset_anime_keys, aio_jikan):
@@ -217,6 +223,7 @@ async def test_schedule_success(schedule_keys, subset_anime_keys, aio_jikan):
     assert schedule_keys.issubset(schedule_info.keys())
     for anime in schedule_info["data"]:
         assert subset_anime_keys.issubset(anime.keys())
+    await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-top-success.yaml")
@@ -227,6 +234,7 @@ async def test_top_success(top_keys, top_anime_keys, aio_jikan):
     assert top_keys.issubset(top_info.keys())
     for anime in top_info["data"]:
         assert top_anime_keys.issubset(anime.keys())
+    await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-genre-anime-success.yaml")
@@ -236,6 +244,7 @@ async def test_genre_anime_success(genre_keys, aio_jikan):
     assert isinstance(genre_info, dict)
     for anime in genre_info["data"]:
         assert genre_keys.issubset(anime.keys())
+    await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-genre-manga-success.yaml")
 async def test_genre_manga_success(genre_keys, aio_jikan):
@@ -244,6 +253,7 @@ async def test_genre_manga_success(genre_keys, aio_jikan):
     assert isinstance(genre_info, dict)
     for anime in genre_info["data"]:
         assert genre_keys.issubset(anime.keys())
+    await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-producer-success.yaml")
 async def test_producer_success(producer_keys, subset_anime_keys, aio_jikan):
@@ -251,7 +261,7 @@ async def test_producer_success(producer_keys, subset_anime_keys, aio_jikan):
 
     assert isinstance(producer_info, dict)
     assert producer_keys.issubset(producer_info["data"].keys())
-
+    await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-magazine-success.yaml")
 async def test_magazine_success(magazine_keys, magazine_manga_keys, aio_jikan):
@@ -259,6 +269,7 @@ async def test_magazine_success(magazine_keys, magazine_manga_keys, aio_jikan):
 
     assert isinstance(magazine_info, dict)
     assert magazine_keys.issubset(magazine_info["data"][0].keys())
+    await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-user-success.yaml")
 async def test_user_success(user_keys_full, aio_jikan):
@@ -268,14 +279,16 @@ async def test_user_success(user_keys_full, aio_jikan):
     assert user_info["data"]["username"] == "Nekomata1037"
     assert user_info["data"]["gender"] == "Male"
     assert user_keys_full.issubset(user_info["data"].keys())
+    await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-user-friends-success.yaml")
 async def test_user_friends_success(user_keys_friends, aio_jikan):
     user_info = await aio_jikan.users(username=USERNAME, extension="friends")
 
     assert isinstance(user_info, dict)
-    assert user_info["data"][0]["user"]["username"] == "purplepinapples"
+    assert user_info["data"][0]["user"]["username"] == "kunalmanik95"
     assert user_keys_friends.issubset(user_info["data"][0].keys())
+    await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-user-id-success.yaml")
@@ -285,6 +298,7 @@ async def test_user_id_success(user_id_keys, aio_jikan):
     assert isinstance(user_info, dict)
     assert user_info["data"]["username"] == "Xinil"
     assert user_id_keys.issubset(user_info["data"].keys())
+    await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-club-success.yaml")
 async def test_club_success(club_keys, aio_jikan):
@@ -293,6 +307,7 @@ async def test_club_success(club_keys, aio_jikan):
     assert isinstance(club_info, dict)
     assert club_info["data"]["name"] == "Fantasy Anime League"
     assert club_keys.issubset(club_info["data"].keys())
+    await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-random-anime-success.yaml")
 async def test_random_anime_success(anime_keys, aio_jikan):
@@ -300,6 +315,7 @@ async def test_random_anime_success(anime_keys, aio_jikan):
 
     assert isinstance(anime, dict)
     assert anime_keys.issubset(anime['data'].keys())
+    await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-recommendations-success.yaml")
 async def test_recommendations_success(recommendations_keys, aio_jikan):
@@ -308,6 +324,7 @@ async def test_recommendations_success(recommendations_keys, aio_jikan):
     assert isinstance(recommendations, dict)
     for rec in recommendations["data"]:
         assert recommendations_keys.issubset(rec.keys())
+    await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-reviews-success.yaml")
 async def test_reviews_success(reviews_keys, aio_jikan):
@@ -316,6 +333,7 @@ async def test_reviews_success(reviews_keys, aio_jikan):
     assert isinstance(reviews, dict)
     for rec in reviews["data"]:
         assert reviews_keys.issubset(rec.keys())
+    await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-watch-episodes-success.yaml")
 async def test_watch_episodes_success(watch_episodes_keys, aio_jikan):
@@ -324,6 +342,7 @@ async def test_watch_episodes_success(watch_episodes_keys, aio_jikan):
     assert isinstance(watch_eps, dict)
     for item in watch_eps["data"]:
         assert watch_episodes_keys.issubset(item.keys())
+    await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-watch-episodes-popular-success.yaml")
 async def test_watch_episodes_success(watch_episodes_keys, aio_jikan):
@@ -332,6 +351,7 @@ async def test_watch_episodes_success(watch_episodes_keys, aio_jikan):
     assert isinstance(watch_eps, dict)
     for item in watch_eps["data"]:
         assert watch_episodes_keys.issubset(item.keys())
+    await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-watch-promos-success.yaml")
 async def test_watch_promos_success(watch_promos_keys, aio_jikan):
@@ -340,6 +360,7 @@ async def test_watch_promos_success(watch_promos_keys, aio_jikan):
     assert isinstance(promos, dict)
     for item in promos["data"]:
         assert watch_promos_keys.issubset(item.keys())
+    await aio_jikan.close()
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-watch-promos-popular-success.yaml")
 async def test_watch_promos_success(watch_promos_keys, aio_jikan):
@@ -348,42 +369,50 @@ async def test_watch_promos_success(watch_promos_keys, aio_jikan):
     assert isinstance(promos, dict)
     for item in promos["data"]:
         assert watch_promos_keys.issubset(item.keys())
+    await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-anime-failure.yaml")
 async def test_anime_failure(aio_jikan):
     with pytest.raises(APIException):
         await aio_jikan.anime(-1)
+    await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-manga-failure.yaml")
 async def test_manga_failure(aio_jikan):
     with pytest.raises(APIException):
         await aio_jikan.manga(-1)
+    await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-character-failure.yaml")
 async def test_character_failure(aio_jikan):
     with pytest.raises(APIException):
         await aio_jikan.character(-1)
+    await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-season-failure.yaml")
 async def test_season_failure(aio_jikan):
     with pytest.raises(APIException):
         await aio_jikan.seasons(year=-1, season=SEASON)
+    await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-club-failure.yaml")
 async def test_club_failure(aio_jikan):
     with pytest.raises(APIException):
         await aio_jikan.clubs(-1)
+    await aio_jikan.close()
 
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-user-list-failure.yaml")
 async def test_user_list_failure(aio_jikan):
     with pytest.raises(DeprecatedEndpoint):
         await aio_jikan.user_list(1)
+    await aio_jikan.close()
+
 
 
 @pytest.mark.parametrize("aio_response_mock", (True, False), indirect=True)
@@ -392,18 +421,18 @@ async def test_empty_response_json(aio_jikan, aio_response_mock):
         await aio_jikan._wrap_response(aio_response_mock, url=utils.BASE_URL, param=1)
 
     err = err_info.value
-    err_text = aio_response_mock.text
-    assert err.status_code == aio_response_mock.status_code
+    err_text = await aio_response_mock.text()
+    assert err.status_code == aio_response_mock.status
     assert isinstance(err.error_json, dict)
     assert "error" in err.error_json
     assert err.error_json["error"] == err_text
     assert isinstance(err.relevant_params, dict)
     assert "param" in err.relevant_params
     assert err.relevant_params["param"] == 1
-    assert (
-        str(err) == f"HTTP {aio_response_mock.status_code} - error={err_text} for param=1"
-    )
+    assert str(err) == f"HTTP {aio_response_mock.status} - error={err_text} for param=1"
     assert repr(err).startswith(
-        f"APIException(status_code={aio_response_mock.status_code}, error_json={{'error': '"
+        f"APIException(status_code={aio_response_mock.status}, error_json={{'error': '"
     )
     assert repr(err).endswith("'}, relevant_params={'param': 1})")
+
+    await aio_jikan.close()

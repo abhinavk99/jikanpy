@@ -1,0 +1,38 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.jikan.moe/v4/random/anime
+  response:
+    body:
+      string: '{"data":{"mal_id":10391,"url":"https:\/\/myanimelist.net\/anime\/10391\/Kuragehime__Soreike_Amars_Tankentai","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/28576.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/28576t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/28576l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/28576.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/28576t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/5\/28576l.webp"}},"trailer":{"youtube_id":null,"url":null,"embed_url":null,"images":{"image_url":null,"small_image_url":null,"medium_image_url":null,"large_image_url":null,"maximum_image_url":null}},"approved":true,"titles":[{"type":"Default","title":"Kuragehime:
+        Soreike! Amars Tankentai"},{"type":"Synonym","title":"Princess Jellyfish:
+        Nun Expedition"},{"type":"Japanese","title":"\u305d\u308c\u3044\u3051\uff01\u5c3c\uff5e\u305a\u63a2\u691c\u968a"},{"type":"English","title":"Princess
+        Jellyfish: Go, Sisterhood Explorers!"}],"title":"Kuragehime: Soreike! Amars
+        Tankentai","title_english":"Princess Jellyfish: Go, Sisterhood Explorers!","title_japanese":"\u305d\u308c\u3044\u3051\uff01\u5c3c\uff5e\u305a\u63a2\u691c\u968a","title_synonyms":["Princess
+        Jellyfish: Nun Expedition"],"type":"Special","source":"Manga","episodes":6,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2010-08-12T00:00:00+00:00","to":"2010-09-17T00:00:00+00:00","prop":{"from":{"day":12,"month":8,"year":2010},"to":{"day":17,"month":9,"year":2010}},"string":"Aug
+        12, 2010 to Sep 17, 2010"},"duration":"30 sec per ep","rating":"PG-13 - Teens
+        13 or older","score":5.6,"scored_by":3667,"rank":11025,"popularity":5968,"members":9358,"favorites":2,"synopsis":"The
+        Amars go on an adventure in the forest.","background":null,"season":null,"year":null,"broadcast":{"day":null,"time":null,"timezone":null,"string":null},"producers":[{"mal_id":517,"type":"anime","name":"Asmik
+        Ace","url":"https:\/\/myanimelist.net\/anime\/producer\/517\/Asmik_Ace"}],"licensors":[{"mal_id":102,"type":"anime","name":"Funimation","url":"https:\/\/myanimelist.net\/anime\/producer\/102\/Funimation"}],"studios":[{"mal_id":112,"type":"anime","name":"Brain''s
+        Base","url":"https:\/\/myanimelist.net\/anime\/producer\/112\/Brains_Base"}],"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"}],"explicit_genres":[],"themes":[],"demographics":[{"mal_id":43,"type":"anime","name":"Josei","url":"https:\/\/myanimelist.net\/anime\/genre\/43\/Josei"}]}}'
+    headers:
+      Access-Control-Allow-Methods: GET
+      Access-Control-Allow-Origin: '*'
+      Cache-Control: no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+      Connection: keep-alive
+      Content-Encoding: gzip
+      Content-Type: application/json
+      Date: Fri, 09 Dec 2022 22:44:30 GMT
+      Expires: Fri, 09 Dec 2022 22:44:29 GMT
+      Pragma: no-cache
+      Server: nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding: chunked
+      Vary: Accept-Encoding
+    status:
+      code: 200
+      message: OK
+    url: https://api.jikan.moe/v4/random/anime
+version: 1

@@ -253,7 +253,7 @@ class AioJikan:
         """
         return await self._get("people", id, extension)
 
-    async def club(
+    async def clubs(
         self,
         id: int,
         extension: Optional[str] = None,
@@ -395,7 +395,7 @@ class AioJikan:
             if parameters is None:
                 parameters = {}
 
-        parameters['page'] = page
+            parameters['page'] = page
 
         url = utils.get_schedule_url(self.base, day=day, parameters=parameters)
         return await self._request(url, day=day)

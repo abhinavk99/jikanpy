@@ -1,0 +1,52 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.jikan.moe/v4/anime?q=naruto&genre=1,2&genre_exclude=True&limit=2
+  response:
+    body:
+      string: '{"pagination":{"last_visible_page":15,"has_next_page":true,"current_page":1,"items":{"count":2,"total":29,"per_page":2}},"data":[{"mal_id":53240,"url":"https:\/\/myanimelist.net\/anime\/53240\/Naruto__Road_of_Naruto","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1207\/128768.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1207\/128768t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1207\/128768l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1207\/128768.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1207\/128768t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1207\/128768l.webp"}},"trailer":{"youtube_id":null,"url":null,"embed_url":null,"images":{"image_url":null,"small_image_url":null,"medium_image_url":null,"large_image_url":null,"maximum_image_url":null}},"approved":false,"titles":[{"type":"Default","title":"Naruto:
+        Road of Naruto"},{"type":"Japanese","title":"\u300eNARUTO-\u30ca\u30eb\u30c8-\u300f20\u5468\u5e74\u8a18\u5ff5"},{"type":"English","title":"Naruto:
+        20th Anniversary"}],"title":"Naruto: Road of Naruto","title_english":"Naruto:
+        20th Anniversary","title_japanese":"\u300eNARUTO-\u30ca\u30eb\u30c8-\u300f20\u5468\u5e74\u8a18\u5ff5","title_synonyms":[],"type":"Special","source":"Manga","episodes":1,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2022-10-03T00:00:00+00:00","to":null,"prop":{"from":{"day":3,"month":10,"year":2022},"to":{"day":null,"month":null,"year":null}},"string":"Oct
+        3, 2022 to ?"},"duration":"9 min","rating":"PG-13 - Teens 13 or older","score":null,"scored_by":null,"rank":0,"popularity":0,"members":0,"favorites":0,"synopsis":null,"background":null,"season":null,"year":null,"broadcast":{"day":null,"time":null,"timezone":null,"string":null},"producers":[],"licensors":[],"studios":[],"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[{"mal_id":17,"type":"anime","name":"Martial
+        Arts","url":"https:\/\/myanimelist.net\/anime\/genre\/17\/Martial_Arts"}],"demographics":[{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}]},{"mal_id":20,"url":"https:\/\/myanimelist.net\/anime\/20\/Naruto","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17405.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17405t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17405l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17405.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17405t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/17405l.webp"}},"trailer":{"youtube_id":null,"url":null,"embed_url":null,"images":{"image_url":null,"small_image_url":null,"medium_image_url":null,"large_image_url":null,"maximum_image_url":null}},"approved":true,"titles":[{"type":"Default","title":"Naruto"},{"type":"Synonym","title":"NARUTO"},{"type":"Japanese","title":"\u30ca\u30eb\u30c8"},{"type":"English","title":"Naruto"}],"title":"Naruto","title_english":"Naruto","title_japanese":"\u30ca\u30eb\u30c8","title_synonyms":["NARUTO"],"type":"TV","source":"Manga","episodes":220,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2002-10-03T00:00:00+00:00","to":"2007-02-08T00:00:00+00:00","prop":{"from":{"day":3,"month":10,"year":2002},"to":{"day":8,"month":2,"year":2007}},"string":"Oct
+        3, 2002 to Feb 8, 2007"},"duration":"23 min per ep","rating":"PG-13 - Teens
+        13 or older","score":7.98,"scored_by":1813859,"rank":607,"popularity":8,"members":2601164,"favorites":73354,"synopsis":"Moments
+        prior to Naruto Uzumaki''s birth, a huge demon known as the Kyuubi, the Nine-Tailed
+        Fox, attacked Konohagakure, the Hidden Leaf Village, and wreaked havoc. In
+        order to put an end to the Kyuubi''s rampage, the leader of the village, the
+        Fourth Hokage, sacrificed his life and sealed the monstrous beast inside the
+        newborn Naruto.\n\nNow, Naruto is a hyperactive and knuckle-headed ninja still
+        living in Konohagakure. Shunned because of the Kyuubi inside him, Naruto struggles
+        to find his place in the village, while his burning desire to become the Hokage
+        of Konohagakure leads him not only to some great new friends, but also some
+        deadly foes.\n\n[Written by MAL Rewrite]","background":"Naruto received numerous
+        awards during its airing, including the \"Best Full-Length Animation Program
+        Award\" in the Third UStv Awards and the 38th \"Best Animated Show\" in IGN''s
+        Top 100 Animated Series.","season":"fall","year":2002,"broadcast":{"day":"Thursdays","time":"19:30","timezone":"Asia\/Tokyo","string":"Thursdays
+        at 19:30 (JST)"},"producers":[{"mal_id":16,"type":"anime","name":"TV Tokyo","url":"https:\/\/myanimelist.net\/anime\/producer\/16\/TV_Tokyo"},{"mal_id":17,"type":"anime","name":"Aniplex","url":"https:\/\/myanimelist.net\/anime\/producer\/17\/Aniplex"},{"mal_id":1365,"type":"anime","name":"Shueisha","url":"https:\/\/myanimelist.net\/anime\/producer\/1365\/Shueisha"}],"licensors":[{"mal_id":119,"type":"anime","name":"VIZ
+        Media","url":"https:\/\/myanimelist.net\/anime\/producer\/119\/VIZ_Media"}],"studios":[{"mal_id":1,"type":"anime","name":"Pierrot","url":"https:\/\/myanimelist.net\/anime\/producer\/1\/Pierrot"}],"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[{"mal_id":17,"type":"anime","name":"Martial
+        Arts","url":"https:\/\/myanimelist.net\/anime\/genre\/17\/Martial_Arts"}],"demographics":[{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}]}]}'
+    headers:
+      Access-Control-Allow-Methods: GET
+      Access-Control-Allow-Origin: '*'
+      Cache-Control: private, must-revalidate
+      Connection: keep-alive
+      Content-Encoding: gzip
+      Content-Type: application/json
+      Date: Fri, 09 Dec 2022 22:44:12 GMT
+      Expires: '-1'
+      Pragma: no-cache
+      Server: nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding: chunked
+      Vary: Accept-Encoding
+      X-Cache-Status: MISS
+    status:
+      code: 200
+      message: OK
+    url: https://api.jikan.moe/v4/anime?q=naruto&genre=1,2&genre_exclude=True&limit=2
+version: 1

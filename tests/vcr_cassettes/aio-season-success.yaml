@@ -1,0 +1,664 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.jikan.moe/v4/seasons/2018/winter
+  response:
+    body:
+      string: '{"pagination":{"last_visible_page":3,"has_next_page":true,"current_page":1,"items":{"count":25,"total":58,"per_page":25}},"data":[{"mal_id":33352,"url":"https:\/\/myanimelist.net\/anime\/33352\/Violet_Evergarden","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1795\/95088.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1795\/95088t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1795\/95088l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1795\/95088.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1795\/95088t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1795\/95088l.webp"}},"trailer":{"youtube_id":"g5xWqjFglsk","url":"https:\/\/www.youtube.com\/watch?v=g5xWqjFglsk","embed_url":"https:\/\/www.youtube.com\/embed\/g5xWqjFglsk?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/g5xWqjFglsk\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/g5xWqjFglsk\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/g5xWqjFglsk\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/g5xWqjFglsk\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/g5xWqjFglsk\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Violet
+        Evergarden"},{"type":"Japanese","title":"\u30f4\u30a1\u30a4\u30aa\u30ec\u30c3\u30c8\u30fb\u30a8\u30f4\u30a1\u30fc\u30ac\u30fc\u30c7\u30f3"},{"type":"English","title":"Violet
+        Evergarden"}],"title":"Violet Evergarden","title_english":"Violet Evergarden","title_japanese":"\u30f4\u30a1\u30a4\u30aa\u30ec\u30c3\u30c8\u30fb\u30a8\u30f4\u30a1\u30fc\u30ac\u30fc\u30c7\u30f3","title_synonyms":[],"type":"TV","source":"Light
+        novel","episodes":13,"status":"Finished Airing","airing":false,"aired":{"from":"2018-01-11T00:00:00+00:00","to":"2018-04-05T00:00:00+00:00","prop":{"from":{"day":11,"month":1,"year":2018},"to":{"day":5,"month":4,"year":2018}},"string":"Jan
+        11, 2018 to Apr 5, 2018"},"duration":"24 min per ep","rating":"PG-13 - Teens
+        13 or older","score":8.67,"scored_by":868349,"rank":60,"popularity":51,"members":1589845,"favorites":54874,"synopsis":"The
+        Great War finally came to an end after four long years of conflict; fractured
+        in two, the continent of Telesis slowly began to flourish once again. Caught
+        up in the bloodshed was Violet Evergarden, a young girl raised for the sole
+        purpose of decimating enemy lines. Hospitalized and maimed in a bloody skirmish
+        during the War''s final leg, she was left with only words from the person
+        she held dearest, but with no understanding of their meaning.\n\nRecovering
+        from her wounds, Violet starts a new life working at CH Postal Services after
+        a falling out with her new intended guardian family. There, she witnesses
+        by pure chance the work of an \"Auto Memory Doll,\" amanuenses that transcribe
+        people''s thoughts and feelings into words on paper. Moved by the notion,
+        Violet begins work as an Auto Memory Doll, a trade that will take her on an
+        adventure, one that will reshape the lives of her clients and hopefully lead
+        to self-discovery.\n\n[Written by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Thursdays","time":"00:00","timezone":"Asia\/Tokyo","string":"Thursdays
+        at 00:00 (JST)"},"producers":[{"mal_id":104,"type":"anime","name":"Lantis","url":"https:\/\/myanimelist.net\/anime\/producer\/104\/Lantis"},{"mal_id":144,"type":"anime","name":"Pony
+        Canyon","url":"https:\/\/myanimelist.net\/anime\/producer\/144\/Pony_Canyon"},{"mal_id":211,"type":"anime","name":"Rakuonsha","url":"https:\/\/myanimelist.net\/anime\/producer\/211\/Rakuonsha"},{"mal_id":1500,"type":"anime","name":"ABC
+        Animation","url":"https:\/\/myanimelist.net\/anime\/producer\/1500\/ABC_Animation"}],"licensors":[{"mal_id":102,"type":"anime","name":"Funimation","url":"https:\/\/myanimelist.net\/anime\/producer\/102\/Funimation"}],"studios":[{"mal_id":2,"type":"anime","name":"Kyoto
+        Animation","url":"https:\/\/myanimelist.net\/anime\/producer\/2\/Kyoto_Animation"}],"genres":[{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[],"demographics":[]},{"mal_id":35849,"url":"https:\/\/myanimelist.net\/anime\/35849\/Darling_in_the_FranXX","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1614\/90408.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1614\/90408t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1614\/90408l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1614\/90408.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1614\/90408t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1614\/90408l.webp"}},"trailer":{"youtube_id":"giD4G9qlzDs","url":"https:\/\/www.youtube.com\/watch?v=giD4G9qlzDs","embed_url":"https:\/\/www.youtube.com\/embed\/giD4G9qlzDs?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/giD4G9qlzDs\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/giD4G9qlzDs\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/giD4G9qlzDs\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/giD4G9qlzDs\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/giD4G9qlzDs\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Darling
+        in the FranXX"},{"type":"Japanese","title":"\u30c0\u30fc\u30ea\u30f3\u30fb\u30a4\u30f3\u30fb\u30b6\u30fb\u30d5\u30e9\u30f3\u30ad\u30b9"},{"type":"English","title":"DARLING
+        in the FRANXX"},{"type":"German","title":"Darling in the Franxx"},{"type":"Spanish","title":"Darling
+        in The FranXX"}],"title":"Darling in the FranXX","title_english":"DARLING
+        in the FRANXX","title_japanese":"\u30c0\u30fc\u30ea\u30f3\u30fb\u30a4\u30f3\u30fb\u30b6\u30fb\u30d5\u30e9\u30f3\u30ad\u30b9","title_synonyms":[],"type":"TV","source":"Original","episodes":24,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-13T00:00:00+00:00","to":"2018-07-07T00:00:00+00:00","prop":{"from":{"day":13,"month":1,"year":2018},"to":{"day":7,"month":7,"year":2018}},"string":"Jan
+        13, 2018 to Jul 7, 2018"},"duration":"24 min per ep","rating":"PG-13 - Teens
+        13 or older","score":7.22,"scored_by":928473,"rank":2928,"popularity":63,"members":1491018,"favorites":30107,"synopsis":"In
+        the distant future, humanity has been driven to near-extinction by giant beasts
+        known as Klaxosaurs, forcing the surviving humans to take refuge in massive
+        fortress cities called Plantations. Children raised here are trained to pilot
+        giant mechas known as FranXX\u2014the only weapons known to be effective against
+        the Klaxosaurs\u2014in boy-girl pairs. Bred for the sole purpose of piloting
+        these machines, these children know nothing of the outside world and are only
+        able to prove their existence by defending their race.  \n\nHiro, an aspiring
+        FranXX pilot, has lost his motivation and self-confidence after failing an
+        aptitude test. Skipping out on his class'' graduation ceremony, Hiro retreats
+        to a forest lake, where he encounters a mysterious girl with two horns growing
+        out of her head. She introduces herself by her codename Zero Two, which is
+        known to belong to an infamous FranXX pilot known as the \"Partner Killer.\"
+        Before Hiro can digest the encounter, the Plantation is rocked by a sudden
+        Klaxosaur attack. Zero Two engages the creature in her FranXX, but it is heavily
+        damaged in the skirmish and crashes near Hiro. Finding her partner dead, Zero
+        Two invites Hiro to pilot the mecha with her, and the duo easily defeats the
+        Klaxosaur in the ensuing fight. With a new partner by his side, Hiro has been
+        given a chance at redemption for his past failures, but at what cost?\n\n[Written
+        by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Saturdays","time":"23:30","timezone":"Asia\/Tokyo","string":"Saturdays
+        at 23:30 (JST)"},"producers":[{"mal_id":17,"type":"anime","name":"Aniplex","url":"https:\/\/myanimelist.net\/anime\/producer\/17\/Aniplex"},{"mal_id":47,"type":"anime","name":"Khara","url":"https:\/\/myanimelist.net\/anime\/producer\/47\/Khara"},{"mal_id":166,"type":"anime","name":"Movic","url":"https:\/\/myanimelist.net\/anime\/producer\/166\/Movic"},{"mal_id":539,"type":"anime","name":"Ultra
+        Super Pictures","url":"https:\/\/myanimelist.net\/anime\/producer\/539\/Ultra_Super_Pictures"},{"mal_id":1123,"type":"anime","name":"Lucent
+        Pictures Entertainment","url":"https:\/\/myanimelist.net\/anime\/producer\/1123\/Lucent_Pictures_Entertainment"},{"mal_id":1211,"type":"anime","name":"Tokyo
+        MX","url":"https:\/\/myanimelist.net\/anime\/producer\/1211\/Tokyo_MX"},{"mal_id":1366,"type":"anime","name":"Nagoya
+        Broadcasting Network","url":"https:\/\/myanimelist.net\/anime\/producer\/1366\/Nagoya_Broadcasting_Network"},{"mal_id":1415,"type":"anime","name":"Asahi
+        Broadcasting","url":"https:\/\/myanimelist.net\/anime\/producer\/1415\/Asahi_Broadcasting"},{"mal_id":1416,"type":"anime","name":"BS11","url":"https:\/\/myanimelist.net\/anime\/producer\/1416\/BS11"},{"mal_id":1496,"type":"anime","name":"Lawson","url":"https:\/\/myanimelist.net\/anime\/producer\/1496\/Lawson"},{"mal_id":1500,"type":"anime","name":"ABC
+        Animation","url":"https:\/\/myanimelist.net\/anime\/producer\/1500\/ABC_Animation"},{"mal_id":2018,"type":"anime","name":"Rialto
+        Entertainment","url":"https:\/\/myanimelist.net\/anime\/producer\/2018\/Rialto_Entertainment"}],"licensors":[{"mal_id":102,"type":"anime","name":"Funimation","url":"https:\/\/myanimelist.net\/anime\/producer\/102\/Funimation"}],"studios":[{"mal_id":56,"type":"anime","name":"A-1
+        Pictures","url":"https:\/\/myanimelist.net\/anime\/producer\/56\/A-1_Pictures"},{"mal_id":803,"type":"anime","name":"Trigger","url":"https:\/\/myanimelist.net\/anime\/producer\/803\/Trigger"},{"mal_id":1835,"type":"anime","name":"CloverWorks","url":"https:\/\/myanimelist.net\/anime\/producer\/1835\/CloverWorks"}],"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":24,"type":"anime","name":"Sci-Fi","url":"https:\/\/myanimelist.net\/anime\/genre\/24\/Sci-Fi"}],"explicit_genres":[],"themes":[{"mal_id":18,"type":"anime","name":"Mecha","url":"https:\/\/myanimelist.net\/anime\/genre\/18\/Mecha"}],"demographics":[]},{"mal_id":34577,"url":"https:\/\/myanimelist.net\/anime\/34577\/Nanatsu_no_Taizai__Imashime_no_Fukkatsu","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/90089.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/90089t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/90089l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/90089.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/90089t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/90089l.webp"}},"trailer":{"youtube_id":"lgkv0Lqr-Iw","url":"https:\/\/www.youtube.com\/watch?v=lgkv0Lqr-Iw","embed_url":"https:\/\/www.youtube.com\/embed\/lgkv0Lqr-Iw?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/lgkv0Lqr-Iw\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/lgkv0Lqr-Iw\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/lgkv0Lqr-Iw\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/lgkv0Lqr-Iw\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/lgkv0Lqr-Iw\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Nanatsu
+        no Taizai: Imashime no Fukkatsu"},{"type":"Synonym","title":"Seven Deadly
+        Sins Season 2"},{"type":"Japanese","title":"\u4e03\u3064\u306e\u5927\u7f6a
+        \u6212\u3081\u306e\u5fa9\u6d3b"},{"type":"English","title":"The Seven Deadly
+        Sins: Revival of the Commandments"},{"type":"German","title":"The Seven Deadly
+        Sins"},{"type":"Spanish","title":"The Seven Deadly Sins: La Resurrecci\u00f3n
+        de los Diez Mandamientos"},{"type":"French","title":"The Seven Deadly Sins"}],"title":"Nanatsu
+        no Taizai: Imashime no Fukkatsu","title_english":"The Seven Deadly Sins: Revival
+        of the Commandments","title_japanese":"\u4e03\u3064\u306e\u5927\u7f6a \u6212\u3081\u306e\u5fa9\u6d3b","title_synonyms":["Seven
+        Deadly Sins Season 2"],"type":"TV","source":"Manga","episodes":24,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-13T00:00:00+00:00","to":"2018-06-30T00:00:00+00:00","prop":{"from":{"day":13,"month":1,"year":2018},"to":{"day":30,"month":6,"year":2018}},"string":"Jan
+        13, 2018 to Jun 30, 2018"},"duration":"24 min per ep","rating":"PG-13 - Teens
+        13 or older","score":7.61,"scored_by":651753,"rank":1351,"popularity":126,"members":1038997,"favorites":3758,"synopsis":"The
+        fierce battle between Meliodas, the captain of the Seven Deadly Sins, and
+        the Great Holy Knight Hendrickson has devastating consequences. Armed with
+        the fragments necessary for the revival of the Demon Clan, Hendrickson breaks
+        the seal, allowing the Commandments to escape, all of whom are mighty warriors
+        working directly under the Demon King himself. Through a mysterious connection,
+        Meliodas instantly identifies them; likewise, the 10 Commandments, too, seem
+        to sense his presence.\n\nAs the demons leave a path of destruction in their
+        wake, the Seven Deadly Sins must find a way to stop them before the Demon
+        Clan drowns Britannia in blood and terror.\n\n[Written by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Saturdays","time":"06:30","timezone":"Asia\/Tokyo","string":"Saturdays
+        at 06:30 (JST)"},"producers":[{"mal_id":17,"type":"anime","name":"Aniplex","url":"https:\/\/myanimelist.net\/anime\/producer\/17\/Aniplex"},{"mal_id":53,"type":"anime","name":"Dentsu","url":"https:\/\/myanimelist.net\/anime\/producer\/53\/Dentsu"},{"mal_id":159,"type":"anime","name":"Kodansha","url":"https:\/\/myanimelist.net\/anime\/producer\/159\/Kodansha"},{"mal_id":166,"type":"anime","name":"Movic","url":"https:\/\/myanimelist.net\/anime\/producer\/166\/Movic"},{"mal_id":1345,"type":"anime","name":"Sammy","url":"https:\/\/myanimelist.net\/anime\/producer\/1345\/Sammy"}],"licensors":[],"studios":[{"mal_id":56,"type":"anime","name":"A-1
+        Pictures","url":"https:\/\/myanimelist.net\/anime\/producer\/56\/A-1_Pictures"}],"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[],"demographics":[{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}]},{"mal_id":35073,"url":"https:\/\/myanimelist.net\/anime\/35073\/Overlord_II","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1212\/113415.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1212\/113415t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1212\/113415l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1212\/113415.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1212\/113415t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1212\/113415l.webp"}},"trailer":{"youtube_id":"p2ksX48PBQY","url":"https:\/\/www.youtube.com\/watch?v=p2ksX48PBQY","embed_url":"https:\/\/www.youtube.com\/embed\/p2ksX48PBQY?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/p2ksX48PBQY\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/p2ksX48PBQY\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/p2ksX48PBQY\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/p2ksX48PBQY\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/p2ksX48PBQY\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Overlord
+        II"},{"type":"Japanese","title":"\u30aa\u30fc\u30d0\u30fc\u30ed\u30fc\u30c9\u2161"},{"type":"English","title":"Overlord
+        II"}],"title":"Overlord II","title_english":"Overlord II","title_japanese":"\u30aa\u30fc\u30d0\u30fc\u30ed\u30fc\u30c9\u2161","title_synonyms":[],"type":"TV","source":"Light
+        novel","episodes":13,"status":"Finished Airing","airing":false,"aired":{"from":"2018-01-09T00:00:00+00:00","to":"2018-04-03T00:00:00+00:00","prop":{"from":{"day":9,"month":1,"year":2018},"to":{"day":3,"month":4,"year":2018}},"string":"Jan
+        9, 2018 to Apr 3, 2018"},"duration":"23 min per ep","rating":"R - 17+ (violence
+        & profanity)","score":7.76,"scored_by":572563,"rank":981,"popularity":152,"members":913342,"favorites":4197,"synopsis":"Ainz
+        Ooal Gown, the undead sorcerer formerly known as Momonga, has accepted his
+        place in this new world. Though it bears similarities to his beloved virtual
+        reality game Yggdrasil, it still holds many mysteries which he intends to
+        uncover, by utilizing his power as ruler of the Great Tomb of Nazarick. However,
+        ever since the disastrous brainwashing of one of his subordinates, Ainz has
+        become wary of the impending dangers of the Slane Theocracy, as well as the
+        possible existence of other former Yggdrasil players. Meanwhile, Albedo, Demiurge
+        and the rest of Ainz''s loyal guardians set out to prepare for the next step
+        in their campaign: Nazarick''s first war\u2026\n\nOverlord II picks up immediately
+        after its prequel, continuing the story of Ainz Ooal Gown, his eclectic army
+        of human-hating guardians, and the many hapless humans affected by the Overlord''s
+        arrival.\n\n[Written by MAL Rewrite]","background":"Overlord adapts novels
+        4 to 6 of Kugane Maruyama''s light novel series of the same name.","season":"winter","year":2018,"broadcast":{"day":"Tuesdays","time":"22:30","timezone":"Asia\/Tokyo","string":"Tuesdays
+        at 22:30 (JST)"},"producers":[{"mal_id":238,"type":"anime","name":"AT-X","url":"https:\/\/myanimelist.net\/anime\/producer\/238\/AT-X"},{"mal_id":392,"type":"anime","name":"Enterbrain","url":"https:\/\/myanimelist.net\/anime\/producer\/392\/Enterbrain"},{"mal_id":1254,"type":"anime","name":"Grooove","url":"https:\/\/myanimelist.net\/anime\/producer\/1254\/Grooove"},{"mal_id":1333,"type":"anime","name":"Hakuhodo
+        DY Music & Pictures","url":"https:\/\/myanimelist.net\/anime\/producer\/1333\/Hakuhodo_DY_Music___Pictures"},{"mal_id":1614,"type":"anime","name":"NTT
+        Plala","url":"https:\/\/myanimelist.net\/anime\/producer\/1614\/NTT_Plala"},{"mal_id":1696,"type":"anime","name":"Kadokawa","url":"https:\/\/myanimelist.net\/anime\/producer\/1696\/Kadokawa"}],"licensors":[{"mal_id":102,"type":"anime","name":"Funimation","url":"https:\/\/myanimelist.net\/anime\/producer\/102\/Funimation"}],"studios":[{"mal_id":11,"type":"anime","name":"Madhouse","url":"https:\/\/myanimelist.net\/anime\/producer\/11\/Madhouse"}],"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[{"mal_id":62,"type":"anime","name":"Isekai","url":"https:\/\/myanimelist.net\/anime\/genre\/62\/Isekai"},{"mal_id":79,"type":"anime","name":"Video
+        Game","url":"https:\/\/myanimelist.net\/anime\/genre\/79\/Video_Game"}],"demographics":[]},{"mal_id":34612,"url":"https:\/\/myanimelist.net\/anime\/34612\/Saiki_Kusuo_no_\u03a8-nan_2","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1961\/91383.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1961\/91383t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1961\/91383l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1961\/91383.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1961\/91383t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1961\/91383l.webp"}},"trailer":{"youtube_id":"Aha1TjvvEUs","url":"https:\/\/www.youtube.com\/watch?v=Aha1TjvvEUs","embed_url":"https:\/\/www.youtube.com\/embed\/Aha1TjvvEUs?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/Aha1TjvvEUs\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/Aha1TjvvEUs\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/Aha1TjvvEUs\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/Aha1TjvvEUs\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/Aha1TjvvEUs\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Saiki
+        Kusuo no \u03a8-nan 2"},{"type":"Synonym","title":"Saiki Kusuo no Psi Nan
+        2"},{"type":"Japanese","title":"\u6589\u6728\u6960\u96c4\u306e\u03a8\u96e3
+        2"},{"type":"English","title":"The Disastrous Life of Saiki K. 2"},{"type":"Spanish","title":"The
+        Disastrous Life of Saiki K. Temporada 2"}],"title":"Saiki Kusuo no \u03a8-nan
+        2","title_english":"The Disastrous Life of Saiki K. 2","title_japanese":"\u6589\u6728\u6960\u96c4\u306e\u03a8\u96e3
+        2","title_synonyms":["Saiki Kusuo no Psi Nan 2"],"type":"TV","source":"Manga","episodes":24,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-17T00:00:00+00:00","to":"2018-06-27T00:00:00+00:00","prop":{"from":{"day":17,"month":1,"year":2018},"to":{"day":27,"month":6,"year":2018}},"string":"Jan
+        17, 2018 to Jun 27, 2018"},"duration":"24 min per ep","rating":"PG-13 - Teens
+        13 or older","score":8.43,"scored_by":342844,"rank":161,"popularity":331,"members":572135,"favorites":3967,"synopsis":"The
+        disastrous life of the gifted psychic Kusuo Saiki continues, despite his utmost
+        effort to live an ordinary life. Although he has certainly grown accustomed
+        to dealing with his troublesome friends\u2014who are his biggest hurdle to
+        achieving a peaceful life\u2014he still has a long way to go. Also joining
+        the usual oddballs are a few new faces whose shenanigans add to Saiki''s misery,
+        making his dreams of a hassle-free life a distant fantasy.\n\n[Written by
+        MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Wednesdays","time":"01:35","timezone":"Asia\/Tokyo","string":"Wednesdays
+        at 01:35 (JST)"},"producers":[{"mal_id":16,"type":"anime","name":"TV Tokyo","url":"https:\/\/myanimelist.net\/anime\/producer\/16\/TV_Tokyo"},{"mal_id":62,"type":"anime","name":"Shogakukan-Shueisha
+        Productions","url":"https:\/\/myanimelist.net\/anime\/producer\/62\/Shogakukan-Shueisha_Productions"},{"mal_id":323,"type":"anime","name":"Nippon
+        Columbia","url":"https:\/\/myanimelist.net\/anime\/producer\/323\/Nippon_Columbia"},{"mal_id":460,"type":"anime","name":"KlockWorx","url":"https:\/\/myanimelist.net\/anime\/producer\/460\/KlockWorx"},{"mal_id":517,"type":"anime","name":"Asmik
+        Ace","url":"https:\/\/myanimelist.net\/anime\/producer\/517\/Asmik_Ace"},{"mal_id":1233,"type":"anime","name":"Bandai
+        Namco Entertainment","url":"https:\/\/myanimelist.net\/anime\/producer\/1233\/Bandai_Namco_Entertainment"},{"mal_id":1365,"type":"anime","name":"Shueisha","url":"https:\/\/myanimelist.net\/anime\/producer\/1365\/Shueisha"},{"mal_id":1390,"type":"anime","name":"Toy''s
+        Factory","url":"https:\/\/myanimelist.net\/anime\/producer\/1390\/Toys_Factory"},{"mal_id":1803,"type":"anime","name":"Dear
+        Stage inc.","url":"https:\/\/myanimelist.net\/anime\/producer\/1803\/Dear_Stage_inc"}],"licensors":[],"studios":[{"mal_id":7,"type":"anime","name":"J.C.Staff","url":"https:\/\/myanimelist.net\/anime\/producer\/7\/JCStaff"},{"mal_id":1444,"type":"anime","name":"Egg
+        Firm","url":"https:\/\/myanimelist.net\/anime\/producer\/1444\/Egg_Firm"}],"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"explicit_genres":[],"themes":[{"mal_id":57,"type":"anime","name":"Gag
+        Humor","url":"https:\/\/myanimelist.net\/anime\/genre\/57\/Gag_Humor"},{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"},{"mal_id":31,"type":"anime","name":"Super
+        Power","url":"https:\/\/myanimelist.net\/anime\/genre\/31\/Super_Power"}],"demographics":[{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}]},{"mal_id":35860,"url":"https:\/\/myanimelist.net\/anime\/35860\/Karakai_Jouzu_no_Takagi-san","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1591\/95091.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1591\/95091t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1591\/95091l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1591\/95091.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1591\/95091t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1591\/95091l.webp"}},"trailer":{"youtube_id":"g4VJra3sLMg","url":"https:\/\/www.youtube.com\/watch?v=g4VJra3sLMg","embed_url":"https:\/\/www.youtube.com\/embed\/g4VJra3sLMg?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/g4VJra3sLMg\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/g4VJra3sLMg\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/g4VJra3sLMg\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/g4VJra3sLMg\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/g4VJra3sLMg\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Karakai
+        Jouzu no Takagi-san"},{"type":"Synonym","title":"Skilled Teaser Takagi-san"},{"type":"Japanese","title":"\u304b\u3089\u304b\u3044\u4e0a\u624b\u306e\u9ad8\u6728\u3055\u3093"},{"type":"English","title":"Teasing
+        Master Takagi-san"},{"type":"German","title":"Karakai Jozu No Takagi-san"},{"type":"Spanish","title":"Takagi-san:
+        Experta en Bromas pesadas"}],"title":"Karakai Jouzu no Takagi-san","title_english":"Teasing
+        Master Takagi-san","title_japanese":"\u304b\u3089\u304b\u3044\u4e0a\u624b\u306e\u9ad8\u6728\u3055\u3093","title_synonyms":["Skilled
+        Teaser Takagi-san"],"type":"TV","source":"Manga","episodes":12,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-08T00:00:00+00:00","to":"2018-03-26T00:00:00+00:00","prop":{"from":{"day":8,"month":1,"year":2018},"to":{"day":26,"month":3,"year":2018}},"string":"Jan
+        8, 2018 to Mar 26, 2018"},"duration":"23 min per ep","rating":"PG-13 - Teens
+        13 or older","score":7.71,"scored_by":270571,"rank":1119,"popularity":350,"members":537695,"favorites":4874,"synopsis":"Having
+        a friend that knows you inside out should be a good thing, but in Nishikata''s
+        case, the opposite is true.\n\nHis classmate Takagi loves to tease him on
+        a daily basis, and she uses her extensive knowledge of his behavior to predict
+        exactly how he will react to her teasing, making it nearly impossible for
+        Nishikata to ever make a successful comeback. Despite this, Nishikata vows
+        to someday give Takagi a taste of her own medicine by making her blush out
+        of embarrassment from his teasing.\n\n[Written by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Mondays","time":"23:00","timezone":"Asia\/Tokyo","string":"Mondays
+        at 23:00 (JST)"},"producers":[{"mal_id":73,"type":"anime","name":"TMS Entertainment","url":"https:\/\/myanimelist.net\/anime\/producer\/73\/TMS_Entertainment"},{"mal_id":142,"type":"anime","name":"Asatsu
+        DK","url":"https:\/\/myanimelist.net\/anime\/producer\/142\/Asatsu_DK"},{"mal_id":517,"type":"anime","name":"Asmik
+        Ace","url":"https:\/\/myanimelist.net\/anime\/producer\/517\/Asmik_Ace"},{"mal_id":1143,"type":"anime","name":"TOHO
+        animation","url":"https:\/\/myanimelist.net\/anime\/producer\/1143\/TOHO_animation"},{"mal_id":1501,"type":"anime","name":"JR
+        East Marketing & Communications","url":"https:\/\/myanimelist.net\/anime\/producer\/1501\/JR_East_Marketing___Communications"}],"licensors":[{"mal_id":102,"type":"anime","name":"Funimation","url":"https:\/\/myanimelist.net\/anime\/producer\/102\/Funimation"}],"studios":[{"mal_id":247,"type":"anime","name":"Shin-Ei
+        Animation","url":"https:\/\/myanimelist.net\/anime\/producer\/247\/Shin-Ei_Animation"}],"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"}],"explicit_genres":[],"themes":[{"mal_id":63,"type":"anime","name":"Iyashikei","url":"https:\/\/myanimelist.net\/anime\/genre\/63\/Iyashikei"},{"mal_id":74,"type":"anime","name":"Romantic
+        Subtext","url":"https:\/\/myanimelist.net\/anime\/genre\/74\/Romantic_Subtext"},{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"}],"demographics":[{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}]},{"mal_id":34382,"url":"https:\/\/myanimelist.net\/anime\/34382\/Citrus","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/89985.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/89985t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/89985l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/89985.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/89985t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/11\/89985l.webp"}},"trailer":{"youtube_id":"33WrHNSoxdY","url":"https:\/\/www.youtube.com\/watch?v=33WrHNSoxdY","embed_url":"https:\/\/www.youtube.com\/embed\/33WrHNSoxdY?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/33WrHNSoxdY\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/33WrHNSoxdY\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/33WrHNSoxdY\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/33WrHNSoxdY\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/33WrHNSoxdY\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Citrus"},{"type":"Japanese","title":"\u30b7\u30c8\u30e9\u30b9"},{"type":"English","title":"Citrus"}],"title":"Citrus","title_english":"Citrus","title_japanese":"\u30b7\u30c8\u30e9\u30b9","title_synonyms":[],"type":"TV","source":"Manga","episodes":12,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-06T00:00:00+00:00","to":"2018-03-24T00:00:00+00:00","prop":{"from":{"day":6,"month":1,"year":2018},"to":{"day":24,"month":3,"year":2018}},"string":"Jan
+        6, 2018 to Mar 24, 2018"},"duration":"23 min per ep","rating":"PG-13 - Teens
+        13 or older","score":6.46,"scored_by":253090,"rank":6765,"popularity":404,"members":474989,"favorites":3619,"synopsis":"During
+        the summer of her freshman year of high school, Yuzu Aihara''s mother remarried,
+        forcing her to transfer to a new school. To a fashionable socialite like Yuzu,
+        this inconvenient event is just another opportunity to make new friends, fall
+        in love, and finally experience a first kiss. Unfortunately, Yuzu''s dreams
+        and style do not conform with her new ultrastrict, all-girls school, filled
+        with obedient shut-ins and overachieving grade-skippers. Her gaudy appearance
+        manages to grab the attention of Mei Aihara, the beautiful and imposing student
+        council president, who immediately proceeds to sensually caress Yuzu''s body
+        in an effort to confiscate her cellphone.\n\nThoroughly exhausted from her
+        first day, Yuzu arrives home and discovers a shocking truth\u2014Mei is actually
+        her new step-sister! Though Yuzu initially tries to be friendly with her,
+        Mei''s cold shoulder routine forces Yuzu to begin teasing her. But before
+        Yuzu can finish her sentence, Mei forces her to the ground and kisses her,
+        with Yuzu desperately trying to break free. Once done, Mei storms out of the
+        room, leaving Yuzu to ponder the true nature of her first kiss, and the secrets
+        behind the tortured expression in the eyes of her new sister.\n\n[Written
+        by MAL Rewrite]","background":"Citrus adapts the first 4 volumes of Saburota''s
+        manga series by the same title.","season":"winter","year":2018,"broadcast":{"day":"Saturdays","time":"23:30","timezone":"Asia\/Tokyo","string":"Saturdays
+        at 23:30 (JST)"},"producers":[{"mal_id":64,"type":"anime","name":"Sotsu","url":"https:\/\/myanimelist.net\/anime\/producer\/64\/Sotsu"},{"mal_id":104,"type":"anime","name":"Lantis","url":"https:\/\/myanimelist.net\/anime\/producer\/104\/Lantis"},{"mal_id":238,"type":"anime","name":"AT-X","url":"https:\/\/myanimelist.net\/anime\/producer\/238\/AT-X"},{"mal_id":460,"type":"anime","name":"KlockWorx","url":"https:\/\/myanimelist.net\/anime\/producer\/460\/KlockWorx"},{"mal_id":787,"type":"anime","name":"Happinet
+        Pictures","url":"https:\/\/myanimelist.net\/anime\/producer\/787\/Happinet_Pictures"},{"mal_id":843,"type":"anime","name":"BS
+        Fuji","url":"https:\/\/myanimelist.net\/anime\/producer\/843\/BS_Fuji"},{"mal_id":1211,"type":"anime","name":"Tokyo
+        MX","url":"https:\/\/myanimelist.net\/anime\/producer\/1211\/Tokyo_MX"},{"mal_id":1386,"type":"anime","name":"Infinite","url":"https:\/\/myanimelist.net\/anime\/producer\/1386\/Infinite"},{"mal_id":1407,"type":"anime","name":"Children''s
+        Playground Entertainment","url":"https:\/\/myanimelist.net\/anime\/producer\/1407\/Childrens_Playground_Entertainment"},{"mal_id":1582,"type":"anime","name":"Ichijinsha","url":"https:\/\/myanimelist.net\/anime\/producer\/1582\/Ichijinsha"},{"mal_id":1784,"type":"anime","name":"Crunchyroll
+        SC Anime Fund","url":"https:\/\/myanimelist.net\/anime\/producer\/1784\/Crunchyroll_SC_Anime_Fund"}],"licensors":[{"mal_id":102,"type":"anime","name":"Funimation","url":"https:\/\/myanimelist.net\/anime\/producer\/102\/Funimation"}],"studios":[{"mal_id":911,"type":"anime","name":"Passione","url":"https:\/\/myanimelist.net\/anime\/producer\/911\/Passione"}],"genres":[{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":26,"type":"anime","name":"Girls
+        Love","url":"https:\/\/myanimelist.net\/anime\/genre\/26\/Girls_Love"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"}],"explicit_genres":[],"themes":[{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"}],"demographics":[]},{"mal_id":35839,"url":"https:\/\/myanimelist.net\/anime\/35839\/Sora_yori_mo_Tooi_Basho","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/89879.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/89879t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/89879l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/89879.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/89879t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/6\/89879l.webp"}},"trailer":{"youtube_id":"jFgvK5BzGck","url":"https:\/\/www.youtube.com\/watch?v=jFgvK5BzGck","embed_url":"https:\/\/www.youtube.com\/embed\/jFgvK5BzGck?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/jFgvK5BzGck\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/jFgvK5BzGck\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/jFgvK5BzGck\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/jFgvK5BzGck\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/jFgvK5BzGck\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Sora
+        yori mo Tooi Basho"},{"type":"Synonym","title":"Uchuu yori mo Tooi Basho"},{"type":"Synonym","title":"A
+        Story That Leads to the Antarctica"},{"type":"Synonym","title":"Yorimoi"},{"type":"Japanese","title":"\u5b87\u5b99\u3088\u308a\u3082\u9060\u3044\u5834\u6240"},{"type":"English","title":"A
+        Place Further Than The Universe"},{"type":"German","title":"A Place Further
+        Than the Universe"},{"type":"Spanish","title":"A Place Further than the Universe"},{"type":"French","title":"A
+        Place Further Than The Universe"}],"title":"Sora yori mo Tooi Basho","title_english":"A
+        Place Further Than The Universe","title_japanese":"\u5b87\u5b99\u3088\u308a\u3082\u9060\u3044\u5834\u6240","title_synonyms":["Uchuu
+        yori mo Tooi Basho","A Story That Leads to the Antarctica","Yorimoi"],"type":"TV","source":"Original","episodes":13,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-02T00:00:00+00:00","to":"2018-03-27T00:00:00+00:00","prop":{"from":{"day":2,"month":1,"year":2018},"to":{"day":27,"month":3,"year":2018}},"string":"Jan
+        2, 2018 to Mar 27, 2018"},"duration":"23 min per ep","rating":"PG-13 - Teens
+        13 or older","score":8.53,"scored_by":198721,"rank":109,"popularity":418,"members":458254,"favorites":13136,"synopsis":"Filled
+        with an overwhelming sense of wonder for the world around her, Mari Tamaki
+        has always dreamt of what lies beyond the reaches of the universe. However,
+        despite harboring such large aspirations on the inside, her fear of the unknown
+        and anxiety over her own possible limitations have always held her back from
+        chasing them. But now, in her second year of high school, Mari is more determined
+        than ever to not let any more of her youth go to waste. Still, her fear continues
+        to prevent her from taking that ambitious step forward\u2014that is, until
+        she has a chance encounter with a girl who has grand dreams of her own.\n\nSpurred
+        by her mother''s disappearance, Shirase Kobuchizawa has been working hard
+        to fund her trip to Antarctica. Despite facing doubt and ridicule from virtually
+        everyone, Shirase is determined to embark on this expedition to search for
+        her mother in a place further than the universe itself. Inspired by Shirase''s
+        resolve, Mari jumps at the chance to join her. Soon, their efforts attract
+        the attention of the bubbly Hinata Miyake, who is eager to stand out, and
+        Yuzuki Shiraishi, a polite girl from a high class background. Together, they
+        set sail toward the frozen south.\n\nSora yori mo Tooi Basho follows the captivating
+        journey of four spirited girls, all in search of something great.\n\n[Written
+        by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Tuesdays","time":"20:30","timezone":"Asia\/Tokyo","string":"Tuesdays
+        at 20:30 (JST)"},"producers":[{"mal_id":108,"type":"anime","name":"Media Factory","url":"https:\/\/myanimelist.net\/anime\/producer\/108\/Media_Factory"},{"mal_id":166,"type":"anime","name":"Movic","url":"https:\/\/myanimelist.net\/anime\/producer\/166\/Movic"},{"mal_id":238,"type":"anime","name":"AT-X","url":"https:\/\/myanimelist.net\/anime\/producer\/238\/AT-X"},{"mal_id":737,"type":"anime","name":"Sony
+        Music Communications","url":"https:\/\/myanimelist.net\/anime\/producer\/737\/Sony_Music_Communications"},{"mal_id":1334,"type":"anime","name":"Docomo
+        Anime Store","url":"https:\/\/myanimelist.net\/anime\/producer\/1334\/Docomo_Anime_Store"},{"mal_id":1551,"type":"anime","name":"Kadokawa
+        Media House","url":"https:\/\/myanimelist.net\/anime\/producer\/1551\/Kadokawa_Media_House"},{"mal_id":1696,"type":"anime","name":"Kadokawa","url":"https:\/\/myanimelist.net\/anime\/producer\/1696\/Kadokawa"},{"mal_id":1779,"type":"anime","name":"NewGin","url":"https:\/\/myanimelist.net\/anime\/producer\/1779\/NewGin"},{"mal_id":1784,"type":"anime","name":"Crunchyroll
+        SC Anime Fund","url":"https:\/\/myanimelist.net\/anime\/producer\/1784\/Crunchyroll_SC_Anime_Fund"}],"licensors":[],"studios":[{"mal_id":11,"type":"anime","name":"Madhouse","url":"https:\/\/myanimelist.net\/anime\/producer\/11\/Madhouse"}],"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"}],"explicit_genres":[],"themes":[],"demographics":[]},{"mal_id":34497,"url":"https:\/\/myanimelist.net\/anime\/34497\/Death_March_kara_Hajimaru_Isekai_Kyousoukyoku","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/88911.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/88911t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/88911l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/88911.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/88911t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/88911l.webp"}},"trailer":{"youtube_id":"0NzZvYIyb0c","url":"https:\/\/www.youtube.com\/watch?v=0NzZvYIyb0c","embed_url":"https:\/\/www.youtube.com\/embed\/0NzZvYIyb0c?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/0NzZvYIyb0c\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/0NzZvYIyb0c\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/0NzZvYIyb0c\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/0NzZvYIyb0c\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/0NzZvYIyb0c\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Death
+        March kara Hajimaru Isekai Kyousoukyoku"},{"type":"Japanese","title":"\u30c7\u30b9\u30de\u30fc\u30c1\u304b\u3089\u306f\u3058\u307e\u308b\u7570\u4e16\u754c\u72c2\u60f3\u66f2"},{"type":"English","title":"Death
+        March to the Parallel World Rhapsody"},{"type":"German","title":"Death March
+        to the Parallel World Rhapsody"},{"type":"Spanish","title":"Death March to
+        the Parallel World Rhapsody"},{"type":"French","title":"Death March to the
+        Parallel World Rhapsody"}],"title":"Death March kara Hajimaru Isekai Kyousoukyoku","title_english":"Death
+        March to the Parallel World Rhapsody","title_japanese":"\u30c7\u30b9\u30de\u30fc\u30c1\u304b\u3089\u306f\u3058\u307e\u308b\u7570\u4e16\u754c\u72c2\u60f3\u66f2","title_synonyms":[],"type":"TV","source":"Light
+        novel","episodes":12,"status":"Finished Airing","airing":false,"aired":{"from":"2018-01-11T00:00:00+00:00","to":"2018-03-29T00:00:00+00:00","prop":{"from":{"day":11,"month":1,"year":2018},"to":{"day":29,"month":3,"year":2018}},"string":"Jan
+        11, 2018 to Mar 29, 2018"},"duration":"23 min per ep","rating":"PG-13 - Teens
+        13 or older","score":6.46,"scored_by":262191,"rank":6769,"popularity":428,"members":451962,"favorites":1690,"synopsis":"Ichirou
+        Suzuki, a programmer nearing his thirties, is drowning in work. Worn out,
+        he eventually has a chance to catch up on sleep, only to wake up and discover
+        himself in a fantasy RPG world, which is mashed together from the games he
+        was debugging in reality. In this new place, he realizes that not only has
+        his appearance changed to a younger version of himself, but his name has also
+        changed to Satou, a nickname he used while running beta tests on games. \n\nHowever,
+        before Satou can fully grasp his situation, an army of lizardmen launch an
+        assault on him. Forced to cast a powerful spell in retaliation, Satou wipes
+        them out completely and his level is boosted to 310, effectively maximizing
+        his stats. Now, as a high-leveled adventurer armed with a plethora of skills
+        and no way to return to reality, Satou sets out to explore this magical new
+        world.\n\n[Written by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Thursdays","time":"23:30","timezone":"Asia\/Tokyo","string":"Thursdays
+        at 23:30 (JST)"},"producers":[{"mal_id":64,"type":"anime","name":"Sotsu","url":"https:\/\/myanimelist.net\/anime\/producer\/64\/Sotsu"},{"mal_id":238,"type":"anime","name":"AT-X","url":"https:\/\/myanimelist.net\/anime\/producer\/238\/AT-X"},{"mal_id":1039,"type":"anime","name":"DIVE
+        II Entertainment","url":"https:\/\/myanimelist.net\/anime\/producer\/1039\/DIVE_II_Entertainment"},{"mal_id":1211,"type":"anime","name":"Tokyo
+        MX","url":"https:\/\/myanimelist.net\/anime\/producer\/1211\/Tokyo_MX"},{"mal_id":1284,"type":"anime","name":"Avex
+        Pictures","url":"https:\/\/myanimelist.net\/anime\/producer\/1284\/Avex_Pictures"},{"mal_id":1416,"type":"anime","name":"BS11","url":"https:\/\/myanimelist.net\/anime\/producer\/1416\/BS11"},{"mal_id":1696,"type":"anime","name":"Kadokawa","url":"https:\/\/myanimelist.net\/anime\/producer\/1696\/Kadokawa"},{"mal_id":1787,"type":"anime","name":"KLab","url":"https:\/\/myanimelist.net\/anime\/producer\/1787\/KLab"}],"licensors":[{"mal_id":102,"type":"anime","name":"Funimation","url":"https:\/\/myanimelist.net\/anime\/producer\/102\/Funimation"}],"studios":[{"mal_id":300,"type":"anime","name":"SILVER
+        LINK.","url":"https:\/\/myanimelist.net\/anime\/producer\/300\/SILVER_LINK"},{"mal_id":957,"type":"anime","name":"Connect","url":"https:\/\/myanimelist.net\/anime\/producer\/957\/Connect"}],"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[{"mal_id":35,"type":"anime","name":"Harem","url":"https:\/\/myanimelist.net\/anime\/genre\/35\/Harem"},{"mal_id":62,"type":"anime","name":"Isekai","url":"https:\/\/myanimelist.net\/anime\/genre\/62\/Isekai"},{"mal_id":72,"type":"anime","name":"Reincarnation","url":"https:\/\/myanimelist.net\/anime\/genre\/72\/Reincarnation"}],"demographics":[]},{"mal_id":34798,"url":"https:\/\/myanimelist.net\/anime\/34798\/Yuru_Camp\u25b3","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/89877.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/89877t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/89877l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/89877.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/89877t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/89877l.webp"}},"trailer":{"youtube_id":"vpH42sJ8t9c","url":"https:\/\/www.youtube.com\/watch?v=vpH42sJ8t9c","embed_url":"https:\/\/www.youtube.com\/embed\/vpH42sJ8t9c?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/vpH42sJ8t9c\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/vpH42sJ8t9c\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/vpH42sJ8t9c\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/vpH42sJ8t9c\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/vpH42sJ8t9c\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Yuru
+        Camp\u25b3"},{"type":"Synonym","title":"Yurukyan"},{"type":"Japanese","title":"\u3086\u308b\u30ad\u30e3\u30f3\u25b3"},{"type":"English","title":"Laid-Back
+        Camp"},{"type":"German","title":"Laid-Back Camp"},{"type":"Spanish","title":"Laid-Back
+        Camp"},{"type":"French","title":"Laid-Back Camp - Au Grand Air"}],"title":"Yuru
+        Camp\u25b3","title_english":"Laid-Back Camp","title_japanese":"\u3086\u308b\u30ad\u30e3\u30f3\u25b3","title_synonyms":["Yurukyan"],"type":"TV","source":"Manga","episodes":12,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-04T00:00:00+00:00","to":"2018-03-22T00:00:00+00:00","prop":{"from":{"day":4,"month":1,"year":2018},"to":{"day":22,"month":3,"year":2018}},"string":"Jan
+        4, 2018 to Mar 22, 2018"},"duration":"23 min per ep","rating":"PG-13 - Teens
+        13 or older","score":8.27,"scored_by":193111,"rank":274,"popularity":437,"members":438407,"favorites":9927,"synopsis":"While
+        the perfect getaway for most girls her age might be a fancy vacation with
+        their loved ones, Rin Shima''s ideal way of spending her days off is camping
+        alone at the base of Mount Fuji. From pitching her tent to gathering firewood,
+        she has always done everything by herself, and has no plans of leaving her
+        little solitary world.\n\nHowever, what starts off as one of Rin''s usual
+        camping sessions somehow ends up as a surprise get-together for two when the
+        lost Nadeshiko Kagamihara is forced to take refuge at her campsite. Originally
+        intending to see the picturesque view of Mount Fuji for herself, Nadeshiko''s
+        plans are disrupted when she ends up falling asleep partway to her destination.
+        Alone and with no other choice, she seeks help from the only other person
+        nearby. Despite their hasty introductions, the two girls nevertheless enjoy
+        the chilly night together, eating ramen and conversing while the campfire
+        keeps them warm. And even after Nadeshiko''s sister finally picks her up later
+        that night, both girls silently ponder the possibility of another camping
+        trip together.\n\n[Written by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Thursdays","time":"23:00","timezone":"Asia\/Tokyo","string":"Thursdays
+        at 23:00 (JST)"},"producers":[{"mal_id":64,"type":"anime","name":"Sotsu","url":"https:\/\/myanimelist.net\/anime\/producer\/64\/Sotsu"},{"mal_id":238,"type":"anime","name":"AT-X","url":"https:\/\/myanimelist.net\/anime\/producer\/238\/AT-X"},{"mal_id":737,"type":"anime","name":"Sony
+        Music Communications","url":"https:\/\/myanimelist.net\/anime\/producer\/737\/Sony_Music_Communications"},{"mal_id":963,"type":"anime","name":"MAGES.","url":"https:\/\/myanimelist.net\/anime\/producer\/963\/MAGES"},{"mal_id":1185,"type":"anime","name":"81
+        Produce","url":"https:\/\/myanimelist.net\/anime\/producer\/1185\/81_Produce"},{"mal_id":1416,"type":"anime","name":"BS11","url":"https:\/\/myanimelist.net\/anime\/producer\/1416\/BS11"},{"mal_id":1590,"type":"anime","name":"FuRyu","url":"https:\/\/myanimelist.net\/anime\/producer\/1590\/FuRyu"},{"mal_id":1784,"type":"anime","name":"Crunchyroll
+        SC Anime Fund","url":"https:\/\/myanimelist.net\/anime\/producer\/1784\/Crunchyroll_SC_Anime_Fund"}],"licensors":[],"studios":[{"mal_id":1075,"type":"anime","name":"C-Station","url":"https:\/\/myanimelist.net\/anime\/producer\/1075\/C-Station"}],"genres":[{"mal_id":36,"type":"anime","name":"Slice
+        of Life","url":"https:\/\/myanimelist.net\/anime\/genre\/36\/Slice_of_Life"}],"explicit_genres":[],"themes":[{"mal_id":52,"type":"anime","name":"CGDCT","url":"https:\/\/myanimelist.net\/anime\/genre\/52\/CGDCT"},{"mal_id":63,"type":"anime","name":"Iyashikei","url":"https:\/\/myanimelist.net\/anime\/genre\/63\/Iyashikei"}],"demographics":[]},{"mal_id":35222,"url":"https:\/\/myanimelist.net\/anime\/35222\/Gakuen_Babysitters","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/89978.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/89978t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/89978l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/89978.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/89978t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/89978l.webp"}},"trailer":{"youtube_id":"5boy-B9STZA","url":"https:\/\/www.youtube.com\/watch?v=5boy-B9STZA","embed_url":"https:\/\/www.youtube.com\/embed\/5boy-B9STZA?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/5boy-B9STZA\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/5boy-B9STZA\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/5boy-B9STZA\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/5boy-B9STZA\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/5boy-B9STZA\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Gakuen
+        Babysitters"},{"type":"Japanese","title":"\u5b66\u5712\u30d9\u30d3\u30fc\u30b7\u30c3\u30bf\u30fc\u30ba"},{"type":"English","title":"School
+        Babysitters"},{"type":"German","title":"School Babysitters"},{"type":"Spanish","title":"School
+        Babysitters (Gakuen Babysitters)"},{"type":"French","title":"School Babysitters"}],"title":"Gakuen
+        Babysitters","title_english":"School Babysitters","title_japanese":"\u5b66\u5712\u30d9\u30d3\u30fc\u30b7\u30c3\u30bf\u30fc\u30ba","title_synonyms":[],"type":"TV","source":"Manga","episodes":12,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-07T00:00:00+00:00","to":"2018-03-25T00:00:00+00:00","prop":{"from":{"day":7,"month":1,"year":2018},"to":{"day":25,"month":3,"year":2018}},"string":"Jan
+        7, 2018 to Mar 25, 2018"},"duration":"23 min per ep","rating":"PG-13 - Teens
+        13 or older","score":7.9,"scored_by":151371,"rank":724,"popularity":706,"members":297022,"favorites":2854,"synopsis":"After
+        losing both parents in a fatal plane crash, teenager Ryuuichi Kashima must
+        adjust to his new life as the guardian of his younger brother Kotarou. Although
+        Ryuuichi is able to maintain a friendly and kindhearted demeanor, Kotarou
+        is a reserved toddler still too young to understand the reality of the situation.
+        At their parents'' funeral, they are approached by Youko Morinomiya, the stern
+        chairman of an elite academy, who decides to take them under her care.\n \nHowever,
+        there is one condition Ryuuichi must fulfill in exchange for a roof over their
+        heads and enrolment in the school\u2014he must become the school''s babysitter.
+        In an effort to support the female teachers at the academy, a babysitter''s
+        club was established to look after their infant children; unfortunately, the
+        club is severely short-staffed, so now not only is Ryuuichi responsible for
+        his little brother, but also a handful of toddlers who possess dynamic personalities.\n\n[Written
+        by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Sundays","time":"23:00","timezone":"Asia\/Tokyo","string":"Sundays
+        at 23:00 (JST)"},"producers":[{"mal_id":23,"type":"anime","name":"Bandai Visual","url":"https:\/\/myanimelist.net\/anime\/producer\/23\/Bandai_Visual"},{"mal_id":104,"type":"anime","name":"Lantis","url":"https:\/\/myanimelist.net\/anime\/producer\/104\/Lantis"},{"mal_id":139,"type":"anime","name":"Nihon
+        Ad Systems","url":"https:\/\/myanimelist.net\/anime\/producer\/139\/Nihon_Ad_Systems"},{"mal_id":148,"type":"anime","name":"Hakusensha","url":"https:\/\/myanimelist.net\/anime\/producer\/148\/Hakusensha"},{"mal_id":1121,"type":"anime","name":"Banpresto","url":"https:\/\/myanimelist.net\/anime\/producer\/1121\/Banpresto"},{"mal_id":1800,"type":"anime","name":"Marui
+        Group","url":"https:\/\/myanimelist.net\/anime\/producer\/1800\/Marui_Group"}],"licensors":[],"studios":[{"mal_id":112,"type":"anime","name":"Brain''s
+        Base","url":"https:\/\/myanimelist.net\/anime\/producer\/112\/Brains_Base"}],"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"}],"explicit_genres":[],"themes":[{"mal_id":53,"type":"anime","name":"Childcare","url":"https:\/\/myanimelist.net\/anime\/genre\/53\/Childcare"},{"mal_id":63,"type":"anime","name":"Iyashikei","url":"https:\/\/myanimelist.net\/anime\/genre\/63\/Iyashikei"},{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"}],"demographics":[{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"}]},{"mal_id":34279,"url":"https:\/\/myanimelist.net\/anime\/34279\/Grancrest_Senki","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/89883.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/89883t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/89883l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/89883.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/89883t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/4\/89883l.webp"}},"trailer":{"youtube_id":"6NJ9Lfqnals","url":"https:\/\/www.youtube.com\/watch?v=6NJ9Lfqnals","embed_url":"https:\/\/www.youtube.com\/embed\/6NJ9Lfqnals?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/6NJ9Lfqnals\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/6NJ9Lfqnals\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/6NJ9Lfqnals\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/6NJ9Lfqnals\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/6NJ9Lfqnals\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Grancrest
+        Senki"},{"type":"Japanese","title":"\u30b0\u30e9\u30f3\u30af\u30ec\u30b9\u30c8\u6226\u8a18"},{"type":"English","title":"Record
+        of Grancrest War"},{"type":"German","title":"Record of Grancrest War"},{"type":"Spanish","title":"Record
+        of Grancrest War"},{"type":"French","title":"Record of Grancrest War"}],"title":"Grancrest
+        Senki","title_english":"Record of Grancrest War","title_japanese":"\u30b0\u30e9\u30f3\u30af\u30ec\u30b9\u30c8\u6226\u8a18","title_synonyms":[],"type":"TV","source":"Light
+        novel","episodes":24,"status":"Finished Airing","airing":false,"aired":{"from":"2018-01-06T00:00:00+00:00","to":"2018-06-23T00:00:00+00:00","prop":{"from":{"day":6,"month":1,"year":2018},"to":{"day":23,"month":6,"year":2018}},"string":"Jan
+        6, 2018 to Jun 23, 2018"},"duration":"23 min per ep","rating":"R - 17+ (violence
+        & profanity)","score":7.22,"scored_by":122726,"rank":2916,"popularity":743,"members":283088,"favorites":1195,"synopsis":"The
+        continent of Atlatan once again finds itself devoured by the flames of war
+        after a horrific event known as the Great Hall Tragedy. What was supposed
+        to be a joyful occasion that would establish peace between the Fantasia Union
+        and the Factory Alliance, the marriage of Sir Alexis Douse and Lady Marrine
+        Kreische, was instead a tragedy. As the bride and groom walked down the aisle,
+        the ceremony was suddenly interrupted by a powerful convergence of \"Chaos,\"
+        a dark energy from another dimension that corrupts the land and brings forth
+        monsters and demons into the world. From within that energy appeared the Demon
+        Lord of Diabolos, an evil being who instantly murdered the archdukes of both
+        factions, shattering any hope for peace between them.\n \nHaving failed to
+        prevent this disaster, Siluca Meletes, an Alliance mage, is traveling through
+        the Chaos-infested countryside to study under a master magician. When she
+        is intercepted by a group of soldiers working with the Federation, Siluca
+        is rescued by Theo Cornaro, a young warrior carrying a mysterious \"Crest,\"
+        a magical symbol that gives its wielder the ability to banish Chaos. Bearing
+        no allegiance to a specific domain, Theo hopes to attain the rank of Lord
+        so that he can liberate his home town of Sistina from its tyrannical ruler
+        and the Chaos spreading within it. Impressed by his noble goal, Siluca enters
+        into a magical contract with Theo, and the two embark on a journey to restore
+        balance to their war-torn land.\n\n[Written by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Saturdays","time":"00:00","timezone":"Asia\/Tokyo","string":"Saturdays
+        at 00:00 (JST)"},"producers":[{"mal_id":17,"type":"anime","name":"Aniplex","url":"https:\/\/myanimelist.net\/anime\/producer\/17\/Aniplex"},{"mal_id":1233,"type":"anime","name":"Bandai
+        Namco Entertainment","url":"https:\/\/myanimelist.net\/anime\/producer\/1233\/Bandai_Namco_Entertainment"},{"mal_id":1261,"type":"anime","name":"Good
+        Smile Company","url":"https:\/\/myanimelist.net\/anime\/producer\/1261\/Good_Smile_Company"},{"mal_id":1416,"type":"anime","name":"BS11","url":"https:\/\/myanimelist.net\/anime\/producer\/1416\/BS11"},{"mal_id":1500,"type":"anime","name":"ABC
+        Animation","url":"https:\/\/myanimelist.net\/anime\/producer\/1500\/ABC_Animation"},{"mal_id":1653,"type":"anime","name":"Kinoshita
+        Group Holdings","url":"https:\/\/myanimelist.net\/anime\/producer\/1653\/Kinoshita_Group_Holdings"},{"mal_id":1696,"type":"anime","name":"Kadokawa","url":"https:\/\/myanimelist.net\/anime\/producer\/1696\/Kadokawa"},{"mal_id":1788,"type":"anime","name":"Cromea","url":"https:\/\/myanimelist.net\/anime\/producer\/1788\/Cromea"},{"mal_id":1858,"type":"anime","name":"Sonilude","url":"https:\/\/myanimelist.net\/anime\/producer\/1858\/Sonilude"}],"licensors":[{"mal_id":493,"type":"anime","name":"Aniplex
+        of America","url":"https:\/\/myanimelist.net\/anime\/producer\/493\/Aniplex_of_America"}],"studios":[{"mal_id":56,"type":"anime","name":"A-1
+        Pictures","url":"https:\/\/myanimelist.net\/anime\/producer\/56\/A-1_Pictures"}],"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"}],"explicit_genres":[],"themes":[],"demographics":[]},{"mal_id":34984,"url":"https:\/\/myanimelist.net\/anime\/34984\/Koi_wa_Ameagari_no_You_ni","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1271\/90136.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1271\/90136t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1271\/90136l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1271\/90136.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1271\/90136t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1271\/90136l.webp"}},"trailer":{"youtube_id":"EHLYugCBtjs","url":"https:\/\/www.youtube.com\/watch?v=EHLYugCBtjs","embed_url":"https:\/\/www.youtube.com\/embed\/EHLYugCBtjs?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/EHLYugCBtjs\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/EHLYugCBtjs\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/EHLYugCBtjs\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/EHLYugCBtjs\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/EHLYugCBtjs\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Koi
+        wa Ameagari no You ni"},{"type":"Synonym","title":"Koi wa Amaagari no You
+        ni"},{"type":"Synonym","title":"Love is Like after the Rain"},{"type":"Synonym","title":"KoiAme"},{"type":"Japanese","title":"\u604b\u306f\u96e8\u4e0a\u304c\u308a\u306e\u3088\u3046\u306b"},{"type":"English","title":"After
+        the Rain"},{"type":"German","title":"After the Rain"},{"type":"Spanish","title":"Despu\u00e9s
+        de la Lluvia"},{"type":"French","title":"Apr\u00e8s la Pluie"}],"title":"Koi
+        wa Ameagari no You ni","title_english":"After the Rain","title_japanese":"\u604b\u306f\u96e8\u4e0a\u304c\u308a\u306e\u3088\u3046\u306b","title_synonyms":["Koi
+        wa Amaagari no You ni","Love is Like after the Rain","KoiAme"],"type":"TV","source":"Manga","episodes":12,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-12T00:00:00+00:00","to":"2018-03-30T00:00:00+00:00","prop":{"from":{"day":12,"month":1,"year":2018},"to":{"day":30,"month":3,"year":2018}},"string":"Jan
+        12, 2018 to Mar 30, 2018"},"duration":"22 min per ep","rating":"PG-13 - Teens
+        13 or older","score":7.5,"scored_by":111924,"rank":1701,"popularity":766,"members":273897,"favorites":1433,"synopsis":"Akira
+        Tachibana, a reserved high school student and former track runner, has not
+        been able to race the same as she used to since she experienced a severe foot
+        injury. And although she is regarded as attractive by her classmates, she
+        is not interested in the boys around school.\n\nWhile working part-time at
+        the Garden Cafe, Akira begins to develop feelings for the manager\u2014a 45-year-old
+        man named Masami Kondou\u2014despite the large age gap. Kondou shows genuine
+        concern and kindness toward the customers of his restaurant, which, while
+        viewed by others as soft or weak, draws Akira to him. Spending time together
+        at the restaurant, they grow closer, which only strengthens her feelings.
+        Weighed down by these uncertain emotions, Akira finally resolves to confess,
+        but what will be the result?\n\n[Written by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Fridays","time":"00:55","timezone":"Asia\/Tokyo","string":"Fridays
+        at 00:55 (JST)"},"producers":[{"mal_id":17,"type":"anime","name":"Aniplex","url":"https:\/\/myanimelist.net\/anime\/producer\/17\/Aniplex"},{"mal_id":53,"type":"anime","name":"Dentsu","url":"https:\/\/myanimelist.net\/anime\/producer\/53\/Dentsu"},{"mal_id":169,"type":"anime","name":"Fuji
+        TV","url":"https:\/\/myanimelist.net\/anime\/producer\/169\/Fuji_TV"},{"mal_id":1671,"type":"anime","name":"DMM
+        pictures","url":"https:\/\/myanimelist.net\/anime\/producer\/1671\/DMM_pictures"}],"licensors":[{"mal_id":376,"type":"anime","name":"Sentai
+        Filmworks","url":"https:\/\/myanimelist.net\/anime\/producer\/376\/Sentai_Filmworks"}],"studios":[{"mal_id":858,"type":"anime","name":"Wit
+        Studio","url":"https:\/\/myanimelist.net\/anime\/producer\/858\/Wit_Studio"}],"genres":[{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"}],"explicit_genres":[],"themes":[{"mal_id":48,"type":"anime","name":"Workplace","url":"https:\/\/myanimelist.net\/anime\/genre\/48\/Workplace"}],"demographics":[{"mal_id":42,"type":"anime","name":"Seinen","url":"https:\/\/myanimelist.net\/anime\/genre\/42\/Seinen"}]},{"mal_id":35330,"url":"https:\/\/myanimelist.net\/anime\/35330\/Poputepipikku","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/88816.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/88816t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/88816l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/88816.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/88816t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/88816l.webp"}},"trailer":{"youtube_id":"xnOHKecWTJY","url":"https:\/\/www.youtube.com\/watch?v=xnOHKecWTJY","embed_url":"https:\/\/www.youtube.com\/embed\/xnOHKecWTJY?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/xnOHKecWTJY\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/xnOHKecWTJY\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/xnOHKecWTJY\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/xnOHKecWTJY\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/xnOHKecWTJY\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Poputepipikku"},{"type":"Synonym","title":"PPTP"},{"type":"Synonym","title":"Poptepipic"},{"type":"Japanese","title":"\u30dd\u30d7\u30c6\u30d4\u30d4\u30c3\u30af"},{"type":"English","title":"Pop
+        Team Epic"},{"type":"German","title":"Pop Team Epic"},{"type":"Spanish","title":"Pop
+        Team Epic"},{"type":"French","title":"Pop Team Epic"}],"title":"Poputepipikku","title_english":"Pop
+        Team Epic","title_japanese":"\u30dd\u30d7\u30c6\u30d4\u30d4\u30c3\u30af","title_synonyms":["PPTP","Poptepipic"],"type":"TV","source":"4-koma
+        manga","episodes":12,"status":"Finished Airing","airing":false,"aired":{"from":"2018-01-07T00:00:00+00:00","to":"2018-03-25T00:00:00+00:00","prop":{"from":{"day":7,"month":1,"year":2018},"to":{"day":25,"month":3,"year":2018}},"string":"Jan
+        7, 2018 to Mar 25, 2018"},"duration":"11 min per ep","rating":"PG-13 - Teens
+        13 or older","score":7.28,"scored_by":102412,"rank":2635,"popularity":1001,"members":208464,"favorites":1307,"synopsis":"Poputepipikku
+        turns absurdist comedy up to eleven with its pop culture references and surreal
+        hilarity. With two bonafide high school girl protagonists\u2014the short and
+        exceptionally quick to anger Popuko, and the tall and unshakably calm Pipimi\u2014they
+        throw genres against the wall and don''t wait to see what sticks. Parody is
+        interlaced with drama, action, crudeness, and the show''s overarching goal\u2014to
+        become a real anime.\n\n[Written by MAL Rewrite]","background":"Poputepipikku
+        is based on bkub Ookawa''s 4-koma manga series of the same title. Each episode
+        consists of a 12-minute segment repeated twice. The repeated segment contains
+        a different voiceover by another voice actor with variations on the skits.
+        A remixed rerun titled Pop Team Epic Repeat, which mixes up the voice actors
+        from the original run, began airing from October 9, 2021 and is being simulcast
+        by Crunchyroll. It also features re-recorded versions of the AC-BU segments
+        and Japanese dubs of the Japon Mignon segments. There are also visual differences
+        in the Repeat version.","season":"winter","year":2018,"broadcast":{"day":"Sundays","time":"01:00","timezone":"Asia\/Tokyo","string":"Sundays
+        at 01:00 (JST)"},"producers":[{"mal_id":1344,"type":"anime","name":"King Records","url":"https:\/\/myanimelist.net\/anime\/producer\/1344\/King_Records"},{"mal_id":2272,"type":"anime","name":"AC-Bu","url":"https:\/\/myanimelist.net\/anime\/producer\/2272\/AC-Bu"}],"licensors":[{"mal_id":102,"type":"anime","name":"Funimation","url":"https:\/\/myanimelist.net\/anime\/producer\/102\/Funimation"},{"mal_id":376,"type":"anime","name":"Sentai
+        Filmworks","url":"https:\/\/myanimelist.net\/anime\/producer\/376\/Sentai_Filmworks"}],"studios":[{"mal_id":437,"type":"anime","name":"Kamikaze
+        Douga","url":"https:\/\/myanimelist.net\/anime\/producer\/437\/Kamikaze_Douga"}],"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"}],"explicit_genres":[],"themes":[{"mal_id":57,"type":"anime","name":"Gag
+        Humor","url":"https:\/\/myanimelist.net\/anime\/genre\/57\/Gag_Humor"},{"mal_id":20,"type":"anime","name":"Parody","url":"https:\/\/myanimelist.net\/anime\/genre\/20\/Parody"}],"demographics":[]},{"mal_id":33047,"url":"https:\/\/myanimelist.net\/anime\/33047\/Fate_Extra__Last_Encore","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1122\/90836.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1122\/90836t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1122\/90836l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1122\/90836.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1122\/90836t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1122\/90836l.webp"}},"trailer":{"youtube_id":"mM0el2bZFt4","url":"https:\/\/www.youtube.com\/watch?v=mM0el2bZFt4","embed_url":"https:\/\/www.youtube.com\/embed\/mM0el2bZFt4?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/mM0el2bZFt4\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/mM0el2bZFt4\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/mM0el2bZFt4\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/mM0el2bZFt4\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/mM0el2bZFt4\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Fate\/Extra:
+        Last Encore"},{"type":"Japanese","title":"Fate\/EXTRA Last Encore"},{"type":"English","title":"Fate\/Extra:
+        Last Encore"}],"title":"Fate\/Extra: Last Encore","title_english":"Fate\/Extra:
+        Last Encore","title_japanese":"Fate\/EXTRA Last Encore","title_synonyms":[],"type":"TV","source":"Game","episodes":10,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-28T00:00:00+00:00","to":"2018-04-01T00:00:00+00:00","prop":{"from":{"day":28,"month":1,"year":2018},"to":{"day":1,"month":4,"year":2018}},"string":"Jan
+        28, 2018 to Apr 1, 2018"},"duration":"24 min per ep","rating":"R - 17+ (violence
+        & profanity)","score":6.28,"scored_by":91500,"rank":7811,"popularity":1015,"members":206178,"favorites":461,"synopsis":"A
+        technological hell masquerading as paradise, Tsukimihara Academy is an artificial
+        high school that serves as the setting for the next Holy Grail War. Created
+        by the Moon Cell computer, the school is inhabited by Earth-projected souls
+        who have even the slightest aptitude for being a \"Master.\" Of these 256
+        souls, 128 will be chosen for the main tournament and granted a Servant. With
+        all of the Masters selected, the Academy activates a purge, targeting the
+        remaining lifeforms for elimination.\n\nAwakening in a pool of his own blood,
+        Hakuno Kishinami refuses to die. Fueled by unknown feelings of hatred, he
+        vows to fight for survival. As he struggles to escape from a relentless pursuer,
+        he finds a crimson blade plunged into the ground; and by pulling it out, Hakuno
+        summons his own Servant, Saber, who instantly destroys his pursuer in a flurry
+        of rose petals. With his newfound power, Hakuno must now begin his journey
+        to Moon Cell''s core, the Angelica Cage. There, he will unveil the reason
+        for this artificial world and the secrets of his own blood-soaked past.\n\n[Written
+        by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Sundays","time":"00:00","timezone":"Asia\/Tokyo","string":"Sundays
+        at 00:00 (JST)"},"producers":[{"mal_id":17,"type":"anime","name":"Aniplex","url":"https:\/\/myanimelist.net\/anime\/producer\/17\/Aniplex"},{"mal_id":82,"type":"anime","name":"Marvelous","url":"https:\/\/myanimelist.net\/anime\/producer\/82\/Marvelous"},{"mal_id":703,"type":"anime","name":"Notes","url":"https:\/\/myanimelist.net\/anime\/producer\/703\/Notes"}],"licensors":[],"studios":[{"mal_id":44,"type":"anime","name":"Shaft","url":"https:\/\/myanimelist.net\/anime\/producer\/44\/Shaft"}],"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[],"demographics":[]},{"mal_id":36838,"url":"https:\/\/myanimelist.net\/anime\/36838\/Gintama__Shirogane_no_Tamashii-hen","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/89603.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/89603t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/89603l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/89603.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/89603t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/89603l.webp"}},"trailer":{"youtube_id":"vcb-D3FlaCg","url":"https:\/\/www.youtube.com\/watch?v=vcb-D3FlaCg","embed_url":"https:\/\/www.youtube.com\/embed\/vcb-D3FlaCg?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/vcb-D3FlaCg\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/vcb-D3FlaCg\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/vcb-D3FlaCg\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/vcb-D3FlaCg\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/vcb-D3FlaCg\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Gintama.:
+        Shirogane no Tamashii-hen"},{"type":"Japanese","title":"\u9280\u9b42. \u9280\u30ce\u9b42\u7bc7"},{"type":"English","title":"Gintama.:
+        Silver Soul Arc"}],"title":"Gintama.: Shirogane no Tamashii-hen","title_english":"Gintama.:
+        Silver Soul Arc","title_japanese":"\u9280\u9b42. \u9280\u30ce\u9b42\u7bc7","title_synonyms":[],"type":"TV","source":"Manga","episodes":12,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-08T00:00:00+00:00","to":"2018-03-26T00:00:00+00:00","prop":{"from":{"day":8,"month":1,"year":2018},"to":{"day":26,"month":3,"year":2018}},"string":"Jan
+        8, 2018 to Mar 26, 2018"},"duration":"24 min per ep","rating":"PG-13 - Teens
+        13 or older","score":8.81,"scored_by":92958,"rank":29,"popularity":1089,"members":189097,"favorites":1108,"synopsis":"After
+        the fierce battle on Rakuyou, the untold past and true goal of the immortal
+        Naraku leader, Utsuro, are finally revealed. By corrupting the Altana reserves
+        of several planets, Utsuro has successfully triggered the intervention of
+        the Tendoshuu\u2019s greatest enemy: the Altana Liberation Army. With Earth
+        as the main battleground in this interplanetary war, Utsuro''s master plan
+        to destroy the planet\u2014and himself\u2014is nearly complete. \n\nAn attack
+        on the O-Edo Central Terminal marks the beginning of the final battle to take
+        back the land of the samurai. With the Yorozuya nowhere in sight, the bakufu
+        all but collapsed, and the Shogun missing, the people are left completely
+        helpless as the Liberation Army begins pillaging Edo in the name of freeing
+        them from the Tendoshuu''s rule. \n\nCaught in the crossfire between two equally
+        imposing forces, can Gintoki, Kagura, Shinpachi, and the former students of
+        Shouyou Yoshida put aside their differences and unite their allies to protect
+        what they hold dear?\n\n[Written by MAL Rewrite]","background":"This is the
+        first season of Gintama''s final arc and the seventh season of Gintama''s
+        continuity. In the episode continuity this corresponds to episodes 342-353
+        of Gintama.","season":"winter","year":2018,"broadcast":{"day":"Mondays","time":"01:35","timezone":"Asia\/Tokyo","string":"Mondays
+        at 01:35 (JST)"},"producers":[{"mal_id":16,"type":"anime","name":"TV Tokyo","url":"https:\/\/myanimelist.net\/anime\/producer\/16\/TV_Tokyo"},{"mal_id":17,"type":"anime","name":"Aniplex","url":"https:\/\/myanimelist.net\/anime\/producer\/17\/Aniplex"},{"mal_id":53,"type":"anime","name":"Dentsu","url":"https:\/\/myanimelist.net\/anime\/producer\/53\/Dentsu"},{"mal_id":1365,"type":"anime","name":"Shueisha","url":"https:\/\/myanimelist.net\/anime\/producer\/1365\/Shueisha"}],"licensors":[],"studios":[{"mal_id":1258,"type":"anime","name":"Bandai
+        Namco Pictures","url":"https:\/\/myanimelist.net\/anime\/producer\/1258\/Bandai_Namco_Pictures"}],"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":24,"type":"anime","name":"Sci-Fi","url":"https:\/\/myanimelist.net\/anime\/genre\/24\/Sci-Fi"}],"explicit_genres":[],"themes":[{"mal_id":57,"type":"anime","name":"Gag
+        Humor","url":"https:\/\/myanimelist.net\/anime\/genre\/57\/Gag_Humor"},{"mal_id":13,"type":"anime","name":"Historical","url":"https:\/\/myanimelist.net\/anime\/genre\/13\/Historical"},{"mal_id":20,"type":"anime","name":"Parody","url":"https:\/\/myanimelist.net\/anime\/genre\/20\/Parody"},{"mal_id":21,"type":"anime","name":"Samurai","url":"https:\/\/myanimelist.net\/anime\/genre\/21\/Samurai"}],"demographics":[{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}]},{"mal_id":35905,"url":"https:\/\/myanimelist.net\/anime\/35905\/Ryuuou_no_Oshigoto","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/89979.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/89979t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/89979l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/89979.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/89979t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/12\/89979l.webp"}},"trailer":{"youtube_id":"jrqE_yU4FKI","url":"https:\/\/www.youtube.com\/watch?v=jrqE_yU4FKI","embed_url":"https:\/\/www.youtube.com\/embed\/jrqE_yU4FKI?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/jrqE_yU4FKI\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/jrqE_yU4FKI\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/jrqE_yU4FKI\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/jrqE_yU4FKI\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/jrqE_yU4FKI\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Ryuuou
+        no Oshigoto!"},{"type":"Japanese","title":"\u308a\u3085\u3046\u304a\u3046\u306e\u304a\u3057\u3054\u3068\uff01"},{"type":"English","title":"The
+        Ryuo''s Work is Never Done!"},{"type":"German","title":"The Ryuo''s Work is
+        Never Done!"},{"type":"Spanish","title":"The Ryuo''s Work Is Never Done!"},{"type":"French","title":"The
+        Ryuo''s Work is Never Done!"}],"title":"Ryuuou no Oshigoto!","title_english":"The
+        Ryuo''s Work is Never Done!","title_japanese":"\u308a\u3085\u3046\u304a\u3046\u306e\u304a\u3057\u3054\u3068\uff01","title_synonyms":[],"type":"TV","source":"Light
+        novel","episodes":12,"status":"Finished Airing","airing":false,"aired":{"from":"2018-01-08T00:00:00+00:00","to":"2018-03-26T00:00:00+00:00","prop":{"from":{"day":8,"month":1,"year":2018},"to":{"day":26,"month":3,"year":2018}},"string":"Jan
+        8, 2018 to Mar 26, 2018"},"duration":"23 min per ep","rating":"PG-13 - Teens
+        13 or older","score":6.86,"scored_by":78416,"rank":4615,"popularity":1143,"members":180253,"favorites":328,"synopsis":"Shogi,
+        a Japanese game similar to chess, is one of the most popular board games in
+        the country, played by everyone from children to the elderly. Some players
+        are talented enough to take the game to a professional level. The title of
+        Ryuuou, meaning \"the dragon king,\" is only awarded to the person who reaches
+        the pinnacle of competitive shogi.\n\nYaichi Kuzuryuu has just become the
+        youngest Ryuuou after winning the grand championship. However, the shogi community
+        is unwelcoming to his victory, some even calling him the worst Ryuuou in history.
+        Moreover, he forgets about the agreement he made with Ai Hinatsuru, a little
+        girl he promised to coach if he won. After she shows up at his doorstep, he
+        reluctantly agrees to uphold his promise and makes Ai his disciple.\n\nTogether,
+        they aim to improve and exceed the limits of their shogi prowess: Ai, to unlock
+        her hidden talents; Yaichi, to prove to the world that he deserves his accomplishments.\n\n[Written
+        by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Mondays","time":"22:00","timezone":"Asia\/Tokyo","string":"Mondays
+        at 22:00 (JST)"},"producers":[{"mal_id":238,"type":"anime","name":"AT-X","url":"https:\/\/myanimelist.net\/anime\/producer\/238\/AT-X"},{"mal_id":306,"type":"anime","name":"Magic
+        Capsule","url":"https:\/\/myanimelist.net\/anime\/producer\/306\/Magic_Capsule"},{"mal_id":323,"type":"anime","name":"Nippon
+        Columbia","url":"https:\/\/myanimelist.net\/anime\/producer\/323\/Nippon_Columbia"},{"mal_id":460,"type":"anime","name":"KlockWorx","url":"https:\/\/myanimelist.net\/anime\/producer\/460\/KlockWorx"},{"mal_id":843,"type":"anime","name":"BS
+        Fuji","url":"https:\/\/myanimelist.net\/anime\/producer\/843\/BS_Fuji"},{"mal_id":1211,"type":"anime","name":"Tokyo
+        MX","url":"https:\/\/myanimelist.net\/anime\/producer\/1211\/Tokyo_MX"},{"mal_id":1333,"type":"anime","name":"Hakuhodo
+        DY Music & Pictures","url":"https:\/\/myanimelist.net\/anime\/producer\/1333\/Hakuhodo_DY_Music___Pictures"},{"mal_id":1631,"type":"anime","name":"Radio
+        Osaka","url":"https:\/\/myanimelist.net\/anime\/producer\/1631\/Radio_Osaka"},{"mal_id":1801,"type":"anime","name":"Aquamarine","url":"https:\/\/myanimelist.net\/anime\/producer\/1801\/Aquamarine"},{"mal_id":2090,"type":"anime","name":"Dream
+        Shift","url":"https:\/\/myanimelist.net\/anime\/producer\/2090\/Dream_Shift"}],"licensors":[],"studios":[{"mal_id":439,"type":"anime","name":"Project
+        No.9","url":"https:\/\/myanimelist.net\/anime\/producer\/439\/Project_No9"}],"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"}],"explicit_genres":[],"themes":[{"mal_id":11,"type":"anime","name":"Strategy
+        Game","url":"https:\/\/myanimelist.net\/anime\/genre\/11\/Strategy_Game"}],"demographics":[]},{"mal_id":36548,"url":"https:\/\/myanimelist.net\/anime\/36548\/Kokkoku","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/89987.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/89987t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/89987l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/89987.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/89987t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/89987l.webp"}},"trailer":{"youtube_id":"nsv2ymwJlvE","url":"https:\/\/www.youtube.com\/watch?v=nsv2ymwJlvE","embed_url":"https:\/\/www.youtube.com\/embed\/nsv2ymwJlvE?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/nsv2ymwJlvE\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/nsv2ymwJlvE\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/nsv2ymwJlvE\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/nsv2ymwJlvE\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/nsv2ymwJlvE\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Kokkoku"},{"type":"Japanese","title":"\u523b\u523b"},{"type":"English","title":"Kokkoku"}],"title":"Kokkoku","title_english":"Kokkoku","title_japanese":"\u523b\u523b","title_synonyms":[],"type":"TV","source":"Manga","episodes":12,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-08T00:00:00+00:00","to":"2018-03-26T00:00:00+00:00","prop":{"from":{"day":8,"month":1,"year":2018},"to":{"day":26,"month":3,"year":2018}},"string":"Jan
+        8, 2018 to Mar 26, 2018"},"duration":"23 min per ep","rating":"R - 17+ (violence
+        & profanity)","score":7,"scored_by":67848,"rank":4016,"popularity":1190,"members":174111,"favorites":326,"synopsis":"After
+        presumably failing 19 job interviews in one day, Juri Yukawa''s dreams of
+        moving out of her parents'' home are utterly dashed. Stuck living with her
+        working mother Nobuko, NEET brother Tsubasa, laid-off father Takafumi, and
+        single-parent sister Sanae, the only hope for this family to raise a decent
+        adult is her little nephew Makoto. However, this struggling family''s life
+        takes a turn for the worse when Makoto and Tsubasa are violently kidnapped
+        by a mysterious organization and held for ransom. With only 30 minutes to
+        deliver five million yen to the criminals, Juri''s grandfather reveals a dangerously
+        powerful secret to her and Takafumi.\n\nBy offering blood to her grandfather''s
+        mystical stone, the three enter the world of \"Stasis,\" a version of their
+        world where time stops for everyone but the users. Having arrived at their
+        destination, their rescue efforts go awry when they are assailed by a surprising
+        group of people who are somehow able to move around within Stasis. While all
+        hope seems lost, a monstrous giant known as the Herald appears amidst the
+        chaos, its intent and motivations as cryptic as the very nature of this timeless
+        world.\n\n[Written by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Mondays","time":"00:30","timezone":"Asia\/Tokyo","string":"Mondays
+        at 00:30 (JST)"},"producers":[{"mal_id":1747,"type":"anime","name":"Twin Engine","url":"https:\/\/myanimelist.net\/anime\/producer\/1747\/Twin_Engine"}],"licensors":[{"mal_id":376,"type":"anime","name":"Sentai
+        Filmworks","url":"https:\/\/myanimelist.net\/anime\/producer\/376\/Sentai_Filmworks"}],"studios":[{"mal_id":1393,"type":"anime","name":"Geno
+        Studio","url":"https:\/\/myanimelist.net\/anime\/producer\/1393\/Geno_Studio"}],"genres":[{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"explicit_genres":[],"themes":[{"mal_id":40,"type":"anime","name":"Psychological","url":"https:\/\/myanimelist.net\/anime\/genre\/40\/Psychological"}],"demographics":[{"mal_id":42,"type":"anime","name":"Seinen","url":"https:\/\/myanimelist.net\/anime\/genre\/42\/Seinen"}]},{"mal_id":34964,"url":"https:\/\/myanimelist.net\/anime\/34964\/Killing_Bites","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/90087.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/90087t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/90087l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/90087.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/90087t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/90087l.webp"}},"trailer":{"youtube_id":"gykjd18qxAI","url":"https:\/\/www.youtube.com\/watch?v=gykjd18qxAI","embed_url":"https:\/\/www.youtube.com\/embed\/gykjd18qxAI?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/gykjd18qxAI\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/gykjd18qxAI\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/gykjd18qxAI\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/gykjd18qxAI\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/gykjd18qxAI\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Killing
+        Bites"},{"type":"Japanese","title":"\u30ad\u30ea\u30f3\u30b0\u30d0\u30a4\u30c4"},{"type":"English","title":"Killing
+        Bites"},{"type":"Spanish","title":"Bocados Mortales"}],"title":"Killing Bites","title_english":"Killing
+        Bites","title_japanese":"\u30ad\u30ea\u30f3\u30b0\u30d0\u30a4\u30c4","title_synonyms":[],"type":"TV","source":"Manga","episodes":12,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-13T00:00:00+00:00","to":"2018-03-31T00:00:00+00:00","prop":{"from":{"day":13,"month":1,"year":2018},"to":{"day":31,"month":3,"year":2018}},"string":"Jan
+        13, 2018 to Mar 31, 2018"},"duration":"24 min per ep","rating":"R+ - Mild
+        Nudity","score":6.57,"scored_by":76012,"rank":6132,"popularity":1191,"members":174100,"favorites":424,"synopsis":"After
+        unknowingly participating in a kidnapping, college student Yuuya Nomoto finds
+        his friends brutally murdered by Hitomi Uzaki, the high school girl they attempted
+        to abduct. Forced to drive her to an undisclosed location, he finds himself
+        being wagered as the prize for a death match between two Therianthropes, superpowered
+        human-animal hybrids created through advanced gene therapy. As one of these
+        hybrids, Hitomi uses the speed and fearlessness she gained from her ratel
+        genes to viciously dispatch her foe and save Yuuya from certain death.\n\nWaking
+        up hours later hoping the whole event was only a nightmare, Yuuya realizes
+        that he has become embroiled in a secret proxy war between four large Japanese
+        business conglomerates, with the winner taking control of the economy. As
+        her sole albeit unwilling investor, his life is now directly linked to Hitomi''s
+        ability to participate in underground bloodsport matches known only as Killing
+        Bites.\n\n[Written by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Saturdays","time":"02:25","timezone":"Asia\/Tokyo","string":"Saturdays
+        at 02:25 (JST)"},"producers":[{"mal_id":64,"type":"anime","name":"Sotsu","url":"https:\/\/myanimelist.net\/anime\/producer\/64\/Sotsu"},{"mal_id":143,"type":"anime","name":"Mainichi
+        Broadcasting System","url":"https:\/\/myanimelist.net\/anime\/producer\/143\/Mainichi_Broadcasting_System"},{"mal_id":1113,"type":"anime","name":"NBCUniversal
+        Entertainment Japan","url":"https:\/\/myanimelist.net\/anime\/producer\/1113\/NBCUniversal_Entertainment_Japan"},{"mal_id":1337,"type":"anime","name":"Medicos
+        Entertainment","url":"https:\/\/myanimelist.net\/anime\/producer\/1337\/Medicos_Entertainment"},{"mal_id":1358,"type":"anime","name":"Fields","url":"https:\/\/myanimelist.net\/anime\/producer\/1358\/Fields"},{"mal_id":1787,"type":"anime","name":"KLab","url":"https:\/\/myanimelist.net\/anime\/producer\/1787\/KLab"},{"mal_id":2223,"type":"anime","name":"Christmas
+        Holly","url":"https:\/\/myanimelist.net\/anime\/producer\/2223\/Christmas_Holly"},{"mal_id":2225,"type":"anime","name":"C-one","url":"https:\/\/myanimelist.net\/anime\/producer\/2225\/C-one"}],"licensors":[{"mal_id":376,"type":"anime","name":"Sentai
+        Filmworks","url":"https:\/\/myanimelist.net\/anime\/producer\/376\/Sentai_Filmworks"}],"studios":[{"mal_id":839,"type":"anime","name":"LIDENFILMS","url":"https:\/\/myanimelist.net\/anime\/producer\/839\/LIDENFILMS"}],"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":24,"type":"anime","name":"Sci-Fi","url":"https:\/\/myanimelist.net\/anime\/genre\/24\/Sci-Fi"},{"mal_id":9,"type":"anime","name":"Ecchi","url":"https:\/\/myanimelist.net\/anime\/genre\/9\/Ecchi"}],"explicit_genres":[],"themes":[{"mal_id":58,"type":"anime","name":"Gore","url":"https:\/\/myanimelist.net\/anime\/genre\/58\/Gore"}],"demographics":[{"mal_id":42,"type":"anime","name":"Seinen","url":"https:\/\/myanimelist.net\/anime\/genre\/42\/Seinen"}]},{"mal_id":36516,"url":"https:\/\/myanimelist.net\/anime\/36516\/Beatless","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1986\/90184.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1986\/90184t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1986\/90184l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1986\/90184.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1986\/90184t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1986\/90184l.webp"}},"trailer":{"youtube_id":"ZKVpM8esO6Q","url":"https:\/\/www.youtube.com\/watch?v=ZKVpM8esO6Q","embed_url":"https:\/\/www.youtube.com\/embed\/ZKVpM8esO6Q?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/ZKVpM8esO6Q\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/ZKVpM8esO6Q\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/ZKVpM8esO6Q\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/ZKVpM8esO6Q\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/ZKVpM8esO6Q\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Beatless"},{"type":"Japanese","title":"BEATLESS"},{"type":"English","title":"Beatless"},{"type":"Spanish","title":"Sin
+        Latidos"}],"title":"Beatless","title_english":"Beatless","title_japanese":"BEATLESS","title_synonyms":[],"type":"TV","source":"Light
+        novel","episodes":20,"status":"Finished Airing","airing":false,"aired":{"from":"2018-01-13T00:00:00+00:00","to":"2018-06-30T00:00:00+00:00","prop":{"from":{"day":13,"month":1,"year":2018},"to":{"day":30,"month":6,"year":2018}},"string":"Jan
+        13, 2018 to Jun 30, 2018"},"duration":"24 min per ep","rating":"PG-13 - Teens
+        13 or older","score":6.21,"scored_by":51072,"rank":8169,"popularity":1246,"members":163684,"favorites":459,"synopsis":"With
+        great advancements in technology, mankind has created hIEs, human-like robots
+        that act as public and personal servants for society. Unlike many others,
+        the kind-hearted high school student Arato Endou treats hIEs as equals, but
+        his financial situation keeps him from ever owning one.\n\nHowever, his normal
+        life is shattered when an ordinary run to the local grocery store goes horribly
+        awry. Viciously assaulted by a hacked hIE, Arato is on the verge of death;
+        but luckily, he is saved by an abnormal hIE carrying a weaponized coffin.
+        Her name is Lacia, one of five highly advanced hIEs that recently escaped
+        the clutches of the mysterious MemeFrame Corporation.\n\nFaced with a hacked
+        car threatening to run them over, Lacia offers Arato a deal: in exchange for
+        saving his life, he must register as her new owner, thus taking full responsibility
+        for her actions. With little choice, he decides to trust this artificial girl
+        and allows her to live in his home. Though Lacia begins to adapt to her new,
+        peaceful lifestyle, she warns the entranced Arato of one thing\u2014she does
+        not have a soul.\n\n[Written by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Saturdays","time":"01:55","timezone":"Asia\/Tokyo","string":"Saturdays
+        at 01:55 (JST)"},"producers":[{"mal_id":113,"type":"anime","name":"Kadokawa
+        Shoten","url":"https:\/\/myanimelist.net\/anime\/producer\/113\/Kadokawa_Shoten"},{"mal_id":143,"type":"anime","name":"Mainichi
+        Broadcasting System","url":"https:\/\/myanimelist.net\/anime\/producer\/143\/Mainichi_Broadcasting_System"},{"mal_id":757,"type":"anime","name":"Sony
+        Music Entertainment","url":"https:\/\/myanimelist.net\/anime\/producer\/757\/Sony_Music_Entertainment"},{"mal_id":1261,"type":"anime","name":"Good
+        Smile Company","url":"https:\/\/myanimelist.net\/anime\/producer\/1261\/Good_Smile_Company"},{"mal_id":1449,"type":"anime","name":"Animatic","url":"https:\/\/myanimelist.net\/anime\/producer\/1449\/Animatic"}],"licensors":[],"studios":[{"mal_id":51,"type":"anime","name":"Diomed\u00e9a","url":"https:\/\/myanimelist.net\/anime\/producer\/51\/Diomed%C3%A9a"}],"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"},{"mal_id":24,"type":"anime","name":"Sci-Fi","url":"https:\/\/myanimelist.net\/anime\/genre\/24\/Sci-Fi"}],"explicit_genres":[],"themes":[],"demographics":[]},{"mal_id":36049,"url":"https:\/\/myanimelist.net\/anime\/36049\/Dagashi_Kashi_2","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1649\/90141.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1649\/90141t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1649\/90141l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1649\/90141.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1649\/90141t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1649\/90141l.webp"}},"trailer":{"youtube_id":"r82RCz6T8i8","url":"https:\/\/www.youtube.com\/watch?v=r82RCz6T8i8","embed_url":"https:\/\/www.youtube.com\/embed\/r82RCz6T8i8?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/r82RCz6T8i8\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/r82RCz6T8i8\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/r82RCz6T8i8\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/r82RCz6T8i8\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/r82RCz6T8i8\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Dagashi
+        Kashi 2"},{"type":"Synonym","title":"Dagashikashi 2"},{"type":"Japanese","title":"\u3060\u304c\u3057\u304b\u30572"},{"type":"English","title":"Dagashi
+        Kashi 2"},{"type":"German","title":"Dagashi Kashi Staffel 2"},{"type":"Spanish","title":"Dagashi
+        Kashi Temporada 2"},{"type":"French","title":"Dagashi Kashi Saison 2"}],"title":"Dagashi
+        Kashi 2","title_english":"Dagashi Kashi 2","title_japanese":"\u3060\u304c\u3057\u304b\u30572","title_synonyms":["Dagashikashi
+        2"],"type":"TV","source":"Manga","episodes":12,"status":"Finished Airing","airing":false,"aired":{"from":"2018-01-12T00:00:00+00:00","to":"2018-03-30T00:00:00+00:00","prop":{"from":{"day":12,"month":1,"year":2018},"to":{"day":30,"month":3,"year":2018}},"string":"Jan
+        12, 2018 to Mar 30, 2018"},"duration":"12 min per ep","rating":"PG-13 - Teens
+        13 or older","score":6.83,"scored_by":66199,"rank":4785,"popularity":1312,"members":154002,"favorites":181,"synopsis":"Second
+        season of Dagashi Kashi.","background":null,"season":"winter","year":2018,"broadcast":{"day":"Fridays","time":"02:28","timezone":"Asia\/Tokyo","string":"Fridays
+        at 02:28 (JST)"},"producers":[{"mal_id":144,"type":"anime","name":"Pony Canyon","url":"https:\/\/myanimelist.net\/anime\/producer\/144\/Pony_Canyon"},{"mal_id":145,"type":"anime","name":"TBS","url":"https:\/\/myanimelist.net\/anime\/producer\/145\/TBS"},{"mal_id":1430,"type":"anime","name":"Shogakukan","url":"https:\/\/myanimelist.net\/anime\/producer\/1430\/Shogakukan"},{"mal_id":1496,"type":"anime","name":"Lawson","url":"https:\/\/myanimelist.net\/anime\/producer\/1496\/Lawson"},{"mal_id":1557,"type":"anime","name":"Pony
+        Canyon Enterprise","url":"https:\/\/myanimelist.net\/anime\/producer\/1557\/Pony_Canyon_Enterprise"}],"licensors":[{"mal_id":102,"type":"anime","name":"Funimation","url":"https:\/\/myanimelist.net\/anime\/producer\/102\/Funimation"}],"studios":[{"mal_id":200,"type":"anime","name":"Tezuka
+        Productions","url":"https:\/\/myanimelist.net\/anime\/producer\/200\/Tezuka_Productions"}],"genres":[{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":47,"type":"anime","name":"Gourmet","url":"https:\/\/myanimelist.net\/anime\/genre\/47\/Gourmet"}],"explicit_genres":[],"themes":[{"mal_id":74,"type":"anime","name":"Romantic
+        Subtext","url":"https:\/\/myanimelist.net\/anime\/genre\/74\/Romantic_Subtext"}],"demographics":[{"mal_id":27,"type":"anime","name":"Shounen","url":"https:\/\/myanimelist.net\/anime\/genre\/27\/Shounen"}]},{"mal_id":36124,"url":"https:\/\/myanimelist.net\/anime\/36124\/Itou_Junji__Collection","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/88366.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/88366t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/88366l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/88366.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/88366t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/7\/88366l.webp"}},"trailer":{"youtube_id":"UMNcx1Z2BPo","url":"https:\/\/www.youtube.com\/watch?v=UMNcx1Z2BPo","embed_url":"https:\/\/www.youtube.com\/embed\/UMNcx1Z2BPo?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/UMNcx1Z2BPo\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/UMNcx1Z2BPo\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/UMNcx1Z2BPo\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/UMNcx1Z2BPo\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/UMNcx1Z2BPo\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Itou
+        Junji: Collection"},{"type":"Japanese","title":"\u4f0a\u85e4\u6f64\u4e8c\u300c\u30b3\u30ec\u30af\u30b7\u30e7\u30f3\u300d"},{"type":"English","title":"Junji
+        Ito Collection"},{"type":"German","title":"Junji Ito Collection"},{"type":"Spanish","title":"Junji
+        Ito Collection"},{"type":"French","title":"Junji Ito Collection"}],"title":"Itou
+        Junji: Collection","title_english":"Junji Ito Collection","title_japanese":"\u4f0a\u85e4\u6f64\u4e8c\u300c\u30b3\u30ec\u30af\u30b7\u30e7\u30f3\u300d","title_synonyms":[],"type":"TV","source":"Manga","episodes":12,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-05T00:00:00+00:00","to":"2018-03-23T00:00:00+00:00","prop":{"from":{"day":5,"month":1,"year":2018},"to":{"day":23,"month":3,"year":2018}},"string":"Jan
+        5, 2018 to Mar 23, 2018"},"duration":"24 min per ep","rating":"R - 17+ (violence
+        & profanity)","score":6.42,"scored_by":67335,"rank":7031,"popularity":1347,"members":150209,"favorites":861,"synopsis":"In
+        the light of day and in the dead of night, mysterious horrors await in the
+        darkest shadows of every corner. They are unexplainable, inescapable, and
+        undefeatable. Be prepared, or you may become their next victim.\n\nSit back
+        in terror as traumatizing tales of unparalleled terror unfold. Tales, such
+        as that of a cursed jade carving that opens holes all over its victims'' bodies;
+        deep nightmares that span decades; an attractive spirit at a misty crossroad
+        that grants cursed advice; and a slug that grows inside a girl''s mouth. Tread
+        carefully, for the horrifying supernatural tales of the Itou Junji: Collection
+        are not for the faint of heart.\n\n[Written by MAL Rewrite]","background":"Itou
+        Junji: Collection is collection of animated based on the works of Japanese
+        artist Junji Itou.","season":"winter","year":2018,"broadcast":{"day":"Fridays","time":"22:30","timezone":"Asia\/Tokyo","string":"Fridays
+        at 22:30 (JST)"},"producers":[{"mal_id":323,"type":"anime","name":"Nippon
+        Columbia","url":"https:\/\/myanimelist.net\/anime\/producer\/323\/Nippon_Columbia"},{"mal_id":1318,"type":"anime","name":"Asahi
+        Shimbun","url":"https:\/\/myanimelist.net\/anime\/producer\/1318\/Asahi_Shimbun"},{"mal_id":1492,"type":"anime","name":"Yomiuri
+        TV Enterprise","url":"https:\/\/myanimelist.net\/anime\/producer\/1492\/Yomiuri_TV_Enterprise"},{"mal_id":1557,"type":"anime","name":"Pony
+        Canyon Enterprise","url":"https:\/\/myanimelist.net\/anime\/producer\/1557\/Pony_Canyon_Enterprise"},{"mal_id":1647,"type":"anime","name":"Smiral
+        Animation","url":"https:\/\/myanimelist.net\/anime\/producer\/1647\/Smiral_Animation"},{"mal_id":1784,"type":"anime","name":"Crunchyroll
+        SC Anime Fund","url":"https:\/\/myanimelist.net\/anime\/producer\/1784\/Crunchyroll_SC_Anime_Fund"},{"mal_id":1786,"type":"anime","name":"Muse
+        Communication","url":"https:\/\/myanimelist.net\/anime\/producer\/1786\/Muse_Communication"}],"licensors":[{"mal_id":102,"type":"anime","name":"Funimation","url":"https:\/\/myanimelist.net\/anime\/producer\/102\/Funimation"}],"studios":[{"mal_id":37,"type":"anime","name":"Studio
+        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"}],"genres":[{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"},{"mal_id":14,"type":"anime","name":"Horror","url":"https:\/\/myanimelist.net\/anime\/genre\/14\/Horror"},{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"explicit_genres":[],"themes":[{"mal_id":40,"type":"anime","name":"Psychological","url":"https:\/\/myanimelist.net\/anime\/genre\/40\/Psychological"}],"demographics":[]},{"mal_id":35889,"url":"https:\/\/myanimelist.net\/anime\/35889\/Hakata_Tonkotsu_Ramens","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1718\/91097.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1718\/91097t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1718\/91097l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1718\/91097.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1718\/91097t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1718\/91097l.webp"}},"trailer":{"youtube_id":"AUB6xIwa4pQ","url":"https:\/\/www.youtube.com\/watch?v=AUB6xIwa4pQ","embed_url":"https:\/\/www.youtube.com\/embed\/AUB6xIwa4pQ?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/AUB6xIwa4pQ\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/AUB6xIwa4pQ\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/AUB6xIwa4pQ\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/AUB6xIwa4pQ\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/AUB6xIwa4pQ\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Hakata
+        Tonkotsu Ramens"},{"type":"Japanese","title":"\u535a\u591a\u8c5a\u9aa8\u30e9\u30fc\u30e1\u30f3\u30ba"},{"type":"English","title":"Hakata
+        Tonkotsu Ramens"}],"title":"Hakata Tonkotsu Ramens","title_english":"Hakata
+        Tonkotsu Ramens","title_japanese":"\u535a\u591a\u8c5a\u9aa8\u30e9\u30fc\u30e1\u30f3\u30ba","title_synonyms":[],"type":"TV","source":"Novel","episodes":12,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-12T00:00:00+00:00","to":"2018-03-30T00:00:00+00:00","prop":{"from":{"day":12,"month":1,"year":2018},"to":{"day":30,"month":3,"year":2018}},"string":"Jan
+        12, 2018 to Mar 30, 2018"},"duration":"23 min per ep","rating":"R - 17+ (violence
+        & profanity)","score":7.38,"scored_by":58501,"rank":2136,"popularity":1376,"members":145599,"favorites":606,"synopsis":"Although
+        the city of Fukuoka might look relatively peaceful at first glance, in actuality
+        it houses a thriving mixture of dangerous individuals such as killers, detectives,
+        and professional revenge seekers right beneath its surface. Among their number
+        is Zenji Banba, a laidback and observant detective who is investigating the
+        work of other hitmen companies in the area. However, Banba might not be the
+        only one with a bone to pick with these organizations, as Xianming Lin, a
+        crossdressing male hitman in the employ of one such company begins getting
+        fed up with his lack of jobs and pay.\n\nOne day, after Lin''s current target
+        commits suicide before the hitman could reach him, his company refuses to
+        pay him even half the amount they were originally supposed to for the assassination.
+        Frustrated, Lin requests another mission and is offered the job of taking
+        out Banba, whom his organization believes has been interfering with their
+        business. However, when Banba arrives at his home and finds the hitman inside,
+        Lin surprisingly doesn''t even attempt to kill him. Instead, he offers the
+        detective another option: to join him and form a team. With the offer on the
+        table, exactly how will Banba respond, and just what plans does Lin have in
+        store for the underground world of Fukuoka?\n\n[Written by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Fridays","time":"22:30","timezone":"Asia\/Tokyo","string":"Fridays
+        at 22:30 (JST)"},"producers":[{"mal_id":64,"type":"anime","name":"Sotsu","url":"https:\/\/myanimelist.net\/anime\/producer\/64\/Sotsu"},{"mal_id":238,"type":"anime","name":"AT-X","url":"https:\/\/myanimelist.net\/anime\/producer\/238\/AT-X"},{"mal_id":415,"type":"anime","name":"Warner
+        Bros. Japan","url":"https:\/\/myanimelist.net\/anime\/producer\/415\/Warner_Bros_Japan"},{"mal_id":460,"type":"anime","name":"KlockWorx","url":"https:\/\/myanimelist.net\/anime\/producer\/460\/KlockWorx"},{"mal_id":681,"type":"anime","name":"ASCII
+        Media Works","url":"https:\/\/myanimelist.net\/anime\/producer\/681\/ASCII_Media_Works"},{"mal_id":1211,"type":"anime","name":"Tokyo
+        MX","url":"https:\/\/myanimelist.net\/anime\/producer\/1211\/Tokyo_MX"},{"mal_id":1416,"type":"anime","name":"BS11","url":"https:\/\/myanimelist.net\/anime\/producer\/1416\/BS11"}],"licensors":[{"mal_id":102,"type":"anime","name":"Funimation","url":"https:\/\/myanimelist.net\/anime\/producer\/102\/Funimation"}],"studios":[{"mal_id":41,"type":"anime","name":"Satelight","url":"https:\/\/myanimelist.net\/anime\/producer\/41\/Satelight"}],"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":7,"type":"anime","name":"Mystery","url":"https:\/\/myanimelist.net\/anime\/genre\/7\/Mystery"}],"explicit_genres":[],"themes":[{"mal_id":50,"type":"anime","name":"Adult
+        Cast","url":"https:\/\/myanimelist.net\/anime\/genre\/50\/Adult_Cast"}],"demographics":[]},{"mal_id":35828,"url":"https:\/\/myanimelist.net\/anime\/35828\/Miira_no_Kaikata","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1486\/93811.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1486\/93811t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1486\/93811l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1486\/93811.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1486\/93811t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1486\/93811l.webp"}},"trailer":{"youtube_id":"n0-PpoSUs-M","url":"https:\/\/www.youtube.com\/watch?v=n0-PpoSUs-M","embed_url":"https:\/\/www.youtube.com\/embed\/n0-PpoSUs-M?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/n0-PpoSUs-M\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/n0-PpoSUs-M\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/n0-PpoSUs-M\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/n0-PpoSUs-M\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/n0-PpoSUs-M\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Miira
+        no Kaikata"},{"type":"Synonym","title":"How to keep a mummy"},{"type":"Japanese","title":"\u30df\u30a4\u30e9\u306e\u98fc\u3044\u65b9"},{"type":"English","title":"How
+        to Keep a Mummy"},{"type":"German","title":"How to Keep a Mummy"},{"type":"Spanish","title":"How
+        to Keep a Mummy"},{"type":"French","title":"How to Keep a Mummy"}],"title":"Miira
+        no Kaikata","title_english":"How to Keep a Mummy","title_japanese":"\u30df\u30a4\u30e9\u306e\u98fc\u3044\u65b9","title_synonyms":["How
+        to keep a mummy"],"type":"TV","source":"Web manga","episodes":12,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-12T00:00:00+00:00","to":"2018-03-30T00:00:00+00:00","prop":{"from":{"day":12,"month":1,"year":2018},"to":{"day":30,"month":3,"year":2018}},"string":"Jan
+        12, 2018 to Mar 30, 2018"},"duration":"24 min per ep","rating":"PG-13 - Teens
+        13 or older","score":7.47,"scored_by":49395,"rank":1810,"popularity":1548,"members":124405,"favorites":658,"synopsis":"High
+        school student Sora Kashiwagi is accustomed to receiving bizarre presents
+        from his father, who is on an expedition around the world. Unfortunately,
+        these gifts have been nothing but nightmares. As a result, when his father
+        sends him a huge package from Egypt, Sora prepares himself for the worst,
+        only to be greeted by Mii-kun\u2014a cute, pint-sized mummy! While initially
+        wary, Sora soon learns that Mii-kun is harmless, a delicate creature yearning
+        for attention.\n\nThroughout their amusing day-to-day lives, the unlikely
+        pair meet other people with unique pets, while also strengthening their bond
+        together. Although keeping a pet is a difficult task, Sora is set on caring
+        for the lovable Mii-kun.\n\n[Written by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Fridays","time":"01:58","timezone":"Asia\/Tokyo","string":"Fridays
+        at 01:58 (JST)"},"producers":[{"mal_id":145,"type":"anime","name":"TBS","url":"https:\/\/myanimelist.net\/anime\/producer\/145\/TBS"},{"mal_id":1254,"type":"anime","name":"Grooove","url":"https:\/\/myanimelist.net\/anime\/producer\/1254\/Grooove"},{"mal_id":1585,"type":"anime","name":"Nichion","url":"https:\/\/myanimelist.net\/anime\/producer\/1585\/Nichion"},{"mal_id":1594,"type":"anime","name":"Exit
+        Tunes","url":"https:\/\/myanimelist.net\/anime\/producer\/1594\/Exit_Tunes"},{"mal_id":1783,"type":"anime","name":"ONEMUSIC","url":"https:\/\/myanimelist.net\/anime\/producer\/1783\/ONEMUSIC"},{"mal_id":1784,"type":"anime","name":"Crunchyroll
+        SC Anime Fund","url":"https:\/\/myanimelist.net\/anime\/producer\/1784\/Crunchyroll_SC_Anime_Fund"}],"licensors":[],"studios":[{"mal_id":441,"type":"anime","name":"8bit","url":"https:\/\/myanimelist.net\/anime\/producer\/441\/8bit"}],"genres":[{"mal_id":36,"type":"anime","name":"Slice
+        of Life","url":"https:\/\/myanimelist.net\/anime\/genre\/36\/Slice_of_Life"},{"mal_id":37,"type":"anime","name":"Supernatural","url":"https:\/\/myanimelist.net\/anime\/genre\/37\/Supernatural"}],"explicit_genres":[],"themes":[{"mal_id":6,"type":"anime","name":"Mythology","url":"https:\/\/myanimelist.net\/anime\/genre\/6\/Mythology"},{"mal_id":71,"type":"anime","name":"Pets","url":"https:\/\/myanimelist.net\/anime\/genre\/71\/Pets"},{"mal_id":23,"type":"anime","name":"School","url":"https:\/\/myanimelist.net\/anime\/genre\/23\/School"}],"demographics":[]},{"mal_id":33354,"url":"https:\/\/myanimelist.net\/anime\/33354\/Cardcaptor_Sakura__Clear_Card-hen","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1467\/90338.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1467\/90338t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1467\/90338l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1467\/90338.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1467\/90338t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/1467\/90338l.webp"}},"trailer":{"youtube_id":"HjdLsqei_aE","url":"https:\/\/www.youtube.com\/watch?v=HjdLsqei_aE","embed_url":"https:\/\/www.youtube.com\/embed\/HjdLsqei_aE?enablejsapi=1&wmode=opaque&autoplay=1","images":{"image_url":"https:\/\/img.youtube.com\/vi\/HjdLsqei_aE\/default.jpg","small_image_url":"https:\/\/img.youtube.com\/vi\/HjdLsqei_aE\/sddefault.jpg","medium_image_url":"https:\/\/img.youtube.com\/vi\/HjdLsqei_aE\/mqdefault.jpg","large_image_url":"https:\/\/img.youtube.com\/vi\/HjdLsqei_aE\/hqdefault.jpg","maximum_image_url":"https:\/\/img.youtube.com\/vi\/HjdLsqei_aE\/maxresdefault.jpg"}},"approved":true,"titles":[{"type":"Default","title":"Cardcaptor
+        Sakura: Clear Card-hen"},{"type":"Synonym","title":"Cardcaptor Sakura: Clear
+        Card-hen"},{"type":"Japanese","title":"\u30ab\u30fc\u30c9\u30ad\u30e3\u30d7\u30bf\u30fc\u3055\u304f\u3089
+        \u30af\u30ea\u30a2\u30ab\u30fc\u30c9\u7de8"},{"type":"English","title":"Cardcaptor
+        Sakura: Clear Card"},{"type":"German","title":"Cardcaptor Sakura Clear Card"},{"type":"Spanish","title":"Cardcaptor
+        Sakura Clear Card"},{"type":"French","title":"Cardcaptor Sakura: Clear Card"}],"title":"Cardcaptor
+        Sakura: Clear Card-hen","title_english":"Cardcaptor Sakura: Clear Card","title_japanese":"\u30ab\u30fc\u30c9\u30ad\u30e3\u30d7\u30bf\u30fc\u3055\u304f\u3089
+        \u30af\u30ea\u30a2\u30ab\u30fc\u30c9\u7de8","title_synonyms":["Cardcaptor
+        Sakura: Clear Card-hen"],"type":"TV","source":"Manga","episodes":22,"status":"Finished
+        Airing","airing":false,"aired":{"from":"2018-01-07T00:00:00+00:00","to":"2018-06-10T00:00:00+00:00","prop":{"from":{"day":7,"month":1,"year":2018},"to":{"day":10,"month":6,"year":2018}},"string":"Jan
+        7, 2018 to Jun 10, 2018"},"duration":"25 min per ep","rating":"PG - Children","score":7.65,"scored_by":41862,"rank":1242,"popularity":1678,"members":112653,"favorites":601,"synopsis":"With
+        all of the Clow Cards recaptured and changed into her own Sakura Cards, Sakura
+        Kinomoto now enters her first year at Tomoeda Middle School. After her initial
+        day of classes, Sakura reunites with her love Shaoran Li, who informs her
+        that he is permanently moving back to Tomoeda. Much to her surprise, it even
+        turns out that Shaoran will attend the same school and it seems as if Sakura''s
+        life is heading in all the right directions.\n\nHowever, when Sakura goes
+        to sleep, she encounters in her dream a mysterious cloaked figure and finds
+        herself surrounded by transparent cards. Waking up in fear, Sakura is shocked
+        to see her dream has come true, with the Sakura Cards having turned clear.
+        Continued dreamlike encounters with the unknown enemy and her gaining a new
+        magical key sets the stage for Cardcaptor Sakura''s latest adventure!\n\n[Written
+        by MAL Rewrite]","background":null,"season":"winter","year":2018,"broadcast":{"day":"Sundays","time":"07:30","timezone":"Asia\/Tokyo","string":"Sundays
+        at 07:30 (JST)"},"producers":[{"mal_id":111,"type":"anime","name":"NHK","url":"https:\/\/myanimelist.net\/anime\/producer\/111\/NHK"},{"mal_id":159,"type":"anime","name":"Kodansha","url":"https:\/\/myanimelist.net\/anime\/producer\/159\/Kodansha"},{"mal_id":1797,"type":"anime","name":"NHK
+        Enterprises","url":"https:\/\/myanimelist.net\/anime\/producer\/1797\/NHK_Enterprises"}],"licensors":[{"mal_id":102,"type":"anime","name":"Funimation","url":"https:\/\/myanimelist.net\/anime\/producer\/102\/Funimation"}],"studios":[{"mal_id":11,"type":"anime","name":"Madhouse","url":"https:\/\/myanimelist.net\/anime\/producer\/11\/Madhouse"}],"genres":[{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":10,"type":"anime","name":"Fantasy","url":"https:\/\/myanimelist.net\/anime\/genre\/10\/Fantasy"},{"mal_id":22,"type":"anime","name":"Romance","url":"https:\/\/myanimelist.net\/anime\/genre\/22\/Romance"}],"explicit_genres":[],"themes":[{"mal_id":66,"type":"anime","name":"Mahou
+        Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/66\/Mahou_Shoujo"}],"demographics":[{"mal_id":25,"type":"anime","name":"Shoujo","url":"https:\/\/myanimelist.net\/anime\/genre\/25\/Shoujo"}]}]}'
+    headers:
+      Access-Control-Allow-Methods: GET
+      Access-Control-Allow-Origin: '*'
+      Cache-Control: public, s-maxage=86400
+      Connection: keep-alive
+      Content-Encoding: gzip
+      Content-Type: application/json
+      Date: Fri, 09 Dec 2022 22:46:08 GMT
+      Expires: Tue, 06 Dec 2022 19:11:42 GMT
+      Last-Modified: Mon, 05 Dec 2022 19:11:42 GMT
+      Server: nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding: chunked
+      Vary: Accept-Encoding
+      X-Cache-Status: STALE
+      X-Request-Fingerprint: request:seasons:fbc5d2015756a23838c5f877ca9da3c083265e65
+    status:
+      code: 200
+      message: OK
+    url: https://api.jikan.moe/v4/seasons/2018/winter
+version: 1

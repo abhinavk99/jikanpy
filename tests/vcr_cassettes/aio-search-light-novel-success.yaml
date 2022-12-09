@@ -1,0 +1,179 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.jikan.moe/v4/manga?q=mushoku+tensei&limit=10&type=lightnovel
+  response:
+    body:
+      string: '{"pagination":{"last_visible_page":16,"has_next_page":true,"current_page":1,"items":{"count":10,"total":156,"per_page":10}},"data":[{"mal_id":70261,"url":"https:\/\/myanimelist.net\/manga\/70261\/Mushoku_Tensei__Isekai_Ittara_Honki_Dasu","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/120337.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/120337t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/120337l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/120337.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/120337t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/120337l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Mushoku
+        Tensei: Isekai Ittara Honki Dasu"},{"type":"Japanese","title":"\u7121\u8077\u8ee2\u751f
+        \uff5e\u7570\u4e16\u754c\u884c\u3063\u305f\u3089\u672c\u6c17\u3060\u3059\uff5e"},{"type":"English","title":"Mushoku
+        Tensei: Jobless Reincarnation"}],"title":"Mushoku Tensei: Isekai Ittara Honki
+        Dasu","title_english":"Mushoku Tensei: Jobless Reincarnation","title_japanese":"\u7121\u8077\u8ee2\u751f
+        \uff5e\u7570\u4e16\u754c\u884c\u3063\u305f\u3089\u672c\u6c17\u3060\u3059\uff5e","title_synonyms":[],"type":"Light
+        Novel","chapters":330,"volumes":26,"status":"Finished","publishing":false,"published":{"from":"2014-01-23T00:00:00+00:00","to":"2022-11-25T00:00:00+00:00","prop":{"from":{"day":23,"month":1,"year":2014},"to":{"day":25,"month":11,"year":2022}},"string":"Jan
+        23, 2014 to Nov 25, 2022"},"score":8.77,"scored":8.77,"scored_by":27496,"rank":38,"popularity":193,"members":67764,"favorites":5800,"synopsis":"Killed
+        while saving a stranger from a traffic collision, a 34-year-old NEET is reincarnated
+        into a world of magic as Rudeus Greyrat, a newborn baby. With knowledge, experience,
+        and regrets from his previous life retained, Rudeus vows to lead a fulfilling
+        life and not repeat his past mistakes. Now gifted with a tremendous amount
+        of magical power as well as the mind of a grown adult, Rudeus is seen as a
+        genius in the making by his new parents. Soon, he finds himself studying under
+        powerful warriors, such as his swordsman father and a mage named Roxy Migurdia\u2014all
+        in order to hone his apparent talents. But despite his innocent exterior,
+        Rudeus is still a perverted otaku, who uses his wealth of knowledge to make
+        moves on women whom he could never make in his previous life. [Written by
+        MAL Rewrite]","background":"Mushoku Tensei: Isekai Ittara Honki Dasu is a
+        web novel that was serialized on Shousetsuka ni Narou website from November
+        22, 2012 to April 3, 2015. It made repeated appearances on site''s rankings
+        as the most popular work during its serialization. Media Factory published
+        the first volume on January 23, 2014. The series has been published in English
+        as Mushoku Tensei: Jobless Reincarnation by Seven Seas Entertainment under
+        the Airship imprint since May 21, 2019.","authors":[{"mal_id":30675,"type":"people","name":"Rifujin
+        na Magonote","url":"https:\/\/myanimelist.net\/people\/30675\/Rifujin_na_Magonote"},{"mal_id":30677,"type":"people","name":"Sirotaka","url":"https:\/\/myanimelist.net\/people\/30677\/Sirotaka"}],"serializations":[],"genres":[{"mal_id":10,"type":"manga","name":"Fantasy","url":"https:\/\/myanimelist.net\/manga\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[{"mal_id":62,"type":"manga","name":"Isekai","url":"https:\/\/myanimelist.net\/manga\/genre\/62\/Isekai"},{"mal_id":73,"type":"manga","name":"Reincarnation","url":"https:\/\/myanimelist.net\/manga\/genre\/73\/Reincarnation"}],"demographics":[]},{"mal_id":128132,"url":"https:\/\/myanimelist.net\/manga\/128132\/Nishuume_Cheat_no_Tensei_Madoushi__Saikyou_ga_1000-nengo_ni_Tensei_shitara_Jinsei_Yoyuu_sugimashita","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/239376.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/239376t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/239376l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/239376.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/239376t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/239376l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Nishuume
+        Cheat no Tensei Madoushi: Saikyou ga 1000-nengo ni Tensei shitara, Jinsei
+        Yoyuu sugimashita"},{"type":"Japanese","title":"\u4e8c\u5468\u76ee\u30c1\u30fc\u30c8\u306e\u8ee2\u751f\u9b54\u5c0e\u58eb\u3000\uff5e\u6700\u5f37\u304c\uff11\uff10\uff10\uff10\u5e74\u5f8c\u306b\u8ee2\u751f\u3057\u305f\u3089\u3001\u4eba\u751f\u4f59\u88d5\u3059\u304e\u307e\u3057\u305f\uff5e"}],"title":"Nishuume
+        Cheat no Tensei Madoushi: Saikyou ga 1000-nengo ni Tensei shitara, Jinsei
+        Yoyuu sugimashita","title_english":null,"title_japanese":"\u4e8c\u5468\u76ee\u30c1\u30fc\u30c8\u306e\u8ee2\u751f\u9b54\u5c0e\u58eb\u3000\uff5e\u6700\u5f37\u304c\uff11\uff10\uff10\uff10\u5e74\u5f8c\u306b\u8ee2\u751f\u3057\u305f\u3089\u3001\u4eba\u751f\u4f59\u88d5\u3059\u304e\u307e\u3057\u305f\uff5e","title_synonyms":[],"type":"Light
+        Novel","chapters":null,"volumes":null,"status":"Publishing","publishing":true,"published":{"from":"2019-07-02T00:00:00+00:00","to":null,"prop":{"from":{"day":2,"month":7,"year":2019},"to":{"day":null,"month":null,"year":null}},"string":"Jul
+        2, 2019 to ?"},"score":null,"scored":null,"scored_by":null,"rank":36316,"popularity":26673,"members":252,"favorites":3,"synopsis":"Having
+        become overwhelming strong, a mage was bored with his life and decided to
+        reincarnate in another era about 1000 years later. But after reincarnation,
+        the mage now known as Kurt saw a world where magic had declined, and the mages
+        of the era are overall much weaker than those of 1000 years ago. It also seems
+        that Kurt is being looked down upon for his Gold Magic as it is called Defective
+        Magic Power in this era. In order to investigate the mysterious decline of
+        magic in this era, Kurt enrolled in the Magic Academy at the Royal Capital
+        and showed his extraordinary talent where he would become unparalleled in
+        this second life of his too!? (Source: Shousetsuka ni Narou, translated)","background":null,"authors":[{"mal_id":28399,"type":"people","name":"Riichu","url":"https:\/\/myanimelist.net\/people\/28399\/Riichu"},{"mal_id":53305,"type":"people","name":"Utsuzawa,
+        Shikiso","url":"https:\/\/myanimelist.net\/people\/53305\/Shikiso_Utsuzawa"}],"serializations":[],"genres":[{"mal_id":1,"type":"manga","name":"Action","url":"https:\/\/myanimelist.net\/manga\/genre\/1\/Action"},{"mal_id":10,"type":"manga","name":"Fantasy","url":"https:\/\/myanimelist.net\/manga\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[{"mal_id":23,"type":"manga","name":"School","url":"https:\/\/myanimelist.net\/manga\/genre\/23\/School"}],"demographics":[]},{"mal_id":103857,"url":"https:\/\/myanimelist.net\/manga\/103857\/Jashin_Tensei_Cheat_Monogatari__Shomin_no_Ore_ga_Jashin_ni_Tensei_shita_no_wa_Ii_kedo_Maid_ga_Katte_ni_Harem_Tsukuttekurerunda_ga","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/190156.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/190156t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/190156l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/190156.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/190156t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/190156l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Jashin
+        Tensei Cheat Monogatari: Shomin no Ore ga Jashin ni Tensei shita no wa Ii
+        kedo, Maid ga Katte ni Harem Tsukuttekurerunda ga!?"},{"type":"Japanese","title":"\u90aa\u795e\u8ee2\u751f\u30c1\u30fc\u30c8\u7269\u8a9e
+        \uff5e\u5eb6\u6c11\u306e\u4ffa\u304c\u90aa\u795e\u306b\u8ee2\u751f\u3057\u305f\u306e\u306f\u3044\u3044\u3051\u3069\u3001\u30e1\u30a4\u30c9\u304c\u52dd\u624b\u306b\u30cf\u30fc\u30ec\u30e0\u3064\u304f\u3063\u3066\u304f\u308c\u308b\u3093\u3060\u304c!?\uff5e"}],"title":"Jashin
+        Tensei Cheat Monogatari: Shomin no Ore ga Jashin ni Tensei shita no wa Ii
+        kedo, Maid ga Katte ni Harem Tsukuttekurerunda ga!?","title_english":null,"title_japanese":"\u90aa\u795e\u8ee2\u751f\u30c1\u30fc\u30c8\u7269\u8a9e
+        \uff5e\u5eb6\u6c11\u306e\u4ffa\u304c\u90aa\u795e\u306b\u8ee2\u751f\u3057\u305f\u306e\u306f\u3044\u3044\u3051\u3069\u3001\u30e1\u30a4\u30c9\u304c\u52dd\u624b\u306b\u30cf\u30fc\u30ec\u30e0\u3064\u304f\u3063\u3066\u304f\u308c\u308b\u3093\u3060\u304c!?\uff5e","title_synonyms":[],"type":"Light
+        Novel","chapters":null,"volumes":null,"status":"Publishing","publishing":true,"published":{"from":"2017-02-01T00:00:00+00:00","to":null,"prop":{"from":{"day":1,"month":2,"year":2017},"to":{"day":null,"month":null,"year":null}},"string":"Feb
+        1, 2017 to ?"},"score":null,"scored":null,"scored_by":null,"rank":null,"popularity":40147,"members":89,"favorites":1,"synopsis":"Looking
+        for information on the light novel Jashin Tensei Cheat Monogatari: Shomin
+        no Ore ga Jashin ni Tensei shita no wa Ii kedo, Maid ga Katte ni Harem Tsukuttekurerunda
+        ga!?? Find out more with MyAnimeList, the world''s most active online anime
+        and manga community and database.","background":null,"authors":[{"mal_id":35097,"type":"people","name":"Nanahara,
+        Fuyuki","url":"https:\/\/myanimelist.net\/people\/35097\/Fuyuki_Nanahara"},{"mal_id":40246,"type":"people","name":"Christaller,
+        Sakurai","url":"https:\/\/myanimelist.net\/people\/40246\/Sakurai_Christaller"}],"serializations":[],"genres":[{"mal_id":10,"type":"manga","name":"Fantasy","url":"https:\/\/myanimelist.net\/manga\/genre\/10\/Fantasy"},{"mal_id":37,"type":"manga","name":"Supernatural","url":"https:\/\/myanimelist.net\/manga\/genre\/37\/Supernatural"},{"mal_id":12,"type":"manga","name":"Hentai","url":"https:\/\/myanimelist.net\/manga\/genre\/12\/Hentai"}],"explicit_genres":[],"themes":[{"mal_id":35,"type":"manga","name":"Harem","url":"https:\/\/myanimelist.net\/manga\/genre\/35\/Harem"}],"demographics":[]},{"mal_id":109239,"url":"https:\/\/myanimelist.net\/manga\/109239\/Tensei_Kizoku_no_Ganbarisuginai_Harem_Life__Sekkaku_Atotsugi_de_wa_Nai_Kizoku_no_Rokudan_ni_Tensei_shita_n_dakara_Nonbiri_Isekai_Slow_Life_wo_Okurou","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/199909.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/199909t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/199909l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/199909.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/199909t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/199909l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Tensei
+        Kizoku no Ganbarisuginai Harem Life: Sekkaku Atotsugi de wa Nai Kizoku no
+        Rokudan ni Tensei shita n dakara Nonbiri Isekai Slow Life wo Okurou!"},{"type":"Japanese","title":"\u8ee2\u751f\u8cb4\u65cf\u306e\u9811\u5f35\u308a\u3059\u304e\u306a\u3044\u30cf\u30fc\u30ec\u30e0\u30e9\u30a4\u30d5
+        ~\u305b\u3063\u304b\u304f\u8de1\u7d99\u304e\u3067\u306f\u306a\u3044\u8cb4\u65cf\u306e\u516d\u7537\u306b\u8ee2\u751f\u3057\u305f\u3093\u3060\u304b\u3089\u306e\u3093\u3073\u308a\u7570\u4e16\u754c\u30b9\u30ed\u30fc\u30e9\u30a4\u30d5\u3092\u9001\u308d\u3046!
+        ~"}],"title":"Tensei Kizoku no Ganbarisuginai Harem Life: Sekkaku Atotsugi
+        de wa Nai Kizoku no Rokudan ni Tensei shita n dakara Nonbiri Isekai Slow Life
+        wo Okurou!","title_english":null,"title_japanese":"\u8ee2\u751f\u8cb4\u65cf\u306e\u9811\u5f35\u308a\u3059\u304e\u306a\u3044\u30cf\u30fc\u30ec\u30e0\u30e9\u30a4\u30d5
+        ~\u305b\u3063\u304b\u304f\u8de1\u7d99\u304e\u3067\u306f\u306a\u3044\u8cb4\u65cf\u306e\u516d\u7537\u306b\u8ee2\u751f\u3057\u305f\u3093\u3060\u304b\u3089\u306e\u3093\u3073\u308a\u7570\u4e16\u754c\u30b9\u30ed\u30fc\u30e9\u30a4\u30d5\u3092\u9001\u308d\u3046!
+        ~","title_synonyms":[],"type":"Light Novel","chapters":null,"volumes":null,"status":"Publishing","publishing":true,"published":{"from":"2017-09-01T00:00:00+00:00","to":null,"prop":{"from":{"day":1,"month":9,"year":2017},"to":{"day":null,"month":null,"year":null}},"string":"Sep
+        1, 2017 to ?"},"score":null,"scored":null,"scored_by":null,"rank":null,"popularity":28297,"members":218,"favorites":1,"synopsis":"Looking
+        for information on the light novel Tensei Kizoku no Ganbarisuginai Harem Life:
+        Sekkaku Atotsugi de wa Nai Kizoku no Rokudan ni Tensei shita n dakara Nonbiri
+        Isekai Slow Life wo Okurou!? Find out more with MyAnimeList, the world''s
+        most active online anime and manga community and database.","background":null,"authors":[{"mal_id":22973,"type":"people","name":"100
+        Yen Locker","url":"https:\/\/myanimelist.net\/people\/22973\/100_Yen_Locker"},{"mal_id":41274,"type":"people","name":"Akagawa,
+        Mikami","url":"https:\/\/myanimelist.net\/people\/41274\/Mikami_Akagawa"}],"serializations":[],"genres":[{"mal_id":10,"type":"manga","name":"Fantasy","url":"https:\/\/myanimelist.net\/manga\/genre\/10\/Fantasy"},{"mal_id":12,"type":"manga","name":"Hentai","url":"https:\/\/myanimelist.net\/manga\/genre\/12\/Hentai"}],"explicit_genres":[],"themes":[{"mal_id":35,"type":"manga","name":"Harem","url":"https:\/\/myanimelist.net\/manga\/genre\/35\/Harem"}],"demographics":[]},{"mal_id":118237,"url":"https:\/\/myanimelist.net\/manga\/118237\/Isekai_Tensei_no_Boukensha","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/221782.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/221782t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/221782l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/221782.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/221782t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/221782l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Isekai
+        Tensei no Boukensha"},{"type":"Japanese","title":"\u7570\u4e16\u754c\u8ee2\u751f\u306e\u5192\u967a\u8005"},{"type":"English","title":"Isekai
+        Tensei: Recruited to Another World"}],"title":"Isekai Tensei no Boukensha","title_english":"Isekai
+        Tensei: Recruited to Another World","title_japanese":"\u7570\u4e16\u754c\u8ee2\u751f\u306e\u5192\u967a\u8005","title_synonyms":[],"type":"Light
+        Novel","chapters":null,"volumes":null,"status":"Publishing","publishing":true,"published":{"from":"2017-04-10T00:00:00+00:00","to":null,"prop":{"from":{"day":10,"month":4,"year":2017},"to":{"day":null,"month":null,"year":null}},"string":"Apr
+        10, 2017 to ?"},"score":null,"scored":null,"scored_by":null,"rank":21440,"popularity":32429,"members":153,"favorites":0,"synopsis":"After
+        waking up at his own funeral, Tenma Ootori gets a second chance at life when
+        a god from another world presents him with an enticing offer: if Tenma agrees
+        to be reincarnated in order to save their dying world, the gods will bestow
+        cheat abilities upon him. Tenma accepts, and is reborn in a lush fantasy world
+        filled with demi-humans, magic spells and items, monsters, mysterious forests,
+        and more! As he grows, more of his gods-given powers and abilities\u2014including
+        his unique power to befriend adorable monsters like slimes and baby wolves\u2014are
+        revealed to his adoptive parents, two former master adventurers, and his grandfather,
+        a famous wizard. But one fateful day, three mysterious strangers shatter the
+        tranquility of Tenma''s village by trying to kidnap him, and that''s where
+        Tenma''s adventure really begins... (Source: J-Novel Club)","background":"Isekai
+        Tensei no Boukensha has been published digitally in English as Isekai Tensei:
+        Recruited to Another World by J-Novel Club since August 18, 2022.","authors":[{"mal_id":49586,"type":"people","name":"Kenichi","url":"https:\/\/myanimelist.net\/people\/49586\/Kenichi"},{"mal_id":49587,"type":"people","name":"Nemu","url":"https:\/\/myanimelist.net\/people\/49587\/Nemu"}],"serializations":[],"genres":[{"mal_id":1,"type":"manga","name":"Action","url":"https:\/\/myanimelist.net\/manga\/genre\/1\/Action"},{"mal_id":2,"type":"manga","name":"Adventure","url":"https:\/\/myanimelist.net\/manga\/genre\/2\/Adventure"},{"mal_id":10,"type":"manga","name":"Fantasy","url":"https:\/\/myanimelist.net\/manga\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[],"demographics":[]},{"mal_id":109294,"url":"https:\/\/myanimelist.net\/manga\/109294\/Kekkaishi_e_no_Tensei","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/200006.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/200006t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/200006l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/200006.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/200006t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/200006l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Kekkaishi
+        e no Tensei"},{"type":"Japanese","title":"\u7d50\u754c\u5e2b\u3078\u306e\u8ee2\u751f"},{"type":"English","title":"Transmigration
+        of Kekkaishi"}],"title":"Kekkaishi e no Tensei","title_english":"Transmigration
+        of Kekkaishi","title_japanese":"\u7d50\u754c\u5e2b\u3078\u306e\u8ee2\u751f","title_synonyms":[],"type":"Light
+        Novel","chapters":null,"volumes":null,"status":"Publishing","publishing":true,"published":{"from":"2017-08-30T00:00:00+00:00","to":null,"prop":{"from":{"day":30,"month":8,"year":2017},"to":{"day":null,"month":null,"year":null}},"string":"Aug
+        30, 2017 to ?"},"score":null,"scored":null,"scored_by":null,"rank":26384,"popularity":21928,"members":386,"favorites":0,"synopsis":"Looking
+        for information on the light novel Kekkaishi e no Tensei (Transmigration of
+        Kekkaishi)? Find out more with MyAnimeList, the world''s most active online
+        anime and manga community and database.","background":null,"authors":[{"mal_id":35003,"type":"people","name":"Katou,
+        Itsuwa","url":"https:\/\/myanimelist.net\/people\/35003\/Itsuwa_Katou"},{"mal_id":46566,"type":"people","name":"Kataoka,
+        Naotarou","url":"https:\/\/myanimelist.net\/people\/46566\/Naotarou_Kataoka"}],"serializations":[],"genres":[{"mal_id":2,"type":"manga","name":"Adventure","url":"https:\/\/myanimelist.net\/manga\/genre\/2\/Adventure"},{"mal_id":10,"type":"manga","name":"Fantasy","url":"https:\/\/myanimelist.net\/manga\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[],"demographics":[]},{"mal_id":101811,"url":"https:\/\/myanimelist.net\/manga\/101811\/Tensei_Majutsushi_no_Eiyuutan","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/184317.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/184317t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/184317l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/184317.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/184317t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/184317l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Tensei
+        Majutsushi no Eiyuutan"},{"type":"Japanese","title":"\u8ee2\u751f\u9b54\u8853\u5e2b\u306e\u82f1\u96c4\u8b5a"}],"title":"Tensei
+        Majutsushi no Eiyuutan","title_english":null,"title_japanese":"\u8ee2\u751f\u9b54\u8853\u5e2b\u306e\u82f1\u96c4\u8b5a","title_synonyms":[],"type":"Light
+        Novel","chapters":null,"volumes":null,"status":"Publishing","publishing":true,"published":{"from":"2016-10-31T00:00:00+00:00","to":null,"prop":{"from":{"day":31,"month":10,"year":2016},"to":{"day":null,"month":null,"year":null}},"string":"Oct
+        31, 2016 to ?"},"score":null,"scored":null,"scored_by":null,"rank":40165,"popularity":41179,"members":82,"favorites":0,"synopsis":"Looking
+        for information on the light novel Tensei Majutsushi no Eiyuutan? Find out
+        more with MyAnimeList, the world''s most active online anime and manga community
+        and database.","background":null,"authors":[{"mal_id":18269,"type":"people","name":"Tsurugi,
+        Hagane","url":"https:\/\/myanimelist.net\/people\/18269\/Hagane_Tsurugi"},{"mal_id":40812,"type":"people","name":"Satake,
+        Akinori","url":"https:\/\/myanimelist.net\/people\/40812\/Akinori_Satake"}],"serializations":[],"genres":[{"mal_id":1,"type":"manga","name":"Action","url":"https:\/\/myanimelist.net\/manga\/genre\/1\/Action"},{"mal_id":10,"type":"manga","name":"Fantasy","url":"https:\/\/myanimelist.net\/manga\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[],"demographics":[]},{"mal_id":150114,"url":"https:\/\/myanimelist.net\/manga\/150114\/Okashi_na_Tensei","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/266167.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/266167t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/266167l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/266167.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/266167t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/266167l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Okashi
+        na Tensei"},{"type":"Synonym","title":"Sweet Reincarnation"},{"type":"Synonym","title":"Sweet
+        Reincarnation"},{"type":"Japanese","title":"\u304a\u304b\u3057\u306a\u8ee2\u751f"},{"type":"English","title":"Treat
+        of Reincarnation"}],"title":"Okashi na Tensei","title_english":"Treat of Reincarnation","title_japanese":"\u304a\u304b\u3057\u306a\u8ee2\u751f","title_synonyms":["Sweet
+        Reincarnation"],"type":"Light Novel","chapters":null,"volumes":null,"status":"Publishing","publishing":true,"published":{"from":"2015-10-20T00:00:00+00:00","to":null,"prop":{"from":{"day":20,"month":10,"year":2015},"to":{"day":null,"month":null,"year":null}},"string":"Oct
+        20, 2015 to ?"},"score":null,"scored":null,"scored_by":null,"rank":25640,"popularity":52848,"members":40,"favorites":0,"synopsis":"In
+        an impoverished territory, to a poor aristocratic family, a single boy would
+        be born. Destined to become the next feudal lord, this boy''s name was Pastry.
+        Pastry, the possessor of a rare talent in his previous life, had a promising
+        future as a confectioner. Merciless thieves, rabid beasts, scheming nobles,
+        a domain in drought, many hardships such as these will befall the boy. Our
+        handsome successor, armed with his ingenuity and love for sweets, will survive
+        in this world of swords and magic. With a smile on his face, aiming for a
+        territory filled with happiness, the young Pastry''s challenges begin. The
+        best sweets and the best story. A single boy''s journey to change the world.
+        A royal sweet fantasy. (Source: Shousetsuka ni Narou, translated)","background":"Okashi
+        na Tensei began as a web novel on Shousetsuka ni Narou on February 17, 2015,
+        and has been published in print by TO Books since October 20, 2015.","authors":[{"mal_id":47476,"type":"people","name":"Shuri,
+        Yasuyuki","url":"https:\/\/myanimelist.net\/people\/47476\/Yasuyuki_Shuri"},{"mal_id":50584,"type":"people","name":"Koryuu,
+        Nozomu","url":"https:\/\/myanimelist.net\/people\/50584\/Nozomu_Koryuu"}],"serializations":[],"genres":[{"mal_id":10,"type":"manga","name":"Fantasy","url":"https:\/\/myanimelist.net\/manga\/genre\/10\/Fantasy"},{"mal_id":36,"type":"manga","name":"Slice
+        of Life","url":"https:\/\/myanimelist.net\/manga\/genre\/36\/Slice_of_Life"}],"explicit_genres":[],"themes":[],"demographics":[]},{"mal_id":72189,"url":"https:\/\/myanimelist.net\/manga\/72189\/Tensei_no_Kafka_Tsukai","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/161058.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/161058t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/161058l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/161058.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/161058t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/161058l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Tensei
+        no Kafka Tsukai"},{"type":"Japanese","title":"\u8ee2\u9192\u306eKAFKA\u4f7f\u3044"}],"title":"Tensei
+        no Kafka Tsukai","title_english":null,"title_japanese":"\u8ee2\u9192\u306eKAFKA\u4f7f\u3044","title_synonyms":[],"type":"Light
+        Novel","chapters":8,"volumes":1,"status":"Finished","publishing":false,"published":{"from":"2014-04-28T00:00:00+00:00","to":null,"prop":{"from":{"day":28,"month":4,"year":2014},"to":{"day":null,"month":null,"year":null}},"string":"Apr
+        28, 2014"},"score":null,"scored":null,"scored_by":null,"rank":40050,"popularity":48191,"members":52,"favorites":0,"synopsis":"Looking
+        for information on the light novel Tensei no Kafka Tsukai? Find out more with
+        MyAnimeList, the world''s most active online anime and manga community and
+        database.","background":null,"authors":[{"mal_id":27635,"type":"people","name":"Higa,
+        Tomoyasu","url":"https:\/\/myanimelist.net\/people\/27635\/Tomoyasu_Higa"},{"mal_id":28741,"type":"people","name":"Zerokichi","url":"https:\/\/myanimelist.net\/people\/28741\/Zerokichi"}],"serializations":[],"genres":[{"mal_id":10,"type":"manga","name":"Fantasy","url":"https:\/\/myanimelist.net\/manga\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[],"demographics":[]},{"mal_id":96183,"url":"https:\/\/myanimelist.net\/manga\/96183\/Tensei_Shoujo_no_Rirekisho","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/207072.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/207072t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/207072l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/207072.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/207072t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/207072l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Tensei
+        Shoujo no Rirekisho"},{"type":"Synonym","title":"Resume of Transmigration
+        Girl"},{"type":"Synonym","title":"Resume of Transmigration Girl"},{"type":"Japanese","title":"\u8ee2\u751f\u5c11\u5973\u306e\u5c65\u6b74\u66f8"}],"title":"Tensei
+        Shoujo no Rirekisho","title_english":null,"title_japanese":"\u8ee2\u751f\u5c11\u5973\u306e\u5c65\u6b74\u66f8","title_synonyms":["Resume
+        of Transmigration Girl"],"type":"Light Novel","chapters":null,"volumes":null,"status":"Publishing","publishing":true,"published":{"from":"2016-01-30T00:00:00+00:00","to":null,"prop":{"from":{"day":30,"month":1,"year":2016},"to":{"day":null,"month":null,"year":null}},"string":"Jan
+        30, 2016 to ?"},"score":null,"scored":null,"scored_by":null,"rank":28614,"popularity":20216,"members":456,"favorites":3,"synopsis":"A
+        smart, athletic, who handles anything perfectly and unequaled beautiful girl,
+        dies young due to a car accident. And now, while possessing the memories of
+        her previous life, is reincarnated in a fantasy-ish world with swords and
+        magic! In this world all lives were dependent on magicians, however, their
+        numbers decreased every year due to the magic power scattered around the world
+        running out, thus the reliance on magic was coming to an end. This is a story
+        that will lead to the life of a girl relying on the knowledge of her previous
+        life, as she proposes a way to live even without the use of magic while seeking
+        for what it is, and aiming for a wealthier life. (Source: Novel Updates, edited)","background":null,"authors":[{"mal_id":25847,"type":"people","name":"Kuwashima,
+        Rein","url":"https:\/\/myanimelist.net\/people\/25847\/Rein_Kuwashima"},{"mal_id":39993,"type":"people","name":"Karasawa,
+        Kazuki","url":"https:\/\/myanimelist.net\/people\/39993\/Kazuki_Karasawa"}],"serializations":[],"genres":[{"mal_id":10,"type":"manga","name":"Fantasy","url":"https:\/\/myanimelist.net\/manga\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[],"demographics":[]}]}'
+    headers:
+      Access-Control-Allow-Methods: GET
+      Access-Control-Allow-Origin: '*'
+      Cache-Control: private, must-revalidate
+      Connection: keep-alive
+      Content-Encoding: gzip
+      Content-Type: application/json
+      Date: Fri, 09 Dec 2022 22:44:10 GMT
+      Expires: '-1'
+      Pragma: no-cache
+      Server: nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding: chunked
+      Vary: Accept-Encoding
+      X-Cache-Status: MISS
+    status:
+      code: 200
+      message: OK
+    url: https://api.jikan.moe/v4/manga?q=mushoku+tensei&limit=10&type=lightnovel
+version: 1

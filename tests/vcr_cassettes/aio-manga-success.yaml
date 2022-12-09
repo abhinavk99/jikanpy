@@ -1,0 +1,69 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.jikan.moe/v4/manga/25
+  response:
+    body:
+      string: '{"data":{"mal_id":25,"url":"https:\/\/myanimelist.net\/manga\/25\/Fullmetal_Alchemist","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/243675.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/243675t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/243675l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/243675.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/243675t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/243675l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Fullmetal
+        Alchemist"},{"type":"Synonym","title":"Full Metal Alchemist"},{"type":"Synonym","title":"Hagane
+        no Renkinjutsushi"},{"type":"Synonym","title":"FMA"},{"type":"Synonym","title":"HagaRen"},{"type":"Synonym","title":"Fullmetal
+        Alchemist Gaiden"},{"type":"Synonym","title":"Full Metal Alchemist"},{"type":"Synonym","title":"Hagane
+        no Renkinjutsushi"},{"type":"Synonym","title":"FMA"},{"type":"Synonym","title":"HagaRen"},{"type":"Synonym","title":"Fullmetal
+        Alchemist Gaiden"},{"type":"Japanese","title":"\u92fc\u306e\u932c\u91d1\u8853\u5e2b"},{"type":"English","title":"Fullmetal
+        Alchemist"}],"title":"Fullmetal Alchemist","title_english":"Fullmetal Alchemist","title_japanese":"\u92fc\u306e\u932c\u91d1\u8853\u5e2b","title_synonyms":["Full
+        Metal Alchemist","Hagane no Renkinjutsushi","FMA","HagaRen","Fullmetal Alchemist
+        Gaiden"],"type":"Manga","chapters":116,"volumes":27,"status":"Finished","publishing":false,"published":{"from":"2001-07-12T00:00:00+00:00","to":"2010-09-11T00:00:00+00:00","prop":{"from":{"day":12,"month":7,"year":2001},"to":{"day":11,"month":9,"year":2010}},"string":"Jul
+        12, 2001 to Sep 11, 2010"},"score":9.04,"scored":9.04,"scored_by":147371,"rank":7,"popularity":18,"members":271964,"favorites":28978,"synopsis":"Alchemists
+        are knowledgeable and naturally talented individuals who can manipulate and
+        modify matter due to their art. Yet despite the wide range of possibilities,
+        alchemy is not as all-powerful as most would believe. Human transmutation
+        is strictly forbidden, and whoever attempts it risks severe consequences.
+        Even so, siblings Edward and Alphonse Elric decide to ignore this great taboo
+        and bring their mother back to life. Unfortunately, not only do they fail
+        in resurrecting her, they also pay an extremely high price for their arrogance:
+        Edward loses his left leg and Alphonse his entire body. Furthermore, Edward
+        also gives up his right arm in order to seal his brother''s soul into a suit
+        of armor. Years later, the young alchemists travel across the country looking
+        for the Philosopher''s Stone, in the hopes of recovering their old bodies
+        with its power. However, their quest for the fated stone also leads them to
+        unravel far darker secrets than they could ever imagine. [Written by MAL Rewrite]","background":"Hagane
+        no Renkinjutsushi won the 49th Shogakukan Manga Award for the shounen demographic
+        in 2004. Hiromu Arakawa also won the 15th Tezuka Osamu Cultural Prize in the
+        New Artist Prize category for the series in 2011. As of 2015, over 64 million
+        copies of the series have been sold worldwide, making it one of Square Enix''s
+        most successful publications, according to Nielsen Bookscan. A live-action
+        film is in development by Warner Bros. Japan and is scheduled for release
+        in Winter 2017. The series was published in English as Fullmetal Alchemist
+        by VIZ Media from May 3, 2005 to December 20, 2011, and in eBook format by
+        Yen Press on April 15, 2014. A 3-in-1 omnibus edition was released by VIZ
+        from June 7, 2011 to November 11, 2014 as well as a complete box set in November
+        1, 2011 (which included the novel Fullmetal Alchemist: The Ties That Bind).
+        The manga was also published in Italian by Panini Comics under the Planet
+        Manga imprint from July 13, 2006 to September 3, 2011, in Polish by J.P. Fantastica
+        from January 2006 to to April 2012, in Brazilian Portuguese by Jbc from February
+        2007 to April 2011 and in Spanish by Ivrea Argentina starting December 12,
+        2016.","authors":[{"mal_id":1874,"type":"people","name":"Arakawa, Hiromu","url":"https:\/\/myanimelist.net\/people\/1874\/Hiromu_Arakawa"}],"serializations":[{"mal_id":13,"type":"manga","name":"Shounen
+        Gangan","url":"https:\/\/myanimelist.net\/manga\/magazine\/13\/Shounen_Gangan"}],"genres":[{"mal_id":1,"type":"manga","name":"Action","url":"https:\/\/myanimelist.net\/manga\/genre\/1\/Action"},{"mal_id":2,"type":"manga","name":"Adventure","url":"https:\/\/myanimelist.net\/manga\/genre\/2\/Adventure"},{"mal_id":46,"type":"manga","name":"Award
+        Winning","url":"https:\/\/myanimelist.net\/manga\/genre\/46\/Award_Winning"},{"mal_id":8,"type":"manga","name":"Drama","url":"https:\/\/myanimelist.net\/manga\/genre\/8\/Drama"},{"mal_id":10,"type":"manga","name":"Fantasy","url":"https:\/\/myanimelist.net\/manga\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[{"mal_id":38,"type":"manga","name":"Military","url":"https:\/\/myanimelist.net\/manga\/genre\/38\/Military"}],"demographics":[{"mal_id":27,"type":"manga","name":"Shounen","url":"https:\/\/myanimelist.net\/manga\/genre\/27\/Shounen"}]}}'
+    headers:
+      Access-Control-Allow-Methods: GET
+      Access-Control-Allow-Origin: '*'
+      Cache-Control: public, s-maxage=86400
+      Connection: keep-alive
+      Content-Encoding: gzip
+      Content-Type: application/json
+      Date: Fri, 09 Dec 2022 22:44:03 GMT
+      Expires: Sat, 10 Dec 2022 22:03:05 GMT
+      Last-Modified: Fri, 09 Dec 2022 22:03:05 GMT
+      Server: nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding: chunked
+      Vary: Accept-Encoding
+      X-Cache-Status: HIT
+      X-Request-Fingerprint: request:manga:e851b47a14c23c5aa4dc3c335d5243bac564eba7
+    status:
+      code: 200
+      message: OK
+    url: https://api.jikan.moe/v4/manga/25
+version: 1
