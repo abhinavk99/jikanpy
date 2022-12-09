@@ -52,7 +52,7 @@ def test_wrap_response(header_keys, jikan):
     assert isinstance(anime_info["headers"], dict)
     assert mushishi_url == anime_info["jikan_url"]
     # Test against headers mentioned in documentation
-    # https://jikan.docs.apiary.io/#introduction/information/caching
+    # https://docs.api.jikan.moe/#section/Information/Caching
     assert header_keys.issubset(anime_info["headers"].keys())
 
 
