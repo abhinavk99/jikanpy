@@ -167,7 +167,7 @@ class AioJikan:
         return await self._get("anime", id, extension, page)
 
     # Extended functionality because this endpoint is the only outlier to the pattern
-    def anime_episode_by_id(
+    async def anime_episode_by_id(
         self,
         anime_id: int,
         episode_id: int
@@ -478,7 +478,7 @@ class AioJikan:
         """Deprecated: Gets Magazine information by ID."""
         raise DeprecatedEndpoint("magazine is a deprecated endpoint")
 
-    async def user(
+    async def users(
         self,
         username: str,
         extension: Optional[str] = None,

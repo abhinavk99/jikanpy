@@ -176,14 +176,14 @@ def test_search_user_success(user_keys, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/season-success.yaml")
 def test_season_success(season_keys, jikan):
-    season_info = jikan.season(year=YEAR, season=SEASON)
+    season_info = jikan.seasons(year=YEAR, season=SEASON)
 
     assert isinstance(season_info, dict)
     assert season_keys.issubset(season_info.keys())
 
 @vcr.use_cassette("tests/vcr_cassettes/season-anime-success.yaml")
 def test_season_anime_success(season_keys, seasonal_anime_keys, jikan):
-    season_info = jikan.season(year=YEAR, season=SEASON)
+    season_info = jikan.seasons(year=YEAR, season=SEASON)
 
     assert isinstance(season_info, dict)
     assert seasonal_anime_keys.issubset(season_info["data"][0].keys())
@@ -203,7 +203,7 @@ def test_season_history_success(season_archive_keys, archived_years_keys, jikan)
 
 @vcr.use_cassette("tests/vcr_cassettes/season-upcoming-success.yaml")
 def test_season_upcoming_success(season_keys, seasonal_anime_keys, jikan):
-    season_later_info = jikan.season(extension="upcoming")
+    season_later_info = jikan.seasons(extension="upcoming")
 
     assert isinstance(season_later_info, dict)
     assert season_keys.issubset(season_later_info.keys())
@@ -212,7 +212,7 @@ def test_season_upcoming_success(season_keys, seasonal_anime_keys, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/current-season-success.yaml")
 def test_season_current_success(season_keys, seasonal_anime_keys, jikan):
-    season_info = jikan.season(extension='now')
+    season_info = jikan.seasons(extension='now')
 
     assert isinstance(season_info, dict)
     assert season_keys.issubset(season_info.keys())
@@ -221,7 +221,7 @@ def test_season_current_success(season_keys, seasonal_anime_keys, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/schedule-success.yaml")
 def test_schedule_success(schedule_keys, subset_anime_keys, jikan):
-    schedule_info = jikan.schedule(day=DAY)
+    schedule_info = jikan.schedules(day=DAY)
 
     assert isinstance(schedule_info, dict)
     assert schedule_keys.issubset(schedule_info.keys())
@@ -257,7 +257,7 @@ def test_genre_manga_success(genre_keys, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/producer-success.yaml")
 def test_producer_success(producer_keys, subset_anime_keys, jikan):
-    producer_info = jikan.producer(id=PRODUCER)
+    producer_info = jikan.producers(id=PRODUCER)
 
     assert isinstance(producer_info, dict)
     assert producer_keys.issubset(producer_info["data"].keys())
@@ -272,7 +272,7 @@ def test_magazine_success(magazine_keys, magazine_manga_keys, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/user-success.yaml")
 def test_user_success(user_keys_full, jikan):
-    user_info = jikan.user(username=USERNAME, extension="full")
+    user_info = jikan.users(username=USERNAME, extension="full")
 
     assert isinstance(user_info, dict)
     assert user_info["data"]["username"] == "Nekomata1037"
@@ -281,7 +281,7 @@ def test_user_success(user_keys_full, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/user-friends-success.yaml")
 def test_user_friends_success(user_keys_friends, jikan):
-    user_info = jikan.user(username=USERNAME, extension="friends")
+    user_info = jikan.users(username=USERNAME, extension="friends")
 
     assert isinstance(user_info, dict)
     assert user_info["data"][0]["user"]["username"] == "purplepinapples"
@@ -298,7 +298,7 @@ def test_user_id_success(user_id_keys, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/club-success.yaml")
 def test_club_success(club_keys, jikan):
-    club_info = jikan.club(CLUB_ID)
+    club_info = jikan.clubs(CLUB_ID)
 
     assert isinstance(club_info, dict)
     assert club_info["data"]["name"] == "Fantasy Anime League"
@@ -381,13 +381,13 @@ def test_character_failure(jikan):
 @vcr.use_cassette("tests/vcr_cassettes/season-failure.yaml")
 def test_season_failure(jikan):
     with pytest.raises(APIException):
-        jikan.season(year=-1, season=SEASON)
+        jikan.seasons(year=-1, season=SEASON)
 
 
 @vcr.use_cassette("tests/vcr_cassettes/club-failure.yaml")
 def test_club_failure(jikan):
     with pytest.raises(APIException):
-        jikan.club(-1)
+        jikan.clubs(-1)
 
 
 @vcr.use_cassette("tests/vcr_cassettes/user-list-failure.yaml")

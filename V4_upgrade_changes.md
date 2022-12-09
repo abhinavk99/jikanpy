@@ -98,6 +98,6 @@ For example, the endpoints `schedules`, `seasons`, and `genres` all have some `g
 	- [X] Setup filtered searches as extensions
 	- [X] fix getAnimeEpisodeById suppport
 - [ ] Duplicate changes in aiojikan
-	- [ ] update aiojikan.py
+	- [X] update aiojikan.py
 	- [ ] update tests/test_aiojikan.py
 - [ ] Update repo information (readme, changelog, etc)

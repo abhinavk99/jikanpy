@@ -433,7 +433,7 @@ class Jikan:
         """Deprecated: Gets Magazine information by ID."""
         raise DeprecatedEndpoint("magazine is a deprecated endpoint")
 
-    def user(
+    def users(
         self,
         username: str,
         extension: Optional[str] = None,
