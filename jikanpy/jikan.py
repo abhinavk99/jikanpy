@@ -146,7 +146,10 @@ class Jikan:
         return self._request(url)
 
     def manga(
-        self, id: int, extension: Optional[str] = None, page: Optional[int] = None
+        self,
+        id: int,
+        extension: Optional[str] = None,
+        page: Optional[int] = None,
     ) -> Dict[str, Any]:
         """Gets information on a manga.
 
@@ -166,7 +169,11 @@ class Jikan:
         """
         return self._get("manga", id, extension, page)
 
-    def character(self, id: int, extension: Optional[str] = None) -> Dict[str, Any]:
+    def character(
+        self,
+        id: int,
+        extension: Optional[str] = None,
+    ) -> Dict[str, Any]:
         """Gets information on a character.
 
         Args:
@@ -183,7 +190,11 @@ class Jikan:
         """
         return self._get("characters", id, extension)
 
-    def people(self, id: int, extension: Optional[str] = None) -> Dict[str, Any]:
+    def people(
+        self,
+        id: int,
+        extension: Optional[str] = None,
+    ) -> Dict[str, Any]:
         """Gets information on a person.
 
         Args:
@@ -200,7 +211,7 @@ class Jikan:
         """
         return self._get("people", id, extension)
 
-    def club(
+    def clubs(
         self,
         id: int,
         extension: Optional[str] = None,
@@ -260,7 +271,7 @@ class Jikan:
         kwargs = {"search type": search_type, "query": query}
         return self._request(url, **kwargs)
 
-    def season(
+    def seasons(
         self,
         year: Optional[int] = None,
         season: Optional[str] = None,
@@ -268,7 +279,8 @@ class Jikan:
         page: Optional[int] = None,
         parameters: Optional[Mapping[str,Any]] = None,
     ) -> Dict[str, Any]:
-        """Gets information on anime of the specific season.
+        """Gets information on anime of the specific season or the current seasaon if
+            no parameters are specified.
 
         Args:
             year (:obj:`int`, optional): Year to get anime of. Defaults to None.
@@ -314,7 +326,8 @@ class Jikan:
         url = utils.get_season_history_url(self.base)
         return self._request(url)
 
-    def schedule(self,
+    def schedules(
+        self,
         day: Optional[str] = None,
         page: Optional[int] = None,
         parameters: Optional[Mapping[str, Any]] = None,
@@ -394,10 +407,11 @@ class Jikan:
         url = utils.get_genre_url(self.base, type=type, filter=filter)
         return self._request(url, type=type, filter=filter)
 
-    def producer(self,
-                id: int,
-                extension: Optional[str] = None
-        ) -> Dict[str, Any]:
+    def producers(
+        self,
+        id: int,
+        extension: Optional[str] = None,
+    ) -> Dict[str, Any]:
         """Gets anime by the producer/studio/licensor.
 
         Args:
@@ -409,9 +423,9 @@ class Jikan:
             Dict: Dictionary containing producer information
 
         Examples:
-            >>> jikan.producer(id=4)
-            >>> jikan.producer(id=4, extension='full')
-            >>> jikan.producer(id=4, extension='external')
+            >>> jikan.producers(id=4)
+            >>> jikan.producers(id=4, extension='full')
+            >>> jikan.producers(id=4, extension='external')
         """
         return self._get("producers", id, extension)
 

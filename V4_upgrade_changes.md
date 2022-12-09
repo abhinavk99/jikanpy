@@ -34,7 +34,7 @@ Updating this as I go and plan to use it to help me put PR together.
 
 ### More on search
 The `search` method in `jikan` only supports: anime, characters, clubs, magazines, manga, people, producers, and users.
-	These are all the endpoints that currently have `get`*endpoint_name*`Search` child endpoints.
+	These are all the endpoints that currently have `get`*endpoint_name*`Search` child endpoints (except for magazines, which has the same behavior but the endpoint is `getMagazines`).
 Other endpoints may have some other method of search, but it's more like a filtered list since they don't support the `q` query parameter. They also typically have non-uniform URL parameters which make it difficult to construct the URLs in one place.
 Therefore, other search-like endpoints should be handled by their own methods.
 For example, the endpoints `schedules`, `seasons`, and `genres` all have some `get` endpoint (but specifically not a `getSchedulesSearch` for example) , but they require different URL params and no query params. So these searches can be handled via extensions inside the method. 
@@ -98,5 +98,6 @@ For example, the endpoints `schedules`, `seasons`, and `genres` all have some `g
 	- [X] Setup filtered searches as extensions
 	- [X] fix getAnimeEpisodeById suppport
 - [ ] Duplicate changes in aiojikan
-	
-users of _get: anime, manga, character, people, club, producer
+	- [ ] update aiojikan.py
+	- [ ] update tests/test_aiojikan.py
+- [ ] Update repo information (readme, changelog, etc)
