@@ -34,10 +34,12 @@ pytestmark = pytest.mark.asyncio
 def aio_jikan():
     return AioJikan()
 
-@pytest.fixture(autouse=True)
-def slow_down_tests():
-    yield
-    time.sleep(0.1)
+# uncomment to slow down tests when needing to refresh
+# vcr cassettes
+# @pytest.fixture(autouse=True)
+# def slow_down_tests():
+#     yield
+#     time.sleep(0.5)
 
 async def test_construct_using_async_with():
     async with AioJikan() as temp_aio_jikan:
@@ -118,7 +120,7 @@ async def test_manga_success(manga_keys, aio_jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/aio-character-success.yaml")
 async def test_character_success(character_keys, aio_jikan):
-    character_info = await aio_jikan.character(GINKO_ID)
+    character_info = await aio_jikan.characters(GINKO_ID)
 
     assert isinstance(character_info, dict)
     assert character_info["data"]["name"] == "Ginko"
@@ -389,7 +391,7 @@ async def test_manga_failure(aio_jikan):
 @vcr.use_cassette("tests/vcr_cassettes/aio-character-failure.yaml")
 async def test_character_failure(aio_jikan):
     with pytest.raises(APIException):
-        await aio_jikan.character(-1)
+        await aio_jikan.characters(-1)
     await aio_jikan.close()
 
 

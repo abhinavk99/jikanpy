@@ -169,7 +169,7 @@ class Jikan:
         """
         return self._get("manga", id, extension, page)
 
-    def character(
+    def characters(
         self,
         id: int,
         extension: Optional[str] = None,
@@ -208,6 +208,11 @@ class Jikan:
 
         Examples:
             >>> jikan.person(2)
+            >>> jikan.person(2, extension='pictures')
+            >>> jikan.person(2,
+                    extension='pictures',
+                    parameters={'limit': 10}
+                )
         """
         return self._get("people", id, extension)
 
@@ -215,7 +220,7 @@ class Jikan:
         self,
         id: int,
         extension: Optional[str] = None,
-        ) -> Dict[str, Any]:
+    ) -> Dict[str, Any]:
         """Gets information on a club.
 
         Args:

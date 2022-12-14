@@ -30,6 +30,14 @@ from constants import (
 def jikan():
     return Jikan()
 
+# uncomment to slow down tests when needing to refresh
+# vcr cassettes
+# @pytest.fixture(autouse=True)
+# def slow_down_tests():
+#     yield
+#     time.sleep(0.5)
+
+
 
 def test_strip_base_url():
     temp_jikan = Jikan("http://localhost:8000/v4/")
@@ -101,7 +109,7 @@ def test_manga_success(manga_keys, jikan):
 
 @vcr.use_cassette("tests/vcr_cassettes/character-success.yaml")
 def test_character_success(character_keys, jikan):
-    character_info = jikan.character(GINKO_ID)
+    character_info = jikan.characters(GINKO_ID)
 
     assert isinstance(character_info, dict)
     assert character_info["data"]["name"] == "Ginko"
@@ -375,7 +383,7 @@ def test_manga_failure(jikan):
 @vcr.use_cassette("tests/vcr_cassettes/character-failure.yaml")
 def test_character_failure(jikan):
     with pytest.raises(APIException):
-        jikan.character(-1)
+        jikan.characters(-1)
 
 
 @vcr.use_cassette("tests/vcr_cassettes/season-failure.yaml")

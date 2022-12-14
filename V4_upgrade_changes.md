@@ -57,7 +57,7 @@ For example, the endpoints `schedules`, `seasons`, and `genres` all have some `g
 - Some pre-existing endpoints have new child endpoints
 	- ex: Some old endpoints (need to make a list of which) now support `/full` (e.g. `/manga/1/full`) to get all information about the series
 
-- New endpoints/end-points not previously support in by this wrapper:
+- New endpoints/end-points not previously supported by this wrapper:
 	- `/random`
 	- `/recommendations`
 	- `/reviews`
@@ -99,5 +99,5 @@ For example, the endpoints `schedules`, `seasons`, and `genres` all have some `g
 	- [X] fix getAnimeEpisodeById suppport
 - [ ] Duplicate changes in aiojikan
 	- [X] update aiojikan.py
-	- [ ] update tests/test_aiojikan.py
+	- [x] update tests/test_aiojikan.py
 - [ ] Update repo information (readme, changelog, etc)

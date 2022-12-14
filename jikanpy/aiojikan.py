@@ -211,7 +211,7 @@ class AioJikan:
         """
         return await self._get("manga", id, extension, page)
 
-    async def character(
+    async def characters(
         self,
         id: int,
         extension: Optional[str] = None,
@@ -250,6 +250,11 @@ class AioJikan:
 
         Examples:
             >>> await jikan.person(2)
+            >>> await jikan.person(2, extension='pictures')
+            >>> await jikan.person(2,
+                    extension='pictures',
+                    parameters={'limit': 10}
+                )
         """
         return await self._get("people", id, extension)
 
