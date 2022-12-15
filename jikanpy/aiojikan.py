@@ -302,7 +302,8 @@ class AioJikan:
             page (:obj:`int`, optional): Page number of the results. Defaults to
                 None.
             parameters (:obj:`dict`, optional): Dictionary containing key,value
-                pairs for ?key=value in url query. Defaults to None.
+                pairs for ?key=value in url query. Check API doc for information
+                on the parameters each search endpoint accepts. Defaults to None.
 
         Returns:
             Dict: Dictionary containing search results.
@@ -502,8 +503,7 @@ class AioJikan:
                 for information on which extensions accept paging. Defaults to
                 None.
             parameters (:obj:`dict`, optional): Dictionary containing key,value
-                pairs for ?key=value in url query. Check API doc for information
-                on which extensions accept paramters. Defaults to None.
+                pairs for ?key=value in url query. Defaults to None.
 
 
         Returns:
@@ -630,11 +630,10 @@ class AioJikan:
                 to get of the producer. Possible values are in the Jikan API documentation.
                 Defaults to None.
             parameters (:obj:`dict`, optional): Dictionary containing key,value
-                pairs for ?key=value in url query. Check API doc for information
-                on which extensions accept paramters. Defaults to None.
+                pairs for ?key=value in url query. Defaults to None.
 
         Returns:
-            Dict: Dictionary containing information about the w
+            Dict: Dictionary containing information about recent/popular episodes or promos 
 
         Examples:
             >>> await   jikan.watch(extension='episodes')

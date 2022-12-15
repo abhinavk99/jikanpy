@@ -259,8 +259,9 @@ class Jikan:
             page (:obj:`int`, optional): -- Page number of the results. Defaults to
                 None.
             parameters (:obj:`dict`, optional): Dictionary containing key,value
-                pairs for ?key=value in url query. Defaults to None.
-
+                pairs for ?key=value in url query. Check API doc for information
+                on which what parameters an endpoint accepts, if any.
+                Defaults to None.
         Returns:
             Dict: Dictionary containing search results.
 
@@ -588,7 +589,7 @@ class Jikan:
                 on which extensions accept paramters. Defaults to None.
 
         Returns:
-            Dict: Dictionary containing information about the w
+            Dict: Dictionary containing information about recent/popular episodes or promos
 
         Examples:
             >>> jikan.watch(extension='episodes')
