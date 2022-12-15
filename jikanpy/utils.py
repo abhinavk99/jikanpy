@@ -5,6 +5,8 @@ utils.py contains utility methods used in Jikan and AioJikan.
 
 from typing import Optional, Dict, Mapping, Union, Any
 
+from jikanpy.exceptions import DeprecatedEndpoint
+
 import aiohttp
 import requests
 
@@ -97,7 +99,7 @@ def get_season_url(
     #  just in case they add the posibility to get anime of
     #  entire year later e.g.: /seasons/2022
     if year is not None or season is not None:
-        url += f'/{year}/{season.lower()}'
+        url += f'/{year}/{season.lower()}' # type: ignore
 
     # nor enforcing that extensions and year/season are 
     #   mutually exclusive
@@ -126,7 +128,7 @@ def get_season_history_url(base_url: str) -> str:
     return f"{base_url}/seasons"
 
 
-def get_schedule_url(base_url: str, day: Optional[str] = None, parameters: Optional[Mapping[str, Any]] = None)  -> str:
+def get_schedule_url(base_url: str, day: Optional[str] = None, parameters: Optional[Dict[str, Any]] = None)  -> str:
     """Creates the URL for the schedule endpoint."""
     url = f"{base_url}/schedules"
 
@@ -146,7 +148,7 @@ def get_schedule_url(base_url: str, day: Optional[str] = None, parameters: Optio
 def get_top_url(
     base_url: str,
     type: str, page: Optional[int] = None,
-    parameters: Optional[Mapping[str, Any]] = None,
+    parameters: Optional[Dict[str, Any]] = None,
 ) -> str:
     """Creates the URL for the top endpoint."""
     url = f"{base_url}/top/{type.lower()}"
@@ -205,21 +207,6 @@ def get_user_id_url(
     """Creates the URL for the userbyid endpoint."""
     return f"{base_url}/users/userbyid/{user_id}"
 
-def get_meta_url(
-    base_url: str,
-    request: str,
-    type: Optional[str],
-    period: Optional[str],
-    offset: Optional[int],
-) -> str:
-    """Creates the URL for the meta endpoint."""
-    url = f"{base_url}/meta/{request}"
-    if type is not None and period is not None:
-        url += f"/{type}/{period}"
-    if page is not None:
-        url += f'&page={page}'
-    return url
-
 def get_recommendations_url(
     base_url: str,
     type: str,
@@ -248,7 +235,7 @@ def get_reviews_url(
 def get_watch_url(
     base_url: str,
     extension: str,
-    parameters: Optional[int] = None,
+    parameters: Optional[Dict[str, Any]] = None,
 ) -> str:
     """Creates the URL for the reviews endpoint."""
     url = f'{base_url}/watch/{extension.lower()}'

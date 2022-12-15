@@ -247,7 +247,7 @@ class Jikan:
         search_type: str,
         query: str,
         page: Optional[int] = None,
-        parameters: Optional[Mapping[str, Optional[Union[int, str, float]]]] = None,
+        parameters: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Searches for a query on MyAnimeList.
 
@@ -260,8 +260,7 @@ class Jikan:
                 None.
             parameters (:obj:`dict`, optional): Dictionary containing key,value
                 pairs for ?key=value in url query. Check API doc for information
-                on which what parameters an endpoint accepts, if any.
-                Defaults to None.
+                on the parameters each search endpoint accepts. Defaults to None.
         Returns:
             Dict: Dictionary containing search results.
 
@@ -283,7 +282,7 @@ class Jikan:
         season: Optional[str] = None,
         extension: Optional[str] = None,
         page: Optional[int] = None,
-        parameters: Optional[Mapping[str,Any]] = None,
+        parameters: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Gets information on anime of the specific season or the current seasaon if
             no parameters are specified.
@@ -318,7 +317,7 @@ class Jikan:
                 )
         """
         url = utils.get_season_url(self.base, year, season, extension, page, parameters)
-        return self._request(url, year=year, season=season, extension=extension, page=page, parameters=parameters)
+        return self._request(url, year=year, season=season, extension=extension, page=page)
 
     def season_history(self) -> Dict[str, Any]:
         """Gets all the years and their respective season names from MyAnimeList.
@@ -336,7 +335,7 @@ class Jikan:
         self,
         day: Optional[str] = None,
         page: Optional[int] = None,
-        parameters: Optional[Mapping[str, Any]] = None,
+        parameters: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Gets anime scheduled.
 
@@ -368,7 +367,7 @@ class Jikan:
         self,
         type: str,
         page: Optional[int] = None, 
-        parameters: Optional[Mapping[str, Any]] = None,
+        parameters: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Gets top items on MyAnimeList.
 
@@ -444,7 +443,7 @@ class Jikan:
         username: str,
         extension: Optional[str] = None,
         page: Optional[int] = None,
-        parameters: Optional[Mapping[str, str]] = None,
+        parameters: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Gets information about the user.
 
@@ -457,8 +456,7 @@ class Jikan:
                 for information on which extensions accept paging. Defaults to
                 None.
             parameters (:obj:`dict`, optional): Dictionary containing key,value
-                pairs for ?key=value in url query. Check API doc for information
-                on which extensions accept paramters. Defaults to None.
+                pairs for ?key=value in url query. Defaults to None.
 
         Returns:
             Dict: Dictionary containing information about the user.
@@ -576,7 +574,7 @@ class Jikan:
     def watch(
         self,
         extension: str,
-        parameters: Optional[Mapping[str, str]] = None,
+        parameters: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Gets information about recent activity of `type` resource.
 
@@ -585,8 +583,7 @@ class Jikan:
                 to get of the producer. Possible values are in the Jikan API documentation.
                 Defaults to None.
             parameters (:obj:`dict`, optional): Dictionary containing key,value
-                pairs for ?key=value in url query. Check API doc for information
-                on which extensions accept paramters. Defaults to None.
+                pairs for ?key=value in url query. Defaults to None.
 
         Returns:
             Dict: Dictionary containing information about recent/popular episodes or promos

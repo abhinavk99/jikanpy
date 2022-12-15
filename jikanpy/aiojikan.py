@@ -132,13 +132,6 @@ class AioJikan:
         url = utils.get_main_url(self.base, endpoint, id, extension, page)
         return await self._request(url, id=id, endpoint=endpoint)
 
-    async def _get_creator(
-        self, creator_type: str, creator_id: int, page: Optional[int] = None
-    ) -> Dict[str, Any]:
-        """Gets the response from Jikan API for producer and magazine"""
-        url = utils.get_creator_url(self.base, creator_type, creator_id, page)
-        return await self._request(url, id=creator_id, endpoint=creator_type)
-
     async def anime(
         self,
         id: int,
@@ -290,7 +283,7 @@ class AioJikan:
         search_type: str,
         query: str,
         page: Optional[int] = None,
-        parameters: Optional[Mapping[str, Optional[Union[int, str, float]]]] = None,
+        parameters: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Searches for a query on MyAnimeList.
 
@@ -326,7 +319,7 @@ class AioJikan:
         season: Optional[str] = None,
         extension: Optional[str] = None,
         page: Optional[int] = None,
-        parameters: Optional[Mapping[str,Any]] = None,
+        parameters: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Gets information on anime of the specific season or the current seasaon if
             no parameters are specified.
@@ -361,7 +354,7 @@ class AioJikan:
                 )
         """
         url = utils.get_season_url(self.base, year, season, extension, page, parameters)
-        return await self._request(url, year=year, season=season, extension=extension, page=page, parameters=parameters)
+        return await self._request(url, year=year, season=season, extension=extension, page=page)
 
     async def season_history(self) -> Dict[str, Any]:
         """Gets all the years and their respective season names from MyAnimeList.
@@ -379,7 +372,7 @@ class AioJikan:
         self,
         day: Optional[str] = None,
         page: Optional[int] = None,
-        parameters: Optional[Mapping[str, Any]] = None,
+        parameters: Optional[Dict[str, Any]] = None,
         ) -> Dict[str, Any]:
         """Gets anime scheduled.
 
@@ -411,7 +404,7 @@ class AioJikan:
         self,
         type: str,
         page: Optional[int] = None, 
-        parameters: Optional[Mapping[str, Any]] = None,
+        parameters: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Gets top items on MyAnimeList.
 
@@ -490,7 +483,7 @@ class AioJikan:
         username: str,
         extension: Optional[str] = None,
         page: Optional[int] = None,
-        parameters: Optional[Mapping[str, str]] = None,
+        parameters: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Gets information about the user.
 
@@ -621,7 +614,7 @@ class AioJikan:
     async def watch(
         self,
         extension: str,
-        parameters: Optional[Mapping[str, str]] = None,
+        parameters: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Gets information about recent activity of `type` resource.
 
