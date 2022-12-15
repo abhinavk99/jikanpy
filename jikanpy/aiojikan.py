@@ -182,7 +182,7 @@ class AioJikan:
                 Dict: Dictionary containing information about the episode.
 
             Examples:
-                >>> jikan.anime_episode_by_id(anime_id=1, episode_id=1)
+                >>> await jikan.anime_episode_by_id(anime_id=1, episode_id=1)
             """
         url = f'{self.base}/anime/{anime_id}/episodes/{episode_id}'
         return await self._request(url)
@@ -249,9 +249,9 @@ class AioJikan:
             Dict: Dictionary containing information about the person.
 
         Examples:
-            >>> await jikan.person(2)
-            >>> await jikan.person(2, extension='pictures')
-            >>> await jikan.person(2,
+            >>> await jikan.people(2)
+            >>> await jikan.people(2, extension='pictures')
+            >>> await jikan.people(2,
                     extension='pictures',
                     parameters={'limit': 10}
                 )
@@ -275,7 +275,7 @@ class AioJikan:
             Dict: Dictionary containing information about the club.
 
         Examples:
-            >>> await jikan.club(379)
+            >>> await jikan.clubs(379)
         """
         return await self._get("clubs", id, extension)
 
@@ -296,7 +296,8 @@ class AioJikan:
 
         Args:
             search_type (:obj:`str`): Where to search. Possible values are
-                anime, manga, person, and character.
+                anime, characters, clubs, magazines, manga, people, producers,
+                and users. 
             query (:obj:`str`): Query to search for.
             page (:obj:`int`, optional): Page number of the results. Defaults to
                 None.
@@ -346,12 +347,12 @@ class AioJikan:
             Dict: Dictionary containing information on anime of the season.
 
         Examples:
-            >>> jikan.season()
-            >>> jikan.season(year=2018, season='winter')
-            >>> jikan.season(year=2016, season='spring')
-            >>> jikan.season(extension='now')
-            >>> jikan.season(extension='upcoming')
-            >>> jikan.season(
+            >>> jikan.seasons()
+            >>> jikan.seasons(year=2018, season='winter')
+            >>> jikan.seasons(year=2016, season='spring')
+            >>> jikan.seasons(extension='now')
+            >>> jikan.seasons(extension='upcoming')
+            >>> jikan.seasons(
                     year=2021,
                     season='winter',
                     page=2,
@@ -393,8 +394,8 @@ class AioJikan:
             Dict: Dictionary containing anime scheduled.
 
         Examples:
-            >>> await jikan.schedule()
-            >>> await jikan.schedule(day='monday')
+            >>> await jikan.schedules()
+            >>> await jikan.schedules(day='monday')
         """
         if page is not None:
             if parameters is None:
@@ -448,8 +449,8 @@ class AioJikan:
            Dict: Dictionary containing MAL genres and search URLs
 
         Examples:
-            >>> await jikan.genre(type='anime')
-            >>> await jikan.genre(type='manga', filter='themes')
+            >>> await jikan.genres(type='anime')
+            >>> await jikan.genres(type='manga', filter='themes')
         """
         url = utils.get_genre_url(self.base, type=type, filter=filter)
         return await self._request(url, type=type, filter=filter)
@@ -509,10 +510,10 @@ class AioJikan:
             Dict: Dictionary containing information about the user.
 
         Examples:
-            >>> await jikan.user(username='Xinil')
-            >>> await jikan.user(username='Xinil', extension='full')
-            >>> await jikan.user(username='Xinil', extension='friends', page=2)
-            >>> await jikan.user(username='Xinil', extension='history', paramters={'type': 'anime'})
+            >>> await jikan.users(username='Xinil')
+            >>> await jikan.users(username='Xinil', extension='full')
+            >>> await jikan.users(username='Xinil', extension='friends', page=2)
+            >>> await jikan.users(username='Xinil', extension='history', paramters={'type': 'anime'})
         """
         url = utils.get_user_url(
             self.base, username, extension, page, parameters
@@ -532,7 +533,7 @@ class AioJikan:
             Dict: Dictionary containing information about the user ID
 
         Examples:
-            >>> jikan.user_by_id(user_id=1)
+            >>> await jikan.user_by_id(user_id=1)
         """
         url = utils.get_user_id_url(self.base,user_id)
         return await self._request(url,user_id=user_id)
@@ -561,12 +562,12 @@ class AioJikan:
             Dict: Dictionary containing resource information.
 
         Examples:
-            >>> jikan.random(type='anime')
-            >>> jikan.random(type='characters')
-            >>> jikan.random(type='users')
+            >>> await jikan.random(type='anime')
+            >>> await jikan.random(type='characters')
+            >>> await jikan.random(type='users')
         """
 
-        url = f'{self.base}/random/{type.lower()}'
+        url = utils.get_random_url(self.base, type)
         return await self._request(url,type=type)
 
     async def recommendations(
@@ -586,8 +587,8 @@ class AioJikan:
             Dict: Dictionary containing resource information.
 
         Examples:
-            >>> jikan.recommendations(type='anime')
-            >>> jikan.recommendations(type='manga', page=2)
+            >>> await jikan.recommendations(type='anime')
+            >>> await jikan.recommendations(type='manga', page=2)
         """
 
         url = utils.get_recommendations_url(self.base,type=type,page=page)
@@ -610,11 +611,11 @@ class AioJikan:
             Dict: Dictionary containing resource information.
 
         Examples:
-            >>> jikan.reviews(type='anime')
-            >>> jikan.reviews(type='manga', page=2)
+            >>> await jikan.reviews(type='anime')
+            >>> await jikan.reviews(type='manga', page=2)
         """
 
-        url = utils.get_recommendations_url(self.base,type=type,page=page)
+        url = utils.get_reviews_url(self.base,type=type,page=page)
         return await self._request(url, type=type, page=page)
 
     async def watch(
@@ -636,10 +637,10 @@ class AioJikan:
             Dict: Dictionary containing information about the w
 
         Examples:
-            >>> jikan.watch(extension='episodes')
-            >>> jikan.watch(extension='episodes/popular')
-            >>> jikan.watch(extension='promos')
-            >>> jikan.watch(extension='promos/popular', paramters={'limit': 10})
+            >>> await   jikan.watch(extension='episodes')
+            >>> await jikan.watch(extension='episodes/popular')
+            >>> await jikan.watch(extension='promos')
+            >>> await jikan.watch(extension='promos/popular', paramters={'limit': 10})
         """
         url = utils.get_watch_url(
             self.base, extension,  parameters

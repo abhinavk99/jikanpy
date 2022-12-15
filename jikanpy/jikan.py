@@ -207,9 +207,9 @@ class Jikan:
             Dict: Dictionary containing information about the person.
 
         Examples:
-            >>> jikan.person(2)
-            >>> jikan.person(2, extension='pictures')
-            >>> jikan.person(2,
+            >>> jikan.people(2)
+            >>> jikan.people(2, extension='pictures')
+            >>> jikan.people(2,
                     extension='pictures',
                     parameters={'limit': 10}
                 )
@@ -233,7 +233,7 @@ class Jikan:
             Dict: Dictionary containing information about the club.
 
         Examples:
-            >>> jikan.club(379)
+            >>> jikan.clubs(379)
         """
         return self._get("clubs", id, extension)
 
@@ -304,12 +304,12 @@ class Jikan:
             Dict: Dictionary containing information on anime of the season.
 
         Examples:
-            >>> jikan.season()
-            >>> jikan.season(year=2018, season='winter')
-            >>> jikan.season(year=2016, season='spring')
-            >>> jikan.season(extension='now')
-            >>> jikan.season(extension='upcoming')
-            >>> jikan.season(
+            >>> jikan.seasons()
+            >>> jikan.seasons(year=2018, season='winter')
+            >>> jikan.seasons(year=2016, season='spring')
+            >>> jikan.seasons(extension='now')
+            >>> jikan.seasons(extension='upcoming')
+            >>> jikan.seasons(
                     year=2021,
                     season='winter',
                     page=2,
@@ -351,8 +351,8 @@ class Jikan:
             Dict: Dictionary containing anime scheduled.
 
         Examples:
-            >>> jikan.schedule()
-            >>> jikan.schedule(day='monday')
+            >>> jikan.schedules()
+            >>> jikan.schedules(day='monday')
         """
         if page is not None:
             if parameters is None:
@@ -406,8 +406,8 @@ class Jikan:
             Dict: Dictionary containing MAL genres and search URLs
 
         Examples:
-            >>> jikan.genre(type='anime')
-            >>> jikan.genre(type='manga', filter='themes')
+            >>> jikan.genres(type='anime')
+            >>> jikan.genres(type='manga', filter='themes')
         """
         url = utils.get_genre_url(self.base, type=type, filter=filter)
         return self._request(url, type=type, filter=filter)
@@ -463,10 +463,10 @@ class Jikan:
             Dict: Dictionary containing information about the user.
 
         Examples:
-            >>> jikan.user(username='Xinil')
-            >>> jikan.user(username='Xinil', extension='full')
-            >>> jikan.user(username='Xinil', extension='friends', page=2)
-            >>> jikan.user(username='Xinil', extension='history', paramters={'type': 'anime'})
+            >>> jikan.users(username='Xinil')
+            >>> jikan.users(username='Xinil', extension='full')
+            >>> jikan.users(username='Xinil', extension='friends', page=2)
+            >>> jikan.users(username='Xinil', extension='history', paramters={'type': 'anime'})
         """
         url = utils.get_user_url(
             self.base, username, extension, page, parameters
@@ -521,7 +521,7 @@ class Jikan:
             >>> jikan.random(type='users')
         """
 
-        url = f'{self.base}/random/{type.lower()}'
+        url = utils.get_random_url(self.base, type)
         return self._request(url,type=type)
 
     def recommendations(
@@ -569,7 +569,7 @@ class Jikan:
             >>> jikan.reviews(type='manga', page=2)
         """
 
-        url = utils.get_recommendations_url(self.base,type=type,page=page)
+        url = utils.get_reviews_url(self.base,type=type,page=page)
         return self._request(url, type=type, page=page)
 
     def watch(

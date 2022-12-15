@@ -257,3 +257,12 @@ def get_watch_url(
         url += "".join(f"&{k}={v}" for k, v in parameters.items())
 
     return url
+
+def get_random_url(
+    base_url: str,
+    type: str,
+) -> str:
+    """Creates the URl for the random endpoint."""
+    url = f'{base_url}/random/{type.lower()}'
+    return url
+    

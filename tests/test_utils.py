@@ -190,3 +190,23 @@ def test_get_user_url_with_friends_and_page():
         == "https://api.jikan.moe/v4/users/xinil/friends?page=2"
     )
 
+def test_get_random_url():
+    assert (
+        utils.get_random_url(utils.BASE_URL,'anime') 
+        
+        == "https://api.jikan.moe/v4/random/anime"
+    )
+
+def test_get_recommendations_url():
+    assert (
+        utils.get_recommendations_url(utils.BASE_URL,'anime') 
+        
+        == "https://api.jikan.moe/v4/recommendations/anime"
+    )
+
+def test_get_reviews_url():
+    assert (
+        utils.get_reviews_url(utils.BASE_URL,'anime') 
+        
+        == "https://api.jikan.moe/v4/reviews/anime"
+    )
