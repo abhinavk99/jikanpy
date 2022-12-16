@@ -4,7 +4,7 @@ jikan.py contains the Jikan class, a synchronous Jikan wrapper.
 """
 
 import json
-from typing import Optional, Dict, Mapping, Union, Any
+from typing import Optional, Dict, Union, Any
 
 import requests
 import simplejson
@@ -69,7 +69,7 @@ class Jikan:
             json_response = response.json()
             if not isinstance(json_response, dict):
                 json_response = {"data": json_response}
-    
+
         except (json.decoder.JSONDecodeError, simplejson.JSONDecodeError):
             # json failed to be parsed
             # this could happen, for example, when someone has been IP banned
@@ -99,8 +99,8 @@ class Jikan:
 
     def anime(
         self,
-        id: int, 
-        extension: Optional[str] = None, 
+        id: int,
+        extension: Optional[str] = None,
         page: Optional[int] = None,
     ) -> Dict[str, Any]:
         """Gets information on an anime.
@@ -125,24 +125,20 @@ class Jikan:
         return self._get("anime", id, extension, page)
 
     # Extended functionality because this endpoint is the only outlier to the pattern
-    def anime_episode_by_id(
-        self,
-        anime_id: int,
-        episode_id: int
-    ) -> Dict[str, Any]:
+    def anime_episode_by_id(self, anime_id: int, episode_id: int) -> Dict[str, Any]:
         """Gets episode by anime ID and episode ID.
 
-            Args:
-                anime_id (:obj:`int`): ID of the anime to get the episode of.
-                episode_id (:obj:`int`): ID of the episode to get.
+        Args:
+            anime_id (:obj:`int`): ID of the anime to get the episode of.
+            episode_id (:obj:`int`): ID of the episode to get.
 
-            Returns:
-                Dict: Dictionary containing information about the episode.
+        Returns:
+            Dict: Dictionary containing information about the episode.
 
-            Examples:
-                >>> jikan.anime_episode_by_id(anime_id=1, episode_id=1)
-            """
-        url = f'{self.base}/anime/{anime_id}/episodes/{episode_id}'
+        Examples:
+            >>> jikan.anime_episode_by_id(anime_id=1, episode_id=1)
+        """
+        url = f"{self.base}/anime/{anime_id}/episodes/{episode_id}"
         return self._request(url)
 
     def manga(
@@ -155,7 +151,7 @@ class Jikan:
 
         Args:
             id (:obj:`int`): ID of the manga to get the information of.
-            extension (:obj:`str`, optional): Special information (via URL param) 
+            extension (:obj:`str`, optional): Special information (via URL param)
                 to get of the manga. Possible values are in the Jikan API documentation.
                 Defaults to None.
             page (:obj:`int`, optional): Page number of the results. Defaults
@@ -199,7 +195,7 @@ class Jikan:
 
         Args:
             id (:obj:`int`): ID of the person to get the information of.
-            extension (:obj:`str`, optional): Special information (via URL param) 
+            extension (:obj:`str`, optional): Special information (via URL param)
                 to get of the person. Possible values are in the Jikan API documentation.
                 Defaults to None.
 
@@ -254,7 +250,7 @@ class Jikan:
         Args:
             search_type (:obj:`str`): Where to search. Possible values are
                 anime, characters, clubs, magazines, manga, people, producers,
-                and users. 
+                and users.
             query (:obj:`str`): Query to search for.
             page (:obj:`int`, optional): -- Page number of the results. Defaults to
                 None.
@@ -292,7 +288,7 @@ class Jikan:
             season (:obj:`str`, optional): Season to get anime of. Possible values are
                 winter, spring, summer, and fall. Defaults to None.
             extension (:obj:`str`, optional): Special information (via URL param) to
-                get of the season. Possible values are in the Jikan API documentation. 
+                get of the season. Possible values are in the Jikan API documentation.
                 Note: getSeasonsList is unsupported here, instead use season_history.
                 Defaults to None.
             page (:obj:`int`, optional): Page number of the results. Defaults to
@@ -317,7 +313,9 @@ class Jikan:
                 )
         """
         url = utils.get_season_url(self.base, year, season, extension, page, parameters)
-        return self._request(url, year=year, season=season, extension=extension, page=page)
+        return self._request(
+            url, year=year, season=season, extension=extension, page=page
+        )
 
     def season_history(self) -> Dict[str, Any]:
         """Gets all the years and their respective season names from MyAnimeList.
@@ -358,7 +356,7 @@ class Jikan:
             if parameters is None:
                 parameters = {}
 
-            parameters['page'] = page
+            parameters["page"] = page
 
         url = utils.get_schedule_url(self.base, day=day, parameters=parameters)
         return self._request(url, day=day)
@@ -366,7 +364,7 @@ class Jikan:
     def top(
         self,
         type: str,
-        page: Optional[int] = None, 
+        page: Optional[int] = None,
         parameters: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Gets top items on MyAnimeList.
@@ -467,9 +465,7 @@ class Jikan:
             >>> jikan.users(username='Xinil', extension='friends', page=2)
             >>> jikan.users(username='Xinil', extension='history', paramters={'type': 'anime'})
         """
-        url = utils.get_user_url(
-            self.base, username, extension, page, parameters
-        )
+        url = utils.get_user_url(self.base, username, extension, page, parameters)
         return self._request(url, username=username, extension=extension)
 
     def user_by_id(
@@ -487,9 +483,8 @@ class Jikan:
         Examples:
             >>> jikan.user_by_id(user_id=1)
         """
-        url = utils.get_user_id_url(self.base,user_id)
-        return self._request(url,user_id=user_id)
-
+        url = utils.get_user_id_url(self.base, user_id)
+        return self._request(url, user_id=user_id)
 
     def meta(
         self,
@@ -501,10 +496,7 @@ class Jikan:
         """Deprecated: Gets meta information."""
         raise DeprecatedEndpoint("meta is a deprecated endpoint")
 
-    def random(
-        self,
-        type: str
-    ) -> Dict[str, Any]:
+    def random(self, type: str) -> Dict[str, Any]:
         """Gets a random `type` resource.
 
         Args:
@@ -521,7 +513,7 @@ class Jikan:
         """
 
         url = utils.get_random_url(self.base, type)
-        return self._request(url,type=type)
+        return self._request(url, type=type)
 
     def recommendations(
         self,
@@ -544,7 +536,7 @@ class Jikan:
             >>> jikan.recommendations(type='manga', page=2)
         """
 
-        url = utils.get_recommendations_url(self.base,type=type,page=page)
+        url = utils.get_recommendations_url(self.base, type=type, page=page)
         return self._request(url, type=type, page=page)
 
     def reviews(
@@ -568,7 +560,7 @@ class Jikan:
             >>> jikan.reviews(type='manga', page=2)
         """
 
-        url = utils.get_reviews_url(self.base,type=type,page=page)
+        url = utils.get_reviews_url(self.base, type=type, page=page)
         return self._request(url, type=type, page=page)
 
     def watch(
@@ -594,7 +586,5 @@ class Jikan:
             >>> jikan.watch(extension='promos')
             >>> jikan.watch(extension='promos/popular', paramters={'limit': 10})
         """
-        url = utils.get_watch_url(
-            self.base, extension,  parameters
-        )
+        url = utils.get_watch_url(self.base, extension, parameters)
         return self._request(url, extension=extension)

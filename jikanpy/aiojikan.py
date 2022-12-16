@@ -4,7 +4,7 @@ aiojikan.py contains the AioJikan class, an asynchronous Jikan wrapper.
 """
 
 import json
-from typing import Optional, Dict, Mapping, Union, Any, TypeVar
+from typing import Optional, Dict, Union, Any, TypeVar
 
 import aiohttp
 import simplejson
@@ -142,7 +142,7 @@ class AioJikan:
 
         Args:
             id (:obj:`int`): ID of the anime to get the information of.
-            extension (:obj:`str`, optional): Special information (via URL param) 
+            extension (:obj:`str`, optional): Special information (via URL param)
                 to get of the anime. Possible values are in the Jikan API documentation.
                 Defaults to None.
             page (:obj:`int`, optional) -- Page number of the results. Defaults
@@ -161,23 +161,21 @@ class AioJikan:
 
     # Extended functionality because this endpoint is the only outlier to the pattern
     async def anime_episode_by_id(
-        self,
-        anime_id: int,
-        episode_id: int
+        self, anime_id: int, episode_id: int
     ) -> Dict[str, Any]:
         """Gets episode by anime ID and episode ID.
 
-            Args:
-                anime_id (:obj:`int`): ID of the anime to get the episode of.
-                episode_id (:obj:`int`): ID of the episode to get.
+        Args:
+            anime_id (:obj:`int`): ID of the anime to get the episode of.
+            episode_id (:obj:`int`): ID of the episode to get.
 
-            Returns:
-                Dict: Dictionary containing information about the episode.
+        Returns:
+            Dict: Dictionary containing information about the episode.
 
-            Examples:
-                >>> await jikan.anime_episode_by_id(anime_id=1, episode_id=1)
-            """
-        url = f'{self.base}/anime/{anime_id}/episodes/{episode_id}'
+        Examples:
+            >>> await jikan.anime_episode_by_id(anime_id=1, episode_id=1)
+        """
+        url = f"{self.base}/anime/{anime_id}/episodes/{episode_id}"
         return await self._request(url)
 
     async def manga(
@@ -235,8 +233,8 @@ class AioJikan:
         Args:
             id (:obj:`int`): ID of the person to get the information of.
             extension (:obj:`str`, optional): Special information (via URL param)
-                to get of the person. Possible values are in the Jikan API documentation.
-                Defaults to None.
+                to get of the person. Possible values are in the Jikan API
+                documentation. Defaults to None.
 
         Returns:
             Dict: Dictionary containing information about the person.
@@ -290,7 +288,7 @@ class AioJikan:
         Args:
             search_type (:obj:`str`): Where to search. Possible values are
                 anime, characters, clubs, magazines, manga, people, producers,
-                and users. 
+                and users.
             query (:obj:`str`): Query to search for.
             page (:obj:`int`, optional): Page number of the results. Defaults to
                 None.
@@ -329,7 +327,7 @@ class AioJikan:
             season (:obj:`str`, optional): Season to get anime of. Possible values are
                 winter, spring, summer, and fall. Defaults to None.
             extension (:obj:`str`, optional): Special information (via URL param) to
-                get of the season. Possible values are in the Jikan API documentation. 
+                get of the season. Possible values are in the Jikan API documentation.
                 Note: getSeasonsList is unsupported here, instead use season_history.
                 Defaults to None.
             page (:obj:`int`, optional): Page number of the results. Defaults to
@@ -354,7 +352,9 @@ class AioJikan:
                 )
         """
         url = utils.get_season_url(self.base, year, season, extension, page, parameters)
-        return await self._request(url, year=year, season=season, extension=extension, page=page)
+        return await self._request(
+            url, year=year, season=season, extension=extension, page=page
+        )
 
     async def season_history(self) -> Dict[str, Any]:
         """Gets all the years and their respective season names from MyAnimeList.
@@ -373,7 +373,7 @@ class AioJikan:
         day: Optional[str] = None,
         page: Optional[int] = None,
         parameters: Optional[Dict[str, Any]] = None,
-        ) -> Dict[str, Any]:
+    ) -> Dict[str, Any]:
         """Gets anime scheduled.
 
         Args:
@@ -395,7 +395,7 @@ class AioJikan:
             if parameters is None:
                 parameters = {}
 
-            parameters['page'] = page
+            parameters["page"] = page
 
         url = utils.get_schedule_url(self.base, day=day, parameters=parameters)
         return await self._request(url, day=day)
@@ -403,7 +403,7 @@ class AioJikan:
     async def top(
         self,
         type: str,
-        page: Optional[int] = None, 
+        page: Optional[int] = None,
         parameters: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Gets top items on MyAnimeList.
@@ -508,9 +508,7 @@ class AioJikan:
             >>> await jikan.users(username='Xinil', extension='friends', page=2)
             >>> await jikan.users(username='Xinil', extension='history', paramters={'type': 'anime'})
         """
-        url = utils.get_user_url(
-            self.base, username, extension, page, parameters
-        )
+        url = utils.get_user_url(self.base, username, extension, page, parameters)
         return await self._request(url, username=username, extension=extension)
 
     async def user_by_id(
@@ -528,8 +526,8 @@ class AioJikan:
         Examples:
             >>> await jikan.user_by_id(user_id=1)
         """
-        url = utils.get_user_id_url(self.base,user_id)
-        return await self._request(url,user_id=user_id)
+        url = utils.get_user_id_url(self.base, user_id)
+        return await self._request(url, user_id=user_id)
 
     async def meta(
         self,
@@ -541,10 +539,7 @@ class AioJikan:
         """Deprecated: Gets meta information."""
         raise DeprecatedEndpoint("meta is a deprecated endpoint")
 
-    async def random(
-        self,
-        type: str
-    ) -> Dict[str, Any]:
+    async def random(self, type: str) -> Dict[str, Any]:
         """Gets a random `type` resource.
 
         Args:
@@ -561,7 +556,7 @@ class AioJikan:
         """
 
         url = utils.get_random_url(self.base, type)
-        return await self._request(url,type=type)
+        return await self._request(url, type=type)
 
     async def recommendations(
         self,
@@ -584,7 +579,7 @@ class AioJikan:
             >>> await jikan.recommendations(type='manga', page=2)
         """
 
-        url = utils.get_recommendations_url(self.base,type=type,page=page)
+        url = utils.get_recommendations_url(self.base, type=type, page=page)
         return await self._request(url, type=type, page=page)
 
     async def reviews(
@@ -608,7 +603,7 @@ class AioJikan:
             >>> await jikan.reviews(type='manga', page=2)
         """
 
-        url = utils.get_reviews_url(self.base,type=type,page=page)
+        url = utils.get_reviews_url(self.base, type=type, page=page)
         return await self._request(url, type=type, page=page)
 
     async def watch(
@@ -626,7 +621,7 @@ class AioJikan:
                 pairs for ?key=value in url query. Defaults to None.
 
         Returns:
-            Dict: Dictionary containing information about recent/popular episodes or promos 
+            Dict: Dictionary containing information about recent/popular episodes or promos
 
         Examples:
             >>> await   jikan.watch(extension='episodes')
@@ -634,7 +629,5 @@ class AioJikan:
             >>> await jikan.watch(extension='promos')
             >>> await jikan.watch(extension='promos/popular', paramters={'limit': 10})
         """
-        url = utils.get_watch_url(
-            self.base, extension,  parameters
-        )
+        url = utils.get_watch_url(self.base, extension, parameters)
         return await self._request(url, extension=extension)
