@@ -3,50 +3,50 @@ from pprint import pprint
 
 jikan = Jikan()
 
+# The following are examples only. Running this many at once
+# will get you rate limited if you are not self hosting
+
 mushishi = jikan.anime(457)
 pprint(mushishi)
 
 fma = jikan.manga(25)
 pprint(fma)
 
-ginko = jikan.character(425)
+ginko = jikan.characters(425)
 pprint(ginko)
 
-kana_hanazawa = jikan.person(189)
+kana_hanazawa = jikan.people(185)
 pprint(kana_hanazawa)
 
-naruto = jikan.search(search_type="anime", query="naruto")
+naruto_search = jikan.search(search_type="anime", query="naruto")
 pprint(naruto)
 
-winter_2018 = jikan.season(year=2018, season="winter")
+winter_2018 = jikan.seasons(year=2018, season="winter")
 pprint(winter_2018)
 
-archive = jikan.season_archive()
-pprint(archive)
+seasons = jikan.season_history()
+pprint(seasons)
 
-later = jikan.season_later()
-pprint(later)
+upcoming = jikan.seasons(extension='upcoming')
+pprint(upcoming)
 
-monday = jikan.schedule(day="monday")
+current_season = jikan.seasons(extension='now')
+pprint(current_season)
+
+monday = jikan.schedules(day="monday")
 pprint(monday)
 
 top_anime = jikan.top(type="anime")
 pprint(top_anime)
 
-action = jikan.genre(type="anime", genre_id=1)
+action = jikan.genres(type="anime")
 pprint(action)
 
-deen = jikan.producer(producer_id=37)
+deen = jikan.producers(37)
 pprint(deen)
 
-jump = jikan.magazine(magazine_id=83)
-pprint(jump)
-
-nekomata1037 = jikan.user(username="Nekomata1037")
+nekomata1037 = jikan.users(username="Nekomata1037")
 pprint(nekomata1037)
 
-fantasy_anime_league = jikan.club(379)
+fantasy_anime_league = jikan.clubs(379)
 pprint(fantasy_anime_league)
-
-meta = jikan.meta(request="requests", type="anime", period="today")
-pprint(meta)
