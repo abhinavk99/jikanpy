@@ -50,9 +50,9 @@ mushishi_with_eps = jikan.anime(457, extension='episodes')
 
 search_result = jikan.search('anime', 'Mushishi', page=2)
 
-winter_2018_anime = jikan.season(year=2018, season='winter')
+winter_2018_anime = jikan.seasons(year=2018, season='winter')
 
-archive = jikan.season_archive()
+current_season = jikan.seasons(extension='now')
 ```
 
 ### Async Usage Examples with AioJikan
@@ -89,7 +89,7 @@ you can pass that to Jikan:
 
 ```python
 from jikanpy import Jikan
-jikan = Jikan(selected_base='http://localhost:8000/v3')
+jikan = Jikan(selected_base='http://localhost:8000/v4')
 ```
 
 If you want to use your own Requests session, you can do that too.
@@ -120,7 +120,7 @@ from jikanpy import AioJikan
 async def main():
     # Construct AioJikan with own base URL and custom AioHTTP session with custom persistent headers
     session = aiohttp.ClientSession(headers={'x-test': 'true'})
-    aio_jikan = AioJikan(selected_base='http://localhost:8000/v3', session=session)
+    aio_jikan = AioJikan(selected_base='http://localhost:8000/v4', session=session)
     await session.close()
 
 asyncio.run(main())
