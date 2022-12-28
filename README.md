@@ -28,6 +28,9 @@ two additional fields:
 - `jikan_url`: The URL that was requested; for example: `https://api.jikan.moe/v3/anime/1`.
 - `headers`: The response headers from Jikan, detailed [here](https://jikan.docs.apiary.io/#introduction/information/caching).
 
+# Notice
+This version of jikanpy only works for an old version of the Jikan API (v3). This version of the API has been officially deprecated by the maintainers and is no longer hosted by them. However, you can still download the Jikan v3 API [here](https://github.com/jikan-me/jikan/tree/3.0.0) and host it yourself if you wanted to. This would allow you to use this version of jikanpy. Otherwise, see the latest version of jikanpy for using the latest version of the Jikan API.
+
 ## Installation
 
 ```shell
@@ -37,7 +40,7 @@ $ pip install jikanpy
 ## Usage Examples
 
 Below are some basic examples of how to use Jikan and AioJikan. Please read the
-[documentation below](https://github.com/abhinavk99/jikanpy#documentation) to see all the methods and more examples.
+[documentation below](#documentation) to see all the methods and more examples.
 
 ### Usage Examples with Jikan
 
