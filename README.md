@@ -35,7 +35,7 @@ You can install the package from PyPI using pip:
 $ pip install jikanpy-v4
 ```
 
-*Note*: This package is different from `jikanpy` on PyPI, which is the old Jikan v3 compatible version of jikanpy.
+*Note*: This package is different from `jikanpy` on PyPI, which is the old Jikan v3 compatible version of [jikanpy](https://github.com/abhinavk99/jikanpy/tree/jikanpy_v3).
 
 Alternatively, you can install from source:
 ```shell
