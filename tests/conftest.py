@@ -104,13 +104,12 @@ def aio_response_non_dict_mock():
 @pytest.fixture
 def anime_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
         "mal_id",
         "url",
-        "image_url",
-        "trailer_url",
+        "images",
+        "trailer",
+        "approved",
+        "titles",
         "title",
         "title_english",
         "title_japanese",
@@ -131,170 +130,211 @@ def anime_keys():
         "favorites",
         "synopsis",
         "background",
-        "premiered",
+        "season",
+        "year",
         "broadcast",
-        "related",
         "producers",
         "licensors",
         "studios",
         "genres",
-        "opening_themes",
-        "ending_themes",
+        "explicit_genres",
+        "themes",
+        "demographics",
     }
 
 
 @pytest.fixture
 def anime_episodes_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
-        "episodes_last_page",
-        "episodes",
+        "mal_id",
+        "url",
+        "title",
+        "title_japanese",
+        "title_romanji",
+        # "duration", # API doc says this should be returned, but isn't
+        "aired",
+        "score", # undocumented
+        "filler",
+        "recap",
+        "forum_url",
     }
 
 
 @pytest.fixture
 def episode_keys():
     return {
-        "episode_id",
+        "mal_id",
+        "url",
         "title",
         "title_japanese",
         "title_romanji",
+        "duration",
         "aired",
         "filler",
         "recap",
-        "video_url",
-        "forum_url",
+        "synopsis",
     }
 
 
 @pytest.fixture
 def manga_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
-        "mal_id",
-        "url",
-        "title",
-        "title_english",
-        "title_synonyms",
-        "title_japanese",
-        "status",
-        "image_url",
-        "type",
-        "volumes",
-        "chapters",
-        "publishing",
-        "published",
-        "rank",
-        "score",
-        "scored_by",
-        "popularity",
-        "members",
-        "favorites",
-        "synopsis",
-        "background",
-        "related",
-        "genres",
-        "authors",
-        "serializations",
+    "mal_id",
+    "url",
+    "images",
+    "approved",
+    "titles",
+    "title",
+    "title_english",
+    "title_japanese",
+    "title_synonyms",
+    "type",
+    "chapters",
+    "volumes",
+    "status",
+    "publishing",
+    "published",
+    "score",
+    "scored",
+    "scored_by",
+    "rank",
+    "popularity",
+    "members",
+    "favorites",
+    "synopsis",
+    "background",
+    "authors",
+    "serializations",
+    "genres",
+    "explicit_genres",
+    "themes",
+    "demographics",
     }
 
 
 @pytest.fixture
 def character_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
         "mal_id",
         "url",
+        "images",
         "name",
         "name_kanji",
         "nicknames",
+        "favorites",
         "about",
-        "member_favorites",
-        "image_url",
-        "animeography",
-        "mangaography",
-        "voice_actors",
     }
 
 
 @pytest.fixture
 def person_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
         "mal_id",
         "url",
-        "image_url",
+        "images",
         "website_url",
         "name",
         "given_name",
         "family_name",
         "alternate_names",
         "birthday",
-        "member_favorites",
+        "favorites",
         "about",
-        "voice_acting_roles",
-        "anime_staff_positions",
-        "published_manga",
     }
 
 
 @pytest.fixture
 def search_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
-        "results",
-        "last_page",
+        "data",
     }
 
 
 @pytest.fixture
 def season_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
-        "season_name",
-        "season_year",
-        "anime",
+        "data",
     }
 
+@pytest.fixture
+def recommendations_keys():
+    return {
+        "mal_id",
+        "entry",
+        "content",
+        "user",
+    }
+
+@pytest.fixture
+def reviews_keys():
+    return {
+        "mal_id",
+        "entry",
+        "content",
+        "date",
+        "user",
+    }
+
+@pytest.fixture
+def watch_episodes_keys():
+    return {
+        "entry",
+        "episodes",
+        "region_locked",
+    }
+
+@pytest.fixture
+def watch_promos_keys():
+    return {
+        "entry",
+        "trailer",
+    }
 
 @pytest.fixture
 def seasonal_anime_keys():
     return {
-        "mal_id",
-        "url",
-        "title",
-        "image_url",
-        "synopsis",
-        "type",
-        "airing_start",
-        "episodes",
-        "members",
-        "genres",
-        "source",
-        "producers",
-        "score",
-        "licensors",
-        "r18",
-        "kids",
-        "continuing",
+    "mal_id",
+    "url",
+    "images",
+    "trailer",
+    "approved",
+    "titles",
+    "title",
+    "title_english",
+    "title_japanese",
+    "title_synonyms",
+    "type",
+    "source",
+    "episodes",
+    "status",
+    "airing",
+    "aired",
+    "duration",
+    "rating",
+    "score",
+    "scored_by",
+    "rank",
+    "popularity",
+    "members",
+    "favorites",
+    "synopsis",
+    "background",
+    "season",
+    "year",
+    "broadcast",
+    "producers",
+    "licensors",
+    "studios",
+    "genres",
+    "explicit_genres",
+    "themes",
+    "demographics",
     }
 
 
 @pytest.fixture
 def season_archive_keys():
-    return {"request_hash", "request_cached", "request_cache_expiry", "archive"}
+    return {"data"}
 
 
 @pytest.fixture
@@ -304,45 +344,77 @@ def archived_years_keys():
 
 @pytest.fixture
 def schedule_keys():
-    return {"request_hash", "request_cached", "request_cache_expiry", "monday"}
+    return {"data"}
 
 
 @pytest.fixture
 def top_keys():
-    return {"request_hash", "request_cached", "request_cache_expiry", "top"}
+    return {"data"}
 
 
 @pytest.fixture
 def top_anime_keys():
     return {
         "mal_id",
-        "rank",
         "url",
-        "image_url",
+        "images",
+        "trailer",
+        "approved",
+        "titles",
         "title",
+        "title_english",
+        "title_japanese",
+        "title_synonyms",
         "type",
-        "score",
-        "members",
-        "start_date",
+        "source",
         "episodes",
+        "status",
+        "airing",
+        "aired",
+        "duration",
+        "rating",
+        "score",
+        "scored_by",
+        "rank",
+        "popularity",
+        "members",
+        "favorites",
+        "synopsis",
+        "background",
+        "season",
+        "year",
+        "broadcast",
+        "producers",
+        "licensors",
+        "studios",
+        "genres",
+        "explicit_genres",
+        "themes",
+        "demographics",
     }
-
 
 @pytest.fixture
 def genre_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
-        "mal_url",
-        "item_count",
-        "anime",
+        "mal_id",
+        "name",
+        "url",
+        "count",
     }
 
 
 @pytest.fixture
 def producer_keys():
-    return {"request_hash", "request_cached", "request_cache_expiry", "meta", "anime"}
+    return {
+        "mal_id",
+        "url",
+        "titles",
+        "images",
+        "favorites",
+        "count",
+        "established",
+        "about"
+    }
 
 
 @pytest.fixture
@@ -350,25 +422,51 @@ def subset_anime_keys():
     return {
         "mal_id",
         "url",
+        "images",
+        "trailer",
+        "approved",
+        "titles",
         "title",
-        "image_url",
-        "synopsis",
+        "title_english",
+        "title_japanese",
+        "title_synonyms",
         "type",
-        "episodes",
-        "members",
-        "genres",
         "source",
-        "producers",
+        "episodes",
+        "status",
+        "airing",
+        "aired",
+        "duration",
+        "rating",
         "score",
+        "scored_by",
+        "rank",
+        "popularity",
+        "members",
+        "favorites",
+        "synopsis",
+        "background",
+        "season",
+        "year",
+        "broadcast",
+        "producers",
         "licensors",
-        "r18",
-        "kids",
+        "studios",
+        "genres",
+        "explicit_genres",
+        "themes",
+        "demographics",
     }
 
 
 @pytest.fixture
 def magazine_keys():
-    return {"request_hash", "request_cached", "request_cache_expiry", "meta", "manga"}
+    return {
+        "mal_id",
+        "name",
+        "url",
+        "count",
+    }
 
 
 @pytest.fixture
@@ -388,25 +486,47 @@ def magazine_manga_keys():
         "serialization",
     }
 
-
 @pytest.fixture
 def user_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
-        "username",
         "url",
-        "image_url",
+        "username",
+        "images",
         "last_online",
-        "gender",
-        "birthday",
-        "location",
-        "joined",
-        "anime_stats",
-        "manga_stats",
-        "favorites",
-        "about",
+    }
+
+@pytest.fixture
+def user_keys_full():
+    return {
+    "mal_id",
+    "username",
+    "url",
+    "images",
+    "last_online",
+    "gender",
+    "birthday",
+    "location",
+    "joined",
+    "statistics",
+    "favorites",
+    "updates",
+    "about",
+    "external",
+    }
+
+@pytest.fixture
+def user_keys_friends():
+    return {
+        "user",
+        "last_online",
+        "friends_since"
+    }
+
+@pytest.fixture
+def user_id_keys():
+    return {
+        "url",
+        "username",
     }
 
 
@@ -418,22 +538,14 @@ def animelist_keys():
 @pytest.fixture
 def club_keys():
     return {
-        "request_hash",
-        "request_cached",
-        "request_cache_expiry",
         "mal_id",
+        "name",
         "url",
-        "image_url",
-        "title",
-        "members_count",
-        "pictures_count",
+        "images",
+        "members",
         "category",
         "created",
-        "type",
-        "staff",
-        "anime_relations",
-        "manga_relations",
-        "character_relations",
+        "access"
     }
 
 
@@ -441,8 +553,7 @@ def club_keys():
 def header_keys():
     return {
         "X-Cache-Status",
-        "X-Request-Hash",
-        "X-Request-Cached",
-        "X-Request-Cache-Ttl",
-        "ETag",
+        "Last-Modified",
+        "X-Request-Fingerprint",
+        #"ETag", # TODO: Uncomment once implemented
     }

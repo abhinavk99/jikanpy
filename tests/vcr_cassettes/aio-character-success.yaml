@@ -3,50 +3,36 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.jikan.moe/v3/character/425
+    uri: https://api.jikan.moe/v4/characters/425
   response:
     body:
-      string: '{"request_hash":"request:character:9402d3f101f25eb384d51c9dbe1bca309172a2f3","request_cached":true,"request_cache_expiry":86181,"mal_id":425,"url":"https:\/\/myanimelist.net\/character\/425\/Ginko","name":"Ginko","name_kanji":null,"nicknames":["Mushishi","Yoki"],"about":"Ginko
+      string: '{"data":{"mal_id":425,"url":"https:\/\/myanimelist.net\/character\/425\/Ginko","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/characters\/14\/303453.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/characters\/14\/303453.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/characters\/14\/303453t.webp"}},"name":"Ginko","name_kanji":"\u30ae\u30f3\u30b3","nicknames":["Mushishi","Yoki"],"favorites":15310,"about":"Ginko
         employs himself as a Mushi master (mushishi), traveling from place to place
-        to research Mushi and aid people suffering from problems caused by them.\\n\r\n\\n\r\nGinko
+        to research Mushi and aid people suffering from problems caused by them.\n\nGinko
         is a rare person who attracts mushi. This inspires his peripatetic lifestyle;
         staying in one place too long will gather a potentially dangerous amount of
-        mushi. He also smokes constantly in order to keep mushi away.\\n\r\n\\n\r\nIn
-        terms of personality, Ginko is rather laid back, but can be very serious when
-        it comes to protecting people from mushi. He also often stresses that the
-        mushi are not evil, but they merely exist as a part of the nature and try
-        to survive like every other living being.\\n\r\n\\n\r\n\\n\r\n\\n\r\n\\n\\n","member_favorites":14053,"image_url":"https:\/\/cdn.myanimelist.net\/images\/characters\/10\/303235.jpg","animeography":[{"mal_id":457,"name":"Mushishi","url":"https:\/\/myanimelist.net\/anime\/457\/Mushishi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/2\/73862.jpg?s=cdaacddc699abf5bea40722532ce8604","role":"Main"},{"mal_id":21329,"name":"Mushishi:
-        Hihamukage","url":"https:\/\/myanimelist.net\/anime\/21329\/Mushishi__Hihamukage","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/10\/59315.jpg?s=879fa63df957df58248da7b1f504d8a8","role":"Main"},{"mal_id":21939,"name":"Mushishi
-        Zoku Shou","url":"https:\/\/myanimelist.net\/anime\/21939\/Mushishi_Zoku_Shou","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/13\/58533.jpg?s=9c5c552df70d641d2d5c83b42e17bd80","role":"Main"},{"mal_id":24687,"name":"Mushishi
-        Zoku Shou: Odoro no Michi","url":"https:\/\/myanimelist.net\/anime\/24687\/Mushishi_Zoku_Shou__Odoro_no_Michi","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/8\/63539.jpg?s=b812411128e869e4632078a922f5ba86","role":"Main"},{"mal_id":24701,"name":"Mushishi
-        Zoku Shou 2nd Season","url":"https:\/\/myanimelist.net\/anime\/24701\/Mushishi_Zoku_Shou_2nd_Season","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/68095.jpg?s=26944ca1caa0554ad776f4a1e02edf12","role":"Main"},{"mal_id":28957,"name":"Mushishi
-        Zoku Shou: Suzu no Shizuku","url":"https:\/\/myanimelist.net\/anime\/28957\/Mushishi_Zoku_Shou__Suzu_no_Shizuku","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/9\/72689.jpg?s=58db29595765a7413af7b315e3cb969b","role":"Main"}],"mangaography":[{"mal_id":418,"name":"Mushishi","url":"https:\/\/myanimelist.net\/manga\/418\/Mushishi","image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/159514.jpg?s=2992ba6131b4660acd9919a411e42fcb","role":"Main"},{"mal_id":62023,"name":"Mushishi
-        Tokubetsu-hen: Hihamukage","url":"https:\/\/myanimelist.net\/manga\/62023\/Mushishi_Tokubetsu-hen__Hihamukage","image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/2\/123403.jpg?s=882e20b59887bf81bed63085065baea1","role":"Main"}],"voice_actors":[{"mal_id":26,"name":"Willingham,
-        Travis","url":"https:\/\/myanimelist.net\/people\/26\/Travis_Willingham","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/2\/51804.jpg","language":"English"},{"mal_id":99,"name":"Sawashiro,
-        Miyuki","url":"https:\/\/myanimelist.net\/people\/99\/Miyuki_Sawashiro","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/1\/54600.jpg","language":"Japanese"},{"mal_id":216,"name":"Nakano,
-        Yuto","url":"https:\/\/myanimelist.net\/people\/216\/Yuto_Nakano","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/2\/8057.jpg","language":"Japanese"},{"mal_id":5084,"name":"Andreatto,
-        Rodrigo","url":"https:\/\/myanimelist.net\/people\/5084\/Rodrigo_Andreatto","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/2\/41874.jpg","language":"Brazilian"},{"mal_id":9157,"name":"Chiesse,
-        Nestor","url":"https:\/\/myanimelist.net\/people\/9157\/Nestor_Chiesse","image_url":"https:\/\/cdn.myanimelist.net\/images\/voiceactors\/2\/58684.jpg","language":"Brazilian"},{"mal_id":46024,"name":"Aparicio,
-        Marta","url":"https:\/\/myanimelist.net\/people\/46024\/Marta_Aparicio","image_url":"https:\/\/cdn.myanimelist.net\/images\/questionmark_23.gif","language":"Spanish"}]}'
+        mushi. He also smokes constantly in order to keep mushi away.\n\nIn terms
+        of personality, Ginko is rather laid back, but can be very serious when it
+        comes to protecting people from mushi. He also often stresses that the mushi
+        are not evil, but they merely exist as a part of the nature and try to survive
+        like every other living being."}}'
     headers:
-      Access-Control-Allow-Methods: '*'
+      Access-Control-Allow-Methods: GET
       Access-Control-Allow-Origin: '*'
-      Cache-Control: private, must-revalidate
+      Cache-Control: public, s-maxage=86400
       Connection: keep-alive
       Content-Encoding: gzip
-      Content-Length: '1438'
       Content-Type: application/json
-      Date: Mon, 15 Feb 2021 23:38:05 GMT
-      ETag: '"1d33bf46f594846cdea049971f9a6c24"'
-      Expires: Tue, 16 Feb 2021 23:34:26 GMT
+      Date: Fri, 09 Dec 2022 22:44:04 GMT
+      Expires: Fri, 09 Dec 2022 22:55:21 GMT
+      Last-Modified: Thu, 08 Dec 2022 22:55:21 GMT
       Server: nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding: chunked
       Vary: Accept-Encoding
-      X-Cache-Status: MISS
-      X-Request-Cache-Ttl: '86181'
-      X-Request-Cached: '1'
-      X-Request-Hash: request:character:9402d3f101f25eb384d51c9dbe1bca309172a2f3
+      X-Cache-Status: HIT
+      X-Request-Fingerprint: request:characters:b7af2018e57ef77f986b7fec23b73fc61d247acb
     status:
       code: 200
       message: OK
-    url: https://api.jikan.moe/v3/character/425
+    url: https://api.jikan.moe/v4/characters/425
 version: 1

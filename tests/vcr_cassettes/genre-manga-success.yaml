@@ -1,0 +1,78 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
+    method: GET
+    uri: https://api.jikan.moe/v4/genres/manga
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 06 Dec 2022 00:51:13 GMT
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Cache-Status:
+      - MISS
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+version: 1

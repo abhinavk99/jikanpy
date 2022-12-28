@@ -1,0 +1,58 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
+    method: GET
+    uri: https://api.jikan.moe/v4/users?q=Xinil&limit=10
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA9WUX0+DMBTFv0tfHeO2rAyaGOOLbz7JwxIxpG7drJaCtPgny767hblNp5gQ8cGk
+        AdLmnnP7y+GuUclXUnMrC43YGilubPYkjbxVInNHAjE8QnfcZFq82PedJVdGbEZowS1H7HqNaiMq
+        zXN3hGZSS3VVl2VRWTRCdaXc5p21pWGpn/r5K9cyF0oaO9bCpn5ZFUupROofFcrcWZmmpfty1bza
+        jexYb77Q4y+a29rUf6yFaS6W8+ohozBeySVybT+L23JIRSfZYiu0krphQICAB7FHcEICBm7BCYB7
+        OvdPsC74S3PrRdGL1MeqITA1De2+McQhDXA4dnJn9hSHkyCYALSt/wbctx6N3pHJdyyJB9gj0wTH
+        DJNulvX8oc3QuV5cctWP6Jfa/x0/HHsw9QgkELEg6kSWtDnqRWpfMnTwIgx0iukud5S6jITRoLnb
+        Wexi98Gjg2HowSSBkNG4k+H2X+Q5N704fir752GL2llHm1n3A6hZ76zN/ihqeD/c6CTCARl2uB2m
+        2kG9Y6q5eMUJpsytA7WbzRtbNzaLlAcAAA==
+    headers:
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, s-maxage=432000
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 07 Dec 2022 21:01:07 GMT
+      Expires:
+      - Mon, 12 Dec 2022 20:58:03 GMT
+      Last-Modified:
+      - Wed, 07 Dec 2022 20:58:03 GMT
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Cache-Status:
+      - MISS
+      X-Request-Fingerprint:
+      - request:users:52d0816e998e5e2526e1c83202626bc2beab9960
+    status:
+      code: 200
+      message: OK
+version: 1

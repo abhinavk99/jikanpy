@@ -3,67 +3,28 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.jikan.moe/v3/club/379
+    uri: https://api.jikan.moe/v4/clubs/379
   response:
     body:
-      string: '{"request_hash":"request:club:17ed3f28f4e574cb643a731b83e4619e8cae2307","request_cached":true,"request_cache_expiry":85585,"mal_id":379,"url":"https:\/\/myanimelist.net\/clubs.php?cid=379","image_url":"https:\/\/cdn.myanimelist.net\/images\/clubs\/5\/2984.jpg?s=1d420f3a90173f8d9d56f0012dfb9398","title":"Fantasy
-        Anime League","members_count":3969,"pictures_count":4,"category":"Games","created":"2007-07-10T00:00:00+00:00","type":"public","staff":[{"mal_id":45,"type":"profile","name":"45b16","url":"https:\/\/myanimelist.net\/profile\/45b16"},{"mal_id":0,"type":"profile","name":"AlexTheRiot","url":"https:\/\/myanimelist.net\/profile\/AlexTheRiot"},{"mal_id":0,"type":"profile","name":"Congress","url":"https:\/\/myanimelist.net\/profile\/Congress"},{"mal_id":0,"type":"profile","name":"FALbot","url":"https:\/\/myanimelist.net\/profile\/FALbot"},{"mal_id":0,"type":"profile","name":"kei-clone","url":"https:\/\/myanimelist.net\/profile\/kei-clone"},{"mal_id":0,"type":"profile","name":"Miked","url":"https:\/\/myanimelist.net\/profile\/Miked"},{"mal_id":0,"type":"profile","name":"Naruleach","url":"https:\/\/myanimelist.net\/profile\/Naruleach"},{"mal_id":0,"type":"profile","name":"Numi","url":"https:\/\/myanimelist.net\/profile\/Numi"},{"mal_id":0,"type":"profile","name":"Paulo27","url":"https:\/\/myanimelist.net\/profile\/Paulo27"},{"mal_id":0,"type":"profile","name":"_Ghost_","url":"https:\/\/myanimelist.net\/profile\/_Ghost_"}],"anime_relations":[{"mal_id":41380,"type":"anime","name":"100-man
-        no Inochi no Ue ni Ore wa Tatteiru","url":"https:\/\/myanimelist.net\/anime\/41380"},{"mal_id":40272,"type":"anime","name":"A3!
-        Season Autumn & Winter","url":"https:\/\/myanimelist.net\/anime\/40272"},{"mal_id":39790,"type":"anime","name":"Adachi
-        to Shimamura","url":"https:\/\/myanimelist.net\/anime\/39790"},{"mal_id":41433,"type":"anime","name":"Akudama
-        Drive","url":"https:\/\/myanimelist.net\/anime\/41433"},{"mal_id":40550,"type":"anime","name":"Assault
-        Lily: Bouquet","url":"https:\/\/myanimelist.net\/anime\/40550"},{"mal_id":40906,"type":"anime","name":"Dragon
-        Quest: Dai no Daibouken (2020)","url":"https:\/\/myanimelist.net\/anime\/40906"},{"mal_id":42414,"type":"anime","name":"Eternity:
-        Shinya no Nurekoi Channel \u2661","url":"https:\/\/myanimelist.net\/anime\/42414"},{"mal_id":38337,"type":"anime","name":"Gochuumon
-        wa Usagi Desu ka? Bloom","url":"https:\/\/myanimelist.net\/anime\/38337"},{"mal_id":40059,"type":"anime","name":"Golden
-        Kamuy 3rd Season","url":"https:\/\/myanimelist.net\/anime\/40059"},{"mal_id":41574,"type":"anime","name":"Guraburu!","url":"https:\/\/myanimelist.net\/anime\/41574"},{"mal_id":41911,"type":"anime","name":"Hanyou
-        no Yashahime: Sengoku Otogizoushi","url":"https:\/\/myanimelist.net\/anime\/41911"},{"mal_id":41006,"type":"anime","name":"Higurashi
-        no Naku Koro ni Gou","url":"https:\/\/myanimelist.net\/anime\/41006"},{"mal_id":40803,"type":"anime","name":"Hypnosis
-        Mic: Division Rap Battle - Rhyme Anima","url":"https:\/\/myanimelist.net\/anime\/40803"},{"mal_id":40359,"type":"anime","name":"Ikebukuro
-        West Gate Park","url":"https:\/\/myanimelist.net\/anime\/40359"},{"mal_id":40833,"type":"anime","name":"Inu
-        to Neko Docchi mo Katteru to Mainichi Tanoshii","url":"https:\/\/myanimelist.net\/anime\/40833"},{"mal_id":41783,"type":"anime","name":"Iwa
-        Kakeru!: Sport Climbing Girls","url":"https:\/\/myanimelist.net\/anime\/41783"},{"mal_id":40748,"type":"anime","name":"Jujutsu
-        Kaisen (TV)","url":"https:\/\/myanimelist.net\/anime\/40748"},{"mal_id":41312,"type":"anime","name":"Kami-tachi
-        ni Hirowareta Otoko","url":"https:\/\/myanimelist.net\/anime\/41312"},{"mal_id":41930,"type":"anime","name":"Kamisama
-        ni Natta Hi","url":"https:\/\/myanimelist.net\/anime\/41930"},{"mal_id":40595,"type":"anime","name":"Kimi
-        to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen","url":"https:\/\/myanimelist.net\/anime\/40595"},{"mal_id":41834,"type":"anime","name":"King''s
-        Raid: Ishi wo Tsugumono-tachi","url":"https:\/\/myanimelist.net\/anime\/41834"},{"mal_id":40974,"type":"anime","name":"Kuma
-        Kuma Kuma Bear","url":"https:\/\/myanimelist.net\/anime\/40974"},{"mal_id":40879,"type":"anime","name":"Love
-        Live! Nijigasaki Gakuen School Idol Doukoukai","url":"https:\/\/myanimelist.net\/anime\/40879"},{"mal_id":40085,"type":"anime","name":"Maesetsu!","url":"https:\/\/myanimelist.net\/anime\/40085"},{"mal_id":37599,"type":"anime","name":"Magatsu
-        Wahrheit: Zuerst","url":"https:\/\/myanimelist.net\/anime\/37599"},{"mal_id":40571,"type":"anime","name":"Majo
-        no Tabitabi","url":"https:\/\/myanimelist.net\/anime\/40571"},{"mal_id":40397,"type":"anime","name":"Maoujou
-        de Oyasumi","url":"https:\/\/myanimelist.net\/anime\/40397"},{"mal_id":41619,"type":"anime","name":"Munou
-        na Nana","url":"https:\/\/myanimelist.net\/anime\/41619"},{"mal_id":41345,"type":"anime","name":"Noblesse","url":"https:\/\/myanimelist.net\/anime\/41345"},{"mal_id":39609,"type":"anime","name":"Ochikobore
-        Fruit Tart","url":"https:\/\/myanimelist.net\/anime\/39609"},{"mal_id":41364,"type":"anime","name":"One
-        Room Third Season","url":"https:\/\/myanimelist.net\/anime\/41364"},{"mal_id":42391,"type":"anime","name":"Osomatsu-san
-        3rd Season","url":"https:\/\/myanimelist.net\/anime\/42391"},{"mal_id":42714,"type":"anime","name":"Otona
-        nya Koi no Shikata ga Wakaranee!","url":"https:\/\/myanimelist.net\/anime\/42714"},{"mal_id":40958,"type":"anime","name":"Rail
-        Romanesque","url":"https:\/\/myanimelist.net\/anime\/40958"},{"mal_id":41372,"type":"anime","name":"Senyoku
-        no Sigrdrifa","url":"https:\/\/myanimelist.net\/anime\/41372"},{"mal_id":38005,"type":"anime","name":"Strike
-        Witches: Road to Berlin","url":"https:\/\/myanimelist.net\/anime\/38005"},{"mal_id":42668,"type":"anime","name":"Taisou
-        Zamurai","url":"https:\/\/myanimelist.net\/anime\/42668"},{"mal_id":41389,"type":"anime","name":"Tonikaku
-        Kawaii","url":"https:\/\/myanimelist.net\/anime\/41389"},{"mal_id":38669,"type":"anime","name":"Tsukiuta.
-        The Animation 2","url":"https:\/\/myanimelist.net\/anime\/38669"},{"mal_id":40911,"type":"anime","name":"Yuukoku
-        no Moriarty","url":"https:\/\/myanimelist.net\/anime\/40911"}],"manga_relations":[],"character_relations":[]}'
+      string: '{"data":{"mal_id":379,"url":"https:\/\/myanimelist.net\/clubs.php?cid=379","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/clubs\/12\/362485.jpg"}},"name":"Fantasy
+        Anime League","members":0,"category":"7","created":"2007-07-10T00:00:00+00:00","access":"public"}}'
     headers:
-      Access-Control-Allow-Methods: '*'
+      Access-Control-Allow-Methods: GET
       Access-Control-Allow-Origin: '*'
-      Cache-Control: private, must-revalidate
+      Cache-Control: public, s-maxage=86400
       Connection: keep-alive
       Content-Encoding: gzip
-      Content-Length: '1627'
       Content-Type: application/json
-      Date: Mon, 15 Feb 2021 23:38:47 GMT
-      ETag: '"6db358bd4afc168393a32ca1730abcdd"'
-      Expires: Tue, 16 Feb 2021 23:25:12 GMT
+      Date: Fri, 09 Dec 2022 22:47:36 GMT
+      Expires: Wed, 07 Dec 2022 16:59:41 GMT
+      Last-Modified: Tue, 06 Dec 2022 16:59:41 GMT
       Server: nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding: chunked
       Vary: Accept-Encoding
-      X-Cache-Status: MISS
-      X-Request-Cache-Ttl: '85585'
-      X-Request-Cached: '1'
-      X-Request-Hash: request:club:17ed3f28f4e574cb643a731b83e4619e8cae2307
+      X-Cache-Status: STALE
+      X-Request-Fingerprint: request:clubs:c33775d88601ccc7af19eaa8634668ddf8456bda
     status:
       code: 200
       message: OK
-    url: https://api.jikan.moe/v3/club/379
+    url: https://api.jikan.moe/v4/clubs/379
 version: 1

@@ -1,0 +1,29 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://api.jikan.moe/v4/reviews/anime
+  response:
+    body:
+      string: '{"status":500,"type":"Exception","message":"Unhandled Exception. Please
+        follow report_url to generate an issue on GitHub","trace":"\/var\/www\/jikan-rest\/app\/Http\/Controllers\/V4DB\/ReviewsController.php
+        at line 76","error":"Call to undefined method Jikan\\MyAnimeList\\MalClient::getRecentReviews()","report_url":"https:\/\/github.com\/jikan-me\/jikan-rest\/issues\/new?title=%5BOFFICIAL%5D+Generated+Issue%3A+Error&body=Please+fill+out+the+details+below.%0A%0A%2A%2ASummary%3A%2A%2A%0A%0A%2A%2ASteps+to+reproduce%3A%2A%2A%0A%0A%0A%0A+%23%23%23+Additional+Details+%0A+%2A%2AJikan+Parser+Version%2A%2A%3A+%60%60%60v4.0.2%404df99e0df5a4adf2b92e7c6fc663de8fd4b9c325%60%60%60%0A%2A%2APHP%3A%2A%2A+%60%60%608.0.19%60%60%60%0A%2A%2ARedis%2A%2A%3A+%60%60%60Connected%60%60%60%0A%2A%2AException%3A%2A%2A+%60%60%60Error%60%60%60%0A%2A%2ACode%3A%2A%2A+%60%60%600%60%60%60%0A%2A%2AMessage%3A%2A%2A+%60%60%60Call+to+undefined+method+Jikan%5CMyAnimeList%5CMalClient%3A%3AgetRecentReviews%28%29%60%60%60%0A%2A%2ATrace%3A%2A%2A+%60%60%60%2Fvar%2Fwww%2Fjikan-rest%2Fapp%2FHttp%2FControllers%2FV4DB%2FReviewsController.php+on+line+76%60%60%60%0A%2A%2ARequest%3A%2A%2A+%60GET+%2Fv4%2Freviews%2Fanime%60%0A"}'
+    headers:
+      Access-Control-Allow-Methods: GET
+      Access-Control-Allow-Origin: '*'
+      Cache-Control: private, must-revalidate
+      Connection: keep-alive
+      Content-Encoding: gzip
+      Content-Type: application/json
+      Date: Thu, 15 Dec 2022 20:28:39 GMT
+      Expires: '-1'
+      Pragma: no-cache
+      Server: nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding: chunked
+      Vary: Accept-Encoding
+    status:
+      code: 500
+      message: Internal Server Error
+    url: https://api.jikan.moe/v4/reviews/anime
+version: 1

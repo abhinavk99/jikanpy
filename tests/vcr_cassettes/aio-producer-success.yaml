@@ -3,50 +3,28 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.jikan.moe/v3/producer/37
+    uri: https://api.jikan.moe/v4/producers/37
   response:
     body:
-      string: '{"request_hash":"request:producer:d2de71db835bd172070ed42e09e4378c87c55a6d","request_cached":true,"request_cache_expiry":0,"last_page":1,"meta":{"mal_id":0,"type":"anime","name":"","url":""},"item_count":1,"anime":[{"mal_id":209,"url":"https:\/\/myanimelist.net\/anime\/209\/ROD__The_TV","image_url":"https:\/\/cdn.myanimelist.net\/images\/anime\/3\/73350.jpg","title":"R.O.D:
-        The TV","type":"TV","source":"Light novel","episodes":26,"rating":"PG-13 -
-        Teens 13 or older","score":7.57,"members":58949,"synopsis":"Anita King, Maggie
-        Mui, and Michelle Cheung are the Paper Sisters. They run the Three Sisters
-        Detective Agency in Hong Kong which is dedicated to solving cases involving
-        books. They are hired as local guides for Nenene Sumiregawa, a Japanese novelist
-        who has been struggling with writer''s block following the disappearance of
-        her longtime friend, Yomiko Readman. The sisters are all Paper Masters\u2014individuals
-        with the power to control paper\u2014and with their abilities, they save Nenene
-        from the dangerous terrorists targeting her at a book signing. But in case
-        they strike again, the sisters remain as her bodyguards to protect her from
-        further harm. This is a dream come true for bookworms Maggie and Michelle
-        who love Nenene''s stories, but the young Anita cannot stand books despite
-        her powers over paper. The three struggle to adapt to their new daily life
-        in Japan, guarding Nenene while continuing their detective work under a mysterious
-        organization, Dokusensha. However, the more they get to know Nenene, the more
-        they discover the link between her, the disappearance of her friend Yomiko,
-        and the mysterious books Dokusensha sends the Paper Masters to investigate.
-        What began as a simple job ends up a bigger case than they have ever had before.
-        Are these girls really willing to risk their lives over literature? [Written
-        by MAL Rewrite]","producers":[{"mal_id":17,"type":"anime","name":"Aniplex","url":"https:\/\/myanimelist.net\/anime\/producer\/17\/Aniplex"},{"mal_id":37,"type":"anime","name":"Studio
-        Deen","url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen"},{"mal_id":116,"type":"anime","name":"Broccoli","url":"https:\/\/myanimelist.net\/anime\/producer\/116\/Broccoli"},{"mal_id":757,"type":"anime","name":"Sony
-        Music Entertainment","url":"https:\/\/myanimelist.net\/anime\/producer\/757\/Sony_Music_Entertainment"}],"licensors":["Aniplex
-        of America","Geneon Entertainment USA"],"genres":[{"mal_id":1,"type":"anime","name":"Action","url":"https:\/\/myanimelist.net\/anime\/genre\/1\/Action"},{"mal_id":24,"type":"anime","name":"Sci-Fi","url":"https:\/\/myanimelist.net\/anime\/genre\/24\/Sci-Fi"},{"mal_id":2,"type":"anime","name":"Adventure","url":"https:\/\/myanimelist.net\/anime\/genre\/2\/Adventure"},{"mal_id":4,"type":"anime","name":"Comedy","url":"https:\/\/myanimelist.net\/anime\/genre\/4\/Comedy"},{"mal_id":31,"type":"anime","name":"Super
-        Power","url":"https:\/\/myanimelist.net\/anime\/genre\/31\/Super_Power"},{"mal_id":8,"type":"anime","name":"Drama","url":"https:\/\/myanimelist.net\/anime\/genre\/8\/Drama"}],"kids":false,"r18":false}]}'
+      string: '{"data":{"mal_id":37,"url":"https:\/\/myanimelist.net\/anime\/producer\/37\/Studio_Deen","titles":[{"type":"Default","title":"Studio
+        Deen"},{"type":"Japanese","title":"\u30b9\u30bf\u30b8\u30aa\u30c7\u30a3\u30fc\u30f3"}],"images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/company\/37.png"}},"favorites":772,"established":"1975-03-14T00:00:00+00:00","about":null,"count":306}}'
     headers:
-      Access-Control-Allow-Methods: '*'
+      Access-Control-Allow-Methods: GET
       Access-Control-Allow-Origin: '*'
-      Cache-Control: private, must-revalidate
+      Cache-Control: public, s-maxage=86400
       Connection: keep-alive
       Content-Encoding: gzip
-      Content-Length: '1328'
       Content-Type: application/json
-      Date: Wed, 10 Jun 2020 05:25:15 GMT
-      Server: Jikan/3.4
+      Date: Fri, 09 Dec 2022 22:44:22 GMT
+      Expires: Sat, 10 Dec 2022 11:55:22 GMT
+      Last-Modified: Fri, 09 Dec 2022 11:55:22 GMT
+      Server: nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding: chunked
       Vary: Accept-Encoding
-      X-Cache-Status: MISS
-      expires: '-1'
-      pragma: no-cache
+      X-Cache-Status: HIT
+      X-Request-Fingerprint: request:producers:378144099b21b7e555fef95d9f06dee1dc23c95e
     status:
       code: 200
       message: OK
-    url: https://api.jikan.moe/v3/producer/37
+    url: https://api.jikan.moe/v4/producers/37
 version: 1

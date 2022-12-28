@@ -1,0 +1,57 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
+    method: GET
+    uri: https://api.jikan.moe/v4/reviews/anime
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA21TbW/aMBD+K1akTJvckSwEWpCqidJSOhUNsa6fIk0mvoA3x85spwxN++87Ewpt
+        iXQ6x/Hdc6/P38A65mobDHtxfBa4bQXBMLj5k0PlhFbBWVCCtWzl/35Xa6a4BE4O7x0yl8AskEJL
+        qTfEQKWN+1EbSZwmK1BgmAPCFBHW1kC0IrfCTeslAjvDcg+bRU/MZNFms8min+IXUx8NWJdFrKqy
+        aOoc6rFWzmAEMDaLHtPrqyxawJOAjT2+dKp1RZgjUigg530MAMZogwHGTO7SqRWHAl85KcGtNSdf
+        fLQsm21HSpRwLzBqNmNyLAUoNxyuwC0gx899rPcfEPRYISKvMTs7zKIsWgm3rpedXJfPRZTwupxd
+        AzB9BZvPTjgJl2Hv6utkcje+G92HvWt6u+8Wp3feNOyO6I2v4N1S8+1l02daCCmprh11a6AcHBPS
+        0iVg7zthPPKSePlWlyUzW8Ro7q/eHFSWOk2xFKN5ncNbs53QMOk2QkecCz9tJun1PmRj4H12TaRz
+        ZiwY+ogTQsM9GlYQ9uNGntJO3EnCNE55MRhAzIseSxkvkuUggfO8X+T9fpfDRcHT5SDvJr2D5yHx
+        +XR+yPQIfIG4nwan1gvgwrYkghujIMc2n7oc1rolzG4Upy5jzaHFOj61nDU8ajH2++nncdhP2uwn
+        3bU27I1fLKi/PW+oh+qO3m5pmFyESUs/HjzdWqKHyQT5hxoJiPq4snhBCqL2HMTjBQnx5lmIRysN
+        qVbU05Ce99vm8rv26C8zub15oD6PFJV5LmPCfNGNa/DvP62MQNmpBAAA
+    headers:
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - private, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 15 Dec 2022 20:38:50 GMT
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+    status:
+      code: 500
+      message: Internal Server Error
+version: 1

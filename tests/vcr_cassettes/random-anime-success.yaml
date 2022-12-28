@@ -1,0 +1,63 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
+    method: GET
+    uri: https://api.jikan.moe/v4/random/anime
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA61WUY/aOBD+K5alPl0WQgK7DW+9Vq1UddVKW6kPTYVMMoDbxM7ZDtcU8d87YydA
+        YVe3p10JGXs883nm8+eBHS+FE3y+47WoFrLk82k8SSLemorP+ca5xs7zcT6uO6FkDZW0bqTA5WO/
+        zMfknY/fSmPd4u6fVpQ84rIWa7CE+b1Z05c3LM4hi1KNLmBD7AEesW+Sl8mIgCJuMUdM8qloroer
+        hEGgJ8NVHm4f8X9h2TxPuR7pGevt8Z6tYI+3x5KdEbICQ1V3unXtEryGVFtVvYbCFOollIsTw1Ej
+        J+mErYuqg7mGUrb1pf2iqN5d/JT1pT8lLZrG6C1gns60gEVIV1EuX3fcdQ0gLW9gJdrK8X4PLV7h
+        LCh8Hx0c7zqlVVefOH6Qa1HJX8Cu2KNjPoHZdpJ9dKb7L9e8jaeTFY3pjMZp7OeJny/9PGPeCbwp
+        OTpNQ9j09ID3ohEKLPxxQhqXMxrFhMZVQeMyo7F4eZyLFY3gxyL1Y3YK/Q5MLdT9FM7Zra5BOVaC
+        YV/ExmxAutPgtwZUsbk/mM3ZBzgCsC2WFUNmpAsTvv92/7311gWoNUp8MyglGL8PTDyRgQHPhqsj
+        WT2kiejs4qNnuV0qPpB421pZUBvRrSnI8NHItVSiQhs00uqSVD9BBydcaz1bComBkr2SRirqkSJM
+        5itRWfBLejc7vjK6xoAkjmdXcXqVxJ/jeO4/f/mReNADw/jcmmPQDn9yOj5PYnykWjm8hzTiHQhD
+        tni2D5G9V/+Yg19YBNfhMVsXEuS3wjDEZIRB3bhsjXBSK9xKWS1JiWTwvp/eXU1SvI3PAMoynGrD
+        dIViJLYKbZCs2egm6xflYomZpDfZNUGoH8hZnFwjb41uWmw/0uH2NXZGalLY6AxSeZ3NphFfia3G
+        baIZVySJxko7XA3byhI0W+HhbgPMarU+1Qdbdij0oJyIFQaEA2+8c20pNZuS3Jfx6xEmvRTFj7XR
+        rTo0XwvCUvHnnKGv0aIshHVnJDvs8afzX1od1gPLnnV/oWVb+EK/ot4qWSCPelhan19oqMO/ikl6
+        kKX/McGclah9j/uzGv74/x5DFvl4kubjgLOYvnidvPgbcagLrEEZOEvkoTxeFV4tjz/eg+PZ+bgP
+        pRPhZ4NsSLc4HE3vcQP1eRrZQ3kMr/b/ppHl4xBKaZRQ67URzUYWPof9/jeDKIVV6QkAAA==
+    headers:
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache
+      - no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 08 Dec 2022 00:30:46 GMT
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      expires:
+      - Thu, 08 Dec 2022 00:30:45 GMT
+      pragma:
+      - no-cache
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -3,19 +3,23 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.jikan.moe/v3/season/-1/winter
+    uri: https://api.jikan.moe/v4/seasons/-1/winter
   response:
     body:
-      string: "<html>\r\n<head><title>429 Too Many Requests</title></head>\r\n<body>\r\n<center><h1>429
-        Too Many Requests</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+      string: '{"status":404,"type":"HttpException","message":"Not Found","error":null}'
     headers:
+      Access-Control-Allow-Methods: GET
+      Access-Control-Allow-Origin: '*'
+      Cache-Control: no-cache, private
       Connection: keep-alive
-      Content-Length: '162'
-      Content-Type: text/html
-      Date: Wed, 10 Jun 2020 05:25:27 GMT
-      Server: Jikan/3.4
+      Content-Encoding: gzip
+      Content-Type: application/json
+      Date: Fri, 09 Dec 2022 22:44:42 GMT
+      Server: nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding: chunked
+      Vary: Accept-Encoding
     status:
-      code: 429
-      message: Too Many Requests
-    url: https://api.jikan.moe/v3/season/-1/winter
+      code: 404
+      message: Not Found
+    url: https://api.jikan.moe/v4/seasons/-1/winter
 version: 1

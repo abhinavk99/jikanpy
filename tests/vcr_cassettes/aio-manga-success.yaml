@@ -3,14 +3,19 @@ interactions:
     body: null
     headers: {}
     method: GET
-    uri: https://api.jikan.moe/v3/manga/25
+    uri: https://api.jikan.moe/v4/manga/25
   response:
     body:
-      string: '{"request_hash":"request:manga:c277accf70c490102064350cfc8b7fc318716029","request_cached":true,"request_cache_expiry":-1591764528,"mal_id":25,"url":"https:\/\/myanimelist.net\/manga\/25\/Fullmetal_Alchemist","title":"Fullmetal
-        Alchemist","title_english":"Fullmetal Alchemist","title_synonyms":["Full Metal
-        Alchemist","Hagane no Renkinjutsushi","FMA","HagaRen","Fullmetal Alchemist
-        Gaiden"],"title_japanese":"\u92fc\u306e\u932c\u91d1\u8853\u5e2b","status":"Finished","image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/1\/27600.jpg","type":"Manga","volumes":27,"chapters":116,"publishing":false,"published":{"from":"2001-07-12T00:00:00+00:00","to":"2010-09-11T00:00:00+00:00","prop":{"from":{"day":12,"month":7,"year":2001},"to":{"day":11,"month":9,"year":2010}},"string":"Jul  12,
-        2001 to Sep  11, 2010"},"rank":3,"score":9.13,"scored_by":108355,"popularity":11,"members":192679,"favorites":25990,"synopsis":"Alchemists
+      string: '{"data":{"mal_id":25,"url":"https:\/\/myanimelist.net\/manga\/25\/Fullmetal_Alchemist","images":{"jpg":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/243675.jpg","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/243675t.jpg","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/243675l.jpg"},"webp":{"image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/243675.webp","small_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/243675t.webp","large_image_url":"https:\/\/cdn.myanimelist.net\/images\/manga\/3\/243675l.webp"}},"approved":true,"titles":[{"type":"Default","title":"Fullmetal
+        Alchemist"},{"type":"Synonym","title":"Full Metal Alchemist"},{"type":"Synonym","title":"Hagane
+        no Renkinjutsushi"},{"type":"Synonym","title":"FMA"},{"type":"Synonym","title":"HagaRen"},{"type":"Synonym","title":"Fullmetal
+        Alchemist Gaiden"},{"type":"Synonym","title":"Full Metal Alchemist"},{"type":"Synonym","title":"Hagane
+        no Renkinjutsushi"},{"type":"Synonym","title":"FMA"},{"type":"Synonym","title":"HagaRen"},{"type":"Synonym","title":"Fullmetal
+        Alchemist Gaiden"},{"type":"Japanese","title":"\u92fc\u306e\u932c\u91d1\u8853\u5e2b"},{"type":"English","title":"Fullmetal
+        Alchemist"}],"title":"Fullmetal Alchemist","title_english":"Fullmetal Alchemist","title_japanese":"\u92fc\u306e\u932c\u91d1\u8853\u5e2b","title_synonyms":["Full
+        Metal Alchemist","Hagane no Renkinjutsushi","FMA","HagaRen","Fullmetal Alchemist
+        Gaiden"],"type":"Manga","chapters":116,"volumes":27,"status":"Finished","publishing":false,"published":{"from":"2001-07-12T00:00:00+00:00","to":"2010-09-11T00:00:00+00:00","prop":{"from":{"day":12,"month":7,"year":2001},"to":{"day":11,"month":9,"year":2010}},"string":"Jul
+        12, 2001 to Sep 11, 2010"},"score":9.04,"scored":9.04,"scored_by":147371,"rank":7,"popularity":18,"members":271964,"favorites":28978,"synopsis":"Alchemists
         are knowledgeable and naturally talented individuals who can manipulate and
         modify matter due to their art. Yet despite the wide range of possibilities,
         alchemy is not as all-powerful as most would believe. Human transmutation
@@ -30,7 +35,7 @@ interactions:
         copies of the series have been sold worldwide, making it one of Square Enix''s
         most successful publications, according to Nielsen Bookscan. A live-action
         film is in development by Warner Bros. Japan and is scheduled for release
-        in Winter 2017.\r\nThe series was published in English as Fullmetal Alchemist
+        in Winter 2017. The series was published in English as Fullmetal Alchemist
         by VIZ Media from May 3, 2005 to December 20, 2011, and in eBook format by
         Yen Press on April 15, 2014. A 3-in-1 omnibus edition was released by VIZ
         from June 7, 2011 to November 11, 2014 as well as a complete box set in November
@@ -39,32 +44,26 @@ interactions:
         Manga imprint from July 13, 2006 to September 3, 2011, in Polish by J.P. Fantastica
         from January 2006 to to April 2012, in Brazilian Portuguese by Jbc from February
         2007 to April 2011 and in Spanish by Ivrea Argentina starting December 12,
-        2016.","related":{"Side story":[{"mal_id":4658,"type":"manga","name":"Fullmetal
-        Alchemist","url":"https:\/\/myanimelist.net\/manga\/4658\/Fullmetal_Alchemist"}],"Alternative
-        version":[{"mal_id":32409,"type":"manga","name":"Full Metal Alchemist: Prototype","url":"https:\/\/myanimelist.net\/manga\/32409\/Full_Metal_Alchemist__Prototype"}],"Adaptation":[{"mal_id":121,"type":"anime","name":"Fullmetal
-        Alchemist","url":"https:\/\/myanimelist.net\/anime\/121\/Fullmetal_Alchemist"},{"mal_id":5114,"type":"anime","name":"Fullmetal
-        Alchemist: Brotherhood","url":"https:\/\/myanimelist.net\/anime\/5114\/Fullmetal_Alchemist__Brotherhood"}]},"genres":[{"mal_id":1,"type":"manga","name":"Action","url":"https:\/\/myanimelist.net\/manga\/genre\/1\/Action"},{"mal_id":2,"type":"manga","name":"Adventure","url":"https:\/\/myanimelist.net\/manga\/genre\/2\/Adventure"},{"mal_id":4,"type":"manga","name":"Comedy","url":"https:\/\/myanimelist.net\/manga\/genre\/4\/Comedy"},{"mal_id":8,"type":"manga","name":"Drama","url":"https:\/\/myanimelist.net\/manga\/genre\/8\/Drama"},{"mal_id":27,"type":"manga","name":"Shounen","url":"https:\/\/myanimelist.net\/manga\/genre\/27\/Shounen"},{"mal_id":38,"type":"manga","name":"Military","url":"https:\/\/myanimelist.net\/manga\/genre\/38\/Military"}],"authors":[{"mal_id":1874,"type":"people","name":"Arakawa,
-        Hiromu","url":"https:\/\/myanimelist.net\/people\/1874\/Hiromu_Arakawa"}],"serializations":[{"mal_id":13,"type":"manga","name":"Shounen
-        Gangan","url":"https:\/\/myanimelist.net\/manga\/magazine\/13\/Shounen_Gangan"}]}'
+        2016.","authors":[{"mal_id":1874,"type":"people","name":"Arakawa, Hiromu","url":"https:\/\/myanimelist.net\/people\/1874\/Hiromu_Arakawa"}],"serializations":[{"mal_id":13,"type":"manga","name":"Shounen
+        Gangan","url":"https:\/\/myanimelist.net\/manga\/magazine\/13\/Shounen_Gangan"}],"genres":[{"mal_id":1,"type":"manga","name":"Action","url":"https:\/\/myanimelist.net\/manga\/genre\/1\/Action"},{"mal_id":2,"type":"manga","name":"Adventure","url":"https:\/\/myanimelist.net\/manga\/genre\/2\/Adventure"},{"mal_id":46,"type":"manga","name":"Award
+        Winning","url":"https:\/\/myanimelist.net\/manga\/genre\/46\/Award_Winning"},{"mal_id":8,"type":"manga","name":"Drama","url":"https:\/\/myanimelist.net\/manga\/genre\/8\/Drama"},{"mal_id":10,"type":"manga","name":"Fantasy","url":"https:\/\/myanimelist.net\/manga\/genre\/10\/Fantasy"}],"explicit_genres":[],"themes":[{"mal_id":38,"type":"manga","name":"Military","url":"https:\/\/myanimelist.net\/manga\/genre\/38\/Military"}],"demographics":[{"mal_id":27,"type":"manga","name":"Shounen","url":"https:\/\/myanimelist.net\/manga\/genre\/27\/Shounen"}]}}'
     headers:
-      Access-Control-Allow-Methods: '*'
+      Access-Control-Allow-Methods: GET
       Access-Control-Allow-Origin: '*'
-      Cache-Control: private, must-revalidate
+      Cache-Control: public, s-maxage=86400
       Connection: keep-alive
       Content-Encoding: gzip
-      Content-Length: '2030'
       Content-Type: application/json
-      Date: Wed, 10 Jun 2020 05:24:58 GMT
-      ETag: '"76c3fab313577a29b034977bd14fc872"'
-      Expires: Thu, 01 Jan 1970 00:00:00 GMT
-      Server: Jikan/3.4
+      Date: Fri, 09 Dec 2022 22:44:03 GMT
+      Expires: Sat, 10 Dec 2022 22:03:05 GMT
+      Last-Modified: Fri, 09 Dec 2022 22:03:05 GMT
+      Server: nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding: chunked
       Vary: Accept-Encoding
       X-Cache-Status: HIT
-      X-Request-Cache-Ttl: '-1591764529'
-      X-Request-Cached: '1'
-      X-Request-Hash: request:manga:c277accf70c490102064350cfc8b7fc318716029
+      X-Request-Fingerprint: request:manga:e851b47a14c23c5aa4dc3c335d5243bac564eba7
     status:
       code: 200
       message: OK
-    url: https://api.jikan.moe/v3/manga/25
+    url: https://api.jikan.moe/v4/manga/25
 version: 1

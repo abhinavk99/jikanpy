@@ -5,11 +5,13 @@ utils.py contains utility methods used in Jikan and AioJikan.
 
 from typing import Optional, Dict, Mapping, Union, Any
 
+from jikanpy.exceptions import DeprecatedEndpoint
+
 import aiohttp
 import requests
 
 
-BASE_URL = "https://api.jikan.moe/v3"
+BASE_URL = "https://api.jikan.moe/v4"
 
 
 def add_jikan_metadata(
@@ -34,113 +36,229 @@ def add_jikan_metadata(
 
 def get_url_with_page(url: str, page: Optional[int], delimiter: str = "/") -> str:
     """Adds the page to the URL if it exists."""
-    return url if page is None else f"{url}{delimiter}{page}"
+    # return url if page is None else f"{url}{delimiter}{page}"
+    raise DeprecatedEndpoint("Pages are no longer indexed with /page")
 
 
 def get_main_url(
-    base_url: str, endpoint: str, id: int, extension: Optional[str], page: Optional[int]
+    base_url: str,
+    endpoint: str,
+    id: int,
+    extension: Optional[str] = None,
+    page: Optional[int] = None,
+    parameters: Optional[Mapping[str, Any]] = None,
 ) -> str:
     """Creates the URL for the anime, manga, character, person, and club endpoints."""
     url = f"{base_url}/{endpoint}/{id}"
     if extension is not None:
         url += f"/{extension}"
-        url = get_url_with_page(url, page)
+
+    query_params = {}
+
+    if page is not None:
+        query_params["page"] = page
+    if parameters is not None:
+        for k, v in parameters.items():
+            query_params[k] = v
+
+    if query_params != {}:
+        k, v = query_params.popitem()
+        url += f"?{k}={v}"
+        url += "".join(f"&{k}={v}" for k, v in query_params.items())
+
     return url
-
-
-def get_creator_url(
-    base_url: str, creator_type: str, creator_id: int, page: Optional[int]
-) -> str:
-    """Creates the URL for the producer and magazine endpoints."""
-    url = f"{base_url}/{creator_type}/{creator_id}"
-    return get_url_with_page(url, page)
 
 
 def get_search_url(
     base_url: str,
     search_type: str,
     query: str,
-    page: Optional[int],
-    parameters: Optional[Mapping[str, Optional[Union[int, str, float]]]],
+    page: Optional[int] = None,
+    parameters: Optional[Mapping[str, Optional[Union[int, str, float]]]] = None,
 ) -> str:
     """Creates the URL for the search endpoint."""
-    url = f"{base_url}/search/{search_type}?q={query}"
-    url = get_url_with_page(url, page, delimiter="&page=")
+    url = f"{base_url}/{search_type}?q={query}"
+    if page is not None:
+        url += f"&page={page}"
     if parameters is not None:
         url += "".join(f"&{k}={v}" for k, v in parameters.items())
     return url
 
 
 def get_season_url(
-    base_url: str, year: Optional[int] = None, season: Optional[str] = None
+    base_url: str,
+    year: Optional[int] = None,
+    season: Optional[str] = None,
+    extension: Optional[str] = None,
+    page: Optional[int] = None,
+    parameters: Optional[Mapping[str, Any]] = None,
 ) -> str:
     """Creates the URL for the season endpoint."""
-    if year is None or season is None:
-        return f"{base_url}/season"
-    return f"{base_url}/season/{year}/{season.lower()}"
+    url = f"{base_url}/seasons"
+
+    # Not enforcing that year and season are both specified
+    #  just in case they add the posibility to get anime of
+    #  entire year later e.g.: /seasons/2022
+    if year is not None or season is not None:
+        url += f"/{year}/{season.lower()}"  # type: ignore
+
+    # nor enforcing that extensions and year/season are
+    #   mutually exclusive
+    if extension is not None:
+        url += f"/{extension}"
+
+    query_params = {}
+
+    if page is not None:
+        query_params["page"] = page
+
+    if parameters is not None:
+        for k, v in parameters.items():
+            query_params[k] = v
+
+    if query_params != {}:
+        k, v = query_params.popitem()
+        url += f"?{k}=v"
+        url += "".join(f"&{k}={v}" for k, v in query_params.items())
+
+    return url
 
 
-def get_schedule_url(base_url: str, day: Optional[str]) -> str:
+def get_season_history_url(base_url: str) -> str:
+    """Creats the URL for the getSeasonList endpoint."""
+    return f"{base_url}/seasons"
+
+
+def get_schedule_url(
+    base_url: str,
+    day: Optional[str] = None,
+    parameters: Optional[Dict[str, Any]] = None,
+) -> str:
     """Creates the URL for the schedule endpoint."""
-    base_schedule_url = f"{base_url}/schedule"
-    return base_schedule_url if day is None else f"{base_schedule_url}/{day.lower()}"
+    url = f"{base_url}/schedules"
 
+    if day is not None:
+        url += f"?filter={day.lower()}"
 
-def get_season_archive_url(base_url: str) -> str:
-    """Creates the URL for the season archive endpoint."""
-    return f"{base_url}/season/archive"
+    if day is None and parameters is not None:
+        k, v = parameters.popitem()
+        url += f"?{k}={v}"
+        url += "".join(f"&{k}={v}" for k, v in parameters.items())
+    elif day is not None and parameters is not None:
+        url += "".join(f"&{k}={v}" for k, v in parameters.items())
 
-
-def get_season_later_url(base_url: str) -> str:
-    """Creates the URL for the season later endpoint."""
-    return f"{base_url}/season/later"
+    return url
 
 
 def get_top_url(
-    base_url: str, type: str, page: Optional[int], subtype: Optional[str]
+    base_url: str,
+    type: str,
+    page: Optional[int] = None,
+    parameters: Optional[Dict[str, Any]] = None,
 ) -> str:
     """Creates the URL for the top endpoint."""
     url = f"{base_url}/top/{type.lower()}"
-    url = get_url_with_page(url, page)
-    return url if subtype is None else f"{url}/{subtype.lower()}"
+    if page is not None:
+        url += f"?page={page}"
+
+    if page is None and parameters is not None:
+        k, v = parameters.popitem()
+        url += f"?{k}={v}"
+        url += "".join(f"&{k}={v}" for k, v in parameters.items())
+    elif page is not None and parameters is not None:
+        url += "".join(f"&{k}={v}" for k, v in parameters.items())
+
+    return url
 
 
-def get_genre_url(base_url: str, type: str, genre_id: int, page: Optional[int]) -> str:
+def get_genre_url(base_url: str, type: str, filter: Optional[str] = None) -> str:
     """Creates the URL for the genre endpoint."""
-    url = f"{base_url}/genre/{type.lower()}/{genre_id}"
-    return get_url_with_page(url, page)
+    url = f"{base_url}/genres/{type.lower()}"
+    if filter is not None:
+        url += f"?filter={filter}"
+    return url
 
 
 def get_user_url(
     base_url: str,
     username: str,
-    request: Optional[str],
-    argument: Optional[Union[int, str]],
+    extension: Optional[str],
     page: Optional[int],
     parameters: Optional[Mapping[str, Any]],
 ) -> str:
     """Creates the URL for the user endpoint."""
-    url = f"{base_url}/user/{username.lower()}"
-    if request is not None:
-        url += f"/{request}"
-        if argument is not None:
-            url += f"/{argument}"
-        url = get_url_with_page(url, page)
+    url = f"{base_url}/users/{username.lower()}"
+    if extension is not None:
+        url += f"/{extension}"
+
+    query_params = {}
+
+    if page is not None:
+        query_params["page"] = page
     if parameters is not None:
-        param_str = "&".join(f"{k}={v}" for k, v in parameters.items())
-        url += f"?{param_str}"
+        for k, v in parameters.items():
+            query_params[k] = v
+
+    if query_params != {}:
+        k, v = query_params.popitem()
+        url += f"?{k}={v}"
+        url += "".join(f"&{k}={v}" for k, v in query_params.items())
+
     return url
 
 
-def get_meta_url(
+def get_user_id_url(
     base_url: str,
-    request: str,
-    type: Optional[str],
-    period: Optional[str],
-    offset: Optional[int],
+    user_id: int,
 ) -> str:
-    """Creates the URL for the meta endpoint."""
-    url = f"{base_url}/meta/{request}"
-    if type is not None and period is not None:
-        url += f"/{type}/{period}"
-    return get_url_with_page(url, offset)
+    """Creates the URL for the userbyid endpoint."""
+    return f"{base_url}/users/userbyid/{user_id}"
+
+
+def get_recommendations_url(
+    base_url: str,
+    type: str,
+    page: Optional[int] = None,
+) -> str:
+    """Creates the URL for the recommendations endpoint."""
+    url = f"{base_url}/recommendations/{type.lower()}"
+    if page is None:
+        return url
+    else:
+        return f"{url}?page={page}"
+
+
+def get_reviews_url(
+    base_url: str,
+    type: str,
+    page: Optional[int] = None,
+) -> str:
+    """Creates the URL for the reviews endpoint."""
+    url = f"{base_url}/reviews/{type.lower()}"
+    if page is None:
+        return url
+    else:
+        return f"{url}?page={page}"
+
+
+def get_watch_url(
+    base_url: str,
+    extension: str,
+    parameters: Optional[Dict[str, Any]] = None,
+) -> str:
+    """Creates the URL for the reviews endpoint."""
+    url = f"{base_url}/watch/{extension.lower()}"
+
+    if parameters is not None:
+        url += "".join(f"&{k}={v}" for k, v in parameters.items())
+
+    return url
+
+
+def get_random_url(
+    base_url: str,
+    type: str,
+) -> str:
+    """Creates the URl for the random endpoint."""
+    url = f"{base_url}/random/{type.lower()}"
+    return url

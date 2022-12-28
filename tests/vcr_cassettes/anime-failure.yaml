@@ -2,27 +2,43 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4]
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
     method: GET
-    uri: https://api.jikan.moe/v3/anime/-1
+    uri: https://api.jikan.moe/v4/anime/-1
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA6tWSi0qyi9SslLyzCtLzMlMUcgvUsjMS87PLchJLUlVSM1LKcjPzCtRqgUAiFF/
-        KioAAAA=
+        H4sIAAAAAAAAA6tWKi5JLCktVrIyMTDRUSqpLEhVslLyKCkpcK1ITi0oyczPU9JRyk0tLk5MB8n4
+        5ZcouOWX5qUARVOLivKLlKzySnNyagErzxScSAAAAA==
     headers:
-      Access-Control-Allow-Methods: ['*']
-      Access-Control-Allow-Origin: ['*']
-      Cache-Control: ['no-cache, private']
-      Connection: [keep-alive]
-      Content-Encoding: [gzip]
-      Content-Length: ['62']
-      Content-Type: [application/json]
-      Date: ['Tue, 04 Sep 2018 04:16:01 GMT']
-      Server: [nginx/1.13.10]
-      Vary: [Accept-Encoding]
-    status: {code: 404, message: Not Found}
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, private
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 06 Dec 2022 17:03:10 GMT
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 404
+      message: Not Found
 version: 1

@@ -1,0 +1,86 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.23.0
+    method: GET
+    uri: https://api.jikan.moe/v4/users/nekomata1037/friends
+  response:
+    body:
+      string: !!binary |
+        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
+        Pv7++Bd+k2leMDgAAA==
+    headers:
+      Access-Control-Allow-Methods:
+      - GET
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - public, s-maxage=300
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 07 Dec 2022 20:32:06 GMT
+      Expires:
+      - Mon, 05 Dec 2022 00:17:30 GMT
+      Last-Modified:
+      - Mon, 05 Dec 2022 00:12:30 GMT
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Cache-Status:
+      - STALE
+      X-Request-Fingerprint:
+      - request:users:e4b19e3fe4628e466bba18848e1511e8080d7c43
+    status:
+      code: 200
+      message: OK
+version: 1
