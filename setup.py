@@ -9,14 +9,14 @@ CHANGELOG_FILE = HERE / "CHANGELOG.md"
 CHANGELOG = CHANGELOG_FILE.read_text() if CHANGELOG_FILE.exists() else ""
 
 setup(
-    name="jikanpy",
-    version="4.3.2",
+    name="jikanpy_v4",
+    version="1.0.0",
     description="Python wrapper for the Jikan API",
     license="MIT",
     long_description=README + CHANGELOG,
     long_description_content_type="text/markdown",
-    author="Abhinav Kasamsetty",
-    author_email="abhinavkasamsetty@gmail.com",
+    author="Chris Peterson",
+    author_email="chris.peterson444@gmail.com",
     package_data={"jikanpy": ["py.typed"]},
     packages=["jikanpy"],
     url="https://github.com/abhinavk99/jikanpy",
