@@ -35,7 +35,7 @@ You can install the package from PyPI using pip:
 $ pip install jikanpy-v4
 ```
 
-If you have previously installed the old version of jikanpy, then you make sure to uninstall the old version first:
+If you have previously installed the old version of jikanpy, then make sure to uninstall the old version first:
 
 ```shell
 $ pip uninstall jikanpy
