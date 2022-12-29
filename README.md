@@ -11,11 +11,11 @@
 JikanPy is a Python wrapper for [Jikan](https://github.com/jikan-me/jikan),
 providing bindings for all API functionality, and supports Python 3.6+. Because
 it is intended to be pretty much identical, please consult [Jikan's
-documentation](https://jikan.docs.apiary.io/#) for thornier details on how it is
+documentation](https://docs.api.jikan.moe/) for thornier details on how it is
 meant to be used. Perhaps most importantly, JikanPy does not make any attempts
 to rate limit itself, so use it as responsibly as you would use the API
 primitively and remember that Jikan API has limitations, check out
-[this section](https://jikan.docs.apiary.io/#introduction/information/rate-limiting)
+[this section](https://docs.api.jikan.moe/#section/Information/Rate-Limiting)
 of documentation in order to see to what extent the API is limited or throttled.
 
 You can use either Jikan or AioJikan depending on whether you want a synchronous
@@ -25,19 +25,36 @@ are below.
 In addition to the typical response from the Jikan API, each response contains
 two additional fields:
 
-- `jikan_url`: The URL that was requested; for example: `https://api.jikan.moe/v3/anime/1`.
-- `headers`: The response headers from Jikan, detailed [here](https://jikan.docs.apiary.io/#introduction/information/caching).
+- `jikan_url`: The URL that was requested; for example: `https://api.jikan.moe/v4/anime/1`.
+- `headers`: The response headers from Jikan, detailed [here](https://docs.api.jikan.moe/#section/Information/Caching).
 
 ## Installation
+You can install the package from PyPI using pip:
 
 ```shell
-$ pip install jikanpy
+$ pip install jikanpy-v4
 ```
+
+If you have previously installed the old version of jikanpy, then make sure to uninstall the old version first:
+
+```shell
+$ pip uninstall jikanpy
+$ pip install --no-cache-dir jikanpy-v4
+```
+
+You can also install this package directly from the source:
+```shell
+$ git clone https://github.com/abhinavk99/jikanpy.git 
+$ cd jikanpy
+$ python setup.py install
+```
+
+*Note*: This package is different from `jikanpy` on PyPI, which is the old Jikan v3 compatible version of [jikanpy](https://github.com/abhinavk99/jikanpy/tree/jikanpy_v3).
 
 ## Usage Examples
 
 Below are some basic examples of how to use Jikan and AioJikan. Please read the
-[documentation below](https://github.com/abhinavk99/jikanpy#documentation) to see all the methods and more examples.
+[documentation below](#documentation) to see all the methods and more examples.
 
 ### Usage Examples with Jikan
 
