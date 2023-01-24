@@ -118,7 +118,7 @@ def get_season_url(
 
     if query_params != {}:
         k, v = query_params.popitem()
-        url += f"?{k}=v"
+        url += f"?{k}={v}"
         url += "".join(f"&{k}={v}" for k, v in query_params.items())
 
     return url
