@@ -1,5 +1,11 @@
 # Changelog for Jikanpy_v4
 
+## [1.0.2] - 2023-04-02
+
+### Fixed
+
+- Fixed argument parsing bug
+
 ## [1.0.0] - 2022-12-28
 
 ### Added

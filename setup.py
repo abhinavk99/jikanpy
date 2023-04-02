@@ -10,7 +10,7 @@ CHANGELOG = CHANGELOG_FILE.read_text() if CHANGELOG_FILE.exists() else ""
 
 setup(
     name="jikanpy_v4",
-    version="1.0.1",
+    version="1.0.2",
     description="Python wrapper for the Jikan API",
     license="MIT",
     long_description=README + CHANGELOG,
