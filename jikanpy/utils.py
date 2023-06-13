@@ -48,7 +48,7 @@ def get_main_url(
     page: Optional[int] = None,
     parameters: Optional[Mapping[str, Any]] = None,
 ) -> str:
-    """Creates the URL for the anime, manga, character, person, and club endpoints."""
+    """Creates the URL for the anime, manga, characters, person, and club endpoints."""
     url = f"{base_url}/{endpoint}/{id}"
     if extension is not None:
         url += f"/{extension}"
