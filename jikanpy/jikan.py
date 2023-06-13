@@ -92,7 +92,7 @@ class Jikan:
         page: Optional[int] = None,
     ) -> Dict[str, Any]:
         """Gets the response from Jikan API given the endpoint:
-        anime, manga, character, person, club
+        anime, manga, characters, person, club
         """
         url = utils.get_main_url(self.base, endpoint, id, extension, page)
         return self._request(url, id=id, endpoint=endpoint)
@@ -182,7 +182,7 @@ class Jikan:
             Dict: Dictionary containing information about the character.
 
         Examples:
-            >>> jikan.character(6356)
+            >>> jikan.characters(6356)
         """
         return self._get("characters", id, extension)
 

@@ -82,7 +82,7 @@ async def main():
     async with AioJikan() as aio_jikan:
         mushishi = await aio_jikan.anime(457)
         fma = await aio_jikan.manga(25)
-        ginko = await aio_jikan.character(425)
+        ginko = await aio_jikan.characters(425)
         kana_hanazawa = await aio_jikan.person(185)
         naruto = await aio_jikan.search(search_type='anime', query='naruto')
 
