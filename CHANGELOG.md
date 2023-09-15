@@ -18,4 +18,4 @@
 
 ### Removed
 
-- Removed suppport for Jikan API <= v3. See [here](https://github.com/abhinavk99/jikanpy/tree/jikanpy_v3/) for old package.
+- Removed support for Jikan API <= v3. See [here](https://github.com/abhinavk99/jikanpy/tree/jikanpy_v3/) for old package.

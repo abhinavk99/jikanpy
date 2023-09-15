@@ -436,7 +436,7 @@ class AioJikan:
         Args:
             type (:obj:`str`): Type to get items from. Possible values are anime
                 and manga.
-            filter (:obj:`str`, optional): Filter genres by "genres", "explicity_genres",
+            filter (:obj:`str`, optional): Filter genres by "genres", "explicit_genres",
                 "themes", or "demographics". Defaults to None.
 
         Returns:
@@ -506,7 +506,7 @@ class AioJikan:
             >>> await jikan.users(username='Xinil')
             >>> await jikan.users(username='Xinil', extension='full')
             >>> await jikan.users(username='Xinil', extension='friends', page=2)
-            >>> await jikan.users(username='Xinil', extension='history', paramters={'type': 'anime'})
+            >>> await jikan.users(username='Xinil', extension='history', parameters={'type': 'anime'})
         """
         url = utils.get_user_url(self.base, username, extension, page, parameters)
         return await self._request(url, username=username, extension=extension)
@@ -627,7 +627,7 @@ class AioJikan:
             >>> await   jikan.watch(extension='episodes')
             >>> await jikan.watch(extension='episodes/popular')
             >>> await jikan.watch(extension='promos')
-            >>> await jikan.watch(extension='promos/popular', paramters={'limit': 10})
+            >>> await jikan.watch(extension='promos/popular', parameters={'limit': 10})
         """
         url = utils.get_watch_url(self.base, extension, parameters)
         return await self._request(url, extension=extension)
