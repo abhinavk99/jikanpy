@@ -397,7 +397,7 @@ class Jikan:
         Args:
             type (:obj:`str`): Type to get items from. Possible values are anime
                 and manga.
-            filter (:obj:`str`, optional): Filter genres by "genres", "explicitly_genres",
+            filter (:obj:`str`, optional): Filter genres by "genres", "explicit_genres",
                 "themes", or "demographics". Defaults to None.
 
         Returns:
