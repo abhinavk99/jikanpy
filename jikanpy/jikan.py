@@ -397,7 +397,7 @@ class Jikan:
         Args:
             type (:obj:`str`): Type to get items from. Possible values are anime
                 and manga.
-            filter (:obj:`str`, optional): Filter genres by "genres", "explicity_genres",
+            filter (:obj:`str`, optional): Filter genres by "genres", "explicitly_genres",
                 "themes", or "demographics". Defaults to None.
 
         Returns:
@@ -463,7 +463,7 @@ class Jikan:
             >>> jikan.users(username='Xinil')
             >>> jikan.users(username='Xinil', extension='full')
             >>> jikan.users(username='Xinil', extension='friends', page=2)
-            >>> jikan.users(username='Xinil', extension='history', paramters={'type': 'anime'})
+            >>> jikan.users(username='Xinil', extension='history', parameters={'type': 'anime'})
         """
         url = utils.get_user_url(self.base, username, extension, page, parameters)
         return self._request(url, username=username, extension=extension)
@@ -584,7 +584,7 @@ class Jikan:
             >>> jikan.watch(extension='episodes')
             >>> jikan.watch(extension='episodes/popular')
             >>> jikan.watch(extension='promos')
-            >>> jikan.watch(extension='promos/popular', paramters={'limit': 10})
+            >>> jikan.watch(extension='promos/popular', parameters={'limit': 10})
         """
         url = utils.get_watch_url(self.base, extension, parameters)
         return self._request(url, extension=extension)

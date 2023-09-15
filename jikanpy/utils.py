@@ -97,7 +97,7 @@ def get_season_url(
     url = f"{base_url}/seasons"
 
     # Not enforcing that year and season are both specified
-    #  just in case they add the posibility to get anime of
+    #  just in case they add the possibility to get anime of
     #  entire year later e.g.: /seasons/2022
     if year is not None or season is not None:
         url += f"/{year}/{season.lower()}"  # type: ignore
@@ -125,7 +125,7 @@ def get_season_url(
 
 
 def get_season_history_url(base_url: str) -> str:
-    """Creats the URL for the getSeasonList endpoint."""
+    """Creates the URL for the getSeasonList endpoint."""
     return f"{base_url}/seasons"
 
 
