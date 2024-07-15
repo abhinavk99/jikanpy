@@ -1,4 +1,4 @@
 aiohttp == 3.9.4
 requests == 2.32.0
-setuptools == 65.5.1
+setuptools == 70.0.0
 simplejson == 3.17.0
